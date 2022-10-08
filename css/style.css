@@ -1,0 +1,20 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+nav{
+   background-color: rgb(255, 143, 63); 
+   color : white;
+}
+
+li{
+    font-size: large;
+}
+footer .links{
+    font-size: small;
+}
+footer .links p li{
+    font-size: small;
+}
