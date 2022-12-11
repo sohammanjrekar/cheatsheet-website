@@ -363,11 +363,18 @@
             <p>
               React Context is a way to manage state globally.
               <br>
-              It can be used together with the useState Hook to share state between deeply nested components more easily than with useState alone.
+              It can be used together with the useState Hook to share state between deeply nested components more easily
+              than with useState alone.
               <br><br>
-              Context provides a way to pass data or state through the component tree without having to pass props down manually through each nested component. It is designed to share data that can be considered as global data for a tree of React components, such as the current authenticated user or theme(e.g. color, paddings, margins, font-sizes).
+              Context provides a way to pass data or state through the component tree without having to pass props down
+              manually through each nested component. It is designed to share data that can be considered as global data
+              for a tree of React components, such as the current authenticated user or theme(e.g. color, paddings,
+              margins, font-sizes).
               <br><br>
-              Context API uses Context. Provider and Context. Consumer Components pass down the data but it is very cumbersome to write the long functional code to use this Context API. So useContext hook helps to make the code more readable, less verbose and removes the need to introduce Consumer Component. The useContext hook is the new addition in React 16.8. 
+              Context API uses Context. Provider and Context. Consumer Components pass down the data but it is very
+              cumbersome to write the long functional code to use this Context API. So useContext hook helps to make the
+              code more readable, less verbose and removes the need to introduce Consumer Component. The useContext hook
+              is the new addition in React 16.8.
             </p>
           </div>
         </div>
@@ -376,23 +383,29 @@
 import React, { useContext } from "react";
       </code>
       </pre>
-      <p>For Create context value</p>
-      <pre class="language-jsx">
+        <p>For Create context value</p>
+        <pre class="language-jsx">
   <code>
     const AppContext = React.createContext();
 </code>
 </pre>
-<p>For set provider value</p>
-<pre class="language-jsx">
+        <p>For set provider value</p>
+        <pre class="language-jsx">
 <code>
   return &lt;AppContext.Provider  value="soham"&gt;{children}&lt;/AppContext.Provider&gt;
 </code>
 </pre>
 
-      <p>For access value</p>
+        <p>For access value</p>
         <pre class="language-jsx">
     <code>
       const auth = useContext(AuthContext);
+</code>
+</pre>
+        <p>add appprovider in index.js</p>
+        <pre class="language-jsx">
+<code>
+&lt;AppProvider&gt;         &lt;/AppProvider&gt;
 </code>
 </pre>
       </li>
