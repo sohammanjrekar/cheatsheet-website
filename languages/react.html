@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Reactjs cheatsheet</title>
+  <link rel="shortcut icon" href="../img/reactjs-icon.svg" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
   <link rel="stylesheet" href="../prism.css" />
@@ -305,6 +306,55 @@
       &lt;/Router&gt;
 </code>
 </pre>
+      </li>
+
+
+
+      <li>
+        create nested routes
+        <pre class="language-jsx">
+    <code>
+      import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+</code>
+</pre>
+        <pre class="language-jsx">
+  <code>
+    
+    &lt;Router&gt;
+    &lt;Routes&gt;
+      &lt;Route path="/" element={&lt;Home /&gt;}&gt;
+        &lt;Route path="about" element={&lt;About /&gt;} /&gt;
+        &lt;Route path="contact" element={&lt;Contact /&gt;} /&gt;
+        &lt;Route path="*" element={&lt;Errorpage /&gt;} /&gt;
+      &lt;/Route&gt;
+    &lt;/Routes&gt;
+  &lt;/Router&gt;
+</code>
+</pre>
+<p>add outlet in parent route in above ex: home.js</p>
+<pre class="language-jsx">
+  <code>
+    
+    import { Outlet } from 'react-router-dom'
+</code>
+</pre>
+<pre class="language-jsx">
+  <code>
+   &lt;Outlet/&gt;
+</code>
+</pre>
+      </li>
+      <li>create go back button feature
+        <pre class="language-jsx">
+          <code>
+            import { useNavigate } from 'react-router-dom'
+        </code>
+        </pre>
+        <pre class="language-jsx">
+          <code>
+            &lt;button onClick={()=>{navigate(-1);}}&gt;Go back&lt;/button&gt;
+        </code>
+        </pre>
       </li>
       <li>
         for fetch id from link(route)<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
