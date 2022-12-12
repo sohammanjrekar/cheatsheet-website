@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap</title>
+    <title>MongoDB</title>
+    <link rel="shortcut icon" href="../img/mongodb-icon.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../prism.css">
@@ -124,32 +125,60 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- mid part -->
     <nav class="mt-5 pt-1">
         <div class="text-center my-3" style="font-size: larger;font-weight:900;">
-            <img src="../img/bootstrap.svg" alt=""> Bootstrap cheatsheet
+            <img src="../img/mongodb-icon.svg" alt="">MongoDB  cheatsheet
         </div>
     </nav>
 
     <div class="container">
         <ol>
-            <li>Starter template
+            <li>install mongoose
                 <pre class="language-js">
                 <code>
-        var i=45
+        npm install mongoose --save
+                </code>
+            </pre>
+            </li>
+
+
+            <li>add mongoose in js
+                <pre class="language-js">
+                <code>
+                    const mongoose = require('mongoose');
+
+                    main().catch(err => console.log(err));
+                    
+                    async function main() {
+                      await mongoose.connect('mongodb://localhost:27017/test');
+                      
+                    }
+                </code>
+            </pre>
+            </li>
+
+            <li>create schema
+                <pre class="language-js">
+                <code>
+                    const kittySchema = new mongoose.Schema({
+                        name: String
+                      });
+                </code>
+            </pre>
+            </li>
+            <li>complie schema in model
+                <pre class="language-js">
+                <code>
+                    const Kitten = mongoose.model('Kitten', kittySchema);
+                </code>
+            </pre>
+            </li>
+            <li>use model to take new input
+                <pre class="language-js">
+                <code>
+                    const silence = new Kitten({ name: 'Silence' });
+                    console.log(silence.name);
                 </code>
             </pre>
             </li>

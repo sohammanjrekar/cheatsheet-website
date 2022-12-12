@@ -205,54 +205,37 @@
                 </code>
             </pre>
       </li>
-      <li>
-        App.js<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#o2"
-          aria-controls="o2">
-          Read More...
-        </button>
-        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o2"
-          aria-labelledby="offcanvasWithBothOptionsLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-              Reactjs
-            </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            How does it work:<br> While building client-side apps, a team of Facebook developers realized that the DOM
-            is slow (The Document Object Model (DOM) is an application programming interface (API) for HTML and XML
-            documents. It defines the logical structure of documents and the way a document is accessed and
-            manipulated.).<br> <br>So, to make it faster, React implements a virtual DOM that is basically a DOM tree
-            representation in JavaScript. So when it needs to read or write to the DOM, it will use the virtual
-            representation of it. Then the virtual DOM will try to find the most efficient way to update the browser’s
-            DOM. <br><br>
-            Unlike browser DOM elements, React elements are plain objects and are cheap to create. React DOM takes care
-            of updating the DOM to match the React elements. <br><br>The reason for this is that JavaScript is very fast
-            and it’s worth keeping a DOM tree in it to speed up its manipulation.<br><br>
-            Although React was conceived to be used in the browser, because of its design it can also be used in the
-            server with Node.js.
-
-          </div>
-        </div>
+      <li>class based component
         <pre class="language-jsx">
-                                    <code>     import React,{ Component } from 'react';
+                                    <code>    import React, { Component } from 'react'
 
-                                        class App extends Component {
-                                        
+                                      export class Contact extends Component {
                                         render() {
-                                            return (	
-                                            &lt;div&gt;
-                                            &lt;h1>Hello, Learner.Welcome to GeeksforGeeks.&lt;/h1&gt;
-                                            &lt;/div&gt;
-                                        
-                                            );
+                                          return (
+                                            <div>Contact</div>
+                                          )
                                         }
-                                        }
-                                            
-                                        export default App;
+                                      }
+                                      
+                                      export default Contact
+                                        </code>
+        </pre></li><li>
+          fuction based component
+        
+          <pre class="language-jsx">
+                                    <code>     import React from 'react'
+
+                                      const Contact = () => {
+                                        return (
+                                          <div>Contact</div>
+                                        )
+                                      }
+                                      
+                                      export default Contact
                                         </code>
         </pre>
 
+            
       </li>
       <li>start reactjs app
         <pre class="language-jsx">
@@ -458,6 +441,77 @@ import React, { useContext } from "react";
 &lt;AppProvider&gt;         &lt;/AppProvider&gt;
 </code>
 </pre>
+      </li>
+      <li>create props
+         <br>
+        <p>
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Create props</a>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">pass props</button>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">both</button>
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+              <div class="card card-body">
+                <pre class="language-jsx">
+                  <code>
+                    function Avatar(props) {
+                      let person = props.person;
+                      let size = props.size;
+                      // ...
+                    }
+                  </code>
+                  </pre>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+              <div class="card card-body">
+                <pre class="language-jsx">
+                  <code>
+                    function Avatar({ person, size }) {
+                      // ...
+                    }
+                  </code>
+                  </pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li> useState is a React Hook that lets you add a state variable to your component.
+        <pre class="language-jsx">
+          <code>
+            const [state, setState] = useState(initialState)
+          </code>
+          </pre>
+      </li>
+      <li> Enable dark mode (create onClick toogle fuction in buuton and mode input to style)
+        <pre class="language-jsx">
+          <code>
+            const [statebtn, setbtn] = useState("Enable dark mode");
+            const [mode, setMode] = useState({
+              color: "black",
+              backcolor: "white",
+            });
+            const toogle = () => {
+              if (mode.color === "black") {
+                setMode({
+                  color: "white",
+                  backgroundColor: "black",
+                });
+                setbtn("Enable light mode");
+              } else {
+                setMode({
+                  color: "black",
+                  backgroundColor: "white",
+                });
+                setbtn("Enable dark mode");
+              }
+            };
+          </code>
+          </pre>
       </li>
     </ol>
   </div>
