@@ -278,6 +278,50 @@
         </code>
         </pre>
       </li>
+
+
+      <li>add routes index.js
+        <pre class="language-js">
+          <code>
+                app.use('/api/auth',require('./routes/auth'))
+      </code>
+      </pre>
+      <p>create route</p>
+        <pre class="language-js">
+          <code>
+            const express=require('express');
+const router=express.Router()
+
+router.get('/',(req,res)=>{
+
+res.Json([])
+})
+module.exports=router
+      </code>
+      </pre>
+      </li>
+
+
+      <li>coonect thunder client (add in routes file)
+        <pre class="language-js">
+          <code>
+            console.log(req.body)
+            res.send("hello bro")
+      </code>
+      </pre>
+      <p>Add middleware in index.js</p>
+        <pre class="language-js">
+          <code>
+            //add middleware
+            app.use(express.json())
+      </code>
+      </pre>
+      <p>changes in thunder cilent</p>
+      <div class="row">
+        <div class="col-6 mr-1"><img src="../img/thunderclient/1.png" alt="" style="width: 42vw;"></div>
+        <div class="col-6"><img src="../img/thunderclient/2.png" alt="" style="width: 42vw;"></div>
+      </div>
+      </li>
     </ol>
   </div>
   </div>

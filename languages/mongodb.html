@@ -145,6 +145,11 @@
 
             <li>add mongoose in database.js
                 <pre class="language-js">
+                    <code>
+                        const mongoose = require('mongoose');
+                </code>
+                </pre>
+                <pre class="language-js">
                 <code>
                     const mongoose = require('mongoose');
 
@@ -174,9 +179,27 @@ module.exports=connectToMongoDB;
             <li>create schema
                 <pre class="language-js">
                 <code>
-                    const kittySchema = new mongoose.Schema({
-                        name: String
-                      });
+const mongoose = require("mongoose");
+const UserSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true,
+  },
+  email: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  password: {
+    type: String,
+    required: true,
+  },
+  date: {
+    type: Date,
+    default: Date.now,
+  },
+});
+
                 </code>
             </pre>
             </li>
