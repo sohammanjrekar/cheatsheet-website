@@ -143,20 +143,33 @@
             </li>
 
 
-            <li>add mongoose in js
+            <li>add mongoose in database.js
                 <pre class="language-js">
                 <code>
                     const mongoose = require('mongoose');
 
-                    main().catch(err => console.log(err));
-                    
-                    async function main() {
-                      await mongoose.connect('mongodb://localhost:27017/test');
-                      
-                    }
+const mongoURL="mongodb://localhost:27017/react"
+
+const connectToMongoDB=()=>{
+   
+        mongoose.connect(mongoURL).then(()=>console.log('success')).catch(err => console.log(err));
+            
+}
+module.exports=connectToMongoDB;
                 </code>
             </pre>
             </li>
+            <li>call fuction  in index.js
+                <pre class="language-js">
+                <code>
+                    const connectToMongoDB =require('./db')
+
+                    connectToMongoDB()
+                </code>
+            </pre>
+            </li>
+
+
 
             <li>create schema
                 <pre class="language-js">

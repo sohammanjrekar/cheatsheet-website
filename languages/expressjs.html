@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Express cheatsheet</title>
+  <link rel="shortcut icon" href="../img/express-js.svg" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
   <link rel="stylesheet" href="../prism.css" />
@@ -129,7 +130,7 @@
   <!-- mid part -->
   <nav class="mt-5 pt-1">
     <div class="text-center my-3" style="font-size: larger; font-weight: 900">
-      <img src="../img/expressjs.svg" alt="" /> Express cheatsheet
+      <img src="../img/express-js.svg" alt="" /> Express cheatsheet
     </div>
   </nav>
   <div class="container">
@@ -145,7 +146,7 @@
             </p>
           </div>
           <div class="col-md-4">
-            <img src="../img/html.svg" alt="" style="width:100% ;" />
+            <img src="../img/express-js.svg" alt="" style="width:100% ;" />
           </div>
         </div>
         <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#o1"
@@ -207,13 +208,21 @@
         &lt;br /&gt; tag: “used to break two lines or paragraph on an HTML
         page”
         <pre class="language-js">
+          <code>
+            
+            const express=require('express');
+      </code>
+      </pre>
+        <pre class="language-js">
     <code>
-        const express=require('express');
-        const app=express();
-        app.get('/', (req, res) =>{
-        res.send("Welocme!");
-        });
-        app.listen(5000);
+      
+      const app=express();
+      const PORT=5000
+      
+      app.get('/', (req, res) =>{
+      res.send("Welocme!");
+      });
+      app.listen(PORT);
 </code>
 </pre>
       </li>
