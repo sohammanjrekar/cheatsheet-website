@@ -69,7 +69,7 @@
                             aria-expanded="false">
                             Programming Languages
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu ">
                             <li><a class="dropdown-item" href="cplus.html">C++</a></li>
                             <li><a class="dropdown-item" href="c.html">C</a></li>
                             <li><a class="dropdown-item" href="java.html">Java</a></li>
@@ -518,19 +518,20 @@ WHERE column_name IS NOT NULL;
 
             <li>
                 UPDATE Statement<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasBottom10" aria-controls="offcanvasBottom">Read more...</button>
+                    data-bs-target="#offcanvasBottom10" aria-controls="offcanvasBottom">Read more...</button>
 
-            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom10"
-                aria-labelledby="offcanvasBottomLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasBottomLabel">UPDATE Statement</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom10"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">UPDATE Statement</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The UPDATE statement is used to modify the existing records in a table.
+                        Notice the WHERE clause in the UPDATE statement. <br> The WHERE clause specifies which record(s)
+                        that should be updated. If you omit the WHERE clause, all records in the table will be updated!
+                    </div>
                 </div>
-                <div class="offcanvas-body small">
-                    The UPDATE statement is used to modify the existing records in a table. 
-                    Notice the WHERE clause in the UPDATE statement. <br> The WHERE clause specifies which record(s) that should be updated. If you omit the WHERE clause, all records in the table will be updated!
-                </div>
-            </div>
                 <pre class="language-sql">
     <code>
         UPDATE table_name
@@ -538,7 +539,7 @@ WHERE column_name IS NOT NULL;
         WHERE condition;
 </code>
 </pre>
-                
+
             </li>
 
 
@@ -546,52 +547,55 @@ WHERE column_name IS NOT NULL;
 
             <li>
                 DELETE Statement<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasBottom11" aria-controls="offcanvasBottom">Read more...</button>
+                    data-bs-target="#offcanvasBottom11" aria-controls="offcanvasBottom">Read more...</button>
 
-            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom11"
-                aria-labelledby="offcanvasBottomLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasBottomLabel">DELETE Statement</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom11"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">DELETE Statement</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The DELETE statement is used to delete existing records in a table. <br>
+                        The WHERE clause specifies which record(s) should be deleted. If you omit the WHERE clause, all
+                        records in the table will be deleted!
+                    </div>
                 </div>
-                <div class="offcanvas-body small">
-                    The DELETE statement is used to delete existing records in a table. <br>
-                    The WHERE clause specifies which record(s) should be deleted. If you omit the WHERE clause, all records in the table will be deleted!
-                </div>
-            </div>
                 <pre class="language-sql">
     <code>
         DELETE FROM table_name WHERE condition;
 </code>
 </pre>
-<p>
-    Delete all rows in a table without deleting the table
-</p><pre class="language-sql">
+                <p>
+                    Delete all rows in a table without deleting the table
+                </p>
+                <pre class="language-sql">
     <code>
         DELETE FROM table_name;
 </code>
 </pre>
-                
+
             </li>
-           
+
 
 
             <li>
                 LIMIT Clause<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasBottom12" aria-controls="offcanvasBottom">Read more...</button>
+                    data-bs-target="#offcanvasBottom12" aria-controls="offcanvasBottom">Read more...</button>
 
-            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom12"
-                aria-labelledby="offcanvasBottomLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasBottomLabel">LIMIT Clause</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom12"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">LIMIT Clause</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The LIMIT clause is used to specify the number of records to return.
+                        <br>
+                        The LIMIT clause is useful on large tables with thousands of records. Returning a large number
+                        of records can impact performance.
+                    </div>
                 </div>
-                <div class="offcanvas-body small">
-                    The LIMIT clause is used to specify the number of records to return.
-<br>
-The LIMIT clause is useful on large tables with thousands of records. Returning a large number of records can impact performance.
-                </div>
-            </div>
                 <pre class="language-sql">
     <code>
         SELECT column_name(s)
@@ -601,30 +605,31 @@ LIMIT number;
 </code>
 </pre>
 
-                
+
             </li>
 
 
-            
+
 
 
             <li>
                 MIN() and MAX() Functions<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasBottom13" aria-controls="offcanvasBottom">Read more...</button>
+                    data-bs-target="#offcanvasBottom13" aria-controls="offcanvasBottom">Read more...</button>
 
-            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom13"
-                aria-labelledby="offcanvasBottomLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasBottomLabel">MIN() and MAX() Functions</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom13"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">MIN() and MAX() Functions</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The LIMIT clause is used to specify the number of records to return.
+                        <br>
+                        The LIMIT clause is useful on large tables with thousands of records. Returning a large number
+                        of records can impact performance.
+                    </div>
                 </div>
-                <div class="offcanvas-body small">
-                    The LIMIT clause is used to specify the number of records to return.
-<br>
-The LIMIT clause is useful on large tables with thousands of records. Returning a large number of records can impact performance.
-                </div>
-            </div>
-            <p>MIN() Syntax</p>
+                <p>MIN() Syntax</p>
                 <pre class="language-sql">
     <code>
         SELECT MIN(column_name)
@@ -632,13 +637,13 @@ FROM table_name
 WHERE condition;
 </code>
 </pre>
-<pre class="language-sql">
+                <pre class="language-sql">
     <code>
         SELECT MIN(Price) AS SmallestPrice
 FROM Products;
 </code>
 </pre>
-<p>MAX() Syntax</p>
+                <p>MAX() Syntax</p>
                 <pre class="language-sql">
     <code>
         SELECT MAX(column_name)
@@ -646,234 +651,800 @@ FROM table_name
 WHERE condition;
 </code>
 </pre>
-<pre class="language-sql">
+                <pre class="language-sql">
     <code>
         SELECT MAX(Price) AS LargestPrice
         FROM Products;
 </code>
 </pre>
-            
 
-<li>
-    COUNT()<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-    data-bs-target="#offcanvasBottom14" aria-controls="offcanvasBottom">Read more...</button>
 
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom14"
-    aria-labelledby="offcanvasBottomLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasBottomLabel">COUNT()</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body small">
-        The COUNT() function returns the number of rows that matches a specified criterion.
-    </div>
-</div>
-    <pre class="language-sql">
+            <li>
+                COUNT()<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom14" aria-controls="offcanvasBottom">Read more...</button>
+
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom14"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">COUNT()</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The COUNT() function returns the number of rows that matches a specified criterion.
+                    </div>
+                </div>
+                <pre class="language-sql">
 <code>
     SELECT COUNT(column_name)
     FROM table_name
     WHERE condition;
 </code>
 </pre>
-</li>
+            </li>
 
-<li>
-    AVG()<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-    data-bs-target="#offcanvasBottom16" aria-controls="offcanvasBottom">Read more...</button>
+            <li>
+                AVG()<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom16" aria-controls="offcanvasBottom">Read more...</button>
 
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom16"
-    aria-labelledby="offcanvasBottomLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasBottomLabel">AVG()</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body small">
-        The AVG() function returns the average value of a numeric column. 
-    </div>
-</div>
-    <pre class="language-sql">
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom16"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">AVG()</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The AVG() function returns the average value of a numeric column.
+                    </div>
+                </div>
+                <pre class="language-sql">
 <code>
     SELECT AVG(column_name)
 FROM table_name
 WHERE condition;
 </code>
 </pre>
-</li>
+            </li>
 
-<li>
-    SUM()<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-    data-bs-target="#offcanvasBottom18" aria-controls="offcanvasBottom">Read more...</button>
+            <li>
+                SUM()<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom18" aria-controls="offcanvasBottom">Read more...</button>
 
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom18"
-    aria-labelledby="offcanvasBottomLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasBottomLabel">SUM()</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body small">
-        The SUM() function returns the total sum of a numeric column. 
-    </div>
-</div>
-    <pre class="language-sql">
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom18"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">SUM()</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The SUM() function returns the total sum of a numeric column.
+                    </div>
+                </div>
+                <pre class="language-sql">
 <code>
     SELECT SUM(column_name)
 FROM table_name
 WHERE condition;
 </code>
 </pre>
-</li>
-<li>
-    LIKE Operator<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-    data-bs-target="#offcanvasBottom19" aria-controls="offcanvasBottom">Read more...</button>
+            </li>
+            <li>
+                LIKE Operator<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom19" aria-controls="offcanvasBottom">Read more...</button>
 
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom19"
-    aria-labelledby="offcanvasBottomLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasBottomLabel">LIKE Operator</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body small">
-        The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.
-<br>
-There are two wildcards often used in conjunction with the LIKE operator:
-<br> <ol><li>
-The percent sign (%) represents zero, one, or multiple characters</li>
-<li>The underscore sign (_) represents one, single character</li>
-<li>The percent sign and the underscore can also be used in combinations!</li></ol><br>
-Tip: You can also combine any number of conditions using AND or OR operators.
-<br>
-<table class="ws-table-all notranslate table-bordered">
-    <tbody><tr>
-      <th>LIKE Operator</th>
-      <th>Description</th>
-    </tr>
-    <tr>
-      <td>WHERE CustomerName LIKE 'a%'</td>
-      <td>Finds any values that start with "a"</td>
-    </tr>
-    <tr>
-      <td>WHERE CustomerName LIKE '%a'</td>
-      <td>Finds any values that end with "a"</td>
-    </tr>
-    <tr>
-      <td>WHERE CustomerName LIKE '%or%'</td>
-      <td>Finds any values that have "or" in any position</td>
-    </tr>
-    <tr>
-      <td>WHERE CustomerName LIKE '_r%'</td>
-      <td>Finds any values that have "r" in the second position</td>
-    </tr>
-    <tr>
-      <td>WHERE CustomerName LIKE 'a_%'</td>
-      <td>Finds any values that start with "a" and are at least 2 characters in length</td>
-    </tr>
-    <tr>
-      <td>WHERE CustomerName LIKE 'a__%'</td>
-      <td>Finds any values that start with "a" and are at least 3 characters in length</td>
-    </tr>
-    <tr>
-      <td>WHERE ContactName LIKE 'a%o'</td>
-      <td>Finds any values that start with "a" and ends with "o"</td>
-    </tr>
-  </tbody></table>
-    </div>
-</div>
-    <pre class="language-sql">
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom19"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">LIKE Operator</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.
+                        <br>
+                        There are two wildcards often used in conjunction with the LIKE operator:
+                        <br>
+                        <ol>
+                            <li>
+                                The percent sign (%) represents zero, one, or multiple characters</li>
+                            <li>The underscore sign (_) represents one, single character</li>
+                            <li>The percent sign and the underscore can also be used in combinations!</li>
+                        </ol><br>
+                        Tip: You can also combine any number of conditions using AND or OR operators.
+                        <br>
+                        <table class="ws-table-all notranslate table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th>LIKE Operator</th>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td>WHERE CustomerName LIKE 'a%'</td>
+                                    <td>Finds any values that start with "a"</td>
+                                </tr>
+                                <tr>
+                                    <td>WHERE CustomerName LIKE '%a'</td>
+                                    <td>Finds any values that end with "a"</td>
+                                </tr>
+                                <tr>
+                                    <td>WHERE CustomerName LIKE '%or%'</td>
+                                    <td>Finds any values that have "or" in any position</td>
+                                </tr>
+                                <tr>
+                                    <td>WHERE CustomerName LIKE '_r%'</td>
+                                    <td>Finds any values that have "r" in the second position</td>
+                                </tr>
+                                <tr>
+                                    <td>WHERE CustomerName LIKE 'a_%'</td>
+                                    <td>Finds any values that start with "a" and are at least 2 characters in length
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>WHERE CustomerName LIKE 'a__%'</td>
+                                    <td>Finds any values that start with "a" and are at least 3 characters in length
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>WHERE ContactName LIKE 'a%o'</td>
+                                    <td>Finds any values that start with "a" and ends with "o"</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <pre class="language-sql">
 <code>
     SELECT column1, column2, ...
     FROM table_name
     WHERE columnN LIKE pattern;
 </code>
 </pre>
-<pre class="language-sql">
+                <pre class="language-sql">
     <code>
         SELECT * FROM Customers
         WHERE CustomerName LIKE 'a%';
     </code>
     </pre>
-</li>
+            </li>
 
 
-<li>
-    Wildcard Characters<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-    data-bs-target="#offcanvasBottom21" aria-controls="offcanvasBottom">Read more...</button>
+            <li>
+                Wildcard Characters<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom21" aria-controls="offcanvasBottom">Read more...</button>
 
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom21"
-    aria-labelledby="offcanvasBottomLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Wildcard Characters</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body small">
-        A wildcard character is used to substitute one or more characters in a string.
-<br>
-Wildcard characters are used with the LIKE operator. The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.
-<br>
-<table class="ws-table-all notranslate table-bordered">
-    <tbody><tr>
-      <th>Symbol</th>
-      <th>Description</th>
-      <th>Example</th>
-    </tr>
-    <tr>
-      <td>%</td>
-      <td>Represents zero or more characters</td>
-      <td>bl% finds bl, black, blue, and blob</td>
-    </tr>
-    <tr>
-      <td>_</td>
-      <td>Represents a single character</td>
-      <td>h_t finds hot, hat, and hit</td>
-    </tr>
-    </tbody></table>
-    </div>
-</div>
-    <pre class="language-sql">
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom21"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Wildcard Characters</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        A wildcard character is used to substitute one or more characters in a string.
+                        <br>
+                        Wildcard characters are used with the LIKE operator. The LIKE operator is used in a WHERE clause
+                        to search for a specified pattern in a column.
+                        <br>
+                        <table class="ws-table-all notranslate table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th>Symbol</th>
+                                    <th>Description</th>
+                                    <th>Example</th>
+                                </tr>
+                                <tr>
+                                    <td>%</td>
+                                    <td>Represents zero or more characters</td>
+                                    <td>bl% finds bl, black, blue, and blob</td>
+                                </tr>
+                                <tr>
+                                    <td>_</td>
+                                    <td>Represents a single character</td>
+                                    <td>h_t finds hot, hat, and hit</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <pre class="language-sql">
 <code>
     SELECT * FROM Customers
 WHERE City LIKE '%es%';
 </code>
 </pre>
-<pre class="language-sql">
+                <pre class="language-sql">
     <code>
         SELECT * FROM Customers
 WHERE City LIKE 'L_n_on';
     </code>
     </pre>
-</li>
+            </li>
 
 
-<li>
-    IN Operator<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-    data-bs-target="#offcanvasBottom22" aria-controls="offcanvasBottom">Read more...</button>
+            <li>
+                IN Operator<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom22" aria-controls="offcanvasBottom">Read more...</button>
 
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom22"
-    aria-labelledby="offcanvasBottomLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasBottomLabel">IN Operator</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body small">
-        The IN operator allows you to specify multiple values in a WHERE clause.
-<br>
-The IN operator is a shorthand for multiple <b> OR conditions.</b>
-    </div>
-</div>
-    <pre class="language-sql">
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom22"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">IN Operator</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The IN operator allows you to specify multiple values in a WHERE clause.
+                        <br>
+                        The IN operator is a shorthand for multiple <b> OR conditions.</b>
+                    </div>
+                </div>
+                <pre class="language-sql">
 <code>
     SELECT column_name(s)
     FROM table_name
     WHERE column_name IN (value1, value2, ...);
 </code>
 </pre>
-<pre class="language-sql">
+                <pre class="language-sql">
     <code>
         SELECT column_name(s)
 FROM table_name
 WHERE column_name IN (SELECT STATEMENT);
     </code>
     </pre>
-</li>
+            </li>
+
+            <li>
+                BETWEEN Operator<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom23" aria-controls="offcanvasBottom">Read more...</button>
+
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom23"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">BETWEEN Operator</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The BETWEEN operator selects values within a given range. The values can be numbers, text, or
+                        dates.
+                        <br>
+                        The BETWEEN operator is inclusive: begin and end values are included.
+                    </div>
+                </div>
+                <pre class="language-sql">
+<code>
+    SELECT column_name(s)
+FROM table_name
+WHERE column_name BETWEEN value1 AND value2;
+</code>
+</pre>
+            </li>
+
+            <li>
+                Aliases<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom24" aria-controls="offcanvasBottom">Read more...</button>
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom24"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Aliases</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        <ul>
+                            <li> Aliases are used to give a table, or a column in a table, a temporary name.</li>
+
+                            <li>Aliases are often used to make column names more readable.</li>
+
+                            <li>An alias only exists for the duration of that query.</li>
+
+                            <li>An alias is created with the AS keyword.</li>
+                        </ul>
+                        <br>
+                        Note: Single or double quotation marks are required if the alias name contains spaces
+                        <pre class="language-sql">
+                <code>
+SELECT CustomerName AS Customer, 
+ContactName AS "Contact Person"
+FROM Customers;
+                </code>
+                </pre>
+                    </div>
+                </div>
+                <p>Alias Column Syntax</p>
+                <pre class="language-sql">
+<code>
+    SELECT column_name AS alias_name
+FROM table_name;
+</code>
+</pre>
+                <p>Alias Table Syntax</p>
+                <pre class="language-sql">
+    <code>
+        SELECT column_name(s)
+FROM table_name AS alias_name;
+    </code>
+    </pre>
+            </li>
+
+
+            <li>
+                Joining Tables<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom25" aria-controls="offcanvasBottom">Read more...</button>
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom25"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Joining Tables</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        A JOIN clause is used to combine rows from two or more tables, based on a related column between
+                        them.
+                        <br>
+                        Supported Types of Joins in MySQL: <br>
+                        <ul>
+                            <li>INNER JOIN: Returns records that have matching values in both tables
+                                <img src="https://www.w3schools.com/mysql/img_innerjoin.gif" alt="">
+                            </li>
+
+                            <li> LEFT JOIN: Returns all records from the left table, and the matched records from the
+                                right table
+                                <img src="https://www.w3schools.com/mysql/img_leftjoin.gif" alt="">
+                            </li>
+                            <li> RIGHT JOIN: Returns all records from the right table, and the matched records from the
+                                left table
+                                <img src="https://www.w3schools.com/mysql/img_rightjoin.gif" alt="">
+                            </li>
+                            <li> CROSS JOIN: Returns all records from both tables
+                                <img src="https://www.w3schools.com/mysql/img_crossjoin.png" alt="">
+                                Note: CROSS JOIN can potentially return very large result-sets!
+                            </li>
+                            <li> Self Join: A self join is a regular join, but the table is joined with itself.
+
+                                Note:T1 and T2 are different table aliases for the same table.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p>INNER JOIN Syntax
+                </p>
+                <pre class="language-sql">
+<code>
+    SELECT column_name(s)
+FROM table1
+INNER JOIN table2
+ON table1.column_name = table2.column_name;
+</code>
+</pre>
+                <p>LEFT JOIN Syntax</p>
+                <pre class="language-sql">
+    <code>
+        SELECT column_name(s)
+FROM table1
+LEFT JOIN table2
+ON table1.column_name = table2.column_name;
+    </code>
+    </pre>
+                <p>RIGHT JOIN Syntax</p>
+                <pre class="language-sql">
+        <code>
+            SELECT column_name(s)
+FROM table1
+RIGHT JOIN table2
+ON table1.column_name = table2.column_name;
+        </code>
+        </pre>
+                <p>CROSS JOIN Syntax</p>
+                <pre class="language-sql">
+            <code>
+                SELECT column_name(s)
+FROM table1
+CROSS JOIN table2;
+            </code>
+            </pre>
+                <p>Self Join Syntax</p>
+                <pre class="language-sql">
+                <code>
+                    SELECT column_name(s)
+                    FROM table1 T1, table1 T2
+                    WHERE condition;
+                </code>
+                </pre>
+            </li>
+
+
+
+            <li>
+                UNION Operator<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom26" aria-controls="offcanvasBottom">Read more...</button>
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom26"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">UNION Operator</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The UNION operator is used to combine the result-set of two or more SELECT statements. <br>
+                        <ul>
+                            <li> Every SELECT statement within UNION must have the same number of columns</li>
+
+                            <li>The columns must also have similar data types</li>
+
+                            <li>The columns in every SELECT statement must also be in the same order</li>
+                        </ul>
+                        <br>
+                        Note: The column names in the result-set are usually equal to the column names in the first
+                        SELECT statement.
+
+                        <br><br>
+                        The UNION operator selects only distinct values by default. To allow duplicate values, use
+                        <b>UNION ALL</b>
+                    </div>
+                </div>
+                <p>UNION Syntax</p>
+                <pre class="language-sql">
+                    <code>
+                        SELECT column_name(s) FROM table1
+                        UNION
+                        SELECT column_name(s) FROM table2;
+                    </code>
+                    </pre>
+                <p>UNION ALL Syntax</p>
+                <pre class="language-sql">
+    <code>
+        SELECT column_name(s) FROM table1
+        UNION ALL
+        SELECT column_name(s) FROM table2;
+    </code>
+    </pre>
+            </li>
+
+
+
+            <li>
+                GROUP BY Statement<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom27" aria-controls="offcanvasBottom">Read more...</button>
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom27"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">GROUP BY Statement</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The GROUP BY statement groups rows that have the same values into summary rows, like "find the
+                        number of customers in each country".
+                        <br>
+                        The GROUP BY statement is often used with aggregate functions (COUNT(), MAX(), MIN(), SUM(),
+                        AVG()) to group the result-set by one or more columns.<br>
+                    </div>
+                </div>
+                <p>GROUP BY Syntax</p>
+                <pre class="language-sql">
+                    <code>
+                        SELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+ORDER BY column_name(s);
+                    </code>
+                    </pre>
+                <p>Example:</p>
+                <pre class="language-sql">
+    <code>
+        SELECT COUNT(CustomerID), Country
+FROM Customers
+GROUP BY Country;
+    </code>
+    </pre>
+            </li>
+
+
+
+
+
+            <li>
+                HAVING Clause<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom28" aria-controls="offcanvasBottom">Read more...</button>
+
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom28"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">HAVING Clause</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The HAVING clause was added to SQL because the WHERE keyword cannot be used with aggregate functions.
+                    </div>
+                </div>
+                <p>HAVING Syntax</p>
+                <pre class="language-sql">
+                    <code>
+                        SELECT column_name(s)
+                        FROM table_name
+                        WHERE condition
+                        GROUP BY column_name(s)
+                        HAVING condition
+                        ORDER BY column_name(s);
+                    </code>
+                    </pre>
+                <p>Example:</p>
+                <pre class="language-sql">
+    <code>
+        SELECT COUNT(CustomerID), Country
+FROM Customers
+GROUP BY Country
+HAVING COUNT(CustomerID) > 5;
+    </code>
+    </pre>
+            </li>
+
+
+
+            <li>
+                EXISTS Operator<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom29" aria-controls="offcanvasBottom">Read more...</button>
+
+                <div class="offcanvas offcanvas-bottom " tabindex="-1" id="offcanvasBottom29"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">EXISTS Operator</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The EXISTS operator is used to test for the existence of any record in a subquery.
+<br>
+The EXISTS operator returns TRUE if the subquery returns one or more records.
+                    </div>
+                </div>
+                <p>EXISTS Syntax</p>
+                <pre class="language-sql">
+                    <code>
+                        SELECT column_name(s)
+                        FROM table_name
+                        WHERE EXISTS
+                        (SELECT column_name FROM table_name WHERE condition);
+                    </code>
+                    </pre>
+                <p>Example:</p>
+                <pre class="language-sql">
+    <code>
+        SELECT SupplierName
+FROM Suppliers
+WHERE EXISTS (SELECT ProductName FROM Products WHERE Products.SupplierID = Suppliers.supplierID AND Price < 20);
+    </code>
+    </pre>
+            </li>
+
+
+
+            <li>
+                ANY Operator<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom30" aria-controls="offcanvasBottom">Read more...</button>
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom30"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">ANY Operator</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The ANY operator:
+<br><ul><li>
+                        returns a boolean value as a result </li><li>
+                        returns TRUE if ANY of the subquery values meet the condition</li><li>
+                        ANY means that the condition will be true if the operation is true for any of the values in the range.</li></ul>
+                        <br>
+                        Note: The operator must be a standard comparison operator (=, <>, !=, >, >=, <, or <=).
+                    </div>
+                </div>
+                <p>ANY Syntax</p>
+                <pre class="language-sql">
+                    <code>
+                        SELECT column_name(s)
+                        FROM table_name
+                        WHERE column_name operator ANY
+                          (SELECT column_name
+                          FROM table_name
+                          WHERE condition);
+                    </code>
+                    </pre>
+                <p>Example:</p>
+                <pre class="language-sql">
+    <code>
+        SELECT COUNT(CustomerID), Country
+FROM Customers
+GROUP BY Country
+HAVING COUNT(CustomerID) > 5;
+    </code>
+    </pre>
+            </li>
+
+
+
+            
+            <li>
+                ALL Operator<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom31" aria-controls="offcanvasBottom">Read more...</button>
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom31"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">ALL Operator</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The ALL operator:
+
+
+
+
+
+<br><ul><li>
+                        returns a boolean value as a result </li><li>
+                       returns TRUE if ALL of the subquery values meet the condition</li><li>
+                        is used with SELECT, WHERE and HAVING statements</li></ul>
+                        <br>
+                        ALL means that the condition will be true only if the operation is true for all values in the range.
+                        <br><br>
+                        Note: The operator must be a standard comparison operator (=, <>, !=, >, >=, <, or <=).
+                    </div>
+                </div>
+                <p>ALL Syntax With SELECT</p>
+                <pre class="language-sql">
+                    <code>
+                        SELECT ALL column_name(s)
+FROM table_name
+WHERE condition;
+                    </code>
+                    </pre>
+
+                    <p>ALL Syntax With WHERE or HAVING</p>
+                    <pre class="language-sql">
+                        <code>
+                            SELECT column_name(s)
+                            FROM table_name
+                            WHERE column_name operator ALL
+                              (SELECT column_name
+                              FROM table_name
+                              WHERE condition);
+                        </code>
+                        </pre>
+
+                <p>Example:</p>
+                <pre class="language-sql">
+    <code>
+        SELECT COUNT(CustomerID), Country
+FROM Customers
+GROUP BY Country
+HAVING COUNT(CustomerID) > 5;
+    </code>
+    </pre>
+            </li>
+
+
+
+
+            
+            <li>
+                INSERT INTO SELECT Statement<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom32" aria-controls="offcanvasBottom">Read more...</button>
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom32"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">INSERT INTO SELECT Statement</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The INSERT INTO SELECT statement copies data from one table and inserts it into another table.
+<br><br>
+The INSERT INTO SELECT statement requires that the data types in source and target tables matches.
+<br><br>
+Note: The existing records in the target table are unaffected.
+                    </div>
+                </div>
+                <p>INSERT INTO SELECT Syntax(Copy all columns from one table to another table)</p>
+                <pre class="language-sql">
+                    <code>
+                        INSERT INTO table2
+                        SELECT * FROM table1
+                        WHERE condition;
+                    </code>
+                    </pre>
+                <p>Copy only some columns from one table into another table</p>
+                <pre class="language-sql">
+    <code>
+        INSERT INTO table2 (column1, column2, column3, ...)
+        SELECT column1, column2, column3, ...
+        FROM table1
+        WHERE condition;
+    </code>
+    </pre>
+            </li>
+
+
+            
+            <li>
+                CASE Statement<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom33" aria-controls="offcanvasBottom">Read more...</button>
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom33"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CASE Statement</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The CASE statement goes through conditions and returns a value when the first condition is met (like an if-then-else statement). So, once a condition is true, it will stop reading and return the result. If no conditions are true, it returns the value in the ELSE clause.
+<br><br>
+If there is no ELSE part and no conditions are true, it returns NULL.
+                    </div>
+                </div>
+                <p>CASE Syntax</p>
+                <pre class="language-sql">
+                    <code>
+                        CASE
+    WHEN condition1 THEN result1
+    WHEN condition2 THEN result2
+    WHEN conditionN THEN resultN
+    ELSE result
+END;
+                    </code>
+                    </pre>
+                <p>Example:</p>
+                <pre class="language-sql">
+    <code>
+        SELECT OrderID, Quantity,
+CASE
+    WHEN Quantity > 30 THEN 'The quantity is greater than 30'
+    WHEN Quantity = 30 THEN 'The quantity is 30'
+    ELSE 'The quantity is under 30'
+END AS QuantityText
+FROM OrderDetails;
+    </code>
+    </pre>
+            </li>
+
+
+
+            <li>
+                IFNULL()<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom34" aria-controls="offcanvasBottom">Read more...</button>
+
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom34"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CASE Statement</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The MySQL IFNULL() function lets you return an alternative value if an expression is NULL.
+                    </div>
+                </div>
+                <p>CASE Syntax</p>
+                <pre class="language-sql">
+                    <code>
+                        CASE
+    WHEN condition1 THEN result1
+    WHEN condition2 THEN result2
+    WHEN conditionN THEN resultN
+    ELSE result
+END;
+                    </code>
+                    </pre>
+                <p>Example:</p>
+                <pre class="language-sql">
+    <code>
+        SELECT OrderID, Quantity,
+CASE
+    WHEN Quantity > 30 THEN 'The quantity is greater than 30'
+    WHEN Quantity = 30 THEN 'The quantity is 30'
+    ELSE 'The quantity is under 30'
+END AS QuantityText
+FROM OrderDetails;
+    </code>
+    </pre>
+            </li>
+
         </ol>
     </div>
     </div>
