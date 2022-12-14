@@ -180,6 +180,7 @@ module.exports=connectToMongoDB;
                 <pre class="language-js">
                 <code>
 const mongoose = require("mongoose");
+const { Schema } =mongoose;
 const UserSchema = new mongoose.Schema({
   name: {
     type: String,
