@@ -2,46 +2,7 @@
   margin: 0;
   padding: 0;
 }
-body{
-  font-size:10px;
-}
 
-h1{
-  font-size:3rem;
-}
-h2{
-  font-size:2.5rem;
-}
-p,h3{
-  font-size:2rem;
-}
-@media all and (max-device-width: 720px){
-  body {
-      font-size: 18px;
-  }
-  pre{
-    font-size: 1rem;
-  }
-}
-
-@media all and (max-device-width: 640px){
-  body {
-      font-size: 14px;
-  }
-  pre{
-    font-size: 5px;
-  }
-  }
-
-
-@media all and (max-device-width: 320px){
-  body {
-      font-size: 12px;
-  }
-  pre{
-    font-size: 0.7rem;
-  }
-}
 nav {
   background-color: rgb(255, 143, 63);
   color: white;

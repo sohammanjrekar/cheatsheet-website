@@ -133,7 +133,7 @@
         </div>
     </nav>
     <!-- mid part -->
-    <nav class="mt-5 pt-1">
+    <nav class="mt-5 pt-1 w-100">
         <div class="text-center my-3" style="font-size: larger; font-weight: 900">
             <img src="../img/mysql-icon.svg" alt="" /> MYSQL cheatsheet
         </div>
@@ -167,7 +167,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <p>
+                        <h3>
                             Features of React.js: There are unique features are available on React because that it is
                             widely popular.
                             <br><br>
@@ -230,7 +230,7 @@
                     FROM table_name;
                 </code>
             </pre>
-                <p>select all the fields available in the table</p>
+                <h3>select all the fields available in the table</p>
                 <pre class="language-sql">
                 <code>
                     SELECT * FROM table_name;
@@ -383,7 +383,7 @@
                         </ol>
                     </div>
                 </div>
-                <p>AND Operator</p>
+                <h3>AND Operator</p>
                 <pre class="language-sql">
     <code>
         SELECT column1, column2, ...
@@ -391,7 +391,7 @@
         WHERE condition1 AND condition2 AND condition3 ...;
 </code>
 </pre>
-                <p>OR Operator</p>
+                <h3>OR Operator</p>
                 <pre class="language-sql">
     <code>
         SELECT column1, column2, ...
@@ -399,7 +399,7 @@ FROM table_name
 WHERE condition1 OR condition2 OR condition3 ...;
 </code>
 </pre>
-                <p>NOT Operator</p>
+                <h3>NOT Operator</p>
                 <pre class="language-sql">
     <code>
         SELECT column1, column2, ...
@@ -497,7 +497,7 @@ VALUES (value1, value2, value3, ...);
                             We will have to use the IS NULL and IS NOT NULL operators instead.
                     </div>
                 </div>
-                <p>IS NULL Syntax</p>
+                <h3>IS NULL Syntax</p>
                 <pre class="language-sql">
     <code>
         SELECT column_names
@@ -505,7 +505,7 @@ FROM table_name
 WHERE column_name IS NULL;
 </code>
 </pre>
-                <p>IS NOT NULL Syntax/p>
+                <h3>IS NOT NULL Syntax/p>
                 <pre class="language-sql">
     <code>
         SELECT column_names
@@ -566,7 +566,7 @@ WHERE column_name IS NOT NULL;
         DELETE FROM table_name WHERE condition;
 </code>
 </pre>
-                <p>
+                <h3>
                     Delete all rows in a table without deleting the table
                 </p>
                 <pre class="language-sql">
@@ -629,7 +629,7 @@ LIMIT number;
                         of records can impact performance.
                     </div>
                 </div>
-                <p>MIN() Syntax</p>
+                <h3>MIN() Syntax</p>
                 <pre class="language-sql">
     <code>
         SELECT MIN(column_name)
@@ -643,7 +643,7 @@ WHERE condition;
 FROM Products;
 </code>
 </pre>
-                <p>MAX() Syntax</p>
+                <h3>MAX() Syntax</p>
                 <pre class="language-sql">
     <code>
         SELECT MAX(column_name)
@@ -947,14 +947,14 @@ FROM Customers;
                 </pre>
                     </div>
                 </div>
-                <p>Alias Column Syntax</p>
+                <h3>Alias Column Syntax</p>
                 <pre class="language-sql">
 <code>
     SELECT column_name AS alias_name
 FROM table_name;
 </code>
 </pre>
-                <p>Alias Table Syntax</p>
+                <h3>Alias Table Syntax</p>
                 <pre class="language-sql">
     <code>
         SELECT column_name(s)
@@ -1003,7 +1003,7 @@ FROM table_name AS alias_name;
                         </ul>
                     </div>
                 </div>
-                <p>INNER JOIN Syntax
+                <h3>INNER JOIN Syntax
                 </p>
                 <pre class="language-sql">
 <code>
@@ -1013,7 +1013,7 @@ INNER JOIN table2
 ON table1.column_name = table2.column_name;
 </code>
 </pre>
-                <p>LEFT JOIN Syntax</p>
+                <h3>LEFT JOIN Syntax</p>
                 <pre class="language-sql">
     <code>
         SELECT column_name(s)
@@ -1022,7 +1022,7 @@ LEFT JOIN table2
 ON table1.column_name = table2.column_name;
     </code>
     </pre>
-                <p>RIGHT JOIN Syntax</p>
+                <h3>RIGHT JOIN Syntax</p>
                 <pre class="language-sql">
         <code>
             SELECT column_name(s)
@@ -1031,7 +1031,7 @@ RIGHT JOIN table2
 ON table1.column_name = table2.column_name;
         </code>
         </pre>
-                <p>CROSS JOIN Syntax</p>
+                <h3>CROSS JOIN Syntax</p>
                 <pre class="language-sql">
             <code>
                 SELECT column_name(s)
@@ -1039,7 +1039,7 @@ FROM table1
 CROSS JOIN table2;
             </code>
             </pre>
-                <p>Self Join Syntax</p>
+                <h3>Self Join Syntax</p>
                 <pre class="language-sql">
                 <code>
                     SELECT column_name(s)
@@ -1079,7 +1079,7 @@ CROSS JOIN table2;
                         <b>UNION ALL</b>
                     </div>
                 </div>
-                <p>UNION Syntax</p>
+                <h3>UNION Syntax</p>
                 <pre class="language-sql">
                     <code>
                         SELECT column_name(s) FROM table1
@@ -1087,7 +1087,7 @@ CROSS JOIN table2;
                         SELECT column_name(s) FROM table2;
                     </code>
                     </pre>
-                <p>UNION ALL Syntax</p>
+                <h3>UNION ALL Syntax</p>
                 <pre class="language-sql">
     <code>
         SELECT column_name(s) FROM table1
@@ -1117,7 +1117,7 @@ CROSS JOIN table2;
                         AVG()) to group the result-set by one or more columns.<br>
                     </div>
                 </div>
-                <p>GROUP BY Syntax</p>
+                <h3>GROUP BY Syntax</p>
                 <pre class="language-sql">
                     <code>
                         SELECT column_name(s)
@@ -1127,7 +1127,7 @@ GROUP BY column_name(s)
 ORDER BY column_name(s);
                     </code>
                     </pre>
-                <p>Example:</p>
+                <h3>Example:</p>
                 <pre class="language-sql">
     <code>
         SELECT COUNT(CustomerID), Country
@@ -1155,7 +1155,7 @@ GROUP BY Country;
                         The HAVING clause was added to SQL because the WHERE keyword cannot be used with aggregate functions.
                     </div>
                 </div>
-                <p>HAVING Syntax</p>
+                <h3>HAVING Syntax</p>
                 <pre class="language-sql">
                     <code>
                         SELECT column_name(s)
@@ -1166,7 +1166,7 @@ GROUP BY Country;
                         ORDER BY column_name(s);
                     </code>
                     </pre>
-                <p>Example:</p>
+                <h3>Example:</p>
                 <pre class="language-sql">
     <code>
         SELECT COUNT(CustomerID), Country
@@ -1195,7 +1195,7 @@ HAVING COUNT(CustomerID) > 5;
 The EXISTS operator returns TRUE if the subquery returns one or more records.
                     </div>
                 </div>
-                <p>EXISTS Syntax</p>
+                <h3>EXISTS Syntax</p>
                 <pre class="language-sql">
                     <code>
                         SELECT column_name(s)
@@ -1204,7 +1204,7 @@ The EXISTS operator returns TRUE if the subquery returns one or more records.
                         (SELECT column_name FROM table_name WHERE condition);
                     </code>
                     </pre>
-                <p>Example:</p>
+                <h3>Example:</p>
                 <pre class="language-sql">
     <code>
         SELECT SupplierName
@@ -1236,7 +1236,7 @@ WHERE EXISTS (SELECT ProductName FROM Products WHERE Products.SupplierID = Suppl
                         Note: The operator must be a standard comparison operator (=, <>, !=, >, >=, <, or <=).
                     </div>
                 </div>
-                <p>ANY Syntax</p>
+                <h3>ANY Syntax</p>
                 <pre class="language-sql">
                     <code>
                         SELECT column_name(s)
@@ -1247,7 +1247,7 @@ WHERE EXISTS (SELECT ProductName FROM Products WHERE Products.SupplierID = Suppl
                           WHERE condition);
                     </code>
                     </pre>
-                <p>Example:</p>
+                <h3>Example:</p>
                 <pre class="language-sql">
     <code>
         SELECT COUNT(CustomerID), Country
@@ -1288,7 +1288,7 @@ HAVING COUNT(CustomerID) > 5;
                         Note: The operator must be a standard comparison operator (=, <>, !=, >, >=, <, or <=).
                     </div>
                 </div>
-                <p>ALL Syntax With SELECT</p>
+                <h3>ALL Syntax With SELECT</p>
                 <pre class="language-sql">
                     <code>
                         SELECT ALL column_name(s)
@@ -1297,7 +1297,7 @@ WHERE condition;
                     </code>
                     </pre>
 
-                    <p>ALL Syntax With WHERE or HAVING</p>
+                    <h3>ALL Syntax With WHERE or HAVING</p>
                     <pre class="language-sql">
                         <code>
                             SELECT column_name(s)
@@ -1309,7 +1309,7 @@ WHERE condition;
                         </code>
                         </pre>
 
-                <p>Example:</p>
+                <h3>Example:</p>
                 <pre class="language-sql">
     <code>
         SELECT COUNT(CustomerID), Country
@@ -1342,7 +1342,7 @@ The INSERT INTO SELECT statement requires that the data types in source and targ
 Note: The existing records in the target table are unaffected.
                     </div>
                 </div>
-                <p>INSERT INTO SELECT Syntax(Copy all columns from one table to another table)</p>
+                <h3>INSERT INTO SELECT Syntax(Copy all columns from one table to another table)</p>
                 <pre class="language-sql">
                     <code>
                         INSERT INTO table2
@@ -1350,7 +1350,7 @@ Note: The existing records in the target table are unaffected.
                         WHERE condition;
                     </code>
                     </pre>
-                <p>Copy only some columns from one table into another table</p>
+                <h3>Copy only some columns from one table into another table</p>
                 <pre class="language-sql">
     <code>
         INSERT INTO table2 (column1, column2, column3, ...)
@@ -1379,7 +1379,7 @@ Note: The existing records in the target table are unaffected.
 If there is no ELSE part and no conditions are true, it returns NULL.
                     </div>
                 </div>
-                <p>CASE Syntax</p>
+                <h3>CASE Syntax</p>
                 <pre class="language-sql">
                     <code>
                         CASE
@@ -1390,7 +1390,7 @@ If there is no ELSE part and no conditions are true, it returns NULL.
 END;
                     </code>
                     </pre>
-                <p>Example:</p>
+                <h3>Example:</p>
                 <pre class="language-sql">
     <code>
         SELECT OrderID, Quantity,
@@ -1420,7 +1420,7 @@ FROM OrderDetails;
                         The MySQL IFNULL() function lets you return an alternative value if an expression is NULL.
                     </div>
                 </div>
-                <p>CASE Syntax</p>
+                <h3>CASE Syntax</p>
                 <pre class="language-sql">
                     <code>
                         CASE
@@ -1431,7 +1431,7 @@ FROM OrderDetails;
 END;
                     </code>
                     </pre>
-                <p>Example:</p>
+                <h3>Example:</p>
                 <pre class="language-sql">
     <code>
         SELECT OrderID, Quantity,
@@ -1494,7 +1494,7 @@ FROM OrderDetails;
                         <h6 class="text-uppercase fw-bold mb-4">
                             <i class="bi bi-gem me-3"></i>Cheatbook
                         </h6>
-                        <p>
+                        <h3>
                             <li>Quick reference</li>
                             <li>
                                 Be productive after learning a new thing (i.e. programming
@@ -1509,19 +1509,19 @@ FROM OrderDetails;
                     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">Programming Languages</h6>
-                        <p>
+                        <h3>
                             <a href="c.html" class="text-reset">C</a>
                         </p>
-                        <p>
+                        <h3>
                             <a href="cplus.html" class="text-reset">C++</a>
                         </p>
-                        <p>
+                        <h3>
                             <a href="python.html" class="text-reset">Python</a>
                         </p>
-                        <p>
+                        <h3>
                             <a href="java.html" class="text-reset">Java</a>
                         </p>
-                        <p>
+                        <h3>
                             <a href="dsa.html" class="text-reset">DSA</a>
                         </p>
                     </div>
@@ -1530,19 +1530,19 @@ FROM OrderDetails;
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">Machine learning</h6>
-                        <p>
+                        <h3>
                             <a href="numpy.html" class="text-reset">Numpy</a>
                         </p>
-                        <p>
+                        <h3>
                             <a href="pandas.html" class="text-reset">Pandas</a>
                         </p>
-                        <p>
+                        <h3>
                             <a href="seaborn.html" class="text-reset">Seaborn</a>
                         </p>
-                        <p>
+                        <h3>
                             <a href="matplotlib.html" class="text-reset">Matplotlib</a>
                         </p>
-                        <p>
+                        <h3>
                             <a href="tensorflow.html" class="text-reset">Tensorflow</a>
                         </p>
                     </div>
@@ -1551,13 +1551,13 @@ FROM OrderDetails;
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                        <p><i class="bi bi-house-door me-3"></i>Badlapur,mumbai</p>
-                        <p>
+                        <h3><i class="bi bi-house-door me-3"></i>Badlapur,mumbai</p>
+                        <h3>
                             <i class="bi bi-envelope me-3"></i>
                             mrsohammanjrekar@gmail.com
                         </p>
-                        <p><i class="bi bi-phone me-3"></i> +91 7045208474</p>
-                        <p><i class="bi bi-whatsapp me-3"></i> +91 7045208474</p>
+                        <h3><i class="bi bi-phone me-3"></i> +91 7045208474</p>
+                        <h3><i class="bi bi-whatsapp me-3"></i> +91 7045208474</p>
                     </div>
                     <!-- Grid column -->
                 </div>
