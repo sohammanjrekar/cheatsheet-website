@@ -115,12 +115,15 @@ pre {
   height: 30vh;
   margin: auto;
 }
+footer{
+  font-size: small;
+}
 footer a {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;
-
+font-size: medium;
   position: relative;
 }
 footer a:after {
@@ -141,4 +144,7 @@ footer a:hover:after {
 }
 .navbar a:hover{
   color: rgb(255, 143, 63);
+}
+h3{
+  font-size: 1rem;
 }
