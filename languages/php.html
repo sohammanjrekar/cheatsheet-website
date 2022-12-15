@@ -622,568 +622,1676 @@ $y = 10.5;
                 </ul>
             </li>
             <li>
-                NULL Value<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                PHP Constants<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom9" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom9"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Null value</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">PHP Constants</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        A field with a NULL value is a field with no value.
+                        A constant is an identifier (name) for a simple value. The value cannot be changed during the
+                        script.
+                        <br><br>
+                        A valid constant name starts with a letter or underscore (no $ sign before the constant name).
                         <br>
-                        If a field in a table is optional, it is possible to insert a new record or update a record
-                        without adding a value to this field. Then, the field will be saved with a NULL value.
-                        <br>
-                        Note: A NULL value is different from a zero value or a field that contains spaces. A field with
-                        a NULL value is one that has been left blank during record creation! <br><br>
-                        How to Test for NULL Values? <br>
-                        It is not possible to test for NULL values with comparison operators, such as =, <, or <>.
-                            <br>
-                            We will have to use the IS NULL and IS NOT NULL operators instead.
+                        Parameters:
+
+                        name: Specifies the name of the constant
+                        value: Specifies the value of the constant
+                        case-insensitive: Specifies whether the constant name should be case-insensitive. Default is
+                        false.
                     </div>
                 </div>
-                <h3>IS NULL Syntax</h3>
+                <h3>Syntax</h3>
                 <pre class="language-php">
     <code>
-        SELECT column_names
-FROM table_name
-WHERE column_name IS NULL;
+        define(name, value, case-insensitive)
 </code>
 </pre>
-                <h3>IS NOT NULL Syntax/h3>
-                    <pre class="language-php">
+                <h3>Example</h3>
+                <pre class="language-php">
     <code>
-        SELECT column_names
-FROM table_name
-WHERE column_name IS NOT NULL;
+        define("GREETING", "Welcome to W3Schools.com!", true);
+echo greeting;
 </code>
 </pre>
             </li>
             <li>
-                UPDATE Statement<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                PHP Operators<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom10" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom10"
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom10"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">UPDATE Statement</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">PHP Operators</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        The UPDATE statement is used to modify the existing records in a table.
-                        Notice the WHERE clause in the UPDATE statement. <br> The WHERE clause specifies which record(s)
-                        that should be updated. If you omit the WHERE clause, all records in the table will be updated!
+                        Operators are used to perform operations on variables and values.
+                        <br><br>
+                        PHP divides the operators in the following groups:
+                        <br>
+                        <ul>
+                            <li>Arithmetic operators</li>
+                            <li>Assignment operators</li>
+                            <li>Comparison operators</li>
+                            <li>Increment/Decrement operators</li>
+                            <li>Logical operators</li>
+                            <li>String operators</li>
+                            <li>Array operators</li>
+                            <li>Conditional assignment operators</li>
+                        </ul>
                     </div>
                 </div>
-                <pre class="language-php">
-    <code>
-        UPDATE table_name
-        SET column1 = value1, column2 = value2, ...
-        WHERE condition;
-</code>
-</pre>
+                <br>
+                <ul>
+                    <li>Arithmetic operators<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvas10" aria-controls="offcanvasBottom">Read more...</button>
+                        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvas10"
+                            aria-labelledby="offcanvasBottomLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">PHP Operators</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body small">
+                                <table class="ws-table-all notranslate table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <th style="width:15%">Operator</th>
+                                            <th style="width:20%">Name</th>
+                                            <th style="width:20%">Example</th>
+                                            <th style="width:45%">Result</th>
+                                        </tr>
+                                        <tr>
+                                            <td>+</td>
+                                            <td>Addition</td>
+                                            <td>$x + $y</td>
+                                            <td>Sum of $x and $y</td>
+                                        </tr>
+                                        <tr>
+                                            <td>-</td>
+                                            <td>Subtraction</td>
+                                            <td>$x - $y</td>
+                                            <td>Difference of $x and $y</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>*</td>
+                                            <td>Multiplication</td>
+                                            <td>$x * $y</td>
+                                            <td>Product of $x and $y</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>/</td>
+                                            <td>Division</td>
+                                            <td>$x / $y</td>
+                                            <td>Quotient of $x and $y</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>%</td>
+                                            <td>Modulus</td>
+                                            <td>$x % $y</td>
+                                            <td>Remainder of $x divided by $y</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>**</td>
+                                            <td>Exponentiation</td>
+                                            <td>$x ** $y</td>
+                                            <td>Result of raising $x to the $y'th power</td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+                    <li>Assignment operators<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvas11" aria-controls="offcanvasBottom">Read more...</button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas11"
+                            aria-labelledby="offcanvasBottomLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Assignment operators</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body small">
+                                <table class="ws-table-all notranslate table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <th style="width:15%">Assignment</th>
+                                            <th style="width:20%">Same as... </th>
+                                            <th style="width:65%">Description</th>
+                                        </tr>
+                                        <tr>
+                                            <td>x = y</td>
+                                            <td>x = y</td>
+                                            <td>The left operand gets set to the value of the expression on the right
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>x += y</td>
+                                            <td>x = x + y</td>
+                                            <td>Addition</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>x -= y</td>
+                                            <td>x = x - y</td>
+                                            <td>Subtraction</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>x *= y</td>
+                                            <td>x = x * y</td>
+                                            <td>Multiplication</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>x /= y</td>
+                                            <td>x = x / y</td>
+                                            <td>Division</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>x %= y</td>
+                                            <td>x = x % y</td>
+                                            <td>Modulus</td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                    <li>Comparison operators<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvas12" aria-controls="offcanvasBottom">Read more...</button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas12"
+                            aria-labelledby="offcanvasBottomLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Comparison operators</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body small">
+                                <table class="ws-table-all notranslate table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <th style="width:15%">Operator</th>
+                                            <th style="width:22%">Name</th>
+                                            <th style="width:15%">Example</th>
+                                            <th style="width:48%">Result</th>
+                                        </tr>
+                                        <tr>
+                                            <td>==</td>
+                                            <td>Equal</td>
+                                            <td>$x == $y</td>
+                                            <td>Returns true if $x is equal to $y</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>===</td>
+                                            <td>Identical</td>
+                                            <td>$x === $y</td>
+                                            <td>Returns true if $x is equal to $y, and they are of the same type</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>!=</td>
+                                            <td>Not equal</td>
+                                            <td>$x != $y</td>
+                                            <td>Returns true if $x is not equal to $y</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>&lt;&gt;</td>
+                                            <td>Not equal</td>
+                                            <td>$x &lt;&gt; $y</td>
+                                            <td>Returns true if $x is not equal to $y</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>!==</td>
+                                            <td>Not identical</td>
+                                            <td>$x !== $y</td>
+                                            <td>Returns true if $x is not equal to $y, or they are not of the same type
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>&gt;</td>
+                                            <td>Greater than</td>
+                                            <td>$x &gt; $y</td>
+                                            <td>Returns true if $x is greater than $y</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>&lt;</td>
+                                            <td>Less than</td>
+                                            <td>$x &lt; $y</td>
+                                            <td>Returns true if $x is less than $y</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>&gt;=</td>
+                                            <td>Greater than or equal to</td>
+                                            <td>$x &gt;= $y</td>
+                                            <td>Returns true if $x is greater than or equal to $y</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>&lt;=</td>
+                                            <td>Less than or equal to</td>
+                                            <td>$x &lt;= $y</td>
+                                            <td>Returns true if $x is less than or equal to $y</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>&lt;=&gt;</td>
+                                            <td>Spaceship</td>
+                                            <td>$x &lt;=&gt; $y</td>
+                                            <td>Returns an integer less than, equal to, or greater than zero, depending
+                                                on
+                                                if $x is less than, equal to, or greater than $y. Introduced in PHP 7.
+                                            </td>
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                    <li>Increment/Decrement operators<button class="btn btn-primary" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvas13"
+                            aria-controls="offcanvasBottom">Read more...</button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas13"
+                            aria-labelledby="offcanvasBottomLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Increment/Decrement operators</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body small">
+                                <table class="ws-table-all notranslate table-bordered" id="table1">
+                                    <tbody>
+                                        <tr>
+                                            <th style="width:15%">Operator</th>
+                                            <th style="width:20%">Name </th>
+                                            <th style="width:65%">Description</th>
+                                        </tr>
+                                        <tr>
+                                            <td>++$x</td>
+                                            <td>Pre-increment</td>
+                                            <td>Increments $x by one, then returns $x</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>$x++</td>
+                                            <td>Post-increment</td>
+                                            <td>Returns $x, then increments $x by one</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>--$x</td>
+                                            <td>Pre-decrement</td>
+                                            <td>Decrements $x by one, then returns $x</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>$x--</td>
+                                            <td>Post-decrement</td>
+                                            <td>Returns $x, then decrements $x by one</td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                    <li>Logical operators<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvas14" aria-controls="offcanvasBottom">Read more...</button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas14"
+                            aria-labelledby="offcanvasBottomLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Logical operators</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body small">
+                                <table class="ws-table-all notranslate table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <th style="width:15%">Operator</th>
+                                            <th style="width:20%">Name</th>
+                                            <th style="width:20%">Example</th>
+                                            <th style="width:45%">Result</th>
+                                        </tr>
+                                        <tr>
+                                            <td>and</td>
+                                            <td>And</td>
+                                            <td>$x and $y</td>
+                                            <td>True if both $x and $y are true</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>or</td>
+                                            <td>Or</td>
+                                            <td>$x or $y</td>
+                                            <td>True if either $x or $y is true</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>xor</td>
+                                            <td>Xor</td>
+                                            <td>$x xor $y</td>
+                                            <td>True if either $x or $y is true, but not both</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>&amp;&amp;</td>
+                                            <td>And</td>
+                                            <td>$x &amp;&amp; $y</td>
+                                            <td>True if both $x and $y are true</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>||</td>
+                                            <td>Or</td>
+                                            <td>$x || $y</td>
+                                            <td>True if either $x or $y is true</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>!</td>
+                                            <td>Not</td>
+                                            <td>!$x</td>
+                                            <td>True if $x is not true</td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                    <li>String operators<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvas15" aria-controls="offcanvasBottom">Read more...</button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas15"
+                            aria-labelledby="offcanvasBottomLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">String operators</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body small">
+                                <table class="ws-table-all notranslate table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <th style="width:15%">Operator</th>
+                                            <th style="width:25%">Name</th>
+                                            <th style="width:25%">Example</th>
+                                            <th style="width:25%">Result</th>
+                                        </tr>
+                                        <tr>
+                                            <td>.</td>
+                                            <td>Concatenation</td>
+                                            <td>$txt1 . $txt2</td>
+                                            <td>Concatenation of $txt1 and $txt2</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>.=</td>
+                                            <td>Concatenation assignment</td>
+                                            <td>$txt1 .= $txt2</td>
+                                            <td>Appends $txt2 to $txt1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                    <li>Array operators<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvas16" aria-controls="offcanvasBottom">Read more...</button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas16"
+                            aria-labelledby="offcanvasBottomLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Array operators</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body small">
+                                <table class="ws-table-all notranslate table-bordered" id="table2">
+                                    <tbody>
+                                        <tr>
+                                            <th style="width:15%">Operator</th>
+                                            <th style="width:18%">Name</th>
+                                            <th style="width:17%">Example</th>
+                                            <th style="width:50%">Result</th>
+                                        </tr>
+                                        <tr>
+                                            <td>+</td>
+                                            <td>Union</td>
+                                            <td>$x + $y</td>
+                                            <td>Union of $x and $y</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>==</td>
+                                            <td>Equality</td>
+                                            <td>$x == $y</td>
+                                            <td>Returns true if $x and $y have the same key/value pairs</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>===</td>
+                                            <td>Identity</td>
+                                            <td>$x === $y</td>
+                                            <td>Returns true if $x and $y have the same key/value pairs in the same
+                                                order and of the same types</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>!=</td>
+                                            <td>Inequality</td>
+                                            <td>$x != $y</td>
+                                            <td>Returns true if $x is not equal to $y</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>&lt;&gt;</td>
+                                            <td>Inequality</td>
+                                            <td>$x &lt;&gt; $y</td>
+                                            <td>Returns true if $x is not equal to $y</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>!==</td>
+                                            <td>Non-identity</td>
+                                            <td>$x !== $y</td>
+                                            <td>Returns true if $x is not identical to $y</td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                    <li>Conditional assignment operators<button class="btn btn-primary" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvas17"
+                            aria-controls="offcanvasBottom">Read more...</button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas17"
+                            aria-labelledby="offcanvasBottomLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Conditional assignment operators
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body small">
+                                <table class="ws-table-all notranslate table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <th style="width:15%">Operator</th>
+                                            <th style="width:22%">Name</th>
+                                            <th style="width:15%">Example</th>
+                                            <th style="width:48%">Result</th>
+                                        </tr>
+                                        <tr>
+                                            <td>?:</td>
+                                            <td>Ternary</td>
+                                            <td>$x = <em>expr1</em> ? <em>expr2</em> : <em>expr3</em></td>
+                                            <td>Returns the value of $x.<br>The value of $x is <em>expr2</em> if
+                                                <em>expr1</em>
+                                                = TRUE.<br>The value of $x is <em>expr3</em> if <em>expr1</em> = FALSE
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>??</td>
+                                            <td>Null coalescing</td>
+                                            <td>$x = <em>expr1</em> ?? <em>expr2</em></td>
+                                            <td>Returns the value of $x.<br>The value of $x is <em>expr1</em> if
+                                                <em>expr1</em>
+                                                exists, and is not NULL.<br>If <em>expr1</em> does not exist, or is
+                                                NULL, the value of $x is
+                                                <em>expr2</em>.<br>Introduced in PHP 7
+                                            </td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </li>
             <li>
-                DELETE Statement<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                PHP Conditional Statements<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom11" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom11"
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom11"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasBottomLabel">DELETE Statement</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        The DELETE statement is used to delete existing records in a table. <br>
-                        The WHERE clause specifies which record(s) should be deleted. If you omit the WHERE clause, all
-                        records in the table will be deleted!
+                        In PHP we have the following conditional statements:
+                        <br>
+                        <ul>
+                            <li>if statement - executes some code if one condition is true</li>
+                            <li>if...else statement - executes some code if a condition is true and another code if that
+                                condition is false</li>
+                            <li>if...elseif...else statement - executes different codes for more than two conditions
+                            </li>
+                            <li>switch statement - selects one of many blocks of code to be executed</li>
+                        </ul>
+
+
+
+
                     </div>
                 </div>
-                <pre class="language-php">
-    <code>
-        DELETE FROM table_name WHERE condition;
-</code>
-</pre>
-                <h3>
-                    Delete all rows in a table without deleting the table
-                </h3>
-                <pre class="language-php">
-    <code>
-        DELETE FROM table_name;
-</code>
-</pre>
+                <ul>
+                    <li>The if Statement
+                        <pre class="language-php">
+                            <code>
+                                if (condition) {
+                                    code to be executed if condition is true;
+                                  }
+                        </code>
+                        </pre>
+                    </li>
+                    <li>The if...else Statement
+                        <pre class="language-php">
+                        <code>
+                            if (condition) {
+                                code to be executed if condition is true;
+                              } else {
+                                code to be executed if condition is false;
+                              }
+                    </code>
+                    </pre>
+                    </li>
+                    <li>The if...elseif...else Statement
+                        <pre class="language-php">
+                        <code>
+                            if (condition) {
+                                code to be executed if this condition is true;
+                              } elseif (condition) {
+                                code to be executed if first condition is false and this condition is true;
+                              } else {
+                                code to be executed if all conditions are false;
+                              }
+                    </code>
+                    </pre>
+                    </li>
+                    <li>switch Statement
+                        <pre class="language-php">
+                        <code>
+                            switch (n) {
+                                case label1:
+                                  code to be executed if n=label1;
+                                  break;
+                                case label2:
+                                  code to be executed if n=label2;
+                                  break;
+                                case label3:
+                                  code to be executed if n=label3;
+                                  break;
+                                  ...
+                                default:
+                                  code to be executed if n is different from all labels;
+                              }
+                    </code>
+                    </pre>
+                    </li>
+                </ul>
+
             </li>
             <li>
-                LIMIT Clause<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                PHP Loops<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom12" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom12"
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom12"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">LIMIT Clause</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">PHP Loops</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        The LIMIT clause is used to specify the number of records to return.
+                        Often when you write code, you want the same block of code to run over and over again a certain
+                        number of times. So, instead of adding several almost equal code-lines in a script, we can use
+                        loops. <br>
+                        Loops are used to execute the same block of code again and again, as long as a certain condition
+                        is true.
                         <br>
-                        The LIMIT clause is useful on large tables with thousands of records. Returning a large number
-                        of records can impact performance.
+                        In PHP, we have the following loop types:
+                        <br>
+                        <ul>
+                            <li>while - loops through a block of code as long as the specified condition is true</li>
+                            <li>do...while - loops through a block of code once, and then repeats the loop as long as
+                                the specified condition is true</li>
+                            <li>for - loops through a block of code a specified number of times <br><br>
+                                Parameters:
+                                <br>
+                                init counter: Initialize the loop counter value<br><br>
+                                test counter: Evaluated for each loop iteration. If it evaluates to TRUE, the loop
+                                continues. If it evaluates to FALSE, the loop ends.<br><br>
+                                increment counter: Increases the loop counter value<br>
+
+                            </li>
+                            <li>foreach - loops through a block of code for each element in an array</li>
+                            <li>Break- It was used to "jump out" of a switch statement.The break statement can also be
+                                used to jump out of a loop.</li>
+                            <li>Continue - The continue statement breaks one iteration (in the loop), if a specified
+                                condition occurs, and continues with the next iteration in the loop.</li>
+                        </ul>
+
+
+
                     </div>
                 </div>
-                <pre class="language-php">
-    <code>
-        SELECT column_name(s)
-FROM table_name
-WHERE condition
-LIMIT number;
-</code>
-</pre>
+                <ul>
+                    <li>while Loop
+                        <pre class="language-php">
+                        <code>
+                            while (condition is true) {
+                                code to be executed;
+                              }
+                    </code>
+                    </pre>
+                    </li>
+                    <li>do...while Loop
+                        <pre class="language-php">
+                        <code>
+                            do {
+                                code to be executed;
+                              } while (condition is true);
+                    </code>
+                    </pre>
+                    </li>
+                    <li>for Loop
+                        <pre class="language-php">
+                        <code>
+                            for (init counter; test counter; increment counter) {
+                                code to be executed for each iteration;
+                              }
+                    </code>
+                    </pre>
+                    </li>
+                    <li>foreach Loop
+                        <pre class="language-php">
+                        <code>
+                            foreach ($array as $value) {
+                                code to be executed;
+                              }
+                    </code>
+                    </pre>
+                    </li>
+
+
+
+
+
+                    <li>Break
+                        <pre class="language-php">
+                        <code>
+                            for ($x = 0; $x < 10; $x++) {
+                                if ($x == 4) {
+                                  break;
+                                }
+                                echo "The number is: $x <br>";
+                              }
+                    </code>
+                    </pre>
+                    </li>
+                    <li>Continue
+                        <pre class="language-php">
+                        <code>
+                            for ($x = 0; $x < 10; $x++) {
+                                if ($x == 4) {
+                                  continue;
+                                }
+                                echo "The number is: $x <br>";
+                              }
+                    </code>
+                    </pre>
+                    </li>
+                </ul>
+
             </li>
             <li>
-                MIN() and MAX() Functions<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                User Defined Function<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom13" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom13"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">MIN() and MAX() Functions</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">User Defined Function</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        The LIMIT clause is used to specify the number of records to return.
-                        <br>
-                        The LIMIT clause is useful on large tables with thousands of records. Returning a large number
-                        of records can impact performance.
+                        Besides the built-in PHP functions, it is possible to create your own functions.
+                        <br><br>
+                        A function is a block of statements that can be used repeatedly in a program.<br>
+                        A function will not execute automatically when a page loads.<br>
+                        A function will be executed by a call to the function.<br>
                     </div>
                 </div>
-                <h3>MIN() Syntax</h3>
+
                 <pre class="language-php">
     <code>
-        SELECT MIN(column_name)
-FROM table_name
-WHERE condition;
+        function functionName() {
+            code to be executed;
+          }
 </code>
 </pre>
-                <pre class="language-php">
-    <code>
-        SELECT MIN(Price) AS SmallestPrice
-FROM Products;
-</code>
-</pre>
-                <h3>MAX() Syntax</h3>
-                <pre class="language-php">
-    <code>
-        SELECT MAX(column_name)
-FROM table_name
-WHERE condition;
-</code>
-</pre>
-                <pre class="language-php">
-    <code>
-        SELECT MAX(Price) AS LargestPrice
-        FROM Products;
-</code>
-</pre>
+            </li>
             <li>
-                COUNT()<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                PHP Arrays<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom14" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom14"
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom14"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">COUNT()</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">PHP Arrays</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        The COUNT() function returns the number of rows that matches a specified criterion.
+                        An array is a special variable, which can hold more than one value at a time.An array can hold
+                        many values under a single name, and you can access the values by referring to an index number.
+                        <br><br>
+                        In PHP, there are three types of arrays:
+                        <br>
+                        Indexed arrays - Arrays with a numeric index <br>
+                        Associative arrays - Arrays with named keys <br>
+                        Multidimensional arrays - Arrays containing one or more arrays <br>
+                        <br><br><br>
+                        PHP - Sort Functions For Arrays <br>
+                        The elements in an array can be sorted in alphabetical or numerical order, descending or
+                        ascending. <br> <br>
+
+                        sort() - sort arrays in ascending order <br>
+                        rsort() - sort arrays in descending order <br>
+                        asort() - sort associative arrays in ascending order, according to the value <br>
+                        ksort() - sort associative arrays in ascending order, according to the key <br>
+                        arsort() - sort associative arrays in descending order, according to the value <br>
+                        krsort() - sort associative arrays in descending order, according to the key <br><br>
+                        <table class="ws-table-all notranslate table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th style="width:25%">Function</th>
+                                    <th style="width:75%">Description</th>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array.asp">array()</a></td>
+                                    <td>Creates an array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_change_key_case.asp">array_change_key_case()</a></td>
+                                    <td>Changes all keys in an array to lowercase or uppercase</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_chunk.asp">array_chunk()</a></td>
+                                    <td>Splits an array into chunks of arrays</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_column.asp">array_column()</a></td>
+                                    <td>Returns the values from a single column in the input array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_combine.asp">array_combine()</a></td>
+                                    <td>Creates an array by using the elements from one "keys" array and one "values"
+                                        array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_count_values.asp">array_count_values()</a></td>
+                                    <td>Counts all the values of an array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_diff.asp">array_diff()</a></td>
+                                    <td>Compare arrays, and returns the differences (compare values only)</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_diff_assoc.asp">array_diff_assoc()</a></td>
+                                    <td>Compare arrays, and returns the differences (compare keys and values)</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_diff_key.asp">array_diff_key()</a></td>
+                                    <td>Compare arrays, and returns the differences (compare keys only)</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_diff_uassoc.asp">array_diff_uassoc()</a></td>
+                                    <td>Compare arrays, and returns the differences (compare keys and values, using a
+                                        user-defined key comparison function)</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_diff_ukey.asp">array_diff_ukey()</a></td>
+                                    <td>Compare arrays, and returns the differences (compare keys only, using a
+                                        user-defined key comparison function)</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_fill.asp">array_fill()</a></td>
+                                    <td>Fills an array with values</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_fill_keys.asp">array_fill_keys()</a></td>
+                                    <td>Fills an array with values, specifying keys</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_filter.asp">array_filter()</a></td>
+                                    <td>Filters the values of an array using a callback function</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_flip.asp">array_flip()</a></td>
+                                    <td>Flips/Exchanges all keys with their associated values in an array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_intersect.asp">array_intersect()</a></td>
+                                    <td>Compare arrays, and returns the matches (compare values only)</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_intersect_assoc.asp">array_intersect_assoc()</a></td>
+                                    <td>Compare arrays and returns the matches (compare keys and values)</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_intersect_key.asp">array_intersect_key()</a></td>
+                                    <td>Compare arrays, and returns the matches (compare keys only)</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_intersect_uassoc.asp">array_intersect_uassoc()</a></td>
+                                    <td>Compare arrays, and returns the matches (compare keys and values, using a
+                                        user-defined key comparison function)</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_intersect_ukey.asp">array_intersect_ukey()</a></td>
+                                    <td>Compare arrays, and returns the matches (compare keys only, using a user-defined
+                                        key comparison function)</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_key_exists.asp">array_key_exists()</a></td>
+                                    <td>Checks if the specified key exists in the array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_keys.asp">array_keys()</a></td>
+                                    <td>Returns all the keys of an array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_map.asp">array_map()</a></td>
+                                    <td>Sends each value of an array to a user-made function, which returns new values
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_merge.asp">array_merge()</a></td>
+                                    <td>Merges one or more arrays into one array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_merge_recursive.asp">array_merge_recursive()</a></td>
+                                    <td>Merges one or more arrays into one array recursively</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_multisort.asp">array_multisort()</a></td>
+                                    <td>Sorts multiple or multi-dimensional arrays</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_pad.asp">array_pad()</a></td>
+                                    <td>Inserts a specified number of items, with a specified value, to an array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_pop.asp">array_pop()</a></td>
+                                    <td>Deletes the last element of an array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_product.asp">array_product()</a></td>
+                                    <td>Calculates the product of the values in an array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_push.asp">array_push()</a></td>
+                                    <td>Inserts one or more elements to the end of an array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_rand.asp">array_rand()</a></td>
+                                    <td>Returns one or more random keys from an array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_reduce.asp">array_reduce()</a></td>
+                                    <td>Returns an array as a string, using a user-defined function</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_replace.asp">array_replace()</a></td>
+                                    <td>Replaces the values of the first array with the values from following arrays
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_replace_recursive.asp">array_replace_recursive()</a></td>
+                                    <td>Replaces the values of the first array with the values from following arrays
+                                        recursively</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_reverse.asp">array_reverse()</a></td>
+                                    <td>Returns an array in the reverse order</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_search.asp">array_search()</a></td>
+                                    <td>Searches an array for a given value and returns the key</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_shift.asp">array_shift()</a></td>
+                                    <td>Removes the first element from an array, and returns the value of the removed
+                                        element</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_slice.asp">array_slice()</a></td>
+                                    <td>Returns selected parts of an array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_splice.asp">array_splice()</a></td>
+                                    <td>Removes and replaces specified elements of an array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_sum.asp">array_sum()</a></td>
+                                    <td>Returns the sum of the values in an array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_udiff.asp">array_udiff()</a></td>
+                                    <td>Compare arrays, and returns the differences (compare values only, using a
+                                        user-defined key comparison function)</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_udiff_assoc.asp">array_udiff_assoc()</a></td>
+                                    <td>Compare arrays, and returns the differences (compare keys and values, using a
+                                        built-in function to compare the keys and a user-defined function to compare the
+                                        values)</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_udiff_uassoc.asp">array_udiff_uassoc()</a></td>
+                                    <td>Compare arrays, and returns the differences (compare keys and values, using two
+                                        user-defined key comparison functions)</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_uintersect.asp">array_uintersect()</a></td>
+                                    <td>Compare arrays, and returns the matches (compare values only, using a
+                                        user-defined key comparison function)</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_uintersect_assoc.asp">array_uintersect_assoc()</a></td>
+                                    <td>Compare arrays, and returns the matches (compare keys and values, using a
+                                        built-in function to compare the keys and a user-defined function to compare the
+                                        values)</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_uintersect_uassoc.asp">array_uintersect_uassoc()</a></td>
+                                    <td>Compare arrays, and returns the matches (compare keys and values, using two
+                                        user-defined key comparison functions)</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_unique.asp">array_unique()</a></td>
+                                    <td>Removes duplicate values from an array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_unshift.asp">array_unshift()</a></td>
+                                    <td>Adds one or more elements to the beginning of an array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_values.asp">array_values()</a></td>
+                                    <td>Returns all the values of an array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_walk.asp">array_walk()</a></td>
+                                    <td>Applies a user function to every member of an array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_walk_recursive.asp">array_walk_recursive()</a></td>
+                                    <td>Applies a user function recursively to every member of an array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_arsort.asp">arsort()</a></td>
+                                    <td>Sorts an associative array in descending order, according to the value</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_asort.asp">asort()</a></td>
+                                    <td>Sorts an associative array in ascending order, according to the value</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_compact.asp">compact()</a></td>
+                                    <td>Create array containing variables and their values</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_count.asp">count()</a></td>
+                                    <td>Returns the number of elements in an array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_current.asp">current()</a></td>
+                                    <td>Returns the current element in an array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_each.asp">each()</a></td>
+                                    <td><span class="deprecated">Deprecated from PHP 7.2.</span> Returns the current key
+                                        and value pair from an array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_end.asp">end()</a></td>
+                                    <td>Sets the internal pointer of an array to its last element</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_extract.asp">extract()</a></td>
+                                    <td>Imports variables into the current symbol table from an array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_in_array.asp">in_array()</a></td>
+                                    <td>Checks if a specified value exists in an array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_key.asp">key()</a></td>
+                                    <td>Fetches a key from an array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_krsort.asp">krsort()</a></td>
+                                    <td>Sorts an associative array in descending order, according to the key</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_ksort.asp">ksort()</a></td>
+                                    <td>Sorts an associative array in ascending order, according to the key</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_list.asp">list()</a></td>
+                                    <td>Assigns variables as if they were an array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_natcasesort.asp">natcasesort()</a></td>
+                                    <td>Sorts an array using a case insensitive "natural order" algorithm</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_natsort.asp">natsort()</a></td>
+                                    <td>Sorts an array using a "natural order" algorithm</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_next.asp">next()</a></td>
+                                    <td>Advance the internal array pointer of an array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_pos.asp">pos()</a></td>
+                                    <td>Alias of <a href="func_array_current.asp">current()</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_prev.asp">prev()</a></td>
+                                    <td>Rewinds the internal array pointer</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_range.asp">range()</a></td>
+                                    <td>Creates an array containing a range of elements</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_reset.asp">reset()</a></td>
+                                    <td>Sets the internal pointer of an array to its first element</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_rsort.asp">rsort()</a></td>
+                                    <td>Sorts an indexed array in descending order</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_shuffle.asp">shuffle()</a></td>
+                                    <td>Shuffles an array</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_sizeof.asp">sizeof()</a></td>
+                                    <td>Alias of <a href="func_array_count.asp">count()</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_sort.asp">sort()</a></td>
+                                    <td>Sorts an indexed array in ascending order</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_uasort.asp">uasort()</a></td>
+                                    <td>Sorts an array by values using a user-defined comparison function</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_uksort.asp">uksort()</a></td>
+                                    <td>Sorts an array by keys using a user-defined comparison function</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="func_array_usort.asp">usort()</a></td>
+                                    <td>Sorts an array using a user-defined comparison function</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-                <pre class="language-php">
-<code>
-    SELECT COUNT(column_name)
-    FROM table_name
-    WHERE condition;
-</code>
-</pre>
+                <ul>
+                    <li>PHP Indexed Arrays
+                        <pre class="language-php">
+                        <code>
+                            $cars = array("Volvo", "BMW", "Toyota");
+                        </code>
+                        </pre>
+                    </li>
+                    <li>Associative Arrays
+                        <pre class="language-php">
+                        <code>
+                            $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+                        </code>
+                        </pre>
+                    </li>
+                    <li>Multidimensional Arrays
+                        <pre class="language-php">
+                            <code>
+                                echo $cars[0][0]
+                            </code>
+                            </pre>
+                    </li>
+                    <li>PHP - Sort Functions For Arrays
+                        <ol type="a">
+                            <li>Sort Array in Ascending Order - sort()
+                                <pre class="language-php">
+                                        <code>
+                                            $cars = array("Volvo", "BMW", "Toyota");
+                                            sort($cars);
+                                        </code>
+                                        </pre>
+                            </li>
+                            <li>Sort Array in Descending Order - rsort()
+                                <pre class="language-php">
+                                        <code>
+                                            $cars = array("Volvo", "BMW", "Toyota");
+rsort($cars);
+                                        </code>
+                                        </pre>
+                            </li>
+                            <li>Sort Array (Ascending Order), According to Value - asort()
+                                <pre class="language-php">
+                                        <code>
+                                            $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+asort($age);
+                                        </code>
+                                        </pre>
+                            </li>
+                            <li>Sort Array (Ascending Order), According to Key - ksort()
+                                <pre class="language-php">
+                                        <code>
+                                            $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+ksort($age);
+                                        </code>
+                                        </pre>
+                            </li>
+                            <li>Sort Array (Descending Order), According to Value - arsort()
+                                <pre class="language-php">
+                                        <code>
+                                            $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+                                            arsort($age);
+                                        </code>
+                                        </pre>
+                            </li>
+                            <li>Sort Array (Descending Order), According to Key - krsort()
+                                <pre class="language-php">
+                                        <code>
+                                            $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+                                            krsort($age);
+                                        </code>
+                                        </pre>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+
+
             </li>
             <li>
-                AVG()<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                Superglobals<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom16" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom16"
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom16"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">AVG()</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Superglobals</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        The AVG() function returns the average value of a numeric column.
+                        Some predefined variables in PHP are "superglobals", which means that they are always
+                        accessible, regardless of scope - and you can access them from any function, class or file
+                        without having to do anything special.
+                        <br><br>
+                        The PHP superglobal variables are: <br><br>
+
+                        $_SERVER : $_SERVER is a PHP super global variable which holds information about headers, paths,
+                        and script locations. <br>
+                        $GLOBALS :$GLOBALS is a PHP super global variable which is used to access global variables from
+                        anywhere in the PHP script (also from within functions or methods). <br> PHP stores all global
+                        variables in an array called $GLOBALS[index]. The index holds the name of the variable. <br>
+                        $_REQUEST : PHP $_REQUEST is a PHP super global variable which is used to collect data after
+                        submitting an HTML form. <br>
+                        $_POST : PHP $_POST is a PHP super global variable which is used to collect form data after
+                        submitting an HTML form with method="post". $_POST is also widely used to pass variables.<br>
+                        $_GET : PHP $_GET is a PHP super global variable which is used to collect form data after
+                        submitting an HTML form with method="get".$_GET can also collect data sent in the URL. <br>
+                        $_FILES <br>
+                        $_ENV <br>
+                        $_COOKIE <br>
+                        $_SESSION <br>
                     </div>
                 </div>
-                <pre class="language-php">
-<code>
-    SELECT AVG(column_name)
-FROM table_name
-WHERE condition;
-</code>
-</pre>
             </li>
             <li>
-                SUM()<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                Regular Expression<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom18" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom18"
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom18"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">SUM()</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Regular Expression</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        The SUM() function returns the total sum of a numeric column.
+                        A regular expression is a sequence of characters that forms a search pattern. When you search
+                        for data in a text, you can use this search pattern to describe what you are searching for.
+                        <br>
+                        A regular expression can be a single character, or a more complicated pattern.
+                        <br>
+                        Regular expressions can be used to perform all types of text search and text replace operations.
+                        <br><br>
+                        Regular Expression Functions
+                        <br>
+                        <table class="ws-table-all notranslate table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th style="width:20%">Function</th>
+                                    <th style="width:80%">Description</th>
+                                </tr>
+                                <tr>
+                                    <td>preg_match()</td>
+                                    <td>Returns 1 if the pattern was found in the string and 0 if not</td>
+                                </tr>
+                                <tr>
+                                    <td>preg_match_all()</td>
+                                    <td>Returns the number of times the pattern was found in the string, which may also
+                                        be 0</td>
+                                </tr>
+                                <tr>
+                                    <td>preg_replace()</td>
+                                    <td>Returns a new string where matched patterns have been replaced with another
+                                        string</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-                <pre class="language-php">
-<code>
-    SELECT SUM(column_name)
-FROM table_name
-WHERE condition;
-</code>
-</pre>
+                <ul>
+                    <li>preg_match()
+                        <pre class="language-php">
+                        <code>
+                            $str = "Visit W3Schools";
+                        $pattern = "/w3schools/i";
+                        echo preg_match($pattern, $str); // Outputs 1
+                        </code>
+                        </pre>
+                    </li>
+                    <li>preg_match_all()
+                        <pre class="language-php">
+                        <code>
+                            $str = "The rain in SPAIN falls mainly on the plains.";
+                        $pattern = "/ain/i";
+                        echo preg_match_all($pattern, $str); // Outputs 4
+                        </code>
+                        </pre>
+                    </li>
+                    <li>preg_replace()
+                        <pre class="language-php">
+                        <code>
+                            $str = "Visit Microsoft!";
+                            $pattern = "/microsoft/i";
+                            echo preg_replace($pattern, "W3Schools", $str); // Outputs "Visit W3Schools!"
+                        </code>
+                        </pre>
+                    </li>
+                </ul>
             </li>
             <li>
-                LIKE Operator<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                Regular Expression Modifiers<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom19" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom19"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">LIKE Operator</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Regular Expression Modifiers</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.
-                        <br>
-                        There are two wildcards often used in conjunction with the LIKE operator:
-                        <br>
-                        <ol>
-                            <li>
-                                The percent sign (%) represents zero, one, or multiple characters</li>
-                            <li>The underscore sign (_) represents one, single character</li>
-                            <li>The percent sign and the underscore can also be used in combinations!</li>
-                        </ol><br>
-                        Tip: You can also combine any number of conditions using AND or OR operators.
-                        <br>
+                        Modifiers can change how a search is performed. <br><br>
                         <table class="ws-table-all notranslate table-bordered">
                             <tbody>
                                 <tr>
-                                    <th>LIKE Operator</th>
+                                    <th style="width:22%">Modifier</th>
                                     <th>Description</th>
                                 </tr>
                                 <tr>
-                                    <td>WHERE CustomerName LIKE 'a%'</td>
-                                    <td>Finds any values that start with "a"</td>
+                                    <td>i</td>
+                                    <td>Performs a case-insensitive search</td>
                                 </tr>
                                 <tr>
-                                    <td>WHERE CustomerName LIKE '%a'</td>
-                                    <td>Finds any values that end with "a"</td>
+                                    <td>m</td>
+                                    <td>Performs a multiline search (patterns that search for the
+                                        beginning or end of a string will match the beginning or end
+                                        of each line)</td>
                                 </tr>
                                 <tr>
-                                    <td>WHERE CustomerName LIKE '%or%'</td>
-                                    <td>Finds any values that have "or" in any position</td>
-                                </tr>
-                                <tr>
-                                    <td>WHERE CustomerName LIKE '_r%'</td>
-                                    <td>Finds any values that have "r" in the second position</td>
-                                </tr>
-                                <tr>
-                                    <td>WHERE CustomerName LIKE 'a_%'</td>
-                                    <td>Finds any values that start with "a" and are at least 2 characters in length
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>WHERE CustomerName LIKE 'a__%'</td>
-                                    <td>Finds any values that start with "a" and are at least 3 characters in length
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>WHERE ContactName LIKE 'a%o'</td>
-                                    <td>Finds any values that start with "a" and ends with "o"</td>
+                                    <td>u</td>
+                                    <td>Enables correct matching of UTF-8 encoded patterns</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-                <pre class="language-php">
-<code>
-    SELECT column1, column2, ...
-    FROM table_name
-    WHERE columnN LIKE pattern;
-</code>
-</pre>
-                <pre class="language-php">
-    <code>
-        SELECT * FROM Customers
-        WHERE CustomerName LIKE 'a%';
-    </code>
-    </pre>
             </li>
             <li>
-                Wildcard Characters<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                Regular Expression Patterns<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom21" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom21"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Wildcard Characters</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Regular Expression Patterns</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        A wildcard character is used to substitute one or more characters in a string.
+                        <table class="ws-table-all notranslate table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th style="width:22%">Expression</th>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td>[abc]</td>
+                                    <td>Find one character from the options between the brackets</td>
+                                </tr>
+                                <tr>
+                                    <td>[^abc]</td>
+                                    <td>Find any character NOT between the brackets</td>
+                                </tr>
+                                <tr>
+                                    <td>[0-9]</td>
+                                    <td>Find one character from the range 0 to 9</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </li>
+            <li>
+                Metacharacters<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom22" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom22"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Metacharacters</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        <table class="ws-table-all notranslate table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th style="width:22%">Metacharacter</th>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td>|</td>
+                                    <td>Find a match for any one of the patterns separated by | as in: cat|dog|fish</td>
+                                </tr>
+                                <tr>
+                                    <td>.</td>
+                                    <td>Find just one instance of any character</td>
+                                </tr>
+                                <tr>
+                                    <td>^</td>
+                                    <td>Finds a match as the beginning of a string as in: ^Hello</td>
+                                </tr>
+                                <tr>
+                                    <td>$</td>
+                                    <td>Finds a match at the end of the string as in: World$</td>
+                                </tr>
+                                <tr>
+                                    <td>\d</td>
+                                    <td>Find a digit</td>
+                                </tr>
+                                <tr>
+                                    <td>\s</td>
+                                    <td>Find a whitespace character</td>
+                                </tr>
+                                <tr>
+                                    <td>\b</td>
+                                    <td>Find a match at the beginning of a word like this: \bWORD, or at the end of a
+                                        word like this: WORD\b</td>
+                                </tr>
+                                <tr>
+                                    <td>\uxxxx</td>
+                                    <td>Find the Unicode character specified by the hexadecimal number xxxx</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </li>
+            <li>
+                Quantifiers<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom23" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom23"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Quantifiers</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        <table class="ws-table-all notranslate table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th style="width:22%">Quantifier</th>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td>n+</td>
+                                    <td>Matches any string that contains at least one <em>n</em></td>
+                                </tr>
+                                <tr>
+                                    <td>n*</td>
+                                    <td>Matches any string that contains zero or more occurrences of <em>n</em></td>
+                                </tr>
+                                <tr>
+                                    <td>n?</td>
+                                    <td>Matches any string that contains zero or one occurrences of <em>n</em></td>
+                                </tr>
+                                <tr>
+                                    <td>n{x}</td>
+                                    <td>Matches any string that contains a sequence of <i>X</i> <i>n</i>'s</td>
+                                </tr>
+                                <tr>
+                                    <td>n{x,y}</td>
+                                    <td>Matches any string that contains a sequence of X to Y <i>n</i>'s</td>
+                                </tr>
+                                <tr>
+                                    <td>n{x,}</td>
+                                    <td>Matches any string that contains a sequence of at least X <i>n</i>'s</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </li>
+            <li>
+                PHP Form Handling<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom24" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom24"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">PHP Form Handling</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The PHP superglobals $_GET and $_POST are used to collect form-data.
+                        <br><br>
+                        GET vs. POST <br>
+                        Both GET and POST create an array (e.g. array( key1 => value1, key2 => value2, key3 => value3,
+                        ...)). This array holds key/value pairs, where keys are the names of the form controls and
+                        values are the input data from the user. <br><br>
+
+                        Both GET and POST are treated as $_GET and $_POST. These are superglobals, which means that they
+                        are always accessible, regardless of scope - and you can access them from any function, class or
+                        file without having to do anything special.
+                        <br><br>
+                        $_GET is an array of variables passed to the current script via the URL parameters.
+                        <br><br>
+                        $_POST is an array of variables passed to the current script via the HTTP POST method.
+                        <br><br>
+                        When to use GET?
+                        Information sent from a form with the GET method is visible to everyone (all variable names and
+                        values are displayed in the URL). GET also has limits on the amount of information to send. The
+                        limitation is about 2000 characters. However, because the variables are displayed in the URL, it
+                        is possible to bookmark the page. This can be useful in some cases.
                         <br>
-                        Wildcard characters are used with the LIKE operator. The LIKE operator is used in a WHERE clause
-                        to search for a specified pattern in a column.
+                        GET may be used for sending non-sensitive data.
+                        <br>
+                        Note: GET should NEVER be used for sending passwords or other sensitive information!
+                        <br><br>
+                        When to use POST?
+                        Information sent from a form with the POST method is invisible to others (all names/values are
+                        embedded within the body of the HTTP request) and has no limits on the amount of information to
+                        send.
+                        <br>
+                        Moreover POST supports advanced functionality such as support for multi-part binary input while
+                        uploading files to server.
+                        <br>
+                        However, because the variables are not displayed in the URL, it is not possible to bookmark the
+                        page.
+                        <br>
+                        Developers prefer POST for sending form data.
+
+                    </div>
+                </div>
+                <pre class="language-php">
+<code>
+    &lt;html&gt;
+&lt;body&gt;
+
+&lt;form action="welcome.php" method="post"&gt;
+Name: &lt;input type="text" name="name"&gt;&lt;br&gt;
+E-mail: &lt;input type="text" name="email"&gt;&lt;br&gt;
+&lt;input type="submit"&gt;
+&lt;/form&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre>
+            </li>
+            <li>
+                PHP Form Validation<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom25" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom25"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">PHP Form Validation</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The validation rules for the form above are as follows:
                         <br>
                         <table class="ws-table-all notranslate table-bordered">
                             <tbody>
                                 <tr>
-                                    <th>Symbol</th>
-                                    <th>Description</th>
-                                    <th>Example</th>
+                                    <th style="width:25%">Field</th>
+                                    <th style="width:75%">Validation Rules</th>
                                 </tr>
                                 <tr>
-                                    <td>%</td>
-                                    <td>Represents zero or more characters</td>
-                                    <td>bl% finds bl, black, blue, and blob</td>
+                                    <td>Name</td>
+                                    <td>Required. + Must only contain letters and whitespace</td>
                                 </tr>
                                 <tr>
-                                    <td>_</td>
-                                    <td>Represents a single character</td>
-                                    <td>h_t finds hot, hat, and hit</td>
+                                    <td>E-mail</td>
+                                    <td>Required. + Must contain a valid email address (with @ and .)</td>
+                                </tr>
+                                <tr>
+                                    <td>Website</td>
+                                    <td>Optional. If present, it must contain a valid URL</td>
+                                </tr>
+                                <tr>
+                                    <td>Comment</td>
+                                    <td>Optional. Multi-line input field (textarea)</td>
+                                </tr>
+                                <tr>
+                                    <td>Gender</td>
+                                    <td>Required. Must select one</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
                 <pre class="language-php">
-<code>
-    SELECT * FROM Customers
-WHERE City LIKE '%es%';
-</code>
-</pre>
-                <pre class="language-php">
-    <code>
-        SELECT * FROM Customers
-WHERE City LIKE 'L_n_on';
-    </code>
-    </pre>
-            </li>
-            <li>
-                IN Operator<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasBottom22" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom22"
-                    aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">IN Operator</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body small">
-                        The IN operator allows you to specify multiple values in a WHERE clause.
-                        <br>
-                        The IN operator is a shorthand for multiple <b> OR conditions.</b>
-                    </div>
-                </div>
-                <pre class="language-php">
-<code>
-    SELECT column_name(s)
-    FROM table_name
-    WHERE column_name IN (value1, value2, ...);
-</code>
-</pre>
-                <pre class="language-php">
-    <code>
-        SELECT column_name(s)
-FROM table_name
-WHERE column_name IN (SELECT STATEMENT);
-    </code>
-    </pre>
-            </li>
-            <li>
-                BETWEEN Operator<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasBottom23" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom23"
-                    aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">BETWEEN Operator</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body small">
-                        The BETWEEN operator selects values within a given range. The values can be numbers, text, or
-                        dates.
-                        <br>
-                        The BETWEEN operator is inclusive: begin and end values are included.
-                    </div>
-                </div>
-                <pre class="language-php">
-<code>
-    SELECT column_name(s)
-FROM table_name
-WHERE column_name BETWEEN value1 AND value2;
-</code>
-</pre>
-            </li>
-            <li>
-                Aliases<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasBottom24" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom24"
-                    aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Aliases</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body small">
-                        <ul>
-                            <li> Aliases are used to give a table, or a column in a table, a temporary name.</li>
-                            <li>Aliases are often used to make column names more readable.</li>
-                            <li>An alias only exists for the duration of that query.</li>
-                            <li>An alias is created with the AS keyword.</li>
-                        </ul>
-                        <br>
-                        Note: Single or double quotation marks are required if the alias name contains spaces
-                        <pre class="language-php">
-                <code>
-SELECT CustomerName AS Customer, 
-ContactName AS "Contact Person"
-FROM Customers;
-                </code>
-                </pre>
-                    </div>
-                </div>
-                <h3>Alias Column Syntax</h3>
-                <pre class="language-php">
-<code>
-    SELECT column_name AS alias_name
-FROM table_name;
-</code>
-</pre>
-                <h3>Alias Table Syntax</h3>
-                <pre class="language-php">
-    <code>
-        SELECT column_name(s)
-FROM table_name AS alias_name;
-    </code>
-    </pre>
-            </li>
-            <li>
-                Joining Tables<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasBottom25" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom25"
-                    aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Joining Tables</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body small">
-                        A JOIN clause is used to combine rows from two or more tables, based on a related column between
-                        them.
-                        <br>
-                        Supported Types of Joins in MySQL: <br>
-                        <ul>
-                            <li>INNER JOIN: Returns records that have matching values in both tables
-                                <img src="https://www.w3schools.com/mysql/img_innerjoin.gif" alt="">
-                            </li>
-                            <li> LEFT JOIN: Returns all records from the left table, and the matched records from the
-                                right table
-                                <img src="https://www.w3schools.com/mysql/img_leftjoin.gif" alt="">
-                            </li>
-                            <li> RIGHT JOIN: Returns all records from the right table, and the matched records from the
-                                left table
-                                <img src="https://www.w3schools.com/mysql/img_rightjoin.gif" alt="">
-                            </li>
-                            <li> CROSS JOIN: Returns all records from both tables
-                                <img src="https://www.w3schools.com/mysql/img_crossjoin.png" alt="">
-                                Note: CROSS JOIN can potentially return very large result-sets!
-                            </li>
-                            <li> Self Join: A self join is a regular join, but the table is joined with itself. Note:T1
-                                and T2 are different table aliases for the same table.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <h3>INNER JOIN Syntax
-                </h3>
-                <pre class="language-php">
-<code>
-    SELECT column_name(s)
-FROM table1
-INNER JOIN table2
-ON table1.column_name = table2.column_name;
-</code>
-</pre>
-                <h3>LEFT JOIN Syntax</h3>
-                <pre class="language-php">
-    <code>
-        SELECT column_name(s)
-FROM table1
-LEFT JOIN table2
-ON table1.column_name = table2.column_name;
-    </code>
-    </pre>
-                <h3>RIGHT JOIN Syntax</h3>
-                <pre class="language-php">
-        <code>
-            SELECT column_name(s)
-FROM table1
-RIGHT JOIN table2
-ON table1.column_name = table2.column_name;
-        </code>
-        </pre>
-                <h3>CROSS JOIN Syntax</h3>
-                <pre class="language-php">
-            <code>
-                SELECT column_name(s)
-FROM table1
-CROSS JOIN table2;
-            </code>
-            </pre>
-                <h3>Self Join Syntax</h3>
-                <pre class="language-php">
-                <code>
-                    SELECT column_name(s)
-                    FROM table1 T1, table1 T2
-                    WHERE condition;
-                </code>
-                </pre>
-            </li>
-            <li>
-                UNION Operator<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasBottom26" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom26"
-                    aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">UNION Operator</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body small">
-                        The UNION operator is used to combine the result-set of two or more SELECT statements. <br>
-                        <ul>
-                            <li> Every SELECT statement within UNION must have the same number of columns</li>
-                            <li>The columns must also have similar data types</li>
-                            <li>The columns in every SELECT statement must also be in the same order</li>
-                        </ul>
-                        <br>
-                        Note: The column names in the result-set are usually equal to the column names in the first
-                        SELECT statement. <br><br>
-                        The UNION operator selects only distinct values by default. To allow duplicate values, use
-                        <b>UNION ALL</b>
-                    </div>
-                </div>
-                <h3>UNION Syntax</h3>
-                <pre class="language-php">
                     <code>
-                        SELECT column_name(s) FROM table1
-                        UNION
-                        SELECT column_name(s) FROM table2;
+                        &lt;form method="post" action="&lt;?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?&gt;"&gt;
+
+                        Name: &lt;input type="text" name="name"&gt;
+                        &lt;span class="error"&gt;* &lt;?php echo $nameErr;?&gt;&lt;/span&gt;
+                        &lt;br&gt;&lt;br&gt;
+                        E-mail:
+                        &lt;input type="text" name="email"&gt;
+                        &lt;span class="error"&gt;* &lt;?php echo $emailErr;?&gt;&lt;/span&gt;
+                        &lt;br&gt;&lt;br&gt;
+                        Website:
+                        &lt;input type="text" name="website"&gt;
+                        &lt;span class="error"&gt;&lt;?php echo $websiteErr;?&gt;&lt;/span&gt;
+                        &lt;br&gt;&lt;br&gt;
+                        Comment: &lt;textarea name="comment" rows="5" cols="40"&gt;&lt;/textarea&gt;
+                        &lt;br&gt;&lt;br&gt;
+                        Gender:
+                        &lt;input type="radio" name="gender" value="female"&gt;Female
+                        &lt;input type="radio" name="gender" value="male"&gt;Male
+                        &lt;input type="radio" name="gender" value="other"&gt;Other
+                        &lt;span class="error"&gt;* &lt;?php echo $genderErr;?&gt;&lt;/span&gt;
+                        &lt;br&gt;&lt;br&gt;
+                        &lt;input type="submit" name="submit" value="Submit"&gt;
+                        
+                        &lt;/form&gt;
                     </code>
                     </pre>
-                <h3>UNION ALL Syntax</h3>
                 <pre class="language-php">
     <code>
-        SELECT column_name(s) FROM table1
-        UNION ALL
-        SELECT column_name(s) FROM table2;
+        &lt;?php
+// define variables and set to empty values
+$nameErr = $emailErr = $genderErr = $websiteErr = "";
+$name = $email = $gender = $comment = $website = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["name"])) {
+    $nameErr = "Name is required";
+  } else {
+    $name = test_input($_POST["name"]);
+  }
+
+  if (empty($_POST["email"])) {
+    $emailErr = "Email is required";
+  } else {
+    $email = test_input($_POST["email"]);
+  }
+
+  if (empty($_POST["website"])) {
+    $website = "";
+  } else {
+    $website = test_input($_POST["website"]);
+  }
+
+  if (empty($_POST["comment"])) {
+    $comment = "";
+  } else {
+    $comment = test_input($_POST["comment"]);
+  }
+
+  if (empty($_POST["gender"])) {
+    $genderErr = "Gender is required";
+  } else {
+    $gender = test_input($_POST["gender"]);
+  }
+}
+?&gt;
     </code>
     </pre>
             </li>

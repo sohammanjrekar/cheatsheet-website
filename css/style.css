@@ -150,3 +150,6 @@ h3{
 } body{
   font-size: 14px;
 }
+th,td{
+  padding: 1vw;
+}
