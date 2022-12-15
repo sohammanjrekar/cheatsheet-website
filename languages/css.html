@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>css cheatsheet</title>
+    <title>CSS cheatsheet</title>
+    <link rel="shortcut icon" href="../img/css.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
     <link rel="stylesheet" href="../prism.css" />
@@ -68,7 +69,7 @@
                             aria-expanded="false">
                             Programming Languages
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu ">
                             <li><a class="dropdown-item" href="cplus.html">C++</a></li>
                             <li><a class="dropdown-item" href="c.html">C</a></li>
                             <li><a class="dropdown-item" href="java.html">Java</a></li>
@@ -132,7 +133,7 @@
         </div>
     </nav>
     <!-- mid part -->
-    <nav class="mt-5 pt-1">
+    <nav class="mt-5 pt-1 w-100">
         <div class="text-center my-3" style="font-size: larger; font-weight: 900">
             <img src="../img/css.svg" alt="" /> CSS cheatsheet
         </div>
@@ -144,12 +145,27 @@
                 <div class="row">
                     <div class="col-md-8">
                         <p class="fs-4">
-                            The word hypertext markup language comprises the words “hypertext”
-                            and “markup language”. The term "hypertext" refers to the linking of
-                            text with other documents and “markup language” refers to a language
-                            that uses a set of tags. So, HTML is the linking of text with other
-                            documents using some set of tags.
-                        </p>
+                        <ul>
+                            <li>
+                                CSS is the language we use to style a Web page.
+                            </li>
+                            <li>
+                                CSS is the language we use to style an HTML document.
+
+                            </li>
+                            <li>
+                                CSS describes how HTML elements should be displayed. </li>
+                            <li>
+                                CSS stands for Cascading Style Sheets</li>
+                            <li>
+                                CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+                            </li>
+                            <li>
+
+                                CSS saves a lot of work. It can control the layout of multiple web pages all at once
+                            </li>
+                        </ul>
+                        </h3>
                     </div>
                     <div class="col-md-4">
                         <img src="../img/css.svg" alt="" style="width:100% ;" />
@@ -163,27 +179,22 @@
                     aria-labelledby="offcanvasWithBothOptionsLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-                            HTML
+                            CSS
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <p>
-                            1) HTML is an initialism for "HyperText Markup Language". <br />
-                            2) It is the language of the web.<br />
-                            3) It is used to create websites.<br />
-                            4) It is used to define a page layout, meaning it is a barebone
-                            page structure.<br />
-                            5) HTML is used for making pages of the website also called
-                            webpages that we see on the internet<br />
-                            6) It consists of a set of tags.<br />
-                            7) This set of tags is interpreted by web browsers.<br />
-                            8) This set of tags is written in HTML Document.<br />
-                            9) It is case-insensitive.<br />
-                            10) ".html" or ".htm" is the extension.<br />
-                            11) There are so many versions of HTML but HTML5 is the latest
-                            version.<br />
-                        </p>
+                        The selector points to the HTML element you want to style.
+                        <br>
+                        The declaration block contains one or more declarations separated by semicolons.
+                        <br>
+                        Each declaration includes a CSS property name and a value, separated by a colon.
+                        <br>
+                        Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded
+                        by curly braces.
+                        <br>
+                        <br><br>
+                        <img src="https://www.w3schools.com/css/img_selector.gif" alt="" style="width: 90%;">
                     </div>
                 </div>
             </div>
@@ -191,1343 +202,1939 @@
         <ol>
             <!-- offcanvas -->
             <li>
-                starter template<button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#o2" aria-controls="o2">
-                    Read More...
-                </button>
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o2"
-                    aria-labelledby="offcanvasWithBothOptionsLabel">
+                CSS Selectors<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom2" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom2"
+                    aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-                            starter template
-                        </h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS Selectors</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body">
-                        <p>
-                            NOTE: These are the five must-use tags for HTML &lt;!DOCTYPE
-                            html&gt;, &lt;html&gt;, &lt;head&gt;, &lt;title&gt;,
-                            &lt;body&gt;
-                        </p>
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        &lt;!DOCTYPE html&gt;
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        The &lt;!DOCTYPE&gt; declaration tag is used by the web
-                                        browser to understand the version of the HTML used in the
-                                        document. The current version is 5 i.e. HTML 5.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#c2" aria-expanded="false" aria-controls="c2">
-                                        &lt;html&gt; & &lt;/html&gt;
-                                    </button>
-                                </h2>
-                                <div id="c2" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        The &lt;html&gt; tag is the root of an HTML page. <br />
-                                        The &lt;/html&gt; tag is closing of &lt;html&gt; tag.
-                                        Every HTML page needs at least these 8 lines to define a
-                                        layout of a page.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#c3" aria-expanded="false" aria-controls="c3">
-                                        &lt;head&gt; & &lt;/head&gt;
-                                    </button>
-                                </h2>
-                                <div id="c3" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        The &lt;head&gt; tag contains page metadata.
-                                        <br />
-                                        The &lt;/head&gt; tag is closing of &lt;head&gt; tag.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="h4">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#c4" aria-expanded="false" aria-controls="c4">
-                                        &lt;title&gt; & &lt;/title&gt;
-                                    </button>
-                                </h2>
-                                <div id="c4" class="accordion-collapse collapse" aria-labelledby="h4"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        The &lt;title&gt; tag contains the title of a page and is
-                                        shown in the browser title bar.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#c5" aria-expanded="false" aria-controls="c5">
-                                        &lt;body&gt; & &lt;/body&gt;
-                                    </button>
-                                </h2>
-                                <div id="c5" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        &lt;body&gt; tag is the main tag of HTML. It contains the
-                                        main body of the page and is shown in the white part of
-                                        the browser. <br />
-                                        The &lt;/body&gt; tag is closing of &lt;body&gt; tag.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="offcanvas-body small">
+                        CSS selectors are used to "find" (or select) the HTML elements you want to style.
+                        <br><br>
+                        We can divide CSS selectors into five categories:
+                        <br>
+                        <ul>
+                            <li>Simple selectors (select elements based on name, id, class)</li>
+                            <li>Combinator selectors (select elements based on a specific relationship between them)
+                            </li>
+                            <li>Pseudo-class selectors (select elements based on a certain state)</li>
+                            <li>Pseudo-elements selectors (select and style a part of an element)</li>
+                            <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+                        </ul>
                     </div>
                 </div>
-                <pre class="language-html">
-                <code>
-                    &lt;!DOCTYPE html&gt;
-                    &lt;html lang="en"&gt;
-                    &lt;head&gt;
-                        &lt;meta charset="UTF-8"&gt;
-                        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
-                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-                        &lt;title&gt;Document&lt;/title&gt;
-                    &lt;/head&gt;
-                    &lt;body&gt;
-                        
-                    &lt;/body&gt;
-                    &lt;/html&gt;
-                </code>
-            </pre>
+            </li>
+            <li>CSS id Selector<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom2" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom1"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS id Selector</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The id selector uses the id attribute of an HTML element to select a specific element.
+                        <br>
+                        The id of an element is unique within a page, so the id selector is used to select one unique
+                        element!
+                        <br>
+                        To select an element with a specific id, write a hash (#) character,
+                    </div>
+                </div>
+                <pre class="language-css">
+                                    <code> 
+                                        #para1 {
+                                            
+                                          }
+                                        </code>
+        </pre>
             </li>
             <li>
-                Heading tags <br />
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                &lt;h1&gt; tag: “define heading of an HTML page but with first
-                                level”
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-html">
-                <code>
-                    &lt;h1&gt;
-                    //heading content
-                    &lt;/h1&gt;
+                CSS class Selector<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom3" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom3"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel"> CSS class Selector</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The class selector selects HTML elements with a specific class attribute.
+                        <br>
+                        To select elements with a specific class, write a period (.) character,
+                    </div>
+                </div>
+                <pre class="language-css">
+            <code>     
+                .center {
+                    
+                  }
             </code>
-            </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                &lt;h2&gt; tag: “define heading of an HTML page but with
-                                second level”
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-html">
-                                    <code>    &lt;h2&gt;
-                                //heading content
-                                &lt;/h2&gt;</code>
-                            </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                &lt;h3&gt; tag: “define heading of an HTML page but with third
-                                level”
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-html">
-                                    <code> &lt;h3&gt;
-                                //heading content
-                                &lt;/h3&gt;</code>
-                            </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingfour">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                                &lt;h4&gt; tag: “define heading of an HTML page but with
-                                fourth level”
-                            </button>
-                        </h2>
-                        <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-html">
-                                    <code>   &lt;h4&gt;
-                                //heading content
-                                &lt;/h4&gt;</code>
-                            </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingfive">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
-                                &lt;h5&gt; tag: “define heading of an HTML page but with fifth
-                                level”
-                            </button>
-                        </h2>
-                        <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-html">
-                                    <code>       &lt;h5&gt;
-            //heading content
-            &lt;/h5&gt;</code>
         </pre>
-                            </div>
-                        </div>
+            </li>
+            <li>CSS Universal Selector<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom4" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom4"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS Universal Selector</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingsix">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
-                                &lt;h6&gt; tag: “define heading of an HTML page but with sixth
-                                level”
-                            </button>
-                        </h2>
-                        <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-html">
-                                    <code>        &lt;h6&gt;
-                                        //heading content
-                                        &lt;/h6&gt;</code>
-        </pre>
-                            </div>
-                        </div>
+                    <div class="offcanvas-body small">
+                        The universal selector (*) selects all HTML elements on the page.
                     </div>
                 </div>
-            </li>
-            <li>
-                &lt;p&gt; tag: “defines a paragraph on an HTML page”
-                <pre class="language-html">
+
+                <pre class="language-css">
     <code>
-        &lt;p&gt;              &lt;/p&gt;
-</code>
-</pre>
-            </li>
-            <li>
-                &lt;br /&gt; tag: “used to break two lines or paragraph on an HTML
-                page”
-                <pre class="language-html">
-    <code>
-        &lt;br /&gt;
-</code>
-</pre>
-            </li>
-            <li>
-                &lt;hr /&gt; tag: “defines a horizontal line on an HTML page”
-                <pre class="language-html">
-    <code>
-        &lt;hr /&gt;
-</code>
-</pre>
-            </li>
-            <li>
-                &lt;center&gt; tag: “used to put content in the center on an HTML
-                page”
-                <pre class="language-html">
-    <code>
-        &lt;center&gt;            &lt;/center&gt;
-</code>
-</pre>
-            </li>
-            <li>
-                &lt;pre&gt; tag: “used to put the exact code on an HTML page”
-                <pre class="language-html">
-    <code>
-        &lt;pre&gt;                    &lt;/pre&gt;
-</code>
-</pre>
-            </li>
-            <li>
-                &lt;b&gt; tag: “used to make text bold on an HTML page”
-                <pre class="language-html">
-    <code>
-        &lt;b&gt;                      &lt;/b&gt;
-</code>
-</pre>
-            </li>
-            <li>
-                &lt;strong&gt; tag: “used to make text important and bold on an HTML
-                page”
-                <pre class="language-html">
-    <code>
-        &lt;strong&gt;          &lt;/strong&gt;
-</code>
-</pre>
-            </li>
-            <li>
-                &lt;i&gt; tag: “used to represent a change in mood or quality of text
-                on an HTML page”
-                <pre class="language-html">
-    <code>
-        &lt;i&gt;              &lt;/i&gt;
-</code>
-</pre>
-            </li>
-            <li>
-                &lt;em&gt; tag: “used to display emphasized text on an HTML page”
-                <pre class="language-html">
-<code>
-    &lt;em&gt;                    &lt;/em&gt;
-</code>
-</pre>
-            </li>
-            <li>
-                &lt;u&gt; tag: “used for underline misspelled words on an HTML page”
-                <pre class="language-html">
-    <code>
-        &lt;u&gt;                    &lt;/u&gt;
-    
-    </code>
-    </pre>
-            </li>
-            <li>
-                &lt;strike&gt; tag: “used to make a thin line through text on an HTML
-                page”
-                <pre class="language-html">
-        <code>
-        
-            &lt;strike&gt;                &lt;/strike&gt;
-        </code>
-        </pre>
-            </li>
-            <li>
-                &lt;sup&gt; tag: “used to display a text above other text with half of
-                its height on an HTML page”
-                <pre class="language-html">
-            <code>
-                &lt;sup&gt;                  &lt;/sup&gt; 
+        * {
             
-            </code>
-            </pre>
+          }
+</code>
+</pre>
+            </li>
+            <li>CSS Grouping Selector<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom5" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom5"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS Grouping Selector</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The grouping selector selects all the HTML elements with the same style definitions.
+                    </div>
+                </div>
+                <pre class="language-css">
+    <code>
+        h1, h2, p {
+            
+          }
+</code>
+</pre>
             </li>
             <li>
-                &lt;sub&gt; tag: “used to display a text beneath other text with half
-                of its height on an HTML page”
-                <pre class="language-html">
-                <code>
-                    &lt;sub&gt;               &lt;/sub&gt;  
-                
+                Three Ways to Insert CSS<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvas2" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas2"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Three Ways to Insert CSS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        There are three ways of inserting a style sheet:
+                        <ul>
+                            <li>External CSS:With an external style sheet, you can change the look of an entire website
+                                by changing just one file!
+                                <br>
+                                Each HTML page must include a reference to the external style sheet file inside the
+                                &lt;link &gt; element, inside the head section.
+                            </li>
+                            <li>Internal CSS: An internal style sheet may be used if one single HTML page has a unique
+                                style.
+
+                                The internal style is defined inside the &lt;style&gt; element, inside the head section.
+                            </li>
+                            <li>Inline CSS : An inline style may be used to apply a unique style for a single element.
+                                <br>
+                                To use inline styles, add the style attribute to the relevant element. The style
+                                attribute can contain any CSS property.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>External CSS</h3>
+                <pre class="language-css">
+    <code>
+        &lt;link rel="stylesheet" href="mystyle.css"&gt;
+</code>
+</pre>
+                <h3>Internal CSS</h3>
+                <pre class="language-css">
+    <code>
+        &lt;style&gt;
+  body {
+    background-color: linen;
+  }
+  &lt;/style&gt;
+</code>
+</pre>
+
+
+                <h3>Inline CSS</h3>
+                <pre class="language-css">
+<code>
+    &lt;h1 style="color:blue;text-align:center;"&gt;&lt;/h1&gt;
+</code>
+</pre>
+            </li>
+            <li>
+                CSS Comments
+                        <pre class="language-css">
+                    <code>
+                        /* This is a single-line comment */
                 </code>
                 </pre>
+                    </li>
+                    <li>CSS Colors
+                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom9" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom9"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS Colors</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.
+                        <br>
+                        <ul>
+                            <li>RGB Value: <br>
+                                In CSS, a color can be specified as an RGB value, using this formula:
+                                <br>
+                                rgb(red, green, blue)
+                                <br>
+                                Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.</li>
+                            <li>RGBA Value: <br>
+                                RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.
+                                <br>
+                                An RGBA color value is specified with:
+                                <br>
+                                rgba(red, green, blue, alpha)</li>
+                            <li>HEX Value : <br>
+                                In CSS, a color can be specified using a hexadecimal value in the form:
+                                <br>
+                                #rrggbb
+                                <br>
+                                Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).</li>
+                            <li>HSL Value : <br>
+                                In CSS, a color can be specified using hue, saturation, and lightness (HSL) in the form:
+                                <br>
+                                hsl(hue, saturation, lightness)
+                                <br>
+                                Hue is a degree on the color wheel from 0 to 360.</li>
+                            <li>HSLA Value : <br>
+                                HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color. <br>
+                                
+                                An HSLA color value is specified with:
+                                <br>
+                                hsla(hue, saturation, lightness, alpha)
+                                <br>
+                                The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all)</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>CSS Background Color</h3>
+                <pre class="language-css">
+    <code>
+        &lt;h1 style="background-color:DodgerBlue;"&gt;Hello World&lt;/h1&gt;
+</code>
+</pre>
+<h3>CSS Text Color</h3>
+                <pre class="language-css">
+    <code>
+        &lt;h1 style="color:DodgerBlue;"&gt;Hello World&lt;/h1&gt;
+</code>
+</pre>
+<h3>CSS Border Color</h3>
+                <pre class="language-css">
+    <code>
+        &lt;h1 style="border:2px solid Violet;"&gt;Hello World&lt;/h1&gt;
+</code>
+</pre>
+<h3>CSS Color Values (RGB, HEX, HSL, RGBA and HSLA )</h3>
+                <pre class="language-css">
+    <code>
+        &lt;h1 style="background-color:rgb(255, 99, 71);"&gt;...&lt;/h1&gt;
+        &lt;h1 style="background-color:#ff6347;"&gt;...&lt;/h1&gt;
+        &lt;h1 style="background-color:hsl(9, 100%, 64%);"&gt;...&lt;/h1&gt;
+        &lt;h1 style="background-color:rgba(255, 99, 71, 0.5);"&gt;...&lt;/h1&gt;
+        &lt;h1 style="background-color:hsla(9, 100%, 64%, 0.5);"&gt;...&lt;/h1&gt;
+</code>
+</pre>
+               
             </li>
             <li>
-                &lt;mark&gt; tag: “used to display highlighted text on an HTML page”
-                <pre class="language-html">
-                    <code>
-                        &lt;mark&gt;           &lt;/mark&gt;   
-                    
-                    </code>
-                    </pre>
-            </li>
-            <li>
-                &lt;tt&gt; tag: “used to display each letter with same width on an
-                HTML page”
-                <pre class="language-html">
-                        <code>
-                            &lt;tt&gt;         &lt;/tt&gt;
-                        
+                CSS background-color<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom10" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom10"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS background-color</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The background-color property specifies the background color of an element.
+                    </div>
+                </div>
+                    <pre class="language-css">
+                            <code>
+                                    background-color: lightblue;
                         </code>
                         </pre>
             </li>
             <li>
-                &lt;ins&gt; tag: “used to display an inserted text on an HTML page”
-                <pre class="language-html">
-                            <code>
-                                &lt;ins&gt;          &lt;/ins&gt;
-                            
-                            </code>
-                            </pre>
+                CSS background-image<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom12" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom12"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS background-image</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The background-image property specifies an image to use as the background of an element.
+
+                    </div>
+                </div>
+                
+                        <pre class="language-css">
+                        <code>
+                                background-image: url("paper.gif");
+                    </code>
+                    </pre>
+                    
             </li>
             <li>
-                &lt;del&gt; tag: “used to display a deleted text on an HTML page”
-                <pre class="language-html">
+                CSS background-repeat<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom13" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom13"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS background-repeat</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        By default, the background-image property repeats an image both horizontally and vertically.
+                    </div>
+                </div>
+
+                <pre class="language-css">
+    <code>
+            background-repeat: no-repeat;
+</code>
+</pre>
+            </li>
+            <li>
+               CSS background-attachment<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom14" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom14"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS background-repeat</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page)
+                    </div>
+                </div>
+                
+                    
+                        <pre class="language-css">
+                        <code>
+                                background-attachment: fixed;
+                        </code>
+                        </pre>
+                    </li>
+                    <li>
+                        CSS background - Shorthand property<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom16" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom16"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS background - Shorthand property</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.
+                        <br>
+                        then using the shorthand property the order of the property values is:
+<ol type="I">
+    <li>background-color</li>
+    <li>background-image</li>
+    <li>background-repeat</li>
+    <li>background-attachment</li>
+    <li>background-position</li>
+</ol>
+                    </div>
+                </div>
+            </li>
+            <li>
+                Regular Expression<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom18" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom18"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Regular Expression</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        A regular expression is a sequence of characters that forms a search pattern. When you search
+                        for data in a text, you can use this search pattern to describe what you are searching for.
+                        <br>
+                        A regular expression can be a single character, or a more complicated pattern.
+                        <br>
+                        Regular expressions can be used to perform all types of text search and text replace operations.
+                        <br><br>
+                        Regular Expression Functions
+                        <br>
+                        <table class="ws-table-all notranslate table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th style="width:20%">Function</th>
+                                    <th style="width:80%">Description</th>
+                                </tr>
+                                <tr>
+                                    <td>preg_match()</td>
+                                    <td>Returns 1 if the pattern was found in the string and 0 if not</td>
+                                </tr>
+                                <tr>
+                                    <td>preg_match_all()</td>
+                                    <td>Returns the number of times the pattern was found in the string, which may also
+                                        be 0</td>
+                                </tr>
+                                <tr>
+                                    <td>preg_replace()</td>
+                                    <td>Returns a new string where matched patterns have been replaced with another
+                                        string</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <ul>
+                    <li>preg_match()
+                        <pre class="language-css">
+                        <code>
+                            $str = "Visit W3Schools";
+                        $pattern = "/w3schools/i";
+                        echo preg_match($pattern, $str); // Outputs 1
+                        </code>
+                        </pre>
+                    </li>
+                    <li>preg_match_all()
+                        <pre class="language-css">
+                        <code>
+                            $str = "The rain in SPAIN falls mainly on the plains.";
+                        $pattern = "/ain/i";
+                        echo preg_match_all($pattern, $str); // Outputs 4
+                        </code>
+                        </pre>
+                    </li>
+                    <li>preg_replace()
+                        <pre class="language-css">
+                        <code>
+                            $str = "Visit Microsoft!";
+                            $pattern = "/microsoft/i";
+                            echo preg_replace($pattern, "W3Schools", $str); // Outputs "Visit W3Schools!"
+                        </code>
+                        </pre>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Regular Expression Modifiers<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom19" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom19"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Regular Expression Modifiers</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        Modifiers can change how a search is performed. <br><br>
+                        <table class="ws-table-all notranslate table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th style="width:22%">Modifier</th>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td>i</td>
+                                    <td>Performs a case-insensitive search</td>
+                                </tr>
+                                <tr>
+                                    <td>m</td>
+                                    <td>Performs a multiline search (patterns that search for the
+                                        beginning or end of a string will match the beginning or end
+                                        of each line)</td>
+                                </tr>
+                                <tr>
+                                    <td>u</td>
+                                    <td>Enables correct matching of UTF-8 encoded patterns</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </li>
+            <li>
+                Regular Expression Patterns<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom21" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom21"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Regular Expression Patterns</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        <table class="ws-table-all notranslate table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th style="width:22%">Expression</th>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td>[abc]</td>
+                                    <td>Find one character from the options between the brackets</td>
+                                </tr>
+                                <tr>
+                                    <td>[^abc]</td>
+                                    <td>Find any character NOT between the brackets</td>
+                                </tr>
+                                <tr>
+                                    <td>[0-9]</td>
+                                    <td>Find one character from the range 0 to 9</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </li>
+            <li>
+                Metacharacters<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom22" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom22"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Metacharacters</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        <table class="ws-table-all notranslate table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th style="width:22%">Metacharacter</th>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td>|</td>
+                                    <td>Find a match for any one of the patterns separated by | as in: cat|dog|fish</td>
+                                </tr>
+                                <tr>
+                                    <td>.</td>
+                                    <td>Find just one instance of any character</td>
+                                </tr>
+                                <tr>
+                                    <td>^</td>
+                                    <td>Finds a match as the beginning of a string as in: ^Hello</td>
+                                </tr>
+                                <tr>
+                                    <td>$</td>
+                                    <td>Finds a match at the end of the string as in: World$</td>
+                                </tr>
+                                <tr>
+                                    <td>\d</td>
+                                    <td>Find a digit</td>
+                                </tr>
+                                <tr>
+                                    <td>\s</td>
+                                    <td>Find a whitespace character</td>
+                                </tr>
+                                <tr>
+                                    <td>\b</td>
+                                    <td>Find a match at the beginning of a word like this: \bWORD, or at the end of a
+                                        word like this: WORD\b</td>
+                                </tr>
+                                <tr>
+                                    <td>\uxxxx</td>
+                                    <td>Find the Unicode character specified by the hexadecimal number xxxx</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </li>
+            <li>
+                Quantifiers<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom23" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom23"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Quantifiers</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        <table class="ws-table-all notranslate table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th style="width:22%">Quantifier</th>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td>n+</td>
+                                    <td>Matches any string that contains at least one <em>n</em></td>
+                                </tr>
+                                <tr>
+                                    <td>n*</td>
+                                    <td>Matches any string that contains zero or more occurrences of <em>n</em></td>
+                                </tr>
+                                <tr>
+                                    <td>n?</td>
+                                    <td>Matches any string that contains zero or one occurrences of <em>n</em></td>
+                                </tr>
+                                <tr>
+                                    <td>n{x}</td>
+                                    <td>Matches any string that contains a sequence of <i>X</i> <i>n</i>'s</td>
+                                </tr>
+                                <tr>
+                                    <td>n{x,y}</td>
+                                    <td>Matches any string that contains a sequence of X to Y <i>n</i>'s</td>
+                                </tr>
+                                <tr>
+                                    <td>n{x,}</td>
+                                    <td>Matches any string that contains a sequence of at least X <i>n</i>'s</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </li>
+            <li>
+                PHP Form Handling<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom24" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom24"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">PHP Form Handling</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The PHP superglobals $_GET and $_POST are used to collect form-data.
+                        <br><br>
+                        GET vs. POST <br>
+                        Both GET and POST create an array (e.g. array( key1 => value1, key2 => value2, key3 => value3,
+                        ...)). This array holds key/value pairs, where keys are the names of the form controls and
+                        values are the input data from the user. <br><br>
+
+                        Both GET and POST are treated as $_GET and $_POST. These are superglobals, which means that they
+                        are always accessible, regardless of scope - and you can access them from any function, class or
+                        file without having to do anything special.
+                        <br><br>
+                        $_GET is an array of variables passed to the current script via the URL parameters.
+                        <br><br>
+                        $_POST is an array of variables passed to the current script via the HTTP POST method.
+                        <br><br>
+                        When to use GET?
+                        Information sent from a form with the GET method is visible to everyone (all variable names and
+                        values are displayed in the URL). GET also has limits on the amount of information to send. The
+                        limitation is about 2000 characters. However, because the variables are displayed in the URL, it
+                        is possible to bookmark the page. This can be useful in some cases.
+                        <br>
+                        GET may be used for sending non-sensitive data.
+                        <br>
+                        Note: GET should NEVER be used for sending passwords or other sensitive information!
+                        <br><br>
+                        When to use POST?
+                        Information sent from a form with the POST method is invisible to others (all names/values are
+                        embedded within the body of the HTTP request) and has no limits on the amount of information to
+                        send.
+                        <br>
+                        Moreover POST supports advanced functionality such as support for multi-part binary input while
+                        uploading files to server.
+                        <br>
+                        However, because the variables are not displayed in the URL, it is not possible to bookmark the
+                        page.
+                        <br>
+                        Developers prefer POST for sending form data.
+
+                    </div>
+                </div>
+                <pre class="language-css">
+<code>
+    &lt;html&gt;
+&lt;body&gt;
+
+&lt;form action="welcome.php" method="post"&gt;
+Name: &lt;input type="text" name="name"&gt;&lt;br&gt;
+E-mail: &lt;input type="text" name="email"&gt;&lt;br&gt;
+&lt;input type="submit"&gt;
+&lt;/form&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre>
+            </li>
+            <li>
+                PHP Form Validation<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom25" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom25"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">PHP Form Validation</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The validation rules for the form above are as follows:
+                        <br>
+                        <table class="ws-table-all notranslate table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th style="width:25%">Field</th>
+                                    <th style="width:75%">Validation Rules</th>
+                                </tr>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Required. + Must only contain letters and whitespace</td>
+                                </tr>
+                                <tr>
+                                    <td>E-mail</td>
+                                    <td>Required. + Must contain a valid email address (with @ and .)</td>
+                                </tr>
+                                <tr>
+                                    <td>Website</td>
+                                    <td>Optional. If present, it must contain a valid URL</td>
+                                </tr>
+                                <tr>
+                                    <td>Comment</td>
+                                    <td>Optional. Multi-line input field (textarea)</td>
+                                </tr>
+                                <tr>
+                                    <td>Gender</td>
+                                    <td>Required. Must select one</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <pre class="language-css">
+                    <code>
+                        &lt;!DOCTYPE HTML&gt;  
+                        &lt;html&gt;
+                        &lt;head&gt;
+                        &lt;style&gt;
+                        .error {color: #FF0000;}
+                        &lt;/style&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;  
+                        
+                        &lt;?php
+                        // define variables and set to empty values
+                        $nameErr = $emailErr = $genderErr = $websiteErr = "";
+                        $name = $email = $gender = $comment = $website = "";
+                        
+                        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                          if (empty($_POST["name"])) {
+                            $nameErr = "Name is required";
+                          } else {
+                            $name = test_input($_POST["name"]);
+                            // check if name only contains letters and whitespace
+                            if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+                              $nameErr = "Only letters and white space allowed";
+                            }
+                          }
+                          
+                          if (empty($_POST["email"])) {
+                            $emailErr = "Email is required";
+                          } else {
+                            $email = test_input($_POST["email"]);
+                            // check if e-mail address is well-formed
+                            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                              $emailErr = "Invalid email format";
+                            }
+                          }
+                            
+                          if (empty($_POST["website"])) {
+                            $website = "";
+                          } else {
+                            $website = test_input($_POST["website"]);
+                            // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
+                            if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
+                              $websiteErr = "Invalid URL";
+                            }
+                          }
+                        
+                          if (empty($_POST["comment"])) {
+                            $comment = "";
+                          } else {
+                            $comment = test_input($_POST["comment"]);
+                          }
+                        
+                          if (empty($_POST["gender"])) {
+                            $genderErr = "Gender is required";
+                          } else {
+                            $gender = test_input($_POST["gender"]);
+                          }
+                        }
+                        
+                        function test_input($data) {
+                          $data = trim($data);
+                          $data = stripslashes($data);
+                          $data = htmlspecialchars($data);
+                          return $data;
+                        }
+                        ?&gt;
+                        
+                        &lt;h2&gt;PHP Form Validation Example&lt;/h2&gt;
+                        &lt;p&gt;&lt;span class="error"&gt;* required field&lt;/span&gt;&lt;/p&gt;
+                        &lt;form method="post" action="&lt;?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?&gt;"&gt;  
+                          Name: &lt;input type="text" name="name" value="&lt;?php echo $name;?&gt;"&gt;
+                          &lt;span class="error"&gt;* &lt;?php echo $nameErr;?&gt;&lt;/span&gt;
+                          &lt;br&gt;&lt;br&gt;
+                          E-mail: &lt;input type="text" name="email" value="&lt;?php echo $email;?&gt;"&gt;
+                          &lt;span class="error"&gt;* &lt;?php echo $emailErr;?&gt;&lt;/span&gt;
+                          &lt;br&gt;&lt;br&gt;
+                          Website: &lt;input type="text" name="website" value="&lt;?php echo $website;?&gt;"&gt;
+                          &lt;span class="error"&gt;&lt;?php echo $websiteErr;?&gt;&lt;/span&gt;
+                          &lt;br&gt;&lt;br&gt;
+                          Comment: &lt;textarea name="comment" rows="5" cols="40"&gt;&lt;?php echo $comment;?&gt;&lt;/textarea&gt;
+                          &lt;br&gt;&lt;br&gt;
+                          Gender:
+                          &lt;input type="radio" name="gender" &lt;?php if (isset($gender) && $gender=="female") echo "checked";?&gt; value="female"&gt;Female
+                          &lt;input type="radio" name="gender" &lt;?php if (isset($gender) && $gender=="male") echo "checked";?&gt; value="male"&gt;Male
+                          &lt;input type="radio" name="gender" &lt;?php if (isset($gender) && $gender=="other") echo "checked";?&gt; value="other"&gt;Other  
+                          &lt;span class="error"&gt;* &lt;?php echo $genderErr;?&gt;&lt;/span&gt;
+                          &lt;br&gt;&lt;br&gt;
+                          &lt;input type="submit" name="submit" value="Submit"&gt;  
+                        &lt;/form&gt;
+                        
+                        &lt;?php
+                        echo "&lt;h2&gt;Your Input:&lt;/h2&gt;";
+                        echo $name;
+                        echo "&lt;br&gt;";
+                        echo $email;
+                        echo "&lt;br&gt;";
+                        echo $website;
+                        echo "&lt;br&gt;";
+                        echo $comment;
+                        echo "&lt;br&gt;";
+                        echo $gender;
+                        ?&gt;
+                        
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                    </code>
+                    </pre>
+            </li>
+            <li>
+                GROUP BY Statement<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom27" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom27"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">GROUP BY Statement</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The GROUP BY statement groups rows that have the same values into summary rows, like "find the
+                        number of customers in each country".
+                        <br>
+                        The GROUP BY statement is often used with aggregate functions (COUNT(), MAX(), MIN(), SUM(),
+                        AVG()) to group the result-set by one or more columns.<br>
+                    </div>
+                </div>
+                <h3>GROUP BY Syntax</h3>
+                <pre class="language-css">
+                    <code>
+                        SELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+ORDER BY column_name(s);
+                    </code>
+                    </pre>
+                <h3>Example:</h3>
+                <pre class="language-css">
+    <code>
+        SELECT COUNT(CustomerID), Country
+FROM Customers
+GROUP BY Country;
+    </code>
+    </pre>
+            </li>
+            <li>
+                HAVING Clause<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom28" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom28"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">HAVING Clause</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The HAVING clause was added to SQL because the WHERE keyword cannot be used with aggregate
+                        functions.
+                    </div>
+                </div>
+                <h3>HAVING Syntax</h3>
+                <pre class="language-css">
+                    <code>
+                        SELECT column_name(s)
+                        FROM table_name
+                        WHERE condition
+                        GROUP BY column_name(s)
+                        HAVING condition
+                        ORDER BY column_name(s);
+                    </code>
+                    </pre>
+                <h3>Example:</h3>
+                <pre class="language-css">
+    <code>
+        SELECT COUNT(CustomerID), Country
+FROM Customers
+GROUP BY Country
+HAVING COUNT(CustomerID) > 5;
+    </code>
+    </pre>
+            </li>
+            <li>
+                EXISTS Operator<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom29" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom " tabindex="-1" id="offcanvasBottom29"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">EXISTS Operator</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The EXISTS operator is used to test for the existence of any record in a subquery.
+                        <br>
+                        The EXISTS operator returns TRUE if the subquery returns one or more records.
+                    </div>
+                </div>
+                <h3>EXISTS Syntax</h3>
+                <pre class="language-css">
+                    <code>
+                        SELECT column_name(s)
+                        FROM table_name
+                        WHERE EXISTS
+                        (SELECT column_name FROM table_name WHERE condition);
+                    </code>
+                    </pre>
+                <h3>Example:</h3>
+                <pre class="language-css">
+    <code>
+        SELECT SupplierName
+FROM Suppliers
+WHERE EXISTS (SELECT ProductName FROM Products WHERE Products.SupplierID = Suppliers.supplierID AND Price < 20);
+    </code>
+    </pre>
+            </li>
+            <li>
+                ANY Operator<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom30" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom30"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">ANY Operator</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The ANY operator:
+                        <br>
+                        <ul>
+                            <li>
+                                returns a boolean value as a result </li>
+                            <li>
+                                returns TRUE if ANY of the subquery values meet the condition</li>
+                            <li>
+                                ANY means that the condition will be true if the operation is true for any of the values
+                                in the range.</li>
+                        </ul>
+                        <br>
+                        Note: The operator must be a standard comparison operator (=, <>, !=, >, >=, <, or <=). </div>
+                    </div>
+                    <h3>ANY Syntax</h3>
+                    <pre class="language-css">
+                    <code>
+                        SELECT column_name(s)
+                        FROM table_name
+                        WHERE column_name operator ANY
+                          (SELECT column_name
+                          FROM table_name
+                          WHERE condition);
+                    </code>
+                    </pre>
+                    <h3>Example:</h3>
+                    <pre class="language-css">
+    <code>
+        SELECT COUNT(CustomerID), Country
+FROM Customers
+GROUP BY Country
+HAVING COUNT(CustomerID) > 5;
+    </code>
+    </pre>
+            </li>
+            <li>
+                ALL Operator<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom31" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom31"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">ALL Operator</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The ALL operator: <br>
+                        <ul>
+                            <li>
+                                returns a boolean value as a result </li>
+                            <li>
+                                returns TRUE if ALL of the subquery values meet the condition</li>
+                            <li>
+                                is used with SELECT, WHERE and HAVING statements</li>
+                        </ul>
+                        <br>
+                        ALL means that the condition will be true only if the operation is true for all values in the
+                        range.
+                        <br><br>
+                        Note: The operator must be a standard comparison operator (=, <>, !=, >, >=, <, or <=). </div>
+                    </div>
+                    <h3>ALL Syntax With SELECT</h3>
+                    <pre class="language-css">
+                    <code>
+                        SELECT ALL column_name(s)
+FROM table_name
+WHERE condition;
+                    </code>
+                    </pre>
+                    <h3>ALL Syntax With WHERE or HAVING</h3>
+                    <pre class="language-css">
+                        <code>
+                            SELECT column_name(s)
+                            FROM table_name
+                            WHERE column_name operator ALL
+                              (SELECT column_name
+                              FROM table_name
+                              WHERE condition);
+                        </code>
+                        </pre>
+                    <h3>Example:</h3>
+                    <pre class="language-css">
+    <code>
+        SELECT COUNT(CustomerID), Country
+FROM Customers
+GROUP BY Country
+HAVING COUNT(CustomerID) > 5;
+    </code>
+    </pre>
+            </li>
+            <li>
+                INSERT INTO SELECT Statement<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom32" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom32"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">INSERT INTO SELECT Statement</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The INSERT INTO SELECT statement copies data from one table and inserts it into another table.
+                        <br><br>
+                        The INSERT INTO SELECT statement requires that the data types in source and target tables
+                        matches.
+                        <br><br>
+                        Note: The existing records in the target table are unaffected.
+                    </div>
+                </div>
+                <h3>INSERT INTO SELECT Syntax(Copy all columns from one table to another table)</h3>
+                <pre class="language-css">
+                    <code>
+                        INSERT INTO table2
+                        SELECT * FROM table1
+                        WHERE condition;
+                    </code>
+                    </pre>
+                <h3>Copy only some columns from one table into another table</h3>
+                <pre class="language-css">
+    <code>
+        INSERT INTO table2 (column1, column2, column3, ...)
+        SELECT column1, column2, column3, ...
+        FROM table1
+        WHERE condition;
+    </code>
+    </pre>
+            </li>
+            <li>
+                CASE Statement<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom33" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom33"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CASE Statement</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The CASE statement goes through conditions and returns a value when the first condition is met
+                        (like an if-then-else statement). So, once a condition is true, it will stop reading and return
+                        the result. If no conditions are true, it returns the value in the ELSE clause.
+                        <br><br>
+                        If there is no ELSE part and no conditions are true, it returns NULL.
+                    </div>
+                </div>
+                <h3>CASE Syntax</h3>
+                <pre class="language-css">
+                    <code>
+                        CASE
+    WHEN condition1 THEN result1
+    WHEN condition2 THEN result2
+    WHEN conditionN THEN resultN
+    ELSE result
+END;
+                    </code>
+                    </pre>
+                <h3>Example:</h3>
+                <pre class="language-css">
+    <code>
+        SELECT OrderID, Quantity,
+CASE
+    WHEN Quantity > 30 THEN 'The quantity is greater than 30'
+    WHEN Quantity = 30 THEN 'The quantity is 30'
+    ELSE 'The quantity is under 30'
+END AS QuantityText
+FROM OrderDetails;
+    </code>
+    </pre>
+            </li>
+            <li>
+                IFNULL()<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom34" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom34"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CASE Statement</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The MySQL IFNULL() function lets you return an alternative value if an expression is NULL.
+                    </div>
+                </div>
+                <h3>CASE Syntax</h3>
+                <pre class="language-css">
+                    <code>
+                        CASE
+    WHEN condition1 THEN result1
+    WHEN condition2 THEN result2
+    WHEN conditionN THEN resultN
+    ELSE result
+END;
+                    </code>
+                    </pre>
+                <h3>Example:</h3>
+                <pre class="language-css">
+    <code>
+        SELECT OrderID, Quantity,
+CASE
+    WHEN Quantity > 30 THEN 'The quantity is greater than 30'
+    WHEN Quantity = 30 THEN 'The quantity is 30'
+    ELSE 'The quantity is under 30'
+END AS QuantityText
+FROM OrderDetails;
+    </code>
+    </pre>
+            </li>
+            <li>
+                COALESCE() Function
+                <pre class="language-css">
+                    <code>
+                        CASE
+                        SELECT ProductName, UnitPrice * (UnitsInStock + COALESCE(UnitsOnOrder, 0))
+                        FROM Products;
+                    </code>
+                    </pre>
+            </li>
+            <li>
+                MySQL Comments<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom35" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom35"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">MySQL Comments</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        Comments are used to explain sections of SQL statements, or to prevent execution of SQL
+                        statements.
+                        <ul>
+                            <li>Single Line Comments:Single line comments start with --.
+                                <br>
+                                Any text between -- and the end of the line will be ignored (will not be executed).
+                            </li>
+                            <li>Multi-line Comments: Multi-line comments start with /* and end with */.
+                                <br>
+                                Any text between /* and */ will be ignored.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>Single Line Comments</h3>
+                <pre class="language-css">
+                    <code>
+                        -- Select all:
+                    </code>
+                    </pre>
+                <h3>Multi-line Comments</h3>
+                <pre class="language-css">
+    <code>
+        /*Select all the columns
+of all the records
+in the Customers table:*/
+    </code>
+    </pre>
+            </li>
+            <li>
+                MySQL Operators
+                <br>
+                <ul>
+                    <li>
+                        Arithmetic Operators<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasBottom36" aria-controls="offcanvasBottom">Read more...</button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom36"
+                            aria-labelledby="offcanvasBottomLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Arithmetic Operators</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body small">
+                                <table class="ws-table-all notranslate table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <th style="width:20%">Operator</th>
+                                            <th style="width:80%">Description</th>
+                                        </tr>
+                                        <tr>
+                                            <td>+</td>
+                                            <td>Add</td>
+                                        </tr>
+                                        <tr>
+                                            <td>-</td>
+                                            <td>Subtract</td>
+                                        </tr>
+                                        <tr>
+                                            <td>*</td>
+                                            <td>Multiply</td>
+                                        </tr>
+                                        <tr>
+                                            <td>/</td>
+                                            <td>Divide</td>
+                                        </tr>
+                                        <tr>
+                                            <td>%</td>
+                                            <td>Modulo</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <br>
+                    </li>
+                    <li>
+                        Bitwise Operators<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasBottom37" aria-controls="offcanvasBottom">Read more...</button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom37"
+                            aria-labelledby="offcanvasBottomLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Bitwise Operators</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body small">
+                                <table class="ws-table-all notranslate table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <th style="width:20%">Operator</th>
+                                            <th style="width:80%">Description</th>
+                                        </tr>
+                                        <tr>
+                                            <td>&amp;</td>
+                                            <td>Bitwise AND</td>
+                                        </tr>
+                                        <tr>
+                                            <td>|</td>
+                                            <td>Bitwise OR</td>
+                                        </tr>
+                                        <tr>
+                                            <td>^</td>
+                                            <td>Bitwise exclusive OR</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <br>
+                    </li>
+                    <li>
+                        Comparison Operators<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasBottom38" aria-controls="offcanvasBottom">Read more...</button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom38"
+                            aria-labelledby="offcanvasBottomLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Comparison Operators</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body small">
+                                <table class="ws-table-all notranslate table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <th style="width:20%">Operator</th>
+                                            <th style="width:80%">Description</th>
+                                        </tr>
+                                        <tr>
+                                            <td>=</td>
+                                            <td>Equal to</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&gt;</td>
+                                            <td>Greater than</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&lt;</td>
+                                            <td>Less than</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&gt;=</td>
+                                            <td>Greater than or equal to</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&lt;=</td>
+                                            <td>Less than or equal to</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&lt;&gt;</td>
+                                            <td>Not equal to</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div> <br>
+                    </li>
+                    <li>
+                        Compound Operators<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasBottom39" aria-controls="offcanvasBottom">Read more...</button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom39"
+                            aria-labelledby="offcanvasBottomLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Compound Operators</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body small">
+                                <table class="ws-table-all notranslate table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <th style="width:20%">Operator</th>
+                                            <th style="width:80%">Description</th>
+                                        </tr>
+                                        <tr>
+                                            <td>+=</td>
+                                            <td>Add equals</td>
+                                        </tr>
+                                        <tr>
+                                            <td>-=</td>
+                                            <td>Subtract equals</td>
+                                        </tr>
+                                        <tr>
+                                            <td>*=</td>
+                                            <td>Multiply equals</td>
+                                        </tr>
+                                        <tr>
+                                            <td>/=</td>
+                                            <td>Divide equals</td>
+                                        </tr>
+                                        <tr>
+                                            <td>%=</td>
+                                            <td>Modulo equals</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&amp;=</td>
+                                            <td>Bitwise AND equals</td>
+                                        </tr>
+                                        <tr>
+                                            <td>^-=</td>
+                                            <td>Bitwise exclusive equals</td>
+                                        </tr>
+                                        <tr>
+                                            <td>|*=</td>
+                                            <td>Bitwise OR equals</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div> <br>
+                    </li>
+                    <li>
+                        Logical Operators<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasBottom40" aria-controls="offcanvasBottom">Read more...</button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom40"
+                            aria-labelledby="offcanvasBottomLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Logical Operators</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body small">
+                                <table class="ws-table-all notranslate table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <th style="width:20%">Operator</th>
+                                            <th style="width:80%">Description</th>
+                                        </tr>
+                                        <tr>
+                                            <td>ALL</td>
+                                            <td>TRUE if all of the subquery values meet the condition</td>
+                                        </tr>
+                                        <tr>
+                                            <td>AND</td>
+                                            <td>TRUE if all the conditions separated by AND is TRUE</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ANY</td>
+                                            <td>TRUE if any of the subquery values meet the condition</td>
+                                        </tr>
+                                        <tr>
+                                            <td>BETWEEN</td>
+                                            <td>TRUE if the operand is within the range of comparisons</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EXISTS</td>
+                                            <td>TRUE if the subquery returns one or more records</td>
+                                        </tr>
+                                        <tr>
+                                            <td>IN</td>
+                                            <td>TRUE if the operand is equal to one of a list of expressions</td>
+                                        </tr>
+                                        <tr>
+                                            <td>LIKE</td>
+                                            <td>TRUE if the operand matches a pattern</td>
+                                        </tr>
+                                        <tr>
+                                            <td>NOT</td>
+                                            <td>Displays a record if the condition(s) is NOT TRUE</td>
+                                        </tr>
+                                        <tr>
+                                            <td>OR</td>
+                                            <td>TRUE if any of the conditions separated by OR is TRUE</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SOME</td>
+                                            <td>TRUE if any of the subquery values meet the condition</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                </ul>
+            </li>
+            <li>
+                CREATE DATABASE Statement<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom41" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom41"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CREATE DATABASE Statement</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The CREATE DATABASE statement is used to create a new SQL database.
+                    </div>
+                </div>
+                <pre class="language-css">
+                    <code>
+                        CREATE DATABASE databasename;
+                    </code>
+                    </pre>
+            </li>
+            <li>
+                list of databases
+                <pre class="language-css">
+                    <code>
+                        SHOW DATABASES;
+                    </code>
+                    </pre>
+            </li>
+            <li>
+                DROP DATABASE Statement<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom42" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom42"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">DROP DATABASE databasename;</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The DROP DATABASE statement is used to drop an existing SQL database.
+                        <br>
+                        Note: Be careful before dropping a database. Deleting a database will result in loss of complete
+                        information stored in the database!
+                    </div>
+                </div>
+                <pre class="language-css">
+                    <code>
+                        DROP DATABASE databasename;
+                    </code>
+                    </pre>
+            </li>
+            <li>
+                CREATE TABLE Statement<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom43" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom43"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CREATE TABLE Statement</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The CREATE TABLE statement is used to create a new table in a database.
+                    </div>
+                </div>
+                <pre class="language-css">
+                    <code>
+                        CREATE TABLE table_name (
+                            column1 datatype,
+                            column2 datatype,
+                            column3 datatype,
+                           ....
+                        );
+                    </code>
+                    </pre>
+            </li>
+            <li>
+                Create Table Using Another Table<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom44" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom44"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Create Table Using Another Table</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        A copy of an existing table can also be created using CREATE TABLE.
+                        <br>
+                        The new table gets the same column definitions. All columns or specific columns can be selected.
+                        <br>
+                        If you create a new table using an existing table, the new table will be filled with the
+                        existing values from the old table.
+                    </div>
+                </div>
+                <pre class="language-css">
+                    <code>
+                        CREATE TABLE new_table_name AS
+                        SELECT column1, column2,...
+                        FROM existing_table_name
+                        WHERE ....;
+                        );
+                    </code>
+                    </pre>
+            </li>
+
+
+            <li>
+                TRUNCATE TABLE<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom46" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom46"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">TRUNCATE TABLE</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The DROP TABLE statement is used to drop an existing table in a database.
+                    </div>
+                </div>
+
+                <pre class="language-css">
+                    <code>
+                        TRUNCATE TABLE table_name;
+                    </code>
+                    </pre>
+            </li>
+            <li>
+                <ul>
+                    <li>
+                        <h3>ALTER TABLE - ADD</h3>
+                        <pre class="language-css">
+                    <code>
+                        ALTER TABLE table_name
+                        ADD column_name datatype;
+                    </code>
+                    </pre>
+                    </li>
+                    <li>
+                        <h3>ALTER TABLE - DROP</h3>
+                        <pre class="language-css">
+                        <code>
+                            ALTER TABLE table_name
+                            DROP COLUMN column_name;
+                        </code>
+                        </pre>
+                    </li>
+                    <li>
+                        <h3>ALTER TABLE - MODIFY</h3>
+                        <pre class="language-css">
+                            <code>
+                                ALTER TABLE table_name
+                                MODIFY COLUMN column_name datatype;
+                            </code>
+                            </pre>
+                    </li>
+                </ul>
+            </li>
+
+            <li>MySQL Constraints<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom48" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom48"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">MySQL Constraints</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        SQL constraints are used to specify rules for the data in a table.
+                        <br>
+                        Constraints are used to limit the type of data that can go into a table. This ensures the
+                        accuracy and reliability of the data in the table. If there is any violation between the
+                        constraint and the data action, the action is aborted.
+                        <br>
+                        Constraints can be column level or table level. Column level constraints apply to a column, and
+                        table level constraints apply to the whole table.
+                        <br>
+                        The following constraints are commonly used in SQL:
+                        <br>
+                        <ul>
+                            <li>
+                                NOT NULL - Ensures that a column cannot have a NULL value</li>
+                            <li>
+                                UNIQUE - Ensures that all values in a column are different</li>
+                            <li>
+                                PRIMARY KEY - A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a
+                                table</li>
+                            <li>
+                                FOREIGN KEY - Prevents actions that would destroy links between tables</li>
+                            <li>
+                                CHECK - Ensures that the values in a column satisfies a specific condition</li>
+                            <li>
+                                DEFAULT - Sets a default value for a column if no value is specified</li>
+                            <li>
+                                CREATE INDEX - Used to create and retrieve data from the database very quickly</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </li>
+
+            <li>NOT NULL Constraint<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom49" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom49"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">NOT NULL Constraint</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        By default, a column can hold NULL values.
+                        <br>
+                        The NOT NULL constraint enforces a column to NOT accept NULL values.
+                        <br>
+                        This enforces a field to always contain a value, which means that you cannot insert a new
+                        record, or update a record without adding a value to this field.
+                    </div>
+                </div>
+                <pre class="language-css">
                                 <code>
-                                
-                                    &lt;del&gt;           &lt;/del&gt;
+                                    CREATE TABLE Persons (
+                                        ID int NOT NULL,
+                                        LastName varchar(255) NOT NULL,
+                                        FirstName varchar(255) NOT NULL,
+                                        Age int
+                                    );
                                 </code>
                                 </pre>
             </li>
-            <li>
-                &lt;big&gt; tag: “used to display a larger text on an HTML page”
-                <pre class="language-html">
-                                    <code>
-                                        &lt;big&gt;      &lt;/big&gt;
-                                    
-                                    </code>
-                                    </pre>
-            </li>
-            <li>
-                &lt;small&gt; tag: “used to display a smaller text on an HTML page”
-                <pre class="language-html">
+
+            <li>UNIQUE Constraint<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom50" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom50"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">UNIQUE Constraint</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The UNIQUE constraint ensures that all values in a column are different.
+                        <br>
+                        Both the UNIQUE and PRIMARY KEY constraints provide a guarantee for uniqueness for a column or
+                        set of columns. <br>
+
+                        A PRIMARY KEY constraint automatically has a UNIQUE constraint.
+                        <br>
+                        However, you can have many UNIQUE constraints per table, but only one PRIMARY KEY constraint per
+                        table.
+
+
+                    </div>
+                </div>
+                <pre class="language-css">
                                         <code>
-                                            &lt;small&gt;       &lt;/small&gt;
-                                        
+                                            CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    UNIQUE (ID)
+);
                                         </code>
                                         </pre>
             </li>
-            <li>
-                &lt;abbr&gt; tag: “used to define abbreviation form of an element”
-                <pre class="language-html">
-                                            <code>
-                                                &lt;abbr&gt;         &lt;/abbr&gt;
-                                            
-                                            </code>
-                                            </pre>
-            </li>
-            <li>
-                &lt;acronym&gt; tag: “used to define acronym”
-                <pre class="language-html">
-                                                <code>
-                                                    &lt;acronym&gt;   &lt;/acronym&gt;
-                                                
-                                                </code>
-                                                </pre>
-            </li>
-            <li>
-                &lt;blockquote&gt; tag: “used to insert long quote on an HTML page”
-                <pre class="language-html">
-                                                    <code>
-                                                        &lt;blockquote&gt;   &lt;/blockquote&gt;
-                                                    
-                                                    </code>
-                                                    </pre>
-            </li>
-            <li>
-                &lt;q&gt; tag: “used to insert a short quote or to add a double quote
-                on an HTML page”
-                <pre class="language-html">
-                                                        <code>
-                                                            &lt;q&gt;    &lt;/q&gt;             
-                                                        
-                                                        </code>
-                                                        </pre>
-            </li>
-            <li>&lt;cite&gt; tag: “used to provide a reference or defines the title of a creative work on an HTML page”
-                <pre class="language-html">
-                                                        <code>
-                                                            &lt;cite&gt;       &lt;/cite&gt;          
-                                                        </code>
-                                                        </pre>
-            </li>
-            <li>&lt;bdo&gt; tag: “used to override the current direction of text on an HTML page”
-                <pre class="language-html">
-                                                        <code>
-                                                            &lt;bdo&gt;        &lt;/bdo&gt;    
-                                                        
-                                                        </code>
-                                                        </pre>
-            </li>
-            <li>&lt;address&gt; tag: “used to show contact information on an HTML page”
-                <pre class="language-html">
-                                                        <code>
-                                      
-&lt;address&gt;             &lt;/address&gt;                  
-                                                        
-                                                        </code>
-                                                        </pre>
-            </li>
-            <li>
-                &lt;code&gt; tag: “used to show programming code on an HTML page”
-                <pre class="language-html">
-                                                        <code>
-                                                            &lt;code&gt;           &lt;/code&gt;                                 
-                                                        
-                                                        </code>
-                                                        </pre>
-            </li>
-            <!-- offcanvas -->
-            <li>
-                HTML Attributes<button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#o22" aria-controls="o22">
-                    Read More...
-                </button>
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o22"
-                    aria-labelledby="offcanvasWithBothOptionsLabel">
+
+
+            <li>PRIMARY KEY Constraint<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom52" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom52"
+                    aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-                            HTML Attributes
-                        </h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">PRIMARY KEY Constraint</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body">
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        What is an HTML Attribute?
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        It is used to define the characteristics of an HTML element. <br>
-                                        It is placed in the opening tag of the HTML element.<br>
-                                        All attributes are made up of two parts: Name and Value.<br><br>
-                                        Name: It is used to set the property for that element.<br><br>
-                                        Value: It is used to set the value of that property for that element.<br>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#c2" aria-expanded="false" aria-controls="c2">
-                                        What are the different types of HTML Attributes?
-                                    </button>
-                                </h2>
-                                <div id="c2" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        There are three types of HTML attributes:<br> 1) Core Attributes<br>
-                                        2) Internationalization Attributes<br>
-                                        3) Generic Attributes<br>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </li>
-            <li>
-                HTML Core Attributes<button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#o23" aria-controls="o23">
-                    Read More...
-                </button>
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o23"
-                    aria-labelledby="offcanvasWithBothOptionsLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-                            HTML Core Attributes
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <p>
-                            The most widely used attribute is core attributes. There are 4 types of core attributes:
-                            <br>
-                        <ul>
-                            <li>Id</li>
-                            <li>Class</li>
-                            <li>Title</li>
-                            <li>Style</li>
-                        </ul>
-                        </p>
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="h4">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#c4" aria-expanded="false" aria-controls="c4">
-                                        The Id Attribute
-                                    </button>
-                                </h2>
-                                <div id="c4" class="accordion-collapse collapse" aria-labelledby="h4"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        This is the most widely used attribute. The id attribute is used to give a
-                                        unique id to an HTML
-                                        element. Each element in HTML with an id attribute has its own unique identity,
-                                        just as each of us
-                                        has our own unique identity. Multiple elements can’t share the same id.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="h5">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#c5" aria-expanded="false" aria-controls="c5">
-                                        The class Attribute
-                                    </button>
-                                </h2>
-                                <div id="c5" class="accordion-collapse collapse" aria-labelledby="h5"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        The class attribute is used to specify a class to an HTML element. It is not
-                                        unique like the id
-                                        attribute. Multiple elements can share the same class. It is used to associate
-                                        an element with a
-                                        stylesheet, JS.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="h6">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#c6" aria-expanded="false" aria-controls="c6">
-                                        The title Attribute
-                                    </button>
-                                </h2>
-                                <div id="c6" class="accordion-collapse collapse" aria-labelledby="h6"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        The id attribute is used to give a title to an HTML element. When the HTML
-                                        element is loading, a
-                                        tooltip of the cursor comes and shows the written title. </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="h7">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#c7" aria-expanded="false" aria-controls="c7">
-                                        The style Attribute
-                                    </button>
-                                </h2>
-                                <div id="c7" class="accordion-collapse collapse" aria-labelledby="h7"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        The style attribute is used to give styling to an HTML element. It is a property
-                                        of CSS (Cascading
-                                        Style Sheet). It is mainly used by the CSS. It is the inline property of an
-                                        element. In CSS, if we
-                                        want to style within an HTML element we use the style attribute in inline of an
-                                        HTML element. </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                HTML Internationalization Attributes<button class="btn btn-primary mx-3" type="button"
-                    data-bs-toggle="offcanvas" data-bs-target="#o24" aria-controls="o24">
-                    Read More...
-                </button>
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o24"
-                    aria-labelledby="offcanvasWithBothOptionsLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-                            HTML Internationalization Attributes
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <p>
-                            There are three types of internationalization attributes i.e. dir, lang, xml:lang<br>
-                        <ul>
-                            <li>The dir Attribute</li>
-                            <li>The lang Attribute</li>
-                            <li>The xml:lang Attribute</li>
-                        </ul>
-                        </p>
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="h4">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#c4" aria-expanded="false" aria-controls="c4">
-                                        The dir Attribute
-                                    </button>
-                                </h2>
-                                <div id="c4" class="accordion-collapse collapse" aria-labelledby="h4"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        The dir attribute tells the browser in which direction should the text flow.
-                                        There are two types of
-                                        dir attributes:
-                                        <br>
-                                        ltr: Left to right
-                                        <br>
-                                        rtl: Right to left
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="h5">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#c5" aria-expanded="false" aria-controls="c5">
-                                        The lang Attribute
-                                    </button>
-                                </h2>
-                                <div id="c5" class="accordion-collapse collapse" aria-labelledby="h5"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        This attribute is replaced by xml:lang attribute. Earlier it was used to
-                                        indicate the language for
-                                        the web page.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="h6">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#c6" aria-expanded="false" aria-controls="c6">
-                                        The xml:lang Attribute
-                                    </button>
-                                </h2>
-                                <div id="c6" class="accordion-collapse collapse" aria-labelledby="h6"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        Value for the xml:lang should be ISO-639 country code.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </li>
-            <li>
-                HTML Generic Attributes<button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#o25" aria-controls="o25">
-                    Read More...
-                </button>
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o25"
-                    aria-labelledby="offcanvasWithBothOptionsLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-                            HTML Generic Attributes
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <p>
-                            Generic attributes include various attributes which are mostly used. Some common generic
-                            attributes are:
-                            <br>
-                        <ul>
-                            <li>The “align” Attribute</li>
-                            <li>The “valign” Attribute</li>
-                            <li>The “bgcolor” Attribute</li>
-                            <li>The “width” Attribute</li>
-                            <li>The “height” Attribute</li>
-                            <li>The “src” Attribute</li>
-                            <li>The “alt” Attribute</li>
-                        </ul>
-                        </p>
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="h4">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#c4" aria-expanded="false" aria-controls="c4">
-                                        The “align” Attribute
-                                    </button>
-                                </h2>
-                                <div id="c4" class="accordion-collapse collapse" aria-labelledby="h4"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        align attribute uses align name for HTML element and uses left, right, and
-                                        center values to indicate
-                                        the text accordingly. It is used for horizontal aligns tags.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="h5">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#c5" aria-expanded="false" aria-controls="c5">
-                                        The “valign” Attribute
-                                    </button>
-                                </h2>
-                                <div id="c5" class="accordion-collapse collapse" aria-labelledby="h5"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        valign attribute uses valign name for HTML element and uses top, middle, and
-                                        bottom values to
-                                        indicate the text accordingly. It is used for vertical aligns tags.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="h6">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#c6" aria-expanded="false" aria-controls="c6">
-                                        The “bgcolor” Attribute
-                                    </button>
-                                </h2>
-                                <div id="c6" class="accordion-collapse collapse" aria-labelledby="h6"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        bgcolor attribute uses bgcolor name to HTML element and uses numeric,
-                                        hexadecimal, RGB code values
-                                        to change the element's background color accordingly. </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="h7">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#c7" aria-expanded="false" aria-controls="c7">
-                                        The “width” Attribute
-                                    </button>
-                                </h2>
-                                <div id="c7" class="accordion-collapse collapse" aria-labelledby="h7"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        The width attribute uses the width name of the HTML element and uses numeric
-                                        values to change the
-                                        element’s width according to the numeric given </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="h8">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#c8" aria-expanded="false" aria-controls="c8">
-                                        The “height” Attribute
-                                    </button>
-                                </h2>
-                                <div id="c8" class="accordion-collapse collapse" aria-labelledby="h8"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        The height attribute uses the height name of the HTML element and uses numeric
-                                        values to change the
-                                        element’s height according to the numeric given. </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="h9">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#c9" aria-expanded="false" aria-controls="c9">
-                                        The “src” Attribute
-                                    </button>
-                                </h2>
-                                <div id="c9" class="accordion-collapse collapse" aria-labelledby="h9"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        The src attribute is mostly used by the img element that we’ll be going to
-                                        discuss later. This src
-                                        attribute specifies the URL path to that element that is to be displayed. We can
-                                        choose any of the
-                                        two paths:
-                                        <ol>
-                                            <li> Absolute path: This path contains the path of the external content.
-                                            </li>
-                                            <li>Relative path: This path contains the path of the internal content only.
-                                                Relative paths are
-                                                mostly used because content cannot be suddenly removed or changed. These
-                                                are placed within a
-                                                separate folder and that path is very well known to us</li>
-                                        </ol>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="h10">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#c10" aria-expanded="false"
-                                            aria-controls="c10">
-                                            The “alt” Attribute
-                                        </button>
-                                    </h2>
-                                    <div id="c10" class="accordion-collapse collapse" aria-labelledby="h10"
-                                        data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            The alt attribute is mostly used by the img element. This alt attribute
-                                            specifies the alternate
-                                            text to that image that is to be displayed. For some issues, if that image
-                                            is not visible then alt
-                                            text helps to tell us about the description of that image.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </li>
-            <li>
-                HTML Links
-                <button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o26"
-                    aria-controls="o26">
-                    Read More...
-                </button>
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o26"
-                    aria-labelledby="offcanvasWithBothOptionsLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-                            HTML Links </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <p>HTML Link uses two attributes <br>
-                        <ul>
-                            <li>href attribute</li>
-                            <li>target attribute</li>
-                        </ul>
-                        </p>
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="h4">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#c4" aria-expanded="false" aria-controls="c4">
-                                        href attribute
-                                    </button>
-                                </h2>
-                                <div id="c4" class="accordion-collapse collapse" aria-labelledby="h4"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        Without this tag, we are unable to go to the next page or the next document.
-                                        This attribute is
-                                        compulsorily used by the &lt;a&gt; tag. This attribute contains a URL path.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="h5">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#c5" aria-expanded="false" aria-controls="c5">
-                                        target attribute
-                                    </button>
-                                </h2>
-                                <div id="c5" class="accordion-collapse collapse" aria-labelledby="h5"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        The link tag uses another attribute which is the target attribute. By default,
-                                        if we open any link
-                                        then the page will be displayed in the current browser window. But if we wish to
-                                        change these
-                                        settings then we use the target attribute. It tells us where we want our linked
-                                        document to be
-                                        opened.
-                                        <br>
-                                        This target attribute can use any of the values:
-                                        <br>
-                                        <ul>
-                                            <li>
-                                                _blank: Opens linked document in a new window</li>
-                                            <li>
-                                                _top: Opens document in the full body of the window</li>
-                                            <li>
-                                                _self: Opens document in the same window</li>
-                                            <li>
-                                                _parent: Opens linked document in a parent frame</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="h6">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#c6" aria-expanded="false" aria-controls="c6">
-                                        Link to a Page section
-                                    </button>
-                                </h2>
-                                <div id="c6" class="accordion-collapse collapse" aria-labelledby="h6"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        To link to a particular section of a webpage:
-                                        <br>
-                                        <ul>
-                                            <li>
-                                                use the name attribute or id attribute</li>
-                                            <li>
-                                                use hyperlink with # place where you want to go on a webpage.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="h7">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#c7" aria-expanded="false" aria-controls="c7">
-                                        Link Colors
-                                    </button>
-                                </h2>
-                                <div id="c7" class="accordion-collapse collapse" aria-labelledby="h7"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        Three types of links are there: <span style="color: red;"> active</span>, <span
-                                            style="color: purple;">visited</span>, and<span style="color:blue;">
-                                            unvisited.</span>
-                                        <br>
-                                        <ul>
-                                            <li>
-                                                Active: It is in <span style="color: red;"> red</span> with an
-                                                underline.</li>
-                                            <li>
-                                                Visited: It is <span style="color: purple;">purple</span> and
-                                                underlined.</li>
-                                            <li>
-                                                Unvisited: It is <span style="color:blue;">blue</span> and underlined.
-                                            </li>
-                                        </ul>
-                                        By CSS we can change the color of the links.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <pre class="language-html"><code>
-          &lt; href= "Your specified path" &gt;             &lt;/a&gt;
-        </code></pre>
-            </li>
-            <li>
-                HTML Comments
-                <button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o27"
-                    aria-controls="o27">
-                    Read More...
-                </button>
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o27"
-                    aria-labelledby="offcanvasWithBothOptionsLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-                            HTML Comments </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <p>HTML Comments<br>
-                        <ul>
-                            <li>Comments are a piece of code that is ignored by a web browser.</li>
-                            <li>Comments help us to understand the code.</li>
-                            <li>All programming language has their commenting style.</li>
-                            <li> In HTML, we use &lt;!-- content --&gt; tag. Any content placed in these brackets will
-                                be treated as a
-                                comment.</li>
-                            <li>Shortcut Keys are "Ctrl + /" . This will automatically put our selected content as a
-                                comment</li>
-                            <li> There are two types of comments: Single comments and Multiline comments.</li>
-                        </ul>
-                        </p>
-                    </div>
-                </div><br>
-                Single comments
-                <pre class="language-html"><code>
-           &lt;!-- Single line Comment --&gt;
-        </code></pre><br>
-                Multi-line comments
-                <pre class="language-html"><code>
-        &lt;!--
-        This is a multiline comment.
-        You can add as many as lines you want.
-        --&gt;
-        </code></pre>
-            </li>
-            <li>
-                HTML Images
-                <button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o28"
-                    aria-controls="o28">
-                    Read More...
-                </button>
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o28"
-                    aria-labelledby="offcanvasWithBothOptionsLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-                            HTML Images </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <p>To represent HTML pages beautifully and to explain content, we use images for that. Our
-                            ability to
-                            comprehend complex things is aided by visual representations to do that we use images. <br>
-                            &lt;img&gt; tag uses the height or width attribute to set the height or width of an image.
-                            Values for
-                            height or width attribute must be in pixel or percentage and value should be placed in
-                            double quotes
-                            otherwise we can see an error.
-                        </p>
-                    </div>
-                </div>
-                <pre class="language-html"><code>
-          &lt;img src="images/profile_pic" alt="Testing Image" /&gt;
-        </code></pre>
-            </li>
-            <li>
-                HTML Lists
-                <button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o29"
-                    aria-controls="o29">
-                    Read More...
-                </button>
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o29"
-                    aria-labelledby="offcanvasWithBothOptionsLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-                            HTML Lists </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <p>Our day-to-day lives revolve around lists. For example, We purchase items while shopping. A
-                            list of all
-                            our items is included on the bill we receive from the shopkeeper. Similarly, web developers
-                            use lists to
-                            display the data. <br> HTML lists are used to display the data in an ordered and unordered
-                            form. List
-                            contains one or more list
-                            elements.
-                            The HTML list is of three types:
-                            <br>
-                        <ul>
-                            <li>An unordered list</li>
-                            <li>An ordered list</li>
-                            <li>A definition list</li>
-                        </ul>
-                        </p>
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="h4">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#c4" aria-expanded="false" aria-controls="c4">
-                                        An Unordered List
-                                    </button>
-                                </h2>
-                                <div id="c4" class="accordion-collapse collapse" aria-labelledby="h4"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        This list will list items using bullets. <br>
-                                        Unordered lists have no sequence. <br>
-                                        They are more like bullet points.
-                                        <br>
-                                        Setting type attribute:
-                                        Type attribute used to specify the type of bullet.
-                                        <br>
-                                        There are three types of bullets: <br>
-                                        <ul>
-                                            <li>disc</li>
-                                            <li>square</li>
-                                            <li>circle</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="h5">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#c5" aria-expanded="false" aria-controls="c5">
-                                        An Ordered List
-                                    </button>
-                                </h2>
-                                <div id="c5" class="accordion-collapse collapse" aria-labelledby="h5"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        This list will list items using numbers. We can use different types of numbers
-                                        like roman numerals
-                                        etc. <br>
-                                        Ordered lists have a sequence. <br>
-                                        They are a more like numbered list. <br>the type attribute is used to specify
-                                        the type of numbering
-                                        we want. There are five options:
-                                        <ol>
-                                            <li>Uppercase Roman Numerals</li>
-                                            <li>Lowercase Roman Numerals</li>
-                                            <li>Numerals</li>
-                                            <li>Lowercase Letters</li>
-                                            <li> Uppercase Letters</li>
-                                        </ol> <br>
-                                        the start attribute is used to specify the starting type of numbering.
-                                        (start="3")
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="h6">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#c6" aria-expanded="false" aria-controls="c6">
-                                        A Definition List
-                                    </button>
-                                </h2>
-                                <div id="c6" class="accordion-collapse collapse" aria-labelledby="h6"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        This list will arrange list items like a dictionary. <br>
-                                        Definition List is also known as Description List. <br>
-                                        Definition List works the same as a dictionary works. <br>
-                                        Dictionary is used for describing the term similarly in HTML we use a Definition
-                                        List or Description
-                                        List to define a term. <br>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br> unordered list
-                <pre class="language-html"><code>
-          &lt;ul&gt;
-          &lt;li&gt;Pen&lt;/li&gt;
-          &lt;/ul&gt;
-        </code></pre>
-                <br> ordered list
-                <pre class="language-html"><code>
-          &lt;ol&gt;
-          &lt;li&gt;Pen&lt;/li&gt;
-          &lt;/ol&gt;
-        </code></pre>
-                <br>Definition list
-                <pre class="language-html"><code>
-          &lt;dl&gt;
-            &lt;dt&gt;//definition term&lt;/dt&gt;
-            &lt;dd&gt;//describing term&lt;/dd&gt;
-            &lt;/dl&gt;
-        </code></pre>
-            </li>
-            <li>
-                HTML Tables
-                <button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o210"
-                    aria-controls="o210">
-                    Read More...
-                </button>
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o210"
-                    aria-labelledby="offcanvasWithBothOptionsLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-                            HTML Tables </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul>
-                            <li>&lt;table&gt; tag is used to define the start of a table.</li>
-                            <li>&lt;table&gt; tag also has its corresponding &lt;/table&gt; tag.</li>
-                            <li>we can arrange our data in rows and columns of a table.</li>
-                            <li>&lt;th&gt; tag is used for heading in a table.</li>
-                            <li>For rows, &lt;tr&gt; tag is used.</li>
-                            <li>For columns, &lt;td&gt; tag is used</li>
-                            <li>NOTE: &lt;td&gt; tag also referred to as data cell.</li>
-                        </ul>
-                        </p>
-                    </div>
-                </div>
-                <pre class="language-html"><code>
-          &lt;table&gt;
-        &lt;tr&gt;
-        &lt;th&gt;Name&lt;/th&gt;
-        &lt;th&gt;Age&lt;/th&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-        &lt;td&gt;Harry&lt;/td&gt;
-        &lt;td&gt;100&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;/table&gt;
-          
-        </code></pre>
-            </li>
-            <li>
-                HTML Block Elements
-                <button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o211"
-                    aria-controls="o211">
-                    Read More...
-                </button>
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o211"
-                    aria-labelledby="offcanvasWithBothOptionsLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-                            HTML Block Elements
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        You already know about tags all those tags have some displaying value i.e. Either they are
-                        block-level
-                        elements or they are Inline elements. <br> Now, let's discuss block-level elements. <br>
-                        Block-level
-                        elements are those elements that start in a new line and take the entire width of the screen.
+                    <div class="offcanvas-body small">
+                        The PRIMARY KEY constraint uniquely identifies each record in a table.
                         <br>
-                        Block-level Elements:
+                        Primary keys must contain UNIQUE values, and cannot contain NULL values.
                         <br>
-                        <ul>
-                            <li>&lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;,&lt;h6&gt;</li>
-                            <li>&lt;p&gt;</li>
-                            <li> &lt;hr&gt;</li>
-                            <li> &lt;address&gt; </li>
-                            <li> &lt;article&gt;</li>
-                            <li> &lt;aside&gt;</li>
-                            <li> &lt;blockquote&gt;</li>
-                            <li> &lt;canvas&gt;</li>
-                            <li> &lt;dd&gt;</li>
-                            <li> &lt;div&gt;</li>
-                            <li> &lt;dl&gt;</li>
-                            <li> &lt;dt&gt;</li>
-                            <li> &lt;fieldset&gt;</li>
-                            <li> &lt;figcaption&gt;</li>
-                            <li> &lt;figure&gt;</li>
-                            <li> &lt;footer&gt;</li>
-                            <li> &lt;form&gt;</li>
-                            <li> &lt;header&gt;</li>
-                            <li> &lt;li&gt;</li>
-                            <li> &lt;main&gt;</li>
-                            <li> &lt;nav&gt;</li>
-                            <li> &lt;noscript&gt;</li>
-                            <li> &lt;ol&gt;</li>
-                            <li> &lt;ul&gt;</li>
-                            <li> &lt;pre&gt;</li>
-                            <li> &lt;section&gt;</li>
-                            <li> &lt;table&gt;</li>
-                            <li> &lt;video&gt;</li>
-                        </ul>
-                        </p>
+                        A table can have only ONE primary key; and in the table, this primary key can consist of single
+                        or multiple columns (fields).
                     </div>
                 </div>
+                <pre class="language-css">
+                                    <code>
+                                        CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    PRIMARY KEY (ID)
+);
+                                    </code>
+                                    </pre>
             </li>
-            <li>
-                HTML Inline Elements
-                <button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o212"
-                    aria-controls="o212">
-                    Read More...
-                </button>
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o212"
-                    aria-labelledby="offcanvasWithBothOptionsLabel">
+
+
+
+
+            <li> FOREIGN KEY Constraint<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom53" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom53"
+                    aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-                            HTML Inline Elements
-                        </h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel"> FOREIGN KEY Constraint</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body">
-                        Inline Elements don't start on a new line. It only takes the width required to cover the
-                        content. <br>
-                        Inline Elements: <br>
-                        <ul>
-                            <li> &lt;a&gt;</li>
-                            <li> &lt;abbr&gt;</li>
-                            <li> &lt;acronym&gt;</li>
-                            <li> &lt;button&gt;</li>
-                            <li> &lt;br&gt;</li>
-                            <li> &lt;big&gt;</li>
-                            <li> &lt;bdo&gt;</li>
-                            <li> &lt;b&gt;</li>
-                            <li> &lt;cite&gt;</li>
-                            <li> &lt;code&gt;</li>
-                            <li> &lt;dfn&gt;</li>
-                            <li> &lt;i&gt;</li>
-                            <li> &lt;em&gt;</li>
-                            <li> &lt;img&gt;</li>
-                            <li> &lt;input&gt;</li>
-                            <li> &lt;kbd&gt;</li>
-                            <li> &lt;label&gt;</li>
-                            <li> &lt;map&gt;</li>
-                            <li> &lt;object&gt;</li>
-                            <li> &lt;output&gt;</li>
-                            <li> &lt;tt&gt;</li>
-                            <li> &lt;time&gt;</li>
-                            <li> &lt;samp&gt;</li>
-                            <li> &lt;script&gt;</li>
-                            <li> &lt;select&gt;</li>
-                            <li> &lt;small&gt;</li>
-                            <li> &lt;span&gt;</li>
-                            <li> &lt;strong&gt;</li>
-                            <li> &lt;sub&gt;</li>
-                            <li> &lt;sup&gt;</li>
-                            <li> &lt;textarea&gt;</li>
-                        </ul>
-                        </p>
+                    <div class="offcanvas-body small">
+                        The FOREIGN KEY constraint is used to prevent actions that would destroy links between tables.
+                        <br>
+                        A FOREIGN KEY is a field (or collection of fields) in one table, that refers to the PRIMARY KEY
+                        in another table.
+                        <br>
+                        The table with the foreign key is called the child table, and the table with the primary key is
+                        called the referenced or parent table.
                     </div>
                 </div>
+                <pre class="language-css">
+                                <code>
+                                    CREATE TABLE Orders (
+                                        OrderID int NOT NULL,
+                                        OrderNumber int NOT NULL,
+                                        PersonID int,
+                                        PRIMARY KEY (OrderID),
+                                        FOREIGN KEY (PersonID) REFERENCES Persons(PersonID)
+                                    );
+                                </code>
+                                </pre>
+            </li>
+
+
+
+
+
+
+            <li>CHECK Constraint<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom54" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom54"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CHECK Constraint</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The CHECK constraint is used to limit the value range that can be placed in a column.
+                        <br>
+                        If you define a CHECK constraint on a column it will allow only certain values for this column.
+                        <br>
+                        If you define a CHECK constraint on a table it can limit the values in certain columns based on
+                        values in other columns in the row.
+                    </div>
+                </div>
+                <pre class="language-css">
+                            <code>
+                                CREATE TABLE Persons (
+                                    ID int NOT NULL,
+                                    LastName varchar(255) NOT NULL,
+                                    FirstName varchar(255),
+                                    Age int,
+                                    CHECK (Age>=18)
+                                );
+                            </code>
+                            </pre>
+            </li>
+            <li>DEFAULT Constraint<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom55" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom55"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">DEFAULT Constraint</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The DEFAULT constraint is used to set a default value for a column.
+                        <br>
+                        The default value will be added to all new records, if no other value is specified.
+                    </div>
+                </div>
+                <pre class="language-css">
+                        <code>
+                            CREATE TABLE Persons (
+                                ID int NOT NULL,
+                                LastName varchar(255) NOT NULL,
+                                FirstName varchar(255),
+                                Age int,
+                                City varchar(255) DEFAULT 'Sandnes'
+                            );
+                        </code>
+                        </pre>
+            </li>
+            <li>CREATE INDEX Statement<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom56" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom56"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CREATE INDEX Statement</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The CREATE INDEX statement is used to create indexes in tables.
+                        <br>
+                        Indexes are used to retrieve data from the database more quickly than otherwise. The users
+                        cannot see the indexes, they are just used to speed up searches/queries.
+                        <br>
+                        Note: Updating a table with indexes takes more time than updating a table without (because the
+                        indexes also need an update). So, only create indexes on columns that will be frequently
+                        searched against.
+                    </div>
+                </div>
+                <pre class="language-css">
+                        <code>
+                            CREATE INDEX index_name
+                            ON table_name (column1, column2, ...);
+                        </code>
+                        </pre>
+            </li>
+            <li>AUTO_INCREMENT Keyword<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom57" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom57"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">AUTO_INCREMENT Keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        MySQL uses the AUTO_INCREMENT keyword to perform an auto-increment feature.
+                        <br>
+                        By default, the starting value for AUTO_INCREMENT is 1, and it will increment by 1 for each new
+                        record.
+                    </div>
+                </div>
+                <pre class="language-css">
+                        <code>
+                            CREATE TABLE Persons (
+                                Personid int NOT NULL AUTO_INCREMENT,
+                                LastName varchar(255) NOT NULL,
+                                FirstName varchar(255),
+                                Age int,
+                                PRIMARY KEY (Personid)
+                            );
+                        </code>
+                        </pre>
+            </li>
+            <li>Date Data Types<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom58" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom58"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Date Data Types</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        MySQL comes with the following data types for storing a date or a date/time value in the
+                        database:
+                        <br>
+                        DATE - format YYYY-MM-DD <br>
+                        DATETIME - format: YYYY-MM-DD HH:MI:SS <br>
+                        TIMESTAMP - format: YYYY-MM-DD HH:MI:SS <br>
+                        YEAR - format YYYY or YY <br>
+                        Note: The date data type are set for a column when you create a new table in your database!
+                    </div>
+                </div>
+                <pre class="language-css">
+                        <code>
+                            SELECT * FROM Orders WHERE OrderDate='2008-11-11'
+                        </code>
+                        </pre>
+            </li>
+            <li>CREATE VIEW Statement<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom59" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom59"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CREATE VIEW Statement</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        In SQL, a view is a virtual table based on the result-set of an SQL statement.
+                        <br>
+                        A view contains rows and columns, just like a real table. The fields in a view are fields from
+                        one or more real tables in the database.
+                        <br>
+                        You can add SQL statements and functions to a view and present the data as if the data were
+                        coming from one single table.
+                        <br>
+                        A view is created with the CREATE VIEW statement.
+                    </div>
+                </div>
+                <h3>CREATE VIEW Syntax</h3>
+                <pre class="language-css">
+                    <code>
+                        CREATE VIEW view_name AS
+                        SELECT column1, column2, ...
+                        FROM table_name
+                        WHERE condition;
+                    </code>
+                    </pre>
+                <h3>Example:</h3>
+                <pre class="language-css">
+                            <code>
+                                CREATE VIEW [Brazil Customers] AS
+SELECT CustomerName, ContactName
+FROM Customers
+WHERE Country = 'Brazil';
+                            </code>
+                            </pre>
             </li>
         </ol>
     </div>
@@ -1578,7 +2185,7 @@
                         <h6 class="text-uppercase fw-bold mb-4">
                             <i class="bi bi-gem me-3"></i>Cheatbook
                         </h6>
-                        <p>
+                        <h3>
                             <li>Quick reference</li>
                             <li>
                                 Be productive after learning a new thing (i.e. programming
@@ -1586,62 +2193,62 @@
                             </li>
                             <li>Quickly recall when forget some syntax</li>
                             <li>Use snippets for rapid development</li>
-                        </p>
+                        </h3>
                     </div>
                     <!-- Grid column -->
                     <!-- Grid column -->
                     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">Programming Languages</h6>
-                        <p>
+                        <h3>
                             <a href="c.html" class="text-reset">C</a>
-                        </p>
-                        <p>
+                        </h3>
+                        <h3>
                             <a href="cplus.html" class="text-reset">C++</a>
-                        </p>
-                        <p>
+                        </h3>
+                        <h3>
                             <a href="python.html" class="text-reset">Python</a>
-                        </p>
-                        <p>
+                        </h3>
+                        <h3>
                             <a href="java.html" class="text-reset">Java</a>
-                        </p>
-                        <p>
+                        </h3>
+                        <h3>
                             <a href="dsa.html" class="text-reset">DSA</a>
-                        </p>
+                        </h3>
                     </div>
                     <!-- Grid column -->
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">Machine learning</h6>
-                        <p>
+                        <h3>
                             <a href="numpy.html" class="text-reset">Numpy</a>
-                        </p>
-                        <p>
+                        </h3>
+                        <h3>
                             <a href="pandas.html" class="text-reset">Pandas</a>
-                        </p>
-                        <p>
+                        </h3>
+                        <h3>
                             <a href="seaborn.html" class="text-reset">Seaborn</a>
-                        </p>
-                        <p>
+                        </h3>
+                        <h3>
                             <a href="matplotlib.html" class="text-reset">Matplotlib</a>
-                        </p>
-                        <p>
+                        </h3>
+                        <h3>
                             <a href="tensorflow.html" class="text-reset">Tensorflow</a>
-                        </p>
+                        </h3>
                     </div>
                     <!-- Grid column -->
                     <!-- Grid column -->
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                        <p><i class="bi bi-house-door me-3"></i>Badlapur,mumbai</p>
-                        <p>
+                        <h3><i class="bi bi-house-door me-3"></i>Badlapur,mumbai</h3>
+                        <h3>
                             <i class="bi bi-envelope me-3"></i>
                             mrsohammanjrekar@gmail.com
-                        </p>
-                        <p><i class="bi bi-phone me-3"></i> +91 7045208474</p>
-                        <p><i class="bi bi-whatsapp me-3"></i> +91 7045208474</p>
+                        </h3>
+                        <h3><i class="bi bi-phone me-3"></i> +91 7045208474</h3>
+                        <h3><i class="bi bi-whatsapp me-3"></i> +91 7045208474</h3>
                     </div>
                     <!-- Grid column -->
                 </div>
