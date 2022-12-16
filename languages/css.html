@@ -337,7 +337,7 @@
                     </div>
                 </div>
                 <h3>External CSS</h3>
-                <pre class="language-css">
+                <pre class="language-html">
     <code>
         &lt;link rel="stylesheet" href="mystyle.css"&gt;
 </code>
@@ -353,7 +353,7 @@
 </code>
 </pre>
                 <h3>Inline CSS</h3>
-                <pre class="language-css">
+                <pre class="language-html">
 <code>
     &lt;h1 style="color:blue;text-align:center;"&gt;&lt;/h1&gt;
 </code>
@@ -418,33 +418,34 @@
                 <h3>CSS Background Color</h3>
                 <pre class="language-css">
     <code>
-        &lt;h1 style="background-color:DodgerBlue;"&gt;Hello World&lt;/h1&gt;
+        background-color:DodgerBlue;
 </code>
 </pre>
 <h3>CSS Text Color</h3>
                 <pre class="language-css">
     <code>
-        &lt;h1 style="color:DodgerBlue;"&gt;Hello World&lt;/h1&gt;
+        color:DodgerBlue;
 </code>
 </pre>
 <h3>CSS Border Color</h3>
                 <pre class="language-css">
     <code>
-        &lt;h1 style="border:2px solid Violet;"&gt;Hello World&lt;/h1&gt;
+       border:2px solid Violet;
 </code>
 </pre>
 <h3>CSS Color Values (RGB, HEX, HSL, RGBA and HSLA )</h3>
                 <pre class="language-css">
     <code>
-        &lt;h1 style="background-color:rgb(255, 99, 71);"&gt;...&lt;/h1&gt;
-        &lt;h1 style="background-color:#ff6347;"&gt;...&lt;/h1&gt;
-        &lt;h1 style="background-color:hsl(9, 100%, 64%);"&gt;...&lt;/h1&gt;
-        &lt;h1 style="background-color:rgba(255, 99, 71, 0.5);"&gt;...&lt;/h1&gt;
-        &lt;h1 style="background-color:hsla(9, 100%, 64%, 0.5);"&gt;...&lt;/h1&gt;
+        background-color:rgb(255, 99, 71);
+        background-color:#ff6347;
+        background-color:hsl(9, 100%, 64%);
+        background-color:rgba(255, 99, 71, 0.5);
+        background-color:hsla(9, 100%, 64%, 0.5);
 </code>
 </pre>
                
             </li>
+            <li>CSS Backgrounds <ol type="i">
             <li>
                 CSS background-color<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom10" aria-controls="offcanvasBottom">Read more...</button>
@@ -547,459 +548,320 @@
                 </div>
                 <pre class="language-css">
                     <code>
-                        $str = "Visit W3Schools";
-                    $pattern = "/w3schools/i";
-                    echo preg_match($pattern, $str); // Outputs 1
+                        body {
+                            background: #ffffff url("img_tree.png") no-repeat right top;
+                          }
                     </code>
                     </pre>
-            </li>
+                </li></ol></li>
             <li>
-                Regular Expression<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                CSS Borders
+                <ol><li>Border Style<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom18" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom18"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Regular Expression</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Border Style</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        A regular expression is a sequence of characters that forms a search pattern. When you search
-                        for data in a text, you can use this search pattern to describe what you are searching for.
+                        The border-style property specifies what kind of border to display.
+<br><br>
+                        The following values are allowed:
+                        <br><ul>
+                            <li>dotted - Defines a dotted border</li>
+                            <li>dashed - Defines a dashed border</li>
+                            <li>solid - Defines a solid border</li>
+                            <li>double - Defines a double border</li>
+                            <li>groove - Defines a 3D grooved border. The effect depends on the border-color value</li>
+                            <li>ridge - Defines a 3D ridged border. The effect depends on the border-color value</li>
+                            <li>inset - Defines a 3D inset border. The effect depends on the border-color value</li>
+                            <li>outset - Defines a 3D outset border. The effect depends on the border-color value</li>
+                            <li>none - Defines no border</li>
+                            <li>hidden - Defines a hidden border</li>
+                        </ul>
                         <br>
-                        A regular expression can be a single character, or a more complicated pattern.
-                        <br>
-                        Regular expressions can be used to perform all types of text search and text replace operations.
-                        <br><br>
-                        Regular Expression Functions
-                        <br>
-                        <table class="ws-table-all notranslate table-bordered">
-                            <tbody>
-                                <tr>
-                                    <th style="width:20%">Function</th>
-                                    <th style="width:80%">Description</th>
-                                </tr>
-                                <tr>
-                                    <td>preg_match()</td>
-                                    <td>Returns 1 if the pattern was found in the string and 0 if not</td>
-                                </tr>
-                                <tr>
-                                    <td>preg_match_all()</td>
-                                    <td>Returns the number of times the pattern was found in the string, which may also
-                                        be 0</td>
-                                </tr>
-                                <tr>
-                                    <td>preg_replace()</td>
-                                    <td>Returns a new string where matched patterns have been replaced with another
-                                        string</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <ul>
-                    <li>preg_match()
-                        <pre class="language-css">
-                        <code>
-                            $str = "Visit W3Schools";
-                        $pattern = "/w3schools/i";
-                        echo preg_match($pattern, $str); // Outputs 1
-                        </code>
-                        </pre>
-                    </li>
-                    <li>preg_match_all()
-                        <pre class="language-css">
-                        <code>
-                            $str = "The rain in SPAIN falls mainly on the plains.";
-                        $pattern = "/ain/i";
-                        echo preg_match_all($pattern, $str); // Outputs 4
-                        </code>
-                        </pre>
-                    </li>
-                    <li>preg_replace()
-                        <pre class="language-css">
-                        <code>
-                            $str = "Visit Microsoft!";
-                            $pattern = "/microsoft/i";
-                            echo preg_replace($pattern, "W3Schools", $str); // Outputs "Visit W3Schools!"
-                        </code>
-                        </pre>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                Regular Expression Modifiers<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasBottom19" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom19"
-                    aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Regular Expression Modifiers</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body small">
-                        Modifiers can change how a search is performed. <br><br>
-                        <table class="ws-table-all notranslate table-bordered">
-                            <tbody>
-                                <tr>
-                                    <th style="width:22%">Modifier</th>
-                                    <th>Description</th>
-                                </tr>
-                                <tr>
-                                    <td>i</td>
-                                    <td>Performs a case-insensitive search</td>
-                                </tr>
-                                <tr>
-                                    <td>m</td>
-                                    <td>Performs a multiline search (patterns that search for the
-                                        beginning or end of a string will match the beginning or end
-                                        of each line)</td>
-                                </tr>
-                                <tr>
-                                    <td>u</td>
-                                    <td>Enables correct matching of UTF-8 encoded patterns</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </li>
-            <li>
-                Regular Expression Patterns<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasBottom21" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom21"
-                    aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Regular Expression Patterns</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body small">
-                        <table class="ws-table-all notranslate table-bordered">
-                            <tbody>
-                                <tr>
-                                    <th style="width:22%">Expression</th>
-                                    <th>Description</th>
-                                </tr>
-                                <tr>
-                                    <td>[abc]</td>
-                                    <td>Find one character from the options between the brackets</td>
-                                </tr>
-                                <tr>
-                                    <td>[^abc]</td>
-                                    <td>Find any character NOT between the brackets</td>
-                                </tr>
-                                <tr>
-                                    <td>[0-9]</td>
-                                    <td>Find one character from the range 0 to 9</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </li>
-            <li>
-                Metacharacters<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasBottom22" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom22"
-                    aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Metacharacters</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body small">
-                        <table class="ws-table-all notranslate table-bordered">
-                            <tbody>
-                                <tr>
-                                    <th style="width:22%">Metacharacter</th>
-                                    <th>Description</th>
-                                </tr>
-                                <tr>
-                                    <td>|</td>
-                                    <td>Find a match for any one of the patterns separated by | as in: cat|dog|fish</td>
-                                </tr>
-                                <tr>
-                                    <td>.</td>
-                                    <td>Find just one instance of any character</td>
-                                </tr>
-                                <tr>
-                                    <td>^</td>
-                                    <td>Finds a match as the beginning of a string as in: ^Hello</td>
-                                </tr>
-                                <tr>
-                                    <td>$</td>
-                                    <td>Finds a match at the end of the string as in: World$</td>
-                                </tr>
-                                <tr>
-                                    <td>\d</td>
-                                    <td>Find a digit</td>
-                                </tr>
-                                <tr>
-                                    <td>\s</td>
-                                    <td>Find a whitespace character</td>
-                                </tr>
-                                <tr>
-                                    <td>\b</td>
-                                    <td>Find a match at the beginning of a word like this: \bWORD, or at the end of a
-                                        word like this: WORD\b</td>
-                                </tr>
-                                <tr>
-                                    <td>\uxxxx</td>
-                                    <td>Find the Unicode character specified by the hexadecimal number xxxx</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>            </li>
-            <li>
-                Quantifiers<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasBottom23" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom23"
-                    aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Quantifiers</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body small">
-                        <table class="ws-table-all notranslate table-bordered">
-                            <tbody>
-                                <tr>
-                                    <th style="width:22%">Quantifier</th>
-                                    <th>Description</th>
-                                </tr>
-                                <tr>
-                                    <td>n+</td>
-                                    <td>Matches any string that contains at least one <em>n</em></td>
-                                </tr>
-                                <tr>
-                                    <td>n*</td>
-                                    <td>Matches any string that contains zero or more occurrences of <em>n</em></td>
-                                </tr>
-                                <tr>
-                                    <td>n?</td>
-                                    <td>Matches any string that contains zero or one occurrences of <em>n</em></td>
-                                </tr>
-                                <tr>
-                                    <td>n{x}</td>
-                                    <td>Matches any string that contains a sequence of <i>X</i> <i>n</i>'s</td>
-                                </tr>
-                                <tr>
-                                    <td>n{x,y}</td>
-                                    <td>Matches any string that contains a sequence of X to Y <i>n</i>'s</td>
-                                </tr>
-                                <tr>
-                                    <td>n{x,}</td>
-                                    <td>Matches any string that contains a sequence of at least X <i>n</i>'s</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>            </li>
-            <li>
-                PHP Form Handling<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasBottom24" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom24"
-                    aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">PHP Form Handling</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body small">
-                        The PHP superglobals $_GET and $_POST are used to collect form-data.
-                        <br><br>
-                        GET vs. POST <br>
-                        Both GET and POST create an array (e.g. array( key1 => value1, key2 => value2, key3 => value3,
-                        ...)). This array holds key/value pairs, where keys are the names of the form controls and
-                        values are the input data from the user. <br><br>                        Both GET and POST are treated as $_GET and $_POST. These are superglobals, which means that they
-                        are always accessible, regardless of scope - and you can access them from any function, class or
-                        file without having to do anything special.
-                        <br><br>
-                        $_GET is an array of variables passed to the current script via the URL parameters.
-                        <br><br>
-                        $_POST is an array of variables passed to the current script via the HTTP POST method.
-                        <br><br>
-                        When to use GET?
-                        Information sent from a form with the GET method is visible to everyone (all variable names and
-                        values are displayed in the URL). GET also has limits on the amount of information to send. The
-                        limitation is about 2000 characters. However, because the variables are displayed in the URL, it
-                        is possible to bookmark the page. This can be useful in some cases.
-                        <br>
-                        GET may be used for sending non-sensitive data.
-                        <br>
-                        Note: GET should NEVER be used for sending passwords or other sensitive information!
-                        <br><br>
-                        When to use POST?
-                        Information sent from a form with the POST method is invisible to others (all names/values are
-                        embedded within the body of the HTTP request) and has no limits on the amount of information to
-                        send.
-                        <br>
-                        Moreover POST supports advanced functionality such as support for multi-part binary input while
-                        uploading files to server.
-                        <br>
-                        However, because the variables are not displayed in the URL, it is not possible to bookmark the
-                        page.
-                        <br>
-                        Developers prefer POST for sending form data.                    </div>
-                </div>
-                <pre class="language-css">
-<code>
-    &lt;html&gt;
-&lt;body&gt;&lt;form action="welcome.php" method="post"&gt;
-Name: &lt;input type="text" name="name"&gt;&lt;br&gt;
-E-mail: &lt;input type="text" name="email"&gt;&lt;br&gt;
-&lt;input type="submit"&gt;
-&lt;/form&gt;&lt;/body&gt;
-&lt;/html&gt;
-</code>
-</pre>
-            </li>
-            <li>
-                PHP Form Validation<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasBottom25" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom25"
-                    aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">PHP Form Validation</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body small">
-                        The validation rules for the form above are as follows:
-                        <br>
-                        <table class="ws-table-all notranslate table-bordered">
-                            <tbody>
-                                <tr>
-                                    <th style="width:25%">Field</th>
-                                    <th style="width:75%">Validation Rules</th>
-                                </tr>
-                                <tr>
-                                    <td>Name</td>
-                                    <td>Required. + Must only contain letters and whitespace</td>
-                                </tr>
-                                <tr>
-                                    <td>E-mail</td>
-                                    <td>Required. + Must contain a valid email address (with @ and .)</td>
-                                </tr>
-                                <tr>
-                                    <td>Website</td>
-                                    <td>Optional. If present, it must contain a valid URL</td>
-                                </tr>
-                                <tr>
-                                    <td>Comment</td>
-                                    <td>Optional. Multi-line input field (textarea)</td>
-                                </tr>
-                                <tr>
-                                    <td>Gender</td>
-                                    <td>Required. Must select one</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border).    
                     </div>
                 </div>
                 <pre class="language-css">
                     <code>
-                        &lt;!DOCTYPE HTML&gt;  
-                        &lt;html&gt;
-                        &lt;head&gt;
-                        &lt;style&gt;
-                        .error {color: #FF0000;}
-                        &lt;/style&gt;
-                        &lt;/head&gt;
-                        &lt;body&gt;  
-                        
-                        &lt;?php
-                        // define variables and set to empty values
-                        $nameErr = $emailErr = $genderErr = $websiteErr = "";
-                        $name = $email = $gender = $comment = $website = "";
-                        
-                        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                          if (empty($_POST["name"])) {
-                            $nameErr = "Name is required";
-                          } else {
-                            $name = test_input($_POST["name"]);
-                            // check if name only contains letters and whitespace
-                            if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
-                              $nameErr = "Only letters and white space allowed";
-                            }
-                          }
-                          
-                          if (empty($_POST["email"])) {
-                            $emailErr = "Email is required";
-                          } else {
-                            $email = test_input($_POST["email"]);
-                            // check if e-mail address is well-formed
-                            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                              $emailErr = "Invalid email format";
-                            }
-                          }
-                            
-                          if (empty($_POST["website"])) {
-                            $website = "";
-                          } else {
-                            $website = test_input($_POST["website"]);
-                            // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
-                            if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
-                              $websiteErr = "Invalid URL";
-                            }
-                          }
-                        
-                          if (empty($_POST["comment"])) {
-                            $comment = "";
-                          } else {
-                            $comment = test_input($_POST["comment"]);
-                          }
-                        
-                          if (empty($_POST["gender"])) {
-                            $genderErr = "Gender is required";
-                          } else {
-                            $gender = test_input($_POST["gender"]);
-                          }
-                        }
-                        
-                        function test_input($data) {
-                          $data = trim($data);
-                          $data = stripslashes($data);
-                          $data = htmlspecialchars($data);
-                          return $data;
-                        }
-                        ?&gt;
-                        
-                        &lt;h2&gt;PHP Form Validation Example&lt;/h2&gt;
-                        &lt;p&gt;&lt;span class="error"&gt;* required field&lt;/span&gt;&lt;/p&gt;
-                        &lt;form method="post" action="&lt;?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?&gt;"&gt;  
-                          Name: &lt;input type="text" name="name" value="&lt;?php echo $name;?&gt;"&gt;
-                          &lt;span class="error"&gt;* &lt;?php echo $nameErr;?&gt;&lt;/span&gt;
-                          &lt;br&gt;&lt;br&gt;
-                          E-mail: &lt;input type="text" name="email" value="&lt;?php echo $email;?&gt;"&gt;
-                          &lt;span class="error"&gt;* &lt;?php echo $emailErr;?&gt;&lt;/span&gt;
-                          &lt;br&gt;&lt;br&gt;
-                          Website: &lt;input type="text" name="website" value="&lt;?php echo $website;?&gt;"&gt;
-                          &lt;span class="error"&gt;&lt;?php echo $websiteErr;?&gt;&lt;/span&gt;
-                          &lt;br&gt;&lt;br&gt;
-                          Comment: &lt;textarea name="comment" rows="5" cols="40"&gt;&lt;?php echo $comment;?&gt;&lt;/textarea&gt;
-                          &lt;br&gt;&lt;br&gt;
-                          Gender:
-                          &lt;input type="radio" name="gender" &lt;?php if (isset($gender) && $gender=="female") echo "checked";?&gt; value="female"&gt;Female
-                          &lt;input type="radio" name="gender" &lt;?php if (isset($gender) && $gender=="male") echo "checked";?&gt; value="male"&gt;Male
-                          &lt;input type="radio" name="gender" &lt;?php if (isset($gender) && $gender=="other") echo "checked";?&gt; value="other"&gt;Other  
-                          &lt;span class="error"&gt;* &lt;?php echo $genderErr;?&gt;&lt;/span&gt;
-                          &lt;br&gt;&lt;br&gt;
-                          &lt;input type="submit" name="submit" value="Submit"&gt;  
-                        &lt;/form&gt;
-                        
-                        &lt;?php
-                        echo "&lt;h2&gt;Your Input:&lt;/h2&gt;";
-                        echo $name;
-                        echo "&lt;br&gt;";
-                        echo $email;
-                        echo "&lt;br&gt;";
-                        echo $website;
-                        echo "&lt;br&gt;";
-                        echo $comment;
-                        echo "&lt;br&gt;";
-                        echo $gender;
-                        ?&gt;
-                        
-                        &lt;/body&gt;
-                        &lt;/html&gt;
+                        border-style: dotted;
                     </code>
                     </pre>
+            </li>
+            <li>
+                Border Width<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom19" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom19"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Border Width</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The border-width property specifies the width of the four borders.
+<br><br>
+                        The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick
+                    </div>
+                </div>
+                <pre class="language-css">
+                    <code>
+                        border-width: 5px;
+                    </code>
+                    </pre>
+                    <pre class="language-css">
+                        <code>
+                            border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */
+                        </code>
+                        </pre>
+            </li>
+            <li>
+                Border Color<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom21" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom21"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Border Color</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The border-color property is used to set the color of the four borders.
+<br>
+The color can be set by:
+<br><ul>
+    <li>name - specify a color name, like "red"</li>
+    <li>HEX - specify a HEX value, like "#ff0000"</li>
+    <li>RGB - specify a RGB value, like "rgb(255,0,0)"</li>
+    <li>HSL - specify a HSL value, like "hsl(0, 100%, 50%)"</li>
+</ul>
+<br>
+Note: If border-color is not set, it inherits the color of the element.
+                    </div>
+                </div>
+                <pre class="language-css">
+                    <code>
+                        border-color: red;
+                    </code>
+                    </pre>
+                    <pre class="language-css">
+                        <code>
+                            border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */
+                        </code>
+                        </pre>
+            </li>
+            <li>
+                Border - Shorthand Property<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom22" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom22"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Border - Shorthand Property</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        To shorten the code, it is also possible to specify all the individual border properties in one property.
+<br><br>
+The border property is a shorthand property for the following individual border properties:
+<br><ul>
+    <li>border-width</li>
+    <li>border-style (required)</li>
+    <li>border-color</li>
+</ul>
+                    </div>
+                </div>
+                <pre class="language-css">
+                    <code>
+                        border: 5px solid red;
+                    </code>
+                    </pre>            
+            </li>
+            <li>
+                border-radius<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom23" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom23"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">border-radius</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The border-radius property is used to add rounded borders to an element
+                    </div>
+                </div> 
+                <pre class="language-css">
+                    <code>
+                        border-radius: 5px;
+                    </code>
+                    </pre>           
+            </li></ol></li>
+            <li>
+                CSS Margins<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom24" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom24"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS Margins</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The CSS margin properties are used to create space around elements, outside of any defined borders.
+<br>br
+
+With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).CSS has properties for specifying the margin for each side of an element:
+<br><br>
+margin-top <br>
+margin-right <br>
+margin-bottom<br>
+margin-left<br><br><br>
+All the margin properties can have the following values:
+<br>
+auto - the browser calculates the margin<br>
+length - specifies a margin in px, pt, cm, etc.<br>
+% - specifies a margin in % of the width of the containing element<br>
+inherit - specifies that the margin should be inherited from the parent element<br>
+<br>
+<br>
+All CSS Margin Properties
+<table class="ws-table-all notranslate table-bordered">
+    <tbody><tr>
+      <th style="width:20%">Property</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_margin.asp">margin</a></td>
+      <td>A shorthand property for setting all the margin properties in one declaration</td>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_margin-bottom.asp">margin-bottom</a></td>
+      <td>Sets the bottom margin of an element</td>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_margin-left.asp">margin-left</a></td>
+      <td>Sets the left margin of an element</td>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_margin-right.asp">margin-right</a></td>
+      <td>Sets the right margin of an element</td>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_margin-top.asp">margin-top</a></td>
+      <td>Sets the top margin of an element</td>
+    </tr>
+  </tbody></table>
+<br>
+Tip: Negative values are allowed.             </div>
+                </div>
+<pre class="language-css">
+<code>
+    margin-top: 100px; 
+</code>
+</pre>
+<pre class="language-css">
+    <code>
+        margin-bottom: 100px;
+    </code>
+    </pre>
+    <pre class="language-css">
+        <code>
+            margin-right: 150px;
+        </code>
+        </pre>
+        <pre class="language-css">
+            <code>
+            margin-left: 80px;  
+            </code>
+            </pre>
+            <pre class="language-css">
+                <code>
+                    margin: 25px 50px 75px 100px;
+                </code>
+                </pre>
+            </li>
+            <li>
+                CSS Padding<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom25" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom25"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS Padding</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        Padding is used to create space around an element's content, inside of any defined borders.
+                        <br>
+                        The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
+<br><br>
+With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).
+<br>
+Padding - Individual Sides
+CSS has properties for specifying the padding for each side of an element:
+<br>
+padding-top <br>
+padding-right<br>
+padding-bottom<br>
+padding-left<br><br>
+All the padding properties can have the following values:
+<br>
+length - specifies a padding in px, pt, cm, etc.<br>
+% - specifies a padding in % of the width of the containing element<br>
+inherit - specifies that the padding should be inherited from the parent element<br>
+Note: Negative values are not allowed.
+<br>
+<br>
+<table class="ws-table-all notranslate table-bordered">
+    <tbody><tr>
+      <th style="width:30%">Property</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_padding.asp">padding</a></td>
+      <td>A shorthand property for setting all the padding properties in one declaration</td>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_padding-bottom.asp">padding-bottom</a></td>
+      <td>Sets the bottom padding of an element</td>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_padding-left.asp">padding-left</a></td>
+      <td>Sets the left padding of an element</td>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_padding-right.asp">padding-right</a></td>
+      <td>Sets the right padding of an element</td>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_padding-top.asp">padding-top</a></td>
+      <td>Sets the top padding of an element</td>
+    </tr>
+  </tbody></table>
+                    </div>
+                </div>
+                <pre class="language-css">
+                    <code>
+                        padding-top: 50px;
+                    </code>
+                    </pre>
+                    <pre class="language-css">
+                        <code>
+                            padding-bottom: 50px;
+                        </code>
+                        </pre>
+                        <pre class="language-css">
+                            <code>
+                                padding-left: 80px;
+                            </code>
+                            </pre>
+                            <pre class="language-css">
+                                <code>
+                                    padding-right: 30px;
+                                </code>
+                                </pre>
+                                <pre class="language-css">
+                                    <code>
+                                        padding: 25px 50px 75px 100px;
+                                    </code>
+                                    </pre>
             </li>
             <li>
                 GROUP BY Statement<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"

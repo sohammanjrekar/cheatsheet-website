@@ -169,3 +169,6 @@ th,td{
           background: #0160f9;
           color: rgb(255, 143, 63)
 }
+.btn-primary{
+  font-size: x-small;
+}
