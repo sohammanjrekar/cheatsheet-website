@@ -10,7 +10,7 @@
     font-size: x-small;
   }
   }nav {
-  background-color: rgb(255, 143, 63);
+  background-color:#f77b50 ;
   color: white;
 }.container li {
   font-size: large;
@@ -124,7 +124,7 @@ footer a:after {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: rgb(255, 143, 63);
+  background:linear-gradient(to left, #f72703 -27%, #fb6e9b 111%) ; 
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -133,7 +133,7 @@ footer a:hover:after {
   left: 0;
 }
 .navbar a:hover{
-  color: rgb(255, 143, 63);
+  color:#f77b50 ;
 }
 h3{
   font-size: 1rem;
@@ -145,7 +145,7 @@ th,td{
 }
 .button {
   display: inline-block;
-  background: #4285f4;
+  background: linear-gradient(to top right, #fb5475 0%, #f77b50 59%);
   color: #fff;
   text-transform: uppercase;
   padding: 5px 6px;
@@ -159,16 +159,17 @@ th,td{
   box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
   -webkit-transform: translate(0px, -10px) scale(1.1);
           transform: translate(0px, -10px) scale(1.1);
-          background: #0160f9;
-          color: rgb(255, 143, 63)
+          background:linear-gradient(to left, #f72703 -27%, #fb6e9b 111%) ;
+          color:#7b3dd0, 
 }
 .btn:hover {
   box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
   -webkit-transform: translate(0px, -10px) scale(1.1);
           transform: translate(0px, -10px) scale(1.1);
-          background: #0160f9;
-          color: rgb(255, 143, 63)
+          background:linear-gradient(to left, #f72703 -27%, #fb6e9b 111%) ;
+          color:whitesmoke ;
 }
-.btn-primary{
+.btn{
   font-size: x-small;
+  background-color:linear-gradient(to top right, #fb5475 0%, #f77b50 59%);
 }

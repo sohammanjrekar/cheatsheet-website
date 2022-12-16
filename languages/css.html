@@ -14,7 +14,7 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
 </head><body>
-    <nav class="navbar fixed-top navbar-expand-lg bg-dark navbar-dark">
+ <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: rgb(1,4,45);">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="../img/mainlogo.jpg" alt="" style="height: 8vh;">Cheatbook</a>
@@ -124,7 +124,7 @@
                         <a class="nav-link" href="../about.html">About Us</a>
                     </li>
                 </ul>
-                <a href="../colorpiceker.html"><div class="button">Colour Picker</div></a>
+                 <a href="shadowpicker.html"><div class="button mx-1" style="font-size: x-small;">Shadow Picker</div></a><a href="../colorpiceker.html"><div class="button">Colour Picker</div></a>
             </div>
         </div>
     </nav>
@@ -862,662 +862,468 @@ Note: Negative values are not allowed.
                                     </pre>
             </li>
             <li>
-                GROUP BY Statement<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                height and width<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom27" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom27"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">GROUP BY Statement</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">height and width</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        The GROUP BY statement groups rows that have the same values into summary rows, like "find the
-                        number of customers in each country".
-                        <br>
-                        The GROUP BY statement is often used with aggregate functions (COUNT(), MAX(), MIN(), SUM(),
-                        AVG()) to group the result-set by one or more columns.<br>
+                        The height and width properties are used to set the height and width of an element.
+<br><br>
+The height and width properties do not include padding, borders, or margins. It sets the height/width of the area inside the padding, border, and margin of the element <br><br>
+The height and width properties may have the following values:
+<br>
+auto - This is default. The browser calculates the height and width<br>
+length - Defines the height/width in px, cm, etc.<br>
+% - Defines the height/width in percent of the containing block<br>
+initial - Sets the height/width to its default value<br>
+inherit - The height/width will be inherited from its parent value<br>
+<br><br>
+<table class="ws-table-all notranslate table-bordered">
+    <tbody><tr>
+      <th style="width:20%">Property</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_dim_height.asp">height</a></td>
+      <td>Sets the height of an element</td>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_dim_max-height.asp">max-height</a></td>
+      <td>Sets the maximum height of an element</td>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_dim_max-width.asp">max-width</a></td>
+      <td>Sets the maximum width of an element</td>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_dim_min-height.asp">min-height</a></td>
+      <td>Sets the minimum height of an element</td>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_dim_min-width.asp">min-width</a></td>
+      <td>Sets the minimum width of an element</td>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_dim_width.asp">width</a></td>
+      <td>Sets the width of an element</td>
+    </tr>
+  </tbody></table>
+
                     </div>
                 </div>
-                <h3>GROUP BY Syntax</h3>
                 <pre class="language-css">
                     <code>
-                        SELECT column_name(s)
-FROM table_name
-WHERE condition
-GROUP BY column_name(s)
-ORDER BY column_name(s);
+                        height: 200px;
                     </code>
                     </pre>
-                <h3>Example:</h3>
+                
                 <pre class="language-css">
     <code>
-        SELECT COUNT(CustomerID), Country
-FROM Customers
-GROUP BY Country;
+        width: 50%;
     </code>
     </pre>
             </li>
             <li>
-                HAVING Clause<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                Box Model<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom28" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom28"
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom28"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">HAVING Clause</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Box Model</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        The HAVING clause was added to SQL because the WHERE keyword cannot be used with aggregate
-                        functions.
+                        In CSS, the term "box model" is used when talking about design and layout.
+<br><br>
+The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model
+<br><br>
+Explanation of the different parts:
+<br>
+Content - The content of the box, where text and images appear<br>
+Padding - Clears an area around the content. The padding is transparent<br>
+Border - A border that goes around the padding and content<br>
+Margin - Clears an area outside the border. The margin is transparent<br>
+The box model allows us to add a border around elements<br>
+<br><br>Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add padding, borders and margins.
                     </div>
-                </div>
-                <h3>HAVING Syntax</h3>
-                <pre class="language-css">
-                    <code>
-                        SELECT column_name(s)
-                        FROM table_name
-                        WHERE condition
-                        GROUP BY column_name(s)
-                        HAVING condition
-                        ORDER BY column_name(s);
-                    </code>
-                    </pre>
-                <h3>Example:</h3>
-                <pre class="language-css">
-    <code>
-        SELECT COUNT(CustomerID), Country
-FROM Customers
-GROUP BY Country
-HAVING COUNT(CustomerID) > 5;
-    </code>
-    </pre>
+                </div><br>
+                <img src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/box-model-1.png" alt="" style="width: 80vw;">
             </li>
             <li>
-                EXISTS Operator<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                CSS Outline<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom29" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-bottom " tabindex="-1" id="offcanvasBottom29"
                     aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">EXISTS Operator</h5>
+                    <div class="offcanvas-header">CSS Outline</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        The EXISTS operator is used to test for the existence of any record in a subquery.
+                        An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out". <br><br>
+                        CSS has the following outline properties:
                         <br>
-                        The EXISTS operator returns TRUE if the subquery returns one or more records.
+outline-style<br>
+outline-color<br>
+outline-width<br>
+outline-offset<br>
+outline<br>
                     </div>
                 </div>
-                <h3>EXISTS Syntax</h3>
-                <pre class="language-css">
-                    <code>
-                        SELECT column_name(s)
-                        FROM table_name
-                        WHERE EXISTS
-                        (SELECT column_name FROM table_name WHERE condition);
-                    </code>
-                    </pre>
-                <h3>Example:</h3>
-                <pre class="language-css">
-    <code>
-        SELECT SupplierName
-FROM Suppliers
-WHERE EXISTS (SELECT ProductName FROM Products WHERE Products.SupplierID = Suppliers.supplierID AND Price < 20);
-    </code>
-    </pre>
-            </li>
+               <br>
+               <img src="https://lectii-virtuale.ro/images/upload/files/css_outline1.jpg" alt="" style="width: 80vw;">
+            <ol>
             <li>
-                ANY Operator<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                CSS Outline Style<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom30" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom30"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">ANY Operator</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS Outline Style</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        The ANY operator:
-                        <br>
-                        <ul>
-                            <li>
-                                returns a boolean value as a result </li>
-                            <li>
-                                returns TRUE if ANY of the subquery values meet the condition</li>
-                            <li>
-                                ANY means that the condition will be true if the operation is true for any of the values
-                                in the range.</li>
-                        </ul>
-                        <br>
-                        Note: The operator must be a standard comparison operator (=, <>, !=, >, >=, <, or <=). </div>
+                        The outline-style property specifies the style of the outline, and can have one of the following values:
+<br><br>
+dotted - Defines a dotted outline<br>
+dashed - Defines a dashed outline<br>
+solid - Defines a solid outline<br>
+double - Defines a double outline<br>
+groove - Defines a 3D grooved outline<br>
+ridge - Defines a 3D ridged outline<br>
+inset - Defines a 3D inset outline<br>
+outset - Defines a 3D outset outline<br>
+none - Defines no outline<br>
+hidden - Defines a hidden outline </div>
                     </div>
-                    <h3>ANY Syntax</h3>
+                   
                     <pre class="language-css">
                     <code>
-                        SELECT column_name(s)
-                        FROM table_name
-                        WHERE column_name operator ANY
-                          (SELECT column_name
-                          FROM table_name
-                          WHERE condition);
+                        outline-style: dotted;
                     </code>
-                    </pre>
-                    <h3>Example:</h3>
-                    <pre class="language-css">
-    <code>
-        SELECT COUNT(CustomerID), Country
-FROM Customers
-GROUP BY Country
-HAVING COUNT(CustomerID) > 5;
-    </code>
-    </pre>
             </li>
             <li>
-                ALL Operator<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                CSS Outline Width<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom31" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom31"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">ALL Operator</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS Outline Width</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        The ALL operator: <br>
-                        <ul>
-                            <li>
-                                returns a boolean value as a result </li>
-                            <li>
-                                returns TRUE if ALL of the subquery values meet the condition</li>
-                            <li>
-                                is used with SELECT, WHERE and HAVING statements</li>
-                        </ul>
-                        <br>
-                        ALL means that the condition will be true only if the operation is true for all values in the
-                        range.
-                        <br><br>
-                        Note: The operator must be a standard comparison operator (=, <>, !=, >, >=, <, or <=). </div>
+                        The outline-width property specifies the width of the outline, and can have one of the following values:
+<br><br>
+thin (typically 1px)<br>
+medium (typically 3px)<br>
+thick (typically 5px)<br>
+A specific size (in px, pt, cm, em, etc)</div>
                     </div>
-                    <h3>ALL Syntax With SELECT</h3>
                     <pre class="language-css">
                     <code>
-                        SELECT ALL column_name(s)
-FROM table_name
-WHERE condition;
+                        outline-width: thin;
                     </code>
                     </pre>
-                    <h3>ALL Syntax With WHERE or HAVING</h3>
-                    <pre class="language-css">
-                        <code>
-                            SELECT column_name(s)
-                            FROM table_name
-                            WHERE column_name operator ALL
-                              (SELECT column_name
-                              FROM table_name
-                              WHERE condition);
-                        </code>
-                        </pre>
-                    <h3>Example:</h3>
-                    <pre class="language-css">
-    <code>
-        SELECT COUNT(CustomerID), Country
-FROM Customers
-GROUP BY Country
-HAVING COUNT(CustomerID) > 5;
-    </code>
-    </pre>
             </li>
             <li>
-                INSERT INTO SELECT Statement<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                CSS Outline Color<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom32" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom32"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">INSERT INTO SELECT Statement</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS Outline Color</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        The INSERT INTO SELECT statement copies data from one table and inserts it into another table.
-                        <br><br>
-                        The INSERT INTO SELECT statement requires that the data types in source and target tables
-                        matches.
-                        <br><br>
-                        Note: The existing records in the target table are unaffected.
+                        The outline-color property is used to set the color of the outline.
+<br><br><br>
+                        The color can be set by:
+                        <br>
+                        name - specify a color name, like "red"<br>
+                        HEX - specify a hex value, like "#ff0000"<br>
+                        RGB - specify a RGB value, like "rgb(255,0,0)"<br>
+                        HSL - specify a HSL value, like "hsl(0, 100%, 50%)"<br>
+                        invert - performs a color inversion (which ensures that the outline is visible, regardless of color background)<br>
                     </div>
                 </div>
-                <h3>INSERT INTO SELECT Syntax(Copy all columns from one table to another table)</h3>
                 <pre class="language-css">
                     <code>
-                        INSERT INTO table2
-                        SELECT * FROM table1
-                        WHERE condition;
+                        outline-color: red;
                     </code>
                     </pre>
-                <h3>Copy only some columns from one table into another table</h3>
-                <pre class="language-css">
-    <code>
-        INSERT INTO table2 (column1, column2, column3, ...)
-        SELECT column1, column2, column3, ...
-        FROM table1
-        WHERE condition;
-    </code>
-    </pre>
             </li>
             <li>
-                CASE Statement<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                CSS Outline - Shorthand<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom33" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom33"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CASE Statement</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS Outline - Shorthand</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        The CASE statement goes through conditions and returns a value when the first condition is met
-                        (like an if-then-else statement). So, once a condition is true, it will stop reading and return
-                        the result. If no conditions are true, it returns the value in the ELSE clause.
+                        The outline property is a shorthand property for setting the following individual outline properties:
                         <br><br>
-                        If there is no ELSE part and no conditions are true, it returns NULL.
+                        outline-width<br>
+                        outline-style (required)<br>
+                        outline-color<br>
+                        The outline property is specified as one, two, or three values from the list above. The order of the values does not matter.
+                        <br>
+                <br>
+                <table class="ws-table-all notranslate table-bordered">
+                    <tbody><tr>
+                      <th style="width:20%">Property</th>
+                      <th>Description</th>
+                    </tr>
+                    <tr>
+                      <td><a href="/cssref/pr_outline.asp">outline</a></td>
+                      <td>A shorthand property for setting outline-width, outline-style, and 
+                      outline-color in one declaration</td>
+                    </tr>
+                    <tr>
+                      <td><a href="/cssref/pr_outline-color.asp">outline-color</a></td>
+                      <td>Sets the color of an outline</td>
+                    </tr>
+                      <tr>
+                      <td><a href="/cssref/css3_pr_outline-offset.asp">outline-offset</a></td>
+                      <td>Specifies the space between an outline and the edge or border of an element</td>
+                      </tr>
+                    <tr>
+                      <td><a href="/cssref/pr_outline-style.asp">outline-style</a></td>
+                      <td>Sets the style of an outline</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="/cssref/pr_outline-width.asp">outline-width</a></td>
+                      <td>Sets the width of an outline</td>
+                    </tr>
+                  </tbody></table>
                     </div>
                 </div>
-                <h3>CASE Syntax</h3>
                 <pre class="language-css">
                     <code>
-                        CASE
-    WHEN condition1 THEN result1
-    WHEN condition2 THEN result2
-    WHEN conditionN THEN resultN
-    ELSE result
-END;
+                        outline: 5px solid yellow;
                     </code>
                     </pre>
-                <h3>Example:</h3>
-                <pre class="language-css">
-    <code>
-        SELECT OrderID, Quantity,
-CASE
-    WHEN Quantity > 30 THEN 'The quantity is greater than 30'
-    WHEN Quantity = 30 THEN 'The quantity is 30'
-    ELSE 'The quantity is under 30'
-END AS QuantityText
-FROM OrderDetails;
-    </code>
-    </pre>
             </li>
             <li>
-                IFNULL()<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                CSS Outline Offset<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom34" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom34"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CASE Statement</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS Outline Offset</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        The MySQL IFNULL() function lets you return an alternative value if an expression is NULL.
+                        The outline-offset property adds space between an outline and the edge/border of an element. The space between an element and its outline is transparent.
                     </div>
                 </div>
-                <h3>CASE Syntax</h3>
                 <pre class="language-css">
                     <code>
-                        CASE
-    WHEN condition1 THEN result1
-    WHEN condition2 THEN result2
-    WHEN conditionN THEN resultN
-    ELSE result
-END;
+                        outline-offset: 15px;
                     </code>
                     </pre>
-                <h3>Example:</h3>
-                <pre class="language-css">
-    <code>
-        SELECT OrderID, Quantity,
-CASE
-    WHEN Quantity > 30 THEN 'The quantity is greater than 30'
-    WHEN Quantity = 30 THEN 'The quantity is 30'
-    ELSE 'The quantity is under 30'
-END AS QuantityText
-FROM OrderDetails;
-    </code>
-    </pre>
+            
             </li>
+            </ol></li>
             <li>
-                COALESCE() Function
-                <pre class="language-css">
-                    <code>
-                        CASE
-                        SELECT ProductName, UnitPrice * (UnitsInStock + COALESCE(UnitsOnOrder, 0))
-                        FROM Products;
-                    </code>
-                    </pre>
-            </li>
+                CSS Text <ol>
             <li>
-                MySQL Comments<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                Text Color<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom35" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom35"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">MySQL Comments</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Text Color</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        Comments are used to explain sections of SQL statements, or to prevent execution of SQL
-                        statements.
-                        <ul>
-                            <li>Single Line Comments:Single line comments start with --.
-                                <br>
-                                Any text between -- and the end of the line will be ignored (will not be executed).
-                            </li>
-                            <li>Multi-line Comments: Multi-line comments start with /* and end with */.
-                                <br>
-                                Any text between /* and */ will be ignored.
-                            </li>
-                        </ul>
+                        The color property is used to set the color of the text. The color is specified by:
+<br><br>
+                        a color name - like "red"<br>
+                        a HEX value - like "#ff0000"<br>
+                        an RGB value - like "rgb(255,0,0)"<br>
                     </div>
                 </div>
-                <h3>Single Line Comments</h3>
                 <pre class="language-css">
                     <code>
-                        -- Select all:
+                        color: blue;
                     </code>
                     </pre>
-                <h3>Multi-line Comments</h3>
-                <pre class="language-css">
-    <code>
-        /*Select all the columns
-of all the records
-in the Customers table:*/
-    </code>
-    </pre>
             </li>
-            <li>
-                MySQL Operators
-                <br>
-                <ul>
                     <li>
-                        Arithmetic Operators<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                        Text Alignment<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasBottom36" aria-controls="offcanvasBottom">Read more...</button>
                         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom36"
                             aria-labelledby="offcanvasBottomLabel">
                             <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Arithmetic Operators</h5>
+                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Text Alignment</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body small">
+                                The text-align property is used to set the horizontal alignment of a text.
+<br>
+                                A text can be left or right aligned, centered, or justified
+                                <br><br>
                                 <table class="ws-table-all notranslate table-bordered">
-                                    <tbody>
-                                        <tr>
-                                            <th style="width:20%">Operator</th>
-                                            <th style="width:80%">Description</th>
-                                        </tr>
-                                        <tr>
-                                            <td>+</td>
-                                            <td>Add</td>
-                                        </tr>
-                                        <tr>
-                                            <td>-</td>
-                                            <td>Subtract</td>
-                                        </tr>
-                                        <tr>
-                                            <td>*</td>
-                                            <td>Multiply</td>
-                                        </tr>
-                                        <tr>
-                                            <td>/</td>
-                                            <td>Divide</td>
-                                        </tr>
-                                        <tr>
-                                            <td>%</td>
-                                            <td>Modulo</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                    <tbody><tr>
+                                      <th style="width:30%">Property</th>
+                                      <th>Description</th>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="/cssref/pr_text_direction.asp">direction</a></td>
+                                      <td>Specifies the text direction/writing direction</td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="/cssref/pr_text_text-align.asp">text-align</a></td>
+                                      <td>Specifies the horizontal alignment of text</td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="/cssref/css3_pr_text-align-last.asp">text-align-last</a></td>
+                                      <td>Specifies how to align the last line of a text</td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="/cssref/pr_text_unicode-bidi.asp">unicode-bidi</a></td>
+                                      <td>Used together with the <a href="/cssref/pr_text_direction.asp">direction</a> property to set or return whether the text should be overridden to support multiple languages in the same document</td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="/cssref/pr_pos_vertical-align.asp">vertical-align</a></td>
+                                      <td>Sets the vertical alignment of an element</td>
+                                    </tr>
+                                    </tbody></table>
                             </div>
                         </div>
-                        <br>
+                        <pre class="language-css">
+                            <code>
+                                text-align: center;
+                            </code>
+                            </pre>
+
                     </li>
                     <li>
-                        Bitwise Operators<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                        Text Align Last<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasBottom37" aria-controls="offcanvasBottom">Read more...</button>
-                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom37"
+                        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom37"
                             aria-labelledby="offcanvasBottomLabel">
                             <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Bitwise Operators</h5>
+                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Text Align Last</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body small">
-                                <table class="ws-table-all notranslate table-bordered">
-                                    <tbody>
-                                        <tr>
-                                            <th style="width:20%">Operator</th>
-                                            <th style="width:80%">Description</th>
-                                        </tr>
-                                        <tr>
-                                            <td>&amp;</td>
-                                            <td>Bitwise AND</td>
-                                        </tr>
-                                        <tr>
-                                            <td>|</td>
-                                            <td>Bitwise OR</td>
-                                        </tr>
-                                        <tr>
-                                            <td>^</td>
-                                            <td>Bitwise exclusive OR</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                The text-align-last property specifies how to align the last line of a text.
                             </div>
                         </div>
-                        <br>
+                        <pre class="language-css">
+                            <code>
+                                text-align-last: right;
+                            </code>
+                            </pre>
                     </li>
                     <li>
-                        Comparison Operators<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                        Text Direction<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasBottom38" aria-controls="offcanvasBottom">Read more...</button>
-                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom38"
+                        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom38"
                             aria-labelledby="offcanvasBottomLabel">
                             <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Comparison Operators</h5>
+                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Text Direction</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body small">
-                                <table class="ws-table-all notranslate table-bordered">
-                                    <tbody>
-                                        <tr>
-                                            <th style="width:20%">Operator</th>
-                                            <th style="width:80%">Description</th>
-                                        </tr>
-                                        <tr>
-                                            <td>=</td>
-                                            <td>Equal to</td>
-                                        </tr>
-                                        <tr>
-                                            <td>&gt;</td>
-                                            <td>Greater than</td>
-                                        </tr>
-                                        <tr>
-                                            <td>&lt;</td>
-                                            <td>Less than</td>
-                                        </tr>
-                                        <tr>
-                                            <td>&gt;=</td>
-                                            <td>Greater than or equal to</td>
-                                        </tr>
-                                        <tr>
-                                            <td>&lt;=</td>
-                                            <td>Less than or equal to</td>
-                                        </tr>
-                                        <tr>
-                                            <td>&lt;&gt;</td>
-                                            <td>Not equal to</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                The direction and unicode-bidi properties can be used to change the text direction of an element
                             </div>
-                        </div> <br>
+                        </div> 
+                        <pre class="language-css">
+                            <code>
+                                direction: rtl;
+                                unicode-bidi: bidi-override;
+                            </code>
+                            </pre>
                     </li>
                     <li>
-                        Compound Operators<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                        Vertical Alignment<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasBottom39" aria-controls="offcanvasBottom">Read more...</button>
                         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom39"
                             aria-labelledby="offcanvasBottomLabel">
                             <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Compound Operators</h5>
+                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Vertical Alignment</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body small">
-                                <table class="ws-table-all notranslate table-bordered">
-                                    <tbody>
-                                        <tr>
-                                            <th style="width:20%">Operator</th>
-                                            <th style="width:80%">Description</th>
-                                        </tr>
-                                        <tr>
-                                            <td>+=</td>
-                                            <td>Add equals</td>
-                                        </tr>
-                                        <tr>
-                                            <td>-=</td>
-                                            <td>Subtract equals</td>
-                                        </tr>
-                                        <tr>
-                                            <td>*=</td>
-                                            <td>Multiply equals</td>
-                                        </tr>
-                                        <tr>
-                                            <td>/=</td>
-                                            <td>Divide equals</td>
-                                        </tr>
-                                        <tr>
-                                            <td>%=</td>
-                                            <td>Modulo equals</td>
-                                        </tr>
-                                        <tr>
-                                            <td>&amp;=</td>
-                                            <td>Bitwise AND equals</td>
-                                        </tr>
-                                        <tr>
-                                            <td>^-=</td>
-                                            <td>Bitwise exclusive equals</td>
-                                        </tr>
-                                        <tr>
-                                            <td>|*=</td>
-                                            <td>Bitwise OR equals</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                The vertical-align property sets the vertical alignment of an element.
                             </div>
-                        </div> <br>
+                        </div>  <pre class="language-css">
+                            <code>
+                                vertical-align: text-top;
+                            </code>
+                            </pre>
                     </li>
                     <li>
-                        Logical Operators<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                        Text Decoration
+                        <ol><li>
+                            Add a Decoration Line to Text<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasBottom40" aria-controls="offcanvasBottom">Read more...</button>
                         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom40"
                             aria-labelledby="offcanvasBottomLabel">
                             <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Logical Operators</h5>
+                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Add a Decoration Line to Text</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body small">
-                                <table class="ws-table-all notranslate table-bordered">
-                                    <tbody>
-                                        <tr>
-                                            <th style="width:20%">Operator</th>
-                                            <th style="width:80%">Description</th>
-                                        </tr>
-                                        <tr>
-                                            <td>ALL</td>
-                                            <td>TRUE if all of the subquery values meet the condition</td>
-                                        </tr>
-                                        <tr>
-                                            <td>AND</td>
-                                            <td>TRUE if all the conditions separated by AND is TRUE</td>
-                                        </tr>
-                                        <tr>
-                                            <td>ANY</td>
-                                            <td>TRUE if any of the subquery values meet the condition</td>
-                                        </tr>
-                                        <tr>
-                                            <td>BETWEEN</td>
-                                            <td>TRUE if the operand is within the range of comparisons</td>
-                                        </tr>
-                                        <tr>
-                                            <td>EXISTS</td>
-                                            <td>TRUE if the subquery returns one or more records</td>
-                                        </tr>
-                                        <tr>
-                                            <td>IN</td>
-                                            <td>TRUE if the operand is equal to one of a list of expressions</td>
-                                        </tr>
-                                        <tr>
-                                            <td>LIKE</td>
-                                            <td>TRUE if the operand matches a pattern</td>
-                                        </tr>
-                                        <tr>
-                                            <td>NOT</td>
-                                            <td>Displays a record if the condition(s) is NOT TRUE</td>
-                                        </tr>
-                                        <tr>
-                                            <td>OR</td>
-                                            <td>TRUE if any of the conditions separated by OR is TRUE</td>
-                                        </tr>
-                                        <tr>
-                                            <td>SOME</td>
-                                            <td>TRUE if any of the subquery values meet the condition</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                The text-decoration-line property is used to add a decoration line to text.
+                                <br><br>
+                                Tip: You can combine more than one value, like overline and underline to display lines both over and under a text.
                             </div>
                         </div>
-                </ul>
+                        <pre class="language-css">
+                            <code>
+                                text-decoration-line: overline underline;
+                            </code>
+                            </pre>
             </li>
             <li>
-                CREATE DATABASE Statement<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                Specify a Color for the Decoration Line<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom41" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom41"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CREATE DATABASE Statement</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Specify a Color for the Decoration Line</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        The CREATE DATABASE statement is used to create a new SQL database.
+                        The text-decoration-color property is used to set the color of the decoration line.
                     </div>
                 </div>
                 <pre class="language-css">
                     <code>
-                        CREATE DATABASE databasename;
+                        text-decoration-color: red;
                     </code>
                     </pre>
             </li>
             <li>
-                list of databases
-                <pre class="language-css">
-                    <code>
-                        SHOW DATABASES;
-                    </code>
-                    </pre>
-            </li>
-            <li>
-                DROP DATABASE Statement<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                Specify a Style for the Decoration Line
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom42" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom42"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">DROP DATABASE databasename;</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Specify a Style for the Decoration Line</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        The DROP DATABASE statement is used to drop an existing SQL database.
-                        <br>
-                        Note: Be careful before dropping a database. Deleting a database will result in loss of complete
-                        information stored in the database!
+                        The text-decoration-style property is used to set the style of the decoration line.
                     </div>
                 </div>
                 <pre class="language-css">
                     <code>
-                        DROP DATABASE databasename;
+                        text-decoration-style: solid;
                     </code>
                     </pre>
             </li>
