@@ -3,6 +3,16 @@
   padding: 0;
 }
 
+
+@media only screen and (max-width: 400px) {
+  body{
+    font-size: x-small;
+  }
+  pre[class*="language-"]{
+    font-size: x-small;
+  }
+  }
+
 nav {
   background-color: rgb(255, 143, 63);
   color: white;
