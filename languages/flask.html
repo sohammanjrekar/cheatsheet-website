@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en"><head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Flask cheatsheet</title>
@@ -14,9 +12,7 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
-</head>
-
-<body>
+</head><body>
     <nav class="navbar fixed-top navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
            <a class="navbar-brand" href="#">
@@ -125,10 +121,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../contact.html">Contact</a>
                     </li>
-                    <li class="nav-item">
+<li class="nav-item">
                         <a class="nav-link" href="../about.html">About Us</a>
                     </li>
                 </ul>
+                <a href="../colorpiceker.html"><div class="button">Colour Picker</div></a>
             </div>
         </div>
     </nav>
@@ -173,18 +170,14 @@
                     <div class="offcanvas-body">
                         <p>
                             ‘/’ URL is bound with hello() function. When the home page of the webserver is opened in the
-                            browser, the output of this function will be rendered accordingly.
-
-                            The Flask application is started by calling the run() function. The method should be
+                            browser, the output of this function will be rendered accordingly.                            The Flask application is started by calling the run() function. The method should be
                             restarted manually for any change in the code. To overcome this, the debug support is
                             enabled so as to track any error.
                         </p>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <ol>
+        </div>        <ol>
             <!-- offcanvas -->
             <li>
                 starter template<button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas"
@@ -200,29 +193,19 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <p>
-
-                        </p>
-
-                    </div>
+                        <p>                        </p>                    </div>
                 </div>
     
     <pre class="language-python">
                 <code>
 # an object of WSGI application
 from flask import Flask	
-app = Flask(__name__) # Flask constructor
-
-# A decorator used to tell the application
+app = Flask(__name__) # Flask constructor# A decorator used to tell the application
 # which URL is associated function
 @app.route('/')	
 def hello():
-	return 'HELLO'
-
-if __name__=='__main__':
-app.run(debug = True)
-
-                </code>
+	return 'HELLO'if __name__=='__main__':
+app.run(debug = True)                </code>
             </pre>
     </li>
     
@@ -1363,6 +1346,4 @@ app.run(debug = True)
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
-</body>
-
-</html>
+</body></html>

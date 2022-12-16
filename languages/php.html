@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en"><head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>PHP cheatsheet</title>
@@ -15,9 +13,7 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
-</head>
-
-<body>
+</head><body>
     <nav class="navbar fixed-top navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
            <a class="navbar-brand" href="#">
@@ -130,6 +126,7 @@
                         <a class="nav-link" href="../about.html">About Us</a>
                     </li>
                 </ul>
+                <a href="../colorpiceker.html"><div class="button">Colour Picker</div></a>
             </div>
         </div>
     </nav>
@@ -158,9 +155,7 @@
                                 PHP is free to download and use </li>
                             <li>
                                 PHP is an amazing and popular language! </li>
-                            <li>
-
-                                It is powerful enough to be at the core of the biggest blogging system on the web
+                            <li>                                It is powerful enough to be at the core of the biggest blogging system on the web
                                 (WordPress)! </li>
                             <li>
                                 It is deep enough to run large social networks! </li>
@@ -185,9 +180,7 @@
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body">
-
-                        What is a PHP File? <br>
+                    <div class="offcanvas-body">                        What is a PHP File? <br>
                         <ul>
                             <li>
                                 PHP files can contain text, HTML, CSS, JavaScript, and PHP code</li>
@@ -213,9 +206,7 @@
                             <li>
                                 With PHP you are not limited to output HTML. You can output images, PDF files, and even
                                 Flash movies. You can also output any text, such as XHTML and XML.</li>
-                        </ul>
-
-                    </div>
+                        </ul>                    </div>
                 </div>
             </div>
         </div>
@@ -334,9 +325,7 @@ $y = 10.5;
                         <br><br>
                         Global and Local Scope <br>
                         A variable declared outside a function has a GLOBAL SCOPE and can only be accessed outside a
-                        function
-
-                        <br><br>
+                        function                        <br><br>
                         You can have local variables with the same name in different functions, because local variables
                         are only recognized by the function in which they are declared.
                         <br><br>
@@ -375,9 +364,7 @@ $y = 10.5;
                         <br><br>
                         The differences are small: echo has no return value while print has a return value of 1 so it
                         can be used in expressions. echo can take multiple parameters (although such usage is rare)
-                        while print can take one argument. echo is marginally faster than print.
-
-                        <br><br>
+                        while print can take one argument. echo is marginally faster than print.                        <br><br>
                         The echo statement can be used with or without parentheses: echo or echo().
                         <br><br>
                         The print statement can be used with or without parentheses: print or print()
@@ -588,25 +575,19 @@ $y = 10.5;
             echo(max(0, 150, 30, 20, -8, -200));  // returns 150
             </code>
             </pre>
-                    </li>
-
-                    <li>abs() Function
+                    </li>                    <li>abs() Function
                         <pre class="language-php">
                 <code>
                     echo(abs(-6.7));  // returns 6.7
             </code>
             </pre>
-                    </li>
-
-                    <li>sqrt() Function
+                    </li>                    <li>sqrt() Function
                         <pre class="language-php">
                 <code>
                     echo(sqrt(64));  // returns 8
             </code>
             </pre>
-                    </li>
-
-                    <li>round() Function
+                    </li>                    <li>round() Function
                         <pre class="language-php">
                 <code>
                     echo(round(0.60));  // returns 1
@@ -637,9 +618,7 @@ $y = 10.5;
                         <br><br>
                         A valid constant name starts with a letter or underscore (no $ sign before the constant name).
                         <br>
-                        Parameters:
-
-                        name: Specifies the name of the constant
+                        Parameters:                        name: Specifies the name of the constant
                         value: Specifies the value of the constant
                         case-insensitive: Specifies whether the constant name should be case-insensitive. Default is
                         false.
@@ -715,46 +694,32 @@ echo greeting;
                                             <td>-</td>
                                             <td>Subtraction</td>
                                             <td>$x - $y</td>
-                                            <td>Difference of $x and $y</td>
-
-                                        </tr>
+                                            <td>Difference of $x and $y</td>                                        </tr>
                                         <tr>
                                             <td>*</td>
                                             <td>Multiplication</td>
                                             <td>$x * $y</td>
-                                            <td>Product of $x and $y</td>
-
-                                        </tr>
+                                            <td>Product of $x and $y</td>                                        </tr>
                                         <tr>
                                             <td>/</td>
                                             <td>Division</td>
                                             <td>$x / $y</td>
-                                            <td>Quotient of $x and $y</td>
-
-                                        </tr>
+                                            <td>Quotient of $x and $y</td>                                        </tr>
                                         <tr>
                                             <td>%</td>
                                             <td>Modulus</td>
                                             <td>$x % $y</td>
-                                            <td>Remainder of $x divided by $y</td>
-
-                                        </tr>
+                                            <td>Remainder of $x divided by $y</td>                                        </tr>
                                         <tr>
                                             <td>**</td>
                                             <td>Exponentiation</td>
                                             <td>$x ** $y</td>
-                                            <td>Result of raising $x to the $y'th power</td>
-
-                                        </tr>
+                                            <td>Result of raising $x to the $y'th power</td>                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
-                    </li>
-
-
-
-                    <li>Assignment operators<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    </li>                    <li>Assignment operators<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvas11" aria-controls="offcanvasBottom">Read more...</button>
                         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas11"
                             aria-labelledby="offcanvasBottomLabel">
@@ -775,39 +740,27 @@ echo greeting;
                                             <td>x = y</td>
                                             <td>x = y</td>
                                             <td>The left operand gets set to the value of the expression on the right
-                                            </td>
-
-                                        </tr>
+                                            </td>                                        </tr>
                                         <tr>
                                             <td>x += y</td>
                                             <td>x = x + y</td>
-                                            <td>Addition</td>
-
-                                        </tr>
+                                            <td>Addition</td>                                        </tr>
                                         <tr>
                                             <td>x -= y</td>
                                             <td>x = x - y</td>
-                                            <td>Subtraction</td>
-
-                                        </tr>
+                                            <td>Subtraction</td>                                        </tr>
                                         <tr>
                                             <td>x *= y</td>
                                             <td>x = x * y</td>
-                                            <td>Multiplication</td>
-
-                                        </tr>
+                                            <td>Multiplication</td>                                        </tr>
                                         <tr>
                                             <td>x /= y</td>
                                             <td>x = x / y</td>
-                                            <td>Division</td>
-
-                                        </tr>
+                                            <td>Division</td>                                        </tr>
                                         <tr>
                                             <td>x %= y</td>
                                             <td>x = x % y</td>
-                                            <td>Modulus</td>
-
-                                        </tr>
+                                            <td>Modulus</td>                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -835,66 +788,48 @@ echo greeting;
                                             <td>==</td>
                                             <td>Equal</td>
                                             <td>$x == $y</td>
-                                            <td>Returns true if $x is equal to $y</td>
-
-                                        </tr>
+                                            <td>Returns true if $x is equal to $y</td>                                        </tr>
                                         <tr>
                                             <td>===</td>
                                             <td>Identical</td>
                                             <td>$x === $y</td>
-                                            <td>Returns true if $x is equal to $y, and they are of the same type</td>
-
-                                        </tr>
+                                            <td>Returns true if $x is equal to $y, and they are of the same type</td>                                        </tr>
                                         <tr>
                                             <td>!=</td>
                                             <td>Not equal</td>
                                             <td>$x != $y</td>
-                                            <td>Returns true if $x is not equal to $y</td>
-
-                                        </tr>
+                                            <td>Returns true if $x is not equal to $y</td>                                        </tr>
                                         <tr>
                                             <td>&lt;&gt;</td>
                                             <td>Not equal</td>
                                             <td>$x &lt;&gt; $y</td>
-                                            <td>Returns true if $x is not equal to $y</td>
-
-                                        </tr>
+                                            <td>Returns true if $x is not equal to $y</td>                                        </tr>
                                         <tr>
                                             <td>!==</td>
                                             <td>Not identical</td>
                                             <td>$x !== $y</td>
                                             <td>Returns true if $x is not equal to $y, or they are not of the same type
-                                            </td>
-
-                                        </tr>
+                                            </td>                                        </tr>
                                         <tr>
                                             <td>&gt;</td>
                                             <td>Greater than</td>
                                             <td>$x &gt; $y</td>
-                                            <td>Returns true if $x is greater than $y</td>
-
-                                        </tr>
+                                            <td>Returns true if $x is greater than $y</td>                                        </tr>
                                         <tr>
                                             <td>&lt;</td>
                                             <td>Less than</td>
                                             <td>$x &lt; $y</td>
-                                            <td>Returns true if $x is less than $y</td>
-
-                                        </tr>
+                                            <td>Returns true if $x is less than $y</td>                                        </tr>
                                         <tr>
                                             <td>&gt;=</td>
                                             <td>Greater than or equal to</td>
                                             <td>$x &gt;= $y</td>
-                                            <td>Returns true if $x is greater than or equal to $y</td>
-
-                                        </tr>
+                                            <td>Returns true if $x is greater than or equal to $y</td>                                        </tr>
                                         <tr>
                                             <td>&lt;=</td>
                                             <td>Less than or equal to</td>
                                             <td>$x &lt;= $y</td>
-                                            <td>Returns true if $x is less than or equal to $y</td>
-
-                                        </tr>
+                                            <td>Returns true if $x is less than or equal to $y</td>                                        </tr>
                                         <tr>
                                             <td>&lt;=&gt;</td>
                                             <td>Spaceship</td>
@@ -902,11 +837,7 @@ echo greeting;
                                             <td>Returns an integer less than, equal to, or greater than zero, depending
                                                 on
                                                 if $x is less than, equal to, or greater than $y. Introduced in PHP 7.
-                                            </td>
-
-                                        </tr>
-
-                                    </tbody>
+                                            </td>                                        </tr>                                    </tbody>
                                 </table>
                             </div>
                         </div>
@@ -932,27 +863,19 @@ echo greeting;
                                         <tr>
                                             <td>++$x</td>
                                             <td>Pre-increment</td>
-                                            <td>Increments $x by one, then returns $x</td>
-
-                                        </tr>
+                                            <td>Increments $x by one, then returns $x</td>                                        </tr>
                                         <tr>
                                             <td>$x++</td>
                                             <td>Post-increment</td>
-                                            <td>Returns $x, then increments $x by one</td>
-
-                                        </tr>
+                                            <td>Returns $x, then increments $x by one</td>                                        </tr>
                                         <tr>
                                             <td>--$x</td>
                                             <td>Pre-decrement</td>
-                                            <td>Decrements $x by one, then returns $x</td>
-
-                                        </tr>
+                                            <td>Decrements $x by one, then returns $x</td>                                        </tr>
                                         <tr>
                                             <td>$x--</td>
                                             <td>Post-decrement</td>
-                                            <td>Returns $x, then decrements $x by one</td>
-
-                                        </tr>
+                                            <td>Returns $x, then decrements $x by one</td>                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -980,44 +903,32 @@ echo greeting;
                                             <td>and</td>
                                             <td>And</td>
                                             <td>$x and $y</td>
-                                            <td>True if both $x and $y are true</td>
-
-                                        </tr>
+                                            <td>True if both $x and $y are true</td>                                        </tr>
                                         <tr>
                                             <td>or</td>
                                             <td>Or</td>
                                             <td>$x or $y</td>
-                                            <td>True if either $x or $y is true</td>
-
-                                        </tr>
+                                            <td>True if either $x or $y is true</td>                                        </tr>
                                         <tr>
                                             <td>xor</td>
                                             <td>Xor</td>
                                             <td>$x xor $y</td>
-                                            <td>True if either $x or $y is true, but not both</td>
-
-                                        </tr>
+                                            <td>True if either $x or $y is true, but not both</td>                                        </tr>
                                         <tr>
                                             <td>&amp;&amp;</td>
                                             <td>And</td>
                                             <td>$x &amp;&amp; $y</td>
-                                            <td>True if both $x and $y are true</td>
-
-                                        </tr>
+                                            <td>True if both $x and $y are true</td>                                        </tr>
                                         <tr>
                                             <td>||</td>
                                             <td>Or</td>
                                             <td>$x || $y</td>
-                                            <td>True if either $x or $y is true</td>
-
-                                        </tr>
+                                            <td>True if either $x or $y is true</td>                                        </tr>
                                         <tr>
                                             <td>!</td>
                                             <td>Not</td>
                                             <td>!$x</td>
-                                            <td>True if $x is not true</td>
-
-                                        </tr>
+                                            <td>True if $x is not true</td>                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -1045,9 +956,7 @@ echo greeting;
                                             <td>.</td>
                                             <td>Concatenation</td>
                                             <td>$txt1 . $txt2</td>
-                                            <td>Concatenation of $txt1 and $txt2</td>
-
-                                        </tr>
+                                            <td>Concatenation of $txt1 and $txt2</td>                                        </tr>
                                         <tr>
                                             <td>.=</td>
                                             <td>Concatenation assignment</td>
@@ -1081,45 +990,33 @@ echo greeting;
                                             <td>+</td>
                                             <td>Union</td>
                                             <td>$x + $y</td>
-                                            <td>Union of $x and $y</td>
-
-                                        </tr>
+                                            <td>Union of $x and $y</td>                                        </tr>
                                         <tr>
                                             <td>==</td>
                                             <td>Equality</td>
                                             <td>$x == $y</td>
-                                            <td>Returns true if $x and $y have the same key/value pairs</td>
-
-                                        </tr>
+                                            <td>Returns true if $x and $y have the same key/value pairs</td>                                        </tr>
                                         <tr>
                                             <td>===</td>
                                             <td>Identity</td>
                                             <td>$x === $y</td>
                                             <td>Returns true if $x and $y have the same key/value pairs in the same
-                                                order and of the same types</td>
-
-                                        </tr>
+                                                order and of the same types</td>                                        </tr>
                                         <tr>
                                             <td>!=</td>
                                             <td>Inequality</td>
                                             <td>$x != $y</td>
-                                            <td>Returns true if $x is not equal to $y</td>
-
-                                        </tr>
+                                            <td>Returns true if $x is not equal to $y</td>                                        </tr>
                                         <tr>
                                             <td>&lt;&gt;</td>
                                             <td>Inequality</td>
                                             <td>$x &lt;&gt; $y</td>
-                                            <td>Returns true if $x is not equal to $y</td>
-
-                                        </tr>
+                                            <td>Returns true if $x is not equal to $y</td>                                        </tr>
                                         <tr>
                                             <td>!==</td>
                                             <td>Non-identity</td>
                                             <td>$x !== $y</td>
-                                            <td>Returns true if $x is not identical to $y</td>
-
-                                        </tr>
+                                            <td>Returns true if $x is not identical to $y</td>                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -1152,9 +1049,7 @@ echo greeting;
                                             <td>Returns the value of $x.<br>The value of $x is <em>expr2</em> if
                                                 <em>expr1</em>
                                                 = TRUE.<br>The value of $x is <em>expr3</em> if <em>expr1</em> = FALSE
-                                            </td>
-
-                                        </tr>
+                                            </td>                                        </tr>
                                         <tr>
                                             <td>??</td>
                                             <td>Null coalescing</td>
@@ -1164,9 +1059,7 @@ echo greeting;
                                                 exists, and is not NULL.<br>If <em>expr1</em> does not exist, or is
                                                 NULL, the value of $x is
                                                 <em>expr2</em>.<br>Introduced in PHP 7
-                                            </td>
-
-                                        </tr>
+                                            </td>                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -1194,10 +1087,6 @@ echo greeting;
                             </li>
                             <li>switch statement - selects one of many blocks of code to be executed</li>
                         </ul>
-
-
-
-
                     </div>
                 </div>
                 <ul>
@@ -1254,9 +1143,7 @@ echo greeting;
                     </code>
                     </pre>
                     </li>
-                </ul>
-
-            </li>
+                </ul>            </li>
             <li>
                 PHP Loops<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom12" aria-controls="offcanvasBottom">Read more...</button>
@@ -1285,19 +1172,13 @@ echo greeting;
                                 init counter: Initialize the loop counter value<br><br>
                                 test counter: Evaluated for each loop iteration. If it evaluates to TRUE, the loop
                                 continues. If it evaluates to FALSE, the loop ends.<br><br>
-                                increment counter: Increases the loop counter value<br>
-
-                            </li>
+                                increment counter: Increases the loop counter value<br>                            </li>
                             <li>foreach - loops through a block of code for each element in an array</li>
                             <li>Break- It was used to "jump out" of a switch statement.The break statement can also be
                                 used to jump out of a loop.</li>
                             <li>Continue - The continue statement breaks one iteration (in the loop), if a specified
                                 condition occurs, and continues with the next iteration in the loop.</li>
-                        </ul>
-
-
-
-                    </div>
+                        </ul>                    </div>
                 </div>
                 <ul>
                     <li>while Loop
@@ -1335,13 +1216,7 @@ echo greeting;
                               }
                     </code>
                     </pre>
-                    </li>
-
-
-
-
-
-                    <li>Break
+                    </li>                    <li>Break
                         <pre class="language-php">
                         <code>
                             for ($x = 0; $x < 10; $x++) {
@@ -1365,9 +1240,7 @@ echo greeting;
                     </code>
                     </pre>
                     </li>
-                </ul>
-
-            </li>
+                </ul>            </li>
             <li>
                 User Defined Function<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom13" aria-controls="offcanvasBottom">Read more...</button>
@@ -1384,9 +1257,7 @@ echo greeting;
                         A function will not execute automatically when a page loads.<br>
                         A function will be executed by a call to the function.<br>
                     </div>
-                </div>
-
-                <pre class="language-php">
+                </div>                <pre class="language-php">
     <code>
         function functionName() {
             code to be executed;
@@ -1415,9 +1286,7 @@ echo greeting;
                         <br><br><br>
                         PHP - Sort Functions For Arrays <br>
                         The elements in an array can be sorted in alphabetical or numerical order, descending or
-                        ascending. <br> <br>
-
-                        sort() - sort arrays in ascending order <br>
+                        ascending. <br> <br>                        sort() - sort arrays in ascending order <br>
                         rsort() - sort arrays in descending order <br>
                         asort() - sort associative arrays in ascending order, according to the value <br>
                         ksort() - sort associative arrays in ascending order, according to the key <br>
@@ -1838,8 +1707,6 @@ ksort($age);
                         </ol>
                     </li>
                 </ul>
-
-
             </li>
             <li>
                 Superglobals<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
@@ -1855,9 +1722,7 @@ ksort($age);
                         accessible, regardless of scope - and you can access them from any function, class or file
                         without having to do anything special.
                         <br><br>
-                        The PHP superglobal variables are: <br><br>
-
-                        $_SERVER : $_SERVER is a PHP super global variable which holds information about headers, paths,
+                        The PHP superglobal variables are: <br><br>                        $_SERVER : $_SERVER is a PHP super global variable which holds information about headers, paths,
                         and script locations. <br>
                         $GLOBALS :$GLOBALS is a PHP super global variable which is used to access global variables from
                         anywhere in the PHP script (also from within functions or methods). <br> PHP stores all global
@@ -2069,9 +1934,7 @@ ksort($age);
                             </tbody>
                         </table>
                     </div>
-                </div>
-
-            </li>
+                </div>            </li>
             <li>
                 Quantifiers<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom23" aria-controls="offcanvasBottom">Read more...</button>
@@ -2115,9 +1978,7 @@ ksort($age);
                             </tbody>
                         </table>
                     </div>
-                </div>
-
-            </li>
+                </div>            </li>
             <li>
                 PHP Form Handling<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom24" aria-controls="offcanvasBottom">Read more...</button>
@@ -2133,9 +1994,7 @@ ksort($age);
                         GET vs. POST <br>
                         Both GET and POST create an array (e.g. array( key1 => value1, key2 => value2, key3 => value3,
                         ...)). This array holds key/value pairs, where keys are the names of the form controls and
-                        values are the input data from the user. <br><br>
-
-                        Both GET and POST are treated as $_GET and $_POST. These are superglobals, which means that they
+                        values are the input data from the user. <br><br>                        Both GET and POST are treated as $_GET and $_POST. These are superglobals, which means that they
                         are always accessible, regardless of scope - and you can access them from any function, class or
                         file without having to do anything special.
                         <br><br>
@@ -2164,22 +2023,16 @@ ksort($age);
                         However, because the variables are not displayed in the URL, it is not possible to bookmark the
                         page.
                         <br>
-                        Developers prefer POST for sending form data.
-
-                    </div>
+                        Developers prefer POST for sending form data.                    </div>
                 </div>
                 <pre class="language-php">
 <code>
     &lt;html&gt;
-&lt;body&gt;
-
-&lt;form action="welcome.php" method="post"&gt;
+&lt;body&gt;&lt;form action="welcome.php" method="post"&gt;
 Name: &lt;input type="text" name="name"&gt;&lt;br&gt;
 E-mail: &lt;input type="text" name="email"&gt;&lt;br&gt;
 &lt;input type="submit"&gt;
-&lt;/form&gt;
-
-&lt;/body&gt;
+&lt;/form&gt;&lt;/body&gt;
 &lt;/html&gt;
 </code>
 </pre>
@@ -3047,8 +2900,6 @@ in the Customers table:*/
                     </code>
                     </pre>
             </li>
-
-
             <li>
                 TRUNCATE TABLE<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom46" aria-controls="offcanvasBottom">Read more...</button>
@@ -3061,9 +2912,7 @@ in the Customers table:*/
                     <div class="offcanvas-body small">
                         The DROP TABLE statement is used to drop an existing table in a database.
                     </div>
-                </div>
-
-                <pre class="language-php">
+                </div>                <pre class="language-php">
                     <code>
                         TRUNCATE TABLE table_name;
                     </code>
@@ -3099,9 +2948,7 @@ in the Customers table:*/
                             </pre>
                     </li>
                 </ul>
-            </li>
-
-            <li>MySQL Constraints<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+            </li>            <li>MySQL Constraints<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom48" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom48"
                     aria-labelledby="offcanvasBottomLabel">
@@ -3137,13 +2984,9 @@ in the Customers table:*/
                                 DEFAULT - Sets a default value for a column if no value is specified</li>
                             <li>
                                 CREATE INDEX - Used to create and retrieve data from the database very quickly</li>
-                        </ul>
-
-                    </div>
+                        </ul>                    </div>
                 </div>
-            </li>
-
-            <li>NOT NULL Constraint<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+            </li>            <li>NOT NULL Constraint<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom49" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom49"
                     aria-labelledby="offcanvasBottomLabel">
@@ -3170,9 +3013,7 @@ in the Customers table:*/
                                     );
                                 </code>
                                 </pre>
-            </li>
-
-            <li>UNIQUE Constraint<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+            </li>            <li>UNIQUE Constraint<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom50" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom50"
                     aria-labelledby="offcanvasBottomLabel">
@@ -3184,14 +3025,10 @@ in the Customers table:*/
                         The UNIQUE constraint ensures that all values in a column are different.
                         <br>
                         Both the UNIQUE and PRIMARY KEY constraints provide a guarantee for uniqueness for a column or
-                        set of columns. <br>
-
-                        A PRIMARY KEY constraint automatically has a UNIQUE constraint.
+                        set of columns. <br>                        A PRIMARY KEY constraint automatically has a UNIQUE constraint.
                         <br>
                         However, you can have many UNIQUE constraints per table, but only one PRIMARY KEY constraint per
                         table.
-
-
                     </div>
                 </div>
                 <pre class="language-php">
@@ -3206,8 +3043,6 @@ in the Customers table:*/
                                         </code>
                                         </pre>
             </li>
-
-
             <li>PRIMARY KEY Constraint<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom52" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom52"
@@ -3237,10 +3072,6 @@ in the Customers table:*/
                                     </code>
                                     </pre>
             </li>
-
-
-
-
             <li> FOREIGN KEY Constraint<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom53" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom53"
@@ -3271,12 +3102,6 @@ in the Customers table:*/
                                 </code>
                                 </pre>
             </li>
-
-
-
-
-
-
             <li>CHECK Constraint<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom54" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom54"
@@ -3578,6 +3403,4 @@ WHERE Country = 'Brazil';
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
-</body>
-
-</html>
+</body></html>

@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en"><head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Reactjs cheatsheet</title>
@@ -15,9 +13,7 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
-</head>
-
-<body>
+</head><body>
   <nav class="navbar fixed-top navbar-expand-lg bg-dark navbar-dark">
     <div class="container-fluid">
      <a class="navbar-brand" href="#">
@@ -124,7 +120,7 @@
           <li class="nav-item">
             <a class="nav-link" href="../about.html">About Us</a>
           </li>
-        </ul>
+        </ul><a href="../colorpiceker.html"><div class="button">Colour Picker</div></a>
       </div>
     </div>
   </nav>
@@ -208,9 +204,7 @@
       </li>
       <li>class based component
         <pre class="language-jsx">
-                                    <code>    import React, { Component } from 'react'
-
-                                      export class Contact extends Component {
+                                    <code>    import React, { Component } from 'react'                                      export class Contact extends Component {
                                         render() {
                                           return (
                                             <div>Contact</div>
@@ -224,9 +218,7 @@
           fuction based component
         
           <pre class="language-jsx">
-                                    <code>     import React from 'react'
-
-                                      const Contact = () => {
+                                    <code>     import React from 'react'                                      const Contact = () => {
                                         return (
                                           <div>Contact</div>
                                         )
@@ -234,9 +226,7 @@
                                       
                                       export default Contact
                                         </code>
-        </pre>
-
-            
+        </pre>            
       </li>
       <li>start reactjs app
         <pre class="language-jsx">
@@ -290,11 +280,7 @@
       &lt;/Router&gt;
 </code>
 </pre>
-      </li>
-
-
-
-      <li>
+      </li>      <li>
         create nested routes
         <pre class="language-jsx">
     <code>
@@ -355,9 +341,7 @@
           </div>
           <div class="offcanvas-body">
             <p>
-              According to the definition in React Router doc, useParams returns:
-
-              an object of key/value pairs of URL parameters. Use it to access match.params of the current route
+              According to the definition in React Router doc, useParams returns:              an object of key/value pairs of URL parameters. Use it to access match.params of the current route
               <br><br>
             <ul>
               <li>
@@ -428,9 +412,7 @@ import React, { useContext } from "react";
 <code>
   return &lt;AppContext.Provider  value="soham"&gt;{children}&lt;/AppContext.Provider&gt;
 </code>
-</pre>
-
-        <p>For access value</p>
+</pre>        <p>For access value</p>
         <pre class="language-jsx">
     <code>
       const auth = useContext(AuthContext);
@@ -641,6 +623,4 @@ import React, { useContext } from "react";
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
-</body>
-
-</html>
+</body></html>

@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en"><head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CSS cheatsheet</title>
@@ -15,9 +13,7 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
-</head>
-
-<body>
+</head><body>
     <nav class="navbar fixed-top navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -126,10 +122,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../contact.html">Contact</a>
                     </li>
-                    <li class="nav-item">
+<li class="nav-item">
                         <a class="nav-link" href="../about.html">About Us</a>
                     </li>
                 </ul>
+                <a href="../colorpiceker.html"><div class="button">Colour Picker</div></a>
             </div>
         </div>
     </nav>
@@ -151,9 +148,7 @@
                                 CSS is the language we use to style a Web page.
                             </li>
                             <li>
-                                CSS is the language we use to style an HTML document.
-
-                            </li>
+                                CSS is the language we use to style an HTML document.                            </li>
                             <li>
                                 CSS describes how HTML elements should be displayed. </li>
                             <li>
@@ -161,9 +156,7 @@
                             <li>
                                 CSS describes how HTML elements are to be displayed on screen, paper, or in other media
                             </li>
-                            <li>
-
-                                CSS saves a lot of work. It can control the layout of multiple web pages all at once
+                            <li>                                CSS saves a lot of work. It can control the layout of multiple web pages all at once
                             </li>
                         </ul>
                         </h3>
@@ -286,9 +279,7 @@
                     <div class="offcanvas-body small">
                         The universal selector (*) selects all HTML elements on the page.
                     </div>
-                </div>
-
-                <pre class="language-css">
+                </div>                <pre class="language-css">
     <code>
         * {
             
@@ -335,9 +326,7 @@
                                 &lt;link &gt; element, inside the head section.
                             </li>
                             <li>Internal CSS: An internal style sheet may be used if one single HTML page has a unique
-                                style.
-
-                                The internal style is defined inside the &lt;style&gt; element, inside the head section.
+                                style.                                The internal style is defined inside the &lt;style&gt; element, inside the head section.
                             </li>
                             <li>Inline CSS : An inline style may be used to apply a unique style for a single element.
                                 <br>
@@ -363,8 +352,6 @@
   &lt;/style&gt;
 </code>
 </pre>
-
-
                 <h3>Inline CSS</h3>
                 <pre class="language-css">
 <code>
@@ -487,9 +474,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        The background-image property specifies an image to use as the background of an element.
-
-                    </div>
+                        The background-image property specifies an image to use as the background of an element.                    </div>
                 </div>
                 
                         <pre class="language-css">
@@ -511,9 +496,7 @@
                     <div class="offcanvas-body small">
                         By default, the background-image property repeats an image both horizontally and vertically.
                     </div>
-                </div>
-
-                <pre class="language-css">
+                </div>                <pre class="language-css">
     <code>
             background-repeat: no-repeat;
 </code>
@@ -764,9 +747,7 @@
                             </tbody>
                         </table>
                     </div>
-                </div>
-
-            </li>
+                </div>            </li>
             <li>
                 Quantifiers<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom23" aria-controls="offcanvasBottom">Read more...</button>
@@ -810,9 +791,7 @@
                             </tbody>
                         </table>
                     </div>
-                </div>
-
-            </li>
+                </div>            </li>
             <li>
                 PHP Form Handling<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom24" aria-controls="offcanvasBottom">Read more...</button>
@@ -828,9 +807,7 @@
                         GET vs. POST <br>
                         Both GET and POST create an array (e.g. array( key1 => value1, key2 => value2, key3 => value3,
                         ...)). This array holds key/value pairs, where keys are the names of the form controls and
-                        values are the input data from the user. <br><br>
-
-                        Both GET and POST are treated as $_GET and $_POST. These are superglobals, which means that they
+                        values are the input data from the user. <br><br>                        Both GET and POST are treated as $_GET and $_POST. These are superglobals, which means that they
                         are always accessible, regardless of scope - and you can access them from any function, class or
                         file without having to do anything special.
                         <br><br>
@@ -859,22 +836,16 @@
                         However, because the variables are not displayed in the URL, it is not possible to bookmark the
                         page.
                         <br>
-                        Developers prefer POST for sending form data.
-
-                    </div>
+                        Developers prefer POST for sending form data.                    </div>
                 </div>
                 <pre class="language-css">
 <code>
     &lt;html&gt;
-&lt;body&gt;
-
-&lt;form action="welcome.php" method="post"&gt;
+&lt;body&gt;&lt;form action="welcome.php" method="post"&gt;
 Name: &lt;input type="text" name="name"&gt;&lt;br&gt;
 E-mail: &lt;input type="text" name="email"&gt;&lt;br&gt;
 &lt;input type="submit"&gt;
-&lt;/form&gt;
-
-&lt;/body&gt;
+&lt;/form&gt;&lt;/body&gt;
 &lt;/html&gt;
 </code>
 </pre>
@@ -1742,8 +1713,6 @@ in the Customers table:*/
                     </code>
                     </pre>
             </li>
-
-
             <li>
                 TRUNCATE TABLE<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom46" aria-controls="offcanvasBottom">Read more...</button>
@@ -1756,9 +1725,7 @@ in the Customers table:*/
                     <div class="offcanvas-body small">
                         The DROP TABLE statement is used to drop an existing table in a database.
                     </div>
-                </div>
-
-                <pre class="language-css">
+                </div>                <pre class="language-css">
                     <code>
                         TRUNCATE TABLE table_name;
                     </code>
@@ -1794,9 +1761,7 @@ in the Customers table:*/
                             </pre>
                     </li>
                 </ul>
-            </li>
-
-            <li>MySQL Constraints<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+            </li>            <li>MySQL Constraints<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom48" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom48"
                     aria-labelledby="offcanvasBottomLabel">
@@ -1832,13 +1797,9 @@ in the Customers table:*/
                                 DEFAULT - Sets a default value for a column if no value is specified</li>
                             <li>
                                 CREATE INDEX - Used to create and retrieve data from the database very quickly</li>
-                        </ul>
-
-                    </div>
+                        </ul>                    </div>
                 </div>
-            </li>
-
-            <li>NOT NULL Constraint<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+            </li>            <li>NOT NULL Constraint<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom49" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom49"
                     aria-labelledby="offcanvasBottomLabel">
@@ -1865,9 +1826,7 @@ in the Customers table:*/
                                     );
                                 </code>
                                 </pre>
-            </li>
-
-            <li>UNIQUE Constraint<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+            </li>            <li>UNIQUE Constraint<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom50" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom50"
                     aria-labelledby="offcanvasBottomLabel">
@@ -1879,14 +1838,10 @@ in the Customers table:*/
                         The UNIQUE constraint ensures that all values in a column are different.
                         <br>
                         Both the UNIQUE and PRIMARY KEY constraints provide a guarantee for uniqueness for a column or
-                        set of columns. <br>
-
-                        A PRIMARY KEY constraint automatically has a UNIQUE constraint.
+                        set of columns. <br>                        A PRIMARY KEY constraint automatically has a UNIQUE constraint.
                         <br>
                         However, you can have many UNIQUE constraints per table, but only one PRIMARY KEY constraint per
                         table.
-
-
                     </div>
                 </div>
                 <pre class="language-css">
@@ -1901,8 +1856,6 @@ in the Customers table:*/
                                         </code>
                                         </pre>
             </li>
-
-
             <li>PRIMARY KEY Constraint<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom52" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom52"
@@ -1932,10 +1885,6 @@ in the Customers table:*/
                                     </code>
                                     </pre>
             </li>
-
-
-
-
             <li> FOREIGN KEY Constraint<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom53" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom53"
@@ -1966,12 +1915,6 @@ in the Customers table:*/
                                 </code>
                                 </pre>
             </li>
-
-
-
-
-
-
             <li>CHECK Constraint<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom54" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom54"
@@ -2273,6 +2216,4 @@ WHERE Country = 'Brazil';
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
-</body>
-
-</html>
+</body></html>
