@@ -1,21 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en"><head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap cheatsheet</title>
+    <link rel="shortcut icon" href="../img/bootstrap.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="../prism.css">
-    <link rel="stylesheet" href="../css/style.css">
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../prism.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <script src="../prism.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
 </head><body>
  <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: rgb(1,4,45);">
         <div class="container-fluid">
-           <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#">
                 <img src="../img/mainlogo.jpg" alt="" style="height: 8vh;">Cheatbook</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -26,7 +27,8 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                    </li>                    <!-- web develpoment -->
+                    </li>
+                    <!-- web develpoment -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -35,36 +37,47 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="html.html">HTML</a></li>
                             <li><a class="dropdown-item" href="css.html">CSS</a></li>
-                            <li><a class="dropdown-item" href="javascript.html">JavaScript</a></li>
+                            <li>
+                                <a class="dropdown-item" href="javascript.html">JavaScript</a>
+                            </li>
                             <li><a class="dropdown-item" href="nodejs.html">Nodejs</a></li>
                             <li><a class="dropdown-item" href="react.html">Reacjs</a></li>
                             <li><a class="dropdown-item" href="nextjs.html">Nextjs</a></li>
-                            <li><a class="dropdown-item" href="angularjs.html">Angularjs</a></li>
+                            <li>
+                                <a class="dropdown-item" href="angularjs.html">Angularjs</a>
+                            </li>
                             <li><a class="dropdown-item" href="flask.html">Flask</a></li>
                             <li><a class="dropdown-item" href="django.html">Django</a></li>
                             <li><a class="dropdown-item" href="php.html">PHP</a></li>
                             <li>
-                                <hr class="dropdown-divider">
+                                <hr class="dropdown-divider" />
                             </li>
-                            <li><a class="dropdown-item" href="bootstrap.html">Bootstrap</a></li>
-                            <li><a class="dropdown-item" href="tailwindcss.html">Tailwind css</a></li>
+                            <li>
+                                <a class="dropdown-item" href="bootstrap.html">Bootstrap</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="tailwindcss.html">Tailwind css</a>
+                            </li>
                         </ul>
                     </li>
-                    <!-- programming -->                    <li class="nav-item dropdown mx-1">
+                    <!-- programming -->
+                    <li class="nav-item dropdown mx-1">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Programming Languages
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu ">
                             <li><a class="dropdown-item" href="cplus.html">C++</a></li>
                             <li><a class="dropdown-item" href="c.html">C</a></li>
                             <li><a class="dropdown-item" href="java.html">Java</a></li>
-                            <li><a class="dropdown-item" href="python.html">Python</a></li>                            <li>
-                                <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="python.html">Python</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
                             </li>
                             <li><a class="dropdown-item" href="dsa.html">DSA</a></li>
                         </ul>
-                    </li>                    <!-- Machine learning -->
+                    </li>
+                    <!-- Machine learning -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -73,15 +86,24 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="numpy.html">Numpy</a></li>
                             <li><a class="dropdown-item" href="pandas.html">Pandas</a></li>
-                            <li><a class="dropdown-item" href="matplotlib.html">Matplotlib</a></li>
-                            <li><a class="dropdown-item" href="tensorflow.html">Tensorflow</a></li>
-                            <li><a class="dropdown-item" href="seaborn.html">Seaborn</a></li>
                             <li>
-                                <hr class="dropdown-divider">
+                                <a class="dropdown-item" href="matplotlib.html">Matplotlib</a>
                             </li>
-                            <li><a class="dropdown-item" href="powerbi.html">Power BI</a></li>
+                            <li>
+                                <a class="dropdown-item" href="tensorflow.html">Tensorflow</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="seaborn.html">Seaborn</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="powerbi.html">Power BI</a>
+                            </li>
                         </ul>
-                    </li>                    <!-- databases -->
+                    </li>
+                    <!-- databases -->
                     <li class="nav-item dropdown mx-1">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -89,81 +111,1899 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="mysql.html">MYSQL</a></li>
-                            <li><a class="dropdown-item" href="mongodb.html">MongoDB</a></li>
-                            <li><a class="dropdown-item" href="postsql.html">PostgrelSQL</a></li>
+                            <li>
+                                <a class="dropdown-item" href="mongodb.html">MongoDB</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="postsql.html">PostgrelSQL</a>
+                            </li>
                         </ul>
                     </li>
                     
-                    <li class="nav-item">
+<li class="nav-item">
                         <a class="nav-link" href="../about.html">About Us</a>
                     </li>
-                </ul>            </div>
+                </ul>
+                 <a href="shadowpicker.html"><div class="button mx-1 btn1" style="font-size: x-small;">Shadow Picker</div></a>
+                 <a href="../colorpiceker.html"><div class="button mx-1 btn1" style="font-size: x-small;">Colour Picker</div></a>
+            </div>
         </div>
     </nav>
     <!-- mid part -->
-    <nav class="mt-5 pt-1">
-        <div class="text-center my-3" style="font-size: larger;font-weight:900;">
-            <img src="../img/bootstrap.svg" alt=""> Bootstrap cheatsheet
+    <nav class="mt-5 pt-1 w-100">
+        <div class="text-center my-3" style="font-size: larger; font-weight: 900">
+            <img src="../img/bootstrap.svg" alt="" /> Bootstrap cheatsheet
         </div>
-    </nav>    <div class="container">
+    </nav>
+    <div class="container">
+        <div class="p-5 mb-4 bg-light rounded-3 jumbo">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Bootstrap</h1>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="fs-4">
+                            Bootstrap is a free front-end framework for faster and easier web development
+                            <br>
+                            Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional JavaScript plugins <br>
+                            Bootstrap also gives you the ability to easily create responsive designs
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="../img/bootstrap.svg" alt="" style="width:100% ;" />
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#o1"
+                    aria-controls="o1">
+                    Read More...
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o1"
+                    aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                            Bootstrap
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        Advantages of Bootstrap:
+<br><br><br>
+                        Easy to use: Anybody with just basic knowledge of HTML and CSS can start using Bootstrap<br><br>
+                        Responsive features: Bootstrap's responsive CSS adjusts to phones, tablets, and desktops<br><br>
+                        Mobile-first approach: In Bootstrap, mobile-first styles are part of the core framework<br><br>
+                        Browser compatibility: Bootstrap 5 is compatible with all modern browsers (Chrome, Firefox, Edge, Safari, and Opera). <br><br>Note that if you need support for IE11 and down, you must use either BS4 or BS3.
+                    </div>
+                </div>
+            </div>
+        </div>
         <ol>
-            <li>Starter template
+            <!-- offcanvas -->
+            <li>
+                Stater Template<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom2" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom2"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Stater Template</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        One advantage of using the Bootstrap 5 CDN:<br><br>
+                        Many users already have downloaded Bootstrap 5 from jsDelivr when visiting another site. As a result, it will be loaded from cache when they visit your site, which leads to faster loading time. Also, most CDN's will make sure that once a user requests a file from it, it will be served from the server closest to them, which also leads to faster loading time.
+                        <br><br><br><br>
+                        JavaScript?
+                        Bootstrap 5 uses JavaScript for different components (like modals, tooltips, popovers etc). However, if you just use the CSS part of Bootstrap, you don't need them.
+                    </div>
+                </div>
                 <pre class="language-html">
-                <code>
-                    &lt;!doctype html&gt;
-                    &lt;html lang="en"&gt;
-                      &lt;head&gt;
-                        &lt;meta charset="utf-8"&gt;
-                        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-                        &lt;title&gt;Bootstrap demo&lt;/title&gt;
-                        &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"&gt;
-                      &lt;/head&gt;
-                      &lt;body&gt;
-                        &lt;h1&gt;Hello, world!&lt;/h1&gt;
-                        &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"&gt;&lt;/script&gt;
-                      &lt;/body&gt;
-                    &lt;/html&gt;
-                </code>
-            </pre>
-            </li>            <li>Icons
+                    <code> 
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html lang="en"&gt;
+                          &lt;head&gt;
+                            &lt;meta charset="UTF-8" /&gt;
+                            &lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+                            &lt;title&gt;Document&lt;/title&gt;
+                            &lt;!-- Bootstrap CSS --&gt;
+                            &lt;link
+                              href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+                              rel="stylesheet"
+                              integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+                              crossorigin="anonymous"
+                            /&gt;
+                          &lt;/head&gt;
+                          &lt;body&gt;
+                        
+                        
+                        
+                        
+                            &lt;!-- Bootstrap JS --&gt;
+                            &lt;script
+                              src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                              integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                              crossorigin="anonymous"
+                            &gt;&lt;/script&gt;
+                          &lt;/body&gt;
+                        &lt;/html&gt;
+                        
+                        </code>
+</pre>
+            </li>
+            <li>Separate css and js cdn
                 <pre class="language-html">
-                <code>
-                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"&gt;
+                                    <code> 
+                                        <!-- Latest compiled and minified CSS -->
+&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+                                        </code>
+        </pre>
+        <pre class="language-html">
+            <code> 
+                <!-- Latest compiled and minified CSS -->
+<!-- Latest compiled JavaScript -->
+&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
                 </code>
+</pre>
+            </li>
+            <li>
+                Containers<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom3" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom3"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Containers</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        Containers are used to pad the content inside of them, and there are two container classes available:
+<br><br>
+The .container class provides a responsive fixed width container <br>
+The .container-fluid class provides a full width container, spanning the entire width of the viewport
+<br><br>
+<ol type="A">
+    <li>Fixed Container:Use the .container class to create a responsive, fixed-width container.
+
+        Note that its width (max-width) will change on different screen sizes:
+        <table class="w3-table ws-table-all table-bordered">
+            <thead>
+              <tr>
+              <th></th>
+                <th>
+                  Extra small<br>
+                  &lt;576px
+                </th>
+                <th>
+                  Small<br>
+                  ≥576px
+                </th>
+                <th>
+                  Medium<br>
+                  ≥768px
+                </th>
+                <th>
+                  Large<br>
+                  ≥992px
+                </th>
+                <th>
+                  Extra Large<br>
+                  ≥1200px
+                </th>
+                <th>
+                  XXL<br>
+                  ≥1400px
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>max-width</td>
+                <td>100%</td>
+                <td>540px</td>
+                <td>720px</td>
+                <td>960px</td>
+                <td>1140px</td>
+                <td>1320px</td>
+              </tr>
+            </tbody>
+          </table>
+       </li>
+    <li>Fluid Container:
+        Use the .container-fluid class to create a full width container, that will always span the entire width of the screen (width is always 100%)</li>
+</ol>
+                    </div>
+                </div>
+                <h3>Fixed container</h3>
+                <pre class="language-html">
+            <code>     
+                &lt;div class="container"&gt;
+    
+  &lt;/div&gt;
+
+            </code>
+        </pre>
+        <h3>fluid container</h3>
+        <pre class="language-html">
+            <code>     
+                &lt;div class="container-fluid"&gt;
+    
+                &lt;/div&gt;
+            </code>
+        </pre>
+            </li>
+            <li>Grid System
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom4" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom4"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Grid System</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        Bootstrap's grid system is built with flexbox and allows up to 12 columns across the page.
+                <br>
+                If you do not want to use all 12 columns individually, you can group the columns together to create wider columns
+                <br><br>
+                The grid system is responsive, and the columns will re-arrange automatically depending on the screen size.
+<br>
+Make sure that the sum adds up to 12 or fewer (it is not required that you use all 12 available columns).
+<br><br><br>
+The Bootstrap 5 grid system has six classes:
+<br><br>
+.col- (extra small devices - screen width less than 576px)<br>
+.col-sm- (small devices - screen width equal to or greater than 576px)<br>
+.col-md- (medium devices - screen width equal to or greater than 768px)<br>
+.col-lg- (large devices - screen width equal to or greater than 992px)<br>
+.col-xl- (xlarge devices - screen width equal to or greater than 1200px)<br>
+.col-xxl- (xxlarge devices - screen width equal to or greater than 1400px)<br>
+The classes above can be combined to create more dynamic and flexible layouts.<br>
+<br>
+Tip: Each class scales up, so if you want to set the same widths for sm and md, you only need to specify sm.
+                    </div>
+                </div>  <br>   <br> <table class="table grid table-bordered text-center">
+                    <tbody><tr>
+                      <td>span 1</td>
+                      <td>span 1</td>  
+                      <td>span 1</td>
+                      <td>span 1</td>
+                      <td>span 1</td>  
+                      <td>span 1</td>
+                      <td>span 1</td>
+                      <td>span 1</td>  
+                      <td>span 1</td>
+                      <td>span 1</td>
+                      <td>span 1</td>  
+                      <td>span 1</td>
+                    </tr>
+                    <tr>
+                      <td colspan="4">&nbsp;span 4</td>
+                      <td colspan="4">&nbsp;span 4</td>  
+                      <td colspan="4">&nbsp;span 4</td>
+                    </tr>
+                    <tr>
+                      <td colspan="4">span 4</td>
+                      <td colspan="8">span 8</td>  
+                    </tr>
+                    <tr>
+                      <td colspan="6">span 6</td>
+                      <td colspan="6">span 6</td>  
+                    </tr>
+                    <tr>
+                      <td colspan="12">span 12</td>
+                    </tr>
+                    </tbody></table>             
+                <pre class="language-html">
+    <code>
+        &lt;div class="row"&gt;
+    &lt;div class="col"&gt;&lt;/div&gt;
+    &lt;div class="col"&gt;&lt;/div&gt;
+    &lt;div class="col"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+</code>
+</pre>
+            </li>
+            <li>Text/Typography<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom5" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom5"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Text/Typography</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        Bootstrap 5 Default Settings<br>
+                        Bootstrap 5 uses a default font-size of 1rem (16px by default), and its line-height is 1.5.
+                        <br><br>
+                        In addition, all <p> elements have margin-top: 0 and margin-bottom: 1rem (16px by default).
+                            <table class="ws-table-all notranslate table-bordered">
+                                <tbody><tr>
+                                  <th style="width:30%;">Class</th>
+                                  <th style="width:70%;">Description</th>
+                                </tr>
+                                <tr>
+                                  <td><code class="w3-codespan">.lead</code></td>
+                                  <td>Makes a paragraph stand out</td>
+                                 
+                                </tr>
+                                <tr>
+                                  <td><code class="w3-codespan">.text-start</code></td>
+                                  <td>Indicates left-aligned text</td>
+                                  
+                                </tr>
+                                <tr>
+                                  <td><code class="w3-codespan">.text-break</code></td>
+                                  <td>Prevents long text from breaking layout</td>
+                                  
+                                </tr>
+                                <tr>
+                                  <td><code class="w3-codespan">.text-center</code></td>
+                                  <td>Indicates center-aligned text</td>
+                                 
+                                </tr>
+                                <tr>
+                                  <td><code class="w3-codespan">.text-decoration-none</code></td>
+                                  <td>Removes the underline from a link</td>
+                               
+                                </tr>
+                                <tr>
+                                  <td><code class="w3-codespan">.text-end</code></td>
+                                  <td>Indicates right-aligned text</td>
+                                  
+                                </tr>
+                                <tr>
+                                  <td><code class="w3-codespan">.text-nowrap</code></td>
+                                  <td>Indicates no wrap text</td>
+                                  
+                                </tr>
+                                <tr>
+                                  <td><code class="w3-codespan">.text-lowercase</code></td>
+                                  <td>Indicates lowercased text</td>
+                                  
+                                </tr>
+                                <tr>
+                                  <td><code class="w3-codespan">.text-uppercase</code></td>
+                                  <td>Indicates uppercased text</td>
+                                  
+                                </tr>
+                                <tr>
+                                  <td><code class="w3-codespan">.text-capitalize</code></td>
+                                  <td>Indicates capitalized text</td>
+                                  
+                                </tr>
+                                <tr>
+                                  <td><code class="w3-codespan">.initialism</code></td>
+                                  <td>Displays the text inside an <code class="w3-codespan">&lt;abbr&gt;</code> element in a slightly smaller font size</td>
+                                  
+                                </tr>
+                                <tr>
+                                  <td><code class="w3-codespan">.list-unstyled</code></td>
+                                  <td>Removes the default list-style and left margin on list items (works on both <code class="w3-codespan">&lt;ul&gt;</code> and <code class="w3-codespan">&lt;ol&gt;</code>). This class only applies to immediate children list items (to remove the default list-style from any nested lists, apply this class to any nested lists as well)</td>
+                                </tr>
+                                <tr>
+                                  <td><code class="w3-codespan">.list-inline</code></td>
+                                  <td>Places all list items on a single line (used together with 
+                                  <code class="w3-codespan">.list-inline-item</code> on each &lt;li&gt; elements)</td>
+                                 
+                                </tr>
+                              </tbody></table>
+                        </div>
+                </div>
+                <pre class="language-html">
+    <code>
+       
+&lt;p class="h1"&gt;h1 Bootstrap heading&lt;/p&gt;
+&lt;p class="h2"&gt;h2 Bootstrap heading&lt;/p&gt;
+&lt;p class="h3"&gt;h3 Bootstrap heading&lt;/p&gt;
+&lt;p class="h4"&gt;h4 Bootstrap heading&lt;/p&gt;
+&lt;p class="h5"&gt;h5 Bootstrap heading&lt;/p&gt;
+&lt;p class="h6"&gt;h6 Bootstrap heading&lt;/p&gt;
+</code>
+</pre>
+            </li>
+            <li>
+                Colours<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvas2" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas2"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Colours</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                       <br> Text Colors:.text-muted, .text-primary, .text-success, .text-info, .text-warning, .text-danger, .text-secondary, .text-white, .text-dark, .text-body (default body color/often black) and .text-light
+<br><br><br>
+Background Colors: .bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark and .bg-light.
+<br><br><br>.text-bg-color used for background colors                   </div>
+                </div>
+                <div class="row mt-2">
+
+                    <div class="col-md-4">
+                      <div class="p-3 mb-3 bg-primary text-white">Primary</div>
+                    </div>
+                
+                    <div class="col-md-4">
+                      <div class="p-3 mb-3 bg-secondary text-white">Secondary</div>
+                    </div>
+                
+                    <div class="col-md-4">
+                      <div class="p-3 mb-3 bg-success text-white">Success</div>
+                    </div>
+                
+                    <div class="col-md-4">
+                      <div class="p-3 mb-3 bg-danger text-white">Danger</div>
+                    </div>
+                
+                    <div class="col-md-4">
+                      <div class="p-3 mb-3 bg-warning text-dark">Warning</div>
+                    </div>
+                
+                    <div class="col-md-4">
+                      <div class="p-3 mb-3 bg-info text-dark">Info</div>
+                    </div>
+                
+                    <div class="col-md-4">
+                      <div class="p-3 mb-3 bg-light text-dark">Light</div>
+                    </div>
+                
+                    <div class="col-md-4">
+                      <div class="p-3 mb-3 bg-dark text-white">Dark</div>
+                    </div>
+                
+                </div>
+                <h3>text colour</h3>
+                <pre class="language-html">
+    <code>
+        &lt;div class="text-primary"&gt;&lt;/div&gt;
+</code>
+</pre>
+                <h3>background colour</h3>
+                <pre class="language-html">
+    <code>
+        &lt;div class="bg-primary"&gt;&lt;/div&gt;
+</code>
+</pre>
+                <h3>text background colour</h3>
+                <pre class="language-html">
+<code>
+    &lt;div class="text-bg-color"&gt;&lt;/div&gt;
+</code>
+</pre>
+            </li>
+            <li>
+                CSS Comments
+                        <pre class="language-html">
+                    <code>
+                        /* This is a single-line comment */
+                </code>
+                </pre>
+                    </li>
+                    <li>CSS Colors
+                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom9" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom9"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS Colors</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.
+                        <br>
+                        <ul>
+                            <li>RGB Value: <br>
+                                In CSS, a color can be specified as an RGB value, using this formula:
+                                <br>
+                                rgb(red, green, blue)
+                                <br>
+                                Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.</li>
+                            <li>RGBA Value: <br>
+                                RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.
+                                <br>
+                                An RGBA color value is specified with:
+                                <br>
+                                rgba(red, green, blue, alpha)</li>
+                            <li>HEX Value : <br>
+                                In CSS, a color can be specified using a hexadecimal value in the form:
+                                <br>
+                                #rrggbb
+                                <br>
+                                Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).</li>
+                            <li>HSL Value : <br>
+                                In CSS, a color can be specified using hue, saturation, and lightness (HSL) in the form:
+                                <br>
+                                hsl(hue, saturation, lightness)
+                                <br>
+                                Hue is a degree on the color wheel from 0 to 360.</li>
+                            <li>HSLA Value : <br>
+                                HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color. <br>
+                                
+                                An HSLA color value is specified with:
+                                <br>
+                                hsla(hue, saturation, lightness, alpha)
+                                <br>
+                                The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all)</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>CSS Background Color</h3>
+                <pre class="language-html">
+    <code>
+        background-color:DodgerBlue;
+</code>
+</pre>
+<h3>CSS Text Color</h3>
+                <pre class="language-html">
+    <code>
+        color:DodgerBlue;
+</code>
+</pre>
+<h3>CSS Border Color</h3>
+                <pre class="language-html">
+    <code>
+       border:2px solid Violet;
+</code>
+</pre>
+<h3>CSS Color Values (RGB, HEX, HSL, RGBA and HSLA )</h3>
+                <pre class="language-html">
+    <code>
+        background-color:rgb(255, 99, 71);
+        background-color:#ff6347;
+        background-color:hsl(9, 100%, 64%);
+        background-color:rgba(255, 99, 71, 0.5);
+        background-color:hsla(9, 100%, 64%, 0.5);
+</code>
+</pre>
+               
+            </li>
+            <li>CSS Backgrounds <ol type="i">
+            <li>
+                CSS background-color<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom10" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom10"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS background-color</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The background-color property specifies the background color of an element.
+                    </div>
+                </div>
+                    <pre class="language-html">
+                            <code>
+                                    background-color: lightblue;
+                        </code>
+                        </pre>
+            </li>
+            <li>
+                CSS background-image<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom12" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom12"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS background-image</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The background-image property specifies an image to use as the background of an element.                    </div>
+                </div>
+                
+                        <pre class="language-html">
+                        <code>
+                                background-image: url("paper.gif");
+                    </code>
+                    </pre>
+                    
+            </li>
+            <li>
+                CSS background-repeat<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom13" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom13"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS background-repeat</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        By default, the background-image property repeats an image both horizontally and vertically.
+                    </div>
+                </div>                <pre class="language-html">
+    <code>
+            background-repeat: no-repeat;
+</code>
+</pre>
+            </li>
+            <li>
+               CSS background-attachment<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom14" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom14"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS background-repeat</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page)
+                    </div>
+                </div>
+                
+                    
+                        <pre class="language-html">
+                        <code>
+                                background-attachment: fixed;
+                        </code>
+                        </pre>
+                    </li>
+                    <li>
+                        CSS background - Shorthand property<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom16" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom16"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS background - Shorthand property</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.
+                        <br>
+                        then using the shorthand property the order of the property values is:
+<ol type="I">
+    <li>background-color</li>
+    <li>background-image</li>
+    <li>background-repeat</li>
+    <li>background-attachment</li>
+    <li>background-position</li>
+</ol>
+                    </div>
+                </div>
+                <pre class="language-html">
+                    <code>
+                        body {
+                            background: #ffffff url("img_tree.png") no-repeat right top;
+                          }
+                    </code>
+                    </pre>
+                </li></ol></li>
+            <li>
+                CSS Borders
+                <ol><li>Border Style<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom18" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom18"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Border Style</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The border-style property specifies what kind of border to display.
+<br><br>
+                        The following values are allowed:
+                        <br><ul>
+                            <li>dotted - Defines a dotted border</li>
+                            <li>dashed - Defines a dashed border</li>
+                            <li>solid - Defines a solid border</li>
+                            <li>double - Defines a double border</li>
+                            <li>groove - Defines a 3D grooved border. The effect depends on the border-color value</li>
+                            <li>ridge - Defines a 3D ridged border. The effect depends on the border-color value</li>
+                            <li>inset - Defines a 3D inset border. The effect depends on the border-color value</li>
+                            <li>outset - Defines a 3D outset border. The effect depends on the border-color value</li>
+                            <li>none - Defines no border</li>
+                            <li>hidden - Defines a hidden border</li>
+                        </ul>
+                        <br>
+                        The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border).    
+                    </div>
+                </div>
+                <pre class="language-html">
+                    <code>
+                        border-style: dotted;
+                    </code>
+                    </pre>
+            </li>
+            <li>
+                Border Width<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom19" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom19"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Border Width</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The border-width property specifies the width of the four borders.
+<br><br>
+                        The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick
+                    </div>
+                </div>
+                <pre class="language-html">
+                    <code>
+                        border-width: 5px;
+                    </code>
+                    </pre>
+                    <pre class="language-html">
+                        <code>
+                            border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */
+                        </code>
+                        </pre>
+            </li>
+            <li>
+                Border Color<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom21" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom21"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Border Color</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The border-color property is used to set the color of the four borders.
+<br>
+The color can be set by:
+<br><ul>
+    <li>name - specify a color name, like "red"</li>
+    <li>HEX - specify a HEX value, like "#ff0000"</li>
+    <li>RGB - specify a RGB value, like "rgb(255,0,0)"</li>
+    <li>HSL - specify a HSL value, like "hsl(0, 100%, 50%)"</li>
+</ul>
+<br>
+Note: If border-color is not set, it inherits the color of the element.
+                    </div>
+                </div>
+                <pre class="language-html">
+                    <code>
+                        border-color: red;
+                    </code>
+                    </pre>
+                    <pre class="language-html">
+                        <code>
+                            border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */
+                        </code>
+                        </pre>
+            </li>
+            <li>
+                Border - Shorthand Property<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom22" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom22"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Border - Shorthand Property</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        To shorten the code, it is also possible to specify all the individual border properties in one property.
+<br><br>
+The border property is a shorthand property for the following individual border properties:
+<br><ul>
+    <li>border-width</li>
+    <li>border-style (required)</li>
+    <li>border-color</li>
+</ul>
+                    </div>
+                </div>
+                <pre class="language-html">
+                    <code>
+                        border: 5px solid red;
+                    </code>
+                    </pre>            
+            </li>
+            <li>
+                border-radius<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom23" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom23"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">border-radius</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The border-radius property is used to add rounded borders to an element
+                    </div>
+                </div> 
+                <pre class="language-html">
+                    <code>
+                        border-radius: 5px;
+                    </code>
+                    </pre>           
+            </li></ol></li>
+            <li>
+                CSS Margins<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom24" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom24"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS Margins</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The CSS margin properties are used to create space around elements, outside of any defined borders.
+<br>br
+
+With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).CSS has properties for specifying the margin for each side of an element:
+<br><br>
+margin-top <br>
+margin-right <br>
+margin-bottom<br>
+margin-left<br><br><br>
+All the margin properties can have the following values:
+<br>
+auto - the browser calculates the margin<br>
+length - specifies a margin in px, pt, cm, etc.<br>
+% - specifies a margin in % of the width of the containing element<br>
+inherit - specifies that the margin should be inherited from the parent element<br>
+<br>
+<br>
+All CSS Margin Properties
+<table class="ws-table-all notranslate table-bordered">
+    <tbody><tr>
+      <th style="width:20%">Property</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_margin.asp">margin</a></td>
+      <td>A shorthand property for setting all the margin properties in one declaration</td>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_margin-bottom.asp">margin-bottom</a></td>
+      <td>Sets the bottom margin of an element</td>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_margin-left.asp">margin-left</a></td>
+      <td>Sets the left margin of an element</td>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_margin-right.asp">margin-right</a></td>
+      <td>Sets the right margin of an element</td>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_margin-top.asp">margin-top</a></td>
+      <td>Sets the top margin of an element</td>
+    </tr>
+  </tbody></table>
+<br>
+Tip: Negative values are allowed.             </div>
+                </div>
+<pre class="language-html">
+<code>
+    margin-top: 100px; 
+</code>
+</pre>
+<pre class="language-html">
+    <code>
+        margin-bottom: 100px;
+    </code>
+    </pre>
+    <pre class="language-html">
+        <code>
+            margin-right: 150px;
+        </code>
+        </pre>
+        <pre class="language-html">
+            <code>
+            margin-left: 80px;  
+            </code>
             </pre>
+            <pre class="language-html">
+                <code>
+                    margin: 25px 50px 75px 100px;
+                </code>
+                </pre>
+            </li>
+            <li>
+                CSS Padding<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom25" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom25"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS Padding</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        Padding is used to create space around an element's content, inside of any defined borders.
+                        <br>
+                        The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
+<br><br>
+With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).
+<br>
+Padding - Individual Sides
+CSS has properties for specifying the padding for each side of an element:
+<br>
+padding-top <br>
+padding-right<br>
+padding-bottom<br>
+padding-left<br><br>
+All the padding properties can have the following values:
+<br>
+length - specifies a padding in px, pt, cm, etc.<br>
+% - specifies a padding in % of the width of the containing element<br>
+inherit - specifies that the padding should be inherited from the parent element<br>
+Note: Negative values are not allowed.
+<br>
+<br>
+<table class="ws-table-all notranslate table-bordered">
+    <tbody><tr>
+      <th style="width:30%">Property</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_padding.asp">padding</a></td>
+      <td>A shorthand property for setting all the padding properties in one declaration</td>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_padding-bottom.asp">padding-bottom</a></td>
+      <td>Sets the bottom padding of an element</td>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_padding-left.asp">padding-left</a></td>
+      <td>Sets the left padding of an element</td>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_padding-right.asp">padding-right</a></td>
+      <td>Sets the right padding of an element</td>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_padding-top.asp">padding-top</a></td>
+      <td>Sets the top padding of an element</td>
+    </tr>
+  </tbody></table>
+                    </div>
+                </div>
+                <pre class="language-html">
+                    <code>
+                        padding-top: 50px;
+                    </code>
+                    </pre>
+                    <pre class="language-html">
+                        <code>
+                            padding-bottom: 50px;
+                        </code>
+                        </pre>
+                        <pre class="language-html">
+                            <code>
+                                padding-left: 80px;
+                            </code>
+                            </pre>
+                            <pre class="language-html">
+                                <code>
+                                    padding-right: 30px;
+                                </code>
+                                </pre>
+                                <pre class="language-html">
+                                    <code>
+                                        padding: 25px 50px 75px 100px;
+                                    </code>
+                                    </pre>
+            </li>
+            <li>
+                height and width<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom27" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom27"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">height and width</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The height and width properties are used to set the height and width of an element.
+<br><br>
+The height and width properties do not include padding, borders, or margins. It sets the height/width of the area inside the padding, border, and margin of the element <br><br>
+The height and width properties may have the following values:
+<br>
+auto - This is default. The browser calculates the height and width<br>
+length - Defines the height/width in px, cm, etc.<br>
+% - Defines the height/width in percent of the containing block<br>
+initial - Sets the height/width to its default value<br>
+inherit - The height/width will be inherited from its parent value<br>
+<br><br>
+<table class="ws-table-all notranslate table-bordered">
+    <tbody><tr>
+      <th style="width:20%">Property</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_dim_height.asp">height</a></td>
+      <td>Sets the height of an element</td>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_dim_max-height.asp">max-height</a></td>
+      <td>Sets the maximum height of an element</td>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_dim_max-width.asp">max-width</a></td>
+      <td>Sets the maximum width of an element</td>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_dim_min-height.asp">min-height</a></td>
+      <td>Sets the minimum height of an element</td>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_dim_min-width.asp">min-width</a></td>
+      <td>Sets the minimum width of an element</td>
+    </tr>
+    <tr>
+      <td><a href="/cssref/pr_dim_width.asp">width</a></td>
+      <td>Sets the width of an element</td>
+    </tr>
+  </tbody></table>
+
+                    </div>
+                </div>
+                <pre class="language-html">
+                    <code>
+                        height: 200px;
+                    </code>
+                    </pre>
+                
+                <pre class="language-html">
+    <code>
+        width: 50%;
+    </code>
+    </pre>
+            </li>
+            <li>
+                Box Model<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom28" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom28"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Box Model</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        In CSS, the term "box model" is used when talking about design and layout.
+<br><br>
+The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model
+<br><br>
+Explanation of the different parts:
+<br>
+Content - The content of the box, where text and images appear<br>
+Padding - Clears an area around the content. The padding is transparent<br>
+Border - A border that goes around the padding and content<br>
+Margin - Clears an area outside the border. The margin is transparent<br>
+The box model allows us to add a border around elements<br>
+<br><br>Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add padding, borders and margins.
+                    </div>
+                </div><br>
+                <img src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/box-model-1.png" alt="" style="width: 80vw;">
+            </li>
+            <li>
+                CSS Outline<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom29" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom " tabindex="-1" id="offcanvasBottom29"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">CSS Outline</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out". <br><br>
+                        CSS has the following outline properties:
+                        <br>
+outline-style<br>
+outline-color<br>
+outline-width<br>
+outline-offset<br>
+outline<br>
+                    </div>
+                </div>
+               <br>
+               <img src="https://lectii-virtuale.ro/images/upload/files/css_outline1.jpg" alt="" style="width: 80vw;">
+            <ol>
+            <li>
+                CSS Outline Style<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom30" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom30"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS Outline Style</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The outline-style property specifies the style of the outline, and can have one of the following values:
+<br><br>
+dotted - Defines a dotted outline<br>
+dashed - Defines a dashed outline<br>
+solid - Defines a solid outline<br>
+double - Defines a double outline<br>
+groove - Defines a 3D grooved outline<br>
+ridge - Defines a 3D ridged outline<br>
+inset - Defines a 3D inset outline<br>
+outset - Defines a 3D outset outline<br>
+none - Defines no outline<br>
+hidden - Defines a hidden outline </div>
+                    </div>
+                   
+                    <pre class="language-html">
+                    <code>
+                        outline-style: dotted;
+                    </code>
+            </li>
+            <li>
+                CSS Outline Width<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom31" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom31"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS Outline Width</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The outline-width property specifies the width of the outline, and can have one of the following values:
+<br><br>
+thin (typically 1px)<br>
+medium (typically 3px)<br>
+thick (typically 5px)<br>
+A specific size (in px, pt, cm, em, etc)</div>
+                    </div>
+                    <pre class="language-html">
+                    <code>
+                        outline-width: thin;
+                    </code>
+                    </pre>
+            </li>
+            <li>
+                CSS Outline Color<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom32" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom32"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS Outline Color</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The outline-color property is used to set the color of the outline.
+<br><br><br>
+                        The color can be set by:
+                        <br>
+                        name - specify a color name, like "red"<br>
+                        HEX - specify a hex value, like "#ff0000"<br>
+                        RGB - specify a RGB value, like "rgb(255,0,0)"<br>
+                        HSL - specify a HSL value, like "hsl(0, 100%, 50%)"<br>
+                        invert - performs a color inversion (which ensures that the outline is visible, regardless of color background)<br>
+                    </div>
+                </div>
+                <pre class="language-html">
+                    <code>
+                        outline-color: red;
+                    </code>
+                    </pre>
+            </li>
+            <li>
+                CSS Outline - Shorthand<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom33" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom33"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS Outline - Shorthand</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The outline property is a shorthand property for setting the following individual outline properties:
+                        <br><br>
+                        outline-width<br>
+                        outline-style (required)<br>
+                        outline-color<br>
+                        The outline property is specified as one, two, or three values from the list above. The order of the values does not matter.
+                        <br>
+                <br>
+                <table class="ws-table-all notranslate table-bordered">
+                    <tbody><tr>
+                      <th style="width:20%">Property</th>
+                      <th>Description</th>
+                    </tr>
+                    <tr>
+                      <td><a href="/cssref/pr_outline.asp">outline</a></td>
+                      <td>A shorthand property for setting outline-width, outline-style, and 
+                      outline-color in one declaration</td>
+                    </tr>
+                    <tr>
+                      <td><a href="/cssref/pr_outline-color.asp">outline-color</a></td>
+                      <td>Sets the color of an outline</td>
+                    </tr>
+                      <tr>
+                      <td><a href="/cssref/css3_pr_outline-offset.asp">outline-offset</a></td>
+                      <td>Specifies the space between an outline and the edge or border of an element</td>
+                      </tr>
+                    <tr>
+                      <td><a href="/cssref/pr_outline-style.asp">outline-style</a></td>
+                      <td>Sets the style of an outline</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="/cssref/pr_outline-width.asp">outline-width</a></td>
+                      <td>Sets the width of an outline</td>
+                    </tr>
+                  </tbody></table>
+                    </div>
+                </div>
+                <pre class="language-html">
+                    <code>
+                        outline: 5px solid yellow;
+                    </code>
+                    </pre>
+            </li>
+            <li>
+                CSS Outline Offset<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom34" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom34"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CSS Outline Offset</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The outline-offset property adds space between an outline and the edge/border of an element. The space between an element and its outline is transparent.
+                    </div>
+                </div>
+                <pre class="language-html">
+                    <code>
+                        outline-offset: 15px;
+                    </code>
+                    </pre>
+            
+            </li>
+            </ol></li>
+            <li>
+                CSS Text <ol>
+            <li>
+                Text Color<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom35" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom35"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Text Color</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The color property is used to set the color of the text. The color is specified by:
+<br><br>
+                        a color name - like "red"<br>
+                        a HEX value - like "#ff0000"<br>
+                        an RGB value - like "rgb(255,0,0)"<br>
+                    </div>
+                </div>
+                <pre class="language-html">
+                    <code>
+                        color: blue;
+                    </code>
+                    </pre>
+            </li>
+                    <li>
+                        Text Alignment<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasBottom36" aria-controls="offcanvasBottom">Read more...</button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom36"
+                            aria-labelledby="offcanvasBottomLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Text Alignment</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body small">
+                                The text-align property is used to set the horizontal alignment of a text.
+<br>
+                                A text can be left or right aligned, centered, or justified
+                                <br><br>
+                                <table class="ws-table-all notranslate table-bordered">
+                                    <tbody><tr>
+                                      <th style="width:30%">Property</th>
+                                      <th>Description</th>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="/cssref/pr_text_direction.asp">direction</a></td>
+                                      <td>Specifies the text direction/writing direction</td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="/cssref/pr_text_text-align.asp">text-align</a></td>
+                                      <td>Specifies the horizontal alignment of text</td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="/cssref/css3_pr_text-align-last.asp">text-align-last</a></td>
+                                      <td>Specifies how to align the last line of a text</td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="/cssref/pr_text_unicode-bidi.asp">unicode-bidi</a></td>
+                                      <td>Used together with the <a href="/cssref/pr_text_direction.asp">direction</a> property to set or return whether the text should be overridden to support multiple languages in the same document</td>
+                                    </tr>
+                                    <tr>
+                                      <td><a href="/cssref/pr_pos_vertical-align.asp">vertical-align</a></td>
+                                      <td>Sets the vertical alignment of an element</td>
+                                    </tr>
+                                    </tbody></table>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                text-align: center;
+                            </code>
+                            </pre>
+
+                    </li>
+                    <li>
+                        Text Align Last<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasBottom37" aria-controls="offcanvasBottom">Read more...</button>
+                        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom37"
+                            aria-labelledby="offcanvasBottomLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Text Align Last</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body small">
+                                The text-align-last property specifies how to align the last line of a text.
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                text-align-last: right;
+                            </code>
+                            </pre>
+                    </li>
+                    <li>
+                        Text Direction<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasBottom38" aria-controls="offcanvasBottom">Read more...</button>
+                        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom38"
+                            aria-labelledby="offcanvasBottomLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Text Direction</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body small">
+                                The direction and unicode-bidi properties can be used to change the text direction of an element
+                            </div>
+                        </div> 
+                        <pre class="language-html">
+                            <code>
+                                direction: rtl;
+                                unicode-bidi: bidi-override;
+                            </code>
+                            </pre>
+                    </li>
+                    <li>
+                        Vertical Alignment<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasBottom39" aria-controls="offcanvasBottom">Read more...</button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom39"
+                            aria-labelledby="offcanvasBottomLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Vertical Alignment</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body small">
+                                The vertical-align property sets the vertical alignment of an element.
+                            </div>
+                        </div>  <pre class="language-html">
+                            <code>
+                                vertical-align: text-top;
+                            </code>
+                            </pre>
+                    </li>
+                    <li>
+                        Text Decoration
+                        <ol><li>
+                            Add a Decoration Line to Text<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasBottom40" aria-controls="offcanvasBottom">Read more...</button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom40"
+                            aria-labelledby="offcanvasBottomLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Add a Decoration Line to Text</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body small">
+                                The text-decoration-line property is used to add a decoration line to text.
+                                <br><br>
+                                Tip: You can combine more than one value, like overline and underline to display lines both over and under a text.
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                text-decoration-line: overline underline;
+                            </code>
+                            </pre>
+            </li>
+            <li>
+                Specify a Color for the Decoration Line<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom41" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom41"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Specify a Color for the Decoration Line</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The text-decoration-color property is used to set the color of the decoration line.
+                    </div>
+                </div>
+                <pre class="language-html">
+                    <code>
+                        text-decoration-color: red;
+                    </code>
+                    </pre>
+            </li>
+            <li>
+                Specify a Style for the Decoration Line
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom42" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom42"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Specify a Style for the Decoration Line</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The text-decoration-style property is used to set the style of the decoration line.
+                    </div>
+                </div>
+                <pre class="language-html">
+                    <code>
+                        text-decoration-style: solid;
+                    </code>
+                    </pre>
+            </li>
+            <li>
+                CREATE TABLE Statement<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom43" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom43"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CREATE TABLE Statement</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The CREATE TABLE statement is used to create a new table in a database.
+                    </div>
+                </div>
+                <pre class="language-html">
+                    <code>
+                        CREATE TABLE table_name (
+                            column1 datatype,
+                            column2 datatype,
+                            column3 datatype,
+                           ....
+                        );
+                    </code>
+                    </pre>
+            </li>
+            <li>
+                Create Table Using Another Table<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom44" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom44"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Create Table Using Another Table</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        A copy of an existing table can also be created using CREATE TABLE.
+                        <br>
+                        The new table gets the same column definitions. All columns or specific columns can be selected.
+                        <br>
+                        If you create a new table using an existing table, the new table will be filled with the
+                        existing values from the old table.
+                    </div>
+                </div>
+                <pre class="language-html">
+                    <code>
+                        CREATE TABLE new_table_name AS
+                        SELECT column1, column2,...
+                        FROM existing_table_name
+                        WHERE ....;
+                        );
+                    </code>
+                    </pre>
+            </li>
+            <li>
+                TRUNCATE TABLE<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom46" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom46"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">TRUNCATE TABLE</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The DROP TABLE statement is used to drop an existing table in a database.
+                    </div>
+                </div>                <pre class="language-html">
+                    <code>
+                        TRUNCATE TABLE table_name;
+                    </code>
+                    </pre>
+            </li>
+            <li>
+                <ul>
+                    <li>
+                        <h3>ALTER TABLE - ADD</h3>
+                        <pre class="language-html">
+                    <code>
+                        ALTER TABLE table_name
+                        ADD column_name datatype;
+                    </code>
+                    </pre>
+                    </li>
+                    <li>
+                        <h3>ALTER TABLE - DROP</h3>
+                        <pre class="language-html">
+                        <code>
+                            ALTER TABLE table_name
+                            DROP COLUMN column_name;
+                        </code>
+                        </pre>
+                    </li>
+                    <li>
+                        <h3>ALTER TABLE - MODIFY</h3>
+                        <pre class="language-html">
+                            <code>
+                                ALTER TABLE table_name
+                                MODIFY COLUMN column_name datatype;
+                            </code>
+                            </pre>
+                    </li>
+                </ul>
+            </li>            <li>MySQL Constraints<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom48" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom48"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">MySQL Constraints</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        SQL constraints are used to specify rules for the data in a table.
+                        <br>
+                        Constraints are used to limit the type of data that can go into a table. This ensures the
+                        accuracy and reliability of the data in the table. If there is any violation between the
+                        constraint and the data action, the action is aborted.
+                        <br>
+                        Constraints can be column level or table level. Column level constraints apply to a column, and
+                        table level constraints apply to the whole table.
+                        <br>
+                        The following constraints are commonly used in SQL:
+                        <br>
+                        <ul>
+                            <li>
+                                NOT NULL - Ensures that a column cannot have a NULL value</li>
+                            <li>
+                                UNIQUE - Ensures that all values in a column are different</li>
+                            <li>
+                                PRIMARY KEY - A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a
+                                table</li>
+                            <li>
+                                FOREIGN KEY - Prevents actions that would destroy links between tables</li>
+                            <li>
+                                CHECK - Ensures that the values in a column satisfies a specific condition</li>
+                            <li>
+                                DEFAULT - Sets a default value for a column if no value is specified</li>
+                            <li>
+                                CREATE INDEX - Used to create and retrieve data from the database very quickly</li>
+                        </ul>                    </div>
+                </div>
+            </li>            <li>NOT NULL Constraint<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom49" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom49"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">NOT NULL Constraint</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        By default, a column can hold NULL values.
+                        <br>
+                        The NOT NULL constraint enforces a column to NOT accept NULL values.
+                        <br>
+                        This enforces a field to always contain a value, which means that you cannot insert a new
+                        record, or update a record without adding a value to this field.
+                    </div>
+                </div>
+                <pre class="language-html">
+                                <code>
+                                    CREATE TABLE Persons (
+                                        ID int NOT NULL,
+                                        LastName varchar(255) NOT NULL,
+                                        FirstName varchar(255) NOT NULL,
+                                        Age int
+                                    );
+                                </code>
+                                </pre>
+            </li>            <li>UNIQUE Constraint<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom50" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom50"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">UNIQUE Constraint</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The UNIQUE constraint ensures that all values in a column are different.
+                        <br>
+                        Both the UNIQUE and PRIMARY KEY constraints provide a guarantee for uniqueness for a column or
+                        set of columns. <br>                        A PRIMARY KEY constraint automatically has a UNIQUE constraint.
+                        <br>
+                        However, you can have many UNIQUE constraints per table, but only one PRIMARY KEY constraint per
+                        table.
+                    </div>
+                </div>
+                <pre class="language-html">
+                                        <code>
+                                            CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    UNIQUE (ID)
+);
+                                        </code>
+                                        </pre>
+            </li>
+            <li>PRIMARY KEY Constraint<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom52" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom52"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">PRIMARY KEY Constraint</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The PRIMARY KEY constraint uniquely identifies each record in a table.
+                        <br>
+                        Primary keys must contain UNIQUE values, and cannot contain NULL values.
+                        <br>
+                        A table can have only ONE primary key; and in the table, this primary key can consist of single
+                        or multiple columns (fields).
+                    </div>
+                </div>
+                <pre class="language-html">
+                                    <code>
+                                        CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    PRIMARY KEY (ID)
+);
+                                    </code>
+                                    </pre>
+            </li>
+            <li> FOREIGN KEY Constraint<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom53" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom53"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel"> FOREIGN KEY Constraint</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The FOREIGN KEY constraint is used to prevent actions that would destroy links between tables.
+                        <br>
+                        A FOREIGN KEY is a field (or collection of fields) in one table, that refers to the PRIMARY KEY
+                        in another table.
+                        <br>
+                        The table with the foreign key is called the child table, and the table with the primary key is
+                        called the referenced or parent table.
+                    </div>
+                </div>
+                <pre class="language-html">
+                                <code>
+                                    CREATE TABLE Orders (
+                                        OrderID int NOT NULL,
+                                        OrderNumber int NOT NULL,
+                                        PersonID int,
+                                        PRIMARY KEY (OrderID),
+                                        FOREIGN KEY (PersonID) REFERENCES Persons(PersonID)
+                                    );
+                                </code>
+                                </pre>
+            </li>
+            <li>CHECK Constraint<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom54" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom54"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CHECK Constraint</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The CHECK constraint is used to limit the value range that can be placed in a column.
+                        <br>
+                        If you define a CHECK constraint on a column it will allow only certain values for this column.
+                        <br>
+                        If you define a CHECK constraint on a table it can limit the values in certain columns based on
+                        values in other columns in the row.
+                    </div>
+                </div>
+                <pre class="language-html">
+                            <code>
+                                CREATE TABLE Persons (
+                                    ID int NOT NULL,
+                                    LastName varchar(255) NOT NULL,
+                                    FirstName varchar(255),
+                                    Age int,
+                                    CHECK (Age>=18)
+                                );
+                            </code>
+                            </pre>
+            </li>
+            <li>DEFAULT Constraint<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom55" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom55"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">DEFAULT Constraint</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The DEFAULT constraint is used to set a default value for a column.
+                        <br>
+                        The default value will be added to all new records, if no other value is specified.
+                    </div>
+                </div>
+                <pre class="language-html">
+                        <code>
+                            CREATE TABLE Persons (
+                                ID int NOT NULL,
+                                LastName varchar(255) NOT NULL,
+                                FirstName varchar(255),
+                                Age int,
+                                City varchar(255) DEFAULT 'Sandnes'
+                            );
+                        </code>
+                        </pre>
+            </li>
+            <li>CREATE INDEX Statement<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom56" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom56"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CREATE INDEX Statement</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The CREATE INDEX statement is used to create indexes in tables.
+                        <br>
+                        Indexes are used to retrieve data from the database more quickly than otherwise. The users
+                        cannot see the indexes, they are just used to speed up searches/queries.
+                        <br>
+                        Note: Updating a table with indexes takes more time than updating a table without (because the
+                        indexes also need an update). So, only create indexes on columns that will be frequently
+                        searched against.
+                    </div>
+                </div>
+                <pre class="language-html">
+                        <code>
+                            CREATE INDEX index_name
+                            ON table_name (column1, column2, ...);
+                        </code>
+                        </pre>
+            </li>
+            <li>AUTO_INCREMENT Keyword<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom57" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom57"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">AUTO_INCREMENT Keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        MySQL uses the AUTO_INCREMENT keyword to perform an auto-increment feature.
+                        <br>
+                        By default, the starting value for AUTO_INCREMENT is 1, and it will increment by 1 for each new
+                        record.
+                    </div>
+                </div>
+                <pre class="language-html">
+                        <code>
+                            CREATE TABLE Persons (
+                                Personid int NOT NULL AUTO_INCREMENT,
+                                LastName varchar(255) NOT NULL,
+                                FirstName varchar(255),
+                                Age int,
+                                PRIMARY KEY (Personid)
+                            );
+                        </code>
+                        </pre>
+            </li>
+            <li>Date Data Types<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom58" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom58"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Date Data Types</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        MySQL comes with the following data types for storing a date or a date/time value in the
+                        database:
+                        <br>
+                        DATE - format YYYY-MM-DD <br>
+                        DATETIME - format: YYYY-MM-DD HH:MI:SS <br>
+                        TIMESTAMP - format: YYYY-MM-DD HH:MI:SS <br>
+                        YEAR - format YYYY or YY <br>
+                        Note: The date data type are set for a column when you create a new table in your database!
+                    </div>
+                </div>
+                <pre class="language-html">
+                        <code>
+                            SELECT * FROM Orders WHERE OrderDate='2008-11-11'
+                        </code>
+                        </pre>
+            </li>
+            <li>CREATE VIEW Statement<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom59" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom59"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">CREATE VIEW Statement</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        In SQL, a view is a virtual table based on the result-set of an SQL statement.
+                        <br>
+                        A view contains rows and columns, just like a real table. The fields in a view are fields from
+                        one or more real tables in the database.
+                        <br>
+                        You can add SQL statements and functions to a view and present the data as if the data were
+                        coming from one single table.
+                        <br>
+                        A view is created with the CREATE VIEW statement.
+                    </div>
+                </div>
+                <h3>CREATE VIEW Syntax</h3>
+                <pre class="language-html">
+                    <code>
+                        CREATE VIEW view_name AS
+                        SELECT column1, column2, ...
+                        FROM table_name
+                        WHERE condition;
+                    </code>
+                    </pre>
+                <h3>Example:</h3>
+                <pre class="language-html">
+                            <code>
+                                CREATE VIEW [Brazil Customers] AS
+SELECT CustomerName, ContactName
+FROM Customers
+WHERE Country = 'Brazil';
+                            </code>
+                            </pre>
             </li>
         </ol>
+    </div>
     </div>
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-dark text-muted footer-dark">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-            style="color: white;">
+            style="color: white">
             <!-- Left -->
             <div class="me-5 d-none d-lg-block">
                 <span>Get connected with us on social networks:</span>
             </div>
-            <!-- Left -->            <!-- Right -->
+            <!-- Left -->
+            <!-- Right -->
             <div>
                 <!-- Facebook -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i
-                        class="bi bi-facebook"></i></a>                <!-- Twitter -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i
-                        class="bi bi-twitter"></i></a>                <!-- Google -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button"><i
-                        class="bi bi-google"></i></a>                <!-- Instagram -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i
-                        class="bi bi-instagram"></i></a>                <!-- Linkedin -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="https://www.linkedin.com/in/mr-soham-manjrekar/" role="button"><i
+                <a class="btn text-white btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i
+                        class="bi bi-facebook"></i></a>
+                <!-- Twitter -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i
+                        class="bi bi-twitter"></i></a>
+                <!-- Google -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i
+                        class="bi bi-google"></i></a>
+                <!-- Instagram -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i
+                        class="bi bi-instagram"></i></a>
+                <!-- Linkedin -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #0082ca"
+                    href="https://www.linkedin.com/in/mr-soham-manjrekar/" role="button"><i
                         class="bi bi-linkedin"></i></a>
                 <!-- Github -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="https://github.com/sohammanjrekar" role="button"><i
-                        class="bi bi-github"></i></a>
+                <a class="btn text-white btn-floating m-1" style="background-color: #333333"
+                    href="https://github.com/sohammanjrekar" role="button"><i class="bi bi-github"></i></a>
             </div>
             <!-- Right -->
         </section>
-        <!-- Section: Social media -->        <!-- Section: Links  -->
-        <section class="links" style="color: white;">
+        <!-- Section: Social media -->
+        <!-- Section: Links  -->
+        <section class="links" style="color: white">
             <div class="container text-center text-md-start mt-5">
                 <!-- Grid row -->
                 <div class="row mt-3">
@@ -173,79 +2013,84 @@
                         <h6 class="text-uppercase fw-bold mb-4">
                             <i class="bi bi-gem me-3"></i>Cheatbook
                         </h6>
-                        <p><li>Quick reference</li>
-                            <li>Be productive after learning a new thing (i.e. programming language)</li>
+                        <h3>
+                            <li>Quick reference</li>
+                            <li>
+                                Be productive after learning a new thing (i.e. programming
+                                language)
+                            </li>
                             <li>Quickly recall when forget some syntax</li>
                             <li>Use snippets for rapid development</li>
-                        </p>
+                        </h3>
                     </div>
-                    <!-- Grid column -->                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <!-- Grid column -->
                     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                         <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                           Programming Languages
-                        </h6>
-                        <p>
+                        <h6 class="text-uppercase fw-bold mb-4">Programming Languages</h6>
+                        <h3>
                             <a href="c.html" class="text-reset">C</a>
-                        </p>
-                        <p>
+                        </h3>
+                        <h3>
                             <a href="cplus.html" class="text-reset">C++</a>
-                        </p>
-                        <p>
+                        </h3>
+                        <h3>
                             <a href="python.html" class="text-reset">Python</a>
-                        </p>
-                        <p>
+                        </h3>
+                        <h3>
                             <a href="java.html" class="text-reset">Java</a>
-                        </p>
-                        <p>
+                        </h3>
+                        <h3>
                             <a href="dsa.html" class="text-reset">DSA</a>
-                        </p>
+                        </h3>
                     </div>
-                    <!-- Grid column -->                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <!-- Grid column -->
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                         <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Machine learning
-                        </h6>
-                        <p>
+                        <h6 class="text-uppercase fw-bold mb-4">Machine learning</h6>
+                        <h3>
                             <a href="numpy.html" class="text-reset">Numpy</a>
-                        </p>
-                        <p>
+                        </h3>
+                        <h3>
                             <a href="pandas.html" class="text-reset">Pandas</a>
-                        </p>
-                        <p>
+                        </h3>
+                        <h3>
                             <a href="seaborn.html" class="text-reset">Seaborn</a>
-                        </p>
-                        <p>
+                        </h3>
+                        <h3>
                             <a href="matplotlib.html" class="text-reset">Matplotlib</a>
-                        </p>
-                        <p>
+                        </h3>
+                        <h3>
                             <a href="tensorflow.html" class="text-reset">Tensorflow</a>
-                        </p>
+                        </h3>
                     </div>
-                    <!-- Grid column -->                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <!-- Grid column -->
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                        <p><i class="bi bi-house-door me-3"></i>Badlapur,mumbai</p>
-                        <p>
+                        <h3><i class="bi bi-house-door me-3"></i>Badlapur,mumbai</h3>
+                        <h3>
                             <i class="bi bi-envelope me-3"></i>
                             mrsohammanjrekar@gmail.com
-                        </p>
-                        <p><i class="bi bi-phone me-3"></i> +91 7045208474</p>
-                        <p><i class="bi bi-whatsapp me-3"></i> +91 7045208474</p>
+                        </h3>
+                        <h3><i class="bi bi-phone me-3"></i> +91 7045208474</h3>
+                        <h3><i class="bi bi-whatsapp me-3"></i> +91 7045208474</h3>
                     </div>
                     <!-- Grid column -->
                 </div>
                 <!-- Grid row -->
             </div>
         </section>
-        <!-- Section: Links  -->        <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        <!-- Section: Links  -->
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
             © 2022 Copyright:
-            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">cheatbook.com</a> created by soham
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">cheatbook.com</a>
+            created by soham
         </div>
         <!-- Copyright -->
     </footer>
-    <!-- Footer --></body>
-</html>
+    <!-- Footer -->
+</body></html>
