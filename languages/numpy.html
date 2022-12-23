@@ -2296,8 +2296,209 @@ print(x)
                     </div>
                 </div>
             </li>
+            <li>
+                NumPy Hyperbolic Functions<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom33543255" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom33543255" aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">NumPy Hyperbolic Functions</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        Hyperbolic Functions NumPy provides the ufuncs sinh(), cosh() and tanh() that take values in radians and produce the corresponding sinh, cosh and tanh values..
+                        <br><br><br> Finding Angles Finding angles from values of hyperbolic sine, cos, tan. E.g. sinh, cosh and tanh inverse (arcsinh, arccosh, arctanh). Numpy provides ufuncs arcsinh(), arccosh() and arctanh() that produce radian values
+                        for corresponding sinh, cosh and tanh values given.
+                    </div>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne202101501" aria-expanded="true" aria-controls="collapseOne">
+                                Hyperbolic Functions
+                            </button>
+                        </h2>
+                        <div id="collapseOne202101501" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
 
+                                <pre class="language-python">
+                                    <code>
+                                        ax = np.sinh(np.pi/2)
 
+                                        print(x)
+                                    </code>
+                                    </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2022112565" aria-expanded="false" aria-controls="collapseTwo">
+                                Finding Angles
+                            </button>
+                        </h2>
+                        <div id="collapseTwo2022112565" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <pre class="language-python">
+                                    <code>
+                                        x = np.arcsinh(1.0)
+
+print(x)
+                                    </code>
+                                    </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2023981991" aria-expanded="false" aria-controls="collapseThree">
+                                Angles of Each Value in Arrays
+                            </button>
+                        </h2>
+                        <div id="collapseThree2023981991" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <pre class="language-python">
+                                    <code>
+                                        arr = np.array([1, -1, 0.1])
+
+x = np.arcsinh(arr)
+
+print(x)
+                                        </code>
+                                    </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                NumPy Set Operations<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom335432559" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom335432559" aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">NumPy Set Operations</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        What is a Set<br> A set in mathematics is a collection of unique elements.
+                        <br><br> Sets are used for operations involving frequent intersection, union and difference operations.
+                        <br><br><br> Create Sets in NumPy<br> We can use NumPy's unique() method to find unique elements from any array. E.g. create a set array, but remember that the set arrays should only be 1-D arrays.
+
+                        <br><br><br> Finding Union<br> To find the unique values of two arrays, use the union1d() method.
+
+                        <br><br><br> Finding Intersection<br> To find only the values that are present in both arrays, use the intersect1d() method.Note: the intersect1d() method takes an optional argument assume_unique, which if set to True can speed
+                        up computation. It should always be set to True when dealing with sets.
+
+                        <br><br><br> Finding Difference<br> To find only the values in the first set that is NOT present in the seconds set, use the setdiff1d() method.
+                        <br><br> Note: the setdiff1d() method takes an optional argument assume_unique, which if set to True can speed up computation. It should always be set to True when dealing with sets.
+                        <br><br><br> Finding Symmetric Difference<br> To find only the values that are NOT present in BOTH sets, use the setxor1d() method. Note: the setxor1d() method takes an optional argument assume_unique, which if set to True can
+                        speed up computation. It should always be set to True when dealing with sets.
+                    </div>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2021015081" aria-expanded="true" aria-controls="collapseOne">
+                                Create Sets in NumPy
+                            </button>
+                        </h2>
+                        <div id="collapseOne2021015081" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <pre class="language-python">
+                                    <code>
+                                        arr = np.array([1, 1, 1, 2, 3, 4, 5, 5, 6, 7])
+
+                                        x = np.unique(arr)
+                                        
+                                        print(x)
+                                    </code>
+                                    </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo20221125681" aria-expanded="false" aria-controls="collapseTwo">
+                                Union
+                            </button>
+                        </h2>
+                        <div id="collapseTwo20221125681" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <pre class="language-python">
+                                    <code>
+                                        arr1 = np.array([1, 2, 3, 4])
+                                        arr2 = np.array([3, 4, 5, 6])
+                                        
+                                        newarr = np.union1d(arr1, arr2)
+                                        
+                                        print(newarr)
+                                    </code>
+                                    </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree20239819881" aria-expanded="false" aria-controls="collapseThree">
+                                Intersection
+                            </button>
+                        </h2>
+                        <div id="collapseThree20239819881" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <pre class="language-python">
+                                    <code>
+                                        arr1 = np.array([1, 2, 3, 4])
+                                        arr2 = np.array([3, 4, 5, 6])
+                                        
+                                        newarr = np.intersect1d(arr1, arr2, assume_unique=True)
+                                        
+                                        print(newarr)
+                                        </code>
+                                    </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree20239819981" aria-expanded="false" aria-controls="collapseThree">
+                                Difference
+                            </button>
+                        </h2>
+                        <div id="collapseThree20239819981" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <pre class="language-python">
+                                    <code>
+                                        set1 = np.array([1, 2, 3, 4])
+                                        set2 = np.array([3, 4, 5, 6])
+                                        
+                                        newarr = np.setdiff1d(set1, set2, assume_unique=True)
+                                        
+                                        print(newarr)
+                                        </code>
+                                    </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree202398198195" aria-expanded="false" aria-controls="collapseThree">
+                                Symmetric Difference
+                            </button>
+                        </h2>
+                        <div id="collapseThree202398198195" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <pre class="language-python">
+                                    <code>
+                                        set1 = np.array([1, 2, 3, 4])
+set2 = np.array([3, 4, 5, 6])
+
+newarr = np.setxor1d(set1, set2, assume_unique=True)
+
+print(newarr)
+                                        </code>
+                                    </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
 
 
 
