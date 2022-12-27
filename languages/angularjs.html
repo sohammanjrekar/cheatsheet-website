@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Angularjs cheatsheet</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
     <link rel="stylesheet" href="../prism.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <script src="../prism.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
-</head><body>
- <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: rgb(1,4,45);">
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: rgb(1,4,45);">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="../img/mainlogo.jpg" alt="" style="height: 8vh;">Cheatbook</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -29,8 +28,7 @@
                     </li>
                     <!-- web develpoment -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Web development
                         </a>
                         <ul class="dropdown-menu">
@@ -61,8 +59,7 @@
                     </li>
                     <!-- programming -->
                     <li class="nav-item dropdown mx-1">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Programming Languages
                         </a>
                         <ul class="dropdown-menu">
@@ -78,8 +75,7 @@
                     </li>
                     <!-- Machine learning -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Machine learning
                         </a>
                         <ul class="dropdown-menu">
@@ -104,8 +100,7 @@
                     </li>
                     <!-- databases -->
                     <li class="nav-item dropdown mx-1">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Databases
                         </a>
                         <ul class="dropdown-menu">
@@ -118,18 +113,23 @@
                             </li>
                         </ul>
                     </li>
-                    
-<li class="nav-item">
+
+                    <li class="nav-item">
                         <a class="nav-link" href="../about.html">About Us</a>
                     </li>
                 </ul>
-                 <a href="shadowpicker.html"><div class="button mx-1" style="font-size: x-small;">Shadow Picker</div></a><a href="../colorpiceker.html"><div class="button">Colour Picker</div></a>
+                <a href="shadowpicker.html">
+                    <div class="button mx-1" style="font-size: x-small;">Shadow Picker</div>
+                </a>
+                <a href="../colorpiceker.html">
+                    <div class="button">Colour Picker</div>
+                </a>
             </div>
         </div>
     </nav>
     <!-- mid part -->
     <nav class="mt-5 pt-1">
-        <div class="text-center my-3" style="font-size: larger; font-weight: 900">
+        <div class="text-center my-3" style="font-size: larger; font-weight: 900;padding-top:2vh">
             <img src="../img/angular-icon.svg" alt="" /> Angularjs cheatsheet
         </div>
     </nav>
@@ -140,22 +140,18 @@
                 <div class="row">
                     <div class="col-md-8">
                         <p class="fs-4">
-                            AngularJS was developed in 2008-2009 by Misko Hevery and Adam Abrons and is now maintained
-                            by Google. AngularJS is a Javascript open-source front-end framework that is mainly used to
-                            develop single-page web applications(SPAs). It is a continuously growing and expanding
-                            framework which provides better ways for developing web applications.
+                            AngularJS was developed in 2008-2009 by Misko Hevery and Adam Abrons and is now maintained by Google. AngularJS is a Javascript open-source front-end framework that is mainly used to develop single-page web applications(SPAs). It is a continuously growing
+                            and expanding framework which provides better ways for developing web applications.
                         </p>
                     </div>
                     <div class="col-md-4">
                         <img src="../img/angular-icon.svg" alt="" style="width:100% ;" />
                     </div>
                 </div>
-                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#o1"
-                    aria-controls="o1">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#o1" aria-controls="o1">
                     Read More...
                 </button>
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o1"
-                    aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o1" aria-labelledby="offcanvasWithBothOptionsLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
                             Angularjs
@@ -164,20 +160,16 @@
                     </div>
                     <div class="offcanvas-body">
                         <p>
-                            1) AngularJS is a JavaScript framework that is mainly used for Frontend Development. <br>
-                            2) It is used for making Single Page Applications(SPA).<br>
-                            3) It is open source and is completely free for everyone.<br>
-                            4) It uses the Model, View, Control(MVC) pattern for developing projects.<br>
+                            1) AngularJS is a JavaScript framework that is mainly used for Frontend Development. <br> 2) It is used for making Single Page Applications(SPA).<br> 3) It is open source and is completely free for everyone.<br> 4) It uses
+                            the Model, View, Control(MVC) pattern for developing projects.<br>
                             <br>
                             <b> Why use it?</b>
                             <br>
-                            <b> Easy to work with:</b> All you need to know to work with AngularJs is basics of HTML,CSS
-                            and Javascript,not necessary to be an expert in these technologies.<br><br>
-                            <b>Time-saving:</b> AngularJs allows us to work with components and hence we can use them
-                            again which saves time and unnecessary code.<br><br>
-                            <b>Ready to use template:</b> AngularJs is mainly plain HTML, and it mainly makes use of the
-                            plain HTML template and passes it to the DOM and then the AngularJS compiler. It traverses
-                            the templates and then they are ready to use.<br><br>
+                            <b> Easy to work with:</b> All you need to know to work with AngularJs is basics of HTML,CSS and Javascript,not necessary to be an expert in these technologies.<br><br>
+                            <b>Time-saving:</b> AngularJs allows us to work with components and hence we can use them again which saves time and unnecessary code.<br><br>
+                            <b>Ready to use template:</b> AngularJs is mainly plain HTML, and it mainly makes use of the plain HTML template and passes it to the DOM and then the AngularJS compiler. It traverses the templates and then they are ready to
+                            use.
+                            <br><br>
                         </p>
                     </div>
                 </div>
@@ -186,12 +178,10 @@
         <ol>
             <!-- offcanvas -->
             <li>
-                Install angular cli<button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#o2" aria-controls="o2">
+                Install angular cli<button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o2" aria-controls="o2">
                     Read More...
                 </button>
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o2"
-                    aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o2" aria-labelledby="offcanvasWithBothOptionsLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
                             Install angular cli
@@ -200,63 +190,38 @@
                     </div>
                     <div class="offcanvas-body">
                         <p>
-                            You use the Angular CLI to create projects, generate application and library code, and
-                            perform a variety of ongoing development tasks such as testing, bundling, and deployment.
-                        <ul>
-                            <li>
-                                node_modules It saves all the dev dependencies (used only at development time) and
-                                dependencies (used for development as well as needed in production time), any new
-                                dependency when added to project it is automatically saved to this folder.</li>
-                            <li>
-                                src This directory contains all of our work related to project i.e. creating components,
-                                creating services, adding CSS to the respective page, etc.
-                            </li>
-                            <li>
-                                package.json This file stores the information about the libraries added and used in the
-                                project with their specified version installed. Whenever a new library is added to the
-                                project it’s name and version is added to the dependencies in package.json.</li>
-                            <li>
-                                Other files: As a beginner you don’t need these files at this time, don’t bother about
-                                that. These all are used for editor configurations and information needed at compile
-                                time. The builtin webpack in angular CLI manages all for you.</li>                            <li> Inside src folder:</li>                            1) index.html This is the entry point for the application, app-root tag is the entry point
-                            of the application on this single page application, on this page angular will add or remove
-                            the content from the DOM or will add new content to the DOM. Base href=”/” is important for
-                            routing purposes. <br>
-                            2) style.scss This file is the global stylesheet you can add that CSS classes or selectors
-                            which are common to many components, for example, you can import custom fonts, import
-                            bootstrap.css, etc. <br>
-                            3) assets It contains the js images, fonts, icons and many other files for your project.                            <li> Inside app folder:</li>                            1) app.module.ts An angular project is composite of so many other modules in order to create
-                            an application you have to create a root module for your application in the hierarchy. This
-                            app.module.ts file is that. If you want to add more modules at the root level, you can add.
-                            <br>
-                            <ol type="a">
+                            You use the Angular CLI to create projects, generate application and library code, and perform a variety of ongoing development tasks such as testing, bundling, and deployment.
+                            <ul>
                                 <li>
-                                    declarations It is the reference of the array to store its components. The app
-                                    component is the default component that is generated when a project is created. You
-                                    have to add all your component’s reference to this array to make them available in
-                                    the project.</li>
+                                    node_modules It saves all the dev dependencies (used only at development time) and dependencies (used for development as well as needed in production time), any new dependency when added to project it is automatically saved to this folder.</li>
                                 <li>
-                                    imports If you want to add any module whether angular or you have to add it to
-                                    imports array to make them available in the whole project.</li>
-                                <li>
-                                    providers If you will create any service for your application then you will inject
-                                    it into your project through this provider array. Service injected to a module is
-                                    available to it and it’s child module in the project hierarchy.</li>
-                                <li>
-                                    bootstrap This has reference to the default component created, i.e., AppComponent
+                                    src This directory contains all of our work related to project i.e. creating components, creating services, adding CSS to the respective page, etc.
                                 </li>
-                            </ol> <br>
-                            2) app.component.html Edit this file to make changes to the page. You can edit this file as
-                            an HTML file. Work directly with div or any other tag used inside body tags, these are
-                            components and do not add html head body tags.<br>
-                            3) app.component.spec.ts These are automatically generated files which contain unit tests
-                            for source component.<br>
-                            4) app.component.ts You can do the processing of the HTML structure in the .ts file. The
-                            processing will include activities such as connecting to the database, interacting with
-                            other components, routing, services, etc.<br>
-                            5) app.component.scss Here you can add CSS for your component. You can write scss which
-                            further compiled to CSS by a transpiler.
-                        </ul>
+                                <li>
+                                    package.json This file stores the information about the libraries added and used in the project with their specified version installed. Whenever a new library is added to the project it’s name and version is added to the dependencies in package.json.</li>
+                                <li>
+                                    Other files: As a beginner you don’t need these files at this time, don’t bother about that. These all are used for editor configurations and information needed at compile time. The builtin webpack in angular CLI manages all for you.</li>
+                                <li> Inside src folder:</li> 1) index.html This is the entry point for the application, app-root tag is the entry point of the application on this single page application, on this page angular will add or remove the content
+                                from the DOM or will add new content to the DOM. Base href=”/” is important for routing purposes. <br> 2) style.scss This file is the global stylesheet you can add that CSS classes or selectors which are common to many
+                                components, for example, you can import custom fonts, import bootstrap.css, etc. <br> 3) assets It contains the js images, fonts, icons and many other files for your project.
+                                <li> Inside app folder:</li> 1) app.module.ts An angular project is composite of so many other modules in order to create an application you have to create a root module for your application in the hierarchy. This app.module.ts
+                                file is that. If you want to add more modules at the root level, you can add.
+                                <br>
+                                <ol type="a">
+                                    <li>
+                                        declarations It is the reference of the array to store its components. The app component is the default component that is generated when a project is created. You have to add all your component’s reference to this array to make them available in the project.</li>
+                                    <li>
+                                        imports If you want to add any module whether angular or you have to add it to imports array to make them available in the whole project.</li>
+                                    <li>
+                                        providers If you will create any service for your application then you will inject it into your project through this provider array. Service injected to a module is available to it and it’s child module in the project hierarchy.</li>
+                                    <li>
+                                        bootstrap This has reference to the default component created, i.e., AppComponent
+                                    </li>
+                                </ol> <br> 2) app.component.html Edit this file to make changes to the page. You can edit this file as an HTML file. Work directly with div or any other tag used inside body tags, these are components and do not add html head
+                                body tags.<br> 3) app.component.spec.ts These are automatically generated files which contain unit tests for source component.<br> 4) app.component.ts You can do the processing of the HTML structure in the .ts file. The
+                                processing will include activities such as connecting to the database, interacting with other components, routing, services, etc.<br> 5) app.component.scss Here you can add CSS for your component. You can write scss which
+                                further compiled to CSS by a transpiler.
+                            </ul>
                         </p>
                     </div>
                 </div>
@@ -296,8 +261,7 @@
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-dark text-muted footer-dark">
         <!-- Section: Social media -->
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-            style="color: white">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style="color: white">
             <!-- Left -->
             <div class="me-5 d-none d-lg-block">
                 <span>Get connected with us on social networks:</span>
@@ -318,12 +282,10 @@
                 <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i
                         class="bi bi-instagram"></i></a>
                 <!-- Linkedin -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #0082ca"
-                    href="https://www.linkedin.com/in/mr-soham-manjrekar/" role="button"><i
+                <a class="btn text-white btn-floating m-1" style="background-color: #0082ca" href="https://www.linkedin.com/in/mr-soham-manjrekar/" role="button"><i
                         class="bi bi-linkedin"></i></a>
                 <!-- Github -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #333333"
-                    href="https://github.com/sohammanjrekar" role="button"><i class="bi bi-github"></i></a>
+                <a class="btn text-white btn-floating m-1" style="background-color: #333333" href="https://github.com/sohammanjrekar" role="button"><i class="bi bi-github"></i></a>
             </div>
             <!-- Right -->
         </section>
@@ -342,8 +304,7 @@
                         <p>
                             <li>Quick reference</li>
                             <li>
-                                Be productive after learning a new thing (i.e. programming
-                                language)
+                                Be productive after learning a new thing (i.e. programming language)
                             </li>
                             <li>Quickly recall when forget some syntax</li>
                             <li>Use snippets for rapid development</li>
@@ -398,8 +359,7 @@
                         <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
                         <p><i class="bi bi-house-door me-3"></i>Badlapur,mumbai</p>
                         <p>
-                            <i class="bi bi-envelope me-3"></i>
-                            mrsohammanjrekar@gmail.com
+                            <i class="bi bi-envelope me-3"></i> mrsohammanjrekar@gmail.com
                         </p>
                         <p><i class="bi bi-phone me-3"></i> +91 7045208474</p>
                         <p><i class="bi bi-whatsapp me-3"></i> +91 7045208474</p>
@@ -413,10 +373,11 @@
         <!-- Copyright -->
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
             © 2022 Copyright:
-            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">cheatbook.com</a>
-            created by soham
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">cheatbook.com</a> created by soham
         </div>
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
-</body></html>
+</body>
+
+</html>

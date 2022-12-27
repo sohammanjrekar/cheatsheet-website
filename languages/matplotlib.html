@@ -1,233 +1,2032 @@
-<!doctype html>
-<html lang="en"><head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="../prism.css">
-    <link rel="stylesheet" href="../css/style.css">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Matplotlib cheatsheet</title>
+    <link rel="shortcut icon" href="../img/matplotlib.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../prism.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <script src="../prism.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-</head><body>
- <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: rgb(1,4,45);">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: rgb(1,4,45);">
         <div class="container-fluid">
-           <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#">
                 <img src="../img/mainlogo.jpg" alt="" style="height: 8vh;">Cheatbook</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                    </li>                    <!-- web develpoment -->
+                    </li>
+                    <!-- web develpoment -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Web development
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="html.html">HTML</a></li>
                             <li><a class="dropdown-item" href="css.html">CSS</a></li>
-                            <li><a class="dropdown-item" href="javascript.html">JavaScript</a></li>
+                            <li>
+                                <a class="dropdown-item" href="javascript.html">JavaScript</a>
+                            </li>
                             <li><a class="dropdown-item" href="nodejs.html">Nodejs</a></li>
                             <li><a class="dropdown-item" href="react.html">Reacjs</a></li>
                             <li><a class="dropdown-item" href="nextjs.html">Nextjs</a></li>
-                            <li><a class="dropdown-item" href="angularjs.html">Angularjs</a></li>
+                            <li>
+                                <a class="dropdown-item" href="angularjs.html">Angularjs</a>
+                            </li>
                             <li><a class="dropdown-item" href="flask.html">Flask</a></li>
                             <li><a class="dropdown-item" href="django.html">Django</a></li>
                             <li><a class="dropdown-item" href="php.html">PHP</a></li>
                             <li>
-                                <hr class="dropdown-divider">
+                                <hr class="dropdown-divider" />
                             </li>
-                            <li><a class="dropdown-item" href="bootstrap.html">Bootstrap</a></li>
-                            <li><a class="dropdown-item" href="tailwindcss.html">Tailwind css</a></li>
+                            <li>
+                                <a class="dropdown-item" href="bootstrap.html">Bootstrap</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="tailwindcss.html">Tailwind css</a>
+                            </li>
                         </ul>
                     </li>
-                    <!-- programming -->                    <li class="nav-item dropdown mx-1">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                    <!-- programming -->
+                    <li class="nav-item dropdown mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Programming Languages
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu ">
                             <li><a class="dropdown-item" href="cplus.html">C++</a></li>
                             <li><a class="dropdown-item" href="c.html">C</a></li>
                             <li><a class="dropdown-item" href="java.html">Java</a></li>
-                            <li><a class="dropdown-item" href="python.html">Python</a></li>                            <li>
-                                <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="python.html">Python</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
                             </li>
                             <li><a class="dropdown-item" href="dsa.html">DSA</a></li>
                         </ul>
-                    </li>                    <!-- Machine learning -->
+                    </li>
+                    <!-- Machine learning -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Machine learning
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="numpy.html">Numpy</a></li>
                             <li><a class="dropdown-item" href="pandas.html">Pandas</a></li>
-                            <li><a class="dropdown-item" href="matplotlib.html">Matplotlib</a></li>
-                            <li><a class="dropdown-item" href="tensorflow.html">Tensorflow</a></li>
-                            <li><a class="dropdown-item" href="seaborn.html">Seaborn</a></li>
                             <li>
-                                <hr class="dropdown-divider">
+                                <a class="dropdown-item" href="matplotlib.html">Matplotlib</a>
                             </li>
-                            <li><a class="dropdown-item" href="powerbi.html">Power BI</a></li>
+                            <li>
+                                <a class="dropdown-item" href="tensorflow.html">Tensorflow</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="seaborn.html">Seaborn</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="powerbi.html">Power BI</a>
+                            </li>
                         </ul>
-                    </li>                    <!-- databases -->
+                    </li>
+                    <!-- databases -->
                     <li class="nav-item dropdown mx-1">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Databases
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="mysql.html">MYSQL</a></li>
-                            <li><a class="dropdown-item" href="mongodb.html">MongoDB</a></li>
-                            <li><a class="dropdown-item" href="postsql.html">PostgrelSQL</a></li>
+                            <li>
+                                <a class="dropdown-item" href="mongodb.html">MongoDB</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="postsql.html">PostgrelSQL</a>
+                            </li>
                         </ul>
                     </li>
-                    
                     <li class="nav-item">
                         <a class="nav-link" href="../about.html">About Us</a>
                     </li>
-                </ul>            </div>
+                </ul>
+                <a href="shadowpicker.html">
+                    <div class="button mx-1 btn1" style="font-size: x-small;">Shadow Picker</div>
+                </a>
+                <a href="../colorpiceker.html">
+                    <div class="button mx-1 btn1" style="font-size: x-small;">Colour Picker</div>
+                </a>
+            </div>
         </div>
     </nav>
     <!-- mid part -->
-    <nav class="mt-5 pt-1">
-        <div class="text-center my-3" style="font-size: larger;font-weight:900;">
-            <img src="../img/bootstrap.svg" alt=""> Bootstrap cheatsheet
+    <nav class="mt-5 pt-1 w-100">
+        <div class="text-center my-3" style="font-size: larger; font-weight: 900;padding-top:2vh">
+            <img src="../img/matplotlib.svg" alt="" /> Matplotlib cheatsheet
         </div>
-    </nav>    <div class="container">
-        <ol>
-            <li>Starter template
-                <pre class="language-js">
-                <code>
-        var i=45
-                </code>
-            </pre>
-            </li>
-        </ol>
-    </div>
-    <!-- Footer -->
-    <footer class="text-center text-lg-start bg-dark text-muted footer-dark">
-        <!-- Section: Social media -->
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-            style="color: white;">
-            <!-- Left -->
-            <div class="me-5 d-none d-lg-block">
-                <span>Get connected with us on social networks:</span>
-            </div>
-            <!-- Left -->            <!-- Right -->
-            <div>
-                <!-- Facebook -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i
-                        class="bi bi-facebook"></i></a>                <!-- Twitter -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i
-                        class="bi bi-twitter"></i></a>                <!-- Google -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button"><i
-                        class="bi bi-google"></i></a>                <!-- Instagram -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i
-                        class="bi bi-instagram"></i></a>                <!-- Linkedin -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="https://www.linkedin.com/in/mr-soham-manjrekar/" role="button"><i
-                        class="bi bi-linkedin"></i></a>
-                <!-- Github -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="https://github.com/sohammanjrekar" role="button"><i
-                        class="bi bi-github"></i></a>
-            </div>
-            <!-- Right -->
-        </section>
-        <!-- Section: Social media -->        <!-- Section: Links  -->
-        <section class="links" style="color: white;">
-            <div class="container text-center text-md-start mt-5">
-                <!-- Grid row -->
-                <div class="row mt-3">
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                        <!-- Content -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            <i class="bi bi-gem me-3"></i>Cheatbook
-                        </h6>
-                        <p><li>Quick reference</li>
-                            <li>Be productive after learning a new thing (i.e. programming language)</li>
-                            <li>Quickly recall when forget some syntax</li>
-                            <li>Use snippets for rapid development</li>
-                        </p>
+    </nav>
+    <div class="container">
+        <div class="p-5 mb-4 bg-light rounded-3 jumbo">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Matplotlib</h1>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="fs-4">
+                            Matplotlib is a low level graph plotting library in python that serves as a visualization utility.
+                            <br> Matplotlib was created by John D. Hunter. Matplotlib is open source and we can use it freely.
+                            <br> Matplotlib is mostly written in python, a few segments are written in C, Objective-C and Javascript for Platform compatibility. </p>
                     </div>
-                    <!-- Grid column -->                    <!-- Grid column -->
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                           Programming Languages
-                        </h6>
-                        <p>
-                            <a href="c.html" class="text-reset">C</a>
-                        </p>
-                        <p>
-                            <a href="cplus.html" class="text-reset">C++</a>
-                        </p>
-                        <p>
-                            <a href="python.html" class="text-reset">Python</a>
-                        </p>
-                        <p>
-                            <a href="java.html" class="text-reset">Java</a>
-                        </p>
-                        <p>
-                            <a href="dsa.html" class="text-reset">DSA</a>
-                        </p>
+                    <div class="col-md-4">
+                        <img src="../img/matplotlib.svg" alt="" style="width:100% ;" />
                     </div>
-                    <!-- Grid column -->                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Machine learning
-                        </h6>
-                        <p>
-                            <a href="numpy.html" class="text-reset">Numpy</a>
-                        </p>
-                        <p>
-                            <a href="pandas.html" class="text-reset">Pandas</a>
-                        </p>
-                        <p>
-                            <a href="seaborn.html" class="text-reset">Seaborn</a>
-                        </p>
-                        <p>
-                            <a href="matplotlib.html" class="text-reset">Matplotlib</a>
-                        </p>
-                        <p>
-                            <a href="tensorflow.html" class="text-reset">Tensorflow</a>
-                        </p>
-                    </div>
-                    <!-- Grid column -->                    <!-- Grid column -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                        <p><i class="bi bi-house-door me-3"></i>Badlapur,mumbai</p>
-                        <p>
-                            <i class="bi bi-envelope me-3"></i>
-                            mrsohammanjrekar@gmail.com
-                        </p>
-                        <p><i class="bi bi-phone me-3"></i> +91 7045208474</p>
-                        <p><i class="bi bi-whatsapp me-3"></i> +91 7045208474</p>
-                    </div>
-                    <!-- Grid column -->
                 </div>
-                <!-- Grid row -->
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#o1" aria-controls="o1">
+                    Read More...
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o1" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                            Matplotlib
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        m
+                    </div>
+                </div>
             </div>
-        </section>
-        <!-- Section: Links  -->        <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2022 Copyright:
-            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">cheatbook.com</a> created by soham
         </div>
-        <!-- Copyright -->
-    </footer>
-    <!-- Footer --></body>
+        <ol>
+            <!-- offcanvas -->
+
+            <li>Installation of Matplotlib
+                <pre class="language-sh">
+        <code> 
+            pip install matplotlib
+            </code>
+</pre>
+            </li>
+            <li>Import Matplotlib
+                <pre class="language-python">
+        <code> 
+            import matplotlib
+            </code>
+</pre>
+            </li>
+            <li>Checking Matplotlib Version
+                <pre class="language-sh">
+        <code> 
+            import matplotlib
+
+print(matplotlib.__version__)
+            </code>
+</pre>
+            </li>
+            <li>
+                Matplotlib Pyplot<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom2" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom2" aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Matplotlib Pyplot</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        Pyplot<br> Most of the Matplotlib utilities lies under the pyplot submodule, and are usually imported under the plt alias<br><br> Now the Pyplot package can be referred to as plt.
+                        <br><br><br> Plotting x and y points<br> The plot() function is used to draw points (markers) in a diagram.
+                        <br> By default, the plot() function draws a line from point to point.<br><br> The function takes parameters for specifying points in the diagram.<br><br> Parameter 1 is an array containing the points on the x-axis.<br><br> Parameter
+                        2 is an array containing the points on the y-axis.
+
+                        <br><br><br> The x-axis is the horizontal axis.
+                        <br><br> The y-axis is the vertical axis.
+
+
+                        <br><br><br> Plotting Without Line<br> To plot only the markers, you can use shortcut string notation parameter 'o', which means 'rings'.
+                    </div>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne57" aria-expanded="false" aria-controls="collapseOne">import matplotlib</button>
+                        </h2>
+                        <div id="collapseOne57" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <pre class="language-java">
+                                <code>                   
+                                    import matplotlib.pyplot as plt
+                                    </code>
+                        </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo56" aria-expanded="false" aria-controls="collapseTwo">
+                                Draw a line  between two points
+                            </button>
+                        </h2>
+                        <div id="collapseTwo56" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <pre class="language-java">
+                                <code>                   
+                                    xpoints = np.array([1, 8])
+                                    ypoints = np.array([3, 10])
+                                    
+                                    plt.plot(xpoints, ypoints)
+                                    plt.show()    
+                                </code>
+                        </pre>
+                                <img src="https://www.w3schools.com/python/img_matplotlib_plotting1.png" alt="" style="width:90%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree56" aria-expanded="false" aria-controls="collapseThree">
+                                Plotting two points Without Line
+                            </button>
+                        </h2>
+                        <div id="collapseThree56" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+
+                                <pre class="language-java">
+                                <code>                   
+                                    xpoints = np.array([1, 8])
+                                    ypoints = np.array([3, 10])
+                                    
+                                    plt.plot(xpoints, ypoints, 'o')
+                                    plt.show()
+                                    </code>
+                        </pre>
+                                <img src="https://www.w3schools.com/python/img_matplotlib_plot_o.png" alt="" style="width:90%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree57" aria-expanded="false" aria-controls="collapseThree">
+                                Multiple Points
+                            </button>
+                        </h2>
+                        <div id="collapseThree57" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <pre class="language-java">
+                                  <code>                   
+                                    xpoints = np.array([1, 2, 6, 8])
+                                    ypoints = np.array([3, 8, 1, 10])
+                                    
+                                    plt.plot(xpoints, ypoints)
+                                    plt.show()
+                                      </code>
+                          </pre>
+                                <img src="https://www.w3schools.com/python/img_matplotlib_plotting2.png" alt="" style="width:90%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree587" aria-expanded="false" aria-controls="collapseThree">
+                                Plotting without x-points
+                            </button>
+                        </h2>
+                        <div id="collapseThree587" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <pre class="language-java">
+                                  <code>                   
+                                    ypoints = np.array([3, 8, 1, 10, 5, 7])
+
+plt.plot(ypoints)
+plt.show()
+                                      </code>
+                          </pre>
+                                <img src="https://www.w3schools.com/python/img_matplotlib_plotting4.png" alt="" style="width:90%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>Matplotlib Markers
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom4" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom4" aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Matplotlib Markers</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        Markers<br> You can use the keyword argument marker to emphasize each point with a specified marker
+
+                        <br><br><br> Marker Reference<br>
+                        <table class="ws-table-all notranslate table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th>Marker</th>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td>'o'</td>
+                                    <td>Circle</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'*'</td>
+                                    <td>Star</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'.'</td>
+                                    <td>Point</td>
+
+                                </tr>
+                                <tr>
+                                    <td>','</td>
+                                    <td>Pixel</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'x'</td>
+                                    <td>X</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'X'</td>
+                                    <td>X (filled)</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'+'</td>
+                                    <td>Plus</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'P'</td>
+                                    <td>Plus (filled)</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'s'</td>
+                                    <td>Square</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'D'</td>
+                                    <td>Diamond</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'d'</td>
+                                    <td>Diamond (thin)</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'p'</td>
+                                    <td>Pentagon</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'H'</td>
+                                    <td>Hexagon</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'h'</td>
+                                    <td>Hexagon</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'v'</td>
+                                    <td>Triangle Down</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'^'</td>
+                                    <td>Triangle Up</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'&lt;'</td>
+                                    <td>Triangle Left</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'&gt;'</td>
+                                    <td>Triangle Right</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'1'</td>
+                                    <td>Tri Down</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'2'</td>
+                                    <td>Tri Up</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'3'</td>
+                                    <td>Tri Left</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'4'</td>
+                                    <td>Tri Right</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'|'</td>
+                                    <td>Vline</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'_'</td>
+                                    <td>Hline</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </li>
+
+
+
+
+            <li>Line Reference
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom493" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom493" aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Line Reference</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        <table class="ws-table-all notranslate table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th>Line Syntax</th>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td>'-'</td>
+                                    <td>Solid line</td>
+
+                                </tr>
+                                <tr>
+                                    <td>':'</td>
+                                    <td>Dotted line</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'--'</td>
+                                    <td>Dashed line</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'-.'</td>
+                                    <td>Dashed/dotted line</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </li>
+
+
+
+            <li>Color Reference
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom47" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom47" aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Color Reference</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        <table class="ws-table-all notranslate table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th>Color Syntax</th>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td>'r'</td>
+                                    <td>Red</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'g'</td>
+                                    <td>Green</td>
+                                </tr>
+                                <tr>
+                                    <td>'b'</td>
+                                    <td>Blue</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'c'</td>
+                                    <td>Cyan</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'m'</td>
+                                    <td>Magenta</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'y'</td>
+                                    <td>Yellow</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'k'</td>
+                                    <td>Black</td>
+
+                                </tr>
+                                <tr>
+                                    <td>'w'</td>
+                                    <td>White</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </li>
+
+
+
+
+
+            <li>Marker Size
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom4981" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom4981" aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Marker Size</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        Marker Size<br> You can use the keyword argument markersize or the shorter version, ms to set the size of the markers<br><br>
+                    </div>
+                </div>
+
+                <pre class="language-python">
+                    <code>
+                        ypoints = np.array([3, 8, 1, 10])
+
+                        plt.plot(ypoints, marker = 'o', ms = 20)
+                        plt.show()
+                </code>
+                </pre>
+                <img src="https://www.w3schools.com/python/img_matplotlib_marker_o_20.png" alt="" style="width:90%;">
+
+            </li>
+
+
+
+
+            <li>Line Color
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom49827" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom49827" aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Line Color</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        Line Color<br> You can use the keyword argument color or the shorter c to set the color of the line
+                    </div>
+                </div>
+
+                <pre class="language-python">
+                    <code>
+                        ypoints = np.array([3, 8, 1, 10])
+
+                        plt.plot(ypoints, color = 'r')
+                        plt.show()
+                </code>
+                </pre>
+                <img src="https://www.w3schools.com/python/img_matplotlib_line_red.png" alt="" style="width:90%;">
+
+            </li>
+            <li>Line Width
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom49829" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom49829" aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Line Width</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        You can use the keyword argument linewidth or the shorter lw to change the width of the line.
+                        <br><br> The value is a floating number, in points
+                    </div>
+                </div>
+
+                <pre class="language-python">
+                    <code>
+                        ypoints = np.array([3, 8, 1, 10])
+
+                        plt.plot(ypoints, linewidth = '20.5')
+                        plt.show()
+                </code>
+                </pre>
+                <img src="https://www.w3schools.com/python/img_matplotlib_line_lw.png" alt="" style="width:90%;">
+
+            </li>
+
+
+
+
+
+
+
+
+            <li>Linestyle
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom4982" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom4982" aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Linestyle</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        You can use the keyword argument linestyle, or shorter ls, to change the style of the plotted line<br><br> Shorter Syntax: <br> The line style can be written in a shorter syntax:
+                        <br><br> linestyle can be written as ls.
+                    </div>
+                </div>
+
+                <pre class="language-python">
+                    <code>
+                        ypoints = np.array([3, 8, 1, 10])
+
+plt.plot(ypoints, linestyle = 'dotted')
+plt.show()
+                </code>
+                </pre>
+                <pre class="language-python">
+                    <code>
+                        plt.plot(ypoints, ls = ':')
+                </code>
+                </pre>
+                <img src="https://www.w3schools.com/python/img_matplotlib_line_dotted.png" alt="" style="width:90%;">
+
+            </li>
+
+            <li>Marker Size
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom4981" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom4981" aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Marker Size</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        Marker Size<br> You can use the keyword argument markersize or the shorter version, ms to set the size of the markers<br><br>
+                    </div>
+                </div>
+
+                <pre class="language-python">
+                    <code>
+                        ypoints = np.array([3, 8, 1, 10])
+
+                        plt.plot(ypoints, marker = 'o', ms = 20)
+                        plt.show()
+                </code>
+                </pre>
+                <img src="https://www.w3schools.com/python/img_matplotlib_marker_o_20.png" alt="" style="width:90%;">
+
+            </li>
+
+
+
+
+
+            <li>Marker Color
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom4971" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom4971" aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Marker Color</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        Marker Color<br> You can use the keyword argument markeredgecolor or the shorter mec to set the color of the edge of the markers<br><br> You can use the keyword argument markerfacecolor or the shorter mfc to set the color inside
+                        the edge of the markers
+                    </div>
+                </div>
+                <pre class="language-python">
+                    <code>
+                        ypoints = np.array([3, 8, 1, 10])
+
+plt.plot(ypoints, marker = 'o', ms = 20, mec = 'r')
+plt.show()
+                </code>
+                </pre>
+                <img src="https://www.w3schools.com/python/img_matplotlib_marker_o_mec.png" alt="" style="width:90%;">
+
+                <br>
+                <br>
+                <pre class="language-python">
+    <code>
+        ypoints = np.array([3, 8, 1, 10])
+
+        plt.plot(ypoints, marker = 'o', ms = 20, mfc = 'r')
+        plt.show()
+</code>
+</pre>
+                <img src="https://www.w3schools.com/python/img_matplotlib_marker_o_mfc.png" alt="" style="width:90%;">
+
+            </li>
+
+
+
+            <li>Format Strings fmt<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom5" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom5" aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Format Strings fmt</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        Format Strings fmt<br> You can use also use the shortcut string notation parameter to specify the marker.
+                        <br><br> This parameter is also called fmt, and is written with this syntax:
+                        <br><br> marker|line|color
+                    </div>
+                </div>
+            </li>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne401" aria-expanded="false" aria-controls="collapseOne">
+                                Create a Title for a Plot
+                            </button>
+                    </h2>
+                    <div id="collapseOne401" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <pre class="language-python">
+                                <code>
+                                    plt.title("  ")     
+                            </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo402" aria-expanded="false" aria-controls="collapseTwo">
+                                Create Labels for a Plot
+                            </button>
+                    </h2>
+                    <div id="collapseTwo402" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <pre class="language-python">
+                                <code>
+                                    plt.xlabel("    ")
+                            </code>
+                            </pre>
+                            <pre class="language-python">
+                                <code>
+                                    plt.ylabel("     ")
+                            </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree403" aria-expanded="false" aria-controls="collapseThree">
+                                Set Font Properties for Title and Labels
+                            </button>
+                    </h2>
+                    <div id="collapseThree403" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <pre class="language-python">
+                                <code>
+                                    font1 = {'family':'serif','color':'blue','size':20}
+                                    font2 = {'family':'serif','color':'darkred','size':15}
+                                    
+                                    plt.title("Sports Watch Data", fontdict = font1)
+                                    plt.xlabel("Average Pulse", fontdict = font2)
+                                    plt.ylabel("Calorie Burnage", fontdict = font2)
+                                    
+                            </code>
+                            </pre>
+                            <img src="https://www.w3schools.com/python/img_matplotlib_title_fontdict.png" alt="" style="width: 90%;">
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne156" aria-expanded="false" aria-controls="collapseOne">
+                                Create a COPY
+                            </button>
+                    </h2>
+                    <div id="collapseOne156" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <pre class="language-python">
+                                <code>
+                                    arr = np.array([1, 2, 3, 4, 5])
+                                    x = arr.copy()
+                            </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo56" aria-expanded="false" aria-controls="collapseTwo">
+                            Position the Title
+                            </button>
+                    </h2>
+                    <div id="collapseTwo56" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h3>Legal values are: 'left', 'right', and 'center'. Default value is 'center'.</h3>
+                            <pre class="language-python">
+                                <code>
+                                    plt.title("Data", loc = 'left')
+                            </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree56" aria-expanded="false" aria-controls="collapseThree">
+                            Add Grid Lines to a Plot
+                            </button>
+                    </h2>
+                    <div id="collapseThree56" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <pre class="language-python">
+                                <code>
+                                    plt.grid()
+                            </code>
+                            </pre>
+                            <img src="https://www.w3schools.com/python/img_matplotlib_grid.png" alt="" style="width:90%">
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne155" aria-expanded="false" aria-controls="collapseOne">
+                                Matplotlib Subplot(Display Multiple Plots)
+                            </button>
+                    </h2>
+                    <div id="collapseOne155" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <pre class="language-sh">
+                                <code>
+                                    x = np.array([0, 1, 2, 3])
+y = np.array([3, 8, 1, 10])
+
+plt.subplot(1, 2, 1)
+plt.plot(x,y)
+
+#plot 2:
+x = np.array([0, 1, 2, 3])
+y = np.array([10, 20, 30, 40])
+
+plt.subplot(1, 2, 2)
+plt.plot(x,y)
+
+plt.show()
+                            </code>
+                            </pre>
+                            <img src="https://www.w3schools.com/python/img_matplotlib_subplots1.png" alt="" style="width:90%">
+                            <br>
+                            <h3> plt.subplot(1, 2, 1) #the figure has 1 row, 2 columns, and this plot is the first plot.
+                                <br> plt.subplot(1, 2, 2) #the figure has 1 row, 2 columns, and this plot is the second plot. </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo55" aria-expanded="false" aria-controls="collapseTwo">
+                               Title
+                            </button>
+                    </h2>
+                    <div id="collapseTwo55" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <pre class="language-sh">
+                                <code>
+                                    plt.title("SALES")
+                            </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree55" aria-expanded="false" aria-controls="collapseThree">
+                                Super Title
+                            </button>
+                    </h2>
+                    <div id="collapseThree55" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <pre class="language-sh">
+                                <code>
+                                    plt.suptitle("MY SHOP")
+                            </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree855" aria-expanded="false" aria-controls="collapseThree">
+                                Creating Scatter Plots
+                            </button>
+                    </h2>
+                    <div id="collapseThree855" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body"> <pre class="language-sh">
+                                <code>
+x = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])
+y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])
+                                    
+                                    plt.scatter(x, y)
+                                    plt.show()
+                            </code>
+                            </pre>
+                            <img src="https://www.w3schools.com/python/img_matplotlib_scatter.png" alt="" style="width:90%">
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree5589" aria-expanded="false" aria-controls="collapseThree">
+                                Color Each Dot
+                            </button>
+                    </h2>
+                    <div id="collapseThree5589" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h3>Note: You cannot use the color argument for this, only the c argument.</h3>
+                            <pre class="language-sh">
+                                <code>
+ x = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])
+y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])
+colors = np.array(["red","green","blue","yellow","pink","black","orange","purple","beige","brown","gray","cyan","magenta"])
+                                    
+                                    plt.scatter(x, y, c=colors)
+                                    
+                                    plt.show()
+                            </code>
+                            </pre>
+                            <img src="https://www.w3schools.com/python/img_matplotlib_scatter_colors2.png" alt="" style="width:90%">
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree585" aria-expanded="false" aria-controls="collapseThree">
+                                ColorMap
+                            </button>
+                    </h2>
+                    <div id="collapseThree585" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <pre class="language-sh">
+                                <h3>The Matplotlib module has a number of available colormaps.
+
+                                    A colormap is like a list of colors, where each color has a value that ranges from 0 to 100.</h3>
+                                <code>
+                                    x = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])
+                                    y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])
+                                    colors = np.array([0, 10, 20, 30, 40, 45, 50, 55, 60, 70, 80, 90, 100])
+                                    
+                                    plt.scatter(x, y, c=colors, cmap='viridis')
+                                    
+                                    plt.show()
+                            </code>
+                            </pre> </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne156" aria-expanded="false" aria-controls="collapseOne">
+                                include the colormap
+                            </button>
+                    </h2>
+                    <div id="collapseOne156" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <pre class="language-sh">
+                                <code>
+                                    plt.colorbar()
+                            </code>
+                            </pre>
+                            <img src="https://www.w3schools.com/python/img_matplotlib_scatter_colormap2.png" alt="" style="width:90%">
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo56" aria-expanded="false" aria-controls="collapseTwo">
+                                built-in colormaps
+                            </button>
+                    </h2>
+                    <div id="collapseTwo56" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <table class="ws-table-all notranslate">
+                                <tbody>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th></th>
+                                        <th>&nbsp;</th>
+                                        <th>Reverse</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Accent</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Accent">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>Accent_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Accent_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Blues</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Blues">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>Blues_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Blues_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>BrBG</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_BrBG">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>BrBG_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_BrBG_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>BuGn</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_BuGn">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>BuGn_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_BuGn_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>BuPu</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_BuPu">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>BuPu_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_BuPu_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>CMRmap</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_CMRmap">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>CMRmap_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_CMRmap_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dark2</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Dark2">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>Dark2_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Dark2_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>GnBu</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_GnBu">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>GnBu_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_GnBu_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Greens</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Greens">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>Greens_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Greens_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Greys</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Greys">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>Greys_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Greys_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>OrRd</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_OrRd">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>OrRd_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_OrRd_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Oranges</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Oranges">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>Oranges_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Oranges_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>PRGn</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_PRGn">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>PRGn_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_PRGn_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Paired</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Paired">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>Paired_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Paired_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pastel1</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Pastel1">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>Pastel1_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Pastel1_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pastel2</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Pastel2">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>Pastel2_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Pastel2_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>PiYG</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_PiYG">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>PiYG_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_PiYG_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>PuBu</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_PuBu">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>PuBu_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_PuBu_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>PuBuGn</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_PuBuGn">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>PuBuGn_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_PuBuGn_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>PuOr</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_PuOr">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>PuOr_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_PuOr_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>PuRd</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_PuRd">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>PuRd_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_PuRd_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Purples</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Purples">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>Purples_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Purples_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>RdBu</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_RdBu">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>RdBu_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_RdBu_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>RdGy</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_RdGy">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>RdGy_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_RdGy_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>RdPu</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_RdPu">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>RdPu_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_RdPu_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>RdYlBu</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_RdYlBu">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>RdYlBu_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_RdYlBu_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>RdYlGn</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_RdYlGn">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>RdYlGn_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_RdYlGn_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Reds</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Reds">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>Reds_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Reds_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Set1</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Set1">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>Set1_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Set1_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Set2</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Set2">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>Set2_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Set2_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Set3</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Set3">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>Set3_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Set3_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Spectral</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Spectral">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>Spectral_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Spectral_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wistia</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Wistia">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>Wistia_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_Wistia_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>YlGn</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_YlGn">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>YlGn_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_YlGn_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>YlGnBu</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_YlGnBu">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>YlGnBu_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_YlGnBu_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>YlOrBr</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_YlOrBr">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>YlOrBr_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_YlOrBr_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>YlOrRd</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_YlOrRd">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>YlOrRd_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_YlOrRd_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>afmhot</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_afmhot">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>afmhot_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_afmhot_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>autumn</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_autumn">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>autumn_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_autumn_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>binary</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_binary">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>binary_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_binary_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>bone</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_bone">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>bone_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_bone_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>brg</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_brg">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>brg_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_brg_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>bwr</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_bwr">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>bwr_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_bwr_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>cividis</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_cividis">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>cividis_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_cividis_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>cool</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_cool">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>cool_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_cool_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>coolwarm</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_coolwarm">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>coolwarm_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_coolwarm_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>copper</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_copper">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>copper_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_copper_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>cubehelix</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_cubehelix">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>cubehelix_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_cubehelix_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>flag</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_flag">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>flag_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_flag_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>gist_earth</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_gist_earth">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>gist_earth_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_gist_earth_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>gist_gray</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_gist_gray">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>gist_gray_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_gist_gray_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>gist_heat</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_gist_heat">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>gist_heat_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_gist_heat_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>gist_ncar</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_gist_ncar">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>gist_ncar_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_gist_ncar_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>gist_rainbow</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_gist_rainbow">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>gist_rainbow_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_gist_rainbow_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>gist_stern</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_gist_stern">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>gist_stern_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_gist_stern_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>gist_yarg</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_gist_yarg">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>gist_yarg_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_gist_yarg_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>gnuplot</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_gnuplot">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>gnuplot_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_gnuplot_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>gnuplot2</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_gnuplot2">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>gnuplot2_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_gnuplot2_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>gray</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_gray">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>gray_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_gray_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>hot</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_hot">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>hot_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_hot_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>hsv</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_hsv">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>hsv_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_hsv_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>inferno</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_inferno">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>inferno_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_inferno_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>jet</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_jet">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>jet_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_jet_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>magma</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_magma">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>magma_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_magma_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>nipy_spectral</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_nipy_spectral">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>nipy_spectral_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_nipy_spectral_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ocean</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_ocean">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>ocean_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_ocean_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>pink</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_pink">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>pink_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_pink_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>plasma</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_plasma">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>plasma_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_plasma_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>prism</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_prism">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>prism_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_prism_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>rainbow</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_rainbow">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>rainbow_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_rainbow_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>seismic</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_seismic">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>seismic_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_seismic_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>spring</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_spring">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>spring_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_spring_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>summer</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_summer">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>summer_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_summer_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>tab10</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_tab10">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>tab10_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_tab10_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>tab20</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_tab20">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>tab20_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_tab20_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>tab20b</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_tab20b">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>tab20b_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_tab20b_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>tab20c</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_tab20c">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>tab20c_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_tab20c_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>terrain</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_terrain">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>terrain_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_terrain_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>twilight</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_twilight">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>twilight_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_twilight_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>twilight_shifted</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_twilight_shifted">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>twilight_shifted_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_twilight_shifted_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>viridis</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_viridis">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>viridis_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_viridis_r">Try it  »</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>winter</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_winter">Try it  »</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>winter_r</td>
+                                        <td><a target="_blank" class="w3-btn btnsmall btnsmall" href="trypython.asp?filename=demo_matplotlib_scatter_cmap_winter_r">Try it  »</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne15653" aria-expanded="false" aria-controls="collapseOne">
+                                Alpha
+                            </button>
+                    </h2>
+                    <div id="collapseOne15653" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h3>You can adjust the transparency of the dots with the alpha argument.</h3>
+                            <pre class="language-sh">
+                                <code>
+                                    plt.scatter(x, y, s=sizes, alpha=0.5)
+                            </code>
+                            </pre>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo5648" aria-expanded="false" aria-controls="collapseTwo">
+                                Size
+                            </button>
+                    </h2>
+                    <div id="collapseTwo5648" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h3>You can change the size of the dots with the s argument.</h3>
+                            <pre class="language-sh">
+                                <code>
+x = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])
+y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])
+sizes = np.array([20,50,100,200,500,1000,60,90,10,300,600,800,75])
+
+plt.scatter(x, y, s=sizes)
+                            </code>
+                            </pre> </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne3" aria-expanded="false" aria-controls="collapseOne">
+                                Creating Bars
+                            </button>
+                    </h2>
+                    <div id="collapseOne3" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <pre class="language-py">
+                <code>
+                    x = np.array(["A", "B", "C", "D"])
+                    y = np.array([3, 8, 1, 10])
+                    
+                    plt.bar(x,y)
+                    plt.show()
+            </code>
+            </pre>
+                            <img src="https://www.w3schools.com/python/img_matplotlib_bars1.png" alt="" style="width: 90%;">
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo3" aria-expanded="false" aria-controls="collapseTwo">
+                                Horizontal Bars
+                            </button>
+                    </h2>
+                    <div id="collapseTwo3" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <pre class="language-sh">
+                <code>
+                    x = np.array(["A", "B", "C", "D"])
+y = np.array([3, 8, 1, 10])
+
+plt.barh(x, y)
+plt.show()
+</code>
+            </pre>
+                            <pre class="language-sh">
+                <code>
+                    from members.models import Member
+x = Member.objects.all()[0]
+x.phone = 5551234
+x.joined_date = '2022-01-05'
+x.save()
+</code>
+            </pre><img src="https://www.w3schools.com/python/img_matplotlib_bars2.png" alt="" style="width: 90%;">
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo376" aria-expanded="false" aria-controls="collapseTwo">
+                                Bar Width
+                            </button>
+                    </h2>
+                    <div id="collapseTwo376" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <pre class="language-python">
+            <code>
+                plt.bar(x, y, width = 0.1)
+</code>
+        </pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo3651" aria-expanded="false" aria-controls="collapseTwo">
+                                Create Histogram
+                            </button>
+                    </h2>
+                    <div id="collapseTwo3651" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body"> <pre class="language-python">
+            <code>
+                x = np.random.normal(170, 10, 250)
+
+                plt.hist(x)
+                plt.show() 
+</code>
+        </pre>
+                            <img src="https://www.w3schools.com/python/img_matplotlib_histogram1.png" alt="" style="width:90%;">
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne780" aria-expanded="false" aria-controls="collapseOne">
+                                Creating Pie Charts
+                            </button>
+                    </h2>
+                    <div id="collapseOne780" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="accordion-body">
+                                <pre class="language-python">
+                                        <code>
+                                            y = np.array([35, 25, 25, 15])
+
+                                            plt.pie(y)
+                                            plt.show() 
+                                    </code>
+                                    </pre>
+                                <img src="https://www.w3schools.com/python/img_matplotlib_pie1.png" alt="" style="width: 90%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne10" aria-expanded="false" aria-controls="collapseOne">
+                                Add labels to the pie chart
+                            </button>
+                        </h2>
+                        <div id="collapseOne10" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="accordion-body">
+                                    <pre class="language-python">
+                                        <code>
+                                            y = np.array([35, 25, 25, 15])
+                                            mylabels = ["Apples", "Bananas", "Cherries", "Dates"]
+                                            
+                                            plt.pie(y, labels = mylabels)
+                                            plt.show()    
+                                    </code>
+                                    </pre>
+                                    <img src="https://www.w3schools.com/python/img_matplotlib_pie_labels.png" alt="" style="width: 90%;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo11" aria-expanded="false" aria-controls="collapseTwo">
+                                    Start the first wedge at 90 degrees
+                                </button>
+                            </h2>
+                            <div id="collapseTwo11" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <pre class="language-python">
+                                    <code>
+                                        y = np.array([35, 25, 25, 15])
+                                        mylabels = ["Apples", "Bananas", "Cherries", "Dates"]
+                                        
+                                        plt.pie(y, labels = mylabels, startangle = 90)
+                                        plt.show() 
+                                </code>
+                                </pre>
+                                    <img src="https://www.w3schools.com/python/img_matplotlib_pie_angle_90.png" alt="" style="width: 90%;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne4210" aria-expanded="false" aria-controls="collapseOne">
+                                Pull the "Apples" wedge 0.2 from the center of the pie
+                            </button>
+                            </h2>
+                            <div id="collapseOne4210" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <pre class="language-py">
+                                  <code>
+                                    y = np.array([35, 25, 25, 15])
+                                    mylabels = ["Apples", "Bananas", "Cherries", "Dates"]
+                                    myexplode = [0.2, 0, 0, 0]
+                                    
+                                    plt.pie(y, labels = mylabels, explode = myexplode)
+                                    plt.show() 
+                          </code>
+                      </pre>
+                                    <img src="https://www.w3schools.com/python/img_matplotlib_pie_explode.png" alt="" style="width: 90%;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne421" aria-expanded="false" aria-controls="collapseOne">
+                                Add a shadow
+                            </button>
+                            </h2>
+                            <div id="collapseOne421" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <pre class="language-py">
+                                <code>
+                                    plt.pie(y, labels = mylabels, explode = myexplode, shadow = True)
+                        </code>
+                    </pre>
+                                    <img src="https://www.w3schools.com/python/img_matplotlib_pie_shadow.png" alt="" style="width: 90%;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2021" aria-expanded="false" aria-controls="collapseOne">
+                                Specify a new color for each wedge
+                            </button>
+                            </h2>
+                            <div id="collapseOne2021" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <pre class="language-py">
+                                    <code>
+                                        y = np.array([35, 25, 25, 15])
+mylabels = ["Apples", "Bananas", "Cherries", "Dates"]
+mycolors = ["black", "hotpink", "b", "#4CAF50"]
+
+plt.pie(y, labels = mylabels, colors = mycolors)
+plt.show() 
+
+                                    </code>
+                                    </pre>
+                                    <img src="https://www.w3schools.com/python/img_matplotlib_pie_color.png" alt="" style="width: 90%;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2022" aria-expanded="false" aria-controls="collapseTwo">
+                                Add a legend
+                            </button>
+                            </h2>
+                            <div id="collapseTwo2022" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <h3>admin.py</h3>
+                                    <pre class="language-py">
+                                    <code>
+                                        plt.legend()
+                                    </code>
+                                    </pre>
+                                    <img src="https://www.w3schools.com/python/img_matplotlib_pie_legend.png" alt="" style="width: 90%;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne20211" aria-expanded="false" aria-controls="collapseOne">
+                                Add a legend with a header
+                            </button>
+                            </h2>
+                            <div id="collapseOne20211" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <pre class="language-python">
+                                    <code>
+                                        plt.legend(title = "Four Fruits:")
+                                    </code>
+                                    </pre>
+                                    <img src="https://www.w3schools.com/python/img_matplotlib_pie_legend_title.png" alt="" style="width: 90%;">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    </li>
+        </ol>
+        </div>
+        </div>
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-dark text-muted footer-dark">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style="color: white">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+                <!-- Right -->
+                <div>
+                    <!-- Facebook -->
+                    <a class="btn text-white btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i
+                        class="bi bi-facebook"></i></a>
+                    <!-- Twitter -->
+                    <a class="btn text-white btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i
+                        class="bi bi-twitter"></i></a>
+                    <!-- Google -->
+                    <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i
+                        class="bi bi-google"></i></a>
+                    <!-- Instagram -->
+                    <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i
+                        class="bi bi-instagram"></i></a>
+                    <!-- Linkedin -->
+                    <a class="btn text-white btn-floating m-1" style="background-color: #0082ca" href="https://www.linkedin.com/in/mr-soham-manjrekar/" role="button"><i
+                        class="bi bi-linkedin"></i></a>
+                    <!-- Github -->
+                    <a class="btn text-white btn-floating m-1" style="background-color: #333333" href="https://github.com/sohammanjrekar" role="button"><i class="bi bi-github"></i></a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+            <!-- Section: Links  -->
+            <section class="links" style="color: white">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="bi bi-gem me-3"></i>Cheatbook
+                            </h6>
+                            <h3>
+                                <li>Quick reference</li>
+                                <li>
+                                    Be productive after learning a new thing (i.e. programming language)
+                                </li>
+                                <li>Quickly recall when forget some syntax</li>
+                                <li>Use snippets for rapid development</li>
+                            </h3>
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Programming Languages</h6>
+                            <h3>
+                                <a href="c.html" class="text-reset">C</a>
+                            </h3>
+                            <h3>
+                                <a href="cplus.html" class="text-reset">C++</a>
+                            </h3>
+                            <h3>
+                                <a href="python.html" class="text-reset">Python</a>
+                            </h3>
+                            <h3>
+                                <a href="java.html" class="text-reset">Java</a>
+                            </h3>
+                            <h3>
+                                <a href="dsa.html" class="text-reset">DSA</a>
+                            </h3>
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Machine learning</h6>
+                            <h3>
+                                <a href="numpy.html" class="text-reset">Numpy</a>
+                            </h3>
+                            <h3>
+                                <a href="pandas.html" class="text-reset">Pandas</a>
+                            </h3>
+                            <h3>
+                                <a href="seaborn.html" class="text-reset">Seaborn</a>
+                            </h3>
+                            <h3>
+                                <a href="matplotlib.html" class="text-reset">Matplotlib</a>
+                            </h3>
+                            <h3>
+                                <a href="tensorflow.html" class="text-reset">Tensorflow</a>
+                            </h3>
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <h3><i class="bi bi-house-door me-3"></i>Badlapur,mumbai</h3>
+                            <h3>
+                                <i class="bi bi-envelope me-3"></i> mrsohammanjrekar@gmail.com
+                            </h3>
+                            <h3><i class="bi bi-phone me-3"></i> +91 7045208474</h3>
+                            <h3><i class="bi bi-whatsapp me-3"></i> +91 7045208474</h3>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
+                © 2022 Copyright:
+                <a class="text-reset fw-bold" href="https://mdbootstrap.com/">cheatbook.com</a> created by soham
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+</body>
+
 </html>

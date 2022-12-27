@@ -1,209 +1,202 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nodejs cheatsheet</title>
-  <link rel="shortcut icon" href="../img/nodejs-icon.svg" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../prism.css" />
-  <link rel="stylesheet" href="../css/style.css" />
-  <script src="../prism.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
-</head><body>
-  <nav class="navbar fixed-top navbar-expand-lg bg-dark navbar-dark">
-    <div class="container-fluid">
-     <a class="navbar-brand" href="#">
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nodejs cheatsheet</title>
+    <link rel="shortcut icon" href="../img/nodejs-icon.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../prism.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
                 <img src="../img/mainlogo.jpg" alt="" style="height: 8vh;">Cheatbook</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-          </li>
-          <!-- web develpoment -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <!-- web develpoment -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Web development
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="html.html">HTML</a></li>
-              <li><a class="dropdown-item" href="css.html">CSS</a></li>
-              <li>
-                <a class="dropdown-item" href="javascript.html">JavaScript</a>
-              </li>
-              <li><a class="dropdown-item" href="nodejs.html">Nodejs</a></li>
-              <li><a class="dropdown-item" href="react.html">Reacjs</a></li>
-              <li><a class="dropdown-item" href="nextjs.html">Nextjs</a></li>
-              <li>
-                <a class="dropdown-item" href="angularjs.html">Angularjs</a>
-              </li>
-              <li><a class="dropdown-item" href="flask.html">Flask</a></li>
-              <li><a class="dropdown-item" href="django.html">Django</a></li>
-              <li><a class="dropdown-item" href="php.html">PHP</a></li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <a class="dropdown-item" href="bootstrap.html">Bootstrap</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="tailwindcss.html">Tailwind css</a>
-              </li>
-            </ul>
-          </li>
-          <!-- programming -->
-          <li class="nav-item dropdown mx-1">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="html.html">HTML</a></li>
+                            <li><a class="dropdown-item" href="css.html">CSS</a></li>
+                            <li>
+                                <a class="dropdown-item" href="javascript.html">JavaScript</a>
+                            </li>
+                            <li><a class="dropdown-item" href="nodejs.html">Nodejs</a></li>
+                            <li><a class="dropdown-item" href="react.html">Reacjs</a></li>
+                            <li><a class="dropdown-item" href="nextjs.html">Nextjs</a></li>
+                            <li>
+                                <a class="dropdown-item" href="angularjs.html">Angularjs</a>
+                            </li>
+                            <li><a class="dropdown-item" href="flask.html">Flask</a></li>
+                            <li><a class="dropdown-item" href="django.html">Django</a></li>
+                            <li><a class="dropdown-item" href="php.html">PHP</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="bootstrap.html">Bootstrap</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="tailwindcss.html">Tailwind css</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- programming -->
+                    <li class="nav-item dropdown mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Programming Languages
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="cplus.html">C++</a></li>
-              <li><a class="dropdown-item" href="c.html">C</a></li>
-              <li><a class="dropdown-item" href="java.html">Java</a></li>
-              <li><a class="dropdown-item" href="python.html">Python</a></li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li><a class="dropdown-item" href="dsa.html">DSA</a></li>
-            </ul>
-          </li>
-          <!-- Machine learning -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cplus.html">C++</a></li>
+                            <li><a class="dropdown-item" href="c.html">C</a></li>
+                            <li><a class="dropdown-item" href="java.html">Java</a></li>
+                            <li><a class="dropdown-item" href="python.html">Python</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="dsa.html">DSA</a></li>
+                        </ul>
+                    </li>
+                    <!-- Machine learning -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Machine learning
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="numpy.html">Numpy</a></li>
-              <li><a class="dropdown-item" href="pandas.html">Pandas</a></li>
-              <li>
-                <a class="dropdown-item" href="matplotlib.html">Matplotlib</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="tensorflow.html">Tensorflow</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="seaborn.html">Seaborn</a>
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <a class="dropdown-item" href="powerbi.html">Power BI</a>
-              </li>
-            </ul>
-          </li>
-          <!-- databases -->
-          <li class="nav-item dropdown mx-1">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="numpy.html">Numpy</a></li>
+                            <li><a class="dropdown-item" href="pandas.html">Pandas</a></li>
+                            <li>
+                                <a class="dropdown-item" href="matplotlib.html">Matplotlib</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="tensorflow.html">Tensorflow</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="seaborn.html">Seaborn</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="powerbi.html">Power BI</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- databases -->
+                    <li class="nav-item dropdown mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Databases
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="mysql.html">MYSQL</a></li>
-              <li>
-                <a class="dropdown-item" href="mongodb.html">MongoDB</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="postsql.html">PostgrelSQL</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../contact.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../about.html">About Us</a>
-          </li>
-        </ul> <a href="shadowpicker.html"><div class="button mx-1" style="font-size: x-small;">Shadow Picker</div></a><a href="../colorpiceker.html"><div class="button">Colour Picker</div></a>
-      </div>
-    </div>
-  </nav>
-  <!-- mid part -->
-  <nav class="mt-5 pt-1">
-    <div class="text-center my-3" style="font-size: larger; font-weight: 900">
-      <img src="../img/nodejs-icon.svg" alt="" /> Reactjs cheatsheet
-    </div>
-  </nav>
-  <div class="container">
-    <div class="p-5 mb-4 bg-light rounded-3 jumbo">
-      <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold">Reactjs</h1>
-        <div class="row">
-          <div class="col-md-8">
-            <p class="fs-4">
-              React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It’s ‘V’
-              in MVC. ReactJS is an open-source, component-based front-end library responsible only for the view layer
-              of the application. It is maintained by Facebook. <br> React uses a declarative paradigm that makes it
-              easier to reason about your application and aims to be both efficient and flexible. <br> It designs simple
-              views for each state in your application, and React will efficiently update and render just the right
-              component when your data changes. <br> The declarative view makes your code more predictable and easier to
-              debug.
-            </p>
-          </div>
-          <div class="col-md-4">
-            <img src="../img/nodejs-icon.svg" alt="" style="width:100% ;" />
-          </div>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="mysql.html">MYSQL</a></li>
+                            <li>
+                                <a class="dropdown-item" href="mongodb.html">MongoDB</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="postsql.html">PostgrelSQL</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">About Us</a>
+                    </li>
+                </ul>
+                <a href="shadowpicker.html">
+                    <div class="button mx-1" style="font-size: x-small;">Shadow Picker</div>
+                </a>
+                <a href="../colorpiceker.html">
+                    <div class="button">Colour Picker</div>
+                </a>
+            </div>
         </div>
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#o1"
-          aria-controls="o1">
+    </nav>
+    <!-- mid part -->
+    <nav class="mt-5 pt-1">
+        <div class="text-center my-3" style="font-size: larger; font-weight: 900;padding-top:2vh">
+            <img src="../img/nodejs-icon.svg" alt="" /> Reactjs cheatsheet
+        </div>
+    </nav>
+    <div class="container">
+        <div class="p-5 mb-4 bg-light rounded-3 jumbo">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Reactjs</h1>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="fs-4">
+                            React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It’s ‘V’ in MVC. ReactJS is an open-source, component-based front-end library responsible only for the view layer of the application. It is maintained by
+                            Facebook. <br> React uses a declarative paradigm that makes it easier to reason about your application and aims to be both efficient and flexible. <br> It designs simple views for each state in your
+                            application, and React will efficiently update and render just the right component when your data changes. <br> The declarative view makes your code more predictable and easier to debug.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="../img/nodejs-icon.svg" alt="" style="width:100% ;" />
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#o1" aria-controls="o1">
           Read More...
         </button>
-        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o1"
-          aria-labelledby="offcanvasWithBothOptionsLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-              Reactjs
-            </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <p>
-              Features of React.js: There are unique features are available on React because that it is widely popular.
-              <br><br>
-            <ul>
-              <li>
-                Use JSX: It is faster than normal JavaScript as it performs optimizations while translating to regular
-                JavaScript. It makes it easier for us to create templates.</li>
-              <li>
-                Virtual DOM: Virtual DOM exists which is like a lightweight copy of the actual DOM. So for every object
-                that exists in the original DOM, there is an object for that in React Virtual DOM. It is exactly the
-                same, but it does not have the power to directly change the layout of the document. Manipulating DOM is
-                slow, but manipulating Virtual DOM is fast as nothing gets drawn on the screen.</li>
-              <li>
-                One-way Data Binding: This feature gives you better control over your application.</li>
-              <li>
-                Component: A Component is one of the core building blocks of React. In other words, we can say that
-                every application you will develop in React will be made up of pieces called components. Components make
-                the task of building UIs much easier. You can see a UI broken down into multiple individual pieces
-                called components and work on them independently and merge them all in a parent component which will be
-                your final UI.</li>
-              <li>
-                Performance: React.js use JSX, which is faster compared to normal JavaScript and HTML. Virtual DOM is a
-                less time taking procedure to update webpages content.</li>
-            </ul>
-            </p>
-          </div>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o1" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                            Reactjs
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p>
+                            Features of React.js: There are unique features are available on React because that it is widely popular.
+                            <br><br>
+                            <ul>
+                                <li>
+                                    Use JSX: It is faster than normal JavaScript as it performs optimizations while translating to regular JavaScript. It makes it easier for us to create templates.</li>
+                                <li>
+                                    Virtual DOM: Virtual DOM exists which is like a lightweight copy of the actual DOM. So for every object that exists in the original DOM, there is an object for that in React Virtual DOM. It is exactly the same, but it does not have the power to directly
+                                    change the layout of the document. Manipulating DOM is slow, but manipulating Virtual DOM is fast as nothing gets drawn on the screen.</li>
+                                <li>
+                                    One-way Data Binding: This feature gives you better control over your application.</li>
+                                <li>
+                                    Component: A Component is one of the core building blocks of React. In other words, we can say that every application you will develop in React will be made up of pieces called components. Components make the task of building UIs much easier. You can
+                                    see a UI broken down into multiple individual pieces called components and work on them independently and merge them all in a parent component which will be your final UI.</li>
+                                <li>
+                                    Performance: React.js use JSX, which is faster compared to normal JavaScript and HTML. Virtual DOM is a less time taking procedure to update webpages content.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <ol>
-      <!-- offcanvas -->
-      <li>
-        Create a new React project
-        <pre class="language-jsx">
+        <ol>
+            <!-- offcanvas -->
+            <li>
+                Create a new React project
+                <pre class="language-jsx">
                 <code>
                     npx create-react-app myapp
                 </code>
             </pre>
-      </li>
-      <li>class based component
-        <pre class="language-jsx">
+            </li>
+            <li>class based component
+                <pre class="language-jsx">
                                     <code>    import React, { Component } from 'react'                                      export class Contact extends Component {
                                         render() {
                                           return (
@@ -214,10 +207,11 @@
                                       
                                       export default Contact
                                         </code>
-        </pre></li><li>
-          fuction based component
-        
-          <pre class="language-jsx">
+        </pre></li>
+            <li>
+                fuction based component
+
+                <pre class="language-jsx">
                                     <code>     import React from 'react'                                      const Contact = () => {
                                         return (
                                           <div>Contact</div>
@@ -226,49 +220,49 @@
                                       
                                       export default Contact
                                         </code>
-        </pre>            
-      </li>
-      <li>start reactjs app
-        <pre class="language-jsx">
+        </pre>
+            </li>
+            <li>start reactjs app
+                <pre class="language-jsx">
     <code>
         npm start
 </code>
 </pre>
-      </li>
-      <li>
-        File structure in src folder (use cmd)
-        <pre class="language-jsx">
+            </li>
+            <li>
+                File structure in src folder (use cmd)
+                <pre class="language-jsx">
     <code>
       mkdir Utils Assets Components Config Layouts Middleware Pages Routes Services Utils
 </code>
 </pre>
-      </li>
-      <li>
-        ADD blank many js files
-        <pre class="language-jsx">
+            </li>
+            <li>
+                ADD blank many js files
+                <pre class="language-jsx">
     <code>
       type NUL > sideBar.js 
       type NUL > Footer.js 
       type NUL > header.js
 </code>
 </pre>
-      </li>
-      <li>
-        import react-router-dom
-        <pre class="language-jsx">
+            </li>
+            <li>
+                import react-router-dom
+                <pre class="language-jsx">
     <code>
       npm i react-router-dom
 </code>
 </pre>
-      </li>
-      <li>
-        import router and routes
-        <pre class="language-jsx">
+            </li>
+            <li>
+                import router and routes
+                <pre class="language-jsx">
     <code>
       import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 </code>
 </pre>
-        <pre class="language-jsx">
+                <pre class="language-jsx">
   <code>
     
     &lt;Router&gt;
@@ -280,14 +274,15 @@
       &lt;/Router&gt;
 </code>
 </pre>
-      </li>      <li>
-        create nested routes
-        <pre class="language-jsx">
+            </li>
+            <li>
+                create nested routes
+                <pre class="language-jsx">
     <code>
       import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 </code>
 </pre>
-        <pre class="language-jsx">
+                <pre class="language-jsx">
   <code>
     
     &lt;Router&gt;
@@ -301,142 +296,130 @@
   &lt;/Router&gt;
 </code>
 </pre>
-<p>add outlet in parent route in above ex: home.js</p>
-<pre class="language-jsx">
+                <p>add outlet in parent route in above ex: home.js</p>
+                <pre class="language-jsx">
   <code>
     
     import { Outlet } from 'react-router-dom'
 </code>
 </pre>
-<pre class="language-jsx">
+                <pre class="language-jsx">
   <code>
    &lt;Outlet/&gt;
 </code>
 </pre>
-      </li>
-      <li>create go back button feature
-        <pre class="language-jsx">
+            </li>
+            <li>create go back button feature
+                <pre class="language-jsx">
           <code>
             import { useNavigate } from 'react-router-dom'
         </code>
         </pre>
-        <pre class="language-jsx">
+                <pre class="language-jsx">
           <code>
             &lt;button onClick={()=>{navigate(-1);}}&gt;Go back&lt;/button&gt;
         </code>
         </pre>
-      </li>
-      <li>
-        for fetch id from link(route)<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#o3" aria-controls="o3">
+            </li>
+            <li>
+                for fetch id from link(route)<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#o3" aria-controls="o3">
           Read More...
         </button>
-        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o3"
-          aria-labelledby="offcanvasWithBothOptionsLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-              useParams();
-            </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <p>
-              According to the definition in React Router doc, useParams returns:              an object of key/value pairs of URL parameters. Use it to access match.params of the current route
-              <br><br>
-            <ul>
-              <li>
-                What does it mean in plain English?</li>
-              <li>
-                It means whatever you set up in useParams(ex: title), your params have to match with the &lt; Route
-                path='/path/:title' &gt; .</li>
-            </ul>
-            </p>
-          </div>
-        </div>
-        <pre class="language-jsx">
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o3" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                            useParams();
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p>
+                            According to the definition in React Router doc, useParams returns: an object of key/value pairs of URL parameters. Use it to access match.params of the current route
+                            <br><br>
+                            <ul>
+                                <li>
+                                    What does it mean in plain English?</li>
+                                <li>
+                                    It means whatever you set up in useParams(ex: title), your params have to match with the &lt; Route path='/path/:title' &gt; .</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <pre class="language-jsx">
           <code>
             import { useParams } from 'react-router-dom'
       </code>
       </pre>
-        <pre class="language-jsx">
+                <pre class="language-jsx">
     <code>
       const { id }=useParams();
 </code>
 </pre>
-      </li>
-      <li>
-        React useContext Hook<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#o4" aria-controls="o4">
+            </li>
+            <li>
+                React useContext Hook<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#o4" aria-controls="o4">
           Read More...
         </button>
-        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o4"
-          aria-labelledby="offcanvasWithBothOptionsLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-              React useContext Hook
-            </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <p>
-              React Context is a way to manage state globally.
-              <br>
-              It can be used together with the useState Hook to share state between deeply nested components more easily
-              than with useState alone.
-              <br><br>
-              Context provides a way to pass data or state through the component tree without having to pass props down
-              manually through each nested component. It is designed to share data that can be considered as global data
-              for a tree of React components, such as the current authenticated user or theme(e.g. color, paddings,
-              margins, font-sizes).
-              <br><br>
-              Context API uses Context. Provider and Context. Consumer Components pass down the data but it is very
-              cumbersome to write the long functional code to use this Context API. So useContext hook helps to make the
-              code more readable, less verbose and removes the need to introduce Consumer Component. The useContext hook
-              is the new addition in React 16.8.
-            </p>
-          </div>
-        </div>
-        <pre class="language-jsx">
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o4" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                            React useContext Hook
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p>
+                            React Context is a way to manage state globally.
+                            <br> It can be used together with the useState Hook to share state between deeply nested components more easily than with useState alone.
+                            <br><br> Context provides a way to pass data or state through the component tree without having to pass props down manually through each nested component. It is designed to share data that can be considered as global data for
+                            a tree of React components, such as the current authenticated user or theme(e.g. color, paddings, margins, font-sizes).
+                            <br><br> Context API uses Context. Provider and Context. Consumer Components pass down the data but it is very cumbersome to write the long functional code to use this Context API. So useContext hook helps to make the code
+                            more readable, less verbose and removes the need to introduce Consumer Component. The useContext hook is the new addition in React 16.8.
+                        </p>
+                    </div>
+                </div>
+                <pre class="language-jsx">
           <code>
 import React, { useContext } from "react";
       </code>
       </pre>
-        <p>For Create context value</p>
-        <pre class="language-jsx">
+                <p>For Create context value</p>
+                <pre class="language-jsx">
   <code>
     const AppContext = React.createContext();
 </code>
 </pre>
-        <p>For set provider value</p>
-        <pre class="language-jsx">
+                <p>For set provider value</p>
+                <pre class="language-jsx">
 <code>
   return &lt;AppContext.Provider  value="soham"&gt;{children}&lt;/AppContext.Provider&gt;
 </code>
-</pre>        <p>For access value</p>
-        <pre class="language-jsx">
+</pre>
+                <p>For access value</p>
+                <pre class="language-jsx">
     <code>
       const auth = useContext(AuthContext);
 </code>
 </pre>
-        <p>add appprovider in index.js</p>
-        <pre class="language-jsx">
+                <p>add appprovider in index.js</p>
+                <pre class="language-jsx">
 <code>
 &lt;AppProvider&gt;         &lt;/AppProvider&gt;
 </code>
 </pre>
-      </li>
-      <li>create props
-         <br>
-        <p>
-          <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Create props</a>
-          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">pass props</button>
-          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">both</button>
-        </p>
-        <div class="row">
-          <div class="col">
-            <div class="collapse multi-collapse" id="multiCollapseExample1">
-              <div class="card card-body">
-                <pre class="language-jsx">
+            </li>
+            <li>create props
+                <br>
+                <p>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Create props</a>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">pass props</button>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">both</button>
+                </p>
+                <div class="row">
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample1">
+                            <div class="card card-body">
+                                <pre class="language-jsx">
                   <code>
                     function Avatar(props) {
                       let person = props.person;
@@ -445,33 +428,33 @@ import React, { useContext } from "react";
                     }
                   </code>
                   </pre>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="collapse multi-collapse" id="multiCollapseExample2">
-              <div class="card card-body">
-                <pre class="language-jsx">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample2">
+                            <div class="card card-body">
+                                <pre class="language-jsx">
                   <code>
                     function Avatar({ person, size }) {
                       // ...
                     }
                   </code>
                   </pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li> useState is a React Hook that lets you add a state variable to your component.
-        <pre class="language-jsx">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li> useState is a React Hook that lets you add a state variable to your component.
+                <pre class="language-jsx">
           <code>
             const [state, setState] = useState(initialState)
           </code>
           </pre>
-      </li>
-      <li> Enable dark mode (create onClick toogle fuction in buuton and mode input to style)
-        <pre class="language-jsx">
+            </li>
+            <li> Enable dark mode (create onClick toogle fuction in buuton and mode input to style)
+                <pre class="language-jsx">
           <code>
             const [statebtn, setbtn] = useState("Enable dark mode");
             const [mode, setMode] = useState({
@@ -495,132 +478,129 @@ import React, { useContext } from "react";
             };
           </code>
           </pre>
-      </li>
-    </ol>
-  </div>
-  </div>
-  <!-- Footer -->
-  <footer class="text-center text-lg-start bg-dark text-muted footer-dark">
-    <!-- Section: Social media -->
-    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style="color: white">
-      <!-- Left -->
-      <div class="me-5 d-none d-lg-block">
-        <span>Get connected with us on social networks:</span>
-      </div>
-      <!-- Left -->
-      <!-- Right -->
-      <div>
-        <!-- Facebook -->
-        <a class="btn text-white btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i
-            class="bi bi-facebook"></i></a>
-        <!-- Twitter -->
-        <a class="btn text-white btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i
-            class="bi bi-twitter"></i></a>
-        <!-- Google -->
-        <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i
-            class="bi bi-google"></i></a>
-        <!-- Instagram -->
-        <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i
-            class="bi bi-instagram"></i></a>
-        <!-- Linkedin -->
-        <a class="btn text-white btn-floating m-1" style="background-color: #0082ca"
-          href="https://www.linkedin.com/in/mr-soham-manjrekar/" role="button"><i class="bi bi-linkedin"></i></a>
-        <!-- Github -->
-        <a class="btn text-white btn-floating m-1" style="background-color: #333333"
-          href="https://github.com/sohammanjrekar" role="button"><i class="bi bi-github"></i></a>
-      </div>
-      <!-- Right -->
-    </section>
-    <!-- Section: Social media -->
-    <!-- Section: Links  -->
-    <section class="links" style="color: white">
-      <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <!-- Content -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              <i class="bi bi-gem me-3"></i>Cheatbook
-            </h6>
-            <p>
-              <li>Quick reference</li>
-              <li>
-                Be productive after learning a new thing (i.e. programming
-                language)
-              </li>
-              <li>Quickly recall when forget some syntax</li>
-              <li>Use snippets for rapid development</li>
-            </p>
-          </div>
-          <!-- Grid column -->
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">Programming Languages</h6>
-            <p>
-              <a href="c.html" class="text-reset">C</a>
-            </p>
-            <p>
-              <a href="cplus.html" class="text-reset">C++</a>
-            </p>
-            <p>
-              <a href="python.html" class="text-reset">Python</a>
-            </p>
-            <p>
-              <a href="java.html" class="text-reset">Java</a>
-            </p>
-            <p>
-              <a href="dsa.html" class="text-reset">DSA</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">Machine learning</h6>
-            <p>
-              <a href="numpy.html" class="text-reset">Numpy</a>
-            </p>
-            <p>
-              <a href="pandas.html" class="text-reset">Pandas</a>
-            </p>
-            <p>
-              <a href="seaborn.html" class="text-reset">Seaborn</a>
-            </p>
-            <p>
-              <a href="matplotlib.html" class="text-reset">Matplotlib</a>
-            </p>
-            <p>
-              <a href="tensorflow.html" class="text-reset">Tensorflow</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-            <p><i class="bi bi-house-door me-3"></i>Badlapur,mumbai</p>
-            <p>
-              <i class="bi bi-envelope me-3"></i>
-              mrsohammanjrekar@gmail.com
-            </p>
-            <p><i class="bi bi-phone me-3"></i> +91 7045208474</p>
-            <p><i class="bi bi-whatsapp me-3"></i> +91 7045208474</p>
-          </div>
-          <!-- Grid column -->
-        </div>
-        <!-- Grid row -->
-      </div>
-    </section>
-    <!-- Section: Links  -->
-    <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
-      © 2022 Copyright:
-      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">cheatbook.com</a>
-      created by soham
+            </li>
+        </ol>
     </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
-</body></html>
+    </div>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-dark text-muted footer-dark">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style="color: white">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+            <!-- Right -->
+            <div>
+                <!-- Facebook -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i
+            class="bi bi-facebook"></i></a>
+                <!-- Twitter -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i
+            class="bi bi-twitter"></i></a>
+                <!-- Google -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i
+            class="bi bi-google"></i></a>
+                <!-- Instagram -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i
+            class="bi bi-instagram"></i></a>
+                <!-- Linkedin -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #0082ca" href="https://www.linkedin.com/in/mr-soham-manjrekar/" role="button"><i class="bi bi-linkedin"></i></a>
+                <!-- Github -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #333333" href="https://github.com/sohammanjrekar" role="button"><i class="bi bi-github"></i></a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+        <!-- Section: Links  -->
+        <section class="links" style="color: white">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="bi bi-gem me-3"></i>Cheatbook
+                        </h6>
+                        <p>
+                            <li>Quick reference</li>
+                            <li>
+                                Be productive after learning a new thing (i.e. programming language)
+                            </li>
+                            <li>Quickly recall when forget some syntax</li>
+                            <li>Use snippets for rapid development</li>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Programming Languages</h6>
+                        <p>
+                            <a href="c.html" class="text-reset">C</a>
+                        </p>
+                        <p>
+                            <a href="cplus.html" class="text-reset">C++</a>
+                        </p>
+                        <p>
+                            <a href="python.html" class="text-reset">Python</a>
+                        </p>
+                        <p>
+                            <a href="java.html" class="text-reset">Java</a>
+                        </p>
+                        <p>
+                            <a href="dsa.html" class="text-reset">DSA</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Machine learning</h6>
+                        <p>
+                            <a href="numpy.html" class="text-reset">Numpy</a>
+                        </p>
+                        <p>
+                            <a href="pandas.html" class="text-reset">Pandas</a>
+                        </p>
+                        <p>
+                            <a href="seaborn.html" class="text-reset">Seaborn</a>
+                        </p>
+                        <p>
+                            <a href="matplotlib.html" class="text-reset">Matplotlib</a>
+                        </p>
+                        <p>
+                            <a href="tensorflow.html" class="text-reset">Tensorflow</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="bi bi-house-door me-3"></i>Badlapur,mumbai</p>
+                        <p>
+                            <i class="bi bi-envelope me-3"></i> mrsohammanjrekar@gmail.com
+                        </p>
+                        <p><i class="bi bi-phone me-3"></i> +91 7045208474</p>
+                        <p><i class="bi bi-whatsapp me-3"></i> +91 7045208474</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
+            © 2022 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">cheatbook.com</a> created by soham
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+</body>
+
+</html>

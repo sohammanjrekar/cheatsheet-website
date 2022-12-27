@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Streamlit cheatsheet</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
     <link rel="stylesheet" href="../prism.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <script src="../prism.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
-</head><body>
- <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: rgb(1,4,45);">
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: rgb(1,4,45);">
         <div class="container-fluid">
-           <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#">
                 <img src="../img/mainlogo.jpg" alt="" style="height: 8vh;">Cheatbook</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -29,8 +28,7 @@
                     </li>
                     <!-- web develpoment -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Web development
                         </a>
                         <ul class="dropdown-menu">
@@ -61,8 +59,7 @@
                     </li>
                     <!-- programming -->
                     <li class="nav-item dropdown mx-1">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Programming Languages
                         </a>
                         <ul class="dropdown-menu">
@@ -78,8 +75,7 @@
                     </li>
                     <!-- Machine learning -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Machine learning
                         </a>
                         <ul class="dropdown-menu">
@@ -104,8 +100,7 @@
                     </li>
                     <!-- databases -->
                     <li class="nav-item dropdown mx-1">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Databases
                         </a>
                         <ul class="dropdown-menu">
@@ -118,18 +113,23 @@
                             </li>
                         </ul>
                     </li>
-                    
-<li class="nav-item">
+
+                    <li class="nav-item">
                         <a class="nav-link" href="../about.html">About Us</a>
                     </li>
                 </ul>
-                 <a href="shadowpicker.html"><div class="button mx-1" style="font-size: x-small;">Shadow Picker</div></a><a href="../colorpiceker.html"><div class="button">Colour Picker</div></a>
+                <a href="shadowpicker.html">
+                    <div class="button mx-1" style="font-size: x-small;">Shadow Picker</div>
+                </a>
+                <a href="../colorpiceker.html">
+                    <div class="button">Colour Picker</div>
+                </a>
             </div>
         </div>
     </nav>
     <!-- mid part -->
     <nav class="mt-5 pt-1">
-        <div class="text-center my-3" style="font-size: larger; font-weight: 900">
+        <div class="text-center my-3" style="font-size: larger; font-weight: 900;padding-top:2vh">
             <img src="../img/streamlit.svg" alt="" style="height:10vh" /> Streamlit cheatsheet
         </div>
     </nav>
@@ -140,21 +140,17 @@
                 <div class="row">
                     <div class="col-md-8">
                         <p class="fs-4">
-                            Adrien Treuille, Thiago Teixeira, and Amanda Kelly created “Streamlit”. Now using streamlit
-                            you can deploy any machine learning model and any python project with ease and without
-                            worrying about the frontend. Streamlit is very user-friendly.
+                            Adrien Treuille, Thiago Teixeira, and Amanda Kelly created “Streamlit”. Now using streamlit you can deploy any machine learning model and any python project with ease and without worrying about the frontend. Streamlit is very user-friendly.
                         </p>
                     </div>
                     <div class="col-md-4">
                         <img src="../img/streamlit.svg" alt="" style="width:100% ;" />
                     </div>
                 </div>
-                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#o1"
-                    aria-controls="o1">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#o1" aria-controls="o1">
                     Read More...
                 </button>
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o1"
-                    aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o1" aria-labelledby="offcanvasWithBothOptionsLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
                             HTML
@@ -163,23 +159,12 @@
                     </div>
                     <div class="offcanvas-body">
                         <p>
-                            The trend of Data Science and Analytics is increasing day by day. From the data science
-                            pipeline, one of the most important steps is model deployment. We have a lot of options in
-                            python for deploying our model.<br> Some popular frameworks are Flask and Django. <br>But the issue
-                            with using these frameworks is that we should have some knowledge of HTML, CSS, and
-                            JavaScript. Keeping these prerequisites in mind, Adrien Treuille, Thiago Teixeira, and
-                            Amanda Kelly created “Streamlit”.<br> Now using streamlit you can deploy any machine learning
-                            model and any python project with ease and without worrying about the frontend. Streamlit is
-                            very user-friendly.<br>
-                            <br>Streamlit is an open source app framework in python language. It helps us create beautiful web-apps for data science and machine learning in a little time. It is compatible with major python libraries such as scikit-learn, keras, pytorch, latex, numpy, pandas, matplotlib, etc.. Syntax for installing this library is shown below. <br><br>
-                            Advantages: <br>
-1. It embraces python-scripting. <br>
-2. Less code is needed to create amazing web-apps. <br>
-3. No callbacks are needed since widgets are treated as variables.<br> 
-4. Data caching simplifies and speeds up computation pipelines. <br>
-<br>
-Disadvantages: <br>
-1. Streamlit’s Data caching cannot keep track of changes to the data happening outside the function body. <br>
+                            The trend of Data Science and Analytics is increasing day by day. From the data science pipeline, one of the most important steps is model deployment. We have a lot of options in python for deploying our model.<br> Some popular
+                            frameworks are Flask and Django. <br>But the issue with using these frameworks is that we should have some knowledge of HTML, CSS, and JavaScript. Keeping these prerequisites in mind, Adrien Treuille, Thiago Teixeira, and Amanda
+                            Kelly created “Streamlit”.<br> Now using streamlit you can deploy any machine learning model and any python project with ease and without worrying about the frontend. Streamlit is very user-friendly.<br>
+                            <br>Streamlit is an open source app framework in python language. It helps us create beautiful web-apps for data science and machine learning in a little time. It is compatible with major python libraries such as scikit-learn,
+                            keras, pytorch, latex, numpy, pandas, matplotlib, etc.. Syntax for installing this library is shown below. <br><br> Advantages: <br> 1. It embraces python-scripting. <br> 2. Less code is needed to create amazing web-apps. <br>                            3. No callbacks are needed since widgets are treated as variables.<br> 4. Data caching simplifies and speeds up computation pipelines. <br>
+                            <br> Disadvantages: <br> 1. Streamlit’s Data caching cannot keep track of changes to the data happening outside the function body. <br>
                         </p>
                     </div>
                 </div>
@@ -188,12 +173,10 @@ Disadvantages: <br>
         <ol>
             <!-- offcanvas -->
             <li>
-                starter template<button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#o2" aria-controls="o2">
+                starter template<button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o2" aria-controls="o2">
                     Read More...
                 </button>
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o2"
-                    aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o2" aria-labelledby="offcanvasWithBothOptionsLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
                             install streamlit
@@ -202,9 +185,9 @@ Disadvantages: <br>
                     </div>
                     <div class="offcanvas-body">
                         <p>
-                            Once Streamlit is installed successfully, run the given python code and if you do not get an
-                            error, then streamlit is successfully installed and you can now work with streamlit.
-                        </p>                    </div>
+                            Once Streamlit is installed successfully, run the given python code and if you do not get an error, then streamlit is successfully installed and you can now work with streamlit.
+                        </p>
+                    </div>
                 </div>
                 <pre class="language-python">
                 <code>
@@ -279,13 +262,11 @@ st.header("   ")
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                 Success
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <pre class="language-python">
                 <code>
@@ -298,13 +279,11 @@ st.header("   ")
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 Info
                             </button>
                         </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#accordionExample">
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <pre class="language-python">
                                     <code> # info
@@ -315,13 +294,11 @@ st.header("   ")
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 Warning
                             </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <pre class="language-python">
                                     <code># warning
@@ -332,13 +309,11 @@ st.header("   ")
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingfour">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
                                 Error
                             </button>
                         </h2>
-                        <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
-                            data-bs-parent="#accordionExample">
+                        <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <pre class="language-python">
                                     <code># error
@@ -346,14 +321,14 @@ st.header("   ")
                             </pre>
                             </div>
                         </div>
-                    </div>                </div>            </li>
+                    </div>
+                </div>
+            </li>
             <li>
-                Write text<button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#o22" aria-controls="o22">
+                Write text<button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o22" aria-controls="o22">
                     Read More...
                 </button>
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o22"
-                    aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o22" aria-labelledby="offcanvasWithBothOptionsLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
                             Write text
@@ -381,13 +356,11 @@ st.header("   ")
             </li>
             <li>
                 Display Images
-               
-                    <button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#o98" aria-controls="o98">
+
+                <button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o98" aria-controls="o98">
                     Read More...
                 </button>
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o98"
-                    aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o98" aria-labelledby="offcanvasWithBothOptionsLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
                             Display Images
@@ -395,9 +368,7 @@ st.header("   ")
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                         import Image from pillow to open images <br>
-                         display image using streamlit<br>
-                         width is used to set the width of an image<br>
+                        import Image from pillow to open images <br> display image using streamlit<br> width is used to set the width of an image<br>
                     </div>
                 </div>
                 <pre class="language-python">
@@ -407,22 +378,20 @@ img = Image.open("streamlit.png")st.image(img,caption='   ', width=200)
         </code>
         </pre>
             </li>
-            <li>checkbox<button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#o99" aria-controls="o99">
+            <li>checkbox<button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o99" aria-controls="o99">
                 Read More...
             </button>
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o99"
-                aria-labelledby="offcanvasWithBothOptionsLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-                        checkbox
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o99" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                            checkbox
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        A checkbox returns a boolean value. When the box is checked, it returns a True value else returns a False value.
+                    </div>
                 </div>
-                <div class="offcanvas-body">
-                    A checkbox returns a boolean value. When the box is checked, it returns a True value else returns a False value.
-                </div>
-            </div>
                 <pre class="language-python">
             <code>
                 # checkboxif st.checkbox("Show/Hide"):
@@ -505,8 +474,7 @@ hobby = st.selectbox("Hobbies: ",['Dancing', 'Reading', 'Sports'])st.write("Your
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-dark text-muted footer-dark">
         <!-- Section: Social media -->
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-            style="color: white">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style="color: white">
             <!-- Left -->
             <div class="me-5 d-none d-lg-block">
                 <span>Get connected with us on social networks:</span>
@@ -527,12 +495,10 @@ hobby = st.selectbox("Hobbies: ",['Dancing', 'Reading', 'Sports'])st.write("Your
                 <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i
                         class="bi bi-instagram"></i></a>
                 <!-- Linkedin -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #0082ca"
-                    href="https://www.linkedin.com/in/mr-soham-manjrekar/" role="button"><i
+                <a class="btn text-white btn-floating m-1" style="background-color: #0082ca" href="https://www.linkedin.com/in/mr-soham-manjrekar/" role="button"><i
                         class="bi bi-linkedin"></i></a>
                 <!-- Github -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #333333"
-                    href="https://github.com/sohammanjrekar" role="button"><i class="bi bi-github"></i></a>
+                <a class="btn text-white btn-floating m-1" style="background-color: #333333" href="https://github.com/sohammanjrekar" role="button"><i class="bi bi-github"></i></a>
             </div>
             <!-- Right -->
         </section>
@@ -551,8 +517,7 @@ hobby = st.selectbox("Hobbies: ",['Dancing', 'Reading', 'Sports'])st.write("Your
                         <p>
                             <li>Quick reference</li>
                             <li>
-                                Be productive after learning a new thing (i.e. programming
-                                language)
+                                Be productive after learning a new thing (i.e. programming language)
                             </li>
                             <li>Quickly recall when forget some syntax</li>
                             <li>Use snippets for rapid development</li>
@@ -607,8 +572,7 @@ hobby = st.selectbox("Hobbies: ",['Dancing', 'Reading', 'Sports'])st.write("Your
                         <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
                         <p><i class="bi bi-house-door me-3"></i>Badlapur,mumbai</p>
                         <p>
-                            <i class="bi bi-envelope me-3"></i>
-                            mrsohammanjrekar@gmail.com
+                            <i class="bi bi-envelope me-3"></i> mrsohammanjrekar@gmail.com
                         </p>
                         <p><i class="bi bi-phone me-3"></i> +91 7045208474</p>
                         <p><i class="bi bi-whatsapp me-3"></i> +91 7045208474</p>
@@ -622,10 +586,11 @@ hobby = st.selectbox("Hobbies: ",['Dancing', 'Reading', 'Sports'])st.write("Your
         <!-- Copyright -->
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
             © 2022 Copyright:
-            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">cheatbook.com</a>
-            created by soham
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">cheatbook.com</a> created by soham
         </div>
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
-</body></html>
+</body>
+
+</html>
