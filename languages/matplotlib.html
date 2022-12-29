@@ -167,7 +167,6 @@
         </div>
         <ol>
             <!-- offcanvas -->
-
             <li>Installation of Matplotlib
                 <pre class="language-sh">
         <code> 
@@ -185,9 +184,7 @@
             <li>Checking Matplotlib Version
                 <pre class="language-sh">
         <code> 
-            import matplotlib
-
-print(matplotlib.__version__)
+            import matplotlibprint(matplotlib.__version__)
             </code>
 </pre>
             </li>
@@ -202,12 +199,8 @@ print(matplotlib.__version__)
                         Pyplot<br> Most of the Matplotlib utilities lies under the pyplot submodule, and are usually imported under the plt alias<br><br> Now the Pyplot package can be referred to as plt.
                         <br><br><br> Plotting x and y points<br> The plot() function is used to draw points (markers) in a diagram.
                         <br> By default, the plot() function draws a line from point to point.<br><br> The function takes parameters for specifying points in the diagram.<br><br> Parameter 1 is an array containing the points on the x-axis.<br><br> Parameter
-                        2 is an array containing the points on the y-axis.
-
-                        <br><br><br> The x-axis is the horizontal axis.
+                        2 is an array containing the points on the y-axis. <br><br><br> The x-axis is the horizontal axis.
                         <br><br> The y-axis is the vertical axis.
-
-
                         <br><br><br> Plotting Without Line<br> To plot only the markers, you can use shortcut string notation parameter 'o', which means 'rings'.
                     </div>
                 </div>
@@ -256,7 +249,6 @@ print(matplotlib.__version__)
                         </h2>
                         <div id="collapseThree56" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-
                                 <pre class="language-java">
                                 <code>                   
                                     xpoints = np.array([1, 8])
@@ -301,9 +293,7 @@ print(matplotlib.__version__)
                             <div class="accordion-body">
                                 <pre class="language-java">
                                   <code>                   
-                                    ypoints = np.array([3, 8, 1, 10, 5, 7])
-
-plt.plot(ypoints)
+                                    ypoints = np.array([3, 8, 1, 10, 5, 7])plt.plot(ypoints)
 plt.show()
                                       </code>
                           </pre>
@@ -321,9 +311,7 @@ plt.show()
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        Markers<br> You can use the keyword argument marker to emphasize each point with a specified marker
-
-                        <br><br><br> Marker Reference<br>
+                        Markers<br> You can use the keyword argument marker to emphasize each point with a specified marker <br><br><br> Marker Reference<br>
                         <table class="ws-table-all notranslate table-bordered">
                             <tbody>
                                 <tr>
@@ -333,133 +321,104 @@ plt.show()
                                 <tr>
                                     <td>'o'</td>
                                     <td>Circle</td>
-
                                 </tr>
                                 <tr>
                                     <td>'*'</td>
                                     <td>Star</td>
-
                                 </tr>
                                 <tr>
                                     <td>'.'</td>
                                     <td>Point</td>
-
                                 </tr>
                                 <tr>
                                     <td>','</td>
                                     <td>Pixel</td>
-
                                 </tr>
                                 <tr>
                                     <td>'x'</td>
                                     <td>X</td>
-
                                 </tr>
                                 <tr>
                                     <td>'X'</td>
                                     <td>X (filled)</td>
-
                                 </tr>
                                 <tr>
                                     <td>'+'</td>
                                     <td>Plus</td>
-
                                 </tr>
                                 <tr>
                                     <td>'P'</td>
                                     <td>Plus (filled)</td>
-
                                 </tr>
                                 <tr>
                                     <td>'s'</td>
                                     <td>Square</td>
-
                                 </tr>
                                 <tr>
                                     <td>'D'</td>
                                     <td>Diamond</td>
-
                                 </tr>
                                 <tr>
                                     <td>'d'</td>
                                     <td>Diamond (thin)</td>
-
                                 </tr>
                                 <tr>
                                     <td>'p'</td>
                                     <td>Pentagon</td>
-
                                 </tr>
                                 <tr>
                                     <td>'H'</td>
                                     <td>Hexagon</td>
-
                                 </tr>
                                 <tr>
                                     <td>'h'</td>
                                     <td>Hexagon</td>
-
                                 </tr>
                                 <tr>
                                     <td>'v'</td>
                                     <td>Triangle Down</td>
-
                                 </tr>
                                 <tr>
                                     <td>'^'</td>
                                     <td>Triangle Up</td>
-
                                 </tr>
                                 <tr>
                                     <td>'&lt;'</td>
                                     <td>Triangle Left</td>
-
                                 </tr>
                                 <tr>
                                     <td>'&gt;'</td>
                                     <td>Triangle Right</td>
-
                                 </tr>
                                 <tr>
                                     <td>'1'</td>
                                     <td>Tri Down</td>
-
                                 </tr>
                                 <tr>
                                     <td>'2'</td>
                                     <td>Tri Up</td>
-
                                 </tr>
                                 <tr>
                                     <td>'3'</td>
                                     <td>Tri Left</td>
-
                                 </tr>
                                 <tr>
                                     <td>'4'</td>
                                     <td>Tri Right</td>
-
                                 </tr>
                                 <tr>
                                     <td>'|'</td>
                                     <td>Vline</td>
-
                                 </tr>
                                 <tr>
                                     <td>'_'</td>
                                     <td>Hline</td>
-
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-
             </li>
-
-
-
-
             <li>Line Reference
                 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom493" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom493" aria-labelledby="offcanvasBottomLabel">
@@ -477,32 +436,24 @@ plt.show()
                                 <tr>
                                     <td>'-'</td>
                                     <td>Solid line</td>
-
                                 </tr>
                                 <tr>
                                     <td>':'</td>
                                     <td>Dotted line</td>
-
                                 </tr>
                                 <tr>
                                     <td>'--'</td>
                                     <td>Dashed line</td>
-
                                 </tr>
                                 <tr>
                                     <td>'-.'</td>
                                     <td>Dashed/dotted line</td>
-
                                 </tr>
                             </tbody>
                         </table>
-
                     </div>
                 </div>
             </li>
-
-
-
             <li>Color Reference
                 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom47" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom47" aria-labelledby="offcanvasBottomLabel">
@@ -520,7 +471,6 @@ plt.show()
                                 <tr>
                                     <td>'r'</td>
                                     <td>Red</td>
-
                                 </tr>
                                 <tr>
                                     <td>'g'</td>
@@ -529,44 +479,32 @@ plt.show()
                                 <tr>
                                     <td>'b'</td>
                                     <td>Blue</td>
-
                                 </tr>
                                 <tr>
                                     <td>'c'</td>
                                     <td>Cyan</td>
-
                                 </tr>
                                 <tr>
                                     <td>'m'</td>
                                     <td>Magenta</td>
-
                                 </tr>
                                 <tr>
                                     <td>'y'</td>
                                     <td>Yellow</td>
-
                                 </tr>
                                 <tr>
                                     <td>'k'</td>
                                     <td>Black</td>
-
                                 </tr>
                                 <tr>
                                     <td>'w'</td>
                                     <td>White</td>
-
                                 </tr>
                             </tbody>
                         </table>
-
                     </div>
                 </div>
             </li>
-
-
-
-
-
             <li>Marker Size
                 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom4981" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom4981" aria-labelledby="offcanvasBottomLabel">
@@ -578,22 +516,14 @@ plt.show()
                         Marker Size<br> You can use the keyword argument markersize or the shorter version, ms to set the size of the markers<br><br>
                     </div>
                 </div>
-
                 <pre class="language-python">
                     <code>
-                        ypoints = np.array([3, 8, 1, 10])
-
-                        plt.plot(ypoints, marker = 'o', ms = 20)
+                        ypoints = np.array([3, 8, 1, 10])                        plt.plot(ypoints, marker = 'o', ms = 20)
                         plt.show()
                 </code>
                 </pre>
                 <img src="https://www.w3schools.com/python/img_matplotlib_marker_o_20.png" alt="" style="width:90%;">
-
             </li>
-
-
-
-
             <li>Line Color
                 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom49827" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom49827" aria-labelledby="offcanvasBottomLabel">
@@ -605,17 +535,13 @@ plt.show()
                         Line Color<br> You can use the keyword argument color or the shorter c to set the color of the line
                     </div>
                 </div>
-
                 <pre class="language-python">
                     <code>
-                        ypoints = np.array([3, 8, 1, 10])
-
-                        plt.plot(ypoints, color = 'r')
+                        ypoints = np.array([3, 8, 1, 10])                        plt.plot(ypoints, color = 'r')
                         plt.show()
                 </code>
                 </pre>
                 <img src="https://www.w3schools.com/python/img_matplotlib_line_red.png" alt="" style="width:90%;">
-
             </li>
             <li>Line Width
                 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom49829" aria-controls="offcanvasBottom">Read more...</button>
@@ -629,26 +555,14 @@ plt.show()
                         <br><br> The value is a floating number, in points
                     </div>
                 </div>
-
                 <pre class="language-python">
                     <code>
-                        ypoints = np.array([3, 8, 1, 10])
-
-                        plt.plot(ypoints, linewidth = '20.5')
+                        ypoints = np.array([3, 8, 1, 10])                        plt.plot(ypoints, linewidth = '20.5')
                         plt.show()
                 </code>
                 </pre>
                 <img src="https://www.w3schools.com/python/img_matplotlib_line_lw.png" alt="" style="width:90%;">
-
             </li>
-
-
-
-
-
-
-
-
             <li>Linestyle
                 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom4982" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom4982" aria-labelledby="offcanvasBottomLabel">
@@ -662,12 +576,9 @@ plt.show()
                         <br><br> linestyle can be written as ls.
                     </div>
                 </div>
-
                 <pre class="language-python">
                     <code>
-                        ypoints = np.array([3, 8, 1, 10])
-
-plt.plot(ypoints, linestyle = 'dotted')
+                        ypoints = np.array([3, 8, 1, 10])plt.plot(ypoints, linestyle = 'dotted')
 plt.show()
                 </code>
                 </pre>
@@ -677,9 +588,7 @@ plt.show()
                 </code>
                 </pre>
                 <img src="https://www.w3schools.com/python/img_matplotlib_line_dotted.png" alt="" style="width:90%;">
-
             </li>
-
             <li>Marker Size
                 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom4981" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom4981" aria-labelledby="offcanvasBottomLabel">
@@ -691,23 +600,14 @@ plt.show()
                         Marker Size<br> You can use the keyword argument markersize or the shorter version, ms to set the size of the markers<br><br>
                     </div>
                 </div>
-
                 <pre class="language-python">
                     <code>
-                        ypoints = np.array([3, 8, 1, 10])
-
-                        plt.plot(ypoints, marker = 'o', ms = 20)
+                        ypoints = np.array([3, 8, 1, 10])                        plt.plot(ypoints, marker = 'o', ms = 20)
                         plt.show()
                 </code>
                 </pre>
                 <img src="https://www.w3schools.com/python/img_matplotlib_marker_o_20.png" alt="" style="width:90%;">
-
             </li>
-
-
-
-
-
             <li>Marker Color
                 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom4971" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom4971" aria-labelledby="offcanvasBottomLabel">
@@ -722,30 +622,21 @@ plt.show()
                 </div>
                 <pre class="language-python">
                     <code>
-                        ypoints = np.array([3, 8, 1, 10])
-
-plt.plot(ypoints, marker = 'o', ms = 20, mec = 'r')
+                        ypoints = np.array([3, 8, 1, 10])plt.plot(ypoints, marker = 'o', ms = 20, mec = 'r')
 plt.show()
                 </code>
                 </pre>
                 <img src="https://www.w3schools.com/python/img_matplotlib_marker_o_mec.png" alt="" style="width:90%;">
-
                 <br>
                 <br>
                 <pre class="language-python">
     <code>
-        ypoints = np.array([3, 8, 1, 10])
-
-        plt.plot(ypoints, marker = 'o', ms = 20, mfc = 'r')
+        ypoints = np.array([3, 8, 1, 10])        plt.plot(ypoints, marker = 'o', ms = 20, mfc = 'r')
         plt.show()
 </code>
 </pre>
                 <img src="https://www.w3schools.com/python/img_matplotlib_marker_o_mfc.png" alt="" style="width:90%;">
-
             </li>
-
-
-
             <li>Format Strings fmt<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom5" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom5" aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
@@ -882,19 +773,11 @@ plt.show()
                             <pre class="language-sh">
                                 <code>
                                     x = np.array([0, 1, 2, 3])
-y = np.array([3, 8, 1, 10])
-
-plt.subplot(1, 2, 1)
-plt.plot(x,y)
-
-#plot 2:
+y = np.array([3, 8, 1, 10])plt.subplot(1, 2, 1)
+plt.plot(x,y)#plot 2:
 x = np.array([0, 1, 2, 3])
-y = np.array([10, 20, 30, 40])
-
-plt.subplot(1, 2, 2)
-plt.plot(x,y)
-
-plt.show()
+y = np.array([10, 20, 30, 40])plt.subplot(1, 2, 2)
+plt.plot(x,y)plt.show()
                             </code>
                             </pre>
                             <img src="https://www.w3schools.com/python/img_matplotlib_subplots1.png" alt="" style="width:90%">
@@ -991,9 +874,7 @@ colors = np.array(["red","green","blue","yellow","pink","black","orange","purple
                     <div id="collapseThree585" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <pre class="language-sh">
-                                <h3>The Matplotlib module has a number of available colormaps.
-
-                                    A colormap is like a list of colors, where each color has a value that ranges from 0 to 100.</h3>
+                                <h3>The Matplotlib module has a number of available colormaps.                                    A colormap is like a list of colors, where each color has a value that ranges from 0 to 100.</h3>
                                 <code>
                                     x = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])
                                     y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])
@@ -1007,7 +888,6 @@ colors = np.array(["red","green","blue","yellow","pink","black","orange","purple
                         </div>
                     </div>
                 </div>
-
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne156" aria-expanded="false" aria-controls="collapseOne">
@@ -1799,7 +1679,6 @@ colors = np.array(["red","green","blue","yellow","pink","black","orange","purple
                                     plt.scatter(x, y, s=sizes, alpha=0.5)
                             </code>
                             </pre>
-
                         </div>
                     </div>
                 </div>
@@ -1816,9 +1695,7 @@ colors = np.array(["red","green","blue","yellow","pink","black","orange","purple
                                 <code>
 x = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])
 y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])
-sizes = np.array([20,50,100,200,500,1000,60,90,10,300,600,800,75])
-
-plt.scatter(x, y, s=sizes)
+sizes = np.array([20,50,100,200,500,1000,60,90,10,300,600,800,75])plt.scatter(x, y, s=sizes)
                             </code>
                             </pre>
                         </div>
@@ -1856,9 +1733,7 @@ plt.scatter(x, y, s=sizes)
                             <pre class="language-sh">
                 <code>
                     x = np.array(["A", "B", "C", "D"])
-y = np.array([3, 8, 1, 10])
-
-plt.barh(x, y)
+y = np.array([3, 8, 1, 10])plt.barh(x, y)
 plt.show()
 </code>
             </pre>
@@ -1900,9 +1775,7 @@ x.save()
                         <div class="accordion-body">
                             <pre class="language-python">
             <code>
-                x = np.random.normal(170, 10, 250)
-
-                plt.hist(x)
+                x = np.random.normal(170, 10, 250)                plt.hist(x)
                 plt.show() 
 </code>
         </pre>
@@ -1921,9 +1794,7 @@ x.save()
                             <div class="accordion-body">
                                 <pre class="language-python">
                                         <code>
-                                            y = np.array([35, 25, 25, 15])
-
-                                            plt.pie(y)
+                                            y = np.array([35, 25, 25, 15])                                            plt.pie(y)
                                             plt.show() 
                                     </code>
                                     </pre>
@@ -2013,7 +1884,6 @@ x.save()
                                 </div>
                             </div>
                         </div>
-
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2021" aria-expanded="false" aria-controls="collapseOne">
@@ -2026,12 +1896,8 @@ x.save()
                                     <code>
                                         y = np.array([35, 25, 25, 15])
 mylabels = ["Apples", "Bananas", "Cherries", "Dates"]
-mycolors = ["black", "hotpink", "b", "#4CAF50"]
-
-plt.pie(y, labels = mylabels, colors = mycolors)
-plt.show() 
-
-                                    </code>
+mycolors = ["black", "hotpink", "b", "#4CAF50"]plt.pie(y, labels = mylabels, colors = mycolors)
+plt.show()                                     </code>
                                     </pre>
                                     <img src="https://www.w3schools.com/python/img_matplotlib_pie_color.png" alt="" style="width: 90%;">
                                 </div>
@@ -2072,18 +1938,11 @@ plt.show()
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                     </li>
         </ol>
-
-
-
-
         </div>
         </div>
-
         <!-- Footer -->
         <footer class="text-center text-lg-start bg-dark text-muted footer-dark">
             <!-- Section: Social media -->
