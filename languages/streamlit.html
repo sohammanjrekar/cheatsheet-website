@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Streamlit cheatsheet</title>
+    <link rel="shortcut icon" href="../img/streamlit.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
     <link rel="stylesheet" href="../prism.css" />
     <link rel="stylesheet" href="../css/style.css" />
@@ -212,6 +213,111 @@
 </code>
 </pre>
             </li>
+
+
+
+
+            <li>
+                import sidebar
+                <pre class="language-python">
+    <code>
+        from streamlit_option_menu import option_menu
+</code>
+</pre>
+            </li>
+
+
+            <li>
+                sidebar
+                <pre class="language-python">
+    <code>
+        # sidebar
+with st.sidebar:
+    selected = option_menu('Multiple Disease Prediction', [
+        
+        'Dashboard',
+        'Blogs'
+    ],
+        icons=['','activity', 'heart', 'person'],
+        default_index=0)
+</code>
+</pre>
+            </li>
+
+
+            <li>
+                Input and output
+                <pre class="language-python">
+    <code>
+        # Diabetes prediction page
+if selected == 'Diabetes prediction':  # pagetitle
+    st.title("Diabetes disease prediction")
+    image = Image.open('d3.jpg')
+    st.image(image, caption='diabetes disease prediction')
+    # columns
+    # no inputs from the user
+    name = st.text_input("Name:")
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        Pregnancies = st.number_input("Number of Pregnencies")
+    with col2:
+        Glucose = st.number_input("Glucose level")
+    with col3:
+        BloodPressure = st.number_input("Blood pressure  value")
+
+    # code for prediction
+    diabetes_dig = ''
+
+    # button
+    if st.button("Diabetes test result"):
+        diabetes_prediction=[[]]
+        diabetes_prediction = diabetes_model.predict(
+            [[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreefunction, Age]])
+
+        # after the prediction is done if the value in the list at index is 0 is 1 then the person is diabetic
+        if diabetes_prediction[0] == 1:
+            diabetes_dig = "we are really sorry to say but it seems like you are Diabetic."
+            image = Image.open('positive.jpg')
+            st.image(image, caption='')
+        else:
+            diabetes_dig = 'Congratulation,You are not diabetic'
+            image = Image.open('negative.jpg')
+            st.image(image, caption='')
+        st.success(name+' , ' + diabetes_dig)
+</code>
+</pre>
+            </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <li>
                 title
                 <pre class="language-python">
