@@ -200,11 +200,10 @@ td {
     transform: translate(0px, -10px) scale(1.1);
 }
 
-.btn1:hover {
+.btn:hover {
     box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
     -webkit-transform: translate(0px, -10px) scale(1.1);
     transform: translate(0px, -10px) scale(1.1);
-    background: linear-gradient(to left, #f72703 -27%, #fb6e9b 111%);
     color: whitesmoke;
 }
 
@@ -220,4 +219,32 @@ td {
 .table-bordered>thead>tr>td,
 .table-bordered>thead>tr>th {
     border: 2px solid #f77b50;
+}
+
+.dropdown-menu {
+    min-width: 200px;
+}
+
+.dropdown-menu.columns-2 {
+    min-width: 400px;
+}
+
+.dropdown-menu.columns-3 {
+    min-width: 600px;
+}
+
+.dropdown-menu li a {
+    padding: 5px 15px;
+    font-weight: 300;
+}
+
+.multi-column-dropdown {
+    list-style: none;
+}
+
+@media (max-width: 767px) {
+    .dropdown-menu.multi-column {
+        min-width: 240px !important;
+        overflow-x: hidden;
+    }
 }
