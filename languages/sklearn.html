@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Java cheatsheet</title>
-    <link rel="shortcut icon" href="../img/java-icon.svg" type="image/x-icon">
+    <title>Scikit-learn cheatsheet</title>
+    <link rel="shortcut icon" href="../img/scikit-learn.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
     <link rel="stylesheet" href="../prism.css" />
     <link rel="stylesheet" href="../css/style.css" />
@@ -131,34 +131,22 @@
     <!-- mid part -->
     <nav class="mt-5 pt-1 w-100">
         <div class="text-center my-3" style="font-size: larger; font-weight: 900;padding-top:2vh">
-            <img src="../img/java-icon.svg" alt="" /> Java cheatsheet
+            <img src="../img/scikit-learn.svg" alt="" /> Scikit-learn cheatsheet
         </div>
     </nav>
     <div class="container">
         <div class="p-5 mb-4 bg-light rounded-3 jumbo">
             <div class="container-fluid py-5">
-                <h1 class="display-5 fw-bold">Java</h1>
+                <h1 class="display-5 fw-bold">Scikit-learn</h1>
                 <div class="row">
                     <div class="col-md-8">
                         <p class="fs-4">
-                            Java is a popular programming language, created in 1995.
-                            <br> It is owned by Oracle, and more than 3 billion devices run Java.
-                            <br> It is used for:
-                            <br>
-                            <ul>
-                                <li>
-                                    Mobile applications (specially Android apps)</li>
-                                <li> Desktop applications</li>
-                                <li> Web applications</li>
-                                <li> Web servers and application servers</li>
-                                <li> Games</li>
-                                <li>Database connection</li>
-                                <li> And much, much more!</li>
+
                             </ul>
                         </p>
                     </div>
                     <div class="col-md-4">
-                        <img src="../img/java-icon.svg" alt="" style="width:100% ;" />
+                        <img src="../img/scikit-learn.svg" alt="" style="width:100% ;" />
                     </div>
                 </div>
                 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#o1" aria-controls="o1">
@@ -190,24 +178,26 @@
         <ol>
             <!-- offcanvas -->
             <li>
-                import basic libraries<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom2" aria-controls="offcanvasBottom">Read more...</button>
+                Java Syntax<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom2" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom2" aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">import basic libraries</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Java Syntax</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-
+                        The curly braces {} marks the beginning and the end of a block of code.
+                        <br><br> System is a built-in Java class that contains useful members, such as out, which is short for "output". The println() method, short for "print line", is used to print a value to the screen (or a file).
+                        <br><br> Don't worry too much about System, out and println(). Just know that you need them together to print stuff to the screen.
+                        <br><br> You should also note that each code statement must end with a semicolon (;).
                     </div>
                 </div>
-                <pre class="language-py">
+                <pre class="language-java">
                     <code> 
-                        import numpy as np
-                        import pandas as pd
-                        import matplotlib.pyplot as plt
-                        import seaborn as sns
-                        from sklearn.model_selection import train_test_split
-                        from sklearn import metrics
+                        public class Main {
+                            public static void main(String[] args) {
+                              System.out.println("Hello World");
+                            }
+                          }
                         </code>
 </pre>
             </li>
@@ -224,13 +214,13 @@
                     </div>
                 </div>
                 <h3>Print()</h3>
-                <pre class="language-py">
+                <pre class="language-java">
             <code>     
                 System.out.print("I will print on the same line.");
             </code>
         </pre>
                 <h3>Println()</h3>
-                <pre class="language-py">
+                <pre class="language-java">
             <code>     
                 System.out.println("Hello World!");
             </code>
@@ -252,13 +242,13 @@
                     </div>
                 </div>
                 <h3>single linecomment</h3>
-                <pre class="language-py">
+                <pre class="language-java">
     <code>
         // This is a comment
 </code>
 </pre>
                 <h3>Multi-Line comments</h3>
-                <pre class="language-py">
+                <pre class="language-java">
     <code>
         /* The code below will print the words Hello World
 to the screen, and it is amazing */
@@ -289,13 +279,13 @@ to the screen, and it is amazing */
                     </div>
                 </div>
                 <h3>Declaring (Creating) Variables (Syntax)</h3>
-                <pre class="language-py">
+                <pre class="language-java">
     <code>
         type variableName = value;
 </code>
 </pre>
                 <h3>Final Variables</h3>
-                <pre class="language-py">
+                <pre class="language-java">
 <code>
     final int myNum = 15;
 </code>
@@ -406,7 +396,7 @@ to the screen, and it is amazing */
                         </h2>
                         <div id="collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                 <code>
                                     byte myNum = 100;    
                             </code>
@@ -422,7 +412,7 @@ to the screen, and it is amazing */
                         </h2>
                         <div id="collapseTwo1" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                 <code>
                                     short myNum = 5000;
                             </code>
@@ -438,7 +428,7 @@ to the screen, and it is amazing */
                         </h2>
                         <div id="collapseThree1" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                 <code>
                                     int myNum = 100000;      
                             </code>
@@ -454,7 +444,7 @@ to the screen, and it is amazing */
                         </h2>
                         <div id="collapsefour1" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                   <code>
                                     long myNum = 15000000000L;     
                               </code>
@@ -476,7 +466,7 @@ to the screen, and it is amazing */
                         </h2>
                         <div id="collapseOne2" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                   <code>
                                     float myNum = 5.75f;    
                               </code>
@@ -492,7 +482,7 @@ to the screen, and it is amazing */
                         </h2>
                         <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                   <code>
                                     double d1 = 12E4d;
                               </code>
@@ -503,21 +493,21 @@ to the screen, and it is amazing */
                 </div>
                 <br><br>
                 <h3>Boolean Types</h3>
-                <pre class="language-py">
+                <pre class="language-java">
                         <code>
                             boolean isJavaFun = true;    
                     </code>
                     </pre>
                 <br>
                 <h3>Characters</h3>
-                <pre class="language-py">
+                <pre class="language-java">
                         <code>
                             char myGrade = 'B';   
                     </code>
                     </pre>
                 <br>
                 <h3>Strings</h3>
-                <pre class="language-py">
+                <pre class="language-java">
                         <code>
                             String greeting = "Hello World";    
                     </code>
@@ -538,14 +528,14 @@ to the screen, and it is amazing */
                     </div>
                 </div>
                 <h3>Widening Casting</h3>
-                <pre class="language-py">
+                <pre class="language-java">
                             <code>
                                 int myInt = 9;
                                 double myDouble = myInt; // Automatic casting: int to double  
                         </code>
                         </pre>
                 <h3>Narrowing Casting</h3>
-                <pre class="language-py">
+                <pre class="language-java">
                             <code>
                                 double myDouble = 9.78d;
     int myInt = (int) myDouble; // Manual casting: double to int
@@ -793,14 +783,14 @@ to the screen, and it is amazing */
                     </div>
                 </div>
                 <h3>String declare</h3>
-                <pre class="language-py">
+                <pre class="language-java">
     <code>
         String greeting = "Hello";
 </code>
 </pre>
 
                 <h3>String Length</h3>
-                <pre class="language-py">
+                <pre class="language-java">
     <code>
         String txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 System.out.println("The length of the txt string is: " + txt.length());
@@ -808,7 +798,7 @@ System.out.println("The length of the txt string is: " + txt.length());
 </pre>
 
                 <h3>Finding a Character in a String</h3>
-                <pre class="language-py">
+                <pre class="language-java">
     <code>
         String txt = "Please locate where 'locate' occurs!";
         System.out.println(txt.indexOf("locate")); // Outputs 7
@@ -824,7 +814,7 @@ System.out.println("The length of the txt string is: " + txt.length());
                         </h2>
                         <div id="collapseOne3" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                 <code>
 System.out.println("Doe" + " " + "John");
             </code>
@@ -840,7 +830,7 @@ System.out.println("Doe" + " " + "John");
                         </h2>
                         <div id="collapseTwo3" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                 <code>
                     System.out.println("Doe" + " " +.concat("John"));</code>
             </pre>
@@ -930,7 +920,7 @@ System.out.println("Doe" + " " + "John");
                         <div id="collapseOne4" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="accordion-body">
-                                    <pre class="language-py">
+                                    <pre class="language-java">
                                     <code>
                                         Math.max(5, 10);     
                                 </code>
@@ -946,7 +936,7 @@ System.out.println("Doe" + " " + "John");
                             </h2>
                             <div id="collapseTwo4" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <pre class="language-py">
+                                    <pre class="language-java">
                                 <code>
                                     Math.min(5, 10);
                             </code>
@@ -963,7 +953,7 @@ System.out.println("Doe" + " " + "John");
                             <div id="collapseThree4" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <div class="accordion-body">
-                                        <pre class="language-py">
+                                        <pre class="language-java">
                                     <code>
                                         Math.sqrt(64);    
                                 </code>
@@ -981,7 +971,7 @@ System.out.println("Doe" + " " + "John");
                             <div id="collapseThree5" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <div class="accordion-body">
-                                        <pre class="language-py">
+                                        <pre class="language-java">
                                     <code>
                                         Math.abs(-4.7);  
                                 </code>
@@ -999,7 +989,7 @@ System.out.println("Doe" + " " + "John");
                             <div id="collapseThree6" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <div class="accordion-body">
-                                        <pre class="language-py">
+                                        <pre class="language-java">
                                     <code>
                                         Math.random();
                                 </code>
@@ -1038,7 +1028,7 @@ System.out.println("Doe" + " " + "John");
                         <div id="collapseOne7" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="accordion-body">
-                                    <pre class="language-py">
+                                    <pre class="language-java">
                                         <code>
                                             if (condition) {
                                                 // block of code to be executed if the condition is true
@@ -1056,7 +1046,7 @@ System.out.println("Doe" + " " + "John");
                             </h2>
                             <div id="collapseTwo7" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <pre class="language-py">
+                                    <pre class="language-java">
                                     <code>
                                         if (condition) {
                                             // block of code to be executed if the condition is true
@@ -1077,7 +1067,7 @@ System.out.println("Doe" + " " + "John");
                             <div id="collapseThree9" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <div class="accordion-body">
-                                        <pre class="language-py">
+                                        <pre class="language-java">
                                         <code>
                                             if (condition1) {
                                                 // block of code to be executed if condition1 is true
@@ -1101,7 +1091,7 @@ System.out.println("Doe" + " " + "John");
                             <div id="collapseThree7" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <div class="accordion-body">
-                                        <pre class="language-py">
+                                        <pre class="language-java">
                                         <code>
                                             variable = (condition) ? expressionTrue :  expressionFalse;
                                     </code>
@@ -1119,7 +1109,7 @@ System.out.println("Doe" + " " + "John");
                             <div id="collapseThree8" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <div class="accordion-body">
-                                        <pre class="language-py">
+                                        <pre class="language-java">
                                         <code>
                                             switch(expression) {
                                                 case x:
@@ -1166,7 +1156,7 @@ System.out.println("Doe" + " " + "John");
                         <div id="collapseOne10" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="accordion-body">
-                                    <pre class="language-py">
+                                    <pre class="language-java">
                                         <code>
                                             while (condition) {
                                                 // code block to be executed
@@ -1184,7 +1174,7 @@ System.out.println("Doe" + " " + "John");
                             </h2>
                             <div id="collapseTwo11" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <pre class="language-py">
+                                    <pre class="language-java">
                                     <code>
                                         do {
                                             // code block to be executed
@@ -1204,7 +1194,7 @@ System.out.println("Doe" + " " + "John");
                             <div id="collapseThree4" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <div class="accordion-body">
-                                        <pre class="language-py">
+                                        <pre class="language-java">
                                         <code>
                                             for (int i = 0; i < 5; i++) {
                                                 
@@ -1225,7 +1215,7 @@ System.out.println("Doe" + " " + "John");
                             <div id="collapseThree5" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <div class="accordion-body">
-                                        <pre class="language-py">
+                                        <pre class="language-java">
                                         <code>
                                             for (type variableName : arrayName) {
                                                 // code block to be executed
@@ -1250,7 +1240,7 @@ System.out.println("Doe" + " " + "John");
                         <br><br> The break statement can also be used to jump out of a loop.
                     </div>
                 </div>
-                <pre class="language-py">
+                <pre class="language-java">
                     <code>
                         break;
                     </code>
@@ -1266,7 +1256,7 @@ System.out.println("Doe" + " " + "John");
                     <div class="offcanvas-body small">
                         The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.</div>
                 </div>
-                <pre class="language-py">
+                <pre class="language-java">
                     <code>
                         continue;
                     </code>
@@ -1284,7 +1274,7 @@ System.out.println("Doe" + " " + "John");
                         <br><br> To declare an array, define the variable type with square brackets
                     </div>
                 </div>
-                <pre class="language-py">
+                <pre class="language-java">
 <code>
     String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
 </code>
@@ -1303,7 +1293,7 @@ System.out.println("Doe" + " " + "John");
                         <br> Multidimensional arrays are useful when you want to store data as a tabular form, like a table with rows and columns.
                     </div>
                 </div>
-                <pre class="language-py">
+                <pre class="language-java">
                     <code>
                         int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
                     </code>
@@ -1327,7 +1317,7 @@ System.out.println("Doe" + " " + "John");
 
                     </div>
                 </div>
-                <pre class="language-py">
+                <pre class="language-java">
                     <code>
                         public class Main {
                             static void myMethod() {
@@ -1377,7 +1367,7 @@ System.out.println("Doe" + " " + "John");
                         <br> Note: Multiple methods can have the same name as long as the number and/or type of parameters are different.
                     </div>
                 </div>
-                <pre class="language-py">
+                <pre class="language-java">
             <code>
 int myMethod(int x)
 float myMethod(float x)
@@ -1464,7 +1454,7 @@ double myMethod(double x, double y)
                     </div>
                 </div>
                 <h3>Create a Class</h3>
-                <pre class="language-py">
+                <pre class="language-java">
                     <code>
                       public class Main {
                         
@@ -1472,7 +1462,7 @@ double myMethod(double x, double y)
                     </code>
                     </pre>
                 <h3>Create a object</h3>
-                <pre class="language-py">
+                <pre class="language-java">
                     <code>
                         Main myObj = new Main();
                     </code>
@@ -1491,7 +1481,7 @@ double myMethod(double x, double y)
                     </div>
                 </div>
                 <h3>Static method</h3>
-                <pre class="language-py">
+                <pre class="language-java">
                     <code>
                         // Static method
   static void myStaticMethod() {
@@ -1500,7 +1490,7 @@ double myMethod(double x, double y)
                     </code>
                     </pre>
                 <h3>Public method</h3>
-                <pre class="language-py">
+                <pre class="language-java">
                         <code>
                             // Public method
   public void myPublicMethod() {
@@ -1509,7 +1499,7 @@ double myMethod(double x, double y)
                         </code>
                         </pre>
                 <h3>Main method</h3>
-                <pre class="language-py">
+                <pre class="language-java">
                             <code>
                                 // Main method
   public static void main(String[] args) {
@@ -1658,7 +1648,7 @@ double myMethod(double x, double y)
                         </h2>
                         <div id="collapseOne20" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                     <code>
                                         final double PI = 3.14;
                                     </code>
@@ -1674,7 +1664,7 @@ double myMethod(double x, double y)
                         </h2>
                         <div id="collapseTwo20" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                     <code>
                                         static void myStaticMethod() {
 
@@ -1692,7 +1682,7 @@ double myMethod(double x, double y)
                         </h2>
                         <div id="collapseThree20" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                     <code>
                                         public abstract void study(); // abstract method
                                         </code>
@@ -1718,7 +1708,7 @@ double myMethod(double x, double y)
                         <br> The get method returns the variable value, and the set method sets the value.
                     </div>
                 </div>
-                <pre class="language-py">
+                <pre class="language-java">
                             <code>
                                 public class Person {
                                     private String name; // private = restricted access
@@ -1751,7 +1741,7 @@ double myMethod(double x, double y)
                         <br> The library is divided into packages and classes. Meaning you can either import a single class (along with its methods and attributes), or a whole package that contain all the classes that belong to the specified package.
                     </div>
                 </div>
-                <pre class="language-py">
+                <pre class="language-java">
                             <code>
                                 import package.name.Class;   // Import a single class
                                 import package.name.*;   // Import the whole package
@@ -1770,7 +1760,7 @@ double myMethod(double x, double y)
                         To create a package, use the package keyword
                     </div>
                 </div>
-                <pre class="language-py">
+                <pre class="language-java">
                             <code>
                                 package mypack;
                             </code>
@@ -1791,7 +1781,7 @@ double myMethod(double x, double y)
                 <br>
                 <img class="mx-auto d-block" src="https://simplesnippets.tech/wp-content/uploads/2018/04/java-types-of-inheritance.jpg" alt="" style="height: 40vw;">
                 <br>
-                <pre class="language-py">
+                <pre class="language-java">
                     <code>
                         class Vehicle {
                             
@@ -1845,7 +1835,7 @@ double myMethod(double x, double y)
                         <br><br> Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from). <br>
                     </div>
                 </div>
-                <pre class="language-py">
+                <pre class="language-java">
                     <code>
                         abstract class Animal {
                             public abstract void animalSound();
@@ -1900,7 +1890,7 @@ double myMethod(double x, double y)
                         <br><br> Why And When To Use Enums? <br> Use enums when you have values that you know aren't going to change, like month days, days, colors, deck of cards, etc.
                     </div>
                 </div>
-                <pre class="language-py">
+                <pre class="language-java">
                                 <code>
                                     enum Level {
                                         LOW,
@@ -1971,7 +1961,7 @@ double myMethod(double x, double y)
                         </table>
                     </div>
                 </div>
-                <pre class="language-py">
+                <pre class="language-java">
                                 <code>
                                     import java.util.Scanner;  // Import the Scanner class
 
@@ -2026,7 +2016,7 @@ double myMethod(double x, double y)
                     </div>
                 </div>
                 <h3>Display Current Date</h3>
-                <pre class="language-py">
+                <pre class="language-java">
                                         <code>
                                             import java.time.LocalDate; // import the LocalDate class
 
@@ -2061,7 +2051,7 @@ double myMethod(double x, double y)
                         </h2>
                         <div id="collapseOne30" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                             <code>
                                                 import java.util.ArrayList; // import the ArrayList class
         
@@ -2079,7 +2069,7 @@ double myMethod(double x, double y)
                         </h2>
                         <div id="collapseTwo30" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                             <code>
                                                 cars.add("Volvo");
                                             </code>
@@ -2095,7 +2085,7 @@ double myMethod(double x, double y)
                         </h2>
                         <div id="collapseThree30" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                             <code>
                                                 cars.get(0);
                                             </code>
@@ -2111,7 +2101,7 @@ double myMethod(double x, double y)
                         </h2>
                         <div id="collapseThree31" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                               <code>
                                                 cars.set(0, "Opel");
                                               </code>
@@ -2127,7 +2117,7 @@ double myMethod(double x, double y)
                         </h2>
                         <div id="collapseThree32" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                               <code>
                                                 cars.remove(0);
                                               </code>
@@ -2143,7 +2133,7 @@ double myMethod(double x, double y)
                         </h2>
                         <div id="collapseThree34" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                               <code>
                                                 cars.clear();
                                               </code>
@@ -2159,7 +2149,7 @@ double myMethod(double x, double y)
                         </h2>
                         <div id="collapseThree35" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                               <code>
                                                 cars.size();
                                               </code>
@@ -2175,7 +2165,7 @@ double myMethod(double x, double y)
                         </h2>
                         <div id="collapseThree36" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                               <code>
                                                 for (int i = 0; i < cars.size(); i++) {
                                                     System.out.println(cars.get(i));
@@ -2193,7 +2183,7 @@ double myMethod(double x, double y)
                         </h2>
                         <div id="collapseThree37" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                               <code>
                                                 Collections.sort(cars);  // Sort cars
                                               </code>
@@ -2266,7 +2256,7 @@ double myMethod(double x, double y)
                     </div>
                 </div>
 
-                <pre class="language-py">
+                <pre class="language-java">
                                             <code>
                                                 // Import the LinkedList class
                                                 import java.util.LinkedList;
@@ -2304,7 +2294,7 @@ double myMethod(double x, double y)
                         </h2>
                         <div id="collapseOne35" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                             <code>
                                                 import java.util.HashMap; // import the HashMap class
 
@@ -2322,7 +2312,7 @@ HashMap&lt;String, String&gt; capitalCities = new HashMap&lt;String, String&gt;(
                         </h2>
                         <div id="collapseTwo455" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                             <code>
                                                 capitalCities.put("England", "London");
                                             </code>
@@ -2338,7 +2328,7 @@ HashMap&lt;String, String&gt; capitalCities = new HashMap&lt;String, String&gt;(
                         </h2>
                         <div id="collapseThree425" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                             <code>
                                                 capitalCities.get("England");
                                             </code>
@@ -2354,7 +2344,7 @@ HashMap&lt;String, String&gt; capitalCities = new HashMap&lt;String, String&gt;(
                         </h2>
                         <div id="collapseThree45" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                               <code>
                                                 capitalCities.remove("England");
                                               </code>
@@ -2370,7 +2360,7 @@ HashMap&lt;String, String&gt; capitalCities = new HashMap&lt;String, String&gt;(
                         </h2>
                         <div id="collapseThree47" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                               <code>
                                                 capitalCities.clear();
                                               </code>
@@ -2386,7 +2376,7 @@ HashMap&lt;String, String&gt; capitalCities = new HashMap&lt;String, String&gt;(
                         </h2>
                         <div id="collapseThree49" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                               <code>
                                                 capitalCities.size();
                                               </code>
@@ -2402,7 +2392,7 @@ HashMap&lt;String, String&gt; capitalCities = new HashMap&lt;String, String&gt;(
                         </h2>
                         <div id="collapseThree48" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                               <code>
                                                 // Print keys
                                                 for (String i : capitalCities.keySet()) {
@@ -2435,7 +2425,7 @@ HashMap&lt;String, String&gt; capitalCities = new HashMap&lt;String, String&gt;(
                         </h2>
                         <div id="collapseOne355" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                             <code>
                                                 import java.util.HashSet; // Import the HashSet class
 
@@ -2453,7 +2443,7 @@ HashSet&lt;String&gt;  cars = new HashSet&lt;String&gt;();
                         </h2>
                         <div id="collapseTwo4555" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                             <code>                                        
     cars.add("Volvo");
    
@@ -2470,7 +2460,7 @@ HashSet&lt;String&gt;  cars = new HashSet&lt;String&gt;();
                         </h2>
                         <div id="collapseThree4255" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                             <code>
                                                 cars.contains("Mazda");
                                             </code>
@@ -2486,7 +2476,7 @@ HashSet&lt;String&gt;  cars = new HashSet&lt;String&gt;();
                         </h2>
                         <div id="collapseThree458" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                               <code>
                                                 cars.remove("Volvo");
                                               </code>
@@ -2502,7 +2492,7 @@ HashSet&lt;String&gt;  cars = new HashSet&lt;String&gt;();
                         </h2>
                         <div id="collapseThree475" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                               <code>
                                                 capitalCities.clear();
                                               </code>
@@ -2518,7 +2508,7 @@ HashSet&lt;String&gt;  cars = new HashSet&lt;String&gt;();
                         </h2>
                         <div id="collapseThree495" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                               <code>
                                                 cars.size();
                                               </code>
@@ -2534,7 +2524,7 @@ HashSet&lt;String&gt;  cars = new HashSet&lt;String&gt;();
                         </h2>
                         <div id="collapseThree489" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                               <code>
                                                 for (String i : cars) {
                                                     System.out.println(i);
@@ -2568,7 +2558,7 @@ HashSet&lt;String&gt;  cars = new HashSet&lt;String&gt;();
                         </h2>
                         <div id="collapseOne358" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                             <code>
                                                 import java.util.Iterator;
                                                 // Get the iterator
@@ -2589,7 +2579,7 @@ HashSet&lt;String&gt;  cars = new HashSet&lt;String&gt;();
                         </h2>
                         <div id="collapseTwo4558" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                             <code>
                                                 while(it.hasNext()) {
                                                    
@@ -2608,7 +2598,7 @@ HashSet&lt;String&gt;  cars = new HashSet&lt;String&gt;();
                         </h2>
                         <div id="collapseThree4258" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                             <code>
                                                 while(it.hasNext()) {
                                                     Integer i = it.next();
@@ -2693,7 +2683,7 @@ HashSet&lt;String&gt;  cars = new HashSet&lt;String&gt;();
                         <br> The finally statement lets you execute code, after try...catch, regardless of the result
                     </div>
                 </div>
-                <pre class="language-py">
+                <pre class="language-java">
                         <code>
                             try {
                                 //  Block of code to try
@@ -2717,7 +2707,7 @@ HashSet&lt;String&gt;  cars = new HashSet&lt;String&gt;();
                         <br><br> The throw statement is used together with an exception type. There are many exception types available in Java: ArithmeticException, FileNotFoundException, ArrayIndexOutOfBoundsException, SecurityException, etc
                     </div>
                 </div>
-                <pre class="language-py">
+                <pre class="language-java">
                     <code>
                         throw new ArithmeticException("Access denied - You must be at least 18 years old.");
                     </code>
@@ -2838,7 +2828,7 @@ HashSet&lt;String&gt;  cars = new HashSet&lt;String&gt;();
                         </table>
                     </div>
                 </div>
-                <pre class="language-py">
+                <pre class="language-java">
                 <code>
                     import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -2876,7 +2866,7 @@ public class Main {
                     </div>
                 </div>
                 <h3>created by extending the Thread class</h3>
-                <pre class="language-py">
+                <pre class="language-java">
             <code>
                 public class Main extends Thread {
                     public void run() {
@@ -2886,7 +2876,7 @@ public class Main {
             </code>
             </pre>
                 <h3>create a thread is to implement the Runnable interface</h3>
-                <pre class="language-py">
+                <pre class="language-java">
                 <code>
                     public class Main implements Runnable {
                         public void run() {
@@ -2896,7 +2886,7 @@ public class Main {
                 </code>
                 </pre>
                 <h3>Running Threads</h3>
-                <pre class="language-py">
+                <pre class="language-java">
                 <code>
                     Main thread = new Main();
                     thread.start();
@@ -3000,7 +2990,7 @@ public class Main {
                         </h2>
                         <div id="collapseThree42589" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                 <code>
                                     import java.io.File;  // Import the File class
 
@@ -3018,7 +3008,7 @@ public class Main {
                         </h2>
                         <div id="collapseOne3586" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                 <code>
                                     import java.io.File;  // Import the File class
                                     import java.io.IOException;  // Import the IOException class to handle errors
@@ -3051,7 +3041,7 @@ public class Main {
                         </h2>
                         <div id="collapseTwo45583" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                 <code>
                                     import java.io.FileWriter;   // Import the FileWriter class
                                     import java.io.IOException;  // Import the IOException class to handle errors
@@ -3082,7 +3072,7 @@ public class Main {
                         </h2>
                         <div id="collapseTwo45589" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                 <code>
                                     import java.io.File;  // Import the File class
 import java.io.FileNotFoundException;  // Import this class to handle errors
@@ -3116,7 +3106,7 @@ public class ReadFile {
                         </h2>
                         <div id="collapseTwo455835" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                 <code>
                                     import java.io.File;  // Import the File class
 
@@ -3147,7 +3137,7 @@ public class ReadFile {
                         </h2>
                         <div id="collapseTwo4553" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                 <code>
                                     import java.io.File;  // Import the File class
 
@@ -3174,7 +3164,7 @@ public class ReadFile {
                         </h2>
                         <div id="collapseTwo45530" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-py">
+                                <pre class="language-java">
                                 <code>
                                     import java.io.File; 
 
