@@ -212,6 +212,10 @@ td {
     background: linear-gradient(to top right, #fb5475 0%, #f77b50 59%);
 }
 
+#navbarSupportedContent {
+    font-size: 0.89em;
+}
+
 .table-bordered>tbody>tr>td,
 .table-bordered>tbody>tr>th,
 .table-bordered>tfoot>tr>td,
