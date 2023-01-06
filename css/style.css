@@ -5,10 +5,10 @@
 
 @media only screen and (max-width: 400px) {
     body {
-        font-size: x-small;
+        font-size: smaller;
     }
     pre[class*="language-"] {
-        font-size: x-small;
+        font-size: smaller;
     }
 }
 
@@ -208,8 +208,12 @@ td {
 }
 
 .btn1 {
-    font-size: x-small;
+    font-size: smaller;
     background: linear-gradient(to top right, #fb5475 0%, #f77b50 59%);
+}
+
+#navbarSupportedContent {
+    font-size: 2.3vh;
 }
 
 .table-bordered>tbody>tr>td,
