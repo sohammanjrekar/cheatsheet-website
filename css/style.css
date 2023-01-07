@@ -294,3 +294,28 @@ pre {
     padding: 2rem;
     border-radius: 0.5rem;
 }
+
+@media (min-width: 576px) {
+    .rounded-nav {
+        border-radius: 50rem !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .rounded-nav .nav-link {
+        border-radius: 50rem !important;
+    }
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show .nav-link {
+    background-color: blueviolet;
+}
+
+.tab-pane {
+    margin-top: 1vh;
+    background-color: rgb(255, 223, 163);
+    border-radius: 2%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    font-size: 4vh;
+}

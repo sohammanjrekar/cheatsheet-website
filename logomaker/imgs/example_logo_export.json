@@ -1,0 +1,37 @@
+{
+  "version": "v1.0.0",
+  "components": {
+    "icon": {
+      "name": "icon",
+      "text": "",
+      "color": "#f0198c",
+      "fontFamily": "\"Font Awesome 5 Free\"",
+      "fontWeight": "900",
+      "fontSize": 48,
+      "letterSpacing": 0
+    },
+    "main": {
+      "name": "main",
+      "text": "{nacho",
+      "color": "#f0198c",
+      "fontFamily": "Righteous",
+      "fontWeight": "bold",
+      "fontSize": 48,
+      "letterSpacing": 0
+    },
+    "accent": {
+      "name": "accent",
+      "text": "studio}",
+      "color": "#ffffff",
+      "fontFamily": "Dancing Script",
+      "fontWeight": "bold",
+      "fontSize": 48,
+      "letterSpacing": 0
+    }
+  },
+  "global": {
+    "offset": { "size": 5, "color": "#e2e2e2" },
+    "layout": "HORIZONTAL",
+    "shapes": true
+  }
+}

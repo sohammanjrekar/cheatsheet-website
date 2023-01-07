@@ -2,6 +2,7 @@ textarea.editor-textarea {
     height: 100%;
     overflow: auto;
     resize: none;
+    font-size: 3vh;
 }
 
 textarea {
