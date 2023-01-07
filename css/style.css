@@ -172,6 +172,15 @@ td {
     transition: all ease-in-out 300ms;
 }
 
+.offcanvas-header {
+    background: linear-gradient(to top right, #fb5475 0%, #f77b50 59%);
+}
+
+.offcanvas-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 .nav button {
     box-shadow: none;
     color: #01042D;
@@ -239,7 +248,7 @@ td {
 
 .dropdown-menu li a {
     padding: 5px 15px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .multi-column-dropdown {
@@ -251,4 +260,46 @@ td {
         min-width: 240px !important;
         overflow-x: hidden;
     }
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+@media (min-width: 320px) {
+    #main {
+        font-size: calc(1.6rem + 6 * ((100vw - 320px) / 680));
+    }
+}
+
+@media (min-width: 1000px) {
+    #main {
+        font-size: 2.2rem;
+    }
+}
+
+#main {
+    max-width: 76.8rem;
+    line-height: 1.6;
+    margin: auto;
+    padding: 2rem;
+    font-family: "Merriweather", Georgia, serif;
+}
+
+h1 {
+    margin-top: 0;
+    line-height: 1.2;
+    font-size: 250%;
+    word-wrap: break-word;
+}
+
+pre {
+    font-size: 85% !important;
+    overflow: auto;
+    padding: 2rem;
+    border-radius: 0.5rem;
 }
