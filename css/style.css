@@ -39,19 +39,20 @@ footer .links p li {
 button {
     margin-top: 2vh;
     margin-left: 2vh;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 5px;
 }
 
 .card a {
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 footer a {
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .carousel {
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .accordion-body {
@@ -67,11 +68,11 @@ footer a {
 }
 
 .jumbo {
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 pre {
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .social-link {
@@ -163,6 +164,18 @@ td {
     transition: all ease-in-out 300ms;
 }
 
+.row .card a {
+    display: inline-block !important;
+    color: rgb(1, 1, 1);
+    text-transform: uppercase !important;
+    padding: 5px 6px;
+    border-radius: 5px;
+    box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.2) !important;
+    cursor: pointer;
+    -webkit-transition: all ease-in-out 300ms;
+    transition: all ease-in-out 300ms;
+}
+
 .offcanvas-header {
     background: linear-gradient(to top right, #fb5475 0%, #f77b50 59%);
 }
@@ -181,6 +194,10 @@ td {
 .nav1 .active {
     background-color: #fa7f33;
     color: #fb5475;
+}
+
+footer {
+    left: 0;
 }
 
 .accordion-button {

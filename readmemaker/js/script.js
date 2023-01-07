@@ -15,14 +15,14 @@ Vue.component('custom-input', {
 
 new Vue({
     el: '#app',
-    data: function () {
+    data: function() {
         return {
             forced: false,
             tab: "header",
             data: {
                 tableOfContent: true,
                 enableHeaderImage: true,
-                userName: "ShaanCoding",
+                userName: "sohammanjrekar",
                 repoName: "ReadME-Generator",
                 logoURL: "images/logo.png",
                 headLine: "ReadME Generator",
@@ -62,7 +62,7 @@ new Vue({
                 licenseDesc: "",
 
                 authors: [],
-                
+
                 acknowledgements: []
             },
             source: this.getSource(this.data),
@@ -77,7 +77,7 @@ new Vue({
             }
         },
     },
-    mounted: function(){
+    mounted: function() {
         this.source = this.getSource(this.data);
         this.initalizeButtons();
     },
@@ -137,51 +137,51 @@ new Vue({
                 .replace(/^-+/, '')
                 .replace(/-+$/, '');
         },
-        generateHeader : function (data) {
+        generateHeader: function(data) {
             source = '';
 
             source += "<br/>\n";
             source += "<p align=\"center\">\n";
 
-            if(data.enableHeaderImage) {
+            if (data.enableHeaderImage) {
                 source += "  <a href=\"https://github.com/" + data.userName + "/" + data.repoName + "\">\n";
                 source += "    <img src=\"" + data.logoURL + "\" alt=\"Logo\" width=\"80\" height=\"80\">\n";
                 source += "  </a>\n\n";
             }
 
-            if(data.headLine) {
+            if (data.headLine) {
                 source += "  <h3 align=\"center\">" + data.headLine + "</h3>\n\n";
             }
 
-            if(data.catchPhrase || data.exploreTheDocs || data.viewDemo || data.reportBug) {
+            if (data.catchPhrase || data.exploreTheDocs || data.viewDemo || data.reportBug) {
                 source += "  <p align=\"center\">\n";
 
-                if(data.catchPhrase) {
+                if (data.catchPhrase) {
                     source += "    " + data.catchPhrase + "\n";
                     source += "    <br/>\n"
                     source += "    <br/>\n"
                 }
-    
-                if(data.exploreTheDocs) {
+
+                if (data.exploreTheDocs) {
                     source += "    <a href=\"https://github.com/" + data.userName + "/" + data.repoName + "\"><strong>Explore the docs »</strong></a>\n";
                     source += "    <br/>\n"
                     source += "    <br/>\n"
                 }
-    
-                if(data.viewDemo) {
+
+                if (data.viewDemo) {
                     source += "    <a href=\"https://github.com/" + data.userName + "/" + data.repoName + "\">View Demo</a>\n";
                     source += "    .\n";
                 }
-    
-                if(data.reportBug) {
+
+                if (data.reportBug) {
                     source += "    <a href=\"https://github.com/" + data.userName + "/" + data.repoName + "/issues\">Report Bug</a>\n";
                     source += "    .\n";
                 }
-    
-                if(data.requestFeature) {
+
+                if (data.requestFeature) {
                     source += "    <a href=\"https://github.com/" + data.userName + "/" + data.repoName + "/issues\">Request Feature</a>\n";
                 }
-                
+
                 source += "  </p>\n";
             }
 
@@ -189,32 +189,32 @@ new Vue({
 
             return source;
         },
-        getCheckboxes : function (data) {
+        getCheckboxes: function(data) {
             source = '';
 
             source += "\n";
-            
-            if(data.downloadsBadge) {
+
+            if (data.downloadsBadge) {
                 source += "![Downloads](https://img.shields.io/github/downloads/" + data.userName + "/" + data.repoName + "/total) ";
             }
 
-            if(data.contributorsBadge) {
+            if (data.contributorsBadge) {
                 source += "![Contributors](https://img.shields.io/github/contributors/" + data.userName + "/" + data.repoName + "?color=dark-green) ";
             }
 
-            if(data.forksBadge) {
+            if (data.forksBadge) {
                 source += "![Forks](https://img.shields.io/github/forks/" + data.userName + "/" + data.repoName + "?style=social) ";
             }
 
-            if(data.starsBadge) {
+            if (data.starsBadge) {
                 source += "![Stargazers](https://img.shields.io/github/stars/" + data.userName + "/" + data.repoName + "?style=social) ";
             }
 
-            if(data.issuesBadge) {
+            if (data.issuesBadge) {
                 source += "![Issues](https://img.shields.io/github/issues/" + data.userName + "/" + data.repoName + ") ";
             }
 
-            if(data.licenseBadge) {
+            if (data.licenseBadge) {
                 source += "![License](https://img.shields.io/github/license/" + data.userName + "/" + data.repoName + ") ";
             }
 
@@ -224,109 +224,109 @@ new Vue({
 
             return source;
         },
-        generateTableOfContent: function (data) {
+        generateTableOfContent: function(data) {
             source = '';
 
-            if(data.tableOfContent) {
+            if (data.tableOfContent) {
                 source += "\n## Table Of Contents\n\n";
 
-                if(data.showcaseURL || data.aboutThisProject) {
+                if (data.showcaseURL || data.aboutThisProject) {
                     source += "* [About the Project](#about-the-project)\n";
                 }
 
-                if(data.builtWith || data.builtWithList.length > 0) {
+                if (data.builtWith || data.builtWithList.length > 0) {
                     source += "* [Built With](#built-with)\n";
                 }
 
-                if(data.gettingStarted || data.prerequisites || data.installation) {
+                if (data.gettingStarted || data.prerequisites || data.installation) {
                     source += "* [Getting Started](#getting-started)\n";
                 }
 
-                if(data.prerequisites) {
+                if (data.prerequisites) {
                     source += "  * [Prerequisites](#prerequisites)\n";
                 }
-                if(data.installation) {
+                if (data.installation) {
                     source += "  * [Installation](#installation)\n";
                 }
 
-                if(data.usage) {
+                if (data.usage) {
                     source += "* [Usage](#usage)\n";
                 }
 
-                if(data.roadmap || data.roadmapDesc) {
+                if (data.roadmap || data.roadmapDesc) {
                     source += "* [Roadmap](#roadmap)\n";
                 }
 
-                if(data.contributing || data.contributingDesc || data.pullRequest) {
+                if (data.contributing || data.contributingDesc || data.pullRequest) {
                     source += "* [Contributing](#contributing)\n";
                 }
 
-                if(data.license || data.licenseDesc) {
+                if (data.license || data.licenseDesc) {
                     source += "* [License](#license)\n";
                 }
 
-                if(data.authors.length > 0) {
+                if (data.authors.length > 0) {
                     source += "* [Authors](#authors)\n";
                 }
 
-                if(data.acknowledgements.length > 0) {
+                if (data.acknowledgements.length > 0) {
                     source += "* [Acknowledgements](#acknowledgements)\n";
                 }
             }
 
             return source;
         },
-        getAboutThisProject: function (data) {
+        getAboutThisProject: function(data) {
             source = '';
 
-            if(data.showcaseURL || data.aboutThisProject) {
+            if (data.showcaseURL || data.aboutThisProject) {
                 source += "\n## About The Project\n\n";
 
-                if(data.showcaseURL) {
+                if (data.showcaseURL) {
                     source += "![Screen Shot](" + data.showcaseURL + ")\n\n";
                 }
-    
-                if(data.aboutThisProject) {
+
+                if (data.aboutThisProject) {
                     source += data.aboutThisProject + "\n";
                 }
             }
 
             return source;
         },
-        builtWith: function (data) {
+        builtWith: function(data) {
             source = '';
 
-            if(data.builtWith || data.builtWithList.length > 0) {
+            if (data.builtWith || data.builtWithList.length > 0) {
                 source += "\n## Built With\n\n";
                 source += data.builtWith + "\n";
-    
-                if(data.builtWithList.length > 0) {
+
+                if (data.builtWithList.length > 0) {
                     source += "\n";
                 }
 
-                for(i = 0; i < data.builtWithList.length; i++) {
+                for (i = 0; i < data.builtWithList.length; i++) {
                     source += "* [" + data.builtWithList[i].builtWithName + "](" + data.builtWithList[i].builtWithURL + ")\n";
                 }
             }
 
             return source;
         },
-        gettingStarted: function (data) {
+        gettingStarted: function(data) {
             source = '';
 
-            if(data.gettingStarted || data.prerequisites || data.installation) {
+            if (data.gettingStarted || data.prerequisites || data.installation) {
                 source += "\n## Getting Started\n\n";
 
-                if(data.gettingStarted) {
+                if (data.gettingStarted) {
                     source += data.gettingStarted + "\n";
                 }
-    
-                if(data.prerequisites) {
+
+                if (data.prerequisites) {
                     source += "\n### Prerequisites\n\n";
                     source += data.prerequisites + "\n";
                 }
-    
-                if(data.installation) {
+
+                if (data.installation) {
                     source += "\n### Installation\n\n";
                     source += data.installation + "\n";
                 }
@@ -334,45 +334,44 @@ new Vue({
 
             return source;
         },
-        getUsage: function (data) {
+        getUsage: function(data) {
             source = '';
 
-            if(data.usage) {
+            if (data.usage) {
                 source += "\n## Usage\n\n";
                 source += data.usage + "\n";
             }
 
             return source;
         },
-        getRoadmap: function (data) {
+        getRoadmap: function(data) {
             source = '';
 
-            if(data.roadmap || data.roadmapDesc) {
+            if (data.roadmap || data.roadmapDesc) {
                 sourceDesc = '';
 
-                if(data.roadmap) {
+                if (data.roadmap) {
                     sourceDesc = "See the [open issues](https://github.com/" + data.userName + "/" + data.repoName + "/issues) for a list of proposed features (and known issues).\n";
                 }
-    
+
                 source += "\n## Roadmap\n\n";
 
-                if(data.roadmap) {
+                if (data.roadmap) {
                     source += sourceDesc;
-                }
-                else {
+                } else {
                     source += data.roadmapDesc + "\n";
                 }
             }
 
             return source;
         },
-        getContributing: function (data) {
+        getContributing: function(data) {
             source = '';
 
-            if(data.contributing || data.contributingDesc || data.pullRequest) {
+            if (data.contributing || data.contributingDesc || data.pullRequest) {
                 sourceDesc = '';
 
-                if(data.contributing) {
+                if (data.contributing) {
                     sourceDesc += "Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.\n";
                     sourceDesc += "* If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/" + data.userName + "/" + data.repoName + "/issues/new) to discuss it, or directly create a pull request after you edit the *README.md* file with necessary changes.\n";
                     sourceDesc += "* Please make sure you check your spelling and grammar.\n";
@@ -381,17 +380,16 @@ new Vue({
                 }
 
                 source += "\n## Contributing\n\n";
-                if(data.contributing) {
+                if (data.contributing) {
                     source += sourceDesc;
-                }
-                else {
+                } else {
                     source += data.contributingDesc + "\n";
                 }
             }
 
             return source;
         },
-        getCreatingAPullRequest: function (data) {
+        getCreatingAPullRequest: function(data) {
             source = '';
 
             source += "\n### Creating A Pull Request\n\n";
@@ -399,45 +397,44 @@ new Vue({
 
             return source;
         },
-        getLicense: function (data) {
+        getLicense: function(data) {
             source = '';
 
-            if(data.license || data.licenseDesc) {
+            if (data.license || data.licenseDesc) {
                 source += "\n## License\n\n";
 
-                if(data.license) {
-                    source += "Distributed under the MIT License. See [LICENSE](https://github.com/" + data.userName + "/" + data.repoName + "/blob/main/LICENSE.md) for more information.\n";    
-                }
-                else {
+                if (data.license) {
+                    source += "Distributed under the MIT License. See [LICENSE](https://github.com/" + data.userName + "/" + data.repoName + "/blob/main/LICENSE.md) for more information.\n";
+                } else {
                     source += data.licenseDesc + "\n";
                 }
             }
 
             return source;
         },
-        getAuthors: function (data) {
+        getAuthors: function(data) {
             source = '';
 
             source += "\n## Authors\n\n";
 
-            for(i = 0; i < data.authors.length; i++) {
-                source += "* **" + data.authors[i].authorName + "** - *" + data.authors[i].authorDesc + "* - [" + data.authors[i].authorName + "](" + data.authors[i].authorURL + ") - *" + data.authors[i].authorContribution + "*\n"; 
+            for (i = 0; i < data.authors.length; i++) {
+                source += "* **" + data.authors[i].authorName + "** - *" + data.authors[i].authorDesc + "* - [" + data.authors[i].authorName + "](" + data.authors[i].authorURL + ") - *" + data.authors[i].authorContribution + "*\n";
             }
 
             return source;
         },
-        getAcknowledgements: function (data) {
+        getAcknowledgements: function(data) {
             source = '';
 
             source += "\n## Acknowledgements\n\n";
 
-            for(i = 0; i < data.acknowledgements.length; i++) {
+            for (i = 0; i < data.acknowledgements.length; i++) {
                 source += "* [" + data.acknowledgements[i].acknowledgementName + "](" + data.acknowledgements[i].acknowledgementURL + ")\n";
             }
 
             return source;
         },
-        getSource: function (data) {
+        getSource: function(data) {
             let source = '';
 
             if (data) {
@@ -466,22 +463,22 @@ new Vue({
 
 Vue.component('resizable-textarea', {
     methods: {
-      resizeTextarea (event) {
-        event.target.style.height = 'auto'
-        event.target.style.height = (event.target.scrollHeight) + 'px'
-      },
+        resizeTextarea(event) {
+            event.target.style.height = 'auto'
+            event.target.style.height = (event.target.scrollHeight) + 'px'
+        },
     },
-    mounted () {
-      this.$nextTick(() => {
-        this.$el.setAttribute('style', 'height:' + (this.$el.scrollHeight) + 'px;overflow-y:hidden;')
-      })
-  
-      this.$el.addEventListener('input', this.resizeTextarea)
+    mounted() {
+        this.$nextTick(() => {
+            this.$el.setAttribute('style', 'height:' + (this.$el.scrollHeight) + 'px;overflow-y:hidden;')
+        })
+
+        this.$el.addEventListener('input', this.resizeTextarea)
     },
-    beforeDestroy () {
-      this.$el.removeEventListener('input', this.resizeTextarea)
+    beforeDestroy() {
+        this.$el.removeEventListener('input', this.resizeTextarea)
     },
-    render () {
-      return this.$slots.default[0]
+    render() {
+        return this.$slots.default[0]
     },
-  });
+});
