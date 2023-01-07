@@ -1,0 +1,77 @@
+.navbar-nav li {
+  padding: 0 10px;
+}
+.navbar-nav li a {
+  text-align: right;
+  color: #fff;
+  font-size: large;
+  font-weight: 600;
+}
+.navbar {
+  background: -webkit-linear-gradient(right, #0072ff, #00c6ff);
+}
+.navbar-toggler {
+  background-color: #0ee3ff !important;
+  border: none !important;
+}
+#navbar-toggler-icon {
+  color: black;
+}
+.col-sm-2 svg {
+  align-items: center;
+}
+/**-THE UNDERLINE EFFECT OF LINK of particular page-*/
+a.left {
+  position: relative;
+}
+a.left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+a.left:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+/* **for the link with highlight for he particular page*/
+a.highlight {
+  color: white !important;
+}
+/*
+ ! Navbar contents end from here
+*/
+
+/**-----------
+*todo  Cards group
+*todo--------------------------- */
+
+.BLOCKOFCARDSGROUP {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.display-4 {
+  margin: 5%;
+}
+
+/*card effect repair-aakash*/
+.card {
+  overflow: hidden;
+}
+.card-img-top {
+  transition: all 0.3s ease-in;
+}
+.card-img-top:hover {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+.card {
+  margin: 2% 0% 2% 0%;
+  color: black;
+}

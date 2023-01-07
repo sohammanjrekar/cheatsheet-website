@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Montserrat:wght@200;400;500&family=Open+Sans:wght@300&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Color Palette</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container py-3">
+            <img src="images/colorpalettelogo.png" alt="">
+          <a class="navbar-brand fw-bold ps-4" href="#">COLOR PICK</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link fw-bold px-4 active text-purple" aria-current="page" href="#">Color Picker
+              </a>
+              <a class="nav-link fw-bold px-4" href="#Services">Explore</a>
+              <a class="nav-link fw-bold px-4" href="#ImagesPicker">More <span><i class="fas fa-chevron-down"></i></span></a>
+              <a class="nav-link fw-bold px-4" href="#GetStarted">Sign in</a>
+              <button class="btn btn-outline-purple rounded-pill px-3 fw-bold">
+                  Sign up
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Hero -->
+    <div class="hero-container">
+        <img src="images/background.png" class="position-absolute top-0 z-bottom image-crop" width="1400" alt="">
+        <div class="container">
+            <div class="row align-items-center mt-5 pt-2">
+                <div class="col-md-6 order-2">
+                    <header class="display-2 fw-bold">Pick Your Color Here!</header>
+                    <p class="py-4">Get inspired by thousands of beautiful color schemes.</p>
+                    <button class="btn btn-purple btn-lg text-light px-5 shadow rounded-pill px-3 fw-bold">Let's Go!</button>
+                </div>
+                <div class="col-md-6 order-1 order-md-2 position-relative">
+                    <img src="images/bluepalette.png" class="position-absolute translate-middle ms-5 mt-5 d-none d-md-block" width="300" alt="">
+                    <img src="images/bluepalette.png" class="position-absolute translate-middle ms-5 mt-5 d-md-none start-15" width="250" alt="">
+
+                    <img src="images/pinkpaletteframe.png" class="position-absolute ms-5 translate-middle top-80 d-none d-md-block" width="250" alt="">
+                    <img src="images/pinkpalette.png" class="position-absolute ms-5 translate-middle top-80 d-none d-md-block" width="200" alt="">
+                    <img src="images/pinkpaletteframe.png" class="position-absolute ms-5 translate-middle start-15 top-80 d-md-none" width="200" alt="">
+                    <img src="images/pinkpalette.png" class="position-absolute ms-5 translate-middle start-15 top-80 d-md-none" width="150" alt="">
+
+                    <img src="images/purplepalette.png" class="position-absolute translate-middle start-80 top-50 d-none d-md-block" width="250" alt="">
+                    <img src="images/purplepalette.png" class="position-absolute translate-middle start-75 top-50 d-md-none" width="200" alt="">
+                    <img src="images/heroimg.png" class="img-fluid" width="500" alt="">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Sevices -->
+    <div id="Services" class="container">
+        <div class="row">
+            <div class="col text-center mt-5 pt-5">
+                <h4 class="text-purple fw-bold pt-4">Our Service</h4>
+                <header class="display-6 fw-bold py-2">See Our Service Option.</header>
+            </div>
+        </div>
+        <div class="row ps-4 my-5 pb-5">
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="card w-90 h-100 border-0 border-20 shadow-sm" >
+                    <div class="card-body ps-4 pb-5">
+                        <div class="bg-lilac p-2">
+                            <img src="images/monitoricon.png" alt="">
+                        </div>
+                        <h6 class="card-title fw-bold py-2">Website</h6>
+                        <p class="card-text small">All the power of colors on your computer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="card w-90 h-100 border-0 border-20 shadow-sm" >
+                    <div class="card-body ps-4 pb-5">
+                        <div class="bg-rose p-2">
+                            <img src="images/chromeicon.png" alt="">
+                        </div>
+                        <h6 class="card-title fw-bold py-2">Chrome Extension</h6>
+                        <p class="card-text small">Get our chrome extension for color inspiration in every new tab</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="card w-90 h-100 border-0 border-20 shadow-sm" >
+                    <div class="card-body ps-4 pb-5">
+                        <div class="bg-beige p-2">
+                            <img src="images/instagramicon.png" alt="">
+                        </div>
+                        <h6 class="card-title fw-bold py-2">Instagram</h6>
+                        <p class="card-text small">Get your daily inspiration of beautiful palettes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="card w-90 h-100 border-0 border-20 shadow-sm" >
+                    <div class="card-body ps-4 pb-5">
+                        <div class="bg-darklilac p-2">
+                            <img src="images/adobeicon.png" alt="">
+                        </div>
+                        <h6 class="card-title fw-bold py-2">Adobe Extension</h6>
+                        <p class="card-text small">All palettes right into your workspace</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Images Picker -->
+    <div id="ImagesPicker" class="container">
+        <div class="row py-5 align-items-center">
+            <div class="col-lg-6 pe-5 text-center position-relative">
+                <img class="img-fluid mt-1" src="images/towerimg.png" width="410" alt="">
+                <img src="images/pointgrouppicker.png" class="img-fluid position-absolute translate-middle z-bottom top-30 start-60" width="295" alt="">
+                <img src="images/brownpalette.png" class="position-absolute translate-middle top-30 start-80 d-none d-md-block" width="350" alt="">
+                <img src="images/brownpalette.png" class="position-absolute translate-middle top-0 start-50 d-md-none" width="350" alt="">
+                <div class="position-absolute translate-middle start-45 pb-5">
+                    <img src="images/Color0.png" width="50" alt="">
+                    <img src="images/Color1.png" width="50" alt="">
+                    <img src="images/Color2.png" width="50" alt="">
+                    <img src="images/Color3.png" width="50" alt="">
+                    <img src="images/Color4.png" width="50" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 ps-5 pt-5 pt-md-0">
+                <h4 class="text-purple fw-bold">Images Picker</h4>
+                <header class="display-6 fw-bold py-2">Create Beautiful Palettes From Your Photos.</header>
+                <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia assumenda quasi numquam similique eligendi, excepturi a eveniet rerum dolor in, vel eum dolores cum voluptate fugiat maiores, sapiente ullam! Itaque!</p>
+                <button class="btn btn-purple btn-lg text-light px-5 shadow rounded-pill px-3 fw-bold">Learn More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Color Palette -->
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col text-center pt-5">
+                <h4 class="text-purple fw-bold pt-4">Color Palette</h4>
+                <header class="display-6 fw-bold py-2">Popular Color Palette</header>
+            </div>
+        </div>
+        <div id="popular-palettes" class="row my-4">
+            <!-- <div class="col-lg-4 col-md-6 my-4">
+                <div class="card border-0 w-90 border-20 shadow" >
+                    <div class="card-body ps-4 d-flex align-items-center justify-content-around">
+                        <div class="d-flex flex-column">
+                            <img class="palette-color" src="images/popularpalettes/pp1color1.png" width="65" alt="" onclick="copyColor(this)">
+                            <small class="card-text text-center pt-2" style="font-size: 10px; color: #DCCBDD;">#DCCBDD</small>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <img class="palette-color" src="images/popularpalettes/pp1color2.png" width="65" alt="" onclick="copyColor(this)">
+                            <small class="card-text text-center pt-2" style="font-size: 10px; color: #EE92C2;">#EE92C2</small>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <img class="palette-color" src="images/popularpalettes/pp1color3.png" width="65" alt="" onclick="copyColor(this)">
+                            <small class="card-text text-center pt-2" style="font-size: 10px; color: #A5BDDA;">#A5BDDA</small>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <img class="palette-color" src="images/popularpalettes/pp1color4.png" width="65" alt="" onclick="copyColor(this)">
+                            <small class="card-text text-center pt-2" style="font-size: 10px; color: #F1A4BC;">#F1A4BC</small>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 my-4">
+                <div class="card border-0 w-90 border-20 shadow" >
+                    <div class="card-body ps-4 d-flex align-items-center justify-content-around">
+                        <div class="d-flex flex-column">
+                            <img class="palette-color" src="images/popularpalettes/pp1color1.png" width="65" alt="" onclick="copyColor(this)">
+                            <small class="card-text text-center pt-2" style="font-size: 10px; color: #DCCBDD;">#DCCBDD</small>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <img class="palette-color" src="images/popularpalettes/pp1color2.png" width="65" alt="" onclick="copyColor(this)">
+                            <small class="card-text text-center pt-2" style="font-size: 10px; color: #EE92C2;">#EE92C2</small>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <img class="palette-color" src="images/popularpalettes/pp1color3.png" width="65" alt="" onclick="copyColor(this)">
+                            <small class="card-text text-center pt-2" style="font-size: 10px; color: #A5BDDA;">#A5BDDA</small>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <img class="palette-color" src="images/popularpalettes/pp1color4.png" width="65" alt="" onclick="copyColor(this)">
+                            <small class="card-text text-center pt-2" style="font-size: 10px; color: #F1A4BC;">#F1A4BC</small>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 my-4">
+                <div class="card border-0 w-90 border-20 shadow" >
+                    <div class="card-body ps-4 d-flex align-items-center justify-content-around">
+                        <div class="d-flex flex-column">
+                            <img class="palette-color" src="images/popularpalettes/pp1color1.png" width="65" alt="" onclick="copyColor(this)">
+                            <small class="card-text text-center pt-2" style="font-size: 10px; color: #DCCBDD;">#DCCBDD</small>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <img class="palette-color" src="images/popularpalettes/pp1color2.png" width="65" alt="" onclick="copyColor(this)">
+                            <small class="card-text text-center pt-2" style="font-size: 10px; color: #EE92C2;">#EE92C2</small>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <img class="palette-color" src="images/popularpalettes/pp1color3.png" width="65" alt="" onclick="copyColor(this)">
+                            <small class="card-text text-center pt-2" style="font-size: 10px; color: #A5BDDA;">#A5BDDA</small>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <img class="palette-color" src="images/popularpalettes/pp1color4.png" width="65" alt="" onclick="copyColor(this)">
+                            <small class="card-text text-center pt-2" style="font-size: 10px; color: #F1A4BC;">#F1A4BC</small>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 my-4">
+                <div class="card border-0 w-90 border-20 shadow" >
+                    <div class="card-body ps-4 d-flex align-items-center justify-content-around">
+                        <div class="d-flex flex-column">
+                            <img class="palette-color" src="images/popularpalettes/pp1color1.png" width="65" alt="" onclick="copyColor(this)">
+                            <small class="card-text text-center pt-2" style="font-size: 10px; color: #DCCBDD;">#DCCBDD</small>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <img class="palette-color" src="images/popularpalettes/pp1color2.png" width="65" alt="" onclick="copyColor(this)">
+                            <small class="card-text text-center pt-2" style="font-size: 10px; color: #EE92C2;">#EE92C2</small>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <img class="palette-color" src="images/popularpalettes/pp1color3.png" width="65" alt="" onclick="copyColor(this)">
+                            <small class="card-text text-center pt-2" style="font-size: 10px; color: #A5BDDA;">#A5BDDA</small>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <img class="palette-color" src="images/popularpalettes/pp1color4.png" width="65" alt="" onclick="copyColor(this)">
+                            <small class="card-text text-center pt-2" style="font-size: 10px; color: #F1A4BC;">#F1A4BC</small>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 my-4">
+                <div class="card border-0 w-90 border-20 shadow" >
+                    <div class="card-body ps-4 d-flex align-items-center justify-content-around">
+                        <div class="d-flex flex-column">
+                            <img class="palette-color" src="images/popularpalettes/pp1color1.png" width="65" alt="" onclick="copyColor(this)">
+                            <small class="card-text text-center pt-2" style="font-size: 10px; color: #DCCBDD;">#DCCBDD</small>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <img class="palette-color" src="images/popularpalettes/pp1color2.png" width="65" alt="" onclick="copyColor(this)">
+                            <small class="card-text text-center pt-2" style="font-size: 10px; color: #EE92C2;">#EE92C2</small>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <img class="palette-color" src="images/popularpalettes/pp1color3.png" width="65" alt="" onclick="copyColor(this)">
+                            <small class="card-text text-center pt-2" style="font-size: 10px; color: #A5BDDA;">#A5BDDA</small>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <img class="palette-color" src="images/popularpalettes/pp1color4.png" width="65" alt="" onclick="copyColor(this)">
+                            <small class="card-text text-center pt-2" style="font-size: 10px; color: #F1A4BC;">#F1A4BC</small>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 my-4">
+                <div class="card border-0 w-90 border-20 shadow" >
+                    <div class="card-body ps-4 d-flex align-items-center justify-content-around">
+                        <div class="d-flex flex-column">
+                            <img class="palette-color" src="images/popularpalettes/pp1color1.png" width="65" alt="" onclick="copyColor(this)">
+                            <small class="card-text text-center pt-2" style="font-size: 10px; color: #DCCBDD;">#DCCBDD</small>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <img class="palette-color" src="images/popularpalettes/pp1color2.png" width="65" alt="" onclick="copyColor(this)">
+                            <small class="card-text text-center pt-2" style="font-size: 10px; color: #EE92C2;">#EE92C2</small>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <img class="palette-color" src="images/popularpalettes/pp1color3.png" width="65" alt="" onclick="copyColor(this)">
+                            <small class="card-text text-center pt-2" style="font-size: 10px; color: #A5BDDA;">#A5BDDA</small>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <img class="palette-color" src="images/popularpalettes/pp1color4.png" width="65" alt="" onclick="copyColor(this)">
+                            <small class="card-text text-center pt-2" style="font-size: 10px; color: #F1A4BC;">#F1A4BC</small>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- Contact + Footer -->
+    <div id="GetStarted" class="position-relative">
+        <img src="images/footerbg.png" class="position-absolute bottom-0 z-bottom image-crop-footer" width="1230" alt="">
+        <!-- Contact -->
+        <div class="container">
+            <div class="row my-5 pt-5">
+                <div class="col-lg-5 mt-5 text-start">
+                    <h4 class="text-purple fw-bold pt-4">Get Started</h4>
+                    <header class="display-6 fw-bold py-2">Join Us To Get More Palette Color.</header>
+                </div>
+                <div class="col-lg-1 d-flex align-items-center">
+                    <span><img src="images/pointgroup.png" alt=""></span>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card w-75 border-0 px-1 shadow-sm" >
+                        <div class="card-body mx-auto">
+                            <form>
+                                <div class="my-4">
+                                <label class="form-label">Name</label>
+                                <input placeholder="Your name" type="name" class="form-control p-2 border-purple">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Email address</label>
+                                    <input placeholder="Your email address" type="email" class="form-control p-2 border-purple">
+                                </div>
+                                <button class="btn btn-purple btn-lg text-light px-5 shadow rounded-pill fw-bold my-3">Get Started</button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 text-center text-lg-start">
+                    <a class="px-md-4 px-2 text-decoration-none text-dark fw-bold" aria-current="page" href="#">Color Picker</a>
+                    <a class="px-md-4 px-2 text-decoration-none text-dark fw-bold" href="#">Explore</a>
+                    <a class="px-md-4 px-2 text-decoration-none text-dark fw-bold" href="#">More</a>
+                    <a class="px-md-4 px-2 text-decoration-none text-dark fw-bold" href="#">Our product</a>
+                </div>
+                <div class="col-lg-3 mt-lg-0 mt-3 text-center text-lg-start">
+                    <a class="px-2" href=""><img src="images/facebookicon.png" alt=""></a>
+                    <a class="px-2" href=""><img src="images/twittericon.png" alt=""></a>
+                    <a class="px-2" href=""><img src="images/instaicon.png" alt=""></a>
+                </div>
+            </div>
+            <div class="row py-4">
+                <div class="col text-center text-muted">
+                    <p class= "small">Copyright @ 2020</p>
+                    <span class= "small"><strong>UI/UX Designer:</strong> Nasyiya Ulfa</span>
+                    <span class= "small ps-3"><strong>Frontend Developer:</strong> Imran Cagla Eyuboglu</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
