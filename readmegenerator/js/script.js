@@ -33,18 +33,18 @@ Vue.component('theme-option', {
 
 new Vue({
     el: '#app',
-    data: function () {
+    data: function() {
         return {
             forced: false,
             tab: "header",
             data: {
                 language: "en",
                 theme: "default",
-                title: "my name is Arturs",
+                title: "my name is Soham",
                 subtitle: "I am GitHub Readme Generator's creator",
                 text: "I made this project just for fun, it allows you to create nice and simple GitHub Readme files that you can copy/paste and use in your profile.",
 
-                banner: "https://arturssmirnovs.github.io/github-profile-readme-generator/images/banner.png",
+                banner: "https://repository-images.githubusercontent.com/299516036/e3b81e80-0acd-11eb-9c9c-0bb892d6986e",
 
                 skills: "VUE JS / REACT / JS / HTML / CSS",
 
@@ -106,7 +106,7 @@ new Vue({
             }
         }
     },
-    mounted: function(){
+    mounted: function() {
         this.getTranslations(this.data.language).then((translations) => {
             this.data.translations = translations;
             this.source = this.getSource(this.data);
@@ -178,11 +178,11 @@ new Vue({
                 .replace(/^-+/, '')
                 .replace(/-+$/, '');
         },
-        getSource: function (data) {
+        getSource: function(data) {
             let source = '';
 
             if (data) {
-                
+
                 if (data.title) {
                     source += `### ${data.translations.markdown.hiThere} 👋, ${data.title}`;
                     source += "\n";
@@ -229,8 +229,8 @@ new Vue({
                     source += "\n";
                 }
                 if (data.reach) {
-                  source += `- 📫 ${data.translations.markdown.reach}: ${data.reach} `;
-                  source += "\n";
+                    source += `- 📫 ${data.translations.markdown.reach}: ${data.reach} `;
+                    source += "\n";
                 }
                 if (data.pronouns) {
                     source += `- 😄 ${data.translations.markdown.pronouns}: ${data.pronouns} `;
@@ -301,19 +301,19 @@ new Vue({
                 if (data.arctic) {
                     source += "<a href='https://archiveprogram.github.com/'><img src='https://raw.githubusercontent.com/acervenky/animated-github-badges/master/assets/acbadge.gif' width='40' height='40'></a> ";
                 }
-		        if (data.devprog) {
+                if (data.devprog) {
                     source += "<a href='https://docs.github.com/en/developers'><img src='https://raw.githubusercontent.com/acervenky/animated-github-badges/master/assets/devbadge.gif' width='40' height='40'></a> ";
                 }
-		        if (data.gitpro) {
+                if (data.gitpro) {
                     source += "<a href='https://github.com/pricing'><img src='https://raw.githubusercontent.com/acervenky/animated-github-badges/master/assets/pro.gif' width='40' height='40'></a> ";
                 }
-				if (data.star) {
+                if (data.star) {
                     source += "<a href='https://stars.github.com/'><img src='https://raw.githubusercontent.com/acervenky/animated-github-badges/master/assets/starbadge.gif' width='35' height='35'></a> ";
                 }
-				if (data.sponsor) {
+                if (data.sponsor) {
                     source += "<a href='https://docs.github.com/en/github/supporting-the-open-source-community-with-github-sponsors'><img src='https://raw.githubusercontent.com/acervenky/animated-github-badges/master/assets/sponsorbadge.gif' width='35' height='35'></a> ";
                 }
-		        if (data.arctic || data.devprog || data.gitpro ||data.star || data.sponsor) {
+                if (data.arctic || data.devprog || data.gitpro || data.star || data.sponsor) {
                     source += "\n";
                     source += "\n";
                 }
