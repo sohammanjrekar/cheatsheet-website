@@ -9,12 +9,12 @@ Best cheatsheets for popular programming languages, frameworks and development t
 
 ## 🤔 Why Cheatbook Website?
 
-I usually make a cheat sheet when I want to improve my skills in a programming language, a framework or a development tool. [I started doing these kinds of things a long time ago on Gist](https://gist.github.com/LeCoupa). To better keep track of the history and to let people contribute, I re-organized all of them into this single repository. Most of the content is coming from official documentation and some books I have read.
+I usually make a cheat sheet when I want to improve my skills in a programming language, a framework or a development tool. To better keep track of the history and to let people contribute, I re-organized all of them into this single repository. Most of the content is coming from official documentation and some books I have read.
 
 Feel free to take a look. You might learn new things. They have been designed to provide a quick way to assess your knowledge and to save you time.
 ## Screenshots
 
-![App Screenshot](https://github.com/sohammanjrekar/cheatsheet-website/blob/main/mainpage.png)
+![App Screenshot](https://64.media.tumblr.com/5fb82defa1a41628d1be0b077d57c17d/3593c9601c5369ea-30/s2048x3072/56bf06e2bd9f9395cc224edad2f2b4e251e35427.pnj)
 
 
 ## 📚 Table of Contents
