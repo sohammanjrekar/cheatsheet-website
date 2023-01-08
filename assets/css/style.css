@@ -49,6 +49,11 @@ button {
 
 footer a {
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    text-decoration: none !important;
+}
+
+footer a:hover {
+    color: white !important;
 }
 
 .carousel {
@@ -136,7 +141,7 @@ footer a:hover:after {
 }
 
 .navbar a:hover {
-    color: #f77b50;
+    color: #f77b50 !important;
 }
 
 h3 {
@@ -154,7 +159,7 @@ td {
 
 .button {
     display: inline-block;
-    color: #fff;
+    color: #fff !important;
     text-transform: uppercase;
     padding: 5px 6px;
     border-radius: 5px;
@@ -191,7 +196,7 @@ td {
     background: linear-gradient(to top right, #fb5475 0%, #f77b50 59%);
 }
 
-.nav1 .active {
+.nav .active {
     background-color: #fa7f33;
     color: #fb5475;
 }
@@ -224,9 +229,16 @@ footer {
     color: whitesmoke;
 }
 
+.container li {
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+
 .btn1 {
     font-size: smaller;
     background: linear-gradient(to top right, #fb5475 0%, #f77b50 59%);
+    color: rgb(253, 236, 223) !important;
+    margin: 2vh;
 }
 
 #navbarSupportedContent {
@@ -271,7 +283,7 @@ footer {
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 92.5%;
 }
 
 body {
@@ -282,6 +294,11 @@ body {
     #main {
         font-size: calc(1.6rem + 6 * ((100vw - 320px) / 680));
     }
+}
+
+.headline {
+    font-size: 1.8em;
+    font-weight: 700;
 }
 
 @media (min-width: 1000px) {
@@ -324,15 +341,15 @@ pre {
     }
 }
 
-.nav-pills .nav-link.active,
-.nav-pills .show .nav-link {
-    background-color: blueviolet;
-}
-
 .tab-pane {
     margin-top: 1vh;
     background-color: rgb(255, 223, 163);
     border-radius: 2%;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     font-size: 4vh;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 1.1em !important;
 }

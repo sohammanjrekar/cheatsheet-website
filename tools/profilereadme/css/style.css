@@ -230,7 +230,7 @@ td {
     color: whitesmoke;
 }
 
-.btn1 {
+.btn-primary {
     font-size: smaller;
     background: linear-gradient(to top right, #fb5475 0%, #f77b50 59%);
 }

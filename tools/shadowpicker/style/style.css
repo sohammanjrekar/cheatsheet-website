@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
+.titles {
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 100px 0 100px;
+    text-align: center;
+}
+
+.result {
+    border-radius: 20px;
+    border: 2px solid #00000078;
+    padding: 100px 0;
+    margin: 15px 0;
+}
+
+#element {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    background: rgb(44 14 154);
+    margin: auto;
+    border-radius: 10px;
+}
+
+.sliders {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    gap: 20px 15px;
+}
+
+.slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+.code-wrapper {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    gap: 5;
+}
+
+textarea {
+    resize: none;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin: 5px;
+}
