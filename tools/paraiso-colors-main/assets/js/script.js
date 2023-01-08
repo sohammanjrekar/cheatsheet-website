@@ -28,16 +28,15 @@ for (let i = 0; i < boxes.length; i++) {
 
     if (i < boxes.length / 4) {
         boxes[i].style.color = "#e7e9db"
-    }
-    else {
+    } else {
         boxes[i].style.color = "#2f1e2e"
     }
 
 }
 
 boxes.forEach(box =>
-    box.addEventListener("click", function (e) {
+    box.addEventListener("click", function(e) {
         navigator.clipboard.writeText(e.currentTarget.textContent);
         box.appendChild(tooltip);
-        tooltip.textContent = `COPIED!`;
+        box.innerText = `COPIED!`;
     }))
