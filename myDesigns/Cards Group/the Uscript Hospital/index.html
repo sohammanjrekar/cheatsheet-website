@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unscript Hospital Dashboard</title>
+    <!--todo CSS sytlesheets links-->
+    <link rel="stylesheet" href="https://res.cloudinary.com/dnv3ztqf1/raw/upload/v1605867164/css/css/hdft_rlcdvq.css" />
+    <!--todo Facebook and Twitter integration -->
+    <link rel="stylesheet" href="https://res.cloudinary.com/dnv3ztqf1/raw/upload/v1605867164/css/css/hdft_u0v8ky.css">
+    <!--todo fonts links-->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet">
+    <!--todo Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <style>
+        #black {
+            font-weight: 800;
+            color: black;
+        }
+
+        #white {
+            font-weight: 800;
+            color: white;
+        }
+
+        /*  #titleofcard {
+            color: white;
+        }*/
+        .card-body-1 {
+            height: 250px;
+            background-image: url("https://res.cloudinary.com/dnv3ztqf1/image/upload/v1605876829/css/dashboard/undraw_celebration_0jvk_ljsmrt.svg");
+        }
+
+        .card-body-2 {
+            height: 250px;
+            background-image: url("https://res.cloudinary.com/dnv3ztqf1/image/upload/v1605876828/css/dashboard/undraw_feeling_blue_4b7q_sh9euk.svg");
+        }
+
+        .card-body-3 {
+            height: 250px;
+            background-image: url("https://res.cloudinary.com/dnv3ztqf1/image/upload/v1605876828/css/dashboard/feature_cardiacoutput_j8tejl.png");
+        }
+
+        .card-body-4 {
+            height: 250px;
+            background-image: url("https://res.cloudinary.com/dnv3ztqf1/image/upload/v1605876828/css/dashboard/bed_zvoofz.svg");
+        }
+
+        .card-body-5 {
+            height: 250px;
+            background-image: url("https://res.cloudinary.com/dnv3ztqf1/image/upload/v1605876828/css/dashboard/ventilation_kethso.svg");
+        }
+    </style>
+    <!--todo dashboard starts here-->
+    <div class="container">
+        <br><br>
+        <!-- <h1 class="display-3 text-center">Dashboard</h1><br><br> -->
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                    <div id="titleofcard" class="card-header">
+                        <h1>Recovered</h1>
+                    </div>
+                    <div class="card-body-1">
+                        <h1 id="white" id="bold" method="POST" class="card-title">1</h1>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+                    <div id="black" class="card-header">
+                        <h1>Admitted</h1>
+                    </div>
+                    <div class="card-body-2">
+                        <h1 id="black" id="bold" method="POST" class="card-title">3</h1>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                    <div id="white" class="card-header">
+                        <h1>Decreased</h1>
+                    </div>
+                    <div class="card-body-3">
+                        <h1 id="white" id="bold" method="POST" class="card-title">1</h1>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row text-center">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 text-center">
+                <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                    <div id="white" class="card-header">
+                        <h1>Beds Free</h1>
+                    </div>
+                    <div class="card-body-4">
+                        <h1 id="white" class="card-title">47</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-light mb-3" style="max-width: 18rem;">
+                    <div id="black" class="card-header">
+                        <h1>Ventilators </h1>
+
+                    </div>
+                    <div class="card-body-5">
+                        <h1 id="black" class="card-title">19</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+
+
+        </div>
+    </div>
+    <!--todo dashboard ends here-->
+</body>
+
+</html>

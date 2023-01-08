@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+
+    <!-- Other CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Scalesoft/fontawesome-iconpicker@393acfd/dist/css/fontawesome-iconpicker.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bs-darkmode@1.2.0/css/bs-darkmode.min.css" integrity="sha256-tf7KtsTioYEaxufEmvJcTs9g0IrGiPH+EFT8DjaZlzo=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap5-toggle@3.7.3/css/bootstrap5-toggle.min.css" integrity="sha256-t86G9szZguJjgAlbfl35Y4D1pwAyLGsSrD2xmUXgMIQ=" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Montez|Lobster|Josefin+Sans|Shadows+Into+Light|Pacifico|Amatic+SC:700|Orbitron:400,900|Rokkitt|Righteous|Dancing+Script:700|Bangers|Chewy|Sigmar+One|Architects+Daughter|Abril+Fatface|Covered+By+Your+Grace|Kaushan+Script|Gloria+Hallelujah|Satisfy|Lobster+Two:700|Comfortaa:700|Cinzel|Courgette|Annie+Use+Your+Telescope|Baloo|Bowlby+One+SC|Bungee+Inline|Cabin+Sketch|Caveat|Contrail+One|Damion|Economica|Fascinate+Inline|Faster+One|Fredericka+the+Great|Gabriela|Just+Another+Hand|Kodchasan|Love+Ya+Like+A+Sister|Megrim|Monoton|Mouse+Memoirs|Podkova|Pompiere|Quicksand|Reenie+Beanie|Rokkitt|Six+Caps|Source+Sans+Pro|Special+Elite|Spicy+Rice|VT323|Wire+One"
+        rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="../../assets/img/mainlogo.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <title>Simple Logo Generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
+
+    <style>
+        .iconpicker-popover.popover .popover-title {
+            background-color: var(--gray-100);
+        }
+        
+        .iconpicker .iconpicker-items {
+            background-color: var(--body-bg);
+        }
+        
+        .card-header {
+            background-color: rgb(1, 4, 45);
+            color: white;
+        }
+        
+        .input-group-prepend span,
+        input-group-text {
+            background-color: #f77b50;
+        }
+        
+        #fav-container,
+        #logo-container {
+            margin-top: 3vh;
+            margin-bottom: 3vh;
+            border: #f77b50 solid 2px;
+        }
+    </style>
+    <style>
+        .scroll-to-top {
+            background-color: #f77b50 !important;
+            text-decoration: none !important;
+        }
+        
+        .scroll-to-top:hover {
+            background: #f77b50 !important;
+            text-decoration: none !important;
+        }
+        
+        footer .scroll-to-top {
+            text-decoration: none !important;
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: rgb(1,4,45);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../assets/img/mainlogo.jpg" alt="" style="height: 7vh;"> Cheatbook
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                    </li>
+                    <!-- web develpoment -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            WebDev
+                        </a>
+                        <ul class="dropdown-menu multi-column columns-2">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a class="dropdown-item" href="../../languages/webdev/html.html">HTML</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/css.html">CSS</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/javascript.html">JavaScript</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/react.html">Reacjs</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/nextjs.html">Nextjs</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/angularjs.html">Angularjs</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/angular.html">Angular</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/Vuejs.html">vuejs</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/redux.html">Redux</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a class="dropdown-item" href="../../languages/webdev/flask.html">Flask</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/django.html">Django</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/php.html">PHP</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/nodejs.html">Nodejs</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/expressjs.html">Expressjs</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/fastapi.html">FastAPI</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/bootstrap.html">Bootstrap</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/tailwindcss.html">Tailwind css</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <!-- programming -->
+                    <li class="nav-item dropdown mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Programming</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../languages/programming/cplus.html">C++</a></li>
+                            <li><a class="dropdown-item" href="../../languages/programming/c.html">C</a></li>
+                            <li><a class="dropdown-item" href="../../languages/programming/java.html">Java</a></li>
+                            <li><a class="dropdown-item" href="../../languages/programming/python.html">Python</a></li>
+                            <li><a class="dropdown-item" href="../../languages/programming/perl.html">Perl</a></li>
+                            <li><a class="dropdown-item" href="../../languages/programming/ruby.html">Perl</a></li>
+                            <li><a class="dropdown-item" href="../../languages/programming/r.html">R language</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="../../languages/programming/dsa.html">DSA</a></li>
+                        </ul>
+                    </li>
+                    <!-- Machine learning -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ML</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../languages/ML/numpy.html">Numpy</a></li>
+                            <li><a class="dropdown-item" href="../../languages/ML/pandas.html">Pandas</a></li>
+                            <li><a class="dropdown-item" href="../../languages/ML/matplotlib.html">Matplotlib</a></li>
+                            <li><a class="dropdown-item" href="../../languages/ML/tensorflow.html">Tensorflow</a></li>
+                            <li><a class="dropdown-item" href="../../languages/ML/seaborn.html">Seaborn</a></li>
+                            <li><a class="dropdown-item" href="../../languages/ML/powerbi.html">Power BI</a></li>
+
+                            <li><a class="dropdown-item" href="../../languages/ML/scipy.html">scipy</a></li>
+                            <li><a class="dropdown-item" href="../../languages/ML/sklearn.html">sklearn</a></li>
+                            <li><a class="dropdown-item" href="../../languages/ML/tableau.html">tableau</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../languages/ML/machinelearning.html">Machine Learning</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- databases -->
+                    <li class="nav-item dropdown mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Databases
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../languages/database/mysql.html">MYSQL</a></li>
+                            <li><a class="dropdown-item" href="../../languages/database/mongodb.html">MongoDB</a></li>
+                            <li><a class="dropdown-item" href="../../languages/database/postsql.html">PostgrelSQL</a></li>
+                        </ul>
+                    </li>
+                    <!-- App development-->
+                    <li class="nav-item dropdown mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        AppDev
+    </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../languages/appdev/android.html">Android</a></li>
+                            <li><a class="dropdown-item" href="../../languages/appdev/kotlin.html">Kotlin</a></li>
+                            <li><a class="dropdown-item" href="../../languages/appdev/reactnative.html">ReactNative</a></li>
+                        </ul>
+                    </li>
+                    <!-- Devops -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        DevOps
+    </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../languages/docker.html">Docker</a></li>
+                            <li><a class="dropdown-item" href="../../languages/jenkins.html">jenkins</a></li>
+                            <li><a class="dropdown-item" href="../../languages/kubernetes.html">kubernetes</a></li>
+                            <li><a class="dropdown-item" href="../../languages/maven.html">Maven</a></li>
+                            <li><a class="dropdown-item" href="../../languages/git.html">Git</a> </li>
+                            <li><a class="dropdown-item" href="../../languages/bamboo.html">Bamboo</a> </li>
+                            <li><a class="dropdown-item" href="../../languages/Vagrant.html">Vagrant</a> </li>
+                            <li><a class="dropdown-item" href="../../languages/Prometheus.html">Prometheus</a> </li>
+
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <!-- <li>
+                                <a class="dropdown-item" href="languages/powerbi.html">Power BI</a>
+                            </li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+       Tools
+    </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../tools/shadowpicker/index.html">Shadow Picker</a></li>
+                            <li><a class="dropdown-item" href="../../tools/readmemaker/index.html">Github Project Readme</a></li>
+                            <li><a class="dropdown-item" href="../../tools/profilereadme/index.html">Github Profile Readme</a></li>
+                            <li><a class="dropdown-item" href="../../tools/gradientcolour/gradientcolorpicker.html">Gradient Colour Picker</a></li>
+                            <li><a class="dropdown-item" href="../../tools/colourchoose/index.html">Colour Picker</a> </li>
+                            <li><a class="dropdown-item" href="../../tools/codereview/index.html">Simple Code Editor</a> </li>
+                            <li><a class="dropdown-item" href="../../tools/banner/index.html">Banner Maker</a> </li>
+                            <li><a class="dropdown-item" href="../../tools/logomaker/index.html">Logo & Favicon Maker</a> </li>
+                            <li><a class="dropdown-item" href="../../tools/paraiso-colors-main/index.html">colour plates</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <a href="../../myDesigns/index.html">
+                    <div class="button btn1 mx-1" style="font-size: 1em;">My Designs</div>
+                </a>
+
+
+            </div>
+        </div>
+    </nav>
+    <!-- mid part -->
+    <nav class="mt-5 p-2 headline" style="background:linear-gradient(to top right, #fb5475 0%, #f77b50 59%);">
+        <div class="text-center " style="margin-top:5vh;"><img style="margin-right:2vh;" src="../../assets/img/mainlogo.jpg" alt="" /> Simple Logo Generator
+        </div>
+    </nav>
+    <div style="width: 800px; margin: 0 auto;padding-top:3vh;padding-bottom:3vh;font-size:2vh;">
+        <div class="row mb-2">
+            <div class="col-md-6 mb-2 mb-md-0">
+                <div class="card border-secondary">
+                    <div class="card-header d-flex align-items-center">
+                        <span class="flex-grow-1 font-weight-bold">Global</span>
+                        <button class="btn btn-light btn-xs button" type="button" data-toggle="collapse" data-target="#global-fieldset" aria-expanded="true" aria-controls="global-fieldset"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="card-body text-secondary collapsible collapse show" id="global-fieldset">
+                        <div class="input-group input-group-sm mb-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Layout</span>
+                            </div>
+                            <input type="checkbox" checked data-toggle="toggle" data-on="Horizontal" data-off="Vertical" data-onstyle="outline-dark" data-offstyle="outline-secondary" data-size="sm" data-param="layout" data-component="global" id="layout-toggle">
+                        </div>
+                        <div class="input-group input-group-sm mb-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Shapes</span>
+                            </div>
+                            <input type="checkbox" checked data-toggle="toggle" data-on="On" data-off="Off" data-onstyle="outline-dark" data-offstyle="outline-secondary" data-size="sm" data-param="shapes" data-component="global" id="shapes-toggle">
+                        </div>
+                        <div class="input-group input-group-sm">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Offset</span>
+                            </div>
+                            <input type="color" id="offset-clr" value="#f2f2f2" class="form-control" aria-label="color" aria-describedby="basic-addon1" data-param="offsetColor" data-component="global" />
+                            <input type="range" class="form-control custom-range w-25" data-param="offsetSize" data-component="global" value="0" min="0" max="10" step=".5" id="offset_size-rng" />
+                            <div class="input-group-append" data-display="value">
+                                <span class="input-group-text" id="offset_size-value">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card border-secondary">
+                    <div class="card-header d-flex align-items-center">
+                        <span class="flex-grow-1 font-weight-bold">Icon</span>
+                        <button class="btn btn-light btn-xs" type="button" data-toggle="collapse" data-target="#icon-fieldset" aria-expanded="true" aria-controls="icon-fieldset"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="card-body text-secondary collapsible collapse show" id="icon-fieldset">
+                        <div class="input-group input-group-sm mb-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Icon</span>
+                            </div>
+                            <div class="input-group-apppend ml-1">
+                                <div class="btn-group d-flex btn-group-sm">
+                                    <button id="icp-component" type="button" class="btn btn-outline-secondary iconpicker-component w-100">
+                        <i class="fa fa-fw fa-heart" aria-hidden="true"></i>
+                      </button>
+                                    <button id="icp" type="button" class="btn btn-secondary dropdown-toggle" data-selected="fa-car" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                                    <div class="dropdown-menu"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group input-group-sm mb-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Size</span>
+                            </div>
+                            <input type="range" class="form-control custom-range" value="48" min="25" max="100" step="1" id="icon-sz" data-param="fontSize" data-component="icon" />
+                            <div class="input-group-append" data-display="value">
+                                <span class="input-group-text" id="icon_size-value">48</span>
+                            </div>
+                        </div>
+                        <div class="input-group input-group-sm">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Color</span>
+                            </div>
+                            <input type="color" id="icon-clr" class="form-control" aria-label="color" aria-describedby="basic-addon1" data-param="color" data-component="icon" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card border-secondary mb-2">
+            <div class="card-header d-flex align-items-center">
+                <span class="flex-grow-1 font-weight-bold">Main</span>
+                <button class="btn btn-light btn-xs" type="button" data-toggle="collapse" data-target="#main-fieldset" aria-expanded="true" aria-controls="main-fieldset"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
+            </div>
+            <div class="card-body text-secondary collapsible collapse show" id="main-fieldset">
+                <div class="input-group input-group-sm mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Text</span>
+                    </div>
+                    <input type="text" id="main-input" class="form-control" aria-label="outblock" aria-describedby="basic-addon1" data-param="text" data-component="main" />
+                </div>
+                <div class="input-group input-group-sm mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Font</span>
+                    </div>
+                    <input type="color" id="main-clr" class="form-control" aria-label="color" aria-describedby="basic-addon1" data-param="color" data-component="main" />
+                    <select id="main_font-select" class="form-control w-50" aria-label="font" aria-describedby="basic-addon1" data-param="fontFamily" data-component="main"></select>
+                    <input type="checkbox" checked data-toggle="toggle" data-on="Bold" data-off="Normal" data-onstyle="outline-dark" data-offstyle="outline-secondary" data-size="sm" data-param="font_weight" data-component="main" id="main_weight-toggle">
+                </div>
+                <div class="row mb-2">
+                    <div class="input-group input-group-sm mb-2 mb-md-0 col-md-6">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Size</span>
+                        </div>
+                        <input type="range" class="form-control custom-range" value="48" min="10" max="100" step="1" id="main-sz" data-param="fontSize" data-component="main" />
+                        <div class="input-group-append" data-display="value">
+                            <span class="input-group-text" id="main_size-value">48</span>
+                        </div>
+                    </div>
+                    <div class="input-group input-group-sm col-md-6">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Letter spacing</span>
+                        </div>
+                        <input type="range" class="form-control custom-range" data-param="letter_space" data-component="main" value="0" min="0" max="20" step="1" id="main_letter_space-rng" />
+                        <div class="input-group-append" data-display="value">
+                            <span class="input-group-text" id="main_letter_space-value">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card border-secondary mb-2">
+            <div class="card-header d-flex align-items-center">
+                <span class="flex-grow-1 font-weight-bold">Accent</span>
+                <button class="btn btn-light btn-xs" type="button" data-toggle="collapse" data-target="#accent-fieldset" aria-expanded="true" aria-controls="accent-fieldset"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
+            </div>
+            <div class="card-body text-secondary collapsible collapse show" id="accent-fieldset">
+                <div class="input-group input-group-sm mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Text</span>
+                    </div>
+                    <input type="text" id="accent-input" class="form-control" aria-label="inblock" aria-describedby="basic-addon1" data-param="text" data-component="accent" />
+                </div>
+                <div class="input-group input-group-sm mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Font</span>
+                    </div>
+                    <input type="color" value="#cccccc" id="accent-clr" class="form-control" aria-label="color2" aria-describedby="basic-addon1" data-param="color" data-component="accent" />
+                    <select id="accent_font-select" class="form-control w-50" aria-label="font" aria-describedby="basic-addon1" data-param="fontFamily" data-component="accent"></select>
+                    <input type="checkbox" checked data-toggle="toggle" data-on="Bold" data-off="Normal" data-onstyle="outline-dark" data-offstyle="outline-secondary" data-size="sm" data-param="font_weight" data-component="accent" id="accent_weight-toggle">
+                </div>
+                <div class="row mb-2">
+                    <div class="input-group input-group-sm mb-2 mb-md-0 col-md-6">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Size</span>
+                        </div>
+                        <input type="range" class="form-control custom-range" value="48" min="10" max="100" step="1" id="accent-sz" data-param="fontSize" data-component="accent" />
+                        <div class="input-group-append" data-display="value">
+                            <span class="input-group-text" id="accent_size-value">48</span>
+                        </div>
+                    </div>
+                    <div class="input-group input-group-sm col-md-6">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Letter spacing</span>
+                        </div>
+                        <input type="range" class="form-control custom-range" data-param="letter_space" data-component="accent" value="0" min="0" max="20" step="1" id="accent_letter_space-rng" />
+                        <div class="input-group-append" data-display="value">
+                            <span class="input-group-text" id="accent_letter_space-value">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group input-group-sm">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Effects</span>
+                    </div>
+                    <div class="btn-group ml-1" role="group" aria-label="Basic example">
+                        <a class="btn btn-outline-secondary btn-sm" id="compliment_color-btn">Compliment Color</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="container row">
+            <div id="fav-container" class="col-md-6 text-center">
+                <p class="font-weight-bold">Favicon</p>
+                <canvas id="fav-canvas" style="border: none solid #d3d3d3" class="mt-1"></canvas>
+            </div>
+
+            <div id="logo-container" class="col-md-6 text-center">
+                <p class="font-weight-bold">Logo</p>
+                <canvas id="logo-canvas" style="border: none solid #d3d3d3" class="mt-1"></canvas>
+            </div>
+
+        </section>
+
+        <div class="btn-toolbar mb-2" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="input-group input-group-sm">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Format</div>
+                </div>
+                <select id="export_format-select" class="form-control text-uppercase" aria-label="format" aria-describedby="basic-addon1" style="font-size: 7vh;">
+              <option value="image/png">png</option>
+              <option value="image/jpeg">jpg</option>
+              <option value="image/webp">webp</option>
+              <option value="image/svg+xml">svg</option>
+            </select>
+            </div>
+            <div class="btn-group btn-group-sm ml-1" role="group" aria-label="First group">
+                <a href="#" class="btn btn1 button mx-3" id="fav_download-btn" download="favicon.png" style="font-size: 4vh;color:white;border-radius:5px;">Download
+              favicon</a>
+                <a href="#" class="btn btn1  button mx-2 btn" id="logo_download-btn" download="logo.png" style="font-size: 4vh;color:white;border-radius:5px;">Download
+              logo</a>
+            </div>
+        </div>
+
+        <div class="card-deck mb-2">
+            <div class="card border-secondary">
+                <div class="card-header d-flex align-items-center">
+                    <span class="flex-grow-1 font-weight-bold">Export Configuration</span>
+                    <button class="btn btn-light btn-xs" type="button" data-toggle="collapse" data-target=".imp_exp_conf" aria-expanded="false" aria-controls="exp_conf-fieldset imp_conf-fieldset"><i
+                  class="fas fa-chevron-up" aria-hidden="true"></i></button>
+                </div>
+                <div class="card-body text-secondary collapsible collapse imp_exp_conf" id="exp_conf-fieldset">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">Export</div>
+                        </div>
+                        <div class="input-group-append">
+                            <a href="#" class="btn btn-outline-secondary" id="conf_download-btn" download="simplegen.json">Download
+                    Configuration</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-secondary">
+                <div class="card-header d-flex align-items-center">
+                    <span class="flex-grow-1 font-weight-bold">Import Configuration</span>
+                    <button class="btn btn-light btn-xs" type="button" data-toggle="collapse" data-target=".imp_exp_conf" aria-expanded="false" aria-controls="exp_conf-fieldset imp_conf-fieldset"><i
+                  class="fas fa-chevron-up" aria-hidden="true"></i></button>
+                </div>
+                <div class="card-body text-secondary collapsible collapse imp_exp_conf" id="imp_conf-fieldset">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="conf_upload-fs" accept=".json">
+                        <label class="custom-file-label" for="conf_upload-fs">Choose file</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-lg-start bg-dark text-muted footer-dark mt-5" style="background-color: rgb(1,4,45) !important;">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-lg-between p-4 border-bottom" style="color: white">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block" style="font-size: 1.7em;">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+            <!-- Right -->
+            <div>
+                <!-- Facebook -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i
+        class="bi bi-facebook"></i></a>
+                <!-- Twitter -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i
+        class="bi bi-twitter"></i></a>
+                <!-- Google -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i
+        class="bi bi-google"></i></a>
+                <!-- Instagram -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i
+        class="bi bi-instagram"></i></a>
+                <!-- Linkedin -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #0082ca" href="https://www.linkedin.com/in/mr-soham-manjrekar/" role="button"><i class="bi bi-linkedin"></i></a>
+                <!-- Github -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #333333" href="https://github.com/sohammanjrekar" role="button"><i class="bi bi-github"></i></a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+        <!-- Section: Links  -->
+        <section class="links" style="color: white">
+            <div class="container text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-8 col-lg-8 col-xl-8 mx-auto mb-4">
+                        <!-- Content -->
+                        <h2 class="text-uppercase fw-bold mb-4">
+                            <i class="bi bi-gem me-3"></i>Cheatbook
+                        </h2>
+                        <p>
+                            <li>Quick reference</li>
+                            <li>Be productive after learning a new thing
+                            </li>
+                            <li>Quickly recall when forget some syntax</li>
+                            <li>Use snippets for rapid development</li>
+                        </p>
+                    </div>
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4" style="font-size: 1.3em;">
+                        <!-- Links -->
+                        <h2 class="text-uppercase fw-bold mb-4">Contact</h2>
+                        <p><i class="bi bi-house-door me-3"></i>Badlapur,mumbai</p>
+                        <p><i class="bi bi-envelope me-3"></i> mrsohammanjrekar@gmail.com</p>
+                        <p><i class="bi bi-phone me-3"></i> +91 7045208474</p>
+                        <p><i class="bi bi-whatsapp me-3"></i> +91 7045208474</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);color:white;word-spacing: 3px;">
+            © 2022 Copyright:
+            <a class="text-reset fw-bold" href="https://github.com/sohammanjrekar">cheatbook.com</a> created by Soham Manjrekar
+        </div>
+        <!-- Copyright -->
+        <a class="js-scroll-trigger scroll-to-top rounded" href="#page-top"><i class="fa fa-angle-up"></i></a>
+    </footer>
+    <!-- Footer -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Scalesoft/fontawesome-iconpicker@393acfd/dist/js/fontawesome-iconpicker.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs-darkmode@1.2.0/js/bs-darkmodejquery.min.js" integrity="sha256-F2n4uDLTOf7uGUhhaW0zzfed4SPHEToImxLu3FHaga8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap5-toggle@3.7.3/js/bootstrap5-toggle.min.js" integrity="sha256-ctgYdt/F2ief8nbGZXReoYssWvM5rSwz6sS0CFcyy2c=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input@1.3.4/dist/bs-custom-file-input.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas2svg-visjs@1.0.21/canvas2svg.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/simplegen.js"></script>
+</body>
+
+</html>

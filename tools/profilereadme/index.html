@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n="title">GitHub profile readme generator</title>
+    <link rel="shortcut icon" href="../../assets/img/mainlogo.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/vue-simple-markdown.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../../myDesigns/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="../../myDesigns/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../../myDesigns/assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../../myDesigns/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../../myDesigns/assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <style>
+        .scroll-to-top {
+            background-color: #f77b50 !important;
+            text-decoration: none !important;
+        }
+        
+        .scroll-to-top:hover {
+            background: #f77b50 !important;
+            text-decoration: none !important;
+        }
+        
+        footer .scroll-to-top {
+            text-decoration: none !important;
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: rgb(1,4,45);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../assets/img/mainlogo.jpg" alt="" style="height: 7vh;"> Cheatbook
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                    </li>
+                    <!-- web develpoment -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            WebDev
+                        </a>
+                        <ul class="dropdown-menu multi-column columns-2">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a class="dropdown-item" href="../../languages/webdev/html.html">HTML</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/css.html">CSS</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/javascript.html">JavaScript</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/react.html">Reacjs</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/nextjs.html">Nextjs</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/angularjs.html">Angularjs</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/angular.html">Angular</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/Vuejs.html">vuejs</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/redux.html">Redux</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a class="dropdown-item" href="../../languages/webdev/flask.html">Flask</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/django.html">Django</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/php.html">PHP</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/nodejs.html">Nodejs</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/expressjs.html">Expressjs</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/fastapi.html">FastAPI</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/bootstrap.html">Bootstrap</a></li>
+                                        <li><a class="dropdown-item" href="../../languages/webdev/tailwindcss.html">Tailwind css</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <!-- programming -->
+                    <li class="nav-item dropdown mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Programming</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../languages/programming/cplus.html">C++</a></li>
+                            <li><a class="dropdown-item" href="../../languages/programming/c.html">C</a></li>
+                            <li><a class="dropdown-item" href="../../languages/programming/java.html">Java</a></li>
+                            <li><a class="dropdown-item" href="../../languages/programming/python.html">Python</a></li>
+                            <li><a class="dropdown-item" href="../../languages/programming/perl.html">Perl</a></li>
+                            <li><a class="dropdown-item" href="../../languages/programming/ruby.html">Perl</a></li>
+                            <li><a class="dropdown-item" href="../../languages/programming/r.html">R language</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="../../languages/programming/dsa.html">DSA</a></li>
+                        </ul>
+                    </li>
+                    <!-- Machine learning -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ML</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../languages/ML/numpy.html">Numpy</a></li>
+                            <li><a class="dropdown-item" href="../../languages/ML/pandas.html">Pandas</a></li>
+                            <li><a class="dropdown-item" href="../../languages/ML/matplotlib.html">Matplotlib</a></li>
+                            <li><a class="dropdown-item" href="../../languages/ML/tensorflow.html">Tensorflow</a></li>
+                            <li><a class="dropdown-item" href="../../languages/ML/seaborn.html">Seaborn</a></li>
+                            <li><a class="dropdown-item" href="../../languages/ML/powerbi.html">Power BI</a></li>
+
+                            <li><a class="dropdown-item" href="../../languages/ML/scipy.html">scipy</a></li>
+                            <li><a class="dropdown-item" href="../../languages/ML/sklearn.html">sklearn</a></li>
+                            <li><a class="dropdown-item" href="../../languages/ML/tableau.html">tableau</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../languages/ML/machinelearning.html">Machine Learning</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- databases -->
+                    <li class="nav-item dropdown mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Databases
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../languages/database/mysql.html">MYSQL</a></li>
+                            <li><a class="dropdown-item" href="../../languages/database/mongodb.html">MongoDB</a></li>
+                            <li><a class="dropdown-item" href="../../languages/database/postsql.html">PostgrelSQL</a></li>
+                        </ul>
+                    </li>
+                    <!-- App development-->
+                    <li class="nav-item dropdown mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        AppDev
+    </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../languages/appdev/android.html">Android</a></li>
+                            <li><a class="dropdown-item" href="../../languages/appdev/kotlin.html">Kotlin</a></li>
+                            <li><a class="dropdown-item" href="../../languages/appdev/reactnative.html">ReactNative</a></li>
+                        </ul>
+                    </li>
+                    <!-- Devops -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        DevOps
+    </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../languages/docker.html">Docker</a></li>
+                            <li><a class="dropdown-item" href="../../languages/jenkins.html">jenkins</a></li>
+                            <li><a class="dropdown-item" href="../../languages/kubernetes.html">kubernetes</a></li>
+                            <li><a class="dropdown-item" href="../../languages/maven.html">Maven</a></li>
+                            <li><a class="dropdown-item" href="../../languages/git.html">Git</a> </li>
+                            <li><a class="dropdown-item" href="../../languages/bamboo.html">Bamboo</a> </li>
+                            <li><a class="dropdown-item" href="../../languages/Vagrant.html">Vagrant</a> </li>
+                            <li><a class="dropdown-item" href="../../languages/Prometheus.html">Prometheus</a> </li>
+
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <!-- <li>
+                                <a class="dropdown-item" href="languages/powerbi.html">Power BI</a>
+                            </li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+       Tools
+    </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../tools/shadowpicker/index.html">Shadow Picker</a></li>
+                            <li><a class="dropdown-item" href="../../tools/readmemaker/index.html">Github Project Readme</a></li>
+                            <li><a class="dropdown-item" href="../../tools/profilereadme/index.html">Github Profile Readme</a></li>
+                            <li><a class="dropdown-item" href="../../tools/gradientcolour/gradientcolorpicker.html">Gradient Colour Picker</a></li>
+                            <li><a class="dropdown-item" href="../../tools/colourchoose/index.html">Colour Picker</a> </li>
+                            <li><a class="dropdown-item" href="../../tools/codereview/index.html">Simple Code Editor</a> </li>
+                            <li><a class="dropdown-item" href="../../tools/banner/index.html">Banner Maker</a> </li>
+                            <li><a class="dropdown-item" href="../../tools/logomaker/index.html">Logo & Favicon Maker</a> </li>
+                            <li><a class="dropdown-item" href="../../tools/paraiso-colors-main/index.html">colour plates</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <a href="../../myDesigns/index.html">
+                    <div class="button btn1 mx-1" style="font-size: 1em;">My Designs</div>
+                </a>
+
+
+            </div>
+        </div>
+    </nav>
+    <!-- mid part -->
+    <nav class="mt-5 p-2 headline" style="background:linear-gradient(to top right, #fb5475 0%, #f77b50 59%);">
+        <div class="text-center " style="margin-top:5vh;"><img style="margin-right:2vh;" src="../../assets/img/mainlogo.jpg" alt="" /> Github Project Readme Maker
+        </div>
+    </nav>
+    <div class="container-fluid px-5 py-1">
+        <div id="app" class="container-xl">
+            <app-view class="row">
+                <app-content class="col-xs-12 col-md-6 mt-3">
+                    <div class="card code-editor-card rounded-0 pb-3 px-3" id="inputdata">
+                        <nav class="nav nav-pills nav-justified" style="background-color: rgb(45, 1, 11);color:white">
+                            <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'header'" :class="[tab == 'header' ? 'active' : '', '']" data-i18n="navbar.header">Header</a>
+                            <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'additional'" :class="[tab == 'additional' ? 'active' : '', '']" data-i18n="navbar.additional">Additional</a>
+                            <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'social'" :class="[tab == 'social' ? 'active' : '', '']" data-i18n="navbar.spocial">Social</a>
+                            <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'stats'" :class="[tab == 'stats' ? 'active' : '', '']" data-i18n="navbar.others">Others</a>
+                        </nav>
+
+                        <div v-show="tab == 'header'" class="tab">
+                            <h3 data-i18n="header.title">Header</h3>
+
+                            <div class="form-group">
+                                <label data-i18n="header.heading">Heading</label>
+                                <input type="text" v-model="data.title" data-i18n="header.headingPlaceholder header.heading" data-i18n-attr="placeholder aria-label" placeholder="Enter text..." class="form-control" aria-label="Heading" />
+                            </div>
+
+                            <div class="form-group">
+                                <label data-i18n="header.subtitle">Subtitle</label>
+                                <input type="text" v-model="data.subtitle" data-i18n="header.subtitlePlaceholder header.subtitle" data-i18n-attr="placeholder aria-label" placeholder="Enter text..." class="form-control" aria-label="Subtitle" />
+                            </div>
+
+                            <div class="form-group">
+                                <label data-i18n="header.aboutMe">About me</label>
+                                <textarea v-model="data.text" data-i18n="header.aboutMePlaceholder header.aboutMe" data-i18n-attr="placeholder aria-label" placeholder="Enter text.." class="form-control" aria-label="About me">{{data.text}}</textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label data-i18n="header.skills">Skills</label>
+                                <input type="text" v-model="data.skills" data-i18n="header.skillsPlaceholder header.skills" data-i18n-attr="placeholder aria-label" placeholder="Enter skills..." class="form-control" aria-label="Skills" />
+                            </div>
+
+                            <div class="form-group">
+                                <label data-i18n="header.bannerUrl">Banner URL</label>
+                                <input type="text" v-model="data.banner" data-i18n="header.bannerUrlPlaceholder header.bannerUrl" data-i18n-attr="placeholder aria-label" placeholder="Enter URL..." class="form-control" aria-label="Banner URL" />
+                            </div>
+                        </div>
+
+                        <div v-show="tab == 'additional'" class="tab">
+                            <h3 data-i18n="additional.title">Additional information</h3>
+
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="form-group">
+                                        <label data-i18n="additional.working">🔭 I'm currently working on...</label>
+                                        <input type="text" v-model="data.working" data-i18n="additional.workingPlaceholder additional.working" data-i18n-attr="placeholder aria-label" placeholder="Enter details..." class="form-control" aria-label="I'm currently working on..." />
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="form-group">
+                                        <label data-i18n="additional.learning">🌱 I'm currently learning...</label>
+                                        <input type="text" v-model="data.learning" data-i18n="additional.learningPlaceholder additional.learning" data-i18n-attr="placeholder aria-label" placeholder="Enter details..." class="form-control" aria-label="I'm currently learning..." />
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="form-group">
+                                        <label data-i18n="additional.collaborate">👯 I want to collaborate on...</label>
+                                        <input type="text" v-model="data.collaborate" data-i18n="additional.collaboratePlaceholder additional.collaborate" data-i18n-attr="placeholder aria-label" placeholder="Enter details..." class="form-control" aria-label="I'm looking to collaborate on..."
+                                        />
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="form-group">
+                                        <label data-i18n="additional.help">🤔 I'm looking for help with...</label>
+                                        <input type="text" v-model="data.help" data-i18n="additional.helpPlaceholder additional.help" data-i18n-attr="placeholder aria-label" placeholder="Enter details..." class="form-control" aria-label="I'm looking for help with..." />
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="form-group">
+                                        <label data-i18n="additional.ask">💬 Ask me about...</label>
+                                        <input type="text" v-model="data.ask" data-i18n="additional.askPlaceholder additional.ask" data-i18n-attr="placeholder aria-label" placeholder="Enter details..." class="form-control" aria-label="Ask me about..." />
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="form-group">
+                                        <label data-i18n="additional.reach">📫 How to reach me:</label>
+                                        <input type="text" v-model="data.reach" data-i18n="additional.reachPlaceholder additional.reach" data-i18n-attr="placeholder aria-label" placeholder="Enter details..." class="form-control" aria-label="How to reach me" />
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="form-group">
+                                        <label data-i18n="additional.pronouns">😄 Pronouns:</label>
+                                        <input type="text" v-model="data.pronouns" data-i18n="additional.pronounsPlaceholder additional.pronouns" data-i18n-attr="placeholder aria-label" placeholder="Enter details..." class="form-control" aria-label="Pronouns" />
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="form-group">
+                                        <label data-i18n="additional.fun">⚡ Fun fact:</label>
+                                        <input type="text" v-model="data.fact" data-i18n="additional.funPlaceholder additional.fun" data-i18n-attr="placeholder aria-label" placeholder="Enter details..." class="form-control" aria-label="Fun fact:" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div v-show="tab == 'social'" class="tab">
+                            <h3 data-i18n="social.title">Social information</h3>
+
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="form-group">
+                                        <div class="social-title">
+                                            <brand-logo brand="github"></brand-logo>
+                                            <label data-i18n="social.github">GitHub</label>
+                                        </div>
+                                        <input type="text" v-model="data.github" data-i18n="social.githubPlaceholder social.github" data-i18n-attr="placeholder aria-label" placeholder="Enter your username..." class="form-control" aria-label="Github" />
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="form-group">
+                                        <div class="social-title">
+                                            <brand-logo brand="dev-dot-to"></brand-logo>
+                                            <label data-i18n="social.devto">DEV.TO</label>
+                                        </div>
+                                        <input type="text" v-model="data.dev" data-i18n="social.devtoPlaceholder social.devto" data-i18n-attr="placeholder aria-label" placeholder="Enter username..." class="form-control" aria-label="DEV.TO" />
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="form-group">
+                                        <div class="social-title">
+                                            <brand-logo brand="hashnode"></brand-logo>
+                                            <label data-i18n="social.hashnode">Hashnode</label>
+                                        </div>
+                                        <input type="text" v-model="data.hashnode" data-i18n="social.hashnodePlaceholder social.hashnode" data-i18n-attr="placeholder aria-label" placeholder="Enter blog URL..." class="form-control" aria-label="Hashnode" />
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="form-group">
+                                        <div class="social-title">
+                                            <brand-logo brand="linkedin"></brand-logo>
+                                            <label data-i18n="social.linkedin">LinkedIn</label>
+                                        </div>
+                                        <input type="text" v-model="data.linkedin" data-i18n="social.linkedinPlaceholder social.linkedin" data-i18n-attr="placeholder aria-label" placeholder="Enter your username..." class="form-control" aria-label="LinkedIn" />
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="form-group">
+                                        <div class="social-title">
+                                            <brand-logo brand="facebook"></brand-logo>
+                                            <label data-i18n="social.facebook">Facebook</label>
+                                        </div>
+                                        <input type="text" v-model="data.facebook" data-i18n="social.facebookPlaceholder social.facebook" data-i18n-attr="placeholder aria-label" placeholder="Enter your username..." class="form-control" aria-label="Facebook" />
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="form-group">
+                                        <div class="social-title">
+                                            <brand-logo brand="instagram"></brand-logo>
+                                            <label data-i18n="social.instagram">Instagram</label>
+                                        </div>
+                                        <input type="text" v-model="data.instagram" data-i18n="social.instagramPlaceholder social.instagram" data-i18n-attr="placeholder aria-label" placeholder="Enter your username..." class="form-control" aria-label="Instagram" />
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="form-group">
+                                        <div class="social-title">
+                                            <brand-logo brand="twitter"></brand-logo>
+                                            <label data-i18n="social.twitter">Twitter</label>
+                                        </div>
+                                        <input type="text" v-model="data.twitter" data-i18n="social.twitterPlaceholder social.twitter" data-i18n-attr="placeholder aria-label" placeholder="Enter your username..." class="form-control" aria-label="Twitter" />
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="form-group">
+                                        <div class="social-title">
+                                            <brand-logo brand="codepen"></brand-logo>
+                                            <label data-i18n="social.codepen">Codepen</label>
+                                        </div>
+                                        <input type="text" v-model="data.codepen" data-i18n="social.codepenPlaceholder social.codepen" data-i18n-attr="placeholder aria-label" placeholder="Enter your username..." class="form-control" aria-label="codepen" />
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="form-group">
+                                        <div class="social-title">
+                                            <brand-logo brand="codesandbox"></brand-logo>
+                                            <label data-i18n="social.codeSandbox">CodeSandbox</label>
+                                        </div>
+                                        <input type="text" v-model="data.codesandbox" data-i18n="social.codeSandboxPlaceholder social.codeSandbox" data-i18n-attr="placeholder aria-label" placeholder="Enter your username..." class="form-control" aria-label="CodeSandbox" />
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="form-group">
+                                        <div class="social-title">
+                                            <brand-logo brand="stackoverflow"></brand-logo>
+                                            <label data-i18n="social.stackOverflow">Stack Overflow</label>
+                                        </div>
+                                        <input type="text" v-model="data.stackoverflow" data-i18n="social.stackOverflowPlaceholder social.stackOverflow" data-i18n-attr="placeholder aria-label" placeholder="Enter your user ID..." class="form-control" aria-label="Stack Overflow" />
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="form-group">
+                                        <div class="social-title">
+                                            <brand-logo brand="youtube"></brand-logo>
+                                            <label data-i18n="social.youtube">YouTube</label>
+                                        </div>
+                                        <input type="text" v-model="data.youtube" data-i18n="social.youtubePlaceholder social.youtube" data-i18n-attr="placeholder aria-label" placeholder="Enter your user ID..." class="form-control" aria-label="YouTube" />
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="form-group">
+                                        <div class="social-title">
+                                            <brand-logo brand="reddit"></brand-logo>
+                                            <label data-i18n="social.reddit">Reddit</label>
+                                        </div>
+                                        <input type="text" v-model="data.reddit" data-i18n="social.redditPlaceholder social.reddit" data-i18n-attr="placeholder aria-label" placeholder="Enter your username..." class="form-control" aria-label="Reddit" />
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-md-12">
+                                    <div class="form-group">
+                                        <div class="social-title">
+                                            <brand-logo brand="icloud"></brand-logo>
+                                            <label data-i18n="social.website">Website</label>
+                                        </div>
+                                        <input type="text" v-model="data.website" data-i18n="social.websitePlaceholder social.website" data-i18n-attr="placeholder aria-label" placeholder="Enter URL..." class="form-control" aria-label="Website" />
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-md-12">
+                                    <h4 data-i18n="social.others">Others</h4>
+                                </div>
+                                <div class="col-xs-12 col-md-12" v-for="item in data.items">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-6">
+                                            <div class="form-group">
+                                                <label data-i18n="social.icon">Icon</label>
+                                                <select v-model="item.icon" class="form-control">
+                                            <option v-for="icon in icons" :value="icon.title">{{icon.title}}</option>
+                                        </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-6">
+                                            <div class="form-group">
+                                                <label data-i18n="social.link">Link</label>
+                                                <input type="text" v-model="item.value" data-i18n="social.linkPlaceholder social.link" data-i18n-attr="placeholder aria-label" placeholder="Enter URL..." class="form-control" aria-label="Enter URL..." />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-12">
+                                    <button @click="addItem" class="btn btn1" data-i18n="social.addButton">Add more</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div v-show="tab == 'stats'" class="tab">
+
+                            <div class="row">
+                                <div class="col-xs-12 col-md-12">
+                                    <div class="form-group mb-4">
+                                        <div class="social-title">
+                                            <label data-i18n="social.github">GitHub</label>
+                                        </div>
+                                        <input type="text" v-model="data.github" data-i18n="social.githubPlaceholder social.github" data-i18n-attr="placeholder aria-label" placeholder="Enter your username..." class="form-control mb-2" aria-label="Github" />
+                                        <p data-i18n="statistics.description">GitHub username required</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div v-bind:class="[data.github ? 'social-stats active' : 'social-stats disabled']">
+                                <h3 data-i18n="statistics.title">Statistics</h3>
+
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="custom-control custom-checkbox mb-2">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1" v-model="data.views" :disabled="!data.github">
+                                            <label class="custom-control-label" for="customCheck1" data-i18n="statistics.showViews">Show profile views</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="custom-control custom-checkbox mb-2">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2" v-model="data.stats" :disabled="!data.github">
+                                            <label class="custom-control-label" for="customCheck2" data-i18n="statistics.showStats">Show GitHub statistics</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="custom-control custom-checkbox mb-2">
+                                            <input type="checkbox" class="custom-control-input" id="activityStats" v-model="data.activityGraph" :disabled="!data.github">
+                                            <label class="custom-control-label" for="activityStats" data-i18n="statistics.activityGraph">Show GitHub Activity Graph</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="custom-control custom-checkbox mb-2">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck3" v-model="data.languages" :disabled="!data.github">
+                                            <label class="custom-control-label" for="customCheck3" data-i18n="statistics.showLanguages">Show most used languages</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="custom-control custom-checkbox mb-2">
+                                            <input type="checkbox" class="custom-control-input" id="defaultCheck4" v-model="data.private" :disabled="!data.stats" :disabled="!data.github">
+                                            <label class="custom-control-label" for="defaultCheck4" data-i18n="statistics.includePrivate">Include private repositories</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h3 class="mt-3" data-i18n="trophies.title">Github Trophies</h3>
+
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="custom-control custom-checkbox mb-2">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck4" v-model="data.trophy" :disabled="!data.github">
+                                            <label class="custom-control-label" for="customCheck4" data-i18n="trophies.showTrophies">Show Trophies</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h3 class="mt-3" data-i18n="badges.title">Github Badges</h3>
+
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="custom-control custom-checkbox mb-2">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck5" v-model="data.arctic" :disabled="!data.github">
+                                            <label class="custom-control-label" for="customCheck5" data-i18n="badges.arctic">Arctic Contributor</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="custom-control custom-checkbox mb-2">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck6" v-model="data.devprog" :disabled="!data.github">
+                                            <label class="custom-control-label" for="customCheck6" data-i18n="badges.devProgram">Developer Program</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="custom-control custom-checkbox mb-2">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck7" v-model="data.star" :disabled="!data.github">
+                                            <label class="custom-control-label" for="customCheck7" data-i18n="badges.starsProgram">Stars Program</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="custom-control custom-checkbox mb-2">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck8" v-model="data.sponsor" :disabled="!data.github">
+                                            <label class="custom-control-label" for="customCheck8" data-i18n="badges.sponsor">Sponsor</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="custom-control custom-checkbox mb-2">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck9" v-model="data.gitpro" :disabled="!data.github">
+                                            <label class="custom-control-label" for="customCheck9" data-i18n="badges.pro">Github Pro</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h3 class="mt-3" data-i18n="metrics.title">GitHub Metrics</h3>
+
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="custom-control custom-checkbox mb-2">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck10" v-model="data.metrics" :disabled="!data.github">
+                                            <label class="custom-control-label" for="customCheck10" data-i18n="metrics.showMetrics">Show GitHub metrics</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h3 class="mt-3" data-i18n="streak.title">GitHub Streak Stats</h3>
+
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="custom-control custom-checkbox mb-2">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck11" v-model="data.streak" :disabled="!data.github">
+                                            <label class="custom-control-label" for="customCheck11" data-i18n="streak.showStreak">Show GitHub Streak Stats</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card mb-4  mt-5">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="card-title" data-i18n="code.title">👨‍💻 Code</h5>
+                                <button class="btn btn1 mb-2 d-flex" @click="copyCode">
+                                    <svg style="width: 1.5rem; height: 1.5rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg> &nbsp;
+                                    <span data-i18n="code.copyButton">Copy</span>
+                                </button>
+                            </div>
+                            <div class="alert alert-danger" role="alert" v-if="forced" data-i18n="warning">
+                                Changing source manually could result in lost of data if you use generation fields again.
+                            </div>
+                            <!-- TODO: Highlight the textarea as markdown code -->
+                            <textarea rows=20 wrap="on" v-model="source" @keyup="onKeyUp" class="form-control" ref="code">{{ source }}</textarea>
+                        </div>
+                    </div>
+                </app-content>
+
+                <app-sidebar class="col-xs-12 col-md-6 mt-3">
+                    <div class="card code-editor-card rounded-0" id="inputdata1">
+                        <div class="card-header" style="background-color: rgb(1,4,45);color:white">
+                            <div class="d-flex justify-content-between">
+                                <div class="col-auto">
+                                    <b>Preview &#x1F534; &#x1F535; &#x1F534;</b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <vue-markdown :source="source"></vue-markdown>
+                        </div>
+                    </div>
+                </app-sidebar>
+            </app-view>
+
+        </div>
+
+    </div>
+    <!-- Footer -->
+    <footer class="text-lg-start bg-dark text-muted footer-dark mt-5" style="background-color: rgb(1,4,45) !important;">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-lg-between p-4 border-bottom" style="color: white">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block" style="font-size: 1.7em;">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+            <!-- Right -->
+            <div>
+                <!-- Facebook -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i
+        class="bi bi-facebook"></i></a>
+                <!-- Twitter -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i
+        class="bi bi-twitter"></i></a>
+                <!-- Google -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i
+        class="bi bi-google"></i></a>
+                <!-- Instagram -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i
+        class="bi bi-instagram"></i></a>
+                <!-- Linkedin -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #0082ca" href="https://www.linkedin.com/in/mr-soham-manjrekar/" role="button"><i class="bi bi-linkedin"></i></a>
+                <!-- Github -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #333333" href="https://github.com/sohammanjrekar" role="button"><i class="bi bi-github"></i></a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+        <!-- Section: Links  -->
+        <section class="links" style="color: white">
+            <div class="container text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-8 col-lg-8 col-xl-8 mx-auto mb-4">
+                        <!-- Content -->
+                        <h2 class="text-uppercase fw-bold mb-4">
+                            <i class="bi bi-gem me-3"></i>Cheatbook
+                        </h2>
+                        <p>
+                            <li>Quick reference</li>
+                            <li>Be productive after learning a new thing
+                            </li>
+                            <li>Quickly recall when forget some syntax</li>
+                            <li>Use snippets for rapid development</li>
+                        </p>
+                    </div>
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4" style="font-size: 1.3em;">
+                        <!-- Links -->
+                        <h2 class="text-uppercase fw-bold mb-4">Contact</h2>
+                        <p><i class="bi bi-house-door me-3"></i>Badlapur,mumbai</p>
+                        <p><i class="bi bi-envelope me-3"></i> mrsohammanjrekar@gmail.com</p>
+                        <p><i class="bi bi-phone me-3"></i> +91 7045208474</p>
+                        <p><i class="bi bi-whatsapp me-3"></i> +91 7045208474</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);color:white;word-spacing: 3px;">
+            © 2022 Copyright:
+            <a class="text-reset fw-bold" href="https://github.com/sohammanjrekar">cheatbook.com</a> created by Soham Manjrekar
+        </div>
+        <!-- Copyright -->
+        <a class="js-scroll-trigger scroll-to-top rounded" href="#page-top"><i class="fa fa-angle-up"></i></a>
+    </footer>
+    <!-- Footer -->
+    <!-- Footer -->
+    <script src="js/vue.js"></script>
+    <script src="js/icons.js"></script>
+    <script src="js/markdown.js"></script>
+    <script src="js/translator.js"></script>
+    <script src="js/script.js?v=2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="../../myDesigns/assets/js/jquery.min.js"></script>
+    <script src="../../myDesigns/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="../../myDesigns/assets/js/stylish-portfolio.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script>
+        const faviconTag = document.getElementById("faviconTag");
+        const isDark = window.matchMedia("(prefers-color-scheme: dark)");
+        const changeFavicon = () => {
+            if (isDark.matches) faviconTag.href = "./images/github-dark.png";
+            else faviconTag.href = "./images/github-light.png";
+        };
+
+        changeFavicon();
+
+        isDark.addEventListener('change', changeFavicon);
+    </script>
+</body>
+
+</html>

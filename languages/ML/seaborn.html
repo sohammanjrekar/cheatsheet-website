@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Seaborn cheatsheet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../prismjs/prism.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../prismjs/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: rgb(1,4,45);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/mainlogo.jpg" alt="" style="height: 8vh;">Cheatbook</a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"> <span
+                    class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"> <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <!-- web develpoment -->
+                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Web development </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="html.html">HTML</a></li>
+                            <li><a class="dropdown-item" href="css.html">CSS</a></li>
+                            <li> <a class="dropdown-item" href="javascript.html">JavaScript</a> </li>
+                            <li><a class="dropdown-item" href="nodejs.html">Nodejs</a></li>
+                            <li><a class="dropdown-item" href="react.html">Reactjs</a></li>
+                            <li><a class="dropdown-item" href="nextjs.html">Nextjs</a></li>
+                            <li> <a class="dropdown-item" href="angularjs.html">Angularjs</a> </li>
+                            <li><a class="dropdown-item" href="flask.html">Flask</a></li>
+                            <li><a class="dropdown-item" href="django.html">Django</a></li>
+                            <li><a class="dropdown-item" href="php.html">PHP</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li> <a class="dropdown-item" href="bootstrap.html">Bootstrap</a> </li>
+                            <li> <a class="dropdown-item" href="tailwindcss.html">Tailwind css</a> </li>
+                        </ul>
+                    </li>
+                    <!-- programming -->
+                    <li class="nav-item dropdown mx-1"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Programming Languages </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cplus.html">C++</a></li>
+                            <li><a class="dropdown-item" href="c.html">C</a></li>
+                            <li><a class="dropdown-item" href="java.html">Java</a></li>
+                            <li><a class="dropdown-item" href="python.html">Python</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="dsa.html">DSA</a></li>
+                        </ul>
+                    </li>
+                    <!-- Machine learning -->
+                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Machine learning </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="numpy.html">Numpy</a></li>
+                            <li><a class="dropdown-item" href="pandas.html">Pandas</a></li>
+                            <li> <a class="dropdown-item" href="matplotlib.html">Matplotlib</a> </li>
+                            <li> <a class="dropdown-item" href="tensorflow.html">Tensorflow</a> </li>
+                            <li> <a class="dropdown-item" href="seaborn.html">Seaborn</a> </li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li> <a class="dropdown-item" href="powerbi.html">Power BI</a> </li>
+                        </ul>
+                    </li>
+                    <!-- databases -->
+                    <li class="nav-item dropdown mx-1"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Databases </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="mysql.html">MYSQL</a></li>
+                            <li> <a class="dropdown-item" href="mongodb.html">MongoDB</a> </li>
+                            <li> <a class="dropdown-item" href="postsql.html">PostgrelSQL</a> </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link" href="../contact.html">Contact</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="../about.html">About Us</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- mid part -->
+    <nav class="mt-5 pt-1">
+        <div class="text-center " style="font-size: 5vh; font-weight: 900;padding-top:2vh"> <img src="../img/seaborn.svg" alt="" style="height:10vh" /> Seaborn cheatsheet </div>
+    </nav>
+    <div class="container">
+        <div class="p-5 mb-4 bg-light rounded-3 jumbo mt-2">
+            <div class="container-fluid py-3">
+                <h1 class="display-5 fw-bold">Seaborn</h1>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="fs-4"> Seaborn is a library mostly used for statistical plotting in Python. It is built on top of Matplotlib and provides beautiful default styles and color palettes to make statistical plots more attractive. </p>
+                    </div>
+                    <div class="col-md-4"> <img src="../img/seaborn.svg" alt="" style="width:100% ;" /> </div>
+                </div> <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#o1" aria-controls="o1"> Read More... </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o1" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"> seaborn </h5> <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p> Seaborn is an amazing visualization library for statistical graphics plotting in Python. It provides beautiful default styles and color palettes to make statistical plots more attractive. It is built on the top of matplotlib library
+                            and also closely integrated to the data structures from pandas. <br> Different categories of plot in Seaborn <br> <br> Plots are basically used for visualizing the relationship between variables. Those variables can be either
+                            be completely numerical or a category like a group, class or division. Seaborn divides plot into the below categories – <br> <br> Relational plots: This plot is used to understand the relation between two variables. <br><br>                            Categorical plots: This plot deals with categorical variables and how they can be visualized. <br> <br> Distribution plots: This plot is used for examining univariate and bivariate distributions <br><br> Regression plots: The
+                            regression plots in seaborn are primarily intended to add a visual guide that helps to emphasize patterns in a dataset during exploratory data analyses. <br><br> Matrix plots: A matrix plot is an array of scatterplots. <br><br>                            Multi-plot grids: It is an useful approach is to draw multiple instances of the same plot on different subsets of the dataset.
+                            <br> <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ol>
+            <!-- offcanvas -->
+            <li> starter template
+                <pre class="language-python">                <code>                    pip install seaborn                </code>            </pre>
+            </li>
+            <li> Dist plot <button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o22" aria-controls="o22"> Read More... </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o22" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"> Dist plot </h5> <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p> Seaborn dist plot is used to plot a histogram, with some other variations like kdeplot and rugplot.
+                        </p>
+                    </div>
+                </div>
+                <pre class="language-python">                <code>   # Plot a simple histogram and kde                
+                         # with binsize determined automatically                   
+                          sns.distplot(d, kde=True, color="m")</code>                </pre>
+            </li>
+            <li> Line plot <button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o23" aria-controls="o23"> Read More... </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o23" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"> Line plot </h5> <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p> The line plot is one of the most basic plot in seaborn library. This plot is mainly used to visualize the data in form of some time series, i.e. in continuous manner. </p>
+                    </div>
+                </div>
+                <pre class="language-python">    <code>        # Plot the responses for different
+                        # events and regions
+                        sns.lineplot(x="timepoint",y="signal",hue="region", style="event", data=fmri)</code></pre>
+            </li>
+            <li> Lmplot<button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o24" aria-controls="o24"> Read More... </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o24" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"> Lmplot </h5> <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p> The lmplot is another most basic plot. It shows a line representing a linear regression model along with data points on the 2D-space and x and y can be set as the horizontal and vertical labels respectively.</p>
+                    </div>
+                </div>
+                <pre class="language-python">    <code>        # Show the results of a linear regression        
+                        sns.lmplot(x="x", y="y", data=df)</code></pre>
+            </li>
+            <li> set style of background of plot
+                <pre class="language-python"><code>sns.set(style="    ")</code>                </pre>
+            </li>
+            <li> Swarmplot
+                <pre class="language-python"><code>ax = sns.swarmplot(x='   ', y='    ', data=df )</code></pre>
+            </li>
+            <li> giving title to the plot
+                <pre class="language-python"><code>plt.title('     ');</code></pre>
+            </li>
+            <li> function to show plot
+                <pre class="language-python"><code>plt.show()</code></pre>
+            </li>
+            <li>Barplot<button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o92" aria-controls="o92"> Read More... </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o92" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"> Barplot </h5> <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body"> A barplot is basically used to aggregate the categorical data according to some methods and by default it’s the mean. It can also be understood as a visualization of the group by action. To use this plot we choose a categorical column
+                        for the x-axis and a numerical column for the y-axis, and we see that it creates a plot taking a mean per categorical column. <br>
+                        <br> Syntax: <br> barplot([x, y, hue, data, order, hue_order, …])
+                    </div>
+                </div>
+                <pre class="language-python">
+                    <code>sns.barplot(x ='   ', y ='    ', data = df,  
+                        palette ='plasma')</code>
+                </pre>
+            </li>
+            <li> Countplot<button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o91" aria-controls="o91"> Read More... </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o91" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Countplot </h5> <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body"> A countplot basically counts the categories and returns a count of their occurrences. It is one of the simplest plots provided by the seaborn library. <br>
+                        <br> Syntax: <br> countplot([x, y, hue, data, order, …])
+                    </div>
+                </div>
+                <pre class="language-python"><code>sns.countplot(x ='sex', data = df)</code></pre>
+            </li>
+            <li>Boxplot<button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o94" aria-controls="o94"> Read More... </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o94" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"> Boxplot</h5> <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body"> Box Plot is the visual representation of the depicting groups of numerical data through their quartiles. Boxplot is also used to detect the outlier in the data set.
+                        <br>
+                        <br> Syntax:
+                        <br> boxplot([x, y, hue, data, order, hue_order, …])
+                    </div>
+                </div>
+                <pre class="language-python">
+                    <code>sns.boxplot(x='     ', y='   ', data=df, hue='')</code>
+                </pre>
+            </li>
+            <li>Violinplot<button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o95" aria-controls="o95"> Read More... </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o95" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Violinplot</h5> <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">It is similar to the boxplot except that it provides a higher, more advanced visualization and uses the kernel density estimation to give a better description about the data distribution.
+                        <br><br> Syntax:
+                        <br> violinplot([x, y, hue, data, order, …])
+                    </div>
+                </div>
+                <pre class="language-python">
+                <code>sns.violinplot(x='', y='', data=df,hue='', split=True)</code>
+            </pre>
+            </li>
+            <li>Stripplot<button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o96" aria-controls="o96"> Read More... </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o96" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Stripplot</h5> <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">It basically creates a scatter plot based on the category.
+                        <br> <br> Syntax: <br> stripplot([x, y, hue, data, order, …]) <br>
+                    </div>
+                </div>
+                <pre class="language-python">
+            <code>sns.stripplot(x='  ', y='   ', data=df,jitter=True, hue='  ', dodge=True)</code>
+        </pre>
+            </li>
+            <li>Seaborn Figure Stylest<button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o96" aria-controls="o96"> Read More... </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o96" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Seaborn Figure Styles</h5> <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        This affects things like the color of the axes, whether a grid is enabled by default, and other aesthetic elements.
+                        <br> <br> The ways of styling themes are as follows:
+                        <br> white <br> dark
+                        <br> whitegrid
+                        <br> darkgrid
+                        <br> ticks
+                        <br>
+                    </div>
+                </div>
+                <pre class="language-python">
+        <code>sns.set_style('white')</code>
+    </pre>
+            </li>
+            <li>Removing Axes Spines<button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o96" aria-controls="o96"> Read More... </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o96" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Removing Axes Spines</h5> <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        The despine() is a function that removes the spines from the right and upper portion of the plot by default. sns.despine(left = True) helps remove the spine from the left.
+                    </div>
+                </div>
+                <pre class="language-python">
+    <code>sns.despine()</code>
+</pre>
+            </li>
+            <li>Size and aspect<button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o81" aria-controls="o81"> Read More... </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o81" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Size and aspect</h5> <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        Non grid plot: The figure() is a matplotlib function used to plot the figures. The figsize is used to set the size of the figure.
+
+                    </div>
+                </div>
+                <pre class="language-python">
+<code>plt.figure(figsize =(12, 3))</code>
+</pre>
+            </li>
+            <li>Scale and Context<button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o82" aria-controls="o82"> Read More... </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o82" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Scale and Context</h5> <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        The set_context() allows us to override default parameters. This affects things like the size of the labels, lines, and other elements of the plot, but not the overall style.
+                        <br> <br> The context are: <br>
+                        <br> poster <br> paper <br> notebook <br> talk <br>
+                    </div>
+                </div>
+                <pre class="language-python">
+<code>sns.set_context('poster', font_scale = 2)</code>
+</pre>
+            </li>
+            <li>
+                color_palette() types<button class="btn btn-primary mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o2" aria-controls="o2">
+      Read More...
+    </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o2" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                            color_palette() types −
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p>
+                            Syntax: seaborn.color_palette(palette=None, n_colors=None, desat=None)
+                            <br> Parameters:
+                            <br> palette: Name of palette or None to return current palette. <br> n_colors: Number of colors in the palette. <br> desat: Proportion to desaturate each color. <br> Returns: list of RGB tuples or matplotlib.colors.Colormap
+                            <br>
+                            <br> types: <br>
+                            <ul>
+                                <li> Qualitative</li>
+                                <li>
+                                    Sequential</li>
+                                <li>
+                                    Diverging</li>
+                            </ul>
+                        </p>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Qualitative
+              </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        A qualitative palette is used when the variable is categorical in nature, the color assigned to each group need to be distinct. <br> Each possible value of the variable is assigned one color from a qualitative palette
+                                        within a plot as shown in figure.
+                                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210120124130/Capture.JPG" alt="" style="width: 90%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c2" aria-expanded="false" aria-controls="c2">
+                Sequential
+              </button>
+                                </h2>
+                                <div id="c2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        In sequential palettes color moved sequentially from a lighter to a darker. When the variable assigned to be colored is numeric or has inherently ordered values, then it can be depicted with a sequential palette as shown in figure.
+                                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210120131623/Capture.JPG" alt="" style="width: 90%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c3" aria-expanded="false" aria-controls="c3">
+                Diverging
+              </button>
+                                </h2>
+                                <div id="c3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        When we work on mixed value like +ve and -ve(low and high values) then diverging palette is the best suit for visualization.<img src="https://media.geeksforgeeks.org/wp-content/uploads/20210120124544/Capture.JPG"
+                                            alt="" style="width: 90%;">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Qualitative
+            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <pre class="language-python">
+                    <code>
+                        current_palette = sns.color_palette()
+                        sns.palplot(current_palette)
+                        plt.show()
+                    </code>
+                </pre>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c2" aria-expanded="false" aria-controls="c2">
+              Sequential
+            </button>
+                        </h2>
+                        <div id="c2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <pre class="language-python">
+                    <code>
+                        current_palette = sns.color_palette()
+                        sns.palplot(current_palette)
+                        plt.show()
+                    </code>
+                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c3" aria-expanded="false" aria-controls="c3">
+              Diverging
+            </button>
+                        </h2>
+                        <div id="c3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <pre class="language-python">
+                    <code>
+                        current_palette = sns.color_palette()
+                        sns.palplot(sns.color_palette("terrain_r", 7))
+                        plt.show()
+                    </code>
+                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </li>
+        </ol>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-dark text-muted footer-dark">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style="color: white">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block"> <span>Get connected with us on social networks:</span> </div>
+            <!-- Left -->
+            <!-- Right -->
+            <div>
+                <!-- Facebook --><a class="btn text-white btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i class="bi bi-facebook"></i></a>
+                <!-- Twitter --><a class="btn text-white btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i
+                        class="bi bi-twitter"></i></a>
+                <!-- Google --><a class="btn text-white btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="bi bi-google"></i></a>
+                <!-- Instagram --><a class="btn text-white btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i class="bi bi-instagram"></i></a>
+                <!-- Linkedin --><a class="btn text-white btn-floating m-1" style="background-color: #0082ca" href="https://www.linkedin.com/in/mr-soham-manjrekar/" role="button"><i
+                        class="bi bi-linkedin"></i></a>
+                <!-- Github --><a class="btn text-white btn-floating m-1" style="background-color: #333333" href="https://github.com/sohammanjrekar" role="button"><i
+                        class="bi bi-github"></i></a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+        <!-- Section: Links  -->
+        <section class="links" style="color: white">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4"> <i class="bi bi-gem me-3"></i>Cheatbook </h6>
+                        <p>
+                            <li>Quick reference</li>
+                            <li> Be productive after learning a new thing (i.e. programming language) </li>
+                            <li>Quickly recall when forget some syntax</li>
+                            <li>Use snippets for rapid development</li>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Programming Languages</h6>
+                        <p> <a href="c.html" class="text-reset">C</a> </p>
+                        <p> <a href="cplus.html" class="text-reset">C++</a> </p>
+                        <p> <a href="python.html" class="text-reset">Python</a> </p>
+                        <p> <a href="java.html" class="text-reset">Java</a> </p>
+                        <p> <a href="dsa.html" class="text-reset">DSA</a> </p>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Machine learning</h6>
+                        <p> <a href="numpy.html" class="text-reset">Numpy</a> </p>
+                        <p> <a href="pandas.html" class="text-reset">Pandas</a> </p>
+                        <p> <a href="seaborn.html" class="text-reset">Seaborn</a> </p>
+                        <p> <a href="matplotlib.html" class="text-reset">Matplotlib</a> </p>
+                        <p> <a href="tensorflow.html" class="text-reset">Tensorflow</a> </p>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="bi bi-house-door me-3"></i>Badlapur,mumbai</p>
+                        <p> <i class="bi bi-envelope me-3"></i> mrsohammanjrekar@gmail.com </p>
+                        <p><i class="bi bi-phone me-3"></i> +91 7045208474</p>
+                        <p><i class="bi bi-whatsapp me-3"></i> +91 7045208474</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)"> © 2022 Copyright: <a class="text-reset fw-bold" href="https://mdbootstrap.com/">cheatbook.com</a> created by Soham Manjrekar </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+</body>
+
+</html>
