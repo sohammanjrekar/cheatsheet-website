@@ -1,139 +1,107 @@
+<br/>
+<p align="center">
+  <a href="https://github.com/sohammanjrekar/Cheatsheet-website">
+    <img src="https://64.media.tumblr.com/ec1a80266d8d1ba9769c64ede9b9c21e/97996cf094df18db-f0/s1280x1920/3812eb722d8787418e613712c2a5a89e236ab3a4.jpg" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">CheatBook Website</h3>
+
+  <p align="center">
+    The Best Developers Under One Roof
+    <br/>
+    <br/>
+    <a href="https://github.com/sohammanjrekar/Cheatsheet-website"><strong>Explore the docs »</strong></a>
+    <br/>
+    <br/>
+    <a href="https://sohammanjrekar.github.io/cheatsheet-website/">View Demo</a>
+    .
+    <a href="https://github.com/sohammanjrekar/Cheatsheet-website/issues">Report Bug</a>
+    .
+    <a href="https://github.com/sohammanjrekar/Cheatsheet-website/issues">Request Feature</a>
+  </p>
+</p>
+
+![Downloads](https://img.shields.io/github/downloads/sohammanjrekar/Cheatsheet-website/total) ![Contributors](https://img.shields.io/github/contributors/sohammanjrekar/Cheatsheet-website?color=dark-green) ![Forks](https://img.shields.io/github/forks/sohammanjrekar/Cheatsheet-website?style=social) ![Stargazers](https://img.shields.io/github/stars/sohammanjrekar/Cheatsheet-website?style=social) ![Issues](https://img.shields.io/github/issues/sohammanjrekar/Cheatsheet-website) [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/sohammanjrekar/cheatsheet-website/blob/main/LICENSE) 
+
+## Table Of Contents
+
+* [About the Project](#about-the-project)
+* [Built With](#built-with)
+* [Usage](#usage)
+* [Features](#features)
+* [Roadmap](#roadmap)
+* [Contributing](#contributing)
+* [License](#license)
+* [Authors](#authors)
+* [Acknowledgements](#acknowledgements)
+
+## About The Project
+
+![Screen Shot](https://64.media.tumblr.com/5fb82defa1a41628d1be0b077d57c17d/3593c9601c5369ea-30/s1280x1920/b517747cc76cad90adbe80585b58e09029a5e991.pnj)
 
 
- [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/sohammanjrekar/cheatsheet-website/blob/main/LICENSE)
+Best cheatsheets for popular programming languages, frameworks and development tools. They include everything you should know in one single Website.
 
-**WEBSITE DIRECTORY**: [Available here](https://sohammanjrekar.github.io/cheatsheet-website/).
+I usually make a cheat sheet when I want to improve my skills in a programming language, a framework or a development tool. I started doing these kinds of things a long time ago on Gist. To better keep track of the history and to let people contribute, I re-organized all of them into this single repository. Most of the content is coming from official documentation and some books I have read.
 
-
-Best cheatsheets for popular programming languages, frameworks and development tools. They include everything you should know in one single website.
-
-## 🤔 Why Cheatbook Website?
-
-I usually make a cheat sheet when I want to improve my skills in a programming language, a framework or a development tool. To better keep track of the history and to let people contribute, I re-organized all of them into this single repository. Most of the content is coming from official documentation and some books I have read.
 
 Feel free to take a look. You might learn new things. They have been designed to provide a quick way to assess your knowledge and to save you time.
-## Screenshots
 
-![App Screenshot](https://64.media.tumblr.com/5fb82defa1a41628d1be0b077d57c17d/3593c9601c5369ea-30/s2048x3072/56bf06e2bd9f9395cc224edad2f2b4e251e35427.pnj)
+## Built With
+
+Cheatseet website using HTML, CSS and JS.
+
+* [Html](https://www.w3schools.com/html/)
+* [CSS](https://www.w3schools.com/css/default.asp)
+* [JavaScript](https://www.w3schools.com/js/default.asp)
+* [PrismJS](https://prismjs.com/)
+* [Bootstrap](https://getbootstrap.com/)
+
+## Usage
+
+Simply open in any Browser.
 
 
-## 📚 Table of Contents
 
-### 📃 Languages
 
-<details>
-<summary>View cheatsheets</summary>
 
-#### Command line interface
+## Features:
+1)  cheatsheets for popular programming languages, frameworks and development tools.
+2)   Github Project Readme Maker
+3)   Github  Profile Readme Maker
+4)   Colour Picker
+5)   Shadow Picker
+6)   Gradient Colour picker
+7)   Banner Maker
+8)   Logo & Favicon Maker
+9)   Simple Code viewer    etc...
 
-- [Bash](languages/bash.sh)
+## Roadmap
 
-#### Imperative
+See the [open issues](https://github.com/sohammanjrekar/Cheatsheet-website/issues) for a list of proposed features (and known issues).
 
-- [C](languages/C.txt)
-- [C#](languages/C%23.txt)
-- [Go](languages/golang.md)
-- [Java](languages/java.md)
-- [PHP](languages/php.php)
-- [Python](languages/python.md)
-
-#### Functional
-
-- [JavaScript](languages/javascript.js)
-
-</details>
-
-### 📦 Backend
-
-<details>
-<summary>View cheatsheets</summary>
-
-#### PHP
-
-- [Laravel](backend/laravel.php)
-
-#### Python
-
-- [Django](backend/django.py)
-
-#### Javascript
-
-- [Adonis.js](backend/adonis.js)
-- [Express.js](backend/express.js)
-- [Feathers.js](backend/feathers.js)
-- [Moleculer](backend/moleculer.js)
-- [Node.js](backend/node.js)
-- [Sails.js](backend/sails.js)
-  </details>
-
-### 🌐 Frontend
-
-<details>
-<summary>View cheatsheets</summary>
-
-#### Basics
-
-- [HTML5](frontend/html5.html)
-- [CSS3](frontend/css3.css)
-
-#### Frameworks
-
-- [React.js](frontend/react.js)
-- [Vue.js](frontend/vue.js)
-- [Tailwind.css](frontend/tailwind.css)
-- [Ember.js](frontend/ember.js)
-- [Angular (2+)](frontend/angular.js)
-- [AngularJS](frontend/angularjs.js)
-  </details>
-
-### 🗃️ Databases
-
-<details>
-<summary>View cheatsheets</summary>
-
-- [SQL](databases/mysql.sh)
-- [MySQL](databases/mysql.sh)
-- [MongoDB](databases/mysql.sh)
-- [PostgrelSQL](databases/mysql.sh)
-  </details>
-
-### 🔧 Tools
-
-<details>
-<summary>View cheatsheets</summary>
-
-#### Development
-
-- [cURL](tools/curl.sh)
-- [Drush](tools/drush.sh)
-- [Elasticsearch](tools/elasticsearch.js)
-- [Emmet](tools/emmet.md)
-- [Git](tools/git.sh)
-- [Puppeteer](tools/puppeteer.js)
-- [Sublime Text](tools/sublime_text.md)
-- [VIM](tools/vim.txt)
-- [Visual Studio Code](tools/vscode.md)
-- [Xcode](tools/xcode.txt)
-
-#### Infrastructure
-
-- [AWS CLI](tools/aws.sh)
-- [Docker](tools/docker.sh)
-- [Heroku CLI](tools/heroku.sh)
-- [Kubernetes](tools/kubernetes.md)
-- [Nanobox Boxfile](tools/nanobox_boxfile.yml)
-- [Nanobox CLI](tools/nanobox_cli.sh)
-- [Nginx](tools/nginx.sh)
-- [PM2](tools/pm2.sh)
-- [Ubuntu](tools/ubuntu.sh)
-  </details>
-
-## 🙌🏼 How to Contribute?
+## Contributing
 
 You are more than welcome to contribute and build your own cheat sheet for your favorite programming language, framework or development tool. Just submit changes via pull request and I will review them before merging.
 
-## 👩‍💻👨‍💻 Our valuable Contributors
+### Creating A Pull Request
 
-<p align="center"><a href="https://github.com/sohammanjrekar/cheatsheet-website/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=sohammanjrekar/cheatsheet-website" />
-</a></p>
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+Distributed under the MIT License. See [LICENSE](https://github.com/sohammanjrekar/cheatsheet-website/blob/main/LICENSE) for more information.
+
+## Authors
+
+* **Soham Manjrekar** - *TE Comps Student* - [Soham Manjrekar](https://github.com/sohammanjrekar) - *Built website Template and 6 tools*
+
+## Acknowledgements
+
+* [W3schools](https://www.w3schools.com/)
+* [GeeksForGeeks](https://www.geeksforgeeks.org/)
+* [JavaTPoint](https://www.javatpoint.com/)
