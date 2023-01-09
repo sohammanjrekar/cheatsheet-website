@@ -28,6 +28,7 @@
 * [About the Project](#about-the-project)
 * [Built With](#built-with)
 * [Usage](#usage)
+* [Features](#features)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
@@ -64,7 +65,7 @@ Simply open in any Browser.
 
 
 
-Features:
+## Features:
 1)  cheatsheets for popular programming languages, frameworks and development tools.
 2)   Github Project Readme Maker
 3)   Github  Profile Readme Maker
