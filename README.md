@@ -21,7 +21,7 @@
   </p>
 </p>
 
-![Downloads](https://img.shields.io/github/downloads/sohammanjrekar/Cheatsheet-website/total) ![Contributors](https://img.shields.io/github/contributors/sohammanjrekar/Cheatsheet-website?color=dark-green) ![Forks](https://img.shields.io/github/forks/sohammanjrekar/Cheatsheet-website?style=social) ![Stargazers](https://img.shields.io/github/stars/sohammanjrekar/Cheatsheet-website?style=social) ![Issues](https://img.shields.io/github/issues/sohammanjrekar/Cheatsheet-website) ![License](https://img.shields.io/github/license/sohammanjrekar/Cheatsheet-website) 
+![Downloads](https://img.shields.io/github/downloads/sohammanjrekar/Cheatsheet-website/total) ![Contributors](https://img.shields.io/github/contributors/sohammanjrekar/Cheatsheet-website?color=dark-green) ![Forks](https://img.shields.io/github/forks/sohammanjrekar/Cheatsheet-website?style=social) ![Stargazers](https://img.shields.io/github/stars/sohammanjrekar/Cheatsheet-website?style=social) ![Issues](https://img.shields.io/github/issues/sohammanjrekar/Cheatsheet-website) [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/sohammanjrekar/cheatsheet-website/blob/main/LICENSE) 
 
 ## Table Of Contents
 
