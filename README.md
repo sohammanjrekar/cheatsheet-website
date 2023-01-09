@@ -13,7 +13,7 @@
     <a href="https://github.com/sohammanjrekar/Cheatsheet-website"><strong>Explore the docs »</strong></a>
     <br/>
     <br/>
-    <a href="https://github.com/sohammanjrekar/Cheatsheet-website">View Demo</a>
+    <a href="https://sohammanjrekar.github.io/cheatsheet-website/">View Demo</a>
     .
     <a href="https://github.com/sohammanjrekar/Cheatsheet-website/issues">Report Bug</a>
     .
