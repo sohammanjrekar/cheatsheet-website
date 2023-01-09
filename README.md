@@ -94,7 +94,7 @@ You are more than welcome to contribute and build your own cheat sheet for your 
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/sohammanjrekar/cheatsheet-website/blob/main/LICENSE.md) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/sohammanjrekar/cheatsheet-website/blob/main/LICENSE) for more information.
 
 ## Authors
 
