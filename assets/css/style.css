@@ -342,7 +342,7 @@ pre {
 
 .tab-pane {
     margin-top: 1vh;
-    background-color: rgb(255, 223, 163);
+    background-color: rgb(255, 255, 255);
     border-radius: 2%;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     font-size: 4vh;
@@ -351,4 +351,9 @@ pre {
 .nav-link {
     color: white !important;
     font-size: 1.1em !important;
+}
+.accordion-body{
+    background-color: #ffd79e;
+}.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: #f77b50 !important;
 }

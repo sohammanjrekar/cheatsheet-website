@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Java cheatsheet</title>
+    <link rel="shortcut icon" href="../assets/img/java-icon.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../myDesigns/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="../myDesigns/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../myDesigns/assets/fonts/simple-line-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../assets/prismjs/prism.css" />
+
+    <script src="../assets/prismjs/prism.js"></script>
+    <style>
+        .scroll-to-top {
+            background-color: #f77b50 !important;
+            text-decoration: none !important;
+        }
+
+        .scroll-to-top:hover {
+            background: #f77b50 !important;
+            text-decoration: none !important;
+        }
+
+        footer .scroll-to-top {
+            text-decoration: none !important;
+        }
+
+        .container li {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: rgb(1,4,45);color:white;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../assets/img/mainlogo.jpg" alt="" style="height: 8vh;"> Cheatbook
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                    </li>
+                    <!-- web develpoment -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            WebDev
+                        </a>
+                        <ul class="dropdown-menu multi-column columns-2">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a class="dropdown-item" href="../webdev/html.html">HTML</a></li>
+                                        <li><a class="dropdown-item" href="../webdev/css.html">CSS</a></li>
+                                        <li><a class="dropdown-item" href="../webdev/javascript.html">JavaScript</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="../webdev/react.html">Reactjs</a></li>
+                                        <li><a class="dropdown-item" href="../webdev/nextjs.html">Nextjs</a></li>
+                                        <li><a class="dropdown-item" href="../webdev/angularjs.html">Angularjs</a></li>
+                                        <li><a class="dropdown-item" href="../webdev/angular.html">Angular</a></li>
+                                        <li><a class="dropdown-item" href="../webdev/Vuejs.html">vuejs</a></li>
+                                        <li><a class="dropdown-item" href="../webdev/redux.html">Redux</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a class="dropdown-item" href="../webdev/flask.html">Flask</a></li>
+                                        <li><a class="dropdown-item" href="../webdev/django.html">Django</a></li>
+                                        <li><a class="dropdown-item" href="../webdev/php.html">PHP</a></li>
+                                        <li><a class="dropdown-item" href="../webdev/nodejs.html">Nodejs</a></li>
+                                        <li><a class="dropdown-item" href="../webdev/expressjs.html">Expressjs</a></li>
+                                        <li><a class="dropdown-item" href="../webdev/fastapi.html">FastAPI</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="../webdev/bootstrap.html">Bootstrap</a></li>
+                                        <li><a class="dropdown-item" href="../webdev/tailwindcss.html">Tailwind css</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <!-- programming -->
+                    <li class="nav-item dropdown mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Programming</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cplus.html">C++</a></li>
+                            <li><a class="dropdown-item" href="c.html">C</a></li>
+                            <li><a class="dropdown-item" href="java.html">Java</a></li>
+                            <li><a class="dropdown-item" href="python.html">Python</a></li>
+                            <li><a class="dropdown-item" href="perl.html">Perl</a></li>
+                            <li><a class="dropdown-item" href="ruby.html">Ruby</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="dsa.html">DSA</a></li>
+                        </ul>
+                    </li>
+                    <!-- Machine learning -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            ML</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../ML/numpy.html">Numpy</a></li>
+                            <li><a class="dropdown-item" href="../ML/pandas.html">Pandas</a></li>
+                            <li><a class="dropdown-item" href="../ML/matplotlib.html">Matplotlib</a></li>
+                            <li><a class="dropdown-item" href="../ML/tensorflow.html">Tensorflow</a></li>
+                            <li><a class="dropdown-item" href="../ML/seaborn.html">Seaborn</a></li>
+                            <li><a class="dropdown-item" href="../ML/powerbi.html">Power BI</a></li>
+                            <li><a class="dropdown-item" href="../ML/r.html">R language</a></li>
+                            <li><a class="dropdown-item" href="../ML/scipy.html">scipy</a></li>
+                            <li><a class="dropdown-item" href="../ML/sklearn.html">sklearn</a></li>
+                            <li><a class="dropdown-item" href="../ML/tableau.html">tableau</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="../ML/machinelearning.html">Machine Learning</a></li>
+                        </ul>
+                    </li>
+                    <!-- databases -->
+                    <li class="nav-item dropdown mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Databases</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../database/mysql.html">MYSQL</a></li>
+                            <li><a class="dropdown-item" href="../database/mongodb.html">MongoDB</a></li>
+                            <li><a class="dropdown-item" href="../database/postsql.html">PostgrelSQL</a></li>
+                        </ul>
+                    </li>
+                    <!-- App development-->
+                    <li class="nav-item dropdown mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">AppDev</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../appdev/android.html">Android</a></li>
+                            <li><a class="dropdown-item" href="../appdev/kotlin.html">Kotlin</a></li>
+                            <li><a class="dropdown-item" href="../appdev/reactnative.html">ReactNative</a></li>
+                        </ul>
+                    </li>
+                    <!-- Devops -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">DevOps</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../devops/docker.html">Docker</a></li>
+                            <li><a class="dropdown-item" href="../devops/jenkins.html">jenkins</a></li>
+                            <li><a class="dropdown-item" href="../devops/kubernetes.html">kubernetes</a></li>
+                            <li><a class="dropdown-item" href="../devops/maven.html">Maven</a></li>
+                            <li><a class="dropdown-item" href="../devops/git.html">Git</a> </li>
+                            <li><a class="dropdown-item" href="../devops/bamboo.html">Bamboo</a> </li>
+                            <li><a class="dropdown-item" href="../devops/Vagrant.html">Vagrant</a> </li>
+                            <li><a class="dropdown-item" href="../devops/Prometheus.html">Prometheus</a> </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../../about.html">About Us</a></li>
+                </ul>
+                <a href="../../myDesigns/index.html">
+                    <div class="button btn1 mx-1" style="font-size: 1em;">My Designs</div>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- mid part -->
+    <nav class="mt-5 p-2 headline" style="background:linear-gradient(to top right, #fb5475 0%, #f77b50 59%);">
+        <div class="text-center " style="margin-top:5vh;"><img style="margin-right:2vh;"
+                src="../../assets/img/java-icon.svg" alt="" /> Java cheatsheet
+        </div>
+    </nav>
+    <div class="container">
+        <div class="p-5 mb-4 bg-light rounded-3 jumbo mt-2">
+            <div class="container-fluid py-3">
+                <h1 class="display-5 fw-bold">Java</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="fs-4">
+                            Java is a popular programming language, created in 1995.
+                            <br> It is owned by Oracle, and more than 3 billion devices run Java.
+                            <br> It is used for:
+                            <br>
+                        <ul>
+                            <li>
+                                Mobile applications (specially Android apps)</li>
+                            <li> Desktop applications</li>
+                            <li> Web applications</li>
+                            <li> Web servers and application servers</li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="../../assets/img/java-icon.svg" alt="" style="height:100%;width:100%;" />
+                    </div>
+                </div>
+                <button class="btn btn1" type="button" data-bs-toggle="offcanvas" data-bs-target="#o1"
+                    aria-controls="o1">
+                    Read More...
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o1"
+                    aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                            Java
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ol type="a">
+                            <li>Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)</li>
+                            <li>It is one of the most popular programming language in the world</li>
+                            <li> It has a large demand in the current job market</li>
+                            <li> It is easy to learn and simple to use</li>
+                            <li> It is open-source and free</li>
+                            <li>It is secure, fast and powerful</li>
+                            <li>It has a huge community support (tens of millions of developers)</li>
+                            <li>Java is an object oriented language which gives a clear structure to programs and allows
+                                code to be reused, lowering development costs</li>
+                            <li>As Java is close to C++ and C#, it makes it easy for programmers to switch to Java or
+                                vice versa</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-2">
+            <!-- Rounded tabs -->
+            <ul id="myTab" role="tablist"
+                class="nav bg-dark nav-tabs nav-pills flex-column align-middle flex-sm-row text-center bg-light border-0 rounded-nav"
+                style="background-color: rgb(1,4,45) !important;">
+                <li class="nav-item flex-sm-fill">
+                    <a id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"
+                        class="nav-link border-0 text-uppercase font-weight-bold active">Java</a>
+                </li>
+                <li class="nav-item flex-sm-fill">
+                    <a id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                        aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">C++</a>
+                </li>
+                <li class="nav-item flex-sm-fill">
+                    <a id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+                        aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">Python</a>
+                </li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+                <!-- java start -->
+                <div id="home" role="tabpanel" aria-labelledby="home-tab" class="tab-pane fade px-4 py-5 show active">
+                    <h1 class="text-center"> JAVA SUMS</h1>
+                    <div class="accordion" id="accordionExample">
+                        <ol>
+                            <li>
+                                <!-- accordian item start -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne1"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            Java Program for n-th Fibonacci numbers</button>
+                                    </h2>
+                                    <div id="collapseOne1" class="accordion-collapse collapse"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+                                                data-bs-target="#offcanvasExample1" aria-controls="offcanvasExample">
+                                                Read more..
+                                            </button>
+                                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample1"
+                                                aria-labelledby="offcanvasExampleLabel">
+                                                <div class="offcanvas-header">
+                                                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas
+                                                    </h5>
+                                                    <button type="button" class="btn-close text-reset"
+                                                        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                                </div>
+                                                <div class="offcanvas-body">
+                                                    In mathematical terms, the sequence Fn of Fibonacci numbers is
+                                                    defined
+                                                    by the recurrence relation
+                                                    <br>
+                                                    Fn = Fn-1 + Fn-2
+                                                </div>
+                                            </div>
+                                            <pre class="language-java"><code>
+                                                import java.util.Scanner;
+
+                                                public class Fibonacci_numbers {
+                                                    public static void main(String[] args) {
+                                                        Scanner input =new Scanner(System.in);
+                                                        System.out.println("Input for Fibonacci_number");
+                                                        int num = input.nextInt();
+                                                        int a =0;
+                                                        int b=1;
+                                                        int count=2;
+                                                        while(count<=num){
+                                                            int temp=b;
+                                                            b=  b+a;
+                                                            a=temp;
+                                                            count++;
+                                                        }
+                                                        System.out.println("sum Fibonacci_number :" + b);
+                                                
+                                                    }
+                                                }
+                                                  
+                                  </code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- accordian item start -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne2"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            Java program to count the occurrence of any number</button>
+                                    </h2>
+                                    <div id="collapseOne2" class="accordion-collapse collapse"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <pre class="language-java"><code>
+
+import java.util.Scanner;
+
+public class occurrence_number {
+    public static void main(String[] args) {
+        Scanner input =new Scanner(System.in);
+        System.out.println("Input number");
+        long num = input.nextInt();
+        System.out.println("check occurrence number");
+        int n = input.nextInt();
+        int count=0;
+        while(num>0){
+            long rem= num%10;
+            num=num/10;
+            if(rem == n) {
+                count++;
+            }
+        }
+        System.out.println("count of occurrence of "+ n +"is : "+ count);
+
+    }
+}  
+                                  </code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+
+
+                            <li>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne3"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            Java program to reverse any number</button>
+                                    </h2>
+                                    <div id="collapseOne3" class="accordion-collapse collapse"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <pre class="language-java"><code>
+
+                                            import java.util.Scanner;
+
+                                            public class reverse_numbers {
+                                                public static void main(String[] args) {
+                                                    Scanner input =new Scanner(System.in);
+                                                    System.out.println("Input number");
+                                                    long num = input.nextInt();
+                                                    long number = num;
+                                                    long reverse = 0;
+                                                    int count = 0;
+                                                    while(num > 0){
+                                                        long rem= num % 10;
+                                                        num = num/10;
+                                                        reverse = reverse * 10 + rem;
+                                                    }
+                                                    System.out.println("reverse of "+ number +" is : "+ reverse);
+                                            
+                                                }
+                                            }
+                                            
+                              </code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+
+
+                            <li>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne4"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            Java program to arithmatic operation between two number</button>
+                                    </h2>
+                                    <div id="collapseOne4" class="accordion-collapse collapse"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <pre class="language-java"><code>
+
+                                                import java.util.Scanner;
+
+                                                public class calculator {
+                                                    public static void main(String[] args) {
+                                                
+                                                        int  ans=0;
+                                                        while (true){
+                                                            System.out.println("Enter operator:");
+                                                            Scanner input=new Scanner(System.in);
+                                                            char op =input.next().trim().charAt(0);
+                                                            if(op=='+'||op=='-'||op=='*'||op=='/'||op=='%'){
+                                                                System.out.println("Enter two number:");
+                                                                int num1=input.nextInt();
+                                                                int num2=input.nextInt();
+                                                                if (op=='+'){
+                                                                    ans=num1+num2;
+                                                                }
+                                                                if (op=='-'){
+                                                                    ans=num1-num2;
+                                                                }
+                                                                if (op=='*'){
+                                                                    ans=num1*num2;
+                                                                }
+                                                                if (op=='/'){
+                                                                    if(num1!=0&&num2!=0){
+                                                                        ans=num1/num2;
+                                                                    }
+                                                                }
+                                                                if (op=='%'){
+                                                                    ans=num1%num2;
+                                                                }
+                                                            } else if (op=='x'||op=='X') {
+                                                                break;
+                                                            }else {
+                                                                System.out.println("Invalid operation");
+                                                            }
+                                                            System.out.println("Answer :"+ans);
+                                                        }
+                                                
+                                                    }
+                                                }
+                                            
+                              </code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- java end -->
+                <!-- c++ start -->
+                <div id="profile" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane fade px-4 py-5">
+                    <h1 class="text-center"> C++ SUMS</h1>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne2" aria-expanded="false" aria-controls="collapseOne">
+                                    gfloat
+                                </button>
+                            </h2>
+                            <div id="collapseOne2" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <pre class="language-java">
+                                      <code>
+                                       t float myNum = 5.75f;    
+                                  </code>
+                                  </pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo">
+                                    double
+                                </button>
+                            </h2>
+                            <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <pre class="language-java">
+                                      <code>
+                                        double d1 = 12E4d;
+                                  </code>
+                                  </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contact" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane fade px-4 py-5">
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.</p>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <!-- End rounded tabs -->
+        </div>
+    </div>
+    </div>
+    <!-- Footer -->
+    <footer class="text-lg-start bg-dark text-muted footer-dark mt-5" style="background-color: rgb(1,4,45) !important;">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-lg-between p-4 border-bottom" style="color: white">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block" style="font-size: 1.7em;">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+            <!-- Right -->
+            <div>
+                <!-- Facebook -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i
+                        class="bi bi-facebook"></i></a>
+                <!-- Twitter -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i
+                        class="bi bi-twitter"></i></a>
+                <!-- Google -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i
+                        class="bi bi-google"></i></a>
+                <!-- Instagram -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i
+                        class="bi bi-instagram"></i></a>
+                <!-- Linkedin -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #0082ca"
+                    href="https://www.linkedin.com/in/mr-soham-manjrekar/" role="button"><i
+                        class="bi bi-linkedin"></i></a>
+                <!-- Github -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #333333"
+                    href="https://github.com/sohammanjrekar" role="button"><i class="bi bi-github"></i></a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+        <!-- Section: Links  -->
+        <section class="links" style="color: white">
+            <div class="container text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-8 col-lg-8 col-xl-8 mx-auto mb-4">
+                        <!-- Content -->
+                        <h2 class="text-uppercase fw-bold mb-4">
+                            <i class="bi bi-gem me-3"></i>Cheatbook
+                        </h2>
+                        <p>
+                            <li>Quick reference</li>
+                            <li>Be productive after learning a new thing
+                            </li>
+                            <li>Quickly recall when forget some syntax</li>
+                            <li>Use snippets for rapid development</li>
+                        </p>
+                    </div>
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4" style="font-size: 1.3em;">
+                        <!-- Links -->
+                        <h2 class="text-uppercase fw-bold mb-4">Contact</h2>
+                        <p><i class="bi bi-house-door me-3"></i>Badlapur,mumbai</p>
+                        <p><i class="bi bi-envelope me-3"></i> mrsohammanjrekar@gmail.com</p>
+                        <p><i class="bi bi-phone me-3"></i> +91 7045208474</p>
+                        <p><i class="bi bi-whatsapp me-3"></i> +91 7045208474</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);color:white;word-spacing: 3px;">
+            © 2022 Copyright:
+            <a class="text-reset fw-bold" href="https://github.com/sohammanjrekar">cheatbook.com</a> created by Soham
+            Manjrekar
+        </div>
+        <!-- Copyright -->
+        <a class="js-scroll-trigger scroll-to-top rounded" href="#page-top"><i class="fa fa-angle-up"></i></a>
+    </footer>
+    <!-- Footer -->
+    <!-- Footer -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script src="../../myDesigns/assets/js/jquery.min.js"></script>
+    <script src="../../myDesigns/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="../../myDesigns/assets/js/stylish-portfolio.js"></script>
+</body>
+
+</html>
