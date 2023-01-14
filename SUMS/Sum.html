@@ -264,6 +264,10 @@
                     <a id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
                         aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">Python</a>
                 </li>
+                <li class="nav-item flex-sm-fill">
+                    <a id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="contact"
+                        aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">ALL</a>
+                </li>
             </ul>
             <div id="myTabContent" class="tab-content">
                 <!-- java start -->
@@ -525,21 +529,669 @@ public class occurrence_number {
                     </div>
                 </div>
                 <div id="contact" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane fade px-4 py-5">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum.</p>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum.</p>
+
+                </div>
+
+                <!-- End rounded tabs -->
+                <div id="all" role="tabpanel" aria-labelledby="all-tab" class="tab-pane fade px-4 py-5">
+                    <div class="accordion" id="accordionExample">
+                        <ol>
+                            <!-- start -->
+                            <li>
+                                <!-- accordian item start -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false"
+                                            aria-controls="collapseOne">
+                                            Program to Print Hello world!</button>
+                                    </h2>
+                                    <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul id="myTab" role="tablist"
+                                                class="nav bg-dark nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 rounded-nav"
+                                                style="--bs-nav-link-color: rgb(249, 249, 253); --bs-nav-pills-link-active-color: red; --bs-nav-pills-link-active-bg: orange;">
+                                                <li class="nav-item flex-sm-fill">
+                                                    <a id="java-tab" data-toggle="tab" href="#java" role="tab"
+                                                        aria-controls="java" aria-selected="true"
+                                                        class="nav-link border-0 text-uppercase font-weight-bold active">java</a>
+                                                </li>
+                                                <li class="nav-item flex-sm-fill">
+                                                    <a id="cplus-tab" data-toggle="tab" href="#cplus" role="tab"
+                                                        aria-controls="cplus" aria-selected="false"
+                                                        class="nav-link border-0 text-uppercase font-weight-bold">c++</a>
+                                                </li>
+                                                <li class="nav-item flex-sm-fill">
+                                                    <a id="python-tab" data-toggle="tab" href="#python" role="tab"
+                                                        aria-controls="python" aria-selected="false"
+                                                        class="nav-link border-0 text-uppercase font-weight-bold">python</a>
+                                                </li>
+                                            </ul>
+                                            <div id="myTabContent" class="tab-content">
+                                                <div id="java" role="tabpanel" aria-labelledby="home-tab"
+                                                    class="tab-pane fade px-4 py-5 show active">
+                                                    <pre class="language-java"><code>
+                               
+public class Demo{
+    public static void main(String[] args){
+        System.out.println("hello World!");
+    }
+}
+                  </code></pre>
+                                                </div>
+                                                <div id="cplus" role="tabpanel" aria-labelledby="profile-tab"
+                                                    class="tab-pane fade px-4 py-5">
+                                                    <pre class="language-cpp"><code>
+                                                        #include &lt;iostream&gt;
+                                                        using namespace std;
+                                                        int main() {
+                                                            cout << "Hello World!";
+                                                            return 0;
+                                                        }
+                                                        
+                  </code></pre>
+                                                </div>
+                                                <div id="python" role="tabpanel" aria-labelledby="contact-tab"
+                                                    class="tab-pane fade px-4 py-5">
+                                                    <pre class="language-py"><code>
+                                                        print('Hello, world!')
+
+                            </code></pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+
+
+
+
+
+
+                            <li>
+                                <!-- accordian item start -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false"
+                                            aria-controls="collapseOne">
+                                            Program to Add Two Numbers</button>
+                                    </h2>
+                                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul id="myTab" role="tablist"
+                                                class="nav bg-dark nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 rounded-nav"
+                                                style="--bs-nav-link-color: rgb(249, 249, 253); --bs-nav-pills-link-active-color: red; --bs-nav-pills-link-active-bg: orange;">
+                                                <li class="nav-item flex-sm-fill">
+                                                    <a id="java-tab" data-toggle="tab" href="#java1" role="tab"
+                                                        aria-controls="java" aria-selected="true"
+                                                        class="nav-link border-0 text-uppercase font-weight-bold active">java</a>
+                                                </li>
+                                                <li class="nav-item flex-sm-fill">
+                                                    <a id="cplus-tab" data-toggle="tab" href="#cplus1" role="tab"
+                                                        aria-controls="cplus" aria-selected="false"
+                                                        class="nav-link border-0 text-uppercase font-weight-bold">c++</a>
+                                                </li>
+                                                <li class="nav-item flex-sm-fill">
+                                                    <a id="python-tab" data-toggle="tab" href="#python1" role="tab"
+                                                        aria-controls="python" aria-selected="false"
+                                                        class="nav-link border-0 text-uppercase font-weight-bold">python</a>
+                                                </li>
+                                            </ul>
+                                            <div id="myTabContent" class="tab-content">
+                                                <div id="java1" role="tabpanel" aria-labelledby="home-tab"
+                                                    class="tab-pane fade px-4 py-5 show active">
+                                                    <pre class="language-java"><code>
+                               
+                                                        class Main {
+
+                                                            public static void main(String[] args) {
+                                                              
+                                                              int first = 10;
+                                                              int second = 20;
+                                                          
+                                                              // add two numbers
+                                                              int sum = first + second;
+                                                              System.out.println(first + " + " + second + " = "  + sum);
+                                                            }
+                                                          }
+                  </code></pre>
+                                                </div>
+                                                <div id="cplus1" role="tabpanel" aria-labelledby="profile-tab"
+                                                    class="tab-pane fade px-4 py-5">
+                                                    <pre class="language-cpp"><code>
+                                        
+                                                        #include &lt;iostream&gt;
+                                                            using namespace std;
+                                                            
+                                                            int main() {
+                                                            
+                                                              int first_number, second_number, sum;
+                                                                
+                                                              cout << "Enter two integers: ";
+                                                              cin >> first_number >> second_number;
+                                                            
+                                                              // sum of two numbers in stored in variable sumOfTwoNumbers
+                                                              sum = first_number + second_number;
+                                                            
+                                                              // prints sum 
+                                                              cout << first_number << " + " <<  second_number << " = " << sum;     
+                                                            
+                                                              return 0;
+                                                            }
+                  </code></pre>
+                                                </div>
+                                                <div id="python1" role="tabpanel" aria-labelledby="contact-tab"
+                                                    class="tab-pane fade px-4 py-5">
+                                                    <pre class="language-py"><code>
+                                
+                                                        # This program adds two numbers
+
+                                                        num1 = 1.5
+                                                        num2 = 6.3
+                                                        
+                                                        # Add two numbers
+                                                        sum = num1 + num2
+                                                        
+                                                        # Display the sum
+                                                        print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
+                            </code></pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+
+                            <li>
+                                <!-- accordian item start -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false"
+                                            aria-controls="collapseOne">
+                                            Program to Swap Two Numbers</button>
+                                    </h2>
+                                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul id="myTab" role="tablist"
+                                                class="nav bg-dark nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 rounded-nav"
+                                                style="--bs-nav-link-color: rgb(249, 249, 253); --bs-nav-pills-link-active-color: red; --bs-nav-pills-link-active-bg: orange;">
+                                                <li class="nav-item flex-sm-fill">
+                                                    <a id="java-tab" data-toggle="tab" href="#java2" role="tab"
+                                                        aria-controls="java" aria-selected="true"
+                                                        class="nav-link border-0 text-uppercase font-weight-bold active">java</a>
+                                                </li>
+                                                <li class="nav-item flex-sm-fill">
+                                                    <a id="cplus-tab" data-toggle="tab" href="#cplus2" role="tab"
+                                                        aria-controls="cplus" aria-selected="false"
+                                                        class="nav-link border-0 text-uppercase font-weight-bold">c++</a>
+                                                </li>
+                                                <li class="nav-item flex-sm-fill">
+                                                    <a id="python-tab" data-toggle="tab" href="#python2" role="tab"
+                                                        aria-controls="python" aria-selected="false"
+                                                        class="nav-link border-0 text-uppercase font-weight-bold">python</a>
+                                                </li>
+                                            </ul>
+                                            <div id="myTabContent" class="tab-content">
+                                                <div id="java2" role="tabpanel" aria-labelledby="home-tab"
+                                                    class="tab-pane fade px-4 py-5 show active">
+                                                    <pre class="language-java"><code>
+                               
+                                                        public class SwapNumbers {
+
+                                                            public static void main(String[] args) {
+                                                        
+                                                                float first = 1.20f, second = 2.45f;
+                                                        
+                                                                System.out.println("--Before swap--");
+                                                                System.out.println("First number = " + first);
+                                                                System.out.println("Second number = " + second);
+                                                        
+                                                                // Value of first is assigned to temporary
+                                                                float temporary = first;
+                                                        
+                                                                // Value of second is assigned to first
+                                                                first = second;
+                                                        
+                                                                // Value of temporary (which contains the initial value of first) is assigned to second
+                                                                second = temporary;
+                                                        
+                                                                System.out.println("--After swap--");
+                                                                System.out.println("First number = " + first);
+                                                                System.out.println("Second number = " + second);
+                                                            }
+                                                        }
+                  </code></pre>
+                                                </div>
+                                                <div id="cplus2" role="tabpanel" aria-labelledby="profile-tab"
+                                                    class="tab-pane fade px-4 py-5">
+                                                    <pre class="language-cpp"><code>
+                                                        #include &lt;iostream&gt;
+                                                        using namespace std;
+                                                        
+                                                        int main()
+                                                        {
+                                                            int a = 5, b = 10, temp;
+                                                        
+                                                            cout << "Before swapping." << endl;
+                                                            cout << "a = " << a << ", b = " << b << endl;
+                                                        
+                                                            temp = a;
+                                                            a = b;
+                                                            b = temp;
+                                                        
+                                                            cout << "\nAfter swapping." << endl;
+                                                            cout << "a = " << a << ", b = " << b << endl;
+                                                        
+                                                            return 0;
+                                                        }   </code></pre>
+                                                </div>
+                                                <div id="python2" role="tabpanel" aria-labelledby="contact-tab"
+                                                    class="tab-pane fade px-4 py-5">
+                                                    <pre class="language-py"><code>
+                                
+                                                        # Python program to swap two variables
+
+                                                        x = 5
+                                                        y = 10
+                                                        
+                                                        # To take inputs from the user
+                                                        #x = input('Enter value of x: ')
+                                                        #y = input('Enter value of y: ')
+                                                        
+                                                        # create a temporary variable and swap the values
+                                                        temp = x
+                                                        x = y
+                                                        y = temp
+                                                        
+                                                        print('The value of x after swapping: {}'.format(x))
+                                                        print('The value of y after swapping: {}'.format(y))
+                 
+
+                            </code></pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+
+
+
+
+
+                            <li>
+                                <!-- accordian item start -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false"
+                                            aria-controls="collapseOne">
+                                            Program to Check Whether Number is Even or Odd</button>
+                                    </h2>
+                                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul id="myTab" role="tablist"
+                                                class="nav bg-dark nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 rounded-nav"
+                                                style="--bs-nav-link-color: rgb(249, 249, 253); --bs-nav-pills-link-active-color: red; --bs-nav-pills-link-active-bg: orange;">
+                                                <li class="nav-item flex-sm-fill">
+                                                    <a id="java-tab" data-toggle="tab" href="#java4" role="tab"
+                                                        aria-controls="java" aria-selected="true"
+                                                        class="nav-link border-0 text-uppercase font-weight-bold active">java</a>
+                                                </li>
+                                                <li class="nav-item flex-sm-fill">
+                                                    <a id="cplus-tab" data-toggle="tab" href="#cplus4" role="tab"
+                                                        aria-controls="cplus" aria-selected="false"
+                                                        class="nav-link border-0 text-uppercase font-weight-bold">c++</a>
+                                                </li>
+                                                <li class="nav-item flex-sm-fill">
+                                                    <a id="python-tab" data-toggle="tab" href="#python4" role="tab"
+                                                        aria-controls="python" aria-selected="false"
+                                                        class="nav-link border-0 text-uppercase font-weight-bold">python</a>
+                                                </li>
+                                            </ul>
+                                            <div id="myTabContent" class="tab-content">
+                                                <div id="java4" role="tabpanel" aria-labelledby="home-tab"
+                                                    class="tab-pane fade px-4 py-5 show active">
+                                                    <pre class="language-java"><code>
+                               
+                                                        import java.util.Scanner;
+
+                                                        public class EvenOdd {
+                                                        
+                                                            public static void main(String[] args) {
+                                                        
+                                                                Scanner reader = new Scanner(System.in);
+                                                        
+                                                                System.out.print("Enter a number: ");
+                                                                int num = reader.nextInt();
+                                                        
+                                                                if(num % 2 == 0)
+                                                                    System.out.println(num + " is even");
+                                                                else
+                                                                    System.out.println(num + " is odd");
+                                                            }
+                                                        }
+                  </code></pre>
+                                                </div>
+                                                <div id="cplus4" role="tabpanel" aria-labelledby="profile-tab"
+                                                    class="tab-pane fade px-4 py-5">
+                                                    <pre class="language-cpp"><code>
+                                                        #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+  int n;
+
+  cout << "Enter an integer: ";
+  cin >> n;
+
+  if ( n % 2 == 0)
+    cout << n << " is even.";
+  else
+    cout << n << " is odd.";
+
+  return 0;
+} </code></pre>
+                                                </div>
+                                                <div id="python4" role="tabpanel" aria-labelledby="contact-tab"
+                                                    class="tab-pane fade px-4 py-5">
+                                                    <pre class="language-py"><code>
+                                                        # Python program to check if the input number is odd or even.
+                                                        # A number is even if division by 2 gives a remainder of 0.
+                                                        # If the remainder is 1, it is an odd number.
+                                                        
+                                                        num = int(input("Enter a number: "))
+                                                        if (num % 2) == 0:
+                                                           print("{0} is Even".format(num))
+                                                        else:
+                                                           print("{0} is Odd".format(num))
+                            </code></pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+
+
+
+                            <li>
+                                <!-- accordian item start -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false"
+                                            aria-controls="collapseOne">
+                                            Program to Find Largest Number Among Three Numbers</button>
+                                    </h2>
+                                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul id="myTab" role="tablist"
+                                                class="nav bg-dark nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 rounded-nav"
+                                                style="--bs-nav-link-color: rgb(249, 249, 253); --bs-nav-pills-link-active-color: red; --bs-nav-pills-link-active-bg: orange;">
+                                                <li class="nav-item flex-sm-fill">
+                                                    <a id="java-tab" data-toggle="tab" href="#java5" role="tab"
+                                                        aria-controls="java" aria-selected="true"
+                                                        class="nav-link border-0 text-uppercase font-weight-bold active">java</a>
+                                                </li>
+                                                <li class="nav-item flex-sm-fill">
+                                                    <a id="cplus-tab" data-toggle="tab" href="#cplus5" role="tab"
+                                                        aria-controls="cplus" aria-selected="false"
+                                                        class="nav-link border-0 text-uppercase font-weight-bold">c++</a>
+                                                </li>
+                                                <li class="nav-item flex-sm-fill">
+                                                    <a id="python-tab" data-toggle="tab" href="#python5" role="tab"
+                                                        aria-controls="python" aria-selected="false"
+                                                        class="nav-link border-0 text-uppercase font-weight-bold">python</a>
+                                                </li>
+                                            </ul>
+                                            <div id="myTabContent" class="tab-content">
+                                                <div id="java5" role="tabpanel" aria-labelledby="home-tab"
+                                                    class="tab-pane fade px-4 py-5 show active">
+                                                    <pre class="language-java"><code>
+                                                        public class Largest {
+
+                                                            public static void main(String[] args) {
+                                                        
+                                                                double n1 = -4.5, n2 = 3.9, n3 = 2.5;
+                                                        
+                                                                if( n1 >= n2 && n1 >= n3)
+                                                                    System.out.println(n1 + " is the largest number.");
+                                                        
+                                                                else if (n2 >= n1 && n2 >= n3)
+                                                                    System.out.println(n2 + " is the largest number.");
+                                                        
+                                                                else
+                                                                    System.out.println(n3 + " is the largest number.");
+                                                            }
+                                                        }
+                                                        
+                  </code></pre>
+                                                </div>
+                                                <div id="cplus5" role="tabpanel" aria-labelledby="profile-tab"
+                                                    class="tab-pane fade px-4 py-5">
+                                                    <pre class="language-cpp"><code>
+                                                        #include &lt;iostream&gt;
+                                                            using namespace std;
+                                                            
+                                                            int main() {
+                                                                
+                                                                double n1, n2, n3;
+                                                            
+                                                                cout << "Enter three numbers: ";
+                                                                cin >> n1 >> n2 >> n3;
+                                                            
+                                                                // check if n1 is the largest number
+                                                                if(n1 >= n2 && n1 >= n3)
+                                                                    cout << "Largest number: " << n1;
+                                                            
+                                                                // check if n2 is the largest number
+                                                                else if(n2 >= n1 && n2 >= n3)
+                                                                    cout << "Largest number: " << n2;
+                                                                
+                                                                // if neither n1 nor n2 are the largest, n3 is the largest
+                                                                else 
+                                                                    cout << "Largest number: " << n3;
+                                                              
+                                                                return 0;
+                                                            }
+                                                          </code></pre>
+                                                </div>
+                                                <div id="python5" role="tabpanel" aria-labelledby="contact-tab"
+                                                    class="tab-pane fade px-4 py-5">
+                                                    <pre class="language-py"><code>
+                                                        # Python program to find the largest number among the three input numbers
+
+                                                        # change the values of num1, num2 and num3
+                                                        # for a different result
+                                                        num1 = 10
+                                                        num2 = 14
+                                                        num3 = 12
+                                                        
+                                                        # uncomment following lines to take three numbers from user
+                                                        #num1 = float(input("Enter first number: "))
+                                                        #num2 = float(input("Enter second number: "))
+                                                        #num3 = float(input("Enter third number: "))
+                                                        
+                                                        if (num1 >= num2) and (num1 >= num3):
+                                                           largest = num1
+                                                        elif (num2 >= num1) and (num2 >= num3):
+                                                           largest = num2
+                                                        else:
+                                                           largest = num3
+                                                        
+                                                        print("The largest number is", largest)
+                                                        
+                            </code></pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li>
+                                <!-- accordian item start -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false"
+                                            aria-controls="collapseOne">
+                                            Program to Check Prime Number</button>
+                                    </h2>
+                                    <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul id="myTab" role="tablist"
+                                                class="nav bg-dark nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 rounded-nav"
+                                                style="--bs-nav-link-color: rgb(249, 249, 253); --bs-nav-pills-link-active-color: red; --bs-nav-pills-link-active-bg: orange;">
+                                                <li class="nav-item flex-sm-fill">
+                                                    <a id="java-tab" data-toggle="tab" href="#java6" role="tab"
+                                                        aria-controls="java" aria-selected="true"
+                                                        class="nav-link border-0 text-uppercase font-weight-bold active">java</a>
+                                                </li>
+                                                <li class="nav-item flex-sm-fill">
+                                                    <a id="cplus-tab" data-toggle="tab" href="#cplus6" role="tab"
+                                                        aria-controls="cplus" aria-selected="false"
+                                                        class="nav-link border-0 text-uppercase font-weight-bold">c++</a>
+                                                </li>
+                                                <li class="nav-item flex-sm-fill">
+                                                    <a id="python-tab" data-toggle="tab" href="#python6" role="tab"
+                                                        aria-controls="python" aria-selected="false"
+                                                        class="nav-link border-0 text-uppercase font-weight-bold">python</a>
+                                                </li>
+                                            </ul>
+                                            <div id="myTabContent" class="tab-content">
+                                                <div id="java6" role="tabpanel" aria-labelledby="home-tab"
+                                                    class="tab-pane fade px-4 py-5 show active">
+                                                    <pre class="language-java"><code>
+                               
+                                                        import java.util.Scanner;
+                                                        public class Demo {
+                                                        
+                                                            public static void main(String[] args) {
+                                                          System.out.println("Entert Number :");
+                                                              Scanner input =new Scanner(System.in);
+                                                              int num =input.nextInt();
+                                                              boolean flag = false;
+                                                              for (int i = 2; i <= num / 2; ++i) {
+                                                                // condition for nonprime number
+                                                                if (num % i == 0) {
+                                                                  flag = true;
+                                                                  break;
+                                                                }
+                                                              }
+                                                          
+                                                              if (!flag)
+                                                                System.out.println(num + " is a prime number.");
+                                                              else
+                                                                System.out.println(num + " is not a prime number.");
+                                                            }
+                                                          }
+                  </code></pre>
+                                                </div>
+                                                <div id="cplus6" role="tabpanel" aria-labelledby="profile-tab"
+                                                    class="tab-pane fade px-4 py-5">
+                                                    <pre class="language-cpp"><code>
+                                                        #include &lt;iostream&gt;
+                                                        #include <iostream>
+                                                            using namespace std;
+                                                            
+                                                            int main() {
+                                                            
+                                                              int i, n;
+                                                              bool is_prime = true;
+                                                            
+                                                              cout << "Enter a positive integer: ";
+                                                              cin >> n;
+                                                            
+                                                              // 0 and 1 are not prime numbers
+                                                              if (n == 0 || n == 1) {
+                                                                is_prime = false;
+                                                              }
+                                                            
+                                                              // loop to check if n is prime
+                                                              for (i = 2; i <= n/2; ++i) {
+                                                                if (n % i == 0) {
+                                                                  is_prime = false;
+                                                                  break;
+                                                                }
+                                                              }
+                                                            
+                                                              if (is_prime)
+                                                                cout << n << " is a prime number";
+                                                              else
+                                                                cout << n << " is not a prime number";
+                                                            
+                                                              return 0;
+                                                            }
+                                                             </code></pre>
+                                                </div>
+                                                <div id="python6" role="tabpanel" aria-labelledby="contact-tab"
+                                                    class="tab-pane fade px-4 py-5">
+                                                    <pre class="language-py"><code>
+                                
+                                                        num = 407
+
+# To take input from the user
+#num = int(input("Enter a number: "))
+
+if num == 1:
+    print(num, "is not a prime number")
+elif num > 1:
+   # check for factors
+   for i in range(2,num):
+       if (num % i) == 0:
+           print(num,"is not a prime number")
+           print(i,"times",num//i,"is",num)
+           break
+   else:
+       print(num,"is a prime number")
+       
+# if input number is less than
+# or equal to 1, it is not prime
+else:
+   print(num,"is not a prime number")
+                 
+
+                            </code></pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+
+
+                        </ol>
+                        <!-- end  -->
+                    </div>
                 </div>
             </div>
-            <!-- End rounded tabs -->
         </div>
     </div>
     </div>
