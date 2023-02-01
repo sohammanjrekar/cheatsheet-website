@@ -288,9 +288,91 @@
             </li>
 
 
+            <li>
+                create 404 error file
+                <br>
+                create 404.js file then nextjs automatically set as error file
+            </li>
+            <li>
+                set every page css
+                <br>
+                create css file in styles folder and rename as about.module.css
+            </li>
+
 
             <li>
-                Heading tags <br />
+                next/link <button class="btn btn1" type="button" data-bs-toggle="offcanvas" data-bs-target="#o2"
+                    aria-controls="o1">
+                    Read More...
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o2"
+                    aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                            next/link
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        Client-side transitions between routes can be enabled via the Link component exported by
+                        next/link.
+                        <br><br>
+                        For an example, consider a pages directory with the following files:
+                        <br><br>
+                        pages/index.js<br>
+                        pages/about.js<br>
+                        pages/blog/[slug].js<br><br><br>
+                        Link accepts the following props:
+                        <br><br>
+                        href - The path or URL to navigate to. This is the only required prop. It can also be an object,
+                        see example here<br>
+                        as - Optional decorator for the path that will be shown in the browser URL bar. Before Next.js
+                        9.5.3 this was used for dynamic routes, check our previous docs to see how it worked. Note: when
+                        this path differs from the one provided in href the previous href/as behavior is used as shown
+                        in the previous docs.
+                        legacyBehavior - Changes behavior so that child must be &lt;a&gt;. Defaults to false.<br>
+                        passHref - Forces Link to send the href property to its child. Defaults to false<br>
+                        prefetch - Prefetch the page in the background. Defaults to true. Any
+                        &lt;Link /&gt; that is in the viewport (initially or through scroll) will be preloaded. Prefetch
+                        can be disabled by passing prefetch={false}. When prefetch is set to false, prefetching will
+                        still occur on hover. Pages using Static Generation will preload JSON files with the data
+                        for faster page transitions. Prefetching is only enabled in production.
+                        replace - Replace the current history state instead of adding a new url into the stack.
+                        Defaults to false
+                        scroll - Scroll to the top of the page after a navigation. Defaults to true<br>
+                        shallow - Update the path of the current page without rerunning getStaticProps,
+                        getServerSideProps or getInitialProps. Defaults to false<br>
+                        locale - The active locale is automatically prepended. locale allows for providing a
+                        different locale. When false href has to include the locale as the default behavior is
+                        disabled.
+                        Note, when legacyBehavior is not set to true, all anchor tag properties can be passed to
+                        next/link as well such as, className, onClick, etc.<br>
+                    </div>
+                </div>
+
+                <pre class="language-jsx">
+        <code>
+            import Link from 'next/link'
+        </code>
+    </pre>
+                <pre class="language-jsx">
+        <code>
+          
+
+          
+                &lt;ul&gt;
+                  &lt;li&gt;
+                    &lt;Link href="/"&gt;Home&lt;/Link&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;
+                    &lt;Link href="/about"&gt;About Us&lt;/Link&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;
+                    &lt;Link href="/blog/hello-world"&gt;Blog Post&lt;/Link&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+        </code>
+    </pre>
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
@@ -310,101 +392,6 @@
                     &lt;/h1&gt;
             </code>
             </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                &lt;h2&gt; tag: “define heading of an HTML page but with
-                                second level”
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-html">
-                                    <code>    &lt;h2&gt;
-                                //heading content
-                                &lt;/h2&gt;</code>
-                            </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                &lt;h3&gt; tag: “define heading of an HTML page but with third
-                                level”
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-html">
-                                    <code> &lt;h3&gt;
-                                //heading content
-                                &lt;/h3&gt;</code>
-                            </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingfour">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                                &lt;h4&gt; tag: “define heading of an HTML page but with
-                                fourth level”
-                            </button>
-                        </h2>
-                        <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-html">
-                                    <code>   &lt;h4&gt;
-                                //heading content
-                                &lt;/h4&gt;</code>
-                            </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingfive">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
-                                &lt;h5&gt; tag: “define heading of an HTML page but with fifth
-                                level”
-                            </button>
-                        </h2>
-                        <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-html">
-                                    <code>       &lt;h5&gt;
-            //heading content
-            &lt;/h5&gt;</code>
-        </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingsix">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
-                                &lt;h6&gt; tag: “define heading of an HTML page but with sixth
-                                level”
-                            </button>
-                        </h2>
-                        <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-html">
-                                    <code>        &lt;h6&gt;
-                                        //heading content
-                                        &lt;/h6&gt;</code>
-        </pre>
                             </div>
                         </div>
                     </div>
