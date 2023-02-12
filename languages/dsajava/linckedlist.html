@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Linkedlist cheatsheet</title>
+    <link rel="shortcut icon" href="../../assets/img/mainlogo.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../myDesigns/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="../../myDesigns/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../../myDesigns/assets/fonts/simple-line-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../../assets/prismjs/prism.css" />
+
+    <script src="../../assets/prismjs/prism.js"></script>
+    <style>
+        .scroll-to-top {
+            background-color: #f77b50 !important;
+            text-decoration: none !important;
+        }
+
+        .scroll-to-top:hover {
+            background: #f77b50 !important;
+            text-decoration: none !important;
+        }
+
+        footer .scroll-to-top {
+            text-decoration: none !important;
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: rgb(1,4,45);color:white;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../assets/img/mainlogo.jpg" alt="" style="height: 8vh;"> Cheatbook
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                    </li>
+                    <!-- web develpoment -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            WebDev
+                        </a>
+                        <ul class="dropdown-menu multi-column columns-2">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a class="dropdown-item" href="../webdev/html.html">HTML</a></li>
+                                        <li><a class="dropdown-item" href="../webdev/css.html">CSS</a></li>
+                                        <li><a class="dropdown-item" href="../webdev/javascript.html">JavaScript</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="../webdev/react.html">Reactjs</a></li>
+                                        <li><a class="dropdown-item" href="../webdev/nextjs.html">Nextjs</a></li>
+                                        <li><a class="dropdown-item" href="../webdev/angularjs.html">Angularjs</a></li>
+                                        <li><a class="dropdown-item" href="../webdev/angular.html">Angular</a></li>
+                                        <li><a class="dropdown-item" href="../webdev/Vuejs.html">vuejs</a></li>
+                                        <li><a class="dropdown-item" href="../webdev/redux.html">Redux</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a class="dropdown-item" href="../webdev/flask.html">Flask</a></li>
+                                        <li><a class="dropdown-item" href="../webdev/django.html">Django</a></li>
+                                        <li><a class="dropdown-item" href="../webdev/php.html">PHP</a></li>
+                                        <li><a class="dropdown-item" href="../webdev/nodejs.html">Nodejs</a></li>
+                                        <li><a class="dropdown-item" href="../webdev/expressjs.html">Expressjs</a></li>
+                                        <li><a class="dropdown-item" href="../webdev/fastapi.html">FastAPI</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="../webdev/bootstrap.html">Bootstrap</a></li>
+                                        <li><a class="dropdown-item" href="../webdev/tailwindcss.html">Tailwind css</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <!-- programming -->
+                    <li class="nav-item dropdown mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Programming</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cplus.html">C++</a></li>
+                            <li><a class="dropdown-item" href="c.html">C</a></li>
+                            <li><a class="dropdown-item" href="java.html">Java</a></li>
+                            <li><a class="dropdown-item" href="python.html">Python</a></li>
+                            <li><a class="dropdown-item" href="perl.html">Perl</a></li>
+                            <li><a class="dropdown-item" href="ruby.html">Ruby</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="dsa.html">DSA</a></li>
+                        </ul>
+                    </li>
+                    <!-- Machine learning -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            ML</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../ML/numpy.html">Numpy</a></li>
+                            <li><a class="dropdown-item" href="../ML/pandas.html">Pandas</a></li>
+                            <li><a class="dropdown-item" href="../ML/matplotlib.html">Matplotlib</a></li>
+                            <li><a class="dropdown-item" href="../ML/tensorflow.html">Tensorflow</a></li>
+                            <li><a class="dropdown-item" href="../ML/seaborn.html">Seaborn</a></li>
+                            <li><a class="dropdown-item" href="../ML/powerbi.html">Power BI</a></li>
+                            <li><a class="dropdown-item" href="../ML/r.html">R language</a></li>
+                            <li><a class="dropdown-item" href="../ML/scipy.html">scipy</a></li>
+                            <li><a class="dropdown-item" href="../ML/sklearn.html">sklearn</a></li>
+                            <li><a class="dropdown-item" href="../ML/tableau.html">tableau</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="../ML/machinelearning.html">Machine Learning</a></li>
+                        </ul>
+                    </li>
+                    <!-- databases -->
+                    <li class="nav-item dropdown mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Databases</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../database/mysql.html">MYSQL</a></li>
+                            <li><a class="dropdown-item" href="../database/mongodb.html">MongoDB</a></li>
+                            <li><a class="dropdown-item" href="../database/postsql.html">PostgrelSQL</a></li>
+                        </ul>
+                    </li>
+                    <!-- App development-->
+                    <li class="nav-item dropdown mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">AppDev</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../appdev/android.html">Android</a></li>
+                            <li><a class="dropdown-item" href="../appdev/kotlin.html">Kotlin</a></li>
+                            <li><a class="dropdown-item" href="../appdev/reactnative.html">ReactNative</a></li>
+                        </ul>
+                    </li>
+                    <!-- Devops -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">DevOps</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../devops/docker.html">Docker</a></li>
+                            <li><a class="dropdown-item" href="../devops/jenkins.html">jenkins</a></li>
+                            <li><a class="dropdown-item" href="../devops/kubernetes.html">kubernetes</a></li>
+                            <li><a class="dropdown-item" href="../devops/maven.html">Maven</a></li>
+                            <li><a class="dropdown-item" href="../devops/git.html">Git</a> </li>
+                            <li><a class="dropdown-item" href="../devops/bamboo.html">Bamboo</a> </li>
+                            <li><a class="dropdown-item" href="../devops/Vagrant.html">Vagrant</a> </li>
+                            <li><a class="dropdown-item" href="../devops/Prometheus.html">Prometheus</a> </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../../about.html">About Us</a></li>
+                </ul>
+                <a href="../../myDesigns/index.html">
+                    <div class="button btn1 mx-1" style="font-size: 1em;">My Designs</div>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- mid part -->
+    <nav class="mt-5 p-2 headline" style="background:linear-gradient(to top right, #fb5475 0%, #f77b50 59%);">
+        <div class="text-center " style="margin-top:5vh;"><img style="margin-right:2vh;"
+                src="../../assets/img/mainlogo.jpg" alt="" /> Linkedlist cheatsheet
+        </div>
+    </nav>
+    <div class="container">
+        <div class="p-5 mb-4 bg-light rounded-3 jumbo mt-2">
+            <div class="container-fluid py-3">
+                <h1 class="display-5 fw-bold">Linkedlist</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="fs-4">
+                            A linked list is a linear data structure, in which the elements are not stored at contiguous
+                            memory locations.In simple words, a linked list consists of nodes where each node contains a
+                            data field and a reference(link) to the next node in the list.
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="../../assets/img/dsa/linkedlist.png" alt="" style="height:100%;width:100%;" />
+                    </div>
+                </div>
+                <button class="btn btn1" type="button" data-bs-toggle="offcanvas" data-bs-target="#o1"
+                    aria-controls="o1">
+                    Read More...
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o1"
+                    aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                            Array
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        Like arrays, a Linked List is a linear data structure. Unlike arrays, linked list elements are
+                        not stored at a contiguous location; the elements are linked using pointers. They include a
+                        series of connected nodes. Here, each node stores the data and the address of the next node.
+                        <br>
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220816144425/LLdrawio.png" alt=""
+                            style="width:100%"><br><br>
+                        Arrays can be used to store linear data of similar types, but arrays have the following
+                        limitations:
+                        <br>
+                        <br>
+                        The size of the arrays is fixed: So we must know the upper limit on the number of elements in
+                        advance. Also, generally, the allocated memory is equal to the upper limit irrespective of the
+                        usage.
+                        Insertion of a new element / Deletion of a existing element in an array of elements is
+                        expensive: The room has to be created for the new elements and to create room existing elements
+                        have to be shifted but in Linked list if we have the head node then we can traverse to any node
+                        through it and insert new node at the required position.
+                        <br><br><br>
+                        Advantages of Linked Lists over arrays:<br>
+                        Dynamic Array.<br>
+                        Ease of Insertion/Deletion.<br><br><br>
+                        Drawbacks of Linked Lists: <br>
+                        Random access is not allowed. We have to access elements sequentially starting from the first
+                        node(head node). So we cannot do a binary search with linked lists efficiently with its default
+                        implementation. <br>
+                        Extra memory space for a pointer is required with each element of the list. <br>
+                        Not cache-friendly. Since array elements are contiguous locations, there is the locality of
+                        reference which is not there in the case of linked lists.<br>
+                        It takes a lot of time in traversing and changing the pointers.<br><br>
+                        Reverse traversing is not possible in singly linked lists.<br>
+                        It will be confusing when we work with pointers.<br>
+                        Direct access to an element is not possible in a linked list as in an array by index.<br>
+                        Searching for an element is costly and requires O(n) time complexity.<br>
+                        Sorting of linked lists is very complex and costly.<br><br><br>
+                        Types of Linked Lists:<br>
+                        Simple Linked List – In this type of linked list, one can move or traverse the linked list in
+                        only one direction. where the next pointer of each node points to other nodes but the next
+                        pointer of the last node points to NULL. It is also called “Singly Linked List”.<br><br>
+                        Doubly Linked List – In this type of linked list, one can move or traverse the linked list in
+                        both directions (Forward and Backward)<br><br>
+                        Circular Linked List – In this type of linked list, the last node of the linked list contains
+                        the link of the first/head node of the linked list in its next pointer.<br>
+                        Doubly Circular Linked List – A Doubly Circular linked list or a circular two-way linked list is
+                        a more complex type of linked list that contains a pointer to the next as well as the previous
+                        node in the sequence. The difference between the doubly linked and circular doubly list is the
+                        same as that between a singly linked list and a circular linked list. The circular doubly linked
+                        list does not contain null in the previous field of the first node.<br><br>
+                        Header Linked List – A header linked list is a special type of linked list that contains a
+                        header node at the beginning of the list. <br><br><br>
+                        Basic operations on Linked Lists:<br>
+                        Deletion<br>
+                        Insertion<br>
+                        Search<br>
+                        Display<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ol>
+            <li>
+                Types of linked lists
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne">
+                                Single-linked list
+                            </button>
+                        </h2>
+                        <div id="collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Traversal of items can be done in the forward direction only due to the linking of every
+                                node to its next node.
+                                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220712172013/Singlelinkedlist.png"
+                                    alt="" style="width: 100%;">
+                                <pre class="language-java">
+                                        <code>
+                                            // Linked List Class
+                                            class LinkedList {
+                                                Node head; // head of list
+                                              
+                                                /* Node Class */
+                                                class Node {
+                                                    int data;
+                                                    Node next;
+                                              
+                                                    // Constructor to create a new node
+                                                    Node(int d)
+                                                    {
+                                                        data = d;
+                                                        next = null;
+                                                    }
+                                                }
+                                            }
+                                        </code>
+                                    </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo">
+                                Double linked list
+                            </button>
+                        </h2>
+                        <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Traversal of items can be done in both forward and backward directions as every node
+                                contains an additional prev pointer that points to the previous node.
+
+                                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220712180755/Doublylinkedlist.png"
+                                    alt="" style="width: 100%;">
+                                <pre class="language-java">
+                                        <code>
+                                            // Class for Doubly Linked List
+public class DLL {
+    Node head; // head of list
+  
+    /* Doubly Linked list Node*/
+    class Node {
+        int data;
+        Node prev;
+        Node next;
+  
+        // Constructor to create a new node
+        // next and prev is by default initialized as null
+        Node(int d) { data = d; }
+    }
+}
+                                        </code>
+                                        </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree">
+                                Circular linked lists
+                            </button>
+                        </h2>
+                        <div id="collapseThree3" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                A circular linked list is a type of linked list in which the first and the last nodes
+                                are also connected to each other to form a circle, there is no NULL at the end.
+                                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220712181336/Circularlinkedlist.png"
+                                    alt="" style="width: 100%;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+
+
+
+            <!-- offcanvas -->
+            <li>Insertion in Linked List<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom53" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom53"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Insertion in Linked List</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        A node can be added in three ways
+                        <br><br>
+                        At the front of the linked list <br>
+                        After a given node. <br>
+                        At the end of the linked list.<br>
+                    </div>
+                </div>
+                <pre class="language-java">
+                                            <code>
+                                                // Linked List Class
+                                                class LinkedList
+                                                {
+                                                    Node head;  // head of list
+                                                  
+                                                    /* Node Class */
+                                                    class Node
+                                                    {
+                                                        int data;
+                                                        Node next;
+                                                           
+                                                        // Constructor to create a new node
+                                                        Node(int d) {data = d; next = null; }
+                                                    }
+                                                }
+                                            </code>
+                                            </pre>
+
+                <pre class="language-java">
+                                            <code>
+                                                int[] intArray = new int[20]; // combining both statements in one
+                                            </code>
+                                            </pre>
+            </li>
+
+
+
+
+
+
+
+            <li>At the front of the linked list<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvas1" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas1"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">At the front of the linked list</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        Approach: The new node is always added before the head of the given Linked List. And newly added
+                        node becomes the new head of the Linked List. For example, if the given Linked List is
+                        10->15->20->25 and we add an item 5 at the front, then the Linked List becomes
+                        5->10->15->20->25. Let us call the function that adds at the front of the list is push(). The
+                        push() must receive a pointer to the head pointer because the push must change the head pointer
+                        to point to the new node
+                        <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist_insert_at_start.png"
+                            alt="" style="width:100%">
+                    </div>
+                </div>
+                <pre class="language-java">
+                                        <code>
+                                            /* This function is in LinkedList class. Inserts a
+                                            new Node at front of the list. This method is 
+                                            defined inside LinkedList class shown above */
+                                         public void push(int new_data)
+                                         {
+                                             /* 1 & 2: Allocate the Node &
+                                                       Put in the data*/
+                                             Node new_node = new Node(new_data);
+                                           
+                                             /* 3. Make next of new Node as head */
+                                             new_node.next = head;
+                                           
+                                             /* 4. Move the head to point to new Node */
+                                             head = new_node;
+                                         }
+                                        </code>
+                                        </pre>
+            </li>
+            Complexity Analysis:
+            <br><br>
+            Time Complexity: O(1), We have a pointer to the head and we can directly attach a node and change the
+            pointer. So the Time complexity of inserting a node at the head position is O(1) as it does a constant
+            amount of work.<br><br>
+            Auxiliary Space: O(1)
+
+            <li>Add a node after a given node<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvas2" aria-controls="offcanvasBottom">Read
+                    more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas2"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Add a node after a given node</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        Approach: We are given a pointer to a node, and the new node is inserted after the given
+                        node.Follow the steps to add a node after a given node:<br>
+                        <br><br>
+                        Firstly, check if the given previous node is NULL or not.<br><br>
+                        Then, allocate a new node and<br><br>
+                        Assign the data to the new node<br><br>
+                        And then make the next of new node as the next of previous node. <br><br>
+                        Finally, move the next of the previous node as a new node.
+                        <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist_insert_middle.png"
+                            alt="" width="100%"><br><br>
+                        Complexity Analysis:
+                        <br><br>
+                        Time complexity: O(1), since prev_node is already given as argument in a method, no need to
+                        iterate over list to find prev_node<br><br>
+                        Auxiliary Space: O(1) since using constant space to modify pointers
+                    </div>
+                </div>
+                <pre class="language-java">
+                                    <code>
+                                        /* This function is in LinkedList class.
+Inserts a new node after the given prev_node. This method is
+defined inside LinkedList class shown above */
+public void insertAfter(Node prev_node, int new_data)
+{
+    /* 1. Check if the given Node is null */
+    if (prev_node == null) {
+        System.out.println(
+            "The given previous node cannot be null");
+        return;
+    }
+  
+    /* 2. Allocate the Node &
+    3. Put in the data*/
+    Node new_node = new Node(new_data);
+  
+    /* 4. Make next of new Node as next of prev_node */
+    new_node.next = prev_node.next;
+  
+    /* 5. make next of prev_node as new_node */
+    prev_node.next = new_node;
+}
+                                    </code>
+                                    </pre>
+            </li>
+            <li>Add a node at the end<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvas3" aria-controls="offcanvasBottom">Read
+                    more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas3"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Add a node at the end</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        The new node is always added after the last node of the given Linked List. For example if the
+                        given Linked List is 5->10->15->20->25 and we add an item 30 at the end, then the Linked List
+                        becomes 5->10->15->20->25->30. <br><br>
+                        Since a Linked List is typically represented by the head of it, we have to traverse the list
+                        till the end and then change the next to last node to a new node.
+                        <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist_insert_last.png"
+                            alt="" style="width: 100%;">
+                        Complexity Analysis:
+                        <br><br>
+                        Time complexity: O(N), where N is the number of nodes in the linked list. Since there is a loop
+                        from head to end, the function does O(n) work.
+                        This method can also be optimized to work in O(1) by keeping an extra pointer to the tail of the
+                        linked list<br><br>
+                        Auxiliary Space: O(1)
+                    </div>
+                </div>
+                <pre class="language-java">
+                                <code>
+                                    // A complete working Java program to demonstrate all insertion methods
+                                    // on linked list
+                                    import java.io.*;
+                                    public class LinkedList
+                                    {
+                                        Node head;  // head of list
+                                      
+                                        /* Linked list Node*/
+                                        class Node
+                                        {
+                                            int data;
+                                            Node next;
+                                            Node(int d) {data = d; next = null; }
+                                        }
+                                      
+                                        /* Inserts a new Node at front of the list. */
+                                        public void push(int new_data)
+                                        {
+                                            /* 1 & 2: Allocate the Node &
+                                                      Put in the data*/
+                                            Node new_node = new Node(new_data);
+                                      
+                                            /* 3. Make next of new Node as head */
+                                            new_node.next = head;
+                                      
+                                            /* 4. Move the head to point to new Node */
+                                            head = new_node;
+                                        }
+                                      
+                                        /* Inserts a new node after the given prev_node. */
+                                        public void insertAfter(Node prev_node, int new_data)
+                                        {
+                                            /* 1. Check if the given Node is null */
+                                            if (prev_node == null)
+                                            {
+                                                System.out.println("The given previous node cannot be null");
+                                                return;
+                                            }
+                                      
+                                            /* 2 & 3: Allocate the Node &
+                                                      Put in the data*/
+                                            Node new_node = new Node(new_data);
+                                      
+                                            /* 4. Make next of new Node as next of prev_node */
+                                            new_node.next = prev_node.next;
+                                      
+                                            /* 5. make next of prev_node as new_node */
+                                            prev_node.next = new_node;
+                                        }
+                                         
+                                        /* Appends a new node at the end.  This method is 
+                                           defined inside LinkedList class shown above */
+                                        public void append(int new_data)
+                                        {
+                                            /* 1. Allocate the Node &
+                                               2. Put in the data
+                                               3. Set next as null */
+                                            Node new_node = new Node(new_data);
+                                      
+                                            /* 4. If the Linked List is empty, then make the
+                                                  new node as head */
+                                            if (head == null)
+                                            {
+                                                head = new Node(new_data);
+                                                return;
+                                            }
+                                      
+                                            /* 4. This new node is going to be the last node, so
+                                                  make next of it as null */
+                                            new_node.next = null;
+                                      
+                                            /* 5. Else traverse till the last node */
+                                            Node last = head; 
+                                            while (last.next != null)
+                                                last = last.next;
+                                      
+                                            /* 6. Change the next of last node */
+                                            last.next = new_node;
+                                            return;
+                                        }
+                                      
+                                        /* This function prints contents of linked list starting from
+                                            the given node */
+                                        public void printList()
+                                        {
+                                            Node tnode = head;
+                                            while (tnode != null)
+                                            {
+                                                System.out.print(tnode.data+" ");
+                                                tnode = tnode.next;
+                                            }
+                                        }
+                                      
+                                        /* Driver program to test above functions. Ideally this function
+                                           should be in a separate user class.  It is kept here to keep
+                                           code compact */
+                                        public static void main(String[] args)
+                                        {
+                                            /* Start with the empty list */
+                                            LinkedList llist = new LinkedList();
+                                      
+                                            // Insert 6.  So linked list becomes 6->NUllist
+                                            llist.append(6);
+                                      
+                                            // Insert 7 at the beginning. So linked list becomes
+                                            // 7->6->NUllist
+                                            llist.push(7);
+                                      
+                                            // Insert 1 at the beginning. So linked list becomes
+                                            // 1->7->6->NUllist
+                                            llist.push(1);
+                                      
+                                            // Insert 4 at the end. So linked list becomes
+                                            // 1->7->6->4->NUllist
+                                            llist.append(4);
+                                      
+                                            // Insert 8, after 7. So linked list becomes
+                                            // 1->7->8->6->4->NUllist
+                                            llist.insertAfter(llist.head.next, 8);
+                                      
+                                            System.out.println("\nCreated Linked list is: ");
+                                            llist.printList();
+                                        }
+                                    }
+                                </code>
+                                </pre>
+            </li>
+
+
+
+
+
+
+
+
+            <li>An alternate method by using a constructor call<button class="btn btn1" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvas4" aria-controls="offcanvasBottom">Read
+                    more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas4"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">An alternate method by using a constructor
+                            call</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        However, another method uses a constructor call inside the node class to minimize the memory
+                        allocation work.<br><br>
+                        It also reduces the number of lines of code.<br><br>
+                        Time Complexity: O(N) <br><br>
+                        Auxiliary Space: O(1)
+                    </div>
+                </div>
+                <pre class="language-java">
+                                    <code>
+                                        import java.io.*;
+  
+                                        class node {
+                                            int data;
+                                            node next;
+                                          
+                                            // constructor call
+                                            node(int value)
+                                            {
+                                          
+                                                // It automatically assigns the value to the data
+                                                data = value;
+                                          
+                                                // next pointer is pointed to null
+                                                next = null;
+                                            }
+                                        }
+                                          
+                                        class GFG {
+                                          
+                                            // Declaring an empty linked list
+                                            static node head = null;
+                                          
+                                            // Function to insert an element at head position
+                                            static void insertathead(int val)
+                                            {
+                                                node n = new node(val);
+                                                n.next = head;
+                                                head = n;
+                                            }
+                                          
+                                            // Function to insert a element at a specified position
+                                            static void insertafter(int key, int val)
+                                            {
+                                                node n = new node(val);
+                                                if (key == head.data) {
+                                                    n.next = head.next;
+                                                    head.next = n;
+                                                    return;
+                                                }
+                                                node temp = head;
+                                                while (temp.data != key) {
+                                                    temp = temp.next;
+                                                    if (temp == null) {
+                                                        return;
+                                                    }
+                                                }
+                                                n.next = temp.next;
+                                                temp.next = n;
+                                            }
+                                          
+                                            // Function to insert an element at the end
+                                            static void insertattail(int val)
+                                            {
+                                                node n = new node(val);
+                                                if (head == null) {
+                                                    head = n;
+                                                    return;
+                                                }
+                                                node temp = head;
+                                                while (temp.next != null) {
+                                                    temp = temp.next;
+                                                }
+                                                temp.next = n;
+                                            }
+                                          
+                                            // Function to print the singly linked list
+                                            static void print()
+                                            {
+                                                node temp = head;
+                                                while (temp != null) {
+                                                    System.out.print(temp.data + " -> ");
+                                                    temp = temp.next;
+                                                }
+                                                System.out.println("NULL");
+                                            }
+                                          
+                                            public static void main(String[] args)
+                                            {
+                                          
+                                                insertathead(1);
+                                                insertathead(2);
+                                                System.out.print("After insertion at head: ");
+                                                print();
+                                                System.out.println();
+                                          
+                                                insertattail(4);
+                                                insertattail(5);
+                                                System.out.print("After insertion at tail: ");
+                                                print();
+                                                System.out.println();
+                                          
+                                                insertafter(1, 2);
+                                                insertafter(5, 6);
+                                                System.out.print(
+                                                    "After insertion at a given position: ");
+                                                print();
+                                                System.out.println();
+                                            }
+                                        }
+                                          
+                                    </code>
+                                    </pre>
+            </li>
+            <li>Search an element in a Linked List (Recursive Approach)<button class="btn btn1" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvas6" aria-controls="offcanvasBottom">Read
+                    more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas6"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Search an element in a Linked List
+                            (Recursive Approach)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        Follow the below steps to solve the problem:
+                        <br><br>
+                        If the head is NULL, return false.<br><br>
+                        If the head’s key is the same as X, return true;<br><br>
+                        Else recursively search in the next node.<br><br>
+                        Time Complexity: O(N)<br>
+                        Auxiliary Space: O(N), Stack space used by recursive calls
+                    </div>
+                </div>
+                <pre class="language-java">
+                                <code>
+                                  
+// Linked list class
+class LinkedList {
+    Node head; // Head of list
+ 
+    // Inserts a new node at the front of the list
+    public void push(int new_data)
+    {
+        // Allocate new node and putting data
+        Node new_node = new Node(new_data);
+ 
+        // Make next of new node as head
+        new_node.next = head;
+ 
+        // Move the head to point to new Node
+        head = new_node;
+    }
+ 
+    // Checks whether the value x is present
+    // in linked list
+    public boolean search(Node head, int x)
+    {
+        // Base case
+        if (head == null)
+            return false;
+ 
+        // If key is present in current node,
+        // return true
+        if (head.data == x)
+            return true;
+ 
+        // Recur for remaining list
+        return search(head.next, x);
+    }
+ 
+    // Driver code
+    public static void main(String args[])
+    {
+        // Start with the empty list
+        LinkedList llist = new LinkedList();
+ 
+        /* Use push() to construct below list
+           14->21->11->30->10  */
+        llist.push(10);
+        llist.push(30);
+        llist.push(11);
+        llist.push(21);
+        llist.push(14);
+ 
+          // Function call
+        if (llist.search(llist.head, 21))
+            System.out.println("Yes");
+        else
+            System.out.println("No");
+    }
+}
+ 
+// Node class
+class Node {
+    int data;
+    Node next;
+    Node(int d)
+    {
+        data = d;
+        next = null;
+    }
+}
+                                </code>
+                                </pre>
+            </li>
+
+
+            <li>Find Length of a Linked List (Iterative and Recursive)<button class="btn btn1" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvas5" aria-controls="offcanvasBottom">Read
+                    more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas5"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Find Length of a Linked List (Iterative
+                            and Recursive)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        Follow the given steps to solve the problem:
+                        <br><br>
+                        Initialize count as 0 <br>
+                        Initialize a node pointer, current = head.<br>
+                        Do following while current is not NULL<br>
+                        current = current -> next<br>
+                        Increment count by 1.<br>
+                        Return count <br> <br> <br>
+                        Time complexity: O(N), Where N is the size of the linked list <br> <br>
+                        Auxiliary Space: O(1), As constant extra space is used.
+                    </div>
+                </div>
+                <pre class="language-java">
+                            <code>
+                                /* Linked list Node*/
+                                class Node {
+                                    int data;
+                                    Node next;
+                                    Node(int d)
+                                    {
+                                        data = d;
+                                        next = null;
+                                    }
+                                }
+                                  
+                                // Linked List class
+                                class LinkedList {
+                                    Node head; // head of list
+                                  
+                                    /* Inserts a new Node at front of the list. */
+                                    public void push(int new_data)
+                                    {
+                                        /* 1 & 2: Allocate the Node &
+                                                  Put in the data*/
+                                        Node new_node = new Node(new_data);
+                                  
+                                        /* 3. Make next of new Node as head */
+                                        new_node.next = head;
+                                  
+                                        /* 4. Move the head to point to new Node */
+                                        head = new_node;
+                                    }
+                                  
+                                    /* Returns count of nodes in linked list */
+                                    public int getCount()
+                                    {
+                                        Node temp = head;
+                                        int count = 0;
+                                        while (temp != null) {
+                                            count++;
+                                            temp = temp.next;
+                                        }
+                                        return count;
+                                    }
+                                  
+                                    // Driver code
+                                    public static void main(String[] args)
+                                    {
+                                        /* Start with the empty list */
+                                        LinkedList llist = new LinkedList();
+                                        llist.push(1);
+                                        llist.push(3);
+                                        llist.push(1);
+                                        llist.push(2);
+                                        llist.push(1);
+                                  
+                                          // Function call
+                                        System.out.println("Count of nodes is "
+                                                           + llist.getCount());
+                                    }
+                                }
+                            </code>
+                            </pre>
+            </li>
+            <li>Reverse a Linked List<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvas1" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas1"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Array Literal</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        Given a pointer to the head node of a linked list, the task is to reverse the linked list. We
+                        need to reverse the list by changing the links between nodes.
+                        <br><br>
+                        Follow the steps below to solve the problem:
+                        <br><br>
+                        Initialize three pointers prev as NULL, curr as head, and next as NULL.<br><br>
+                        Iterate through the linked list. In a loop, do the following:<br><br>
+                        Before changing the next of curr, store the next node<br>
+                        next = curr -> next<br>
+                        Now update the next pointer of curr to the prev <br>
+                        curr -> next = prev <br>
+                        Update prev as curr and curr as next <br>
+                        prev = curr <br>
+                        curr = next<br><br><br>
+                        Time Complexity: O(N), Traversing over the linked list of size N. <br><br>
+                        Auxiliary Space: O(1)
+                    </div>
+                </div>
+                <pre class="language-java">
+                        <code>
+                            
+class LinkedList {
+ 
+    static Node head;
+ 
+    static class Node {
+ 
+        int data;
+        Node next;
+ 
+        Node(int d)
+        {
+            data = d;
+            next = null;
+        }
+    }
+ 
+    /* Function to reverse the linked list */
+    Node reverse(Node node)
+    {
+        Node prev = null;
+        Node current = node;
+        Node next = null;
+        while (current != null) {
+            next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+        node = prev;
+        return node;
+    }
+ 
+    // prints content of double linked list
+    void printList(Node node)
+    {
+        while (node != null) {
+            System.out.print(node.data + " ");
+            node = node.next;
+        }
+    }
+ 
+    // Driver Code
+    public static void main(String[] args)
+    {
+        LinkedList list = new LinkedList();
+        list.head = new Node(85);
+        list.head.next = new Node(15);
+        list.head.next.next = new Node(4);
+        list.head.next.next.next = new Node(20);
+ 
+        System.out.println("Given linked list");
+        list.printList(head);
+        head = list.reverse(head);
+        System.out.println("");
+        System.out.println("Reversed linked list ");
+        list.printList(head);
+    }
+}
+ 
+                        </code>
+                        </pre>
+            </li>
+            <li>Deletion in Linked List (Delete from Beginning)<button class="btn btn1" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvas1" aria-controls="offcanvasBottom">Read
+                    more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas1"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Deletion in Linked List</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        Point head to the next node i.e. second node<br><br>
+                        temp = head<br>
+                        head = head->next<br>
+                        <br><br>
+                        Make sure to free unused memory<br>
+                        free(temp); or delete temp;<br>
+                    </div>
+                </div>
+                <pre class="language-java">
+                        <code>
+                            import java.io.*;
+                            public class LinkedList {
+                                Node head; // head of list
+                             
+                                /* Linked list Node*/
+                                class Node {
+                                    int data;
+                                    Node next;
+                                    Node(int d)
+                                    {
+                                        data = d;
+                                        next = null;
+                                    }
+                                }
+                             
+                                /* Given a key, deletes the first
+                                   occurrence of key in
+                                 * linked list */
+                                void deleteNode(int key)
+                                {
+                                    // Store head node
+                                    Node temp = head, prev = null;
+                             
+                                    // If head node itself holds the key to be deleted
+                                    if (temp != null && temp.data == key) {
+                                        head = temp.next; // Changed head
+                                        return;
+                                    }
+                             
+                                    // Search for the key to be deleted, keep track of
+                                    // the previous node as we need to change temp.next
+                                    while (temp != null && temp.data != key) {
+                                        prev = temp;
+                                        temp = temp.next;
+                                    }
+                             
+                                    // If key was not present in linked list
+                                    if (temp == null)
+                                        return;
+                             
+                                    // Unlink the node from linked list
+                                    prev.next = temp.next;
+                                }
+                             
+                                /* Inserts a new Node at front of the list. */
+                                public void push(int new_data)
+                                {
+                                    Node new_node = new Node(new_data);
+                                    new_node.next = head;
+                                    head = new_node;
+                                }
+                             
+                                /* This function prints contents of linked list starting
+                                   from the given node */
+                                public void printList()
+                                {
+                                    Node tnode = head;
+                                    while (tnode != null) {
+                                        System.out.print(tnode.data + " ");
+                                        tnode = tnode.next;
+                                    }
+                                }
+                             
+                                /* Driver program to test above functions. Ideally this
+                                function should be in a separate user class. It is kept
+                                here to keep code compact */
+                                public static void main(String[] args)
+                                {
+                                    LinkedList llist = new LinkedList();
+                             
+                                    llist.push(7);
+                                    llist.push(1);
+                                    llist.push(3);
+                                    llist.push(2);
+                             
+                                    System.out.println("\nCreated Linked list is:");
+                                    llist.printList();
+                             
+                                    llist.deleteNode(1); // Delete node with data 1
+                             
+                                    System.out.println(
+                                        "\nLinked List after Deletion of 1:");
+                                    llist.printList();
+                                }
+                            }
+                        </code>
+                        </pre>
+            </li>
+            <li>Array Literal<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvas1" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas1"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Array Literal</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        In a situation where the size of the array and variables of the array are already known, array
+                        literals can be used. <br>
+                        <br><br> The length of this array determines the length of the created array.
+                        <br><br> There is no need to write the new int[] part in the latest versions of Java.
+                    </div>
+                </div>
+                <pre class="language-java">
+                        <code>
+                            int[] intArray = new int[]{ 1,2,3,4,5,6,7,8,9,10 }; 
+// Declaring array literal
+                        </code>
+                        </pre>
+            </li>
+
+
+        </ol>
+    </div>
+    </div>
+    <!-- Footer -->
+    <footer class="text-lg-start bg-dark text-muted footer-dark mt-5" style="background-color: rgb(1,4,45) !important;">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-lg-between p-4 border-bottom" style="color: white">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block" style="font-size: 1.7em;">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+            <!-- Right -->
+            <div>
+                <!-- Facebook -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i
+                        class="bi bi-facebook"></i></a>
+                <!-- Twitter -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i
+                        class="bi bi-twitter"></i></a>
+                <!-- Google -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i
+                        class="bi bi-google"></i></a>
+                <!-- Instagram -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i
+                        class="bi bi-instagram"></i></a>
+                <!-- Linkedin -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #0082ca"
+                    href="https://www.linkedin.com/in/mr-soham-manjrekar/" role="button"><i
+                        class="bi bi-linkedin"></i></a>
+                <!-- Github -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #333333"
+                    href="https://github.com/sohammanjrekar" role="button"><i class="bi bi-github"></i></a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+        <!-- Section: Links  -->
+        <section class="links" style="color: white">
+            <div class="container text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-8 col-lg-8 col-xl-8 mx-auto mb-4">
+                        <!-- Content -->
+                        <h2 class="text-uppercase fw-bold mb-4">
+                            <i class="bi bi-gem me-3"></i>Cheatbook
+                        </h2>
+                        <p>
+                            <li>Quick reference</li>
+                            <li>Be productive after learning a new thing
+                            </li>
+                            <li>Quickly recall when forget some syntax</li>
+                            <li>Use snippets for rapid development</li>
+                        </p>
+                    </div>
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4" style="font-size: 1.3em;">
+                        <!-- Links -->
+                        <h2 class="text-uppercase fw-bold mb-4">Contact</h2>
+                        <p><i class="bi bi-house-door me-3"></i>Badlapur,mumbai</p>
+                        <p><i class="bi bi-envelope me-3"></i> mrsohammanjrekar@gmail.com</p>
+                        <p><i class="bi bi-phone me-3"></i> +91 7045208474</p>
+                        <p><i class="bi bi-whatsapp me-3"></i> +91 7045208474</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);color:white;word-spacing: 3px;">
+            © 2022 Copyright:
+            <a class="text-reset fw-bold" href="https://github.com/sohammanjrekar">cheatbook.com</a> created by Soham
+            Manjrekar
+        </div>
+        <!-- Copyright -->
+        <a class="js-scroll-trigger scroll-to-top rounded" href="#page-top"><i class="fa fa-angle-up"></i></a>
+    </footer>
+    <!-- Footer -->
+    <!-- Footer -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script src="../../myDesigns/assets/js/jquery.min.js"></script>
+    <script src="../../myDesigns/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="../../myDesigns/assets/js/stylish-portfolio.js"></script>
+</body>
+
+</html>
