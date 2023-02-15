@@ -4,26 +4,21 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Java cheatsheet</title>
-    <link rel="shortcut icon" href="../../assets/img/java-icon.svg" type="image/x-icon">
+    <title>Queue cheatsheet</title>
+    <link rel="shortcut icon" href="../../assets/img/mainlogo.jpg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-
     <link rel="stylesheet" href="../../assets/css/style.css" />
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="../../myDesigns/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
     <link rel="stylesheet" href="../../myDesigns/assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="../../myDesigns/assets/fonts/simple-line-icons.min.css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="../../assets/prismjs/prism.css" />
-
     <script src="../../assets/prismjs/prism.js"></script>
     <style>
         .scroll-to-top {
@@ -38,6 +33,10 @@
 
         footer .scroll-to-top {
             text-decoration: none !important;
+        }
+
+        li img {
+            width: 100%
         }
     </style>
 </head>
@@ -185,31 +184,27 @@
     <!-- mid part -->
     <nav class="mt-5 p-2 headline" style="background:linear-gradient(to top right, #fb5475 0%, #f77b50 59%);">
         <div class="text-center " style="margin-top:5vh;"><img style="margin-right:2vh;"
-                src="../../assets/img/java-icon.svg" alt="" /> Java cheatsheet
+                src="../../assets/img/mainlogo.jpg" alt="" /> Queue cheatsheet
         </div>
     </nav>
     <div class="container">
         <div class="p-5 mb-4 bg-light rounded-3 jumbo mt-2">
             <div class="container-fluid py-3">
-                <h1 class="display-5 fw-bold">Java</h1>
+                <h1 class="display-5 fw-bold">Queue</h1>
                 <div class="row">
                     <div class="col-md-6">
                         <p class="fs-4">
-                            Java is a popular programming language, created in 1995.
-                            <br> It is owned by Oracle, and more than 3 billion devices run Java.
-                            <br> It is used for:
-                            <br>
-                        <ul>
-                            <li>
-                                Mobile applications (specially Android apps)</li>
-                            <li> Desktop applications</li>
-                            <li> Web applications</li>
-                            <li> Web servers and application servers</li>
-                        </ul>
+                            A Queue is defined as a linear data structure that is open at both ends and the operations
+                            are
+                            performed in First In First Out (FIFO) order.We define a queue to be a list in which all
+                            additions to the list are made at one end, and all deletions from the list are made at the
+                            other
+                            end. The element which is first pushed into the order, the operation is first performed on
+                            that.
                         </p>
                     </div>
                     <div class="col-md-6 text-center">
-                        <img src="../../assets/img/java-icon.svg" alt="" style="height:100%;width:100%;" />
+                        <img src="../../assets/img/dsa/Queue.jpg" alt="" style="height:100%;width:100%;" />
                     </div>
                 </div>
                 <button class="btn btn1" type="button" data-bs-toggle="offcanvas" data-bs-target="#o1"
@@ -228,18 +223,26 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
+                        Characteristics of Queue:
                         <ol type="a">
-                            <li>Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)</li>
-                            <li>It is one of the most popular programming language in the world</li>
-                            <li> It has a large demand in the current job market</li>
-                            <li> It is easy to learn and simple to use</li>
-                            <li> It is open-source and free</li>
-                            <li>It is secure, fast and powerful</li>
-                            <li>It has a huge community support (tens of millions of developers)</li>
-                            <li>Java is an object oriented language which gives a clear structure to programs and allows
-                                code to be reused, lowering development costs</li>
-                            <li>As Java is close to C++ and C#, it makes it easy for programmers to switch to Java or
-                                vice versa</li>
+                            <li>Queue can handle multiple data.</li>
+                            <li>
+                                We can access both ends.</li>
+                            <li>
+                                They are fast and flexible. </li>
+                        </ol><br><br>
+                        Queue Representation:<br><br>
+                        Like stacks, Queues can also be represented in an array: In this representation, the
+                        Queue is implemented using the array. Variables used in this case are
+                        <ol type="a">
+                            <li>
+                                Queue: the name of the array storing queue elements.</li>
+                            <li>
+                                Front: the index where the first element is stored in the array representing the queue.
+                            </li>
+                            <li>
+                                Rear: the index where the last element is stored in an array representing the queue.
+                            </li>
                         </ol>
                     </div>
                 </div>
@@ -248,84 +251,194 @@
         <ol>
             <!-- offcanvas -->
             <li>
-                Java Syntax<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+                Queue Interface In Java<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom2" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom2"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Java Syntax</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Queue Interface In Java</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        The curly braces {} marks the beginning and the end of a block of code.
-                        <br><br> System is a built-in Java class that contains useful members, such as out, which is
-                        short for "output". The println() method, short for "print line", is used to print a value to
-                        the screen (or a file).
-                        <br><br> Don't worry too much about System, out and println(). Just know that you need them
-                        together to print stuff to the screen.
-                        <br><br> You should also note that each code statement must end with a semicolon (;).
+                        The Queue interface is present in java.util package and extends the Collection interface is used
+                        to hold the elements about to be processed in FIFO(First In First Out) order. It is an ordered
+                        list of objects with its use limited to inserting elements at the end of the list and deleting
+                        elements from the start of the list, (i.e.), it follows the FIFO or the First-In-First-Out
+                        principle.
+                        <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200903183026/Queue-Deque-PriorityQueue-In-Java.png"
+                            alt="">
+                        Being an interface the queue needs a concrete class for the declaration and the most common
+                        classes are the PriorityQueue and LinkedList in Java. Note that neither of these implementations
+                        is thread-safe. PriorityBlockingQueue is one alternative implementation if the thread-safe
+                        implementation is needed.
+                        <br><br><br>
+                        Characteristics of a Queue: The following are the characteristics of the queue:
+                        <br><br>
+                        The Queue is used to insert elements at the end of the queue and removes from the beginning of
+                        the queue. It follows FIFO concept.<br><br>
+                        The Java Queue supports all methods of Collection interface including insertion, deletion,
+                        etc.<br><br>
+                        LinkedList, ArrayBlockingQueue and PriorityQueue are the most frequently used
+                        implementations.<br><br>
+                        If any null operation is performed on BlockingQueues, NullPointerException is thrown.<br><br>
+                        The Queues which are available in java.util package are Unbounded Queues.<br><br>
+                        The Queues which are available in java.util.concurrent package are the Bounded Queues.<br><br>
+                        All Queues except the Deques supports insertion and removal at the tail and head of the queue
+                        respectively. The Deques support element insertion and removal at both ends. <br><br>
                     </div>
                 </div>
-                <pre class="language-java">
-                    <code> 
-                        public class Main {
-                            public static void main(String[] args) {
-                              System.out.println("Hello World");
-                            }
-                          }
-                        </code>
-</pre>
+
             </li>
-            <li>Convert .java file to .class byte code file
-                <pre class="language-sh">
-                    <code> 
-                       javac  Main.java
-                        </code>
-</pre>
-            </li>
-            <li>Run .class byte code file
-                <pre class="language-sh">
-                    <code> 
-                       java  Main
-                        </code>
-</pre>
-            </li>
+            <!-- offcanvas -->
             <li>
-                Print Text<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasBottom3" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom3"
+                Creating Queue Objects<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom2" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom2"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Print Text</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Creating Queue Objects</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        1) The Print() Method<br> There is also a print() method, which is similar to println(). <br>
-                        The only difference is that it does not insert a new line at the end of the output
-                        <br><br><br>2) Println() <br> You can add as many println() methods as you want. Note that it
-                        will add a new line for each method
+                        Since Queue is an interface, objects cannot be created of the type queue. We always need a class
+                        which extends this list in order to create an object. And also, after the introduction of
+                        Generics in Java 1.5, it is possible to restrict the type of object that can be stored in the
+                        Queue.
                     </div>
                 </div>
-                <h3>Print()</h3>
+                <h3>How to Create a Queue</h3>
                 <pre class="language-java">
-            <code>     
-                System.out.print("I will print on the same line.");
-            </code>
-        </pre>
-                <h3>Println()</h3>
+                    <code>
+                        import java.util.Queue;
+                </code>
+                </pre>
                 <pre class="language-java">
-            <code>     
-                System.out.println("Hello World!");
-            </code>
-        </pre>
-            </li>
-            <li>Take inputs
-                <pre class="language-java">
-                    <code> 
-                        Scanner input=new Scanner(System.in);
-                        float marks =input.nextFloat();
-                        </code>
+    <code>
+        Queue&lt;Integer&gt; q = new LinkedList&lt;&gt;();
+</code>
 </pre>
+                <pre class="language-java">
+    <code>
+        Queue&lt;String&gt; pq = new PriorityQueue<>();
+</code>
+</pre>
+            </li>
+            <li>Adding Elements in Queue
+                <pre class="language-java">
+    <code>
+        pq.add("Geeks");
+</code>
+</pre>
+            </li>
+            <li>Removing Elements in Queue
+                <pre class="language-java">
+    <code>
+        pq.remove("Geeks");
+</code>
+</pre>
+            </li>
+            <li>Iterating the Queue
+                <pre class="language-java">
+    <code>
+        Iterator iterator = pq.iterator();
+  
+        while (iterator.hasNext()) {
+            System.out.print(iterator.next() + " ");
+        }
+</code>
+</pre>
+            </li>
+
+
+
+
+            <li> PriorityQueue use for Queue
+                <button class="btn btn1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom5"
+                    aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom5"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">PriorityQueue use for Queue</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        PriorityQueue class which is implemented in the collection framework provides us a way to
+                        process the objects based on the priority. It is known that a queue follows the
+                        First-In-First-Out algorithm, but sometimes the elements of the queue are needed to be processed
+                        according to the priority, that’s when the PriorityQueue comes into play. Let’s see how to
+                        create a queue object using this class.
+                    </div>
+                </div>
+                <h3>Creating empty priority queue</h3>
+                <pre class="language-java">
+            <code>     
+                Queue&lt;Integer&gt; pQueue
+                    = new PriorityQueue&lt;Integer&gt;();
+            </code>
+        </pre>
+                <h3>Adding items to the pQueue</h3>
+                <pre class="language-java">
+            <code>     
+                pQueue.add(10);
+            </code>
+        </pre>
+        <h3> Printing the top element of the PriorityQueue</h3>
+        <pre class="language-java">
+    <code>     
+        System.out.println(pQueue.peek());
+    </code>
+</pre>
+        <h3>Printing the top element and removing it from the PriorityQueue container</h3>
+        <pre class="language-java">
+    <code>     
+        System.out.println(pQueue.poll());
+    </code>
+</pre>
+                
+            </li>
+
+
+
+
+
+            <li>  LinkedList use for Queue
+                <button class="btn btn1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom585"
+                    aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom585"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">PriorityQueue use for Queue</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        LinkedList is a class which is implemented in the collection framework which inherently implements the linked list data structure. It is a linear data structure where the elements are not stored in contiguous locations and every element is a separate object with a data part and address part. The elements are linked using pointers and addresses. Each element is known as a node. Due to the dynamicity and ease of insertions and deletions, they are preferred over the arrays or queues. Let's see how to create a queue object using this class.
+                    </div>
+                </div>
+                <h3>Creating empty  LinkedList queue</h3>
+                <pre class="language-java">
+            <code>     
+                    Queue&lt;Integer&gt; ll = new LinkedList&lt;Integer&gt;();
+            </code>
+        </pre>
+                <h3>Adding items to the  LinkedList Queue</h3>
+                <pre class="language-java">
+            <code>     
+                ll.add(10);
+            </code>
+        </pre>
+        <h3> Printing the top element of the  LinkedList Queue</h3>
+        <pre class="language-java">
+    <code>     
+        System.out.println(pQueue.peek());
+    </code>
+</pre>
+        <h3>Printing the top element and removing it from the PriorityQueue container</h3>
+        <pre class="language-java">
+    <code>     
+        System.out.println(pQueue.poll());
+    </code>
+</pre>
+                
             </li>
             <li>Java Comments
                 <button class="btn btn1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom4"
