@@ -1223,95 +1223,339 @@ x.save()
                         The django.contrib.staticfiles module helps to manage them
                     </div>
                 </div>
+                </br>
+                1. Include the django.contrib.staticfiles in INSTALLED_APPS.
                 <pre class="language-py">
                                   <code>                   
-                                    python manage.py startapp app_name
+                                   INSTALLED_APPS = [  
+    'django.contrib.staticfiles',  
+]  
                                       </code>
                           </pre>
+
+                2. Define STATIC_URL in settings.py file as given below.
+                <pre class="language-py">
+                                  <code>                   
+                                    STATIC_URL = 'static/'
+                                    STATICFILES_DIRS = [
+                                        BASE_DIR / "static",
+                                    ]
+                                    STATIC_ROOT = "/static/" 
+                                      </code>
+                          </pre>
+                3. Load static files in the templates by using the below expression.
+                <pre class="language-py">
+                                  <code>                   
+                                {% load static %}  
+                                      </code>
+                          </pre>
+                4.In urls , add path for static
+                <pre class="language-py">
+                                            <code>                   
+                                                urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('app_name.urls'))
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+                                                </code>
+                                    </pre>
+                5. Store all images, JavaScript, CSS files in a static folder of the application. First create a
+                directory static, store the files inside it.
+
+
             </li>
             <li>
-                Django Create App<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasBottom3" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom3"
+                Django - Sending E-mails<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom3040" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom3040"
                     aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header">Django Create App</h5>
+                    <div class="offcanvas-header">Django - Sending E-mails</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        What is an App? An app is a web application that has a specific meaning in your project, like a
-                        home page, a contact form, or a members database. In this tutorial we will create an app that
-                        allows us to list and register members in a database. But first,
-                        let's just create a simple Django app that displays "Hello World!".
+                        Django comes with a ready and easy-to-use light engine to send e-mail. Similar to Python you
+                        just need an import of smtplib. In Django you just need to import django.core.mail. To start
+                        sending e-mail, edit your project settings.py file and set the following options :
+                        </br> </br>
+                        EMAIL_HOST − smtp server.
+                        </br> </br>
+                        EMAIL_HOST_USER − Login credential for the smtp server.
+                        </br> </br>
+                        EMAIL_HOST_PASSWORD − Password credential for the smtp server.
+                        </br> </br>
+                        EMAIL_PORT − smtp server port.
+                        </br> </br>
+                        EMAIL_USE_TLS or _SSL − True if secure connection.
+                        </br> </br> </br>
+                        Parameters details for the EmailMessage class creation −
+                        </br> </br>
+                        Subject − E-mail subject.
+                        </br> </br>
+                        message − E-mail body in HTML.
+                        </br> </br>
+                        from_email − E-mail from.
+                        </br> </br>
+                        to − List of receivers’ e-mail address.
+                        </br> </br>
+                        bcc − List of “Bcc” receivers’ e-mail address.
+                        </br> </br>
+                        connection − E-mail backend.
                     </div>
                 </div>
                 <pre class="language-py">
                                   <code>                   
-                                    python manage.py startapp app_name
+                                    from django.core.mail import EmailMessage
+                                    from django.http import HttpResponse
+                                    
+                                    def sendHTMLEmail(request , emailto):
+                                       html_content = "&lt;strong&gt;Comment tu vas?&lt;/strong&gt;"
+                                       email = EmailMessage("my subject", html_content, "paul@polo.com", [emailto])
+                                       email.content_subtype = "html"
+                                       res = email.send()
+                                       return HttpResponse('%s'%res)
                                       </code>
                           </pre>
             </li>
             <li>
-                Django Create App<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasBottom3" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom3"
+                Django - Cookies Handling<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom3051" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom3051"
                     aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header">Django Create App</h5>
+                    <div class="offcanvas-header">Django - Cookies Handling</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        What is an App? An app is a web application that has a specific meaning in your project, like a
-                        home page, a contact form, or a members database. In this tutorial we will create an app that
-                        allows us to list and register members in a database. But first,
-                        let's just create a simple Django app that displays "Hello World!".
+                        cookies are saved on the client side and depending on your client browser security level,
+                        setting cookies can at times work and at times might not.
+                        </br> </br>
+                        To illustrate cookies handling in Django, let's create a system using the login system we
+                        created before. The system will keep you logged in for X minute of time, and beyond that time,
+                        you will be out of the app.
+                        </br> </br>
+                        For this, you will need to set up two cookies, last_connection and username. </br> </br>
+                        setting cookie is done by the set_cookie method called on the response not the request, and also
+                        note that all cookies values are returned as string.
                     </div>
                 </div>
                 <pre class="language-py">
                                   <code>                   
-                                    python manage.py startapp app_name
+                                    from django.template import RequestContext
+
+                                    def login(request):
+                                       username = "not logged in"
+                                       
+                                       if request.method == "POST":
+                                          #Get the posted form
+                                          MyLoginForm = LoginForm(request.POST)
+                                       
+                                       if MyLoginForm.is_valid():
+                                          username = MyLoginForm.cleaned_data['username']
+                                       else:
+                                          MyLoginForm = LoginForm()
+                                       
+                                       response = render_to_response(request, 'loggedin.html', {"username" : username}, 
+                                          context_instance = RequestContext(request))
+                                       
+                                       response.set_cookie('last_connection', datetime.datetime.now())
+                                       response.set_cookie('username', datetime.datetime.now())
+                                        
+                                       return response
                                       </code>
                           </pre>
+                <pre class="language-py">
+                            <code>                   
+                                def formView(request):
+                                if 'username' in request.COOKIES and 'last_connection' in request.COOKIES:
+                                   username = request.COOKIES['username']
+                                   
+                                   last_connection = request.COOKIES['last_connection']
+                                   last_connection_time = datetime.datetime.strptime(last_connection[:-7], 
+                                      "%Y-%m-%d %H:%M:%S")
+                                   
+                                   if (datetime.datetime.now() - last_connection_time).seconds < 10:
+                                      return render(request, 'loggedin.html', {"username" : username})
+                                   else:
+                                      return render(request, 'login.html', {})
+                                         
+                                else:
+                                   return render(request, 'login.html', {})
+                                </code>
+                            </pre>
+                <pre class="language-py">
+                                    <code>   
+                             from django.conf.urls import patterns, url
+                             from django.views.generic import TemplateView
+                             
+                             urlpatterns = patterns('myapp.views',
+                                url(r'^connection/','formView', name = 'loginform'),
+                                url(r'^login/', 'login', name = 'login'))
+                              </code>
+                    </pre>
             </li>
             <li>
-                Django Create App<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasBottom3" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom3"
+                Django - Sessions<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom355" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom355"
                     aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header">Django Create App</h5>
+                    <div class="offcanvas-header">Django - Sessions</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        What is an App? An app is a web application that has a specific meaning in your project, like a
-                        home page, a contact form, or a members database. In this tutorial we will create an app that
-                        allows us to list and register members in a database. But first,
-                        let's just create a simple Django app that displays "Hello World!".
+                        we can use client side cookies to store a lot of useful data for the web app. We have seen
+                        before that we can use client side cookies to store various data useful for our web app. This
+                        leads to lot of security holes depending on the importance of the data you want to save.
+                        </br></br>
+                        For security reasons, Django has a session framework for cookies handling. Sessions are used to
+                        abstract the receiving and sending of cookies, data is saved on server side (like in database),
+                        and the client side cookie just has a session ID for identification. Sessions are also useful to
+                        avoid cases where the user browser is set to ‘not accept’ cookies.
+                        </br></br> By default, Django saves session information in database (django_session table or
+                        collection), but you can configure the engine to store information using other ways like: in
+                        file or in cache.
+                        </br></br>
+                        When session is enabled, every request (first argument of any view in Django) has a session
+                        (dict) attribute.
+                        </br></br></br>
+                        Some More Possible Actions Using Sessions
+                        We have seen how to store and access a session, but it's good to know that the session attribute
+                        of the request have some other useful actions like −</br></br>
+
+                        set_expiry (value) − Sets the expiration time for the session.
+                        </br></br>
+                        get_expiry_age() − Returns the number of seconds until this session expires.
+                        </br></br>
+                        get_expiry_date() − Returns the date this session will expire.
+                        </br></br>
+                        clear_expired() − Removes expired sessions from the session store.
+                        </br></br>
+                        get_expire_at_browser_close() − Returns either True or False, depending on whether the user’s
+                        session cookies have expired when the user’s web browser is closed.
                     </div>
-                </div>
+                </div></br>
+                1) Adding some lines to the MIDDLEWARE_CLASSES
                 <pre class="language-py">
                                   <code>                   
-                                    python manage.py startapp app_name
+                                    'django.contrib.sessions.middleware.SessionMiddleware'
                                       </code>
                           </pre>
+                2) Adding some lines to the INSTALLED_APPS
+                <pre class="language-py">
+                                            <code>                   
+                                                'django.contrib.sessions'
+                                                </code>
+                                    </pre>
+                3) Adding some lines to the views.py
+                <pre class="language-py">
+                                                                <code>                   
+                                                                    def login(request):
+                                                                    username = 'not logged in'
+                                                                    
+                                                                    if request.method == 'POST':
+                                                                       MyLoginForm = LoginForm(request.POST)
+                                                                       
+                                                                       if MyLoginForm.is_valid():
+                                                                          username = MyLoginForm.cleaned_data['username']
+                                                                          request.session['username'] = username
+                                                                       else:
+                                                                          MyLoginForm = LoginForm()
+                                                                             
+                                                                    return render(request, 'loggedin.html', {"username" : username})
+                                                                    </code>
+                                                        </pre>
+                <pre class="language-py">
+                                                            <code>                   
+                                                                def formView(request):
+   if request.session.has_key('username'):
+      username = request.session['username']
+      return render(request, 'loggedin.html', {"username" : username})
+   else:
+      return render(request, 'login.html', {})
+                                                                </code>
+                                                    </pre>
+                5) logout code
+                <pre class="language-py">
+                                                        <code>                   
+                                                            def logout(request):
+                                                            try:
+                                                               del request.session['username']
+                                                            except:
+                                                               pass
+                                                            return HttpResponse("You are logged out.")
+                                                            </code>
+                                                </pre>
             </li>
             <li>
-                Django Create App<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasBottom3" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom3"
+                Django - Caching<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom3888" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom3888"
                     aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header">Django Create App</h5>
+                    <div class="offcanvas-header">Django - Caching</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        What is an App? An app is a web application that has a specific meaning in your project, like a
-                        home page, a contact form, or a members database. In this tutorial we will create an app that
-                        allows us to list and register members in a database. But first,
-                        let's just create a simple Django app that displays "Hello World!".
+                        Django comes with its own caching system that lets you save your dynamic pages, to avoid
+                        calculating them again when needed. The good point in Django Cache framework is that you can
+                        cache
+                        </br></br>
+                        1) The output of a specific view.</br></br>
+                        2) A part of a template.</br></br>
+                        3) Your entire site.</br></br></br>
+                        To use cache in Django, first thing to do is to set up where the cache will stay. The cache
+                        framework offers different possibilities - cache can be saved in database, on file system or
+                        directly in memory. Setting is done in the settings.py file of your project.
                     </div>
                 </div>
+                1) Setting Up Cache in Database
                 <pre class="language-py">
                                   <code>                   
-                                    python manage.py startapp app_name
+                                    CACHES = {
+                                        'default': {
+                                           'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+                                           'LOCATION': 'my_table_name',
+                                        }
+                                     }
                                       </code>
                           </pre>
+                create the cache table 'my_table_name'.
+                <pre class="language-py">
+                            <code>                   
+                                python manage.py createcachetable  
+                                </code>
+                    </pre>
+
+
+                2) Setting Up Cache in File System
+                <pre class="language-py">
+                                  <code>                   
+                                    CACHES = {
+                                        'default': {
+                                           'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+                                           'LOCATION': '/var/tmp/django_cache',
+                                        }
+                                     }
+                                      </code>
+                          </pre>
+                3) Setting Up Cache in Memory
+                <pre class="language-py">
+                            <code>                   
+                                CACHES = {
+                                    'default': {
+                                       'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+                                       'LOCATION': '127.0.0.1:11211',
+                                    }
+                                 }
+                                </code>
+                    </pre>
+
+                4) Caching the Entire Site
+                <pre class="language-py">
+                      <code>                   
+                        MIDDLEWARE_CLASSES += (
+                            'django.middleware.cache.UpdateCacheMiddleware',
+                            'django.middleware.common.CommonMiddleware',
+                            'django.middleware.cache.FetchFromCacheMiddleware',
+                         )
+                          </code>
+              </pre>
             </li>
 
 
@@ -1319,6 +1563,191 @@ x.save()
 
 
 
+
+
+
+
+
+            <li>
+                Django - Caching<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom3887" aria-controls="offcanvasBottom">Read more...</button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom3887"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">Django - Caching</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        Ajax essentially is a combination of technologies that are integrated together to reduce the
+                        number of page loads. We generally use Ajax to ease end-user experience. Using Ajax in Django
+                        can be done by directly using an Ajax library like JQuery or others. Let's say you want to use
+                        JQuery, then you need to download and serve the library on your server through Apache or others.
+                        Then use it in your template, just like you might do while developing any Ajax-based
+                        application.
+                        </br></br>
+                        Another way of using Ajax in Django is to use the Django Ajax framework. The most commonly used
+                        is django-dajax which is a powerful tool to easily and super-quickly develop asynchronous
+                        presentation logic in web applications, using Python and almost no JavaScript source code. It
+                        supports four of the most popular Ajax frameworks: Prototype, jQuery, Dojo and MooTools.
+                    </div>
+                </div>
+                Using Django-dajax
+                <pre class="language-py">
+                                  <code>                   
+                                    pip install django_dajax
+                                      </code>
+                          </pre>
+                Add dajax and dajaxice in your project settings.py in INSTALLED_APPS
+                <pre class="language-py">
+                            <code>                   
+                                INSTALLED_APPS += (
+                                    'dajaxice',
+                                    'dajax'
+                                 )
+                                </code>
+                    </pre>
+                Setting.py
+                <pre class="language-py">
+                                  <code>                   
+                                    TEMPLATE_LOADERS = (
+                                        'django.template.loaders.filesystem.Loader',
+                                        'django.template.loaders.app_directories.Loader',
+                                        'django.template.loaders.eggs.Loader',
+                                     )
+                                     
+                                     TEMPLATE_CONTEXT_PROCESSORS = (
+                                        'django.contrib.auth.context_processors.auth',
+                                        'django.core.context_processors.debug',
+                                        'django.core.context_processors.i18n',
+                                        'django.core.context_processors.media',
+                                        'django.core.context_processors.static',
+                                        'django.core.context_processors.request',
+                                        'django.contrib.messages.context_processors.messages'
+                                     )
+                                     
+                                     STATICFILES_FINDERS = (
+                                        'django.contrib.staticfiles.finders.FileSystemFinder',
+                                        'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+                                        'dajaxice.finders.DajaxiceFinder',
+                                     )
+                                     
+                                     DAJAXICE_MEDIA_PREFIX = 'dajaxice'
+                                      </code>
+                          </pre>
+                Now go to the myapp/url.py file
+                <pre class="language-py">
+                            <code>                   
+                                from dajaxice.core import dajaxice_autodiscover, dajaxice_config
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.conf import settings
+
+Then dajax urls:
+
+urlpatterns += patterns('',
+   url(r'^%s/' % settings.DAJAXICE_MEDIA_PREFIX, include('dajaxice.urls')),)
+	
+urlpatterns += staticfiles_urlpatterns()
+                                </code>
+                    </pre>
+
+                myapp/form.py
+                <pre class="language-py">
+                      <code>                   
+                        class DreamrealForm(forms.Form):
+                        website = forms.CharField(max_length = 100)
+                        name = forms.CharField(max_length = 100)
+                        phonenumber = forms.CharField(max_length = 50)
+                        email = forms.CharField(max_length = 100)
+                          </code>
+              </pre>
+
+
+
+                myapp/ajax.py
+                <pre class="language-py">
+                <code>                   
+                    from dajaxice.utils import deserialize_form
+                    from myapp.form import DreamrealForm
+                    from dajax.core import Dajax
+                    from myapp.models import Dreamreal
+                    
+                    @dajaxice_register
+                    def send_form(request, form):
+                       dajax = Dajax()
+                       form = DreamrealForm(deserialize_form(form))
+                       
+                       if form.is_valid():
+                          dajax.remove_css_class('#my_form input', 'error')
+                          dr = Dreamreal()
+                          dr.website = form.cleaned_data.get('website')
+                          dr.name = form.cleaned_data.get('name')
+                          dr.phonenumber = form.cleaned_data.get('phonenumber')
+                          dr.save()
+                          
+                          dajax.alert("Dreamreal Entry %s was successfully saved." % 
+                             form.cleaned_data.get('name'))
+                       else:
+                          dajax.remove_css_class('#my_form input', 'error')
+                          for error in form.errors:
+                             dajax.add_css_class('#id_%s' % error, 'error')
+                                
+                       return dajax.json()
+                    </code>
+        </pre>
+
+
+                create the dreamreal.html
+                <pre class="language-html">
+          <code>                   
+            &lt;html&gt;
+   &lt;head&gt;&lt;/head&gt;
+   &lt;body&gt;
+   
+      &lt;form action = "" method = "post" id = "my_form" accept-charset = "utf-8"&gt;
+         {{ form.as_p }}
+         &lt;p&gt;&lt;input type = "button" value = "Send" onclick = "send_form();"&gt;&lt;/p&gt;
+      &lt;/form&gt;
+      
+   &lt;/body&gt;
+&lt;/html&gt;
+              </code>
+  </pre>
+                myapp/views.py
+                <pre class="language-py">
+    <code>                   
+        def dreamreal(request):
+        form = DreamrealForm()
+        return render(request, 'dreamreal.html', locals())
+        </code>
+</pre>
+                At the top of the file add
+                <pre class="language-html">
+    <code>                   
+        {% load static %}
+{% load dajaxice_templatetags %}
+        </code>
+</pre>
+
+                the JQuery library for this example
+                <pre class="language-html">
+    <code>                   
+        &lt;script src = "{% static '/static/jquery-1.11.3.min.js' %}" 
+        type = "text/javascript" charset = "utf-8"&gt;&lt;/script&gt;
+     &lt;script src = "{% static '/static/dajax/jquery.dajax.core.js' %}"&gt;&lt;/script&gt;
+     &lt;script&gt;
+
+    function send_form(){
+       Dajaxice.myapp.send_form(Dajax.process,{'form':$('#my_form').serialize(true)});
+    }
+ &lt;/script&gt;
+        </code>
+</pre>
+
+                <pre class="language-sh">
+    <code>                   
+        python manage.py collectstatic
+        </code>
+</pre>
+            </li>
 
             <li>
                 Django Prepare Template<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
