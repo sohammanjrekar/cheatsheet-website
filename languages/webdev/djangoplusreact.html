@@ -270,20 +270,200 @@
             </code>
 </pre>
             </li>
-            <li>Create Django project
-                <pre class="language-sh">
+            <li>add core to the INSTALLED_APPS ( Backend/settings.py)
+                <pre class="language-py">
         <code> 
-            django-admin startproject Backend
+            'core',
             </code>
 </pre>
             </li>
-            <li>Go Into Backend file
+            <li>Go into core file
                 <pre class="language-sh">
         <code> 
-            cd Backend
+            cd core
             </code>
 </pre>
             </li>
+
+
+
+
+
+
+
+
+            <li>Create user App in core app
+                <pre class="language-sh">
+        <code> 
+            python ../manage.py startapp user
+            </code>
+</pre>
+            </li>
+            <li>add user to the INSTALLED_APPS ( Backend/settings.py)
+                <pre class="language-py">
+        <code> 
+            'rest_framework',
+    'core.user',
+            </code>
+</pre>
+            </li>
+            <li> app in core/user/apps.py
+                <pre class="language-py">
+        <code> 
+            from django.apps import AppConfig
+
+
+            class UserConfig(AppConfig):
+                name = 'core.user'
+                label = 'core_user'
+            </code>
+</pre>
+            </li>
+
+
+
+
+
+
+
+
+            <li> __init__.py file in core/user directory.
+                <pre class="language-py">
+        <code> 
+            default_app_config = 'core.user.apps.UserConfig'
+            </code>
+</pre>
+            </li>
+            <li>core/user/models.py
+                <pre class="language-py">
+        <code> 
+            from django.db import models
+
+            from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
+            
+            
+            class UserManager(BaseUserManager):
+            
+                def create_user(self, username, email, password=None, **kwargs):
+                    """Create and return a `User` with an email, phone number, username and password."""
+                    if username is None:
+                        raise TypeError('Users must have a username.')
+                    if email is None:
+                        raise TypeError('Users must have an email.')
+            
+                    user = self.model(username=username, email=self.normalize_email(email))
+                    user.set_password(password)
+                    user.save(using=self._db)
+            
+                    return user
+            
+                def create_superuser(self, username, email, password):
+                    """
+                    Create and return a `User` with superuser (admin) permissions.
+                    """
+                    if password is None:
+                        raise TypeError('Superusers must have a password.')
+                    if email is None:
+                        raise TypeError('Superusers must have an email.')
+                    if username is None:
+                        raise TypeError('Superusers must have an username.')
+            
+                    user = self.create_user(username, email, password)
+                    user.is_superuser = True
+                    user.is_staff = True
+                    user.save(using=self._db)
+            
+                    return user
+            
+            
+            class User(AbstractBaseUser, PermissionsMixin):
+                username = models.CharField(db_index=True, max_length=255, unique=True)
+                email = models.EmailField(db_index=True, unique=True,  null=True, blank=True)
+                is_active = models.BooleanField(default=True)
+                is_staff = models.BooleanField(default=False)
+            
+                USERNAME_FIELD = 'email'
+                REQUIRED_FIELDS = ['username']
+            
+                objects = UserManager()
+            
+                def __str__(self):
+                    return f"{self.email}"
+            
+            </code>
+</pre>
+            </li>
+            <li> specify to Django to use this new User model as the AUTH_USER_MODEL. (Backend/settings.py)
+                <pre class="language-py">
+        <code> 
+            AUTH_USER_MODEL = 'core_user.User'
+            </code>
+</pre>
+            </li>
+            <li> Adding User serializer (core/user/serializers.py)
+                <pre class="language-py">
+        <code> 
+            from core.user.models import User
+from rest_framework import serializers
+
+
+class UserSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = User
+        fields = ['id', 'username', 'email', 'is_active', 'created', 'updated']
+        read_only_field = ['is_active', 'created', 'updated']
+            </code>
+</pre>
+            </li>
+            <li>Adding User viewset  (core/user/viewsets.py)
+                <pre class="language-py">
+        <code> 
+            from core.user.serializers import UserSerializer
+from core.user.models import User
+from rest_framework import viewsets
+from rest_framework.permissions import IsAuthenticated
+from rest_framework import filters
+
+
+class UserViewSet(viewsets.ModelViewSet):
+    http_method_names = ['get']
+    serializer_class = UserSerializer
+    permission_classes = (IsAuthenticated,)
+    filter_backends = [filters.OrderingFilter]
+    ordering_fields = ['updated']
+    ordering = ['-updated']
+
+    def get_queryset(self):
+        if self.request.user.is_superuser:
+            return User.objects.all()
+
+    def get_object(self):
+        lookup_field_value = self.kwargs[self.lookup_field]
+
+        obj = User.objects.get(lookup_field_value)
+        self.check_object_permissions(self.request, obj)
+
+        return obj
+            </code>
+</pre>
+            </li>
+
+            <li> Authentication (Backend/settings.py)
+                <pre class="language-py">
+        <code> 
+            REST_FRAMEWORK = {
+                'DEFAULT_AUTHENTICATION_CLASSES': (
+                    'rest_framework_simplejwt.authentication.JWTAuthentication',
+                ),
+                'DEFAULT_RENDERER_CLASSES': (
+                    'rest_framework.renderers.JSONRenderer',
+                )
+            }
+            </code>
+</pre>
+            </li>
+
 
         </ol>
     </div>
