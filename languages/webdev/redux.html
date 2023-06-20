@@ -224,10 +224,10 @@
         <ol>
             <!-- offcanvas -->
             <li>
-                install Redux library
+                install Redux toolkit
                 <pre class="language-jsx">
                 <code>
-                    npm install redux react-redux
+                    npm install @reduxjs/toolkit react-redux
                 </code>
             </pre>
             </li>
@@ -235,50 +235,154 @@
                 File structure in src folder (use cmd)
                 <pre class="language-jsx">
     <code>
-      mkdir actions reducers
+      mkdir store && cd store && type NUL > index.jsx && mkdir slices && cd slices && type NUL > Userslices.jsx
 </code>
 </pre>
             </li>
             <li>
-                ADD blank many js files(create store file in src)
+                import createSlice package in file
                 <pre class="language-jsx">
     <code>
-      type NUL > store.js
+        import {createSlice} from "@reduxjs/toolkit";
 </code>
 </pre>
             </li>
             <li>
-                in Store.js
+                create slice
                 <pre class="language-jsx">
     <code>
-        import { createStore } from "redux";
-        import reducers  from "./reducers/index";
-        
-        const store = createStore(reducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
-        
-        export default store;
-</code>
-</pre>
-            </li>
-            <li>
-                In actions/index.js
-                <pre class="language-jsx">
-    <code>
-        export const incNumber = (num) => {
-            return {
-                type: 'INCREMENT',
-                payload: num
+        const userSlice = createSlice({
+            name: "user",
+            initialState: [],
+            reducers: {
+                addUser(state, action) { 
+                    state.push(action.payload)
+                },
+                removeUser(state, action) { },
+                deleteUsers(state, action) { },
             }
+        });
+        
+        export default userSlice.reducer;
+        export const {addUser,removeUser,deleteUsers}=userSlice.actions;
+</code>
+</pre>
+            </li>
+
+
+
+
+            <li>
+                create store in store/index.js and import all slices to create store
+                <pre class="language-jsx">
+    <code>
+        import { configureStore } from "@reduxjs/toolkit";
+</code>
+</pre>
+<pre class="language-jsx">
+    <code>
+        const store=configureStore({
+            reducer:{
+           user:userSlice,
+           },
+           });
+           export default store;
+</code>
+</pre>
+            </li>
+
+
+
+            <li>
+                Go to main.jsx then React.StrictMode to Provider
+                <pre class="language-jsx">
+    <code>
+        import {Provider} from 'react-redux'
+        import store from './store/index.jsx'
+</code>
+</pre>
+<pre class="language-jsx">
+    <code>
+        ReactDOM.createRoot(document.getElementById('root')).render(
+            &lt;Provider store={store}&gt;
+            &lt;App /&gt;
+            &lt;/Provider&gt;,
+          )
+          
+</code>
+</pre>
+            </li>
+            <li>
+               use useDispatch to store data in redux store (send data to redux store)
+                <pre class="language-jsx">
+    <code>
+        import {useDispatch} from 'react-redux'
+</code>
+</pre>
+<pre class="language-jsx">
+    <code>
+        const dispatch=useDispatch();
+        const addNewUser=(e)=>{
+            dispatch(addUser(e));
+              };
+            
+</code>
+</pre>
+            </li>
+            <li>
+                Get data from redux store (fetch data)
+                <pre class="language-jsx">
+    <code>
+        import { useSelector } from 'react-redux'
+</code>
+</pre>
+<pre class="language-jsx">
+    <code>
+        const data =useSelector((state)=>state.user)
+</code>
+</pre>
+            </li>
+
+
+
+
+
+            <li>
+               one slice reducer used in another slice
+                <pre class="language-jsx">
+    <code>
+        extraReducers(builder){
+            builder.addCase(userSlice.actions.deleteUsers,()=>{
+                return [];
+            })
         }
-        
-        export const decNumber = () => {
-            return {
-                type: 'DECREMENT'
-            }
-        };
 </code>
 </pre>
             </li>
+
+
+            <li>
+               CreateAction use to reduce drawbacks of extraReducers
+                 <pre class="language-jsx">
+     <code>
+        import { createAction } from "@reduxjs/toolkit";
+ </code>
+ </pre>
+ <pre class="language-jsx">
+    <code>
+       export const clearAllUsers=createAction('clearAllUsers');
+</code>
+</pre>
+<pre class="language-jsx">
+    <code>
+        extraReducers(builder){
+            builder.addCase(clearAllUsers,()=>{
+                return [];
+            })
+        }</code>
+</pre>
+             </li>
+            
 
         </ol>
     </div>
