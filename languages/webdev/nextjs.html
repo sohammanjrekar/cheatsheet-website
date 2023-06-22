@@ -291,7 +291,12 @@
             <li>
                 create 404 error file
                 <br>
-                create 404.js file then nextjs automatically set as error file
+                create not-found.js file then nextjs automatically set as error file (in file 'notfound' fuction used)
+            </li>
+            <li>
+                create loading spinner
+                <br>
+                create loading.js file then nextjs automatically set loading spinner
             </li>
             <li>
                 set every page css
@@ -398,6 +403,185 @@
                 </div>
             </li>
 
+
+
+
+
+
+
+
+
+            <li>
+                add css in page
+                <pre class="language-sh">
+                    <code>
+                        import StyleSheet from '@/app/styles/main.module.css'
+                        const page = () => {
+                          return (
+                            &lt;div&gt;
+                            &lt;h1 className={StyleSheet.mainmy}&gt;contactus&lt;/h1&gt;
+                                &lt;/div&gt;
+                          )
+                        }
+                        
+                        export default page
+                        
+                    </code>
+                </pre>
+               
+            </li>
+
+            <li>
+                add font in layout page
+                <pre class="language-sh">
+                    <code>
+                        import { Roboto } from 'next/font/google'
+ 
+const roboto = Roboto({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
+ 
+export default function RootLayout({ children }) {
+  return (
+    &lt;html lang="en" className={roboto.className}>
+      &lt;body>{children}&lt;/body>
+    &lt;/html>
+  )
+}
+                        
+                    </code>
+                </pre>
+               
+            </li>
+
+            <li>
+                Nextjs Dynamic Route(create [id] name folder and in this folder create page.js) (slug)
+                <pre class="language-sh">
+                    <code>
+                     
+                        &lt;Link href={`/movie/${id}`}>   
+                    </code>
+                </pre>
+               
+            </li>
+            
+            <li>
+                connect database to nextjs app. first create utils folder in src.then create file dbconn.js in utils
+                <pre class="language-sh">
+                    <code>
+                        import mongoose from "mongoose";
+const MONGODB_URL = process.env.MONGODB_URL;
+if (!MONGODB_URL) {throw new Error("Please define the MONGODB_URI environment variable inside .env.local" )}
+let cached = global.mongoose;
+if (!cached) {cached = global.mongoose = { con: null, promise: null }}
+
+const dbConnect = async () => {
+  if (cached.conn) {return cached.conn; }
+  if (!cached.promise) {
+    const opts = { bufferCommands: false };
+    cached.promise = mongoose.connect(MONGODB_URL, opts).then((mongoose) => {return mongoose;});}
+
+  try {cached.conn = await cached.promise;} catch (e) {
+    cached.promise = null;
+    throw e;
+  }
+  return cached.conn;
+};
+export default dbConnect;
+                    </code>
+                </pre>
+               
+            </li>
+            
+            <li>
+                add css in page
+                <pre class="language-sh">
+                    <code>
+                     
+                        
+                    </code>
+                </pre>
+               
+            </li>
+            
+            <li>
+                add css in page
+                <pre class="language-sh">
+                    <code>
+                     
+                        
+                    </code>
+                </pre>
+               
+            </li>
+            
+            <li>
+                add css in page
+                <pre class="language-sh">
+                    <code>
+                     
+                        
+                    </code>
+                </pre>
+               
+            </li>
+            
+            <li>
+                add css in page
+                <pre class="language-sh">
+                    <code>
+                     
+                        
+                    </code>
+                </pre>
+               
+            </li>
+            
+            <li>
+                add css in page
+                <pre class="language-sh">
+                    <code>
+                     
+                        
+                    </code>
+                </pre>
+               
+            </li>
+            
+            <li>
+                add css in page
+                <pre class="language-sh">
+                    <code>
+                     
+                        
+                    </code>
+                </pre>
+               
+            </li>
+            
+            <li>
+                add css in page
+                <pre class="language-sh">
+                    <code>
+                     
+                        
+                    </code>
+                </pre>
+               
+            </li>
+            
+            <li>
+                add css in page
+                <pre class="language-sh">
+                    <code>
+                     
+                        
+                    </code>
+                </pre>
+               
+            </li>
         </ol>
     </div>
     </div>
