@@ -14,6 +14,7 @@
 
 nav {
     color: white;
+    font-size: smaller;
 }
 
 .container li {
@@ -350,7 +351,7 @@ pre {
 
 .nav-link {
     color: white !important;
-    font-size: 1.1em !important;
+    font-size: 1.1rem !important;
 }
 .accordion-body{
     background-color: #ffd79e;
