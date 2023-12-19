@@ -999,7 +999,8 @@
                     <div class="offcanvas-body small">
                         <p>By default, Nginx uses weights to distribute requests among the servers in the group through
                             the Round Robin method. The weight parameter to the server directive is used to set the
-                            <strong>weight</strong> of a server. The by default weight is 1.</p>
+                            <strong>weight</strong> of a server. The by default weight is 1.
+                        </p>
                         <p>In the above example, the weight of backend1.example.com is 5, and the weights of the other
                             two servers have the default weight 1, but the one with the IP address 192.0.0.1 is marked
                             as a backup server and does not receive requests unless both of the other servers are
@@ -1056,7 +1057,8 @@
                         <p>Nginx Plus identifies user sessions and routes all requests in a given session to the same
                             upstream server. This is called session persistence.</p>
                         <p>Nginx Plus uses three-session persistence methods. The methods are set with the
-                            <strong>sticky</strong> directive.</p>
+                            <strong>sticky</strong> directive.
+                        </p>
                         <p>Nginx Plus includes a session cookie to the first response from the upstream group and
                             identifies the server that sent the response. Next request of the client contains the cookie
                             value and Nginx Plus route the request to the upstream server that responded to the first
@@ -1130,7 +1132,8 @@
                             identifier already "learned", Nginx Plus forwards the request to the corresponding server.
                         </p>
                         <p>In the above, one of the upstream servers creates a session by setting the cookie
-                            <strong>EXAMPLECOOKIE</strong> in the response. </p>
+                            <strong>EXAMPLECOOKIE</strong> in the response.
+                        </p>
                     </div>
                 </div>
 
@@ -1173,7 +1176,8 @@
                         <p>Directives placed in the configuration file outside of any contexts are considered to be in
                             the <strong>main context</strong>. The <strong>events</strong> and <strong>http</strong>
                             directives reside in the <strong>main</strong> context, server resides in
-                            <strong>http</strong> and <strong>location</strong> in the <strong>server</strong>.</p>
+                            <strong>http</strong> and <strong>location</strong> in the <strong>server</strong>.
+                        </p>
                         <table class="alt table-bordered" border="1">
                             <tbody>
                                 <tr>
@@ -1274,7 +1278,8 @@
                                 <tr>
                                     <td><strong>$date_gmt</strong></td>
                                     <td>Current time in GMT (Greenwich Mean Time). To set the format, use the
-                                        <em>config</em> command with <em>timefmt</em> parameter.</td>
+                                        <em>config</em> command with <em>timefmt</em> parameter.
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><strong>$date_local</strong></td>
@@ -2064,19 +2069,22 @@
                                     <td><strong>$upstream_bytes_received (ngx_stream_upstream_module)</strong></td>
                                     <td>Number of bytes received from an upstream stream server. Values from several
                                         connections are separated by commas (,) and colons (:) like addresses in the
-                                        <em>$upstream_addr</em> variable.</td>
+                                        <em>$upstream_addr</em> variable.
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><strong>$upstream_bytes_sent (ngx_http_upstream_module)</strong></td>
                                     <td>Number of bytes sent to an upstream stream server. Values from several
                                         connections are separated by commas (,) and colons (:) like addresses in the
-                                        <em>$upstream_addr</em> variable.</td>
+                                        <em>$upstream_addr</em> variable.
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><strong>$upstream_bytes_sent (ngx_stream_upstream_module)</strong></td>
                                     <td>Number of bytes sent to an upstream stream server. Values from several
                                         connections are separated by commas (,) and colons (:) like addresses in the
-                                        <em>$upstream_addr</em> variable.</td>
+                                        <em>$upstream_addr</em> variable.
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><strong>$upstream_cache_status</strong></td>
@@ -2266,16 +2274,22 @@
                             attention when using the same directive in multiple contexts. There is a total of three
                             types of directives, each with its inheritance model.</p>
 
-                            <p>
-                                <ol>
-                                    <li>Normal: It has one value per context. And we can define it only once in the context. Subcontexts can override the parent directive, but this override will be valid only in a given subcontext.</li>
-                                    <li>Array:  Adding too many directives in the same context will add to the values instead of overwriting them altogether. Defining a directive in a subcontext will override all the values of a parent in the given subcontext.</li>
-                                    <li>Action Directive:  Actions are directives that are used to change things. Their behavior of inheritance will depend on the module.
-                                        
-                                        For example: In the rewrite directive case, every matching directive will be executed.</li>
-                                    <li></li>
-                                </ol>
-                            </p>
+                        <p>
+                        <ol>
+                            <li>Normal: It has one value per context. And we can define it only once in the context.
+                                Subcontexts can override the parent directive, but this override will be valid only in a
+                                given subcontext.</li>
+                            <li>Array: Adding too many directives in the same context will add to the values instead of
+                                overwriting them altogether. Defining a directive in a subcontext will override all the
+                                values of a parent in the given subcontext.</li>
+                            <li>Action Directive: Actions are directives that are used to change things. Their behavior
+                                of inheritance will depend on the module.
+
+                                For example: In the rewrite directive case, every matching directive will be executed.
+                            </li>
+                            <li></li>
+                        </ol>
+                        </p>
 
                     </div>
                 </div>
@@ -2284,7 +2298,7 @@
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseOne2081" aria-expanded="false" aria-controls="collapseOne">
-                               Normal
+                                Normal
                             </button>
                         </h2>
                         <div id="collapseOne2081" class="accordion-collapse collapse" aria-labelledby="headingOne"
@@ -2313,7 +2327,7 @@
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseTwo2081" aria-expanded="false" aria-controls="collapseTwo">
-                               Array
+                                Array
                             </button>
                         </h2>
                         <div id="collapseTwo2081" class="accordion-collapse collapse" aria-labelledby="headingTwo"
@@ -2358,12 +2372,15 @@
                                                   }  
                                                 </code>
                                             </pre>
-                                            <ul class="points">
-                                                <li>A server rewrite is executed, rewriting is done from <strong>/sample</strong> to <strong>/foobar</strong>.</li>
-                                                <li>Then the location <strong>/foobar</strong> is matched.</li>
-                                                <li>The 1<sup>st</sup> location rewrite is executed, rewriting from <strong>/foobar, to /foo</strong>.</li>
-                                                <li>The 2<sup>nd</sup> location rewrite is executed, rewriting from <strong>/foo, to /bar</strong>.</li>
-                                                </ul>
+                                <ul class="points">
+                                    <li>A server rewrite is executed, rewriting is done from <strong>/sample</strong> to
+                                        <strong>/foobar</strong>.</li>
+                                    <li>Then the location <strong>/foobar</strong> is matched.</li>
+                                    <li>The 1<sup>st</sup> location rewrite is executed, rewriting from <strong>/foobar,
+                                            to /foo</strong>.</li>
+                                    <li>The 2<sup>nd</sup> location rewrite is executed, rewriting from <strong>/foo, to
+                                            /bar</strong>.</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -2379,126 +2396,394 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                       <p>
+                        <p>
                         <ol>
                             <li>Main Context
-                               :  The most general context is the main context. It is also called the global context. The main context sets the settings for Nginx globally, and is the only context that is not contained within the typical context blocks and that is not surrounded by curly braces.
+                                : The most general context is the main context. It is also called the global context.
+                                The main context sets the settings for Nginx globally, and is the only context that is
+                                not contained within the typical context blocks and that is not surrounded by curly
+                                braces.
                                 <br><br>
-                                The main context is placed at the beginning of the core Nginx configuration file. The directives for this context cannot be inherited in any other context and therefore can't be overridden.<br><br>The main context is used to configure details that affect the entire application on a basic level. Some common details that are configured in the main context are the user and group to run the worker processes as, the total number of workers, and the file to save the main process ID. The default error file for the entire application can be set at the main context level.</li>
-                            <li>Events Context: The events context sets global options for connection processing. The events context is contained within the main context. There can be only one event context defined within Nginx configuration.
+                                The main context is placed at the beginning of the core Nginx configuration file. The
+                                directives for this context cannot be inherited in any other context and therefore can't
+                                be overridden.<br><br>The main context is used to configure details that affect the
+                                entire application on a basic level. Some common details that are configured in the main
+                                context are the user and group to run the worker processes as, the total number of
+                                workers, and the file to save the main process ID. The default error file for the entire
+                                application can be set at the main context level.
+                            </li>
+                            <li>Events Context: The events context sets global options for connection processing. The
+                                events context is contained within the main context. There can be only one event context
+                                defined within Nginx configuration.
                                 <br><br>
-                                Nginx uses an event-based connection processing model, so the directive defined within this context determines how worker processes should handle connections.</li>
-                            <li>HTTP Context: The HTTP context is used to hold the directives for handling HTTP or HTTPS traffic.
+                                Nginx uses an event-based connection processing model, so the directive defined within
+                                this context determines how worker processes should handle connections.
+                            </li>
+                            <li>HTTP Context: The HTTP context is used to hold the directives for handling HTTP or HTTPS
+                                traffic.
                                 <br><br>
-                                The HTTP context is a sibling of the context of the event, so they must be listed side-by-side, rather than nested. They both are the child of the main context.
-                                <br><br>
-                            
-                                Lower contexts handle the request, and the directives at this level control the defined defaults for every virtual server.</li>
-                            <li>Server Context: The server context is declared within the http context. The server context is used to define the Nginx virtual host settings. There can be multiple server contexts inside the HTTP context. The directives inside the server context handle the processing of requests for resources associated with a particular domain or IP address.
+                                The HTTP context is a sibling of the context of the event, so they must be listed
+                                side-by-side, rather than nested. They both are the child of the main context.
                                 <br><br>
 
-                                The directives in this context can override many of the directives that may be defined in the http context, including the document root, logging, compression, etc. In addition to the directives that are taken from the http context, we can also configure files to try to respond to requests, issue redirects, and rewrites, and set arbitrary variables.</li>
-<li>Location Context:  Location contexts define directives to handle the request of the client. When any request for resource arrives at Nginx, it will try to match the URI (Uniform Resource Identifier) to one of the locations and handle it accordingly.
-    <br><br>
+                                Lower contexts handle the request, and the directives at this level control the defined
+                                defaults for every virtual server.
+                            </li>
+                            <li>Server Context: The server context is declared within the http context. The server
+                                context is used to define the Nginx virtual host settings. There can be multiple server
+                                contexts inside the HTTP context. The directives inside the server context handle the
+                                processing of requests for resources associated with a particular domain or IP address.
+                                <br><br>
 
-    Multiple location contexts can be defined within the server blocks. Moreover, a location context can also be nested inside another location context.</li>
-<li>Upstream Context: The upstream context is used to configure and define an upstream server. This context is allowed to define a pool of backend servers that Nginx can proxy the used when request. This context is usually we are configuring proxies of various types.
-    <br><br>
+                                The directives in this context can override many of the directives that may be defined
+                                in the http context, including the document root, logging, compression, etc. In addition
+                                to the directives that are taken from the http context, we can also configure files to
+                                try to respond to requests, issue redirects, and rewrites, and set arbitrary variables.
+                            </li>
+                            <li>Location Context: Location contexts define directives to handle the request of the
+                                client. When any request for resource arrives at Nginx, it will try to match the URI
+                                (Uniform Resource Identifier) to one of the locations and handle it accordingly.
+                                <br><br>
 
-    Upstream context enables Nginx to perform load balancing while proxying the request. This context is defined inside the HTTP context and outside any server context.
-    <br><br>
+                                Multiple location contexts can be defined within the server blocks. Moreover, a location
+                                context can also be nested inside another location context.
+                            </li>
+                            <li>Upstream Context: The upstream context is used to configure and define an upstream
+                                server. This context is allowed to define a pool of backend servers that Nginx can proxy
+                                the used when request. This context is usually we are configuring proxies of various
+                                types.
+                                <br><br>
 
-    The upstream context is referenced by name within server or location blocks. And then pass the requests of a certain type to the pool of defined servers. The upstream will then use an algorithm (by default round-robin) to determine which specific server need to be used to handle the request.</li>
-      <li>Mail Context: Although Nginx is most often used as a web or reverse proxy server, it can also be used as a high-performance mail proxy server. The context that is used for this type of directives is called the mail context. The mail context is defined inside the main or global context or outside of the http context.
-        <br><br>
+                                Upstream context enables Nginx to perform load balancing while proxying the request.
+                                This context is defined inside the HTTP context and outside any server context.
+                                <br><br>
 
-        The main purpose of the mail context is to provide an area for configuring a mail proxying solution on the server. Nginx can redirect authentication requests to an external authentication server. It can then provide access to POP3, SMTP, and IMAP mail servers for serving the actual mail data.</li>      
-        
-        <li>If context: The if context is used to allow conditional execution of directives defined within it. If the context is just like "if statement" of any other programming languages. The if context will execute the contained instructions if a given condition returns true.
-            <br><br>
- 
-            The if context should be avoided as far as possible due to some limitations of it</li>
-        <li>Limit_except context: The limit_except context is used to prevent the use of all HTTP methods within the location context except the ones that we explicitly allow. For example, if certain clients should have access to POST content and everyone should have the ability to read the content, then we can use limit_except context for this.                                <br><br>
-            The above example allows all the visitors to use the GET header in the location /wp-admin. The other HTTP headers are permitted if it is originated from local addresses only.</li>  
-            <li>Miscellaneous Contexts: Apart from the above contexts, there are few other contexts available in Nginx and are described below. These contexts are dependent on optional modules and are used very rarely.<br><ul class="points">
-                <li><strong>split_clients:</strong> The split_client context splits the client's request into two or more categories. This context is defined in the HTTP context and is mainly used for A/B testing. </li>
-                <li><strong>geo:</strong> The geo context categorizes client IP addresses. It is used to map the value of a variable depending on the connecting IP addresses. </li>
-                <li><strong>charset_map:</strong> This context is used to add specific charset to the "Content-Type" response header field. Also, using the context, one can convert data from one charset to another charset with some limitations.</li>
-                <li><strong>map:</strong> The map context is used to create variables whose values depend on the values of other variables and are defined in the http context.</li>
-                <li><strong>perl/perl_set:</strong> It is used to implement location and variable handlers in Perl and insert Perl calls into SSI. Further, with the help of the perl_set context, we can install a Perl handler for a specific variable.</li>
-                <li><strong>types:</strong> The types context maps the MIME types with correct file extensions. This context may appear in the http context, server context or location context. </li>
-                </ul>
-            </li>              
-        </ol>
-                       </p>
+                                The upstream context is referenced by name within server or location blocks. And then
+                                pass the requests of a certain type to the pool of defined servers. The upstream will
+                                then use an algorithm (by default round-robin) to determine which specific server need
+                                to be used to handle the request.
+                            </li>
+                            <li>Mail Context: Although Nginx is most often used as a web or reverse proxy server, it can
+                                also be used as a high-performance mail proxy server. The context that is used for this
+                                type of directives is called the mail context. The mail context is defined inside the
+                                main or global context or outside of the http context.
+                                <br><br>
+
+                                The main purpose of the mail context is to provide an area for configuring a mail
+                                proxying solution on the server. Nginx can redirect authentication requests to an
+                                external authentication server. It can then provide access to POP3, SMTP, and IMAP mail
+                                servers for serving the actual mail data.
+                            </li>
+
+                            <li>If context: The if context is used to allow conditional execution of directives defined
+                                within it. If the context is just like "if statement" of any other programming
+                                languages. The if context will execute the contained instructions if a given condition
+                                returns true.
+                                <br><br>
+
+                                The if context should be avoided as far as possible due to some limitations of it
+                            </li>
+                            <li>Limit_except context: The limit_except context is used to prevent the use of all HTTP
+                                methods within the location context except the ones that we explicitly allow. For
+                                example, if certain clients should have access to POST content and everyone should have
+                                the ability to read the content, then we can use limit_except context for this. <br><br>
+                                The above example allows all the visitors to use the GET header in the location
+                                /wp-admin. The other HTTP headers are permitted if it is originated from local addresses
+                                only.</li>
+                            <li>Miscellaneous Contexts: Apart from the above contexts, there are few other contexts
+                                available in Nginx and are described below. These contexts are dependent on optional
+                                modules and are used very rarely.<br>
+                                <ul class="points">
+                                    <li><strong>split_clients:</strong> The split_client context splits the client's
+                                        request into two or more categories. This context is defined in the HTTP context
+                                        and is mainly used for A/B testing. </li>
+                                    <li><strong>geo:</strong> The geo context categorizes client IP addresses. It is
+                                        used to map the value of a variable depending on the connecting IP addresses.
+                                    </li>
+                                    <li><strong>charset_map:</strong> This context is used to add specific charset to
+                                        the "Content-Type" response header field. Also, using the context, one can
+                                        convert data from one charset to another charset with some limitations.</li>
+                                    <li><strong>map:</strong> The map context is used to create variables whose values
+                                        depend on the values of other variables and are defined in the http context.
+                                    </li>
+                                    <li><strong>perl/perl_set:</strong> It is used to implement location and variable
+                                        handlers in Perl and insert Perl calls into SSI. Further, with the help of the
+                                        perl_set context, we can install a Perl handler for a specific variable.</li>
+                                    <li><strong>types:</strong> The types context maps the MIME types with correct file
+                                        extensions. This context may appear in the http context, server context or
+                                        location context. </li>
+                                </ul>
+                            </li>
+                        </ol>
+                        </p>
                     </div>
                 </div>
-                <h3>Static method</h3>
-                <pre class="language-nginx">
-                    <code>
-                        // Static method
-  static void myStaticMethod() {
-    
-  }
-                    </code>
-                    </pre>
-                <h3>Public method</h3>
-                <pre class="language-nginx">
-                        <code>
-                            // Public method
-  public void myPublicMethod() {
-    
-  }
-                        </code>
-                        </pre>
-                <h3>Main method</h3>
-                <pre class="language-nginx">
-                            <code>
-                                // Main method
-  public static void main(String[] args) {
-   
-  }
-                            </code>
-                            </pre>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne2085" aria-expanded="false" aria-controls="collapseOne">
+                                Main Context
+                            </button>
+                        </h2>
+                        <div id="collapseOne2085" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <pre class="language-java">
+                                            <code>
+                                                user nginx;  
+worker_processes auto;  
+pid /run/nginx.pid;  
+                                            </code>
+                                            </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo2085" aria-expanded="false" aria-controls="collapseTwo">
+                                Events Context
+                            </button>
+                        </h2>
+                        <div id="collapseTwo2085" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <pre class="language-java">
+                                            <code>
+                                                events {  
+                                                    # events context  
+                                                    worker_connections 768;   
+                                                    multi_accept on;  
+                                            }    
+                                            </code>
+                                            </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree2085" aria-expanded="false" aria-controls="collapseThree">
+                                HTTP Context
+                            </button>
+                        </h2>
+                        <div id="collapseThree2085" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <pre class="language-java">
+                                            <code>
+                                                http {  
+                                                    sendfile on;   
+                                                    tcp_nopush on;     
+                                                    tcp_nodelay on;    
+                                                    keepalive_timeout 65;  
+                                                    ...  
+                                                    ...  
+                                             }  
+                                                </code>
+                                            </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree2086" aria-expanded="false" aria-controls="collapseThree">
+                                HTTP Context
+                            </button>
+                        </h2>
+                        <div id="collapseThree2086" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <pre class="language-java">
+                                            <code>
+                                                http {  
+                                                    sendfile on;   
+                                                    tcp_nopush on;     
+                                                    tcp_nodelay on;    
+                                                    keepalive_timeout 65;  
+                                                    ...  
+                                                    ...  
+                                             }  
+                                                </code>
+                                            </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree2085" aria-expanded="false" aria-controls="collapseThree">
+                                Server Context
+                            </button>
+                        </h2>
+                        <div id="collapseThree2085" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <pre class="language-java">
+                                            <code>
+                                                
+                                                    server {  
+                                                        listen 80;  
+                                                        server_name domain1.com;  
+                                                        root /var/www/html/wordpress;  
+                                                        ...  
+                                             }  
+                                                </code>
+                                            </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree2087" aria-expanded="false" aria-controls="collapseThree">
+                                Location Context
+                            </button>
+                        </h2>
+                        <div id="collapseThree2087" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <pre class="language-java">
+                                            <code>
+                                                location /some_url {    
+                                                    # configuration for processing URIs starting with /some_url  
+                                                    }  
+                                                </code>
+                                            </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree2088" aria-expanded="false" aria-controls="collapseThree">
+                                Upstream Context
+                            </button>
+                        </h2>
+                        <div id="collapseThree2088" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <pre class="language-java">
+                                            <code>
+                                                upstream backend_servers {  
+                                                    server host1.example.com;  
+                                                    server host2.example.com;  
+                                                    server host3.example.com;  
+                         }  
+                                                </code>
+                                            </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree208566" aria-expanded="false" aria-controls="collapseThree">
+                                Mail Context
+                            </button>
+                        </h2>
+                        <div id="collapseThree208566" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <pre class="language-java">
+                                            <code>
+                                                mail {  
+                                                    server_name mail.example.com;  
+                                                    auth_http   localhost:9000/cgi-bin/nginxauth.cgi;  
+                                                    proxy_pass_error_message on;  
+                                                    ...  
+                                             }  
+                                                </code>
+                                            </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree20854" aria-expanded="false" aria-controls="collapseThree">
+                                If context
+                            </button>
+                        </h2>
+                        <div id="collapseThree20854" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <pre class="language-java">
+                                            <code>
+                                                                 location /some_url {  
+                                                                 if (test_condition) {  
+                                                                      # do some stuff here  
+                                                               }  
+                                                     }  
+                                                </code>
+                                            </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree208512" aria-expanded="false" aria-controls="collapseThree">
+                                Limit_except context
+                            </button>
+                        </h2>
+                        <div id="collapseThree208512" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <pre class="language-java">
+                                            <code>
+                                                location /wp-admin/ {   
+                                                    limit_except GET {   
+                                                      allow 127.0.0.1;   
+                                                      deny all;   
+                                                    }   
+                                                }    
+                                                </code>
+                                            </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </li>
             <li>
-                Java Constructors<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+                What is Health Checks?<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom36" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom36"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Java Constructors</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">What is Health Checks?</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        A constructor in Java is a special method that is used to initialize objects. The constructor is
-                        called when an object of a class is created. It can be used to set initial values for object
-                        attributes <br><br> Note that the constructor
-                        name must match the class name, and it cannot have a return type (like void).
-                        <br><br> Also note that the constructor is called when the object is created.
-                        <br><br> All classes have constructors by default: if you do not create a class constructor
-                        yourself, Java creates one for you. However, then you are not able to set initial values for
-                        object attributes.
+                        <p>A health check is a scheduled rule used to send the same request to each member. A health check sends a request to each member of the load balancer group to establish the availability of each member server to accept the client requests. For some types of health checks, the response from the server is calculated to determine the health status of each member server. The successful completion of the health check needs that the server passes normal TCP and HTTP connection criteria. </p>
+                        <p>In the TCP mode, a health check is performed with a TCP connection request. And in the HTTP mode which is the standard health check type, a health check is performed with an HTTP GET or HTTP POST method.</p>
                     </div>
                 </div>
             </li>
             <li>
-                Java Modifiers<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+                HTTP Health Checks<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom37" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom37"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Java Modifiers
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">HTTP Health Checks
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        The text-align-last property specifies how to align the last line of a text. <br><br> We divide
-                        modifiers into two groups:
-                        <br> 1) Access Modifiers - controls the access level <br> 2) Non-Access Modifiers - do not
-                        control access level, but provides other functionality <br><br> 1) Access Modifiers <br> For
-                        classes, you can use either public or default
-                        <br><br>
+                        <p>Nginx Plus and Nginx open source can continually test our upstream servers, avoid the servers that have failed, and gracefully add the recovered servers into the load-balanced group.
+                            <br>
+                            <ol>
+                                <li>Passive Health Check: For passive health checks, Nginx Plus and Nginx monitor the transaction as they happen, and try to resume the failed connections. If the transaction still cannot be resumed, Nginx Plus and Nginx open-source mark the server as unavailable and temporarily stop sending requests to it until it is marked active again.<br><br>
+                                    The conditions under which an upstream server is marked as unavailable are defined for each upstream server with parameters to the server directive in the upstream block.
+                                    </li>
+                                <li>Active Health Check: Nginx Plus periodically checks the health of upstream servers by sending special health check requests to each server and verifying the correct response.
+                                    </li>
+                                    <li></li>
+                            </ol>
+                        </p>
 
                     </div>
                 </div>
@@ -2506,16 +2791,19 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne20" aria-expanded="false" aria-controls="collapseOne">
-                                Final
+                                data-bs-target="#collapseOne2052" aria-expanded="false" aria-controls="collapseOne">
+                                Passive Health Check
                             </button>
                         </h2>
-                        <div id="collapseOne20" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        <div id="collapseOne2052" class="accordion-collapse collapse" aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <pre class="language-nginx">
                                     <code>
-                                        final double PI = 3.14;
+                                        upstream backend {  
+                                            server backend1.example.com;  
+                                            server backend2.example.com max_fails=3 fail_timeout=30s;  
+                                        }  
                                     </code>
                                     </pre>
                             </div>
@@ -2524,117 +2812,214 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo20" aria-expanded="false" aria-controls="collapseTwo">
-                                Static
+                                data-bs-target="#collapseTwo2052" aria-expanded="false" aria-controls="collapseTwo">
+                                Active Health Check
                             </button>
                         </h2>
-                        <div id="collapseTwo20" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        <div id="collapseTwo2052" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
+                                1) The location which passes requests to an upstream group, include the health_check directive:
                                 <pre class="language-nginx">
                                     <code>
-                                        static void myStaticMethod() {
-
-                                        }
+                                        server {  
+                                            location / {  
+                                                  proxy_pass http://backend;  
+                                                  health_check;  
+                                              }  
+                                          }  
                                     </code>
                                     </pre>
+                                    2) In the upstream server group, specify a shared memory zone with the zone directive:
+                                    <pre class="language-nginx">
+                                        <code>
+                                            http {  
+                                                upstream backend {  
+                                                    zone backend 64k;  
+                                                    server backend1.example.com;  
+                                                    server backend2.example.com;  
+                                                }  
+                                            }  
+                                        </code>
+                                        </pre>
+                                        3) We can override the default for active health checks with parameters to the health_check directive:
+                                        <pre class="language-nginx">
+                                            <code>
+                                                location / {  
+                                                    proxy_pass http://backend;  
+                                                    health_check interval=10 fails=3 passes=2;  
+                                                }  
+                                            </code>
+                                            </pre>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree20" aria-expanded="false" aria-controls="collapseThree">
-                                Abstract
+                                data-bs-target="#collapseThree2052" aria-expanded="false" aria-controls="collapseThree">
+                                Specifying the Requested URI
                             </button>
                         </h2>
-                        <div id="collapseThree20" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        <div id="collapseThree2052" class="accordion-collapse collapse" 
+                        
+                        aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
+                                We can use the uri parameter of the health_check directive to set the URI to request in a health check:
                                 <pre class="language-nginx">
                                     <code>
-                                        public abstract void study(); // abstract method
-                                        </code>
+                                        location / {  
+                                            proxy_pass http://backend;  
+                                            health_check uri=/some/path;  
+                                        }   </code>
                                     </pre>
+                                    The specified URI (Uniform Resource Identifier) is appended to the server domain name or IP address set for the server in the upstream block. In the above example, for the first server in the sample backend group, a health check requests the URI http://backend1.example.com/some/path.
                             </div>
                         </div>
                     </div>
                 </div>
             </li>
             <li>
-                Encapsulation<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+                Defining Custom Conditions<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom38" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom38"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Encapsulation</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Defining Custom Conditions</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        The meaning of Encapsulation, is to make sure that "sensitive" data is hidden from users. To
-                        achieve this, you must:
-                        <br> 1) declare class variables/attributes as private <br> 2) provide public get and set methods
-                        to access and update the value of a private variable
-                        <br><br> Why Encapsulation? <br> 1) Better control of class attributes and methods <br> 2) Class
-                        attributes can be made read-only (if you only use the get method), or write-only (if you only
-                        use the set method)<br> 3_ Flexible:
-                        the programmer can change one part of the code without affecting other parts Increased security
-                        of data<br><br><br> Get and Set <br> You learned from the previous chapter that private
-                        variables can only be accessed within the same
-                        class (an outside class has no access to it). However, it is possible to access them if we
-                        provide public get and set methods.
-                        <br> The get method returns the variable value, and the set method sets the value.
+                       <p>
+                        We can specify the custom conditions that the response must satisfy for the server to pass the health check. The conditions are defined in the match block, which is referenced in the match parameter of the health_check directive:
+<br><br>In the above example, the health check is passed if the status code of the response is in the range 200-399, and its body does not contain the string maintenance mode.
+
+                       </p>
                     </div>
                 </div>
                 <pre class="language-nginx">
                             <code>
-                                public class Person {
-                                    private String name; // private = restricted access
-                                  
-                                    // Getter
-                                    public String getName() {
-                                      return name;
-                                    }
-                                  
-                                    // Setter
-                                    public void setName(String newName) {
-                                      this.name = newName;
-                                    }
-                                  }
+                                http {  
+                                    #...  
+                                    match server_ok {  
+                                        status 200-399;  
+                                        body !~ "maintenance mode";  
+                                    }  
+                                    server {  
+                                        #...  
+                                        location / {  
+                                            proxy_pass http://backend;  
+                                            health_check match=server_ok;  
+                                        }  
+                                    }  
+                                }  
                             </code>
                             </pre>
             </li>
             <li>
-                Java Packages & API<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+                NGINX Compression and Decompression<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom39" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom39"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Java Packages & API</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">NGINX Compression and Decompression</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        A package in Java is used to group related classes. Think of it as a folder in a file directory.
-                        We use packages to avoid name conflicts, and to write a better maintainable code. Packages are
-                        divided into two categories: <br>
-                        <br> 1) Built-in Packages (packages from the Java API) <br> 2) User-defined Packages (create
-                        your own packages)<br><br><br> 1) Built-in Packages<br> The Java API is a library of prewritten
-                        classes, that are free to use, included
-                        in the Java Development Environment.
-                        <br> The library contains components for managing input, database programming, and much much
-                        more. The complete list can be found at Oracles website:
-                        https://docs.oracle.com/javase/8/docs/api/.
-                        <br> The library is divided into packages and classes. Meaning you can either import a single
-                        class (along with its methods and attributes), or a whole package that contain all the classes
-                        that belong to the specified package.
+                        <p>
+                            The compression process reduces the size of the transmitted data. However, since compression happens at runtime, it can also include considerable processing overhead which can negatively affect performance. Nginx performs compression before sending responses to clients but does not double compress responses that are already compressed.                                <br><br>
+
+                            Enabling Decompression: Some clients do not handle responses with the gzip encoding method. At the same time, it might be desirable to store compressed data or responses on the fly and store them in the cache. To successfully serve both clients that do and do not accept compressed data, NGINX can decompress data on the fly when sending it to the latter type of client.
+                        </p>
                     </div>
                 </div>
-                <pre class="language-nginx">
-                            <code>
-                                import package.name.Class;   // Import a single class
-                                import package.name.*;   // Import the whole package
-                            </code>
-                            </pre>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne2039" aria-expanded="false" aria-controls="collapseOne">
+                                Enabling Compression
+                            </button>
+                        </h2>
+                        <div id="collapseOne2039" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                To enable the compression, add the gzip directive with the on parameter:
+                                <pre class="language-java">
+                                            <code>
+                                                gzip on;  
+                                            </code>
+                                            </pre>
+                                            By default, Nginx compresses responses only with text/html (MIME type). To compress responses with other MIME types, add the gzip_types directive and list the additional types.
+                                            <pre class="language-java">
+                                                <code>
+                                                    gzip_types text/plain application/xml;  
+                                                </code>
+                                                </pre>
+                                                We can define the minimum length of the response to compress, use the gzip_min_length directive. The default is 20 bytes.
+                                                <pre class="language-java">
+                                                    <code>
+                                                        gzip_min_length 1000;    
+                                                    </code>
+                                                    </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo2039" aria-expanded="false" aria-controls="collapseTwo">
+                                Enabling Decompression
+                            </button>
+                        </h2>
+                        <div id="collapseTwo2039" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                To enable runtime decompression, use the gunzip directive.
+                                <pre class="language-java">
+                                            <code>
+                                                location /storage/ {  
+                                                    gunzip on;  
+                                                    ...  
+                                                }  
+                                            </code>
+                                            </pre>
+                                            The gunzip directive can be defined in the same context as the gzip directive:
+                                            <pre class="language-java">
+                                                <code>
+                                                    server {  
+                                                        gzip on;  
+                                                        gzip_min_length 1000;  
+                                                        gunzip on;  
+                                                        ...  
+                                                    } 
+                                                </code>
+                                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree2039" aria-expanded="false" aria-controls="collapseThree">
+                                Sending Compressed Files
+                            </button>
+                        </h2>
+                        <div id="collapseThree2039" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                To send a compressed file to the client instead of the regular one, set the gzip_static directive to on within the appropriate context.
+                                <pre class="language-java">
+                                            <code>
+                                                location / {  
+                                                    gzip_static on;  
+                                                }  
+                                                </code>
+                                            </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </li>
             <li>
                 User-defined Packages<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
@@ -2839,59 +3224,8 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        The Scanner class is used to get user input, and it is found in the java.util package.
-                        <br><br> To use the Scanner class, create an object of the class and use any of the available
-                        methods found in the Scanner class documentation. In our example, we will use the nextLine()
-                        method, which is used to read Strings
-                        <br><br> Input Types <br>
-                        <table class="ws-table-all notranslate table-bordered">
-                            <tbody>
-                                <tr>
-                                    <th style="width:26%">Method</th>
-                                    <th style="width:74%">Description</th>
-                                </tr>
-                                <tr>
-                                    <td><code class="w3-codespan">nextBoolean()</code></td>
-                                    <td>Reads a <code class="w3-codespan">boolean</code> value from the user</td>
-
-                                </tr>
-                                <tr>
-                                    <td><code class="w3-codespan">nextByte()</code></td>
-                                    <td>Reads a <code class="w3-codespan">byte</code> value from the user</td>
-
-                                </tr>
-                                <tr>
-                                    <td><code class="w3-codespan">nextDouble()</code></td>
-                                    <td>Reads a <code class="w3-codespan">double</code> value from the user</td>
-
-                                </tr>
-                                <tr>
-                                    <td><code class="w3-codespan">nextFloat()</code></td>
-                                    <td>Reads a <code class="w3-codespan">float</code> value from the user</td>
-
-                                </tr>
-                                <tr>
-                                    <td><code class="w3-codespan">nextInt()</code></td>
-                                    <td>Reads a <code class="w3-codespan">int</code> value from the user</td>
-
-                                </tr>
-                                <tr>
-                                    <td><code class="w3-codespan">nextLine()</code></td>
-                                    <td>Reads a <code class="w3-codespan">String</code> value from the user</td>
-
-                                </tr>
-                                <tr>
-                                    <td><code class="w3-codespan">nextLong()</code></td>
-                                    <td>Reads a <code class="w3-codespan">long</code> value from the user</td>
-
-                                </tr>
-                                <tr>
-                                    <td><code class="w3-codespan">nextShort()</code></td>
-                                    <td>Reads a <code class="w3-codespan">short</code> value from the user</td>
-
-                                </tr>
-                            </tbody>
-                        </table>
+                        
+                                
                     </div>
                 </div>
                 <pre class="language-nginx">
