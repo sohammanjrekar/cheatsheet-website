@@ -2225,7 +2225,7 @@
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
 
-                                <pre class="language-java">
+                                <pre class="language-nginx">
                                     <code>
                                         gzip on;  
                                     </code>
@@ -2244,7 +2244,7 @@
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
 
-                                <pre class="language-java">
+                                <pre class="language-nginx">
                                     <code>
                                         worker_processes 2; # directive in the global context  
                                         http {              # http context  
@@ -2304,7 +2304,7 @@
                         <div id="collapseOne2081" class="accordion-collapse collapse" aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-java">
+                                <pre class="language-nginx">
                                             <code>
                                                 gzip on;  
                                                 gzip off; # illegal to have two normal directives in the same context   
@@ -2333,7 +2333,7 @@
                         <div id="collapseTwo2081" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-java">
+                                <pre class="language-nginx">
                                             <code>
                                                 error_log /var/log/nginx/error.log;  
                                                 error_log /var/log/nginx/error_notive.log notice;  
@@ -2360,7 +2360,7 @@
                         <div id="collapseThree2081" class="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-java">
+                                <pre class="language-nginx">
                                             <code>
                                                 server {  
                                                     rewrite ^ /foobar;  
@@ -2374,7 +2374,8 @@
                                             </pre>
                                 <ul class="points">
                                     <li>A server rewrite is executed, rewriting is done from <strong>/sample</strong> to
-                                        <strong>/foobar</strong>.</li>
+                                        <strong>/foobar</strong>.
+                                    </li>
                                     <li>Then the location <strong>/foobar</strong> is matched.</li>
                                     <li>The 1<sup>st</sup> location rewrite is executed, rewriting from <strong>/foobar,
                                             to /foo</strong>.</li>
@@ -2529,7 +2530,7 @@
                         <div id="collapseOne2085" class="accordion-collapse collapse" aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-java">
+                                <pre class="language-nginx">
                                             <code>
                                                 user nginx;  
 worker_processes auto;  
@@ -2549,7 +2550,7 @@ pid /run/nginx.pid;
                         <div id="collapseTwo2085" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-java">
+                                <pre class="language-nginx">
                                             <code>
                                                 events {  
                                                     # events context  
@@ -2571,7 +2572,7 @@ pid /run/nginx.pid;
                         <div id="collapseThree2085" class="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-java">
+                                <pre class="language-nginx">
                                             <code>
                                                 http {  
                                                     sendfile on;   
@@ -2596,7 +2597,7 @@ pid /run/nginx.pid;
                         <div id="collapseThree2086" class="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-java">
+                                <pre class="language-nginx">
                                             <code>
                                                 http {  
                                                     sendfile on;   
@@ -2621,7 +2622,7 @@ pid /run/nginx.pid;
                         <div id="collapseThree2085" class="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-java">
+                                <pre class="language-nginx">
                                             <code>
                                                 
                                                     server {  
@@ -2645,7 +2646,7 @@ pid /run/nginx.pid;
                         <div id="collapseThree2087" class="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-java">
+                                <pre class="language-nginx">
                                             <code>
                                                 location /some_url {    
                                                     # configuration for processing URIs starting with /some_url  
@@ -2665,7 +2666,7 @@ pid /run/nginx.pid;
                         <div id="collapseThree2088" class="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-java">
+                                <pre class="language-nginx">
                                             <code>
                                                 upstream backend_servers {  
                                                     server host1.example.com;  
@@ -2680,14 +2681,15 @@ pid /run/nginx.pid;
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree208566" aria-expanded="false" aria-controls="collapseThree">
+                                data-bs-target="#collapseThree208566" aria-expanded="false"
+                                aria-controls="collapseThree">
                                 Mail Context
                             </button>
                         </h2>
                         <div id="collapseThree208566" class="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-java">
+                                <pre class="language-nginx">
                                             <code>
                                                 mail {  
                                                     server_name mail.example.com;  
@@ -2703,14 +2705,15 @@ pid /run/nginx.pid;
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree20854" aria-expanded="false" aria-controls="collapseThree">
+                                data-bs-target="#collapseThree20854" aria-expanded="false"
+                                aria-controls="collapseThree">
                                 If context
                             </button>
                         </h2>
                         <div id="collapseThree20854" class="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-java">
+                                <pre class="language-nginx">
                                             <code>
                                                                  location /some_url {  
                                                                  if (test_condition) {  
@@ -2725,14 +2728,15 @@ pid /run/nginx.pid;
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree208512" aria-expanded="false" aria-controls="collapseThree">
+                                data-bs-target="#collapseThree208512" aria-expanded="false"
+                                aria-controls="collapseThree">
                                 Limit_except context
                             </button>
                         </h2>
                         <div id="collapseThree208512" class="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre class="language-java">
+                                <pre class="language-nginx">
                                             <code>
                                                 location /wp-admin/ {   
                                                     limit_except GET {   
@@ -2757,8 +2761,15 @@ pid /run/nginx.pid;
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        <p>A health check is a scheduled rule used to send the same request to each member. A health check sends a request to each member of the load balancer group to establish the availability of each member server to accept the client requests. For some types of health checks, the response from the server is calculated to determine the health status of each member server. The successful completion of the health check needs that the server passes normal TCP and HTTP connection criteria. </p>
-                        <p>In the TCP mode, a health check is performed with a TCP connection request. And in the HTTP mode which is the standard health check type, a health check is performed with an HTTP GET or HTTP POST method.</p>
+                        <p>A health check is a scheduled rule used to send the same request to each member. A health
+                            check sends a request to each member of the load balancer group to establish the
+                            availability of each member server to accept the client requests. For some types of health
+                            checks, the response from the server is calculated to determine the health status of each
+                            member server. The successful completion of the health check needs that the server passes
+                            normal TCP and HTTP connection criteria. </p>
+                        <p>In the TCP mode, a health check is performed with a TCP connection request. And in the HTTP
+                            mode which is the standard health check type, a health check is performed with an HTTP GET
+                            or HTTP POST method.</p>
                     </div>
                 </div>
             </li>
@@ -2773,16 +2784,22 @@ pid /run/nginx.pid;
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        <p>Nginx Plus and Nginx open source can continually test our upstream servers, avoid the servers that have failed, and gracefully add the recovered servers into the load-balanced group.
+                        <p>Nginx Plus and Nginx open source can continually test our upstream servers, avoid the servers
+                            that have failed, and gracefully add the recovered servers into the load-balanced group.
                             <br>
-                            <ol>
-                                <li>Passive Health Check: For passive health checks, Nginx Plus and Nginx monitor the transaction as they happen, and try to resume the failed connections. If the transaction still cannot be resumed, Nginx Plus and Nginx open-source mark the server as unavailable and temporarily stop sending requests to it until it is marked active again.<br><br>
-                                    The conditions under which an upstream server is marked as unavailable are defined for each upstream server with parameters to the server directive in the upstream block.
-                                    </li>
-                                <li>Active Health Check: Nginx Plus periodically checks the health of upstream servers by sending special health check requests to each server and verifying the correct response.
-                                    </li>
-                                    <li></li>
-                            </ol>
+                        <ol>
+                            <li>Passive Health Check: For passive health checks, Nginx Plus and Nginx monitor the
+                                transaction as they happen, and try to resume the failed connections. If the transaction
+                                still cannot be resumed, Nginx Plus and Nginx open-source mark the server as unavailable
+                                and temporarily stop sending requests to it until it is marked active again.<br><br>
+                                The conditions under which an upstream server is marked as unavailable are defined for
+                                each upstream server with parameters to the server directive in the upstream block.
+                            </li>
+                            <li>Active Health Check: Nginx Plus periodically checks the health of upstream servers by
+                                sending special health check requests to each server and verifying the correct response.
+                            </li>
+                            <li></li>
+                        </ol>
                         </p>
 
                     </div>
@@ -2819,7 +2836,8 @@ pid /run/nginx.pid;
                         <div id="collapseTwo2052" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                1) The location which passes requests to an upstream group, include the health_check directive:
+                                1) The location which passes requests to an upstream group, include the health_check
+                                directive:
                                 <pre class="language-nginx">
                                     <code>
                                         server {  
@@ -2830,8 +2848,8 @@ pid /run/nginx.pid;
                                           }  
                                     </code>
                                     </pre>
-                                    2) In the upstream server group, specify a shared memory zone with the zone directive:
-                                    <pre class="language-nginx">
+                                2) In the upstream server group, specify a shared memory zone with the zone directive:
+                                <pre class="language-nginx">
                                         <code>
                                             http {  
                                                 upstream backend {  
@@ -2842,8 +2860,9 @@ pid /run/nginx.pid;
                                             }  
                                         </code>
                                         </pre>
-                                        3) We can override the default for active health checks with parameters to the health_check directive:
-                                        <pre class="language-nginx">
+                                3) We can override the default for active health checks with parameters to the
+                                health_check directive:
+                                <pre class="language-nginx">
                                             <code>
                                                 location / {  
                                                     proxy_pass http://backend;  
@@ -2861,12 +2880,11 @@ pid /run/nginx.pid;
                                 Specifying the Requested URI
                             </button>
                         </h2>
-                        <div id="collapseThree2052" class="accordion-collapse collapse" 
-                        
-                        aria-labelledby="headingThree"
+                        <div id="collapseThree2052" class="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                We can use the uri parameter of the health_check directive to set the URI to request in a health check:
+                                We can use the uri parameter of the health_check directive to set the URI to request in
+                                a health check:
                                 <pre class="language-nginx">
                                     <code>
                                         location / {  
@@ -2874,7 +2892,10 @@ pid /run/nginx.pid;
                                             health_check uri=/some/path;  
                                         }   </code>
                                     </pre>
-                                    The specified URI (Uniform Resource Identifier) is appended to the server domain name or IP address set for the server in the upstream block. In the above example, for the first server in the sample backend group, a health check requests the URI http://backend1.example.com/some/path.
+                                The specified URI (Uniform Resource Identifier) is appended to the server domain name or
+                                IP address set for the server in the upstream block. In the above example, for the first
+                                server in the sample backend group, a health check requests the URI
+                                http://backend1.example.com/some/path.
                             </div>
                         </div>
                     </div>
@@ -2890,11 +2911,14 @@ pid /run/nginx.pid;
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                       <p>
-                        We can specify the custom conditions that the response must satisfy for the server to pass the health check. The conditions are defined in the match block, which is referenced in the match parameter of the health_check directive:
-<br><br>In the above example, the health check is passed if the status code of the response is in the range 200-399, and its body does not contain the string maintenance mode.
+                        <p>
+                            We can specify the custom conditions that the response must satisfy for the server to pass
+                            the health check. The conditions are defined in the match block, which is referenced in the
+                            match parameter of the health_check directive:
+                            <br><br>In the above example, the health check is passed if the status code of the response
+                            is in the range 200-399, and its body does not contain the string maintenance mode.
 
-                       </p>
+                        </p>
                     </div>
                 </div>
                 <pre class="language-nginx">
@@ -2927,9 +2951,16 @@ pid /run/nginx.pid;
                     </div>
                     <div class="offcanvas-body small">
                         <p>
-                            The compression process reduces the size of the transmitted data. However, since compression happens at runtime, it can also include considerable processing overhead which can negatively affect performance. Nginx performs compression before sending responses to clients but does not double compress responses that are already compressed.                                <br><br>
+                            The compression process reduces the size of the transmitted data. However, since compression
+                            happens at runtime, it can also include considerable processing overhead which can
+                            negatively affect performance. Nginx performs compression before sending responses to
+                            clients but does not double compress responses that are already compressed. <br><br>
 
-                            Enabling Decompression: Some clients do not handle responses with the gzip encoding method. At the same time, it might be desirable to store compressed data or responses on the fly and store them in the cache. To successfully serve both clients that do and do not accept compressed data, NGINX can decompress data on the fly when sending it to the latter type of client.
+                            Enabling Decompression: Some clients do not handle responses with the gzip encoding method.
+                            At the same time, it might be desirable to store compressed data or responses on the fly and
+                            store them in the cache. To successfully serve both clients that do and do not accept
+                            compressed data, NGINX can decompress data on the fly when sending it to the latter type of
+                            client.
                         </p>
                     </div>
                 </div>
@@ -2945,19 +2976,22 @@ pid /run/nginx.pid;
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 To enable the compression, add the gzip directive with the on parameter:
-                                <pre class="language-java">
+                                <pre class="language-nginx">
                                             <code>
                                                 gzip on;  
                                             </code>
                                             </pre>
-                                            By default, Nginx compresses responses only with text/html (MIME type). To compress responses with other MIME types, add the gzip_types directive and list the additional types.
-                                            <pre class="language-java">
+                                By default, Nginx compresses responses only with text/html (MIME type). To compress
+                                responses with other MIME types, add the gzip_types directive and list the additional
+                                types.
+                                <pre class="language-nginx">
                                                 <code>
                                                     gzip_types text/plain application/xml;  
                                                 </code>
                                                 </pre>
-                                                We can define the minimum length of the response to compress, use the gzip_min_length directive. The default is 20 bytes.
-                                                <pre class="language-java">
+                                We can define the minimum length of the response to compress, use the gzip_min_length
+                                directive. The default is 20 bytes.
+                                <pre class="language-nginx">
                                                     <code>
                                                         gzip_min_length 1000;    
                                                     </code>
@@ -2976,7 +3010,7 @@ pid /run/nginx.pid;
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 To enable runtime decompression, use the gunzip directive.
-                                <pre class="language-java">
+                                <pre class="language-nginx">
                                             <code>
                                                 location /storage/ {  
                                                     gunzip on;  
@@ -2984,8 +3018,8 @@ pid /run/nginx.pid;
                                                 }  
                                             </code>
                                             </pre>
-                                            The gunzip directive can be defined in the same context as the gzip directive:
-                                            <pre class="language-java">
+                                The gunzip directive can be defined in the same context as the gzip directive:
+                                <pre class="language-nginx">
                                                 <code>
                                                     server {  
                                                         gzip on;  
@@ -3008,8 +3042,9 @@ pid /run/nginx.pid;
                         <div id="collapseThree2039" class="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                To send a compressed file to the client instead of the regular one, set the gzip_static directive to on within the appropriate context.
-                                <pre class="language-java">
+                                To send a compressed file to the client instead of the regular one, set the gzip_static
+                                directive to on within the appropriate context.
+                                <pre class="language-nginx">
                                             <code>
                                                 location / {  
                                                     gzip_static on;  
@@ -3022,80 +3057,625 @@ pid /run/nginx.pid;
                 </div>
             </li>
             <li>
-                User-defined Packages<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+                NGINX Dynamic Modules<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom40" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom40"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">User-defined Packages
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">NGINX Dynamic Modules
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        To create a package, use the package keyword
+                        <p>Nginx Plus is a modular architecture. We can include new features and functionality with
+                            software modules, which can be plugged into a running Nginx Plus instance on demand.</p>
+                        <p>Dynamic modules include functionality to Nginx Plus such as geolocating users by IP address,
+                            resizing images, and embedding Lua scripts into the Nginx Plus event processing model.
+                            Modules are created both by Nginx, incorporation and third-party developers.</p>
+                        <p>With the help of dynamic modules, we can load separate shared object files at runtime as
+                            modules - both third party modules as well as some native Nginx modules.</p>
+                        <p>
+                            The next Nginx Plus release will build on this dynamic modules feature. Nginx Plus has a
+                            managed modules repository with a range of third party modules that we have tested and
+                            certified against Nginx Plus, making it easier for us to add common extensions to Nginx Plus
+                            with confidence.
+                            <br><br>
+                            Let's see the list of some important dynamic modules:
+                        <ol>
+                            <li>Brotli: Brotli is a general-purpose, lossless data compression algorithm that uses a
+                                variant of the Huffman coding, LZ77 algorithm, and second-order context modeling. Its
+                                compression ratio is comparable to the best currently available general-purpose
+                                compression methods.</li>
+                            <li>Cookie-Flag:Set the flags HttpOnly, secure and SameSite for cookies in Set-Cookie
+                                upstream response headers.</li>
+                            <li>Encrypted-Session: This dynamic module gives some encryption and decryption support for
+                                Nginx variables based on AES-256 with MAC. It is usually used with the Set-Misc dynamic
+                                module and the Nginx rewrite module.</li>
+                            <li>GeoIP: Create variable based on the IP address of the client, using the precompiled
+                                MaxMind GeoIP databases, for both Http and TCP/UDP traffic:</li>
+                            <li>GeoIP2: Create variable based on the IP address of the client, using the precompiled
+                                MaxMind GeoIP2 databases, which provides localized name information not present in the
+                                original GeoIP databases.</li>
+                            <li>Headers-More: It is used to set and clear the input and output headers, for extending
+                                core Headers module:</li>
+                            <li>Image-Filter: Crop, rotate, resize and perform other transformations of GIF, JPEG, and
+                                PNG images.</li>
+                            <li>Lua: Integrate Lua co-routines into the event-processing Module of Nginx.</li>
+                            <li>Perl:Implement location and variable handlers in Perl, and insert Perl calls into SSI
+                                (Server Side Includes).</li>
+                            <li>RTMP:Stream RTMP (Real Time Messaging Protocol), Apple HTTP Live Streaming (HLS), and
+                                Dynamic Adaptive Streaming over HTTP (DASH) video formats.</li>
+                            <li>Set-Misc:Implement numerous additional set_* directives, by extending the Nginx core
+                                Rewrite module.</li>
+                        </ol>
+                        </p>
                     </div>
                 </div>
-                <pre class="language-nginx">
-                            <code>
-                                package mypack;
-                            </code>
-                            </pre>
+                <br>
+                Displaying the List of Available Modules
+                <pre class="language-bash">
+                                <code>
+                                    apt-cache search nginx-plus-module  
+                                </code>
+                                </pre>
+                To display the list of available modules, run the following command (for Debian or Ubuntu OS)
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne20100" aria-expanded="false" aria-controls="collapseOne">
+                                Brotli Installation Steps:
+                            </button>
+                        </h2>
+                        <div id="collapseOne20100" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                1. First, install the Brotli module.
+                                <pre class="language-nginx">
+                                            <code>
+                                                apt-get install nginx-plus-module-brotli  
+                                            </code>
+                                            </pre>
+                                2. Add the following directive in the top level ("main") context of the main Nginx Plus
+                                configuration file /etc/nginx/nginx.conf:
+                                <pre class="language-nginx">
+                                                <code>
+                                                    load_module modules/ngx_http_brotli_filter_module.so;  
+                                                    load_module modules/ngx_http_brotli_static_module.so;   
+                                                </code>
+                                                </pre>
+                                3. Perform some additional configuration as required by the module.
+                                <br>
+                                4. To enable the module, reload Nginx Plus:
+                                <pre class="language-nginx">
+                                                    <code>
+                                                        nginx -t && nginx -s reload    
+                                                    </code>
+                                                    </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo20100" aria-expanded="false" aria-controls="collapseTwo">
+                                Cookie-Flag Installation Steps:
+                            </button>
+                        </h2>
+                        <div id="collapseTwo20100" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                1. Install the Cookie-Flag module.For CentOS, Amazon Linux, Oracle Linux, and RHEL:
+                                <pre class="language-nginx">
+                                            <code>
+                                                apt-get install nginx-plus-module-cookie-flag  
+                                            </code>
+                                            </pre>
+                                2. Add the following directive in the top-level ("main") context of the main Nginx Plus
+                                configuration file /etc/nginx/nginx.conf:
+                                <pre class="language-nginx">
+                                                <code>
+                                                    load_module modules/ngx_http_cookie_flag_filter_module.so;  
+                                                </code>
+                                                </pre>
+                                3. Perform some additional configuration as required by the module.
+                                <br>
+                                4. To enable the module, reload Nginx Plus:
+                                <pre class="language-nginx">
+    <code>
+        nginx -t && nginx -s reload  
+    </code>
+    </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree20100" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                Encrypted-Session Installation Steps:
+                            </button>
+                        </h2>
+                        <div id="collapseThree20100" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                1. Install the Encrypted - Session Module.
+                                <pre class="language-nginx">
+                                            <code>
+                                                apt-get install nginx-plus-module-encrypted-session  
+                                                </code>
+                                            </pre>
+                                2. Add the following directive in the top-level ("main") context of the main Nginx Plus
+                                configuration file /etc/nginx/nginx.conf
+                                <pre class="language-nginx">
+                                                <code>
+                                                    load_module modules/ndk_http_module.so;  
+                                                    load_module modules/ngx_http_encrypted_session_module.so;   
+                                                </code>
+                                                </pre>
+                                3. Perform some additional configuration as required by the module.
+                                <br><br>
+                                4. To enable the module, reload Nginx Plus:
+                                <pre class="language-nginx">
+    <code>
+        nginx -t && nginx -s reload   
+    </code>
+    </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree20101" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                GeoIP Installation Steps:
+                            </button>
+                        </h2>
+                        <div id="collapseThree20101" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                1. Install the GeoIP module.
+                                <pre class="language-nginx">
+                                            <code>
+                                                apt-get install nginx-plus-module-geoip  
+                                                </code>
+                                            </pre>
+                                2. Add the following directive in the top-level ("main") context of the main Nginx Plus
+                                configuration file /etc/nginx/nginx.conf:
+                                <pre class="language-nginx">
+                                                <code>
+                                                    load_module modules/ngx_http_geoip_module.so;  
+                                                    load_module modules/ngx_stream_geoip_module.so;    
+                                                </code>
+                                                </pre>
+                                3. Perform some additional configuration as required by the module.
+                                <br><br>
+                                4. To enable the module, reload Nginx Plus:
+                                <pre class="language-nginx">
+                                                    <code>
+                                                        nginx -t && nginx -s reload  
+                                                    </code>
+                                                    </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree20102" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                GeoIP2
+                            </button>
+                        </h2>
+                        <div id="collapseThree20102" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                1. Install the GeoIP2 module.
+                                <pre class="language-nginx">
+                                            <code>
+                                                apt-get install nginx-plus-module-geoip2  
+                                                </code>
+                                            </pre>
+                                2. Add the following directive in the top-level ("main") context of the main Nginx Plus
+                                configuration file /etc/nginx/nginx.conf:
+                                <pre class="language-nginx">
+                                                <code>
+                                                    load_module modules/ngx_http_geoip2_module.so;  
+load_module modules/ngx_stream_geoip2_module.so;  
+                                                </code>
+                                                </pre>
+                                3. Perform some additional configuration as required by the module.
+                                <br><br>
+                                4. To enable the module, reload Nginx Plus:
+                                <pre class="language-nginx">
+                                                    <code>
+                                                        nginx -t && nginx -s reload  
+                                                    </code>
+                                                    </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree20104" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                Headers-More Installation Steps:
+                            </button>
+                        </h2>
+                        <div id="collapseThree20104" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                1. Install the Headers-More module.
+                                <pre class="language-nginx">
+                                            <code>
+                                                apt-get install nginx-plus-module-headers-more  
+                                                </code>
+                                            </pre>
+                                2. Add the following directive in the top-level ("main") context of the main Nginx Plus
+                                configuration file /etc/nginx/nginx.conf:
+                                <pre class="language-nginx">
+                                                <code>
+                                                    load_module modules/ngx_http_headers_more_filter_module.so;  
+                                                </code>
+                                                </pre>
+                                3. Perform some additional configuration as required by the module.
+                                <br><br>
+                                4. To enable the module, reload Nginx Plus:
+                                <pre class="language-nginx">
+                                                    <code>
+                                                        nginx -t && nginx -s reload  
+                                                    </code>
+                                                    </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree20108" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                Image-Filter
+                            </button>
+                        </h2>
+                        <div id="collapseThree20108" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                1. Install the Image-Filter module.
+                                <pre class="language-nginx">
+                                            <code>
+                                                apt-get install nginx-plus-module-image-filter  
+                                                </code>
+                                            </pre>
+                                2. Add the following directive in the top-level ("main") context of the main NGINX Plus
+                                configuration file, /etc/nginx/nginx.conf:
+                                <pre class="language-nginx">
+                                                <code>
+                                                    load_module modules/ngx_http_image_filter_module.so;   
+                                                </code>
+                                                </pre>
+                                3. Perform additional configuration as required by the module.
+                                <br><br>
+                                4. To enable the module, reload NGINX Plus:
+                                <pre class="language-nginx">
+                                                    <code>
+                                                        nginx -t && nginx -s reload   
+                                                    </code>
+                                                    </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree20110" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                Lua Installation Steps:
+                            </button>
+                        </h2>
+                        <div id="collapseThree20110" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                1. Install the Lua module.
+                                <pre class="language-nginx">
+                                            <code>
+                                                apt-get install nginx-plus-module-lua  
+                                                </code>
+                                            </pre>
+                                2. Add both of the following directives in the top-level ("main") context of the main
+                                NGINX Plus configuration file, /etc/nginx/nginx.conf:
+                                <pre class="language-nginx">
+                                                <code>
+                 load_module modules/ndk_http_module.so;  
+load_module modules/ngx_http_lua_module.so;  
+                                                </code>
+                                                </pre>
+                                3. Perform additional configuration as required by the module.
+                                <br><br>
+
+                                4. Reload NGINX Plus to enable the module:
+                                <pre class="language-nginx">
+                                                    <code>
+                                                        nginx -t && nginx -s reload  
+                                                    </code>
+                                                    </pre>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree20111" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                Perl Installation Steps:
+                            </button>
+                        </h2>
+                        <div id="collapseThree20111" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                1. Install the Perl module.
+                                <pre class="language-nginx">
+                                            <code>
+                                                apt-get install nginx-plus-module-perl    
+                                                </code>
+                                            </pre>
+                                2. Add both of the following directives in the top-level ("main") context of the main
+                                NGINX Plus configuration file, /etc/nginx/nginx.conf:
+                                <pre class="language-nginx">
+                                                <code>
+                                                    load_module modules/ngx_http_perl_module.so;  
+                                                </code>
+                                                </pre>
+                                3. Perform additional configuration as required by the module.
+                                <br><br>
+
+                                4. Reload NGINX Plus to enable the module:
+                                <pre class="language-nginx">
+                                                    <code>
+                                                        nginx -t && nginx -s reload  
+                                                    </code>
+                                                    </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree20112" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                RTMP Installation Steps:
+                            </button>
+                        </h2>
+                        <div id="collapseThree20112" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                1. Install the RTMP Media Streaming module.
+                                <pre class="language-nginx">
+                                            <code>
+                                                apt-get install nginx-plus-module-rtmp   
+                                                </code>
+                                            </pre>
+                                2. Add both of the following directives in the top-level ("main") context of the main
+                                NGINX Plus configuration file, /etc/nginx/nginx.conf:
+                                <pre class="language-nginx">
+                                                <code>
+                                                    load_module modules/ngx_rtmp_module.so;  
+                                                </code>
+                                                </pre>
+                                3. Perform additional configuration as required by the module.
+                                <br><br>
+
+                                4. Reload NGINX Plus to enable the module:
+                                <pre class="language-nginx">
+                                                    <code>
+                                                        nginx -t && nginx -s reload  
+                                                    </code>
+                                                    </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree20113" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                Set-Misc Installation Steps:
+                            </button>
+                        </h2>
+                        <div id="collapseThree20113" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                1. Install the Set-Misc module.
+                                <pre class="language-nginx">
+                                            <code>
+                                                apt-get install nginx-plus-module-set-misc  
+                                                </code>
+                                            </pre>
+                                2. Add both of the following directives in the top-level ("main") context of the main
+                                NGINX Plus configuration file, /etc/nginx/nginx.conf:
+                                <pre class="language-nginx">
+                                                <code>
+                                                    load_module modules/ndk_http_module.so;  
+                                                    load_module modules/ngx_http_set_misc_module.so;   
+                                                </code>
+                                                </pre>
+                                3. Perform additional configuration as required by the module.
+                                <br><br>
+
+                                4. Reload NGINX Plus to enable the module:
+                                <pre class="language-nginx">
+                                                    <code>
+                                                        nginx -t && nginx -s reload  
+                                                    </code>
+                                                    </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </li>
             <li>
-                Java Inheritance<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+                NGINX Minimal Configuration<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom41" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom41"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Java Inheritance</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">NGINX Minimal Configuration</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        In Java, it is possible to inherit attributes and methods from one class to another. We group
-                        the "inheritance concept" into two categories:
-                        <br><br> 1) subclass (child) - the class that inherits from another class <br> 2) superclass
-                        (parent) - the class being inherited from To inherit from a class, use the extends keyword.<br>
+                        <p>A secure server is one that allows only as much as what is needed. Ideally, we would build a server based on a minimal system by enabling additional features individually. Doing with a minimal configuration is also helpful in debugging. If the error is not available in the minimal system, features are added individually and the search for the error goes on</p>
+                        <br>
+                      <p>  Location Directive: When no modifier is given, the path is treated as a prefix, after which anything can follow. The above example will match:
+                        Modifier has assigned precedence:
+<br><br>
+=           - Exact match  
+^~          - Preferential match  
+~ && ~*     - Regex match  
+no modifier - Prefix match  <br><br>
+First of all, nginx will check for any exact matches. If it does not exist, it will look for preferential ones. If this match also fails, regex matches will be tested in the order of their appearance. If everything else fails, the last prefix match will be used.</p><p>
+    try_files directive: So /foo.html will try to return files in the following order:
+    <ul class="points">
+        <li>$uri (/foo.html);</li>
+        <li>index.html</li>
+        <li>If none is found:404</li>
+        </ul><br>
+        If we define try_files in a server context, and then define a location that finds all requests, our try_files will not be executed. This happens because try_files in the server context defines its pseudo-location, which is the least specific location possible. Hence, defining location / will be more specific than our pseudo-location.
+</p>
                     </div>
                 </div>
-                <br>
-                <img class="mx-auto d-block"
-                    src="https://simplesnippets.tech/wp-content/uploads/2018/04/java-types-of-inheritance.jpg" alt=""
-                    style="height: 40vw;">
-                <br>
                 <pre class="language-nginx">
                     <code>
-                        class Vehicle {
-                            
-                          }
-                          class Car extends Vehicle {
-
-                          }
+                        # /etc/nginx/nginx.conf  
+  
+                        events {}         # event context have to be defined to consider config valid  
+                          
+                        http {  
+                         server {  
+                            listen 80;  
+                            server_name  javatpoint.co  www.javatpoint.co  *.javatpoint.co;  
+                          
+                            return 200 "Hello";  
+                          }  
+                        }  
                     </code>
                     </pre>
+                    <br>
+                    Root, location and try_files directives
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne20201" aria-expanded="false" aria-controls="collapseOne">
+                                    root directive
+                                </button>
+                            </h2>
+                            <div id="collapseOne20201" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    The root directive is used to set the root directory for requests, allowing nginx to map the incoming request onto the file system.
+                                    <pre class="language-java">
+                                                <code>
+                                                    root /var/www/javatpoint.co;  
+                                                </code>
+                                                </pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo20201" aria-expanded="false" aria-controls="collapseTwo">
+                                    Location Directive
+                                </button>
+                            </h2>
+                            <div id="collapseTwo20201" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    The location directive is used to set the configuration depending on the requested URI (Uniform Resource Identifier).
+                                    <pre class="language-java">
+                                                <code>
+                                                    location /foo {  
+                                                        return 200 "foo";  
+                                                      } 
+                                                </code>
+                                                </pre>
+                                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree20201" aria-expanded="false" aria-controls="collapseThree">
+                                    try_files directive
+                                </button>
+                            </h2>
+                            <div id="collapseThree20201" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    This directive tries different paths and will return whichever is found.
+                                    <pre class="language-java">
+                                                <code>
+                                                    server {  
+                                                        location / {  
+                                                          try_files $uri /index.html =404;  
+                                                        }  
+                                                      }    
+                                                    </code>
+                                                </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </li>
             <li>
-                Java Polymorphism
+                NGINX Reverse Proxy
                 <button class="btn btn1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom42"
                     aria-controls="offcanvasBottom">Read
                     more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom42"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Java Polymorphism</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">NGINX Reverse Proxy</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        Polymorphism means "many forms", and it occurs when we have many classes that are related to
-                        each other by inheritance.
-                        <br><br> Like we specified in the previous chapter; Inheritance lets us inherit attributes and
-                        methods from another class. Polymorphism uses those methods to perform different tasks. This
-                        allows us to perform a single action in
-                        different ways.
+                        <p>A proxy is a server that resides between internal applications and external clients, forwarding client requests to the appropriate server. An <strong>Nginx reverse proxy server</strong> is a proxy server that resides behind the firewall in a private network and directs client requests to the appropriate backend server.</p>
+                        <p>A reverse proxy gives an additional level of abstraction and control to ensure the smooth flow of network traffic between clients and servers.</p>
+                        <p>
+                            Uses of Reverse Proxy Server<br>
+                            <p><strong>Load - Balancing:</strong> A reverse proxy server can act as a traffic cop resides in front of our backend servers and distributing client requests across a group of servers in a manner that increases the speed and capacity utilization while ensuring no one server is overloaded, which can degrade performance. If the server is not up, then the load balancer redirects traffic to the remaining online servers.</p>
+                           <p>Web Acceleration: Nginx reverse proxy is used to compress outbound and inbound data, as well as cache commonly requested content, both of which speed up the flow of traffic between clients and servers.</p>
+                           <p><strong>Security and Anonymity:</strong> We can intercept requests of the clients headed for our backend servers, by doing this a reverse proxy server protects their identities and acts as an additional defense against security attacks. </p>
+                        </p>
+                        <h2 class="h2">Passing a Request to a Proxied Server</h2>
+                        <p>When NGINX server proxies a request, it sends the request to a specified proxied server, fetches the response, and sends it back to the client. It is possible to provide a proxy requests to an HTTP server or a non-HTTP server using a specified protocol. Supported protocols include FastCGI, uwsgi, SCGI, and Memcached.</p>
+                        <p>To pass a request to a non-HTTP proxied server, use the appropriate **_pass directive:</p>
+                        <ul class="points">
+                            <li><strong>fastcgi_pass:</strong> it passes a request to a fastCGI server.</li>
+                            <li><strong>uwsgi_pass:</strong> it passes a request to an uwsgi server.</li>
+                            <li><strong>scgi_pass:</strong> it passes a request to an SCGI server.</li>
+                            <li><strong>memcached_pass:</strong> it passes a request to a memcached server.</li>
+                            </ul>
                     </div>
                 </div>
+                To pass a request to an HTTP proxied server, the proxy_pass directive is defined inside the location.
+                <pre class="language-java">
+                    <code>
+                        location /some/path/ {  
+                            proxy_pass http://www.example.com/link/;  
+                        }   
+                    </code>
+                    </pre>
             </li>
             <li>
-                Java Inner Classes<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+                Nginx Security Controls<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom43" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom43"
                     aria-labelledby="offcanvasBottomLabel">
@@ -3104,54 +3684,52 @@ pid /run/nginx.pid;
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        In Java, it is also possible to nest classes (a class within a class). The purpose of nested
-                        classes is to group classes that belong together, which makes your code more readable and
-                        maintainable.
-                        <br><br> To access the inner class, create an object of the outer class, and then create an
-                        object of the inner class
+                        <p>When our content is valuable, and we are rightly concerned about the privacy and security of our users, then we can use Nginx to control and secure the access of our services and the data we manage.</p>
+                        
                     </div>
                 </div>
             </li>
             <li>
-                Java Abstraction<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+                Nginx SSL Termination<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom44" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom44"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Java Abstraction
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Java Nginx SSL Termination
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        Abstract Classes and Methods: <br> Data abstraction is the process of hiding certain details and
-                        showing only essential information to the user. Abstraction can be achieved with either abstract
-                        classes or interfaces. <br><br> The
-                        abstract keyword is a non-access modifier, used for classes and methods: <br> Abstract class: is
-                        a restricted class that cannot be used to create objects (to access it, it must be inherited
-                        from another class).
-                        <br><br> Abstract method: can only be used in an abstract class, and it does not have a body.
-                        The body is provided by the subclass (inherited from). <br>
+                        <p>SSL (Secure Socket Layer) connection uses a certificate for authentication before sending encrypted data from a client computer to the webserver. SSL termination is a form of SSL offloading (decryption), shifts some of this responsibility from the webserver to a different machine. SSL termination is used to recognize encrypted data.</p>
+                        <p>In this section, we will describe how to configure an HTTPS server on NGINX Plus and NGINX.</p>
+                        <p>To set up an HTTPS server in our nginx.conf file, adds the ssl parameter to the listen directive in the server block, then specify the locations of the server certificate and private keys files:</p>
+                        <p>The server certificate is a public entity. It is sent to every client that connects to the Nginx Plus or Nginx.</p>
+                        <p>The private key is a secure key or entity and should be stored in a file with restricted access. However, the master process of nginx must be able to read this file. We can also store the private key in the same file as the certificate.</p>
+                        <p>The ssl_protocol and ssl_ciphers directives can be used to require that clients use only the strong versions and ciphers of SSL/TLS when establishing connections.</p>
                     </div>
                 </div>
                 <pre class="language-nginx">
                     <code>
-                        abstract class Animal {
-                            public abstract void animalSound();
-                           
-                             
-                            }
-                          }
+                        server {  
+                            listen              443 ssl;  
+                            server_name         www.example.com;  
+                            ssl_certificate     www.example.com.crt;  
+                            ssl_certificate_key www.example.com.key;  
+                            ssl_protocols       TLSv1 TLSv1.1 TLSv1.2;  
+                            ssl_ciphers         HIGH:!aNULL:!MD5;  
+                            #...  
+                        }  
                     </code>
                     </pre>
             </li>
             <li>
-                Java Interface<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+                SSL Termination for TCP Upstream Servers<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom46" aria-controls="offcanvasBottom">Read
                     more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom46"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Java Interface</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">SSL Termination for TCP Upstream Servers</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
@@ -3224,8 +3802,8 @@ pid /run/nginx.pid;
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        
-                                
+
+
                     </div>
                 </div>
                 <pre class="language-nginx">
