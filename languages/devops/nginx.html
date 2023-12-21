@@ -3733,1123 +3733,455 @@ First of all, nginx will check for any exact matches. If it does not exist, it w
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        Another way to achieve abstraction in Java, is with interfaces.
-                        <br> An interface is a completely "abstract class" that is used to group related methods with
-                        empty bodies
-                        <br><br> To access the interface methods, the interface must be "implemented" (kinda like
-                        inherited) by another class with the implements keyword (instead of extends). The body of the
-                        interface method is provided by the "implement"
-                        class <br> Notes on Interfaces:<br>
-                        <ul>
-                            <li>Like abstract classes, interfaces cannot be used to create objects</li>
-                            <li>Interface methods do not have a body - the body is provided by the "implement" class
-                            </li>
-                            <li>On implementation of an interface, you must override all of its methods</li>
-                            <li>Interface methods are by default abstract and public</li>
-                            <li>Interface attributes are by default public, static and final</li>
-                            <li>An interface cannot contain a constructor</li>
-                        </ul>
-                        <br><br> Why And When To Use Interfaces? <br> 1) To achieve security - hide certain details and
-                        only show the important details of an object (interface).
-                        <br><br> 2) Java does not support "multiple inheritance" (a class can only inherit from one
-                        superclass). However, it can be achieved with interfaces, because the class can implement
-                        multiple interfaces. Note: To implement multiple
-                        interfaces, separate them with a comma
+                        <p class="pq"><strong>Obtaining the SSL Certificate</strong></p>
+                        <p></p>First, we will need to obtain server certificates and a private key and put them on the server. A certificate can be obtained from a trusted CA (Certificate Authority) or generated using SSL library such as OpenSSL.<p></p><br>
+                        <p><strong>Configure Nginx Plus</strong></p>
+                        <p>To configure SSL Termination, include the following directives to the Nginx Plus configuration:</p><br>
+
+                    </div>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne2013" aria-expanded="false" aria-controls="collapseOne">
+                                Enabling SSL
+                            </button>
+                        </h2>
+                        <div id="collapseOne2013" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>To enable the SSL, define the ssl parameter of the listen directive for the TCP server that passes connections to an upstream server group</p>
+                                <pre class="language-java">
+                                            <code>
+                                                stream {  
+  
+                                                    server {  
+                                                        listen     12345 ssl;  
+                                                        proxy_pass backend;  
+                                                        #...  
+                                                    }  
+                                                } 
+                                            </code>
+                                            </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo2013" aria-expanded="false" aria-controls="collapseTwo">
+                                Adding SSL Certificates
+                            </button>
+                        </h2>
+                        <div id="collapseTwo2013" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>To add SSL Certificates, define the path to the certificates with the ssl_certificate directive, and specify the path to the private key in the ssl_certificate_key directive:</p>
+                                <pre class="language-java">
+                                            <code>
+                                                server {  
+                                                    #...  
+                                                    ssl_certificate        /etc/ssl/certs/server.crt;  
+                                                    ssl_certificate_key    /etc/ssl/certs/server.key;  
+                                                }  
+                                            </code>
+                                            </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree2013" aria-expanded="false" aria-controls="collapseThree">
+                                ssl_protocols and ssl_ciphers directives
+                            </button>
+                        </h2>
+                        <div id="collapseThree2013" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <pre class="language-java">
+                                            <code>
+                                                server {  
+                                                    #...  
+                                                    ssl_protocols  TLSv1 TLSv1.1 TLSv1.2;  
+                                                    ssl_ciphers    HIGH:!aNULL:!MD5;  
+                                                }  
+                                                </code>
+                                            </pre>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </li>
-            <li>Java Enums<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+            <li>Restricting Access with HTTP Basic Authentication<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom48" aria-controls="offcanvasBottom">Read
                     more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom48"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Java Enums</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Restricting Access with HTTP Basic Authentication</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        An enum is a special "class" that represents a group of constants (unchangeable variables, like
-                        final variables).
-                        <br><br> To create an enum, use the enum keyword (instead of class or interface), and separate
-                        the constants with a comma. Note that they should be in uppercase letters
-                        <br><br><br> Enum is short for "enumerations", which means "specifically listed".
-                        <br><br><br> Difference between Enums and Classes <br> An enum can, just like a class, have
-                        attributes and methods. The only difference is that enum constants are public, static and final
-                        (unchangeable - cannot be overridden).
-                        <br><br> An enum cannot be used to create objects, and it cannot extend other classes (but it
-                        can implement interfaces).
-                        <br><br> Why And When To Use Enums? <br> Use enums when you have values that you know aren't
-                        going to change, like month days, days, colors, deck of cards, etc.
+                       <P>We can restrict access to our website or some parts of it by implementing a username and password authentication. Username and passwords are taken from a file created and populated by a password file creation tool, for example, apache2-utils.</P>
                     </div>
                 </div>
-                <pre class="language-nginx">
-                                <code>
-                                    enum Level {
-                                        LOW,
-                                        MEDIUM,
-                                        HIGH
-                                      } 
-                                </code>
-                                </pre>
-            </li>
-            <li>Java User Input<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasBottom49" aria-controls="offcanvasBottom">Read
-                    more...</button>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom49"
-                    aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Java User Input</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                Creating a Password File
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne2016" aria-expanded="false" aria-controls="collapseOne">
+                               First Step
+                            </button>
+                        </h2>
+                        <div id="collapseOne2016" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                To create username-password pairs, use a password file creation utility, for example, httpd-tools or apache2-utils:<br>
+                                1. First, verify that httpd-tools or apache2-utils is installed.
+                                
+                            </div>
+                        </div>
                     </div>
-                    <div class="offcanvas-body small">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo2016" aria-expanded="false" aria-controls="collapseTwo">
+                                Create a password file 
+                            </button>
+                        </h2>
+                        <div id="collapseTwo2016" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>2. Create a password file and a first user, run the htpasswd utility with the -c flag which is used to create a new file, the file pathname as the first argument, and the username as the second argument.</p>
+                                <pre class="language-java">
+                                            <code>
+  sudo htpasswd -c /etc/apache2/.htpasswd user1  
+                                            </code>
+                                            </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree2016" aria-expanded="false" aria-controls="collapseThree">
+                                Create additional username-password pairs
+                            </button>
+                        </h2>
+                        <div id="collapseThree2016" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                3. Create additional username-password pairs. Omit the -c flag since the file already exists:
+                                <pre class="language-java">
+                                            <code>
+                                    sudo htpasswd /etc/apache2/.htpasswd user2  
+                                                </code>
+                                            </pre>
+                            </div>
+                        </div>
+                    </div>
 
-
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree20163" aria-expanded="false" aria-controls="collapseThree">
+                                paired usernames and encrypted passwords
+                            </button>
+                        </h2>
+                        <div id="collapseThree20163" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                4. We can make sure that the file contains paired usernames and encrypted passwords:
+                                <pre class="language-java">
+                                            <code>
+                                                cat /etc/apache2/.htpasswd  
+                                                user1:$apr1$/woC1jnP$KAh0SsVn5qeSMjTtn0E9Q0  
+                                                user2:$apr1$QdR8fNLT$vbCEEzDj7LyqCMyNpSoBh/  
+                                                user3:$apr1$Mr5A0e.U$0j39Hp5FfxRkneklXaMrr/   
+                                                </code>
+                                            </pre>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <pre class="language-nginx">
-                                <code>
-                                    import java.util.Scanner;  // Import the Scanner class
-
-                                    class Main {
-                                      public static void main(String[] args) {
-                                        Scanner myObj = new Scanner(System.in);  // Create a Scanner object
-
-                                        String userName = myObj.nextLine();  // Read user input
-                                    
-                                      }
-                                    } 
-                                </code>
-                                </pre>
             </li>
-            <li>Java Date and Time<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+            <li>Configuring Nginx Plus and Nginx for HTTP Basic Authentication
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne2073" aria-expanded="false" aria-controls="collapseOne">
+                                First Step
+                            </button>
+                        </h2>
+                        <div id="collapseOne2073" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>1. Inside a location that we are going to protect, define the auth_basic directive and give a name to the password-protected area. The name of the area will be shown in the username and password dialog window when asking for credentials.</p>
+                                <pre class="language-java">
+                                            <code>
+                                                location /api {  
+                                                    auth_basic "Administrator's Area";  
+                                                    #...  
+                                                }\  
+                                            </code>
+                                            </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo2073" aria-expanded="false" aria-controls="collapseTwo">
+                            Second Step
+                            </button>
+                        </h2>
+                        <div id="collapseTwo2073" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>2. Define the auth_basic_user_file directive with the path to the .htpasswd file that contains user/password pairs:</p>
+                                <pre class="language-java">
+                                            <code>
+                                                location /api {  
+                                                    auth_basic           "Administrator's Area";  
+                                                    auth_basic_user_file /etc/apache2/.htpasswd;   
+                                                }  
+                                            </code>
+                                            </pre>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </li>
+            <li>NGINX Content Caching<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom50" aria-controls="offcanvasBottom">Read
                     more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom50"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Java Date and Time</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">NGINX Content Caching</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        Java does not have a built-in Date class, but we can import the java.time package to work with
-                        the date and time API.
-                        <table class="ws-table-all notranslate">
-                            <tbody>
-                                <tr>
-                                    <th style="width:25%">Class</th>
-                                    <th style="width:75%">Description</th>
-                                </tr>
-                                <tr>
-                                    <td><code class="w3-codespan">LocalDate</code></td>
-                                    <td>Represents a date (year, month, day (yyyy-MM-dd))</td>
-
-                                </tr>
-                                <tr>
-                                    <td><code class="w3-codespan">LocalTime</code></td>
-                                    <td>Represents a time (hour, minute, second and nanoseconds (HH-mm-ss-ns))</td>
-
-                                </tr>
-                                <tr>
-                                    <td><code class="w3-codespan">LocalDateTime</code></td>
-                                    <td>Represents both a date and a time (yyyy-MM-dd-HH-mm-ss-ns)</td>
-
-                                </tr>
-                                <tr>
-                                    <td><code class="w3-codespan">DateTimeFormatter</code></td>
-                                    <td>Formatter for displaying and parsing date-time objects</td>
-
-                                </tr>
-                            </tbody>
-                        </table>
+                        <p>Caching refers to locally storing the information to speed the communication between a client such as a web server. The cache can be located on the client-side, the server-side, or both. Caching is useful for serving repetitive requests of static or infrequently changing data.</p>
+                        <p>A content cache resides in between a client and an origin server and saves copies of all the content it sees. If a client requests content that the cache has stored, it returns the content directly without contacting the origin server.</p>
+                        <p>In Nginx Plus, when caching is enabled, Nginx Plus saves responses in a disk cache and uses them to respond to clients without having to proxy requests for the same content every time.</p>
                     </div>
                 </div>
-                <h3>Display Current Date</h3>
-                <pre class="language-nginx">
-                                        <code>
-                                            import java.time.LocalDate; // import the LocalDate class
-
-                                            public class Main {
-                                              public static void main(String[] args) {
-                                                LocalDate myObj = LocalDate.now(); // Create a date object
-                                                System.out.println(myObj); // Display the current date
-                                              }
-                                            }
-                                        </code>
-                                        </pre>
+              
             </li>
-            <li>Java ArrayList
+            <li>Enabling the Caching of Responses
                 <button class="btn btn1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom52"
                     aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom52"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Java ArrayList
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Enabling the Caching of Responses
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        The ArrayList class is a resizable array, which can be found in the java.util package. <br><br>
-                        The difference between a built-in array and an ArrayList in Java, is that the size of an array
-                        cannot be modified (if you want to add
-                        or remove elements to/from an array, you have to create a new one). While elements can be added
-                        and removed from an ArrayList whenever you want. The syntax is also slightly different
+                        <p>
+
+                            To enable the caching, add the proxy_cache_path directive in the top-level http { } context. The important and mandatory first parameter is the local file system path for cached content, and the mandatory keys zone parameter specifies the name and size of the shared memory zone which is used to store metadata about cached items:<br><br>
+                            <p>After that add the proxy_cache directive in the context (protocol type, virtual server, or location) for which we want to cache server responses, specifying the zone name defined by the key_zone parameter to the proxy_cache_path directive.</p>
+                        </p>
                     </div>
                 </div>
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne30" aria-expanded="false" aria-controls="collapseOne">
-                                Create an ArrayList object
-                            </button>
-                        </h2>
-                        <div id="collapseOne30" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
+               
                                 <pre class="language-nginx">
                                             <code>
-                                                import java.util.ArrayList; // import the ArrayList class
-        
-                                                ArrayList&lt;String&gt; cars = new ArrayList&lt;String&gt;(); // Create an ArrayList object
+                                                http {  
+                                                    ...  
+                                                    proxy_cache_path /data/nginx/cache keys_zone=one:10m;  
+                                                    server {  
+                                                        proxy_cache mycache;  
+                                                        location / {  
+                                                            proxy_pass http://localhost:8000;  
+                                                        }  
+                                                    }  
+                                                }  
                                             </code>
                                             </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo30" aria-expanded="false" aria-controls="collapseTwo">
-                                Add Items
-                            </button>
-                        </h2>
-                        <div id="collapseTwo30" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-nginx">
-                                            <code>
-                                                cars.add("Volvo");
-                                            </code>
-                                            </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree30" aria-expanded="false" aria-controls="collapseThree">
-                                Access an Item
-                            </button>
-                        </h2>
-                        <div id="collapseThree30" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-nginx">
-                                            <code>
-                                                cars.get(0);
-                                            </code>
-                                            </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree31" aria-expanded="false" aria-controls="collapseThree">
-                                Change an Item
-                            </button>
-                        </h2>
-                        <div id="collapseThree31" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-nginx">
-                                              <code>
-                                                cars.set(0, "Opel");
-                                              </code>
-                                              </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree32" aria-expanded="false" aria-controls="collapseThree">
-                                Remove an Item
-                            </button>
-                        </h2>
-                        <div id="collapseThree32" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-nginx">
-                                              <code>
-                                                cars.remove(0);
-                                              </code>
-                                              </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree34" aria-expanded="false" aria-controls="collapseThree">
-                                remove all the elements
-                            </button>
-                        </h2>
-                        <div id="collapseThree34" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-nginx">
-                                              <code>
-                                                cars.clear();
-                                              </code>
-                                              </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree35" aria-expanded="false" aria-controls="collapseThree">
-                                ArrayList Size
-                            </button>
-                        </h2>
-                        <div id="collapseThree35" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-nginx">
-                                              <code>
-                                                cars.size();
-                                              </code>
-                                              </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree36" aria-expanded="false" aria-controls="collapseThree">
-                                Loop Through an ArrayList
-                            </button>
-                        </h2>
-                        <div id="collapseThree36" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-nginx">
-                                              <code>
-                                                for (int i = 0; i < cars.size(); i++) {
-                                                    System.out.println(cars.get(i));
-                                                  }
-                                              </code>
-                                              </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree37" aria-expanded="false" aria-controls="collapseThree">
-                                Sort an ArrayList
-                            </button>
-                        </h2>
-                        <div id="collapseThree37" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-nginx">
-                                              <code>
-                                                Collections.sort(cars);  // Sort cars
-                                              </code>
-                                              </pre>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            
             </li>
-            <li>Java LinkedList<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasBottom53" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom53"
-                    aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Java LinkedList</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body small">
-                        ArrayList vs. LinkedList The LinkedList class is a collection which can contain many objects of
-                        the same type, just like the ArrayList.
-                        <br><br> The LinkedList class has all of the same methods as the ArrayList class because they
-                        both implement the List interface. This means that you can add items, change items, remove items
-                        and clear the list in the same way.
-                        <br><br> However, while the ArrayList class and the LinkedList class can be used in the same
-                        way, they are built very differently.
-                        <br><br> How the ArrayList works The ArrayList class has a regular array inside it. When an
-                        element is added, it is placed into the array. If the array is not big enough, a new, larger
-                        array is created to replace the old one and
-                        the old one is removed.
-                        <br><br> How the LinkedList works The LinkedList stores its items in "containers." The list has
-                        a link to the first container and each container has a link to the next container in the list.
-                        To add an element to the list, the element
-                        is placed into a new container and that container is linked to one of the other containers in
-                        the list.
-                        <br><br> When To Use Use an ArrayList for storing and accessing data, and LinkedList to
-                        manipulate data.
-                        <br><br> LinkedList Methods <br><br>
-                        <table class="ws-table-all notranslate">
-                            <tbody>
-                                <tr>
-                                    <th style="width:35%">Method</th>
-                                    <th style="width:60%">Description</th>
-                                </tr>
-                                <tr>
-                                    <td>addFirst()</td>
-                                    <td>Adds an item to the beginning of the list.</td>
-
-                                </tr>
-                                <tr>
-                                    <td>addLast()</td>
-                                    <td>Add an item to the end of the list</td>
-
-                                </tr>
-
-                                <tr>
-                                    <td>removeFirst()</td>
-                                    <td>Remove an item from the beginning of the list.</td>
-
-                                </tr>
-
-                                <tr>
-                                    <td>removeLast()</td>
-                                    <td>Remove an item from the end of the list</td>
-
-                                </tr>
-
-                                <tr>
-                                    <td>getFirst()</td>
-                                    <td>Get the item at the beginning of the list</td>
-
-                                </tr>
-
-                                <tr>
-                                    <td>getLast()</td>
-                                    <td>Get the item at the end of the list</td>
-
-                                </tr>
-
-                            </tbody>
-                        </table>
-
-                    </div>
-                </div>
-
-                <pre class="language-nginx">
-                                            <code>
-                                                // Import the LinkedList class
-                                                import java.util.LinkedList;
-                                                
-                                                public class Main {
-                                                  public static void main(String[] args) {
-                                                    LinkedList<String> cars = new LinkedList<String>();
-                                                   
-                                                  }
-                                                }
-                                            </code>
-                                            </pre>
-
-            </li>
-            </li>
-            <li>Java HashMap<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasBottom54" aria-controls="offcanvasBottom">Read
-                    more...</button>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom54"
-                    aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Java HashMap</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body small">
-                        In the ArrayList chapter, you learned that Arrays store items as an ordered collection, and you
-                        have to access them with an index number (int type). A HashMap however, store items in
-                        "key/value" pairs, and you can access them by an index of another type
-                        (e.g. a String).
-                        <br><br> One object is used as a key (index) to another object (value). It can store different
-                        types: String keys and Integer values, or the same type, like: String keys and String values
-                    </div>
-                </div>
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne35" aria-expanded="false" aria-controls="collapseOne">
-                                Create a HashMap object
-                            </button>
-                        </h2>
-                        <div id="collapseOne35" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-nginx">
-                                            <code>
-                                                import java.util.HashMap; // import the HashMap class
-
-HashMap&lt;String, String&gt; capitalCities = new HashMap&lt;String, String&gt;();
-                                            </code>
-                                            </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo455" aria-expanded="false" aria-controls="collapseTwo">
-                                Add Items
-                            </button>
-                        </h2>
-                        <div id="collapseTwo455" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-nginx">
-                                            <code>
-                                                capitalCities.put("England", "London");
-                                            </code>
-                                            </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree425" aria-expanded="false" aria-controls="collapseThree">
-                                Access an Item
-                            </button>
-                        </h2>
-                        <div id="collapseThree425" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-nginx">
-                                            <code>
-                                                capitalCities.get("England");
-                                            </code>
-                                            </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree45" aria-expanded="false" aria-controls="collapseThree">
-                                Remove an Item
-                            </button>
-                        </h2>
-                        <div id="collapseThree45" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-nginx">
-                                              <code>
-                                                capitalCities.remove("England");
-                                              </code>
-                                              </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree47" aria-expanded="false" aria-controls="collapseThree">
-                                remove all the elements
-                            </button>
-                        </h2>
-                        <div id="collapseThree47" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-nginx">
-                                              <code>
-                                                capitalCities.clear();
-                                              </code>
-                                              </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree49" aria-expanded="false" aria-controls="collapseThree">
-                                HashMap Size
-                            </button>
-                        </h2>
-                        <div id="collapseThree49" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-nginx">
-                                              <code>
-                                                capitalCities.size();
-                                              </code>
-                                              </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree48" aria-expanded="false" aria-controls="collapseThree">
-                                Loop Through an HashMap
-                            </button>
-                        </h2>
-                        <div id="collapseThree48" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-nginx">
-                                              <code>
-                                                // Print keys
-                                                for (String i : capitalCities.keySet()) {
-                                                  System.out.println(i);
-                                                }
-                                              </code>
-                                              </pre>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>Java HashSet<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasBottom55" aria-controls="offcanvasBottom">Read
-                    more...</button>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom55"
-                    aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Java HashSet</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body small">
-                        A HashSet is a collection of items where every item is unique, and it is found in the java.util
-                        package
-                    </div>
-                </div>
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne355" aria-expanded="false" aria-controls="collapseOne">
-                                Create a Hashset object
-                            </button>
-                        </h2>
-                        <div id="collapseOne355" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-nginx">
-                                            <code>
-                                                import java.util.HashSet; // Import the HashSet class
-
-HashSet&lt;String&gt;  cars = new HashSet&lt;String&gt;();
-                                            </code>
-                                            </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo4555" aria-expanded="false" aria-controls="collapseTwo">
-                                Add Items
-                            </button>
-                        </h2>
-                        <div id="collapseTwo4555" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-nginx">
-                                            <code>                                        
-    cars.add("Volvo");
-   
-                                            </code>
-                                            </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree4255" aria-expanded="false" aria-controls="collapseThree">
-                                Check If an Item Exists
-                            </button>
-                        </h2>
-                        <div id="collapseThree4255" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-nginx">
-                                            <code>
-                                                cars.contains("Mazda");
-                                            </code>
-                                            </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree458" aria-expanded="false" aria-controls="collapseThree">
-                                Remove an Item
-                            </button>
-                        </h2>
-                        <div id="collapseThree458" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-nginx">
-                                              <code>
-                                                cars.remove("Volvo");
-                                              </code>
-                                              </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree475" aria-expanded="false" aria-controls="collapseThree">
-                                remove all the elements
-                            </button>
-                        </h2>
-                        <div id="collapseThree475" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-nginx">
-                                              <code>
-                                                capitalCities.clear();
-                                              </code>
-                                              </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree495" aria-expanded="false" aria-controls="collapseThree">
-                                HashSet Size
-                            </button>
-                        </h2>
-                        <div id="collapseThree495" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-nginx">
-                                              <code>
-                                                cars.size();
-                                              </code>
-                                              </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree489" aria-expanded="false" aria-controls="collapseThree">
-                                Loop Through a HashSet
-                            </button>
-                        </h2>
-                        <div id="collapseThree489" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-nginx">
-                                              <code>
-                                                for (String i : cars) {
-                                                    System.out.println(i);
-                                                  }
-                                              </code>
-                                              </pre>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>Java Iterator<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasBottom56" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom56"
-                    aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Java Iterator</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body small">
-                        An Iterator is an object that can be used to loop through collections, like ArrayList and
-                        HashSet. It is called an "iterator" because "iterating" is the technical term for looping.
-                        <br><br> To use an Iterator, you must import it from the java.util package.
-                        <br><br><br>Note: Trying to remove items using a for loop or a for-each loop would not work
-                        correctly because the collection is changing size at the same time that the code is trying to
-                        loop.
-
-                    </div>
-                </div>
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne358" aria-expanded="false" aria-controls="collapseOne">
-                                Getting an Iterator
-                            </button>
-                        </h2>
-                        <div id="collapseOne358" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-nginx">
-                                            <code>
-                                                import java.util.Iterator;
-                                                // Get the iterator
-    Iterator&lt;String&gt; it = cars.iterator();
-
-    // Print the first item
-    System.out.println(it.next());
-                                            </code>
-                                            </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo4558" aria-expanded="false" aria-controls="collapseTwo">
-                                Looping Through a Collection
-                            </button>
-                        </h2>
-                        <div id="collapseTwo4558" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-nginx">
-                                            <code>
-                                                while(it.hasNext()) {
-                                                   
-                                                    
-                                                  }
-                                            </code>
-                                            </pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree4258" aria-expanded="false" aria-controls="collapseThree">
-                                remove an Item
-                            </button>
-                        </h2>
-                        <div id="collapseThree4258" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <pre class="language-nginx">
-                                            <code>
-                                                while(it.hasNext()) {
-                                                    Integer i = it.next();
-                                                    if(i < 10) {
-                                                      it.remove();
-                                                    }
-                                                  }
-                                            </code>
-                                            </pre>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>Java Wrapper Classes<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+            <li>Nginx Processes Involved in Caching<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom57" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom57"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Java Wrapper Classes</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Nginx Processes Involved in Caching</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        Wrapper classes provide a way to use primitive data types (int, boolean, etc..) as objects.
-                        <br><br> The table below shows the primitive type and the equivalent wrapper class:
-                        <table class="ws-table-all notranslate table-bordered">
-                            <tbody>
-                                <tr>
-                                    <th style="width:50%">Primitive Data Type</th>
-                                    <th>Wrapper Class</th>
-                                </tr>
-                                <tr>
-                                    <td>byte</td>
-                                    <td>Byte</td>
-                                </tr>
-                                <tr>
-                                    <td>short</td>
-                                    <td>Short</td>
-                                </tr>
-                                <tr>
-                                    <td>int</td>
-                                    <td>Integer</td>
-                                </tr>
-                                <tr>
-                                    <td>long</td>
-                                    <td>Long</td>
-                                </tr>
-                                <tr>
-                                    <td>float</td>
-                                    <td>Float</td>
-                                </tr>
-                                <tr>
-                                    <td>double</td>
-                                    <td>Double</td>
-                                </tr>
-                                <tr>
-                                    <td>boolean</td>
-                                    <td>Boolean</td>
-                                </tr>
-                                <tr>
-                                    <td>char</td>
-                                    <td>Character</td>
-                                </tr>
-
-                            </tbody>
-                        </table>
+                        <p>There are Nginx Processes involved in caching:</p>
+                        <p>The cache manager is activated periodically to check the cache's state. If the size of the cache exceeds the limit set by the max_size parameter to the proxy_cache_path directive, the cache manager removes the data that was accessed least recently. Cached data can exceed the limit (temporarily) during the time between cache manager activations.</p>
+                        <p>The cache loader runs only once after NGINX will start. It loads metadata of previously cached data into the shared memory zone. Loading the entire cache at once could consume sufficient resources to slow NGINX performance during the first few minutes after startup. To avoid this problem, configure iterative loading of the cache by including the following parameters to the proxy_cache_path directive:</p>
+                        <ul class="points">
+                            <li><strong>loader_threshold -</strong> Duration of iteration, in milliseconds (by default value is 200).</li>
+                            <li><strong>loader_files -</strong> Maximum no. of items loaded during one iteration (by default value is 100).</li>
+                            <li><strong>loader_sleeps -</strong> Delay between iterations, in milliseconds (by default value is 50).</li>
+                            </ul><br><br>
+                           
                     </div>
                 </div>
+                <br>
+                In this example, iterations last 300 milliseconds or until 200 items have been loaded:
 
+                <pre class="language-java">
+                    <code>
+                        proxy_cache_path /data/nginx/cache keys_zone=one:10m loader_threshold=300 loader_files=200;  
+                    </code>
+                    </pre>
             </li>
-            <li>Java Exceptions<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+            <li>Specifying which Requests to Cache<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom58" aria-controls="offcanvasBottom">Read
                     more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom58"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Java Exceptions</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Specifying which Requests to Cache</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        When executing Java code, different errors can occur: coding errors made by the programmer,
-                        errors due to wrong input, or other unforeseeable things.
-                        <br><br> When an error occurs, Java will normally stop and generate an error message. The
-                        technical term for this is: Java will throw an exception (throw an error).
-                        <br><br><br> Java try and catch <br> The try statement allows you to define a block of code to
-                        be tested for errors while it is being executed.
-                        <br><br> The catch statement allows you to define a block of code to be executed, if an error
-                        occurs in the try block.
-                        <br><br><br> Finally
-                        <br> The finally statement lets you execute code, after try...catch, regardless of the result
+                        <p>NGINX Plus caches all responses by default to requests made with the HTTP HEAD and HTTP GET methods, the first time such responses are received from a proxied server. As the key for a request, NGINX Plus uses the request string. If a request has the same key or identifier as a cached response, NGINX Plus sends the cached response to the client. We can add various directives in the http {}, server {}, or location {} context to control which responses are cached.</p>
+                        
                     </div>
                 </div>
-                <pre class="language-nginx">
+                <p>To change the request characteristics used in calculating the identifier or key, include the proxy_cache_key directive:</p>
+                <pre class="language-java">
+                    <code>
+                        proxy_cache_key "$host$request_uri$cookie_user";   
+                    </code>
+                    </pre>
+                    <p>To define the minimum number of times that a request with the same identifier must be made before the response is cached, include the proxy_cache_min_uses directive:</p>
+                    <pre class="language-java">
                         <code>
-                            try {
-                                //  Block of code to try
-                              }
-                              catch(Exception e) {
-                                //  Block of code to handle errors
-                              }finally {
-                                // After 'try catch' is finished 
-                              }
+                            proxy_cache_min_uses 5;    
                         </code>
                         </pre>
+                        <p>To cache responses to requests with methods other than HEAD and GET, list them along with HEAD and GET as parameters to the proxy_cache_methods directive:</p>
+                        <pre class="language-java">
+                            <code>
+                                proxy_cache_methods GET HEAD POST;   
+                            </code>
+                            </pre>
             </li>
-            <li>The throw keyword<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+            <li>Limiting or Disabling Caching<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom59" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom59"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">The throw keyword</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Limiting or Disabling Caching</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        The throw statement allows you to create a custom error.
-                        <br><br> The throw statement is used together with an exception type. There are many exception
-                        types available in Java: ArithmeticException, FileNotFoundException,
-                        ArrayIndexOutOfBoundsException, SecurityException, etc
+                        <p>By default, responses remain in the cache indefinitely. They are removed only when the cache exceeds the maximum configured size, and then in order by length of time since they were last requested. You can set how long cached responses are considered valid, or even whether they are used at all, by including directives in the http {}, server {}, or location {} context:</p>
                     </div>
                 </div>
-                <pre class="language-nginx">
-                    <code>
-                        throw new ArithmeticException("Access denied - You must be at least 18 years old.");
-                    </code>
-                    </pre>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne2083" aria-expanded="false" aria-controls="collapseOne">
+                                To limit how long cached responses with specific status codes are considered valid
+                            </button>
+                        </h2>
+                        <div id="collapseOne2083" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                To limit how long cached responses with specific status codes are considered valid, use the proxy_cache_valid directive:
+                                <pre class="language-java">
+                                            <code>
+                                                proxy_cache_valid 200 302 10m;  
+proxy_cache_valid 404      1m;  
+                                            </code>
+                                            </pre>
+                                            In this example, responses with the code 200 or 302 are considered valid for 10 minutes, and responses with code 404 are valid for 1 minute.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo2083" aria-expanded="false" aria-controls="collapseTwo">
+                                validity time for responses with all status codes
+                            </button>
+                        </h2>
+                        <div id="collapseTwo2083" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                To define the validity time for responses with all status codes, specify any as the first parameter:
+                                <pre class="language-java">
+                                            <code>
+                                                static void myStaticMethod() {
+        
+                                                }
+                                            </code>
+                                            </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree2083" aria-expanded="false" aria-controls="collapseThree">
+                                To specify conditions under which NGINX Plus does not send cached responses to clients
+                            </button>
+                        </h2>
+                        <div id="collapseThree2083" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>To specify conditions under which NGINX Plus does not send cached responses to clients, include the proxy_cache_bypass directive. Each parameter defines a condition and consists of several variables. If at least one parameter is not empty and does not equal "0" (zero), NGINX Plus does not look up the response in the cache but instead forwards the request to the backend server immediately.</p>
+                                <pre class="language-java">
+                                            <code>
+                                                proxy_cache_bypass $cookie_nocache $arg_nocache$arg_comment;
+                                                </code>
+                                            </pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree20831" aria-expanded="false" aria-controls="collapseThree">
+                                To define conditions under which NGINX Plus doesn't cache a response at all,
+                            </button>
+                        </h2>
+                        <div id="collapseThree20831" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                To define conditions under which NGINX Plus doesn't cache a response at all, add the proxy_no_cache directive:
+                                <pre class="language-java">
+                                            <code>
+                                                proxy_no_cache $http_pragma $http_authorization;  
+                                                </code>
+                                            </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </li>
-            <li>Java Regular Expressions<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+            <li>NGINX Load Balancing<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom69" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom69"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Java Regular Expressions</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">NGINX Load Balancing</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        A regular expression is a sequence of characters that forms a search pattern. When you search
-                        for data in a text, you can use this search pattern to describe what you are searching for.
-                        <br> <br> A regular expression can be a single character, or a more complicated pattern.
-                        <br> <br> Regular expressions can be used to perform all types of text search and text replace
-                        operations.
-                        <br> <br> Java does not have a built-in Regular Expression class, but we can import the
-                        java.util.regex package to work with regular expressions. The package includes the following
-                        classes:
-                        <br> <br><br> Pattern Class - Defines a pattern (to be used in a search)<br> Matcher Class -
-                        Used to search for the pattern<br> PatternSyntaxException Class - Indicates syntax error in a
-                        regular expression pattern
-                        <br> <br> <br> Flags
-                        <br> Flags in the compile() method change how the search is performed. Here are a few of them:
-                        <br> <br> Pattern.CASE_INSENSITIVE - The case of letters will be ignored when performing a
-                        search.<br> Pattern.LITERAL - Special characters in the pattern will not have any special
-                        meaning and will be treated as ordinary characters
-                        when performing a search.<br> Pattern.UNICODE_CASE - Use it together with the CASE_INSENSITIVE
-                        flag to also ignore the case of letters outside of the English alphabet<br> <br> <br> Regular
-                        Expression Patterns<br> The first parameter
-                        of the Pattern.compile() method is the pattern. It describes what is being searched for.
-                        <br> Brackets are used to find a range of character<br>
-                        <table class="ws-table-all notranslate">
-                            <tbody>
-                                <tr>
-                                    <th style="width:22%">Expression</th>
-                                    <th>Description</th>
-                                </tr>
-                                <tr>
-                                    <td>[abc]</td>
-                                    <td>Find one character from the options between the brackets</td>
-                                </tr>
-                                <tr>
-                                    <td>[^abc]</td>
-                                    <td>Find one character NOT between the brackets</td>
-                                </tr>
-                                <tr>
-                                    <td>[0-9]</td>
-                                    <td>Find one character from the range 0 to 9</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        Metacharacters Metacharacters are characters with a special meaning:
-                        <table class="ws-table-all notranslate">
-                            <tbody>
-                                <tr>
-                                    <th style="width:22%">Metacharacter</th>
-                                    <th>Description</th>
-                                </tr>
-                                <tr>
-                                    <td>|</td>
-                                    <td>Find a match for any one of the patterns separated by | as in: cat|dog|fish</td>
-                                </tr>
-                                <tr>
-                                    <td>.</td>
-                                    <td>Find just one instance of any character</td>
-                                </tr>
-                                <tr>
-                                    <td>^</td>
-                                    <td>Finds a match as the beginning of a string as in: ^Hello</td>
-                                </tr>
-                                <tr>
-                                    <td>$</td>
-                                    <td>Finds a match at the end of the string as in: World$</td>
-                                </tr>
-                                <tr>
-                                    <td>\d</td>
-                                    <td>Find a digit</td>
-                                </tr>
-                                <tr>
-                                    <td>\s</td>
-                                    <td>Find a whitespace character</td>
-                                </tr>
-                                <tr>
-                                    <td>\b</td>
-                                    <td>Find a match at the beginning of a word like this: \bWORD, or at the end of a
-                                        word like this: WORD\b</td>
-                                </tr>
-                                <tr>
-                                    <td>\uxxxx</td>
-                                    <td>Find the Unicode character specified by the hexadecimal number xxxx</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        Quantifiers Quantifiers define quantities:
-                        <table class="ws-table-all notranslate">
-                            <tbody>
-                                <tr>
-                                    <th style="width:22%">Quantifier</th>
-                                    <th>Description</th>
-                                </tr>
-                                <tr>
-                                    <td>n+</td>
-                                    <td>Matches any string that contains at least one <em>n</em></td>
-                                </tr>
-                                <tr>
-                                    <td>n*</td>
-                                    <td>Matches any string that contains zero or more occurrences of <em>n</em></td>
-                                </tr>
-                                <tr>
-                                    <td>n?</td>
-                                    <td>Matches any string that contains zero or one occurrences of <em>n</em></td>
-                                </tr>
-                                <tr>
-                                    <td>n{x}</td>
-                                    <td>Matches any string that contains a sequence of <i>X</i> <i>n</i>'s</td>
-                                </tr>
-                                <tr>
-                                    <td>n{x,y}</td>
-                                    <td>Matches any string that contains a sequence of X to Y <i>n</i>'s</td>
-                                </tr>
-                                <tr>
-                                    <td>n{x,}</td>
-                                    <td>Matches any string that contains a sequence of at least X <i>n</i>'s</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <pre class="language-nginx">
-                <code>
-                    import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-public class Main {
-  public static void main(String[] args) {
-    Pattern pattern = Pattern.compile("w3schools", Pattern.CASE_INSENSITIVE);
-    Matcher matcher = pattern.matcher("Visit W3Schools!");
-    boolean matchFound = matcher.find();
-    if(matchFound) {
-      System.out.println("Match found");
-    } else {
-      System.out.println("Match not found");
-    }
-  }
-}
-                </code>
-                </pre>
-
-            </li>
-
-
-
-            <li>Java Threads<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasBottom64" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom64"
-                    aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Java Threads</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body small">
-                        Threads allows a program to operate more efficiently by doing multiple things at the same time.
-                        <br><br> Threads can be used to perform complicated tasks in the background without interrupting
-                        the main program.
-                        <br><br>
+                        
 
                     </div>
                 </div>
-                <h3>created by extending the Thread class</h3>
-                <pre class="language-nginx">
-            <code>
-                public class Main extends Thread {
-                    public void run() {
-                      System.out.println("This code is running in a thread");
-                    }
-                  }
-            </code>
-            </pre>
-                <h3>create a thread is to implement the Runnable interface</h3>
-                <pre class="language-nginx">
-                <code>
-                    public class Main implements Runnable {
-                        public void run() {
-                          System.out.println("This code is running in a thread");
-                        }
-                      }
-                </code>
-                </pre>
-                <h3>Running Threads</h3>
-                <pre class="language-nginx">
-                <code>
-                    Main thread = new Main();
-                    thread.start();
-                </code>
-                </pre>
+               
             </li>
 
 
