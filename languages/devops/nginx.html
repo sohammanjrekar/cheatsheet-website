@@ -4177,8 +4177,15 @@ proxy_cache_valid 404      1m;
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        
-
+                        <p>To ensure proper speed and optimized functioning, incoming network traffic is spread across a group of services. These backend services are commonly referred to as a server pool or server farm. With more spread across servers, there are fewer chances of a slowdown due to a loaded server.</p>
+                        <p>High traffic websites serve thousands or even millions of people each day. Part of this service is displaying content, such as image, text, and video within seconds for users. Servers need to identify the data needed and execute it reliably every single time.</p>
+                        <p>Load balancing is used to prevent servers from becoming crippled when there is an overflow of requests. A load balancer sends requests to servers that can efficiently handle them to maximize speed and performance.</p>
+                        <p>Load balancing is a commonly used technique and an excellent way for resource utilization, maximizing throughput, reducing latency and ensuring fault-tolerant configurations across multiple application instances.</p>
+                        <p>It is a useful mechanism to distribute incoming traffic around several capable virtual private servers.</p>
+                        <p>Nginx, which is popular web server software, can be used to configure as a simple yet powerful load balancer to improve your server's resource availability and efficiency.</p>
+                        <img class="mx-auto d-block"
+                    src="https://static.javatpoint.com/tutorial/nginx/images/nginx-load-balancing.png" alt=""
+                    style="width: 45vw;">
                     </div>
                 </div>
                
@@ -4189,111 +4196,23 @@ proxy_cache_valid 404      1m;
 
 
 
-            <li>Java Files<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasBottom56" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom56"
-                    aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Java Files</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body small">
-                        File handling is an important part of any application.
-                        <br><br> Java has several methods for creating, reading, updating, and deleting
-                        files.<br><br><br> Java File Handling: <br> The File class from the java.io package, allows us
-                        to work with files.
-                        <br><br> To use the File class, create an object of the class, and specify the filename or
-                        directory name <br><br> The File class has many useful methods for creating and getting
-                        information about files. For example:
-                        <table class="ws-table-all notranslate">
-                            <tbody>
-                                <tr>
-                                    <th style="width:25%">Method</th>
-                                    <th style="width:15%">Type</th>
-                                    <th style="width:60%">Description</th>
-                                </tr>
-                                <tr>
-                                    <td><code class="w3-codespan">canRead()</code></td>
-                                    <td>Boolean</td>
-                                    <td>Tests whether the file is readable or not</td>
-
-                                </tr>
-                                <tr>
-                                    <td><code class="w3-codespan">canWrite()</code></td>
-                                    <td>Boolean</td>
-                                    <td>Tests whether the file is writable or not</td>
-
-                                </tr>
-                                <tr>
-                                    <td><code class="w3-codespan">createNewFile()</code></td>
-                                    <td>Boolean</td>
-                                    <td>Creates an empty file</td>
-
-                                </tr>
-                                <tr>
-                                    <td><code class="w3-codespan">delete()</code></td>
-                                    <td>Boolean</td>
-                                    <td>Deletes a file</td>
-
-                                </tr>
-                                <tr>
-                                    <td><code class="w3-codespan">exists()</code></td>
-                                    <td>Boolean</td>
-                                    <td>Tests whether the file exists</td>
-
-                                </tr>
-                                <tr>
-                                    <td><code class="w3-codespan">getName()</code></td>
-                                    <td>String</td>
-                                    <td>Returns the name of the file</td>
-
-                                </tr>
-                                <tr>
-                                    <td><code class="w3-codespan">getAbsolutePath()</code></td>
-                                    <td>String</td>
-                                    <td>Returns the absolute pathname of the file</td>
-
-                                </tr>
-                                <tr>
-                                    <td><code class="w3-codespan">length()</code></td>
-                                    <td>Long</td>
-                                    <td>Returns the size of the file in bytes</td>
-
-                                </tr>
-                                <tr>
-                                    <td><code class="w3-codespan">list()</code></td>
-                                    <td>String[]</td>
-                                    <td>Returns an array of the files in the directory</td>
-
-                                </tr>
-                                <tr>
-                                    <td><code class="w3-codespan">mkdir()</code></td>
-                                    <td>Boolean</td>
-                                    <td>Creates a directory</td>
-
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </div>
+            <li>Setup Nginx Load Balancing<br>
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseThree42589" aria-expanded="false"
                                 aria-controls="collapseThree">
-                                Java File Handling
+                                1. Login via SSH
                             </button>
                         </h2>
                         <div id="collapseThree42589" class="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
+                                First of all, login to your nginx server as the root user.
                                 <pre class="language-nginx">
                                 <code>
-                                    import java.io.File;  // Import the File class
-
-                                    File myObj = new File("filename.txt"); // Specify the filename
+                                    ssh root@IP_address  
                                 </code>
                                 </pre>
                             </div>
@@ -4303,32 +4222,16 @@ proxy_cache_valid 404      1m;
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseOne3586" aria-expanded="false" aria-controls="collapseOne">
-                                Create a File
+                                2. Update all the Packages
                             </button>
                         </h2>
                         <div id="collapseOne3586" class="accordion-collapse collapse" aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
+                                All packages installed on it must be up to date:
                                 <pre class="language-nginx">
                                 <code>
-                                    import java.io.File;  // Import the File class
-                                    import java.io.IOException;  // Import the IOException class to handle errors
-                                    
-                                    public class CreateFile {
-                                      public static void main(String[] args) {
-                                        try {
-                                          File myObj = new File("filename.txt");
-                                          if (myObj.createNewFile()) {
-                                            System.out.println("File created: " + myObj.getName());
-                                          } else {
-                                            System.out.println("File already exists.");
-                                          }
-                                        } catch (IOException e) {
-                                          System.out.println("An error occurred.");
-                                          e.printStackTrace();
-                                        }
-                                      }
-                                    }
+                                    apt-get update && apt-get upgrade 
                                 </code>
                                 </pre>
                             </div>
@@ -4338,32 +4241,24 @@ proxy_cache_valid 404      1m;
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseTwo45583" aria-expanded="false" aria-controls="collapseTwo">
-                                Write To a File
+                                3. Install Nginx Web Server
                             </button>
                         </h2>
                         <div id="collapseTwo45583" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
+                                We need nginx web server installed on the virtual private server (VPS). Use the following command to install the Nginx:
                                 <pre class="language-nginx">
                                 <code>
-                                    import java.io.FileWriter;   // Import the FileWriter class
-                                    import java.io.IOException;  // Import the IOException class to handle errors
-                                    
-                                    public class WriteToFile {
-                                      public static void main(String[] args) {
-                                        try {
-                                          FileWriter myWriter = new FileWriter("filename.txt");
-                                          myWriter.write("Files in Java might be tricky, but it is fun enough!");
-                                          myWriter.close();
-                                          System.out.println("Successfully wrote to the file.");
-                                        } catch (IOException e) {
-                                          System.out.println("An error occurred.");
-                                          e.printStackTrace();
-                                        }
-                                      }
-                                    }
+                                    apt-get install nginx  
                                 </code>
                                 </pre>
+                                After installation of Nginx, use the following command to check the Nginx is running:
+                                <pre class="language-java">
+                                    <code>
+                                        service nginx status   
+                                    </code>
+                                    </pre>
                             </div>
                         </div>
                     </div>
@@ -4371,35 +4266,29 @@ proxy_cache_valid 404      1m;
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseTwo45589" aria-expanded="false" aria-controls="collapseTwo">
-                                Read a File
+                                4. Append the Load Balancing Configuration
                             </button>
                         </h2>
                         <div id="collapseTwo45589" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
+                                Now, open your website's Nginx configuration file in any text editor:
                                 <pre class="language-nginx">
                                 <code>
-                                    import java.io.File;  // Import the File class
-import java.io.FileNotFoundException;  // Import this class to handle errors
-import java.util.Scanner; // Import the Scanner class to read text files
-
-public class ReadFile {
-  public static void main(String[] args) {
-    try {
-      File myObj = new File("filename.txt");
-      Scanner myReader = new Scanner(myObj);
-      while (myReader.hasNextLine()) {
-        String data = myReader.nextLine();
-        System.out.println(data);
-      }
-      myReader.close();
-    } catch (FileNotFoundException e) {
-      System.out.println("An error occurred.");
-      e.printStackTrace();
-    }
-  }
-}              </code>
+                                    vim /etc/nginx/sites-available/yourdomain.com.conf              </code>
                                 </pre>
+                                And then append the load balancing configuration at the top of the file:
+                                <pre class="language-java">
+                                    <code>
+                                        upstream loadbalancer {  
+                                            server vps1.yourdomain.com;  
+                                            server vps2.yourdomain.com;  
+                                            server vps3.yourdomain.com;  
+                                            }   
+                                    </code>
+                                    </pre>
+                                    We should have Nginx installed and listening on 80 port number on all servers listed above
+
                             </div>
                         </div>
                     </div>
@@ -4407,30 +4296,20 @@ public class ReadFile {
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseTwo455835" aria-expanded="false" aria-controls="collapseTwo">
-                                Get File Information
+                                5. Add Upstream Module
                             </button>
                         </h2>
                         <div id="collapseTwo455835" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
+                                To set up a round-robin load balancer, we will have to use the nginx upstream module. Within the same configuration file i.e. yourdomain.com.conf, we need to add the upstream module in the virtual host configuration.
                                 <pre class="language-nginx">
                                 <code>
-                                    import java.io.File;  // Import the File class
-
-                                    public class GetFileInfo { 
-                                      public static void main(String[] args) {
-                                        File myObj = new File("filename.txt");
-                                        if (myObj.exists()) {
-                                          System.out.println("File name: " + myObj.getName());
-                                          System.out.println("Absolute path: " + myObj.getAbsolutePath());
-                                          System.out.println("Writeable: " + myObj.canWrite());
-                                          System.out.println("Readable " + myObj.canRead());
-                                          System.out.println("File size in bytes " + myObj.length());
-                                        } else {
-                                          System.out.println("The file does not exist.");
-                                        }
-                                      }
-                                    }
+                                    server {  
+                                        location / {  
+                                        proxy_pass http://loadbalancer;  
+                                        }  
+                                        }  
                                 </code>
                                 </pre>
                             </div>
@@ -4440,28 +4319,19 @@ public class ReadFile {
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseTwo4553" aria-expanded="false" aria-controls="collapseTwo">
-                                Delete a File
+                                6. Restart Nginx Server
                             </button>
                         </h2>
                         <div id="collapseTwo4553" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
+                                Save the configuration file and restart the nginx for the changes to take effect:
                                 <pre class="language-nginx">
                                 <code>
-                                    import java.io.File;  // Import the File class
-
-                                    public class DeleteFile {
-                                      public static void main(String[] args) { 
-                                        File myObj = new File("filename.txt"); 
-                                        if (myObj.delete()) { 
-                                          System.out.println("Deleted the file: " + myObj.getName());
-                                        } else {
-                                          System.out.println("Failed to delete the file.");
-                                        } 
-                                      } 
-                                    }
+                                    service nginx restart  
                                 </code>
                                 </pre>
+                                This whole configuration will equally distribute all incoming traffic across the three servers (vps1.yourdomain.com, vps2.yourdomain.com, vps3.yourdomain.com), nginx can be also configured to distribute the traffic more efficiently. It comes with the option of balancing such as weight balancing, max fails and IP hash balancing.
                             </div>
                         </div>
                     </div>
@@ -4469,719 +4339,200 @@ public class ReadFile {
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseTwo45530" aria-expanded="false" aria-controls="collapseTwo">
-                                Delete a Folder
+                                7. Weight Balancing
                             </button>
                         </h2>
                         <div id="collapseTwo45530" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
+                                We can use the weight balancing to specify the proportion of the traffic distributed to each of the servers that we listed in the upstream:
                                 <pre class="language-nginx">
                                 <code>
-                                    import java.io.File; 
-
-                                    public class DeleteFolder {
-                                      public static void main(String[] args) { 
-                                        File myObj = new File("C:\\Users\\MyName\\Test"); 
-                                        if (myObj.delete()) { 
-                                          System.out.println("Deleted the folder: " + myObj.getName());
-                                        } else {
-                                          System.out.println("Failed to delete the folder.");
-                                        } 
-                                      } 
-                                    }
+                                    upstream loadbalancer {  
+                                        server vps1.yourdomain.com weight=1;  
+                                        server vps2.yourdomain.com weight=2;  
+                                        server vps3.yourdomain.com weight=5;  
+                                        }  
                                 </code>
                                 </pre>
+                                In the above example, vps2.yourdomain.com will receive twice as much as traffic compared to vps2.yourdomain.com and vps3.yourdomain.com will receive five times more traffic than vps1.yourdomain.com.
                             </div>
                         </div>
                     </div>
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo4558351" aria-expanded="false" aria-controls="collapseTwo">
+                                8. Max fails
+                            </button>
+                        </h2>
+                        <div id="collapseTwo4558351" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                When we see the default settings of nginx, it will send data to the servers even if they are down. We can use the option of Max fails to prevent such cases.
+                                <pre class="language-nginx">
+                                <code>
+                                    upstream loadbalancer {  
+                                        server vps1.yourdomain.com max_fails=4  fail_timeout=20s;  
+                                        server vps2.yourdomain.com weight=2;  
+                                        server vps3.yourdomain.com weight=4;  
+                                        }   
+                                </code>
+                                </pre>
+                                In the above example, nginx server will attempt to connect to vps1.yourdomain.com, and if it is not responding for more than 20 seconds, it will make another attempt. After the 4 attempts, vps1.yourdomain.com will be considered as down.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo45583548" aria-expanded="false" aria-controls="collapseTwo">
+                                9. IP hash balancing
+                            </button>
+                        </h2>
+                        <div id="collapseTwo45583548" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                With this method, the visitors will always be sent to the same server. So, if a visitor received the content of vps1.yourdomain.com, it will always be transferred to that server unless the servers are down or inaccessible.
+                                <pre class="language-nginx">
+                                <code>
+                                    upstream loadbalancer {  
+                                        ip_hash;  
+                                        server vps1.yourdomain.com;  
+                                        server vps2.yourdomain.com;  
+                                        server vps3.yourdomain.com down;  
+                                        }  
+                                </code>
+                                </pre>
+                                In the above example, vps3.yourdomain.com is known to be inaccessible, and it is marked as down.
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </li>
-            <li>Java Reserved Keywords<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+            <li>NGINX Processing Requests<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom6093" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom6093"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Java Reserved Keywords</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">NGINX Processing Requests</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        <table class="ws-table-all notranslate table-bordered">
-                            <tbody>
-                                <tr>
-                                    <th style="width:20%">Keyword</th>
-                                    <th>Description</th>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_abstract.asp">abstract</a></td>
-                                    <td>A non-access modifier. Used for classes and methods: An abstract class cannot be
-                                        used to create objects (to access it, it must be inherited from another class).
-                                        An abstract method can only be used in an abstract class,
-                                        and it does not have a body. The body is provided by the subclass (inherited
-                                        from)</td>
-                                </tr>
-                                <tr>
-                                    <td>assert</td>
-                                    <td>For debugging</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_boolean.asp">boolean</a></td>
-                                    <td>A data type that can only store true and false values</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_break.asp">break</a></td>
-                                    <td>Breaks out of a loop or a switch block</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_byte.asp">byte</a></td>
-                                    <td>A data type that can store whole numbers from -128 and 127</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_case.asp">case</a></td>
-                                    <td>Marks a block of code in switch statements</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_catch.asp">catch</a></td>
-                                    <td>Catches exceptions generated by try statements</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_char.asp">char</a></td>
-                                    <td>A data type that is used to store a single character</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_class.asp">class</a></td>
-                                    <td>Defines a class</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_break.asp">continue</a></td>
-                                    <td>Continues to the next iteration of a loop</td>
-                                </tr>
-                                <tr>
-                                    <td>const</td>
-                                    <td>Defines a constant. <span class="deprecated">Not in use</span> - use <a
-                                            href="ref_keyword_final.asp">final</a> instead</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_default.asp">default</a></td>
-                                    <td>Specifies the default block of code in a switch statement</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_do.asp">do</a></td>
-                                    <td>Used together with while to create a do-while loop</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_double.asp">double</a></td>
-                                    <td>A data type that can store whole numbers from 1.7e−308 to 1.7e+308</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_else.asp">else</a></td>
-                                    <td>Used in conditional statements</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_enum.asp">enum</a></td>
-                                    <td>Declares an enumerated (unchangeable) type</td>
-                                </tr>
-                                <tr>
-                                    <td>exports</td>
-                                    <td>Exports a package with a module. New in Java 9</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_extends.asp">extends</a></td>
-                                    <td>Extends a class (indicates that a class is inherited from another class)</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_final.asp">final</a></td>
-                                    <td>A non-access modifier used for classes, attributes and methods, which makes them
-                                        non-changeable (impossible to inherit or override)</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_finally.asp">finally</a></td>
-                                    <td>Used with exceptions, a block of code that will be executed no matter if there
-                                        is an exception or not</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_float.asp">float</a></td>
-                                    <td>A data type that can store whole numbers from 3.4e−038 to 3.4e+038</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_for.asp">for</a></td>
-                                    <td>Create a for loop</td>
-                                </tr>
-                                <tr>
-                                    <td>goto</td>
-                                    <td><span class="deprecated">Not in use, and has no function</span></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_if.asp">if</a></td>
-                                    <td>Makes a conditional statement</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_implements.asp">implements</a></td>
-                                    <td>Implements an interface</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_import.asp">import</a></td>
-                                    <td>Used to import a package, class or interface</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_instanceof.asp">instanceof</a></td>
-                                    <td>Checks whether an object is an instance of a specific class or an interface</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_int.asp">int</a></td>
-                                    <td>A data type that can store whole numbers from -2147483648 to 2147483647</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_interface.asp">interface</a></td>
-                                    <td>Used to declare a special type of class that only contains abstract methods</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_long.asp">long</a></td>
-                                    <td>A data type that can store whole numbers from -9223372036854775808 to
-                                        9223372036854775808</td>
-                                </tr>
-                                <tr>
-                                    <td>module</td>
-                                    <td>Declares a module. New in Java 9</td>
-                                </tr>
-                                <tr>
-                                    <td>native</td>
-                                    <td>Specifies that a method is not implemented in the same Java source file (but in
-                                        another language)</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_new.asp">new</a></td>
-                                    <td>Creates new objects</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_package.asp">package</a></td>
-                                    <td>Declares a package</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_private.asp">private</a></td>
-                                    <td>An access modifier used for attributes, methods and constructors, making them
-                                        only accessible within the declared class</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_protected.asp">protected</a></td>
-                                    <td>An access modifier used for attributes, methods and constructors, making them
-                                        accessible in the same package and subclasses</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_public.asp">public</a></td>
-                                    <td>An access modifier used for classes, attributes, methods and constructors,
-                                        making them accessible by any other class</td>
-                                </tr>
-                                <tr>
-                                    <td>requires</td>
-                                    <td>Specifies required libraries inside a module. New in Java 9</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_return.asp">return</a></td>
-                                    <td>Finished the execution of a method, and can be used to return a value from a
-                                        method</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_short.asp">short</a></td>
-                                    <td>A data type that can store whole numbers from -32768 to 32767</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_static.asp">static</a></td>
-                                    <td>A non-access modifier used for methods and attributes. Static methods/attributes
-                                        can be accessed without creating an object of a class</td>
-                                </tr>
-                                <tr>
-                                    <td>strictfp</td>
-                                    <td>Restrict the precision and rounding of floating point calculations</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_super.asp">super</a></td>
-                                    <td>Refers to superclass (parent) objects</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_switch.asp">switch</a></td>
-                                    <td>Selects one of many code blocks to be executed</td>
-                                </tr>
-                                <tr>
-                                    <td>synchronized</td>
-                                    <td>A non-access modifier, which specifies that methods can only be accessed by one
-                                        thread at a time</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_this.asp">this</a></td>
-                                    <td>Refers to the current object in a method or constructor</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_throw.asp">throw</a></td>
-                                    <td>Creates a custom error</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_throws.asp">throws</a></td>
-                                    <td>Indicates what exceptions may be thrown by a method</td>
-                                </tr>
-                                <tr>
-                                    <td>transient</td>
-                                    <td>A non-accesss modifier, which specifies that an attribute is not part of an
-                                        object's persistent state</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_try.asp">try</a></td>
-                                    <td>Creates a try...catch statement</td>
-                                </tr>
-                                <tr>
-                                    <td>var</td>
-                                    <td>Declares a variable. New in Java 10</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_void.asp">void</a></td>
-                                    <td>Specifies that a method should not have a return value</td>
-                                </tr>
-                                <tr>
-                                    <td>volatile</td>
-                                    <td>Indicates that an attribute is not cached thread-locally, and is always read
-                                        from the "main memory"</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_keyword_while.asp">while</a></td>
-                                    <td>Creates a while loop</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <p>We can specify multiple virtual servers, and each server is described by a <strong>server {}</strong> context.</p>
+                        <pre class="language-java">
+                            <code>
+                                server {  
+                                    listen      *:80 default_server;  
+                                    server_name javatpoint.co;  
+                                    
+                                    return 200 "Hello from javatpoint.co";  
+                                  }  
+                                    
+                                  server {  
+                                    listen      *:80;  
+                                    server_name nikita.co;  
+                                    
+                                    return 200 "Hello from nikita.co";  
+                                  }  
+                                    
+                                  server {  
+                                    listen      *:81;  
+                                    server_name deep.co;  
+                                    
+                                    return 200 "Hello from deep.co";  
+                                  }  
+                            </code>
+                            </pre> 
+                            <p>The above example will give nginx some insight on how to handle incoming requests. First of all, nginx will check the listen directive to test which virtual server is listening on the given IP: port combination. Then the value from <strong>the server_name directive</strong> is tested against the Host header, which stores the server's domain name.</p>
+                            <p>
+                                Nginx chooses the virtual server in the following order:
+                                <ul class="points">
+                                    <li>Server listing on IP: port, with a matching directive i.e., <strong>server_name</strong>.</li>
+                                    <li>Server listing on IP: port, with a <strong>default_server</strong> flag;</li>
+                                    <li>Server listing on IP: port, first one defined.</li>
+                                    <li>If there are no matches, refuse the connection.</li>
+                                    </ul>
+                                    From the above example, the output will be:<br>
+                                    <pre class="language-bash">
+                                        <code>
+                                            Request to nikita.co:80     => "Hello from nikita.co"
+Request to www.nikita.co:80 => "Hello from javatpoint.co"
+Request to deep.co:80     => "Hello from javatpoint.co"
+Request to deep.co:81     => "Hello from nikita.co"
+Request to nikita.co:81     => "Hello from deep.co"  
+                                        </code>
+                                        </pre>
+                            </p>
                     </div>
                 </div>
             </li>
 
-            <li>Java String Methods<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
+            <li>The server_name directive<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasBottom7093" aria-controls="offcanvasBottom">Read more...</button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom7093"
                     aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Java String Methods</h5>
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">The server_name directive</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        <table class="ws-table-all notranslate table-bordered" style="margin:0">
-                            <tbody>
-                                <tr>
-                                    <th style="width:22%">Method</th>
-                                    <th style="width:62%">Description</th>
-                                    <th style="width:16%">Return Type</th>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_string_charat.asp">charAt()</a></td>
-                                    <td>Returns the character at the specified index (position)</td>
-                                    <td>char</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_string_codepointat.asp">codePointAt()</a></td>
-                                    <td>Returns the Unicode of the character at the specified index</td>
-                                    <td>int</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_string_codepointbefore.asp">codePointBefore()</a></td>
-                                    <td>Returns the Unicode of the character before the specified index</td>
-                                    <td>int</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_string_codepointcount.asp">codePointCount()</a></td>
-                                    <td>Returns the number of Unicode values found in a string.</td>
-                                    <td>int</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_string_compareto.asp">compareTo()</a></td>
-                                    <td>Compares two strings lexicographically</td>
-                                    <td>int</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_string_comparetoignorecase.asp">compareToIgnoreCase()</a></td>
-                                    <td>Compares two strings lexicographically, ignoring case differences</td>
-                                    <td>int</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_string_concat.asp">concat()</a></td>
-                                    <td>Appends a string to the end of another string</td>
-                                    <td>String</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_string_contains.asp">contains()</a></td>
-                                    <td>Checks whether a string contains a sequence of characters</td>
-                                    <td>boolean</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_string_contentequals.asp">contentEquals()</a></td>
-                                    <td>Checks whether a string contains the exact same sequence of characters of the
-                                        specified CharSequence or StringBuffer</td>
-                                    <td>boolean</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_string_copyvalueof.asp">copyValueOf()</a></td>
-                                    <td>Returns a String that represents the characters of the character array</td>
-                                    <td>String</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_string_endswith.asp">endsWith()</a></td>
-                                    <td>Checks whether a string ends with the specified character(s)</td>
-                                    <td>boolean</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_string_equals.asp">equals()</a></td>
-                                    <td>Compares two strings. Returns true if the strings are equal, and false if not
-                                    </td>
-                                    <td>boolean</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_string_equalsignorecase.asp">equalsIgnoreCase()</a></td>
-                                    <td>Compares two strings, ignoring case considerations</td>
-                                    <td>boolean</td>
-                                </tr>
-                                <tr>
-                                    <td>format()</td>
-                                    <td>Returns a formatted string using the specified locale, format string, and
-                                        arguments</td>
-                                    <td>String</td>
-                                </tr>
-                                <tr>
-                                    <td>getBytes()</td>
-                                    <td>Encodes this String into a sequence of bytes using the named charset, storing
-                                        the result into a new byte array</td>
-                                    <td>byte[]</td>
-                                </tr>
-                                <tr>
-                                    <td>getChars()</td>
-                                    <td>Copies characters from a string to an array of chars</td>
-                                    <td>void</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_string_hashcode.asp">hashCode()</a></td>
-                                    <td>Returns the hash code of a string</td>
-                                    <td>int</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_string_indexof.asp">indexOf()</a></td>
-                                    <td>Returns the position of the first found occurrence of specified characters in a
-                                        string</td>
-                                    <td>int</td>
-                                </tr>
-                                <tr>
-                                    <td>intern()</td>
-                                    <td>Returns the canonical representation for the string object</td>
-                                    <td>String</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_string_isempty.asp">isEmpty()</a></td>
-                                    <td>Checks whether a string is empty or not</td>
-                                    <td>boolean</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_string_lastindexof.asp">lastIndexOf()</a></td>
-                                    <td>Returns the position of the last found occurrence of specified characters in a
-                                        string</td>
-                                    <td>int</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_string_length.asp">length()</a></td>
-                                    <td>Returns the length of a specified string</td>
-                                    <td>int</td>
-                                </tr>
-                                <tr>
-                                    <td>matches()</td>
-                                    <td>Searches a string for a match against a regular expression, and returns the
-                                        matches</td>
-                                    <td>boolean</td>
-                                </tr>
-                                <tr>
-                                    <td>offsetByCodePoints()</td>
-                                    <td>Returns the index within this String that is offset from the given index by
-                                        codePointOffset code points</td>
-                                    <td>int</td>
-                                </tr>
-                                <tr>
-                                    <td>regionMatches()</td>
-                                    <td>Tests if two string regions are equal</td>
-                                    <td>boolean</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_string_replace.asp">replace()</a></td>
-                                    <td>Searches a string for a specified value, and returns a new string where the
-                                        specified values are replaced</td>
-                                    <td>String</td>
-                                </tr>
-                                <tr>
-                                    <td>replaceFirst()</td>
-                                    <td>Replaces the first occurrence of a substring that matches the given regular
-                                        expression with the given replacement</td>
-                                    <td>String</td>
-                                </tr>
-                                <tr>
-                                    <td>replaceAll()</td>
-                                    <td>Replaces each substring of this string that matches the given regular expression
-                                        with the given replacement</td>
-                                    <td>String</td>
-                                </tr>
-                                <tr>
-                                    <td>split()</td>
-                                    <td>Splits a string into an array of substrings</td>
-                                    <td>String[]</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_string_startswith.asp">startsWith()</a></td>
-                                    <td>Checks whether a string starts with specified characters</td>
-                                    <td>boolean</td>
-                                </tr>
-                                <tr>
-                                    <td>subSequence()</td>
-                                    <td>Returns a new character sequence that is a subsequence of this sequence</td>
-                                    <td>CharSequence</td>
-                                </tr>
-                                <tr>
-                                    <td>substring()</td>
-                                    <td>Returns a new string which is the substring of a specified string</td>
-                                    <td>String</td>
-                                </tr>
-                                <tr>
-                                    <td>toCharArray()</td>
-                                    <td>Converts this string to a new character array</td>
-                                    <td>char[]</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_string_tolowercase.asp">toLowerCase()</a></td>
-                                    <td>Converts a string to lower case letters</td>
-                                    <td>String</td>
-                                </tr>
-                                <tr>
-                                    <td>toString()</td>
-                                    <td>Returns the value of a String object</td>
-                                    <td>String</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_string_touppercase.asp">toUpperCase()</a></td>
-                                    <td>Converts a string to upper case letters</td>
-                                    <td>String</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_string_trim.asp">trim()</a></td>
-                                    <td>Removes whitespace from both ends of a string</td>
-                                    <td>String</td>
-                                </tr>
-                                <tr>
-                                    <td>valueOf()</td>
-                                    <td>Returns the string representation of the specified value</td>
-                                    <td>String</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <p>The server_name directive is used to accept multiple values; it is also used to handle wildcard matching and regular expressions.</p>
+                        
+                        If there is any ambiguity, then nginx uses the following order:<br>
+
+                        <ul class="points">
+                            <li>Exact name;</li>
+                            <li>Longest wildcard name starting with an asterisk, for example, "*examples.org",</li>
+                            <li>Longest wildcard name ending with an asterisk, for example, "mail.*";</li>
+                            <li>First matching the regular expression.</li>
+                            </ul>
+                            <p>Nginx will store three hash tables: exact names, wildcards starting with an asterisk, and wildcards ending with an asterisk. If the result is not in the above-declared tables, the regular expressions will be tested sequentially.</p><br>
+                            server_name  javatpoint.co  www.javatpoint.co  *.javatpoint.co;  <br>There is only one difference: .javatpoint.co is stored in the second table, which means that it is a bit slower than an explicit declaration.
+
                     </div>
                 </div>
+                <pre class="language-java">
+                    <code>
+                        server_name javatpoint.co www.javatpoint.co; # exact match  
+                        server_name *.javatpoint.co;              # wildcard matching  
+                        server_name javatpoint.*;                 # wildcard matching  
+                        server_name  ~^[0-9]*\.javatpoint\.co$;   # regexp matching  
+                    </code>
+                    </pre>
             </li>
 
-            <li>Java Math Methods<button class="btn btn1" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasBottom609342" aria-controls="offcanvasBottom">Read more...</button>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom609342"
-                    aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Java Math Methods</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body small">
-                        <table class="ws-table-all notranslate table-bordered" style="margin:0">
-                            <tbody>
-                                <tr>
-                                    <th style="width:22%">Method</th>
-                                    <th style="width:57%">Description</th>
-                                    <th style="width:21%">Return Type</th>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_math_abs.asp">abs(x)</a></td>
-                                    <td>Returns the absolute value of x</td>
-                                    <td>double|float|int|long</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="ref_math_acos.asp">acos(x)</a></td>
-                                    <td>Returns the arccosine of x, in radians</td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>asin(x)</td>
-                                    <td>Returns the arcsine of x, in radians</td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>atan(x)</td>
-                                    <td>Returns the arctangent of x as a numeric value between -PI/2 and PI/2 radians
-                                    </td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>atan2(y,x)</td>
-                                    <td>Returns the angle theta from the conversion of rectangular coordinates (x, y) to
-                                        polar coordinates (r, theta).</td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>cbrt(x)</td>
-                                    <td>Returns the cube root of x</td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>ceil(x)</td>
-                                    <td>Returns the value of x rounded up to its nearest integer</td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>copySign(x, y)</td>
-                                    <td>Returns the first floating point x with the sign of the second floating point y
-                                    </td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>cos(x)</td>
-                                    <td>Returns the cosine of x (x is in radians)</td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>cosh(x)</td>
-                                    <td>Returns the hyperbolic cosine of a double value</td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>exp(x)</td>
-                                    <td>Returns the value of E<sup>x</sup></td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>expm1(x)</td>
-                                    <td>Returns e<sup>x</sup> -1</td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>floor(x)</td>
-                                    <td>Returns the value of x rounded down to its nearest integer</td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>getExponent(x)</td>
-                                    <td>Returns the unbiased exponent used in x</td>
-                                    <td>int</td>
-                                </tr>
-                                <tr>
-                                    <td>hypot(x, y)</td>
-                                    <td>Returns sqrt(x<sup>2</sup> +y<sup>2</sup>) without intermediate overflow or
-                                        underflow</td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>IEEEremainder(x, y)</td>
-                                    <td>Computes the remainder operation on x and y as prescribed by the IEEE 754
-                                        standard</td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>log(x)</td>
-                                    <td>Returns the natural logarithm (base E) of x</td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>log10(x)</td>
-                                    <td>Returns the base 10 logarithm of x</td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>log1p(x)</td>
-                                    <td>Returns the natural logarithm (base E) of the sum of x and 1</td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>max(x, y)</td>
-                                    <td>Returns the number with the highest value</td>
-                                    <td>double|float|int|long</td>
-                                </tr>
-                                <tr>
-                                    <td>min(x, y)</td>
-                                    <td>Returns the number with the lowest value</td>
-                                    <td>double|float|int|long</td>
-                                </tr>
-                                <tr>
-                                    <td>nextAfter(x, y)</td>
-                                    <td>Returns the floating point number adjacent to x in the direction of y</td>
-                                    <td>double|float</td>
-                                </tr>
-                                <tr>
-                                    <td>nextUp(x)</td>
-                                    <td>Returns the floating point value adjacent to x in the direction of positive
-                                        infinity</td>
-                                    <td>double|float</td>
-                                </tr>
-                                <tr>
-                                    <td>pow(x, y)</td>
-                                    <td>Returns the value of x to the power of y</td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>random()</td>
-                                    <td>Returns a random number between 0 and 1</td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>round(x)</td>
-                                    <td>Returns the value of x rounded to its nearest integer</td>
-                                    <td>int</td>
-                                </tr>
-                                <tr>
-                                    <td>rint(x)</td>
-                                    <td>Returns the double value that is closest to x and equal to a mathematical
-                                        integer</td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>signum(x)</td>
-                                    <td>Returns the sign of x</td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>sin(x)</td>
-                                    <td>Returns the sine of x (x is in radians)</td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>sinh(x)</td>
-                                    <td>Returns the hyperbolic sine of a double value</td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>sqrt(x)</td>
-                                    <td>Returns the square root of x</td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>tan(x)</td>
-                                    <td>Returns the tangent of an angle</td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>tanh(x)</td>
-                                    <td>Returns the hyperbolic tangent of a double value</td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>toDegrees(x)</td>
-                                    <td>Converts an angle measured in radians to an approx. equivalent angle measured in
-                                        degrees</td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>toRadians(x)</td>
-                                    <td>Converts an angle measured in degrees to an approx. angle measured in radians
-                                    </td>
-                                    <td>double</td>
-                                </tr>
-                                <tr>
-                                    <td>ulp(x)</td>
-                                    <td>Returns the size of the unit of least precision (ulp) of x</td>
-                                    <td>double|float</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+            <li>listen Directive<br>
+                In most of the cases, we will see that the listen directive accepts IP: port values.
+                <pre class="language-java">
+                    <code>
+                        listen 127.0.0.1:80;  
+                        listen 127.0.0.1;    # port :80 is used by default  
+                          
+                        listen *:81;  
+                        listen 81;           # all ips are used by default  
+                          
+                        listen [::]:80;      # IPv6 addresses  
+                        listen [::1];        # IPv6 addresses   
+                    </code>
+                    </pre>
+                    However, it is also possible to specify the sockets of UNIX-domain:
+                    <pre class="language-java">
+                        <code>
+                            listen unix:/var/run/nginx.sock;    
+                        </code>
+                        </pre>
+                        Even we can use the hostnames:
+                        <pre class="language-java">
+                            <code>
+                                listen localhost:80;  
+                                listen netguru.co:80;   
+                            </code>
+                            </pre>
+                            And if the directive is not present, then use *:80.
             </li>
         </ol>
     </div>
