@@ -1,0 +1,1803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="assets/img/mainlogo.jpg" type="image/x-icon">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/prismjs/prism.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="myDesigns/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="myDesigns/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="myDesigns/assets/fonts/simple-line-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <style>
+        .scroll-to-top {
+            background-color: #f77b50 !important;
+            text-decoration: none !important;
+        }
+
+        .scroll-to-top:hover {
+            background: #f77b50 !important;
+            text-decoration: none !important;
+        }
+
+        footer .scroll-to-top {
+            text-decoration: none !important;
+        }
+        .offcanvas {
+            width: 700px !important; /* Override the default width */
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: rgb(1,4,45);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.php">
+                <img src="assets/img/mainlogo.jpg" alt="" style="height: 7vh;"> Cheatbook
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                    </li>
+                    <!--frontend -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                           Frontend
+                        </a>
+                        <ul class="dropdown-menu multi-column columns-2">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="multi-column-dropdown">
+                                        
+                                        <li><a class="dropdown-item" href="html.php">HTML</a></li>
+                                        <li><a class="dropdown-item" href="css.php">CSS</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="javascript.php">JavaScript</a></li>
+                                                <li><a class="dropdown-item"
+                                                    href="typescript.php">TypeScript</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider" />
+                                                    </li>
+                                                <li class="dropdown-header">JavaScript Frameworks</li>
+                                        <li><a class="dropdown-item" href="reactjs.php">Reacjs</a></li>
+                                        <li><a class="dropdown-item" href="nextjs.php">Nextjs</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="angularjs.php">Angularjs</a></li>
+                                                <li><a class="dropdown-item" href="remix.php">Remixjs</a></li>
+                                                <li><a class="dropdown-item" href="vuejs.php">vuejs</a></li>
+                                    
+                                        
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul class="multi-column-dropdown">
+                                        
+                                        <li><a class="dropdown-item" href="astrojs.php">Astrojs</a></li>
+                                        <li><a class="dropdown-item" href="electronjs.php">electronjs</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li class="dropdown-header">CSS Framework</li>
+                                        <li><a class="dropdown-item" href="bootstrap.php">Bootstrap</a></li>
+                                        <li><a class="dropdown-item" href="tailwindcss.php">Tailwind css</a></li>
+                                        <li><a class="dropdown-item" href="materialui.php">Material UI</a></li>
+                                        <li> <hr class="dropdown-divider" /> </li>
+                                        <li class="dropdown-header">State Management</li>
+                                        <li><a class="dropdown-item" href="redux.php">Redux</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+
+
+
+                     <!-- backend -->
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                          Backend
+                        </a>
+                        <ul class="dropdown-menu multi-column columns-2">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a class="dropdown-item" href="django.php">Django</a></li>
+                                        <li><a class="dropdown-item" href="flask.php">Flask</a></li>
+                                        <li><a class="dropdown-item" href="fastapi.php">Fastapi</a></li>
+                                        <li><a class="dropdown-item" href="expressjs.php">Expressjs</a></li>
+                                        <li><a class="dropdown-item" href="nodejs.php">Nodejs</a></li>
+                                        <li><a class="dropdown-item" href="php.php">PHP</a></li>
+                                        <li><a class="dropdown-item" href="golang.php">GO</a></li>
+                                        <li><a class="dropdown-item" href="spring.php">Spring</a></li>
+                                        <li><a class="dropdown-item"href="springboot.php">Springboot</a></li>
+                                        <li> <hr class="dropdown-divider" /></li>
+                                        <li class="dropdown-header">Databases</li>
+                                        <li><a class="dropdown-item" href="Sql.php">SQL</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a class="dropdown-item" href="mysql.php">MySQL</a></li>
+                                        <li><a class="dropdown-item" href="mongodb.php">MongoDB</a></li>
+                                        <li><a class="dropdown-item" href="firebase.php">Firebase</a></li>
+                                        <li><a class="dropdown-item" href="cassandra.php">Cassandra</a></li>
+                                        <li><a class="dropdown-item" href="redis.php">Redis</a></li>
+                                        <li><a class="dropdown-item" href="postgresql.php">PostgreSQL</a></li>
+                                        <li><a class="dropdown-item" href="influxdb.php">infixDB</a></li>
+                                        <li> <hr class="dropdown-divider" /> </li>
+                                        <li class="dropdown-header">Java technologies</li>
+                                        <li><a class="dropdown-item" href="hibernet.php">Hibernet</a></li>
+                                        <li><a class="dropdown-item" href="jdbc.php">jdbc</a></li>
+                                        <li><a class="dropdown-item" href="servlets.php">servlets</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <!-- programming -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                         Programming
+                        </a>
+                        <ul class="dropdown-menu multi-column columns-2">
+                            <div class="row">
+                                <div class="col-sm-6">
+                            <ul class="multi-column-dropdown">
+                            <li><a class="dropdown-item" href="cplus.php">C++</a></li>
+                            <li><a class="dropdown-item" href="c.php">C</a></li>
+                            <li><a class="dropdown-item" href="java.php">Java</a></li>
+                            <li><a class="dropdown-item" href="python.php">Python</a></li>
+                           
+                           
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="multi-column-dropdown">
+                        <li class="dropdown-header">Data structure</li>
+                            <li><a class="dropdown-item" href="dsa.php">DSA</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </ul>
+        </li>
+
+                    
+                    <!-- databases -->
+                    <li class="nav-item dropdown mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                           Design
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="figma.php">Figma</a></li>
+                            <li><a class="dropdown-item" href="adobexd.php">AdobeXD</a></li>
+                           
+                        </ul>
+                    </li>
+
+
+                      <!-- API & Authentication -->
+                      <li class="nav-item dropdown mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            API & Auth
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="restfulapi.php">RESTful API</a></li>
+                            <li><a class="dropdown-item" href="graphql.php">GraphQL</a></li>
+                            <li><a class="dropdown-item" href="jwtauth.php">JWT Auth</a></li>
+                            <li><a class="dropdown-item" href="apollo.php">Apollo</a></li>
+                        </ul>
+                    </li>
+
+                      <!-- testing -->
+                      <li class="nav-item dropdown mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                           Testing
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="jest.php">Jest</a></li>
+                           
+                        </ul>
+                    </li>
+                      <!-- cloud services -->
+                      <li class="nav-item dropdown mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Cloud 
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="aws.php">AWS</a></li>
+                            <li><a class="dropdown-item" href="azure.php">Azure</a></li>
+                            <li><a class="dropdown-item" href="googlecloud.php">Google Cloud</a></li>
+                            <li><a class="dropdown-item" href="cloudflare.php">Cloudflare</a></li>
+                           
+                        </ul>
+                    </li>
+                    <!-- Mobile Development-->
+                    <li class="nav-item dropdown mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Mobile Dev
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="android.php">Android</a></li>
+                            <li><a class="dropdown-item" href="kotlin.php">Kotlin</a></li>
+                            <li><a class="dropdown-item" href="reactnative.php">React Native</a></li>
+                               <li><a class="dropdown-item" href="flutter.php">Flutter</a></li>
+                        </ul>
+                    </li>
+                    <!-- Devops -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                       Devops
+                        </a>
+                        <ul class="dropdown-menu multi-column columns-2">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="multi-column-dropdown">
+                            <li class="dropdown-header">CI/CD</li>
+                            <li><a class="dropdown-item" href="docker.php">Docker</a></li>
+                            <li><a class="dropdown-item" href="jenkins.php">jenkins</a></li>
+                            <li><a class="dropdown-item" href="kubernetes.php">kubernetes</a></li>
+                            <li><a class="dropdown-item" href="maven.php">Maven</a></li>
+                            <li><a class="dropdown-item" href="git.php">Git</a> </li>
+                            <li><a class="dropdown-item" href="github_action.php">Github Actions</a></li>
+                            <li><a class="dropdown-item" href="Terraform.php">Terraform</a></li>
+                            <li><a class="dropdown-item" href="ansible.php">Ansible</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li class="dropdown-header">Web Servers</li>
+                            <li><a class="dropdown-item" href="languages/devops/nginx.php">Nginx</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="multi-column-dropdown">
+                            
+                           
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li class="dropdown-header">Operating System</li>
+                            <li><a class="dropdown-item" href="windows.php">Windows</a>
+                            </li>
+                            <li><a class="dropdown-item" href="linux.php">Linux</a>
+                            </li>
+                            <li><a class="dropdown-item" href="macos.php">Macos</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li class="dropdown-header">Scripting</li>
+                            <li><a class="dropdown-item" href="bashscript.php">Bash Scripting</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li class="dropdown-header">Monitoring</li>
+                            <li><a class="dropdown-item" href="monit.php">Monit</a>
+                            </ul>
+                        </div>
+                    </div>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.php">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Tools
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="tools/shadowpicker/index.html">Shadow Picker</a></li>
+                            <li><a class="dropdown-item" href="tools/readmemaker/index.html">Github Project Readme</a>
+                            </li>
+                            <li><a class="dropdown-item" href="tools/profilereadme/index.html">Github Profile Readme</a>
+                            </li>
+                            <li><a class="dropdown-item" href="tools/gradientcolorpicker.html">Gradient Colour
+                                    Picker</a></li>
+                            <li><a class="dropdown-item" href="tools/colourbook/colorpiceker.html">Colour Picker</a>
+                            </li>
+                            <li><a class="dropdown-item" href="tools/codereview/index.html">Simple Code Editor</a> </li>
+                            <li><a class="dropdown-item" href="tools/banner/index.html">Banner Maker</a> </li>
+                            <li><a class="dropdown-item" href="tools/logomaker/index.html">Logo & Favicon Maker</a>
+                            </li>
+                            <li><a class="dropdown-item" href="tools/paraiso-colors-main/index.html">colour plates</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <a href="myDesigns/index.html">
+                    <div class="button btn1 mx-1" style="font-size: 1em;">My Designs</div>
+                </a>
+            </div>
+        </div>
+    </nav>    <!-- mid part -->
+    <nav class="mt-5 p-2 headline" style="background:linear-gradient(to top right, #fb5475 0%, #f77b50 59%);">
+        <div class="text-center " style="margin-top:5vh;"><img style="margin-right:2vh;" src="../../assets/img/typescript.svg" alt="" /> Typescript cheatsheet
+        </div>
+    </nav>
+    <div class="container">
+        <div class="p-5 mb-4 bg-light rounded-3 jumbo mt-2">
+            <div class="container-fluid py-3">
+                <h1 class="display-5 fw-bold">Typescript</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="fs-4">
+                        TypeScript is typed JavaScript. TypeScript adds types to JavaScript to help you speed up the development by catching errors before you even run the JavaScript code.
+<br/>
+TypeScript is an open-source programming language that builds on top of JavaScript. It works on any web browser, any OS, and any environment that JavaScript runs.
+
+
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="../../assets/img/typescript.svg" alt="" style="height:100%;" />
+                    </div>
+                </div>
+                <button class="btn btn1" type="button" data-bs-toggle="offcanvas" data-bs-target="#o1" aria-controls="o1">
+                    Read More...
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o1" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                            Typescript
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p>
+                        <p><strong>What is TypeScript?</strong></p>
+<p>TypeScript is a syntactic superset of JavaScript which adds static typing.</p>
+<p>This basically means that TypeScript adds syntax on top of JavaScript, allowing developers to add types.</p>
+<br />   <br />
+<p><strong>Why should I use TypeScript?</strong></p>
+<p>JavaScript is a loosely typed language. It can be difficult to understand what types of data are being passed around in JavaScript.</p>
+<p>In JavaScript, function parameters and variables don't have any information! So developers need to look at documentation, or guess based on the implementation.</p>
+<p>TypeScript allows specifying the types of data being passed around within the code, and has the ability to report errors when the types don't match.</p>
+<p>For example, TypeScript will report an error when passing a string into a function that expects a number. JavaScript will not.</p>
+<p>TypeScript uses compile time type checking. Which means it checks if the specified types match before running the code, not while running the code.</p>
+<br />   <br />
+<p><strong>TypeScript Compiler</strong></p>
+<p>TypeScript is transpiled into JavaScript using a compiler.</p>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ol>
+            <!-- offcanvas -->
+            <li>
+            TypeScript Simple Types<button class="btn btn1 mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o2" aria-controls="o2">
+                    Read More...
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o2" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                        TypeScript Simple Types
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p><strong>TypeScript Simple Types</strong></p>
+<p>TypeScript supports some simple types (primitives) you may know.</p>
+<p>There are three main primitives in JavaScript and TypeScript:</p>
+<ul>
+  <li><strong>boolean</strong> - true or false values</li>
+  <li><strong>number</strong> - whole numbers and floating point values</li>
+  <li><strong>string</strong> - text values like "TypeScript Rocks"</li>
+</ul>
+<p>There are also 2 less common primitives used in later versions of JavaScript and TypeScript:</p>
+<ul>
+  <li><strong>bigint</strong> - whole numbers and floating point values, but allows larger negative and positive numbers than the number type.</li>
+  <li><strong>symbol</strong> - used to create a globally unique identifier.</li>
+</ul>
+<br />   <br />
+<p><strong>Type Assignment</strong></p>
+<p>When creating a variable, there are two main ways TypeScript assigns a type:</p>
+<ul>
+  <li><strong>Explicit</strong></li>
+  <li><strong>Implicit</strong></li>
+</ul>
+<p>In both examples below, <code>firstName</code> is of type string:</p>
+
+<p><strong>Explicit Type</strong></p>
+<p>Explicit - writing out the type:</p>
+<pre class="language-Typescript">
+                <code>let firstName: string = "Dylan";</code></pre>
+<p>Explicit type assignments are easier to read and more intentional.</p>
+<br />   <br />
+<p><strong>Implicit Type</strong></p>
+<p>Implicit - TypeScript will "guess" the type, based on the assigned value:</p>
+<pre class="language-Typescript">
+                <code>let firstName = "Dylan";</code></pre>
+<p>Note: Having TypeScript "guess" the type of a value is called inference.</p>
+<p>Implicit assignment forces TypeScript to infer the value.</p>
+<p>Implicit type assignments are shorter, faster to type, and often used when developing and testing.</p>
+<br />   <br />
+<p><strong>Error In Type Assignment</strong></p>
+<p>TypeScript will throw an error if data types do not match.</p>
+<p>Example:</p>
+<pre class="language-Typescript">
+                <code>let firstName: string = "Dylan"; // type string
+firstName = 33; // attempts to re-assign the value to a different type</code></pre>
+<p>Implicit type assignment would have made <code>firstName</code> less noticeable as a string, but both will throw an error:</p>
+<p>Example:</p>
+<pre class="language-Typescript">
+                <code>let firstName = "Dylan"; // inferred to type string
+firstName = 33; // attempts to re-assign the value to a different type</code></pre>
+<p>JavaScript will not throw an error for mismatched types.</p>
+<br />   <br />
+<p><strong>Unable to Infer</strong></p>
+<p>TypeScript may not always properly infer what the type of a variable may be. In such cases, it will set the type to <code>any</code> which disables type checking.</p>
+<p>Example:</p>
+<pre class="language-Typescript">
+                <code>// Implicit any as JSON.parse doesn't know what type of data it returns so it can be "any" thing...
+const json = JSON.parse("55");
+// Most expect json to be an object, but it can be a string or a number like this example
+console.log(typeof json);</code></pre>
+<p>This behavior can be disabled by enabling <code>noImplicitAny</code> as an option in a TypeScript project's <code>tsconfig.json</code>. That is a JSON config file for customizing how some of TypeScript behaves.</p>
+
+                    </div>
+                </div>
+               
+            </li>
+          
+            <li>
+            TypeScript Special Types<button class="btn btn1 mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o22" aria-controls="o22">
+                    Read More...
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o22" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                        TypeScript Special Types
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                       
+                    <p><strong>TypeScript Special Types</strong></p>
+
+<p><strong>Type: any</strong></p>
+<pre class="language-Typescript"><code>any</code></pre>
+<p><code>any</code> is a type that disables type checking and effectively allows all types to be used.</p>
+<p>The example below does not use <code>any</code> and will throw an error:</p>
+<pre class="language-Typescript"><code>let u = true;
+u = "string"; // Error: Type 'string' is not assignable to type 'boolean'.
+Math.round(u); // Error: Argument of type 'boolean' is not assignable to parameter of type 'number'.</code></pre>
+<p>Setting <code>any</code> to the special type <code>any</code> disables type checking:</p>
+<pre class="language-Typescript"><code>let v: any = true;
+v = "string"; // no error as it can be "any" type
+Math.round(v); // no error as it can be "any" type</code></pre>
+<p><code>any</code> can be a useful way to get past errors since it disables type checking, but TypeScript will not be able to provide type safety, and tools which rely on type data, such as auto completion, will not work. Remember, it should be avoided at "any" cost...</p>
+
+<p><strong>Type: unknown</strong></p>
+<pre class="language-Typescript"><code>unknown</code></pre>
+<p><code>unknown</code> is a similar, but safer alternative to <code>any</code>.</p>
+<p>TypeScript will prevent <code>unknown</code> types from being used, as shown in the below example:</p>
+<pre class="language-Typescript"><code>let w: unknown = 1;
+w = "string"; // no error
+w = {
+  runANonExistentMethod: () => {
+    console.log("I think therefore I am");
+  }
+} as { runANonExistentMethod: () =&gt; void }
+// How can we avoid the error for the code commented out below when we don't know the type?
+// w.runANonExistentMethod(); // Error: Object is of type 'unknown'.
+if(typeof w === 'object' &amp;&amp; w !== null) {
+  (w as { runANonExistentMethod: Function }).runANonExistentMethod();
+}</code></pre>
+<p><code>unknown</code> is best used when you don't know the type of data being typed. To add a type later, you'll need to cast it.</p>
+<p>Casting is when we use the "<code>as</code>" keyword to say property or variable is of the casted type.</p>
+
+<p><strong>Type: never</strong></p>
+<pre class="language-Typescript"><code>never</code></pre>
+<p><code>never</code> effectively throws an error whenever it is defined.</p>
+<pre class="language-Typescript"><code>let x: never = true; // Error: Type 'boolean' is not assignable to type 'never'.</code></pre>
+<p><code>never</code> is rarely used, especially by itself; its primary use is in advanced generics.</p>
+
+<p><strong>Type: undefined &amp; null</strong></p>
+<pre class="language-Typescript"><code>undefined</code></pre>
+<pre class="language-Typescript"><code>null</code></pre>
+<p><code>undefined</code> and <code>null</code> are types that refer to the JavaScript primitives <code>undefined</code> and <code>null</code> respectively.</p>
+<pre class="language-Typescript"><code>let y: undefined = undefined;
+let z: null = null;</code></pre>
+<p>These types don't have much use unless <code>strictNullChecks</code> is enabled in the <code>tsconfig.json</code> file.</p>
+
+                    </div>
+            </li>
+            <li>
+            TypeScript Arrays<button class="btn btn1 mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o23" aria-controls="o23">
+                    Read More...
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o23" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                        TypeScript Arrays
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                    <p><strong>TypeScript Arrays</strong></p>
+
+<p>TypeScript has a specific syntax for typing arrays.</p>
+<br />   <br />
+<p><strong>Readonly</strong></p>
+<p>The <code>readonly</code> keyword can prevent arrays from being changed.</p>
+
+<p><strong>Example</strong></p>
+<pre class="language-Typescript"><code>const names: readonly string[] = ["Dylan"];
+names.push("Jack"); // Error: Property 'push' does not exist on type 'readonly string[]'.</code></pre>
+<p><em>// try removing the readonly modifier and see if it works?</em></p>
+<br />   <br />
+<p><strong>Type Inference</strong></p>
+<p>TypeScript can infer the type of an array if it has values.</p>
+
+<p><strong>Example</strong></p>
+<pre class="language-Typescript"><code>const numbers = [1, 2, 3]; // inferred to type number[]
+numbers.push(4); // no error
+// comment line below out to see the successful assignment
+numbers.push("2"); // Error: Argument of type 'string' is not assignable to parameter of type 'number'.
+let head: number = numbers[0]; // no error</code></pre>
+
+                    </div>
+                </div>
+                <pre class="language-Typescript"><code>const names: string[] = [];
+names.push("Dylan"); // no error
+// names.push(3); // Error: Argument of type 'number' is not assignable to parameter of type 'string'.</code></pre>
+            </li>
+            <li>
+            TypeScript Tuples<button class="btn btn1 mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o24" aria-controls="o24">
+                    Read More...
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o24" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                        TypeScript Tuples
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                    <p><strong>TypeScript Tuples</strong></p>
+
+<p><strong>Typed Arrays</strong></p>
+<p>A tuple is a typed array with a pre-defined length and types for each index.</p>
+<p>Tuples are great because they allow each element in the array to be a known type of value.</p>
+<p>To define a tuple, specify the type of each element in the array:</p>
+
+
+
+<p>As you can see we have a number, boolean, and a string. But what happens if we try to set them in the wrong order:</p>
+
+<pre class="language-Typescript"><code>// define our tuple
+let ourTuple: [number, boolean, string];
+
+// initialized incorrectly which throws an error
+ourTuple = [false, 'Coding God was mistaken', 5];</code></pre>
+
+<p>Even though we have a boolean, string, and number the order matters in our tuple and will throw an error.</p>
+<br />   <br />
+<p><strong>Readonly Tuple</strong></p>
+<p>A good practice is to make your tuple readonly.</p>
+<p>Tuples only have strongly defined types for the initial values:</p>
+
+<pre class="language-Typescript"><code>// define our tuple
+let ourTuple: [number, boolean, string];
+// initialize correctly
+ourTuple = [5, false, 'Coding God was here'];
+// We have no type safety in our tuple for indexes 3+
+ourTuple.push('Something new and wrong');
+console.log(ourTuple);</code></pre>
+
+<p>You see the new valueTuples only have strongly defined types for the initial values:</p>
+
+<pre class="language-Typescript"><code>// define our readonly tuple
+const ourReadonlyTuple: readonly [number, boolean, string] = [5, true, 'The Real Coding God'];
+// throws error as it is readonly.
+ourReadonlyTuple.push('Coding God took a day off');</code></pre>
+<br />   <br />
+<p><strong>Named Tuples</strong></p>
+<p>Named tuples allow us to provide context for our values at each index.</p>
+
+<pre class="language-Typescript"><code>const graph: [x: number, y: number] = [55.2, 41.3];</code></pre>
+
+<p>Named tuples provide more context for what our index values represent.</p>
+<br />   <br />
+<p><strong>Destructuring Tuples</strong></p>
+<p>Since tuples are arrays we can also destructure them.</p>
+
+<pre class="language-Typescript"><code>const graph: [number, number] = [55.2, 41.3];
+const [x, y] = graph;</code></pre>
+
+                    </div>
+                    </div>
+                    <pre class="language-Typescript"><code>// define our tuple
+let ourTuple: [number, boolean, string];
+
+// initialize correctly
+ourTuple = [5, false, 'Coding God was here'];</code></pre>
+            </li>
+            <li>
+            TypeScript Object Types<button class="btn btn1 mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o25" aria-controls="o25">
+                    Read More...
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o25" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                        TypeScript Object Types
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                    <p><strong>TypeScript Object Types</strong></p>
+
+<p>TypeScript has a specific syntax for typing objects.</p>
+
+<p>Object types like this can also be written separately, and even be reused, look at interfaces for more details.</p>
+<br />   <br />
+<p><strong>Type Inference</strong></p>
+<p>TypeScript can infer the types of properties based on their values.</p>
+
+<pre class="language-Typescript"><code>const car = {
+  type: "Toyota",
+};
+car.type = "Ford"; // no error
+car.type = 2; // Error: Type 'number' is not assignable to type 'string'.</code></pre>
+<br />   <br />
+<p><strong>Optional Properties</strong></p>
+<p>Optional properties are properties that don't have to be defined in the object definition.</p>
+
+<p><strong>Example without an optional property</strong></p>
+<pre class="language-Typescript"><code>const car: { type: string, mileage: number } = { // Error: Property 'mileage' is missing in type '{ type: string; }' but required in type '{ type: string; mileage: number; }'.
+  type: "Toyota",
+};
+car.mileage = 2000;</code></pre>
+
+<p><strong>Example with an optional property</strong></p>
+<pre class="language-Typescript"><code>const car: { type: string, mileage?: number } = { // no error
+  type: "Toyota"
+};
+car.mileage = 2000;</code></pre>
+<br />   <br />
+<p><strong>Index Signatures</strong></p>
+<p>Index signatures can be used for objects without a defined list of properties.</p>
+
+<pre class="language-Typescript"><code>const nameAgeMap: { [index: string]: number } = {};
+nameAgeMap.Jack = 25; // no error
+nameAgeMap.Mark = "Fifty"; // Error: Type 'string' is not assignable to type 'number'.</code></pre>
+
+<p>Index signatures like this one can also be expressed with utility types like <code>Record<string, number></code>.</p>
+
+                        </div>
+                    </div>
+                    <pre class="language-Typescript"><code>const car: { type: string, model: string, year: number } = {
+  type: "Toyota",
+  model: "Corolla",
+  year: 2009
+};</code></pre>
+            </li>
+            <li>
+            TypeScript Enums
+                <button class="btn btn1 mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o26" aria-controls="o26">
+                    Read More...
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o26" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                        TypeScript Enums </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                    <p><strong>TypeScript Enums</strong></p>
+
+<p>An enum is a special "class" that represents a group of constants (unchangeable variables).</p>
+
+<p>Enums come in two flavors: string and numeric. Let's start with numeric.</p>
+
+<p><strong>Numeric Enums - Default</strong></p>
+<p>By default, enums will initialize the first value to 0 and add 1 to each additional value:</p>
+
+<pre class="language-Typescript"><code>enum CardinalDirections {
+  North,
+  East,
+  South,
+  West
+}
+let currentDirection = CardinalDirections.North;
+// logs 0
+console.log(currentDirection);
+// throws error as 'North' is not a valid enum
+currentDirection = 'North'; // Error: "North" is not assignable to type 'CardinalDirections'.</code></pre>
+<br />   <br />
+<p><strong>Numeric Enums - Initialized</strong></p>
+<p>You can set the value of the first numeric enum and have it auto-increment from that:</p>
+
+<pre class="language-Typescript"><code>enum CardinalDirections {
+  North = 1,
+  East,
+  South,
+  West
+}
+// logs 1
+console.log(CardinalDirections.North);
+// logs 4
+console.log(CardinalDirections.West);</code></pre>
+<br />   <br />
+<p><strong>Numeric Enums - Fully Initialized</strong></p>
+<p>You can assign unique number values for each enum value. Then the values will not be incremented automatically:</p>
+
+<pre class="language-Typescript"><code>enum StatusCodes {
+  NotFound = 404,
+  Success = 200,
+  Accepted = 202,
+  BadRequest = 400
+}
+// logs 404
+console.log(StatusCodes.NotFound);
+// logs 200
+console.log(StatusCodes.Success);</code></pre>
+<br />   <br />
+<p><strong>String Enums</strong></p>
+<p>Enums can also contain strings. This is more common than numeric enums, because of their readability and intent.</p>
+
+<pre class="language-Typescript"><code>enum CardinalDirections {
+  North = 'North',
+  East = 'East',
+  South = 'South',
+  West = 'West'
+};
+// logs "North"
+console.log(CardinalDirections.North);
+// logs "West"
+console.log(CardinalDirections.West);</code></pre>
+
+<p>Technically, you can mix and match string and numeric enum values, but it is recommended not to do so.</p>
+
+                    </div>
+                </div>
+                
+<pre class="language-Typescript"><code>enum CardinalDirections {
+  North,
+  East,
+  South,
+  West
+}
+let currentDirection = CardinalDirections.North;
+// logs 0
+console.log(currentDirection);
+// throws error as 'North' is not a valid enum
+currentDirection = 'North'; // Error: "North" is not assignable to type 'CardinalDirections'.</code></pre>
+            </li>
+            <li>
+            TypeScript Type Aliases and Interfaces
+                <button class="btn btn1 mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o27" aria-controls="o27">
+                    Read More...
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o27" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                        TypeScript Type Aliases and Interfaces</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                    <p><strong>TypeScript Type Aliases and Interfaces</strong></p>
+
+<p>TypeScript allows types to be defined separately from the variables that use them.</p>
+
+<p>Aliases and Interfaces allow types to be easily shared between different variables/objects.</p>
+<br />   <br />
+<p><strong>Type Aliases</strong></p>
+<p>Type Aliases allow defining types with a custom name (an Alias).</p>
+<p>Type Aliases can be used for primitives like string or more complex types such as objects and arrays:</p>
+
+<pre class="language-Typescript"><code>type CarYear = number
+type CarType = string
+type CarModel = string
+type Car = {
+  year: CarYear,
+  type: CarType,
+  model: CarModel
+}
+
+const carYear: CarYear = 2001
+const carType: CarType = "Toyota"
+const carModel: CarModel = "Corolla"
+const car: Car = {
+  year: carYear,
+  type: carType,
+  model: carModel
+};</code></pre>
+<br />   <br />
+<p><strong>Interfaces</strong></p>
+<p>Interfaces are similar to type aliases, except they only apply to object types.</p>
+
+<p><strong>Example</strong></p>
+<pre class="language-Typescript"><code>interface Rectangle {
+  height: number,
+  width: number
+}
+
+const rectangle: Rectangle = {
+  height: 20,
+  width: 10
+};</code></pre>
+<br />   <br />
+<p><strong>Extending Interfaces</strong></p>
+<p>Interfaces can extend each other's definition.</p>
+<p>Extending an interface means you are creating a new interface with the same properties as the original, plus something new.</p>
+
+<p><strong>Example</strong></p>
+<pre class="language-Typescript"><code>interface Rectangle {
+  height: number,
+  width: number
+}
+
+interface ColoredRectangle extends Rectangle {
+  color: string
+}
+
+const coloredRectangle: ColoredRectangle = {
+  height: 20,
+  width: 10,
+  color: "red"
+};</code></pre>
+ 
+                    </div>
+                </div>
+            </li>
+            <li>
+            TypeScript Union Types
+                <button class="btn btn1 mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o28" aria-controls="o28">
+                    Read More...
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o28" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                        TypeScript Union Types</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                    <p><strong>TypeScript Union Types</strong></p>
+
+<p>Union types are used when a value can be more than a single type.</p>
+<p>Such as when a property would be string or number.</p>
+<br />   <br />
+<p><strong>Union | (OR)</strong></p>
+<p>Using the | we are saying our parameter is a string or number:</p>
+
+<pre class="language-Typescript"><code>function printStatusCode(code: string | number) {
+  console.log(`My status code is ${code}.`)
+}
+printStatusCode(404);
+printStatusCode('404');</code></pre>
+<br />   <br />
+<p><strong>Union Type Errors</strong></p>
+<p>Note: you need to know what your type is when union types are being used to avoid type errors:</p>
+
+<pre class="language-Typescript"><code>function printStatusCode(code: string | number) {
+  console.log(`My status code is ${code.toUpperCase()}.`) // error: Property 'toUpperCase' does not exist on type 'string | number'. Property 'toUpperCase' does not exist on type 'number'.
+}</code></pre>
+
+<p>In our example, we are having an issue invoking <code>toUpperCase()</code> as it's a string method and <code>number</code> doesn't have access to it.</p>
+
+                    </div>
+                </div>
+             
+            </li>
+            <li>
+            TypeScript Functions
+                <button class="btn btn1 mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o29" aria-controls="o29">
+                    Read More...
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o29" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                        TypeScript Functions</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                    <p><strong>TypeScript Functions</strong></p>
+
+<p>TypeScript has a specific syntax for typing function parameters and return values.</p>
+<br />   <br />
+<p><strong>Return Type</strong></p>
+<p>The type of the value returned by the function can be explicitly defined.</p>
+
+<pre class="language-Typescript"><code>// the `: number` here specifies that this function returns a number
+function getTime(): number {
+  return new Date().getTime();
+}</code></pre>
+
+<p>If no return type is defined, TypeScript will attempt to infer it through the types of the variables or expressions returned.</p>
+<br />   <br />
+<p><strong>Void Return Type</strong></p>
+<p>The type void can be used to indicate a function doesn't return any value.</p>
+
+<pre class="language-Typescript"><code>function printHello(): void {
+  console.log('Hello!');
+}</code></pre>
+
+<p><strong>Parameters</strong></p>
+<p>Function parameters are typed with a similar syntax as variable declarations.</p>
+
+<pre class="language-Typescript"><code>function multiply(a: number, b: number) {
+  return a * b;
+}</code></pre>
+<br />   <br />
+<p>If no parameter type is defined, TypeScript will default to using any, unless additional type information is available as shown in the Default Parameters and Type Alias sections below.</p>
+<br />   <br />
+<p><strong>Optional Parameters</strong></p>
+<p>By default, TypeScript will assume all parameters are required, but they can be explicitly marked as optional.</p>
+
+<pre class="language-Typescript"><code>// the `?` operator here marks parameter `c` as optional
+function add(a: number, b: number, c?: number) {
+  return a + b + (c || 0);
+}</code></pre>
+<br />   <br />
+<p><strong>Default Parameters</strong></p>
+<p>For parameters with default values, the default value goes after the type annotation:</p>
+
+<pre class="language-Typescript"><code>function pow(value: number, exponent: number = 10) {
+  return value ** exponent;
+}</code></pre>
+
+<p>TypeScript can also infer the type from the default value.</p>
+<br />   <br />
+<p><strong>Named Parameters</strong></p>
+<p>Typing named parameters follows the same pattern as typing normal parameters.</p>
+
+<pre class="language-Typescript"><code>function divide({ dividend, divisor }: { dividend: number, divisor: number }) {
+  return dividend / divisor;
+}</code></pre>
+<br />   <br />
+<p><strong>Rest Parameters</strong></p>
+<p>Rest parameters can be typed like normal parameters, but the type must be an array as rest parameters are always arrays.</p>
+
+<pre class="language-Typescript"><code>function add(a: number, b: number, ...rest: number[]) {
+  return a + b + rest.reduce((p, c) => p + c, 0);
+}</code></pre>
+<br />   <br />
+<p><strong>Type Alias</strong></p>
+<p>Function types can be specified separately from functions with type aliases.</p>
+
+<p>These types are written similarly to arrow functions, read more about arrow functions <a href="https://www.example.com/arrow-functions">here</a>.</p>
+
+<pre class="language-Typescript"><code>type Negate = (value: number) => number;
+
+// in this function, the parameter `value` automatically gets assigned the type `number` from the type `Negate`
+const negateFunction: Negate = (value) => value * -1;</code></pre>
+
+                    </div>
+                </div>
+                <pre class="language-Typescript"><code>
+function getTime(): number {
+  return new Date().getTime();
+}</code></pre>
+            </li>
+            <li>
+            TypeScript Casting
+                <button class="btn btn1 mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o210" aria-controls="o210">
+                    Read More...
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o210" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                        TypeScript Casting</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                    <p><strong>TypeScript Casting</strong></p>
+
+<p>There are times when working with types where it's necessary to override the type of a variable, such as when incorrect types are provided by a library.</p>
+<br />   
+<p>Casting is the process of overriding a type.</p>
+
+<p><strong>Casting with <code>as</code></strong></p>
+<p>A straightforward way to cast a variable is using the <code>as</code> keyword, which will directly change the type of the given variable.</p>
+
+<pre class="language-Typescript"><code>let x: unknown = 'hello';
+console.log((x as string).length);</code></pre>
+<br /> 
+<p>Casting doesn't actually change the type of the data within the variable, for example the following code will not work as expected since the variable <code>x</code> still holds a number.</p>
+
+<pre class="language-Typescript"><code>let x: unknown = 4;
+console.log((x as string).length); // prints undefined since numbers don't have a length</code></pre>
+<br />  
+<p>TypeScript will still attempt to typecheck casts to prevent casts that don't seem correct, for example the following will throw a type error since TypeScript knows casting a string to a number doesn't make sense without converting the data:</p>
+
+<pre class="language-Typescript"><code>console.log((4 as string).length); // Error: Conversion of type 'number' to type 'string' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.</code></pre>
+<br />   <br />
+<p><strong>Casting with <code>&lt;&gt;</code></strong></p>
+<p>Using <code>&lt;&gt;</code> works the same as casting with <code>as</code>.</p>
+
+<pre class="language-Typescript"><code>let x: unknown = 'hello';
+console.log((&lt;string&gt;x).length);</code></pre>
+<br /> 
+<p>This type of casting will not work with TSX, such as when working on React files.</p>
+<br />   <br />
+<p><strong>Force casting</strong></p>
+<p>To override type errors that TypeScript may throw when casting, first cast to <code>unknown</code>, then to the target type.</p>
+
+<pre class="language-Typescript"><code>let x = 'hello';
+console.log(((x as unknown) as number).length); // x is not actually a number so this will return undefined</code></pre>
+
+                    </div>
+                </div>
+                <pre class="language-Typescript"><code>let x: unknown = 'hello';
+console.log((x as string).length);</code></pre>
+            </li>
+            <li>
+            TypeScript Classes
+                <button class="btn btn1 mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o211" aria-controls="o211">
+                    Read More...
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o211" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                        TypeScript Classes
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                    <p><strong>TypeScript Classes</strong></p>
+
+<p>TypeScript adds types and visibility modifiers to JavaScript classes.</p>
+
+<p>Members: Types</p>
+
+<p>The members of a class (properties & methods) are typed using type annotations, similar to variables.</p>
+
+<pre class="language-Typescript"><code>class Person {
+  name: string;
+}
+
+const person = new Person();
+person.name = "Jane";</code></pre>
+<br />   <br />
+<p>Members: Visibility</p>
+
+<p>Class members also be given special modifiers which affect visibility.</p>
+
+<p>There are three main visibility modifiers in TypeScript.</p>
+
+<ul>
+<li><strong>public</strong> - (default) allows access to the class member from anywhere</li>
+<li><strong>private</strong> - only allows access to the class member from within the class</li>
+<li><strong>protected</strong> - allows access to the class member from itself and any classes that inherit it, which is covered in the inheritance section below</li>
+</ul>
+
+<pre class="language-Typescript"><code>class Person {
+  private name: string;
+
+  public constructor(name: string) {
+    this.name = name;
+  }
+
+  public getName(): string {
+    return this.name;
+  }
+}
+
+const person = new Person("Jane");
+console.log(person.getName()); // person.name isn't accessible from outside the class since it's private</code></pre>
+
+<p>The <code>this</code> keyword in a class usually refers to the instance of the class. Read more about this <a href="#">here</a>.</p>
+<br />   <br />
+<p>Parameter Properties</p>
+
+<p>TypeScript provides a convenient way to define class members in the constructor, by adding a visibility modifiers to the parameter.</p>
+
+<pre class="language-Typescript"><code>class Person {
+  // name is a private member variable
+  public constructor(private name: string) {}
+
+  public getName(): string {
+    return this.name;
+  }
+}
+
+const person = new Person("Jane");
+console.log(person.getName());</code></pre>
+<br />   <br />
+<p>Readonly</p>
+
+<p>Similar to arrays, the <code>readonly</code> keyword can prevent class members from being changed.</p>
+
+<pre class="language-Typescript"><code>class Person {
+  private readonly name: string;
+
+  public constructor(name: string) {
+    // name cannot be changed after this initial definition, which has to be either at it's declaration or in the constructor.
+    this.name = name;
+  }
+
+  public getName(): string {
+    return this.name;
+  }
+}
+
+const person = new Person("Jane");
+console.log(person.getName());</code></pre>
+<br />   <br />
+<p>Inheritance: Implements</p>
+
+<p>Interfaces (covered <a href="#">here</a>) can be used to define the type a class must follow through the <code>implements</code> keyword.</p>
+
+<pre class="language-Typescript"><code>interface Shape {
+  getArea: () => number;
+}
+
+class Rectangle implements Shape {
+  public constructor(protected readonly width: number, protected readonly height: number) {}
+
+  public getArea(): number {
+    return this.width * this.height;
+  }
+}</code></pre>
+
+<p>A class can implement multiple interfaces by listing each one after <code>implements</code>, separated by a comma like so: <code>class Rectangle implements Shape, Colored</code>.</p>
+<br />   <br />
+<p>Inheritance: Extends</p>
+
+<p>Classes can extend each other through the <code>extends</code> keyword. A class can only extends one other class.</p>
+
+<pre class="language-Typescript"><code>interface Shape {
+  getArea: () => number;
+}
+
+class Rectangle implements Shape {
+  public constructor(protected readonly width: number, protected readonly height: number) {}
+
+  public getArea(): number {
+    return this.width * this.height;
+  }
+}
+
+class Square extends Rectangle {
+  public constructor(width: number) {
+    super(width, width);
+  }
+
+  // getArea gets inherited from Rectangle
+}</code></pre>
+<br />   <br />
+<p>Override</p>
+
+<p>When a class extends another class, it can replace the members of the parent class with the same name.</p>
+
+<p>Newer versions of TypeScript allow explicitly marking this with the <code>override</code> keyword.</p>
+<br />   <br />
+<pre class="language-Typescript"><code>interface Shape {
+  getArea: () => number;
+}
+
+class Rectangle implements Shape {
+  // using protected for these members allows access from classes that extend from this class, such as Square
+  public constructor(protected readonly width: number, protected readonly height: number) {}
+
+  public getArea(): number {
+    return this.width * this.height;
+  }
+
+  public toString(): string {
+    return `Rectangle[width=${this.width}, height=${this.height}]`;
+  }
+}
+
+class Square extends Rectangle {
+  public constructor(width: number) {
+    super(width, width);
+  }
+
+  // this toString replaces the toString from Rectangle
+  public override toString(): string {
+    return `Square[width=${this.width}]`;
+  }
+}</code></pre>
+
+<p>By default the <code>override</code> keyword is optional when overriding a method, and only helps to prevent accidentally overriding a method that does not exist. Use the setting <code>noImplicitOverride</code> to force it to be used when overriding.</p>
+<br />   <br />
+<p>Abstract Classes</p>
+
+<p>Classes can be written in a way that allows them to be used as a base class for other classes without having to implement all the members. This is done by using the <code>abstract</code> keyword. Members that are left unimplemented also use the <code>abstract</code> keyword.</p>
+
+<pre class="language-Typescript"><code>abstract class Polygon {
+  public abstract getArea(): number;
+
+  public toString(): string {
+    return `Polygon[area=${this.getArea()}]`;
+  }
+}
+
+class Rectangle extends Polygon {
+  public constructor(protected readonly width: number, protected readonly height: number) {
+    super();
+  }
+
+  public getArea(): number {
+    return this.width * this.height;
+  }
+}</code></pre>
+
+<p>Abstract classes cannot be directly instantiated, as they do not have all their members implemented.</p>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+            TypeScript Basic Generics
+                <button class="btn btn1 mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o212" aria-controls="o212">
+                    Read More...
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o212" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                        TypeScript Basic Generics
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                    <p><strong>TypeScript Basic Generics</strong></p>
+
+<p>Generics allow creating 'type variables' which can be used to create classes, functions & type aliases that don't need to explicitly define the types that they use.</p>
+
+<p>Generics make it easier to write reusable code.</p>
+<br />   <br />
+<p>Functions</p>
+
+<p>Generics with functions help make more generalized methods which more accurately represent the types used and returned.</p>
+
+<pre class="language-Typescript"><code>function createPair&lt;S, T&gt;(v1: S, v2: T): [S, T] {
+  return [v1, v2];
+}
+console.log(createPair&lt;string, number&gt;('hello', 42)); // ['hello', 42]</code></pre>
+
+<p>TypeScript can also infer the type of the generic parameter from the function parameters.</p>
+<br />   <br />
+<p>Classes</p>
+
+<p>Generics can be used to create generalized classes, like Map.</p>
+
+<pre class="language-Typescript"><code>class NamedValue&lt;T&gt; {
+  private _value: T | undefined;
+
+  constructor(private name: string) {}
+
+  public setValue(value: T) {
+    this._value = value;
+  }
+
+  public getValue(): T | undefined {
+    return this._value;
+  }
+
+  public toString(): string {
+    return `${this.name}: ${this._value}`;
+  }
+}
+
+let value = new NamedValue&lt;number&gt;('myNumber');
+value.setValue(10);
+console.log(value.toString()); // myNumber: 10</code></pre>
+
+<p>TypeScript can also infer the type of the generic parameter if it's used in a constructor parameter.</p>
+<br />   <br />
+<p>Type Aliases</p>
+
+<p>Generics in type aliases allow creating types that are more reusable.</p>
+
+<pre class="language-Typescript"><code>type Wrapped&lt;T&gt; = { value: T };
+
+const wrappedValue: Wrapped&lt;number&gt; = { value: 10 };</code></pre>
+
+<p>This also works with interfaces with the following syntax:</p>
+
+<pre class="language-Typescript"><code>interface Wrapped&lt;T&gt; {}</code></pre>
+<br />   <br />
+<p>Default Value</p>
+
+<p>Generics can be assigned default values which apply if no other value is specified or inferred.</p>
+
+<pre class="language-Typescript"><code>class NamedValue&lt;T = string&gt; {
+  private _value: T | undefined;
+
+  constructor(private name: string) {}
+
+  public setValue(value: T) {
+    this._value = value;
+  }
+
+  public getValue(): T | undefined {
+    return this._value;
+  }
+
+  public toString(): string {
+    return `${this.name}: ${this._value}`;
+  }
+}
+
+let value = new NamedValue('myNumber');
+value.setValue('myValue');
+console.log(value.toString()); // myNumber: myValue</code></pre>
+<br />   <br />
+<p>Extends</p>
+
+<p>Constraints can be added to generics to limit what's allowed. The constraints make it possible to rely on a more specific type when using the generic type.</p>
+
+<pre class="language-Typescript"><code>function createLoggedPair&lt;S extends string | number, T extends string | number&gt;(v1: S, v2: T): [S, T] {
+  console.log(`creating pair: v1='${v1}', v2='${v2}'`);
+  return [v1, v2];
+}</code></pre>
+
+                    </div>
+                </div>
+            </li>
+
+
+
+            <li>
+            TypeScript Utility Types
+                <button class="btn btn1 mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o2129" aria-controls="o212">
+                    Read More...
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o2129" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                        TypeScript Utility Types
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                
+                    <p><strong>TypeScript Utility Types</strong></p>
+
+<p>TypeScript comes with a large number of types that can help with some common type manipulation, usually referred to as utility types.</p>
+
+<p>This chapter covers the most popular utility types.</p>
+<br />   <br />
+<p><strong>Partial</strong></p>
+
+<p>Partial changes all the properties in an object to be optional.</p>
+
+<pre class="language-Typescript"><code>interface Point {
+  x: number;
+  y: number;
+}
+
+let pointPart: Partial&lt;Point&gt; = {}; // `Partial` allows x and y to be optional
+pointPart.x = 10;</code></pre>
+<br />   <br />
+<p><strong>Required</strong></p>
+
+<p>Required changes all the properties in an object to be required.</p>
+
+<pre class="language-Typescript"><code>interface Car {
+  make: string;
+  model: string;
+  mileage?: number;
+}
+
+let myCar: Required&lt;Car&gt; = {
+  make: 'Ford',
+  model: 'Focus',
+  mileage: 12000 // `Required` forces mileage to be defined
+};</code></pre>
+<br />   <br />
+<p><strong>Record</strong></p>
+
+<p>Record is a shortcut to defining an object type with a specific key type and value type.</p>
+
+<pre class="language-Typescript"><code>const nameAgeMap: Record&lt;string, number&gt; = {
+  'Alice': 21,
+  'Bob': 25
+};</code></pre>
+<br />   <br />
+<p><strong>Omit</strong></p>
+
+<p>Omit removes keys from an object type.</p>
+
+<pre class="language-Typescript"><code>interface Person {
+  name: string;
+  age: number;
+  location?: string;
+}
+
+const bob: Omit&lt;Person, 'age' | 'location'&gt; = {
+  name: 'Bob'
+  // `Omit` has removed age and location from the type and they can't be defined here
+};</code></pre>
+<br />   <br />
+<p><strong>Pick</strong></p>
+
+<p>Pick removes all but the specified keys from an object type.</p>
+
+<pre class="language-Typescript"><code>interface Person {
+  name: string;
+  age: number;
+  location?: string;
+}
+
+const bob: Pick&lt;Person, 'name'&gt; = {
+  name: 'Bob'
+  // `Pick` has only kept name, so age and location were removed from the type and they can't be defined here
+};</code></pre>
+<br />   <br />
+<p><strong>Exclude</strong></p>
+
+<p>Exclude removes types from a union.</p>
+
+<pre class="language-Typescript"><code>type Primitive = string | number | boolean
+const value: Exclude&lt;Primitive, string&gt; = true; // a string cannot be used here since Exclude removed it from the type.</code></pre>
+<br />   <br />
+<p><strong>ReturnType</strong></p>
+
+<p>ReturnType extracts the return type of a function type.</p>
+
+<pre class="language-Typescript"><code>type PointGenerator = () => { x: number; y: number; };
+const point: ReturnType&lt;PointGenerator&gt; = {
+  x: 10,
+  y: 20
+};</code></pre>
+<br />   <br />
+<p><strong>Parameters</strong></p>
+
+<p>Parameters extracts the parameter types of a function type as an array.</p>
+
+<pre class="language-Typescript"><code>type PointPrinter = (p: { x: number; y: number; }) => void;
+const point: Parameters&lt;PointPrinter&gt;[0] = {
+  x: 10,
+  y: 20
+};</code></pre>
+<br />   <br />
+<p><strong>Readonly</strong></p>
+
+<p>Readonly is used to create a new type where all properties are readonly, meaning they cannot be modified once assigned a value.</p>
+
+<p>Keep in mind TypeScript will prevent this at compile time, but in theory since it is compiled down to JavaScript you can still override a readonly property.</p>
+
+<pre class="language-Typescript"><code>interface Person {
+  name: string;
+  age: number;
+}
+const person: Readonly&lt;Person&gt; = {
+  name: "Dylan",
+  age: 35,
+};
+person.name = 'Israel'; // prog.ts(11,8): error TS2540: Cannot assign to 'name' because it is a read-only property.</code></pre>
+
+                    </div>
+                </div>
+            </li>
+
+
+
+
+            <li>
+            TypeScript Keyof
+                <button class="btn btn1 mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o21291" aria-controls="o212">
+                    Read More...
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o21291" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                        TypeScript Keyof
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                    <p><strong>TypeScript Keyof</strong></p>
+
+<p>keyof is a keyword in TypeScript which is used to extract the key type from an object type.</p>
+
+<p><strong>keyof with explicit keys</strong></p>
+
+<p>When used on an object type with explicit keys, keyof creates a union type with those keys.</p>
+
+<pre class="language-Typescript"><code>interface Person {
+  name: string;
+  age: number;
+}
+// `keyof Person` here creates a union type of "name" and "age", other strings will not be allowed
+function printPersonProperty(person: Person, property: keyof Person) {
+  console.log(`Printing person property ${property}: "${person[property]}"`);
+}
+let person = {
+  name: "Max",
+  age: 27
+};
+printPersonProperty(person, "name"); // Printing person property name: "Max"</code></pre>
+
+<p><strong>keyof with index signatures</strong></p>
+
+<p>keyof can also be used with index signatures to extract the index type.</p>
+
+<pre class="language-Typescript"><code>type StringMap = { [key: string]: unknown };
+// `keyof StringMap` resolves to `string` here
+function createStringPair(property: keyof StringMap, value: string): StringMap {
+  return { [property]: value };    
+}</code></pre>
+
+
+                    </div>
+                </div>
+                
+<pre class="language-Typescript"><code>interface Person {
+  name: string;
+  age: number;
+}
+// `keyof Person` here creates a union type of "name" and "age", other strings will not be allowed
+function printPersonProperty(person: Person, property: keyof Person) {
+  console.log(`Printing person property ${property}: "${person[property]}"`);
+}
+let person = {
+  name: "Max",
+  age: 27
+};
+printPersonProperty(person, "name"); // Printing person property name: "Max"</code></pre>
+            </li>
+
+
+            <li>
+            TypeScript Null &amp; Undefined
+                <button class="btn btn1 mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o21293" aria-controls="o212">
+                    Read More...
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o21293" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                        TypeScript Null &amp; Undefined
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                
+                    <p><strong>TypeScript Null &amp; Undefined</strong></p>
+<p>TypeScript has a powerful system to deal with null or undefined values.</p>
+<p>By default null and undefined handling is disabled, and can be enabled by setting <code>strictNullChecks</code> to <code>true</code>.</p>
+<p>The rest of this page applies for when <code>strictNullChecks</code> is enabled.</p>
+<p><strong>Types</strong></p>
+<p>null and undefined are primitive types and can be used like other types, such as string.</p>
+<pre class="language-Typescript"><code>let value: string | undefined | null = null;
+value = 'hello';
+value = undefined;</code></pre>
+<p>When <code>strictNullChecks</code> is enabled, TypeScript requires values to be set unless undefined is explicitly added to the type.</p><br />   <br />
+<p><strong>Optional Chaining</strong></p>
+<p>Optional Chaining is a JavaScript feature that works well with TypeScript's null handling. It allows accessing properties on an object, that may or may not exist, with a compact syntax. It can be used with the <code>?.</code> operator when accessing properties.</p>
+<pre class="language-Typescript"><code>interface House {
+  sqft: number;
+  yard?: {
+    sqft: number;
+  };
+}
+function printYardSize(house: House) {
+  const yardSize = house.yard?.sqft;
+  if (yardSize === undefined) {
+    console.log('No yard');
+  } else {
+    console.log(`Yard is ${yardSize} sqft`);
+  }
+}
+
+let home: House = {
+  sqft: 500
+};
+
+printYardSize(home); // Prints 'No yard'</code></pre><br />   <br />
+<p><strong>Nullish Coalescence</strong></p>
+<p>Nullish Coalescence is another JavaScript feature that also works well with TypeScript's null handling. It allows writing expressions that have a fallback specifically when dealing with null or undefined. This is useful when other falsy values can occur in the expression but are still valid. It can be used with the <code>??</code> operator in an expression, similar to using the <code>&amp;&amp;</code> operator.</p>
+<pre class="language-Typescript"><code>function printMileage(mileage: number | null | undefined) {
+  console.log(`Mileage: ${mileage ?? 'Not Available'}`);
+}
+
+printMileage(null); // Prints 'Mileage: Not Available'
+printMileage(0); // Prints 'Mileage: 0'</code></pre><br />   <br />
+<p><strong>Null Assertion</strong></p>
+<p>TypeScript's inference system isn't perfect, there are times when it makes sense to ignore a value's possibility of being null or undefined. An easy way to do this is to use casting, but TypeScript also provides the <code>!</code> operator as a convenient shortcut.</p>
+<pre class="language-Typescript"><code>function getValue(): string | undefined {
+  return 'hello';
+}
+let value = getValue();
+console.log('value length: ' + value!.length);</code></pre>
+<p>Just like casting, this can be unsafe and should be used with care.</p><br />   <br />
+<p><strong>Array bounds handling</strong></p>
+<p>Even with <code>strictNullChecks</code> enabled, by default TypeScript will assume array access will never return undefined (unless undefined is part of the array type).</p>
+<p>The config <code>noUncheckedIndexedAccess</code> can be used to change this behavior.</p>
+<pre class="language-Typescript"><code>let array: number[] = [1, 2, 3];
+let value = array[0]; // with `noUncheckedIndexedAccess` this has the type `number | undefined`</code></pre>
+
+
+                    </div>
+                </div>
+            </li>
+
+
+
+            <li>
+            TypeScript Definitely Typed
+                <button class="btn btn1 mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o21295" aria-controls="o212">
+                    Read More...
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o21295" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                        TypeScript Definitely Typed
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                
+                    <p><strong>TypeScript Definitely Typed</strong></p>
+<p>NPM packages in the broad JavaScript ecosystem don't always have types available.</p>
+<p>Sometimes the projects are no longer maintained, and other times they aren't interested in, agree with, or have time to use TypeScript.</p>
+<p><strong>Using non-typed NPM packages in TypeScript</strong></p>
+<p>Using untyped NPM packages with TypeScript will not be type safe due to lack of types.</p>
+<p>To help TypeScript developers use such packages, there is a community maintained project called Definitely Typed.</p>
+<p>Definitely Typed is a project that provides a central repository of TypeScript definitions for NPM packages which do not have types.</p>
+<pre class="language-sh"><code>npm install --save-dev @types/jquery</code></pre>
+<p>No other steps are usually needed to use the types after installing the declaration package, TypeScript will automatically pick up the types when using the package itself.</p>
+<p>Editors such as Visual Studio Code will often suggest installing packages like these when types are missing.</p>
+
+
+                    </div>
+                </div>
+            </li>
+
+
+            <li>
+            TypeScript 5.x Updates
+                <button class="btn btn1 mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#o21296" aria-controls="o212">
+                    Read More...
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="o21296" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                        TypeScript 5.x Updates
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                
+                    <p><strong>TypeScript 5.x Updates</strong></p>
+<p>TypeScript is actively maintained and updated by Microsoft. In version 5.x, a lot of utility and quality of life updates were made.</p>
+<p>This chapter covers the most popular updates to allow stricter and more flexible type safety.</p>
+<p>As a reminder, these features will only be available in 5.x+</p>
+<p><strong>Template Literal Types</strong></p>
+<p>Template Literal Types now allow us to create more precise types using template literals. We can define custom types that depend on the actual values of strings at compile time.</p>
+<pre class="language-Typescript"><code>type Color = "red" | "green" | "blue";
+type HexColor&lt;T extends Color&gt; = `#${string}`;
+
+// Usage:
+let myColor: HexColor&lt;"blue"&gt; = "#0000FF";
+</code></pre>
+<p><strong>Index Signature Labels</strong></p>
+<p>Index Signature Labels allow us to label index signatures using computed property names. It helps in providing more descriptive type information when working with dynamic objects.</p>
+<pre class="language-Typescript"><code>type DynamicObject = { [key: string as `dynamic_${string}`]: string };
+
+// Usage:
+let obj: DynamicObject = { dynamic_key: "value" };
+</code></pre>
+<p>5.x also now supports native JavaScript private fields. The TypeScript 'private' still works as discussed in the Classes section.</p>
+</html>
+
+                    </div>
+                </div>
+            </li>
+        </ol>
+        </div>
+        </div>
+           <!-- Footer -->
+   <footer class="text-lg-start bg-dark text-muted footer-dark mt-5" style="background-color: rgb(1,4,45) !important;">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-lg-between p-4 border-bottom" style="color: white">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block" style="font-size: 1.7em;">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+            <!-- Right -->
+            <div>
+                <!-- Facebook -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i
+                        class="bi bi-facebook"></i></a>
+                <!-- Twitter -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i
+                        class="bi bi-twitter"></i></a>
+                <!-- Google -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i
+                        class="bi bi-google"></i></a>
+                <!-- Instagram -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i
+                        class="bi bi-instagram"></i></a>
+                <!-- Linkedin -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #0082ca"
+                    href="https://www.linkedin.com/in/mr-soham-manjrekar/" role="button"><i
+                        class="bi bi-linkedin"></i></a>
+                <!-- Github -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #333333"
+                    href="https://github.com/sohammanjrekar" role="button"><i class="bi bi-github"></i></a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+        <!-- Section: Links  -->
+        <section class="links" style="color: white">
+            <div class="container text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-8 col-lg-8 col-xl-8 mx-auto mb-4">
+                        <!-- Content -->
+                        <h2 class="text-uppercase fw-bold mb-4">
+                            <i class="bi bi-gem me-3"></i>Cheatbook
+                        </h2>
+                        <p>
+                            <li>Quick reference</li>
+                            <li>Be productive after learning a new thing
+                            </li>
+                            <li>Quickly recall when forget some syntax</li>
+                            <li>Use snippets for rapid development</li>
+                        </p>
+                    </div>
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4" style="font-size: 1.3em;">
+                        <!-- Links -->
+                        <h2 class="text-uppercase fw-bold mb-4">Contact</h2>
+                        <p><i class="bi bi-house-door me-3"></i>Badlapur,mumbai</p>
+                        <p><i class="bi bi-envelope me-3"></i> mrsohammanjrekar@gmail.com</p>
+                        <p><i class="bi bi-phone me-3"></i> +91 7045208474</p>
+                        <p><i class="bi bi-whatsapp me-3"></i> +91 7045208474</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);color:white;word-spacing: 3px;">
+            © 2022 Copyright:
+            <a class="text-reset fw-bold" href="https://github.com/sohammanjrekar">cheatbook.com</a> created by Soham
+            Manjrekar
+        </div>
+        <!-- Copyright -->
+        <a class="js-scroll-trigger scroll-to-top rounded" href="#page-top"><i class="fa fa-angle-up"></i></a>
+    </footer>
+    <!-- Footer -->
+    <!-- Footer -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script src="../../myDesigns/assets/js/jquery.min.js"></script>
+    <script src="../../myDesigns/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="../../myDesigns/assets/js/stylish-portfolio.js"></script>
+    <script src="assets/prismjs/prism.js"></script>
+</body>
+
+</html>
